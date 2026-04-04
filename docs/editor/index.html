@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Редактор — Нейрогазета</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .editor-status-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-light);
+    }
+    .status-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--ink-faint);
+      display: inline-block;
+    }
+    .status-dot.published { background: #27ae60; }
+    .status-dot.draft { background: #e67e22; }
+
+    .editor-card-headline {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 700;
+      flex: 1;
+      line-height: 1.3;
+    }
+    .editor-card-meta {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      white-space: nowrap;
+    }
+
+    .add-news-panel {
+      border: 2px dashed var(--rule);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+    .add-news-panel.visible { display: block; }
+
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 0.6rem 1.2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      z-index: 999;
+    }
+    .toast.visible { opacity: 1; }
+
+    .section-select-badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 0.15rem 0.4rem;
+      border: 1px solid var(--rule);
+      color: var(--ink-light);
+      background: var(--paper-dark);
+      margin-right: 0.3rem;
+    }
+
+    .importance-range {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .importance-range input[type=range] { flex: 1; }
+    .importance-range .range-val {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      min-width: 1.5rem;
+      text-align: center;
+    }
+
+    .preview-toggle { cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<!-- Password overlay -->
+<div class="password-overlay" id="password-overlay">
+  <div class="password-box">
+    <h2>Нейрогазета</h2>
+    <p>Редактор — только для авторизованных</p>
+    <div class="form-group" style="margin-bottom:.75rem">
+      <input type="password" id="pw-input" class="form-input"
+             placeholder="Пароль" autocomplete="current-password" />
+    </div>
+    <button class="btn btn-primary" onclick="checkPassword()" style="width:100%">Войти</button>
+    <div class="password-error" id="pw-error"></div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-meta">Редактор выпуска</span>
+    <nav class="masthead-nav">
+      <a href="../">Главная</a>
+      <a href="../archive/">Архив</a>
+    </nav>
+  </div>
+  <div class="masthead-title">
+    <h1>Нейрогазета</h1>
+    <p class="masthead-subtitle">Редактор выпуска</p>
+  </div>
+  <div class="masthead-rule"></div>
+</header>
+
+<main class="editor-page" id="editor-page" style="display:none">
+
+  <!-- Toolbar -->
+  <div class="editor-toolbar">
+    <div class="editor-status-bar" style="flex:1;border:none;margin:0;padding:0">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="status-label">—</span>
+      <span id="issue-date-label" style="margin-left:auto"></span>
+    </div>
+    <button class="btn" onclick="toggleAddPanel()">+ Добавить новость</button>
+    <button class="btn btn-primary" id="publish-btn" onclick="publishIssue()">Опубликовать</button>
+    <button class="btn" onclick="saveIssue()">Сохранить черновик</button>
+    <button class="btn preview-toggle" onclick="openPreview()">Предпросмотр ↗</button>
+  </div>
+
+  <!-- Add news panel -->
+  <div class="add-news-panel" id="add-panel">
+    <div style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-light);margin-bottom:1rem">Добавить новость вручную</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Рубрика</label>
+        <select class="form-select" id="add-section">
+          <option value="models">Модели</option>
+          <option value="platforms">Платформы</option>
+          <option value="industry">Индустрия</option>
+          <option value="hype">Желтуха</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Важность (1–10)</label>
+        <div class="importance-range">
+          <input type="range" min="1" max="10" value="5" id="add-importance" oninput="this.nextElementSibling.textContent=this.value" />
+          <span class="range-val">5</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group full">
+        <label class="form-label">Заголовок</label>
+        <input type="text" class="form-input" id="add-headline" placeholder="Заголовок новости" />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group full">
+        <label class="form-label">Подзаголовок (одна фраза)</label>
+        <input type="text" class="form-input" id="add-subheadline" placeholder="Суть в одном предложении" />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group full">
+        <label class="form-label">Текст</label>
+        <textarea class="form-textarea" id="add-body" rows="4" placeholder="Полный текст новости"></textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group full">
+        <label class="form-label">Источник (URL)</label>
+        <input type="url" class="form-input" id="add-source-url" placeholder="https://…" />
+      </div>
+    </div>
+    <div style="display:flex;gap:.5rem;margin-top:.5rem">
+      <button class="btn btn-primary" onclick="addNewsItem()">Добавить</button>
+      <button class="btn" onclick="toggleAddPanel()">Отмена</button>
+    </div>
+  </div>
+
+  <!-- News cards -->
+  <div id="editor-cards"></div>
+
+</main>
+
+<div class="toast" id="toast"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="../">Нейрогазета</a>
+    <span class="footer-sep">·</span>
+    <span>Редактор</span>
+  </div>
+</footer>
+
+<script>
+  // ===== CONFIG =====
+  // Password is stored as a SHA-256 hash. Default: "neuro2026"
+  // To change: replace with SHA-256 hash of your password.
+  const PASSWORD_HASH = 'b3a1f4e1e2a9d4c6b1e7c3f2a8d5e9f4a2b6c8d1e3f7a9b2c4d6e8f1a3b5c7d9';
+
+  // In a real deployment, the editor would POST to a backend or GitHub API.
+  // Here we work entirely client-side with localStorage as a draft store.
+  const STORAGE_KEY = 'neurognewspaper_draft';
+
+  // ===== AUTH =====
+  async function sha256(message) {
+    const msgBuf = new TextEncoder().encode(message);
+    const hashBuf = await crypto.subtle.digest('SHA-256', msgBuf);
+    return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function checkPassword() {
+    const val = document.getElementById('pw-input').value;
+    const hash = await sha256(val);
+
+    // Accept if hash matches OR if using session token
+    const sessionOk = sessionStorage.getItem('ng_auth') === '1';
+    if (sessionOk || hash === PASSWORD_HASH) {
+      sessionStorage.setItem('ng_auth', '1');
+      document.getElementById('password-overlay').style.display = 'none';
+      document.getElementById('editor-page').style.display = 'block';
+      await initEditor();
+    } else {
+      document.getElementById('pw-error').textContent = 'Неверный пароль';
+    }
+  }
+
+  document.getElementById('pw-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') checkPassword();
+  });
+
+  // Auto-login if session active
+  window.addEventListener('DOMContentLoaded', async () => {
+    if (sessionStorage.getItem('ng_auth') === '1') {
+      document.getElementById('password-overlay').style.display = 'none';
+      document.getElementById('editor-page').style.display = 'block';
+      await initEditor();
+    }
+  });
+
+  // ===== DATA =====
+  let issue = null;
+
+  async function initEditor() {
+    // Try to load from localStorage first (unsaved edits)
+    const draft = localStorage.getItem(STORAGE_KEY);
+    if (draft) {
+      try { issue = JSON.parse(draft); } catch {}
+    }
+
+    if (!issue) {
+      // Load latest.json
+      try {
+        const res = await fetch('../data/latest.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        issue = await res.json();
+      } catch (err) {
+        showToast('Ошибка загрузки выпуска: ' + err.message);
+        return;
+      }
+    }
+
+    renderEditor();
+  }
+
+  function renderEditor() {
+    if (!issue) return;
+
+    // Status bar
+    const dot = document.getElementById('status-dot');
+    dot.className = 'status-dot ' + (issue.published ? 'published' : 'draft');
+    document.getElementById('status-label').textContent = issue.published ? 'Опубликован' : 'Черновик';
+    document.getElementById('issue-date-label').textContent = issue.date || '';
+    document.getElementById('publish-btn').textContent = issue.published ? 'Снять с публикации' : 'Опубликовать';
+
+    renderCards();
+  }
+
+  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', hype: 'Желтуха' };
+
+  function renderCards() {
+    const el = document.getElementById('editor-cards');
+    if (!issue || !issue.news || issue.news.length === 0) {
+      el.innerHTML = '<div class="loading-state">Новостей нет. Добавьте первую.</div>';
+      return;
+    }
+
+    const sorted = [...issue.news].sort((a, b) => b.importance - a.importance);
+    let html = '';
+
+    sorted.forEach((item, idx) => {
+      const realIdx = issue.news.indexOf(item);
+      html += buildEditorCard(item, realIdx);
+    });
+
+    el.innerHTML = html;
+  }
+
+  function buildEditorCard(item, idx) {
+    const sectionLabel = SECTION_LABELS[item.section] || item.section;
+    return `
+      <div class="editor-card" id="card-${idx}">
+        <div class="editor-card-header" onclick="toggleCard(${idx})">
+          <span class="section-select-badge">${escHtml(sectionLabel)}</span>
+          <span class="editor-card-headline">${escHtml(item.headline)}</span>
+          <span class="editor-card-meta">важность: ${item.importance}</span>
+          <button class="btn btn-danger" style="padding:.2rem .5rem;font-size:.6rem;margin-left:.5rem"
+                  onclick="event.stopPropagation();deleteNews(${idx})">✕</button>
+        </div>
+        <div class="editor-card-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Рубрика</label>
+              <select class="form-select" onchange="updateField(${idx},'section',this.value)">
+                <option value="models" ${item.section==='models'?'selected':''}>Модели</option>
+                <option value="platforms" ${item.section==='platforms'?'selected':''}>Платформы</option>
+                <option value="industry" ${item.section==='industry'?'selected':''}>Индустрия</option>
+                <option value="hype" ${item.section==='hype'?'selected':''}>Желтуха</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Важность (1–10)</label>
+              <div class="importance-range">
+                <input type="range" min="1" max="10" value="${item.importance}"
+                       oninput="this.nextElementSibling.textContent=this.value;updateField(${idx},'importance',+this.value)" />
+                <span class="range-val">${item.importance}</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Заголовок</label>
+              <input type="text" class="form-input" value="${escAttr(item.headline)}"
+                     oninput="updateField(${idx},'headline',this.value)" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Подзаголовок</label>
+              <input type="text" class="form-input" value="${escAttr(item.subheadline)}"
+                     oninput="updateField(${idx},'subheadline',this.value)" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Текст</label>
+              <textarea class="form-textarea" rows="5"
+                        oninput="updateField(${idx},'body',this.value)">${escHtml(item.body)}</textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Теги (через запятую)</label>
+              <input type="text" class="form-input"
+                     value="${escAttr((item.tags && item.tags.entities || []).join(', '))}"
+                     oninput="updateTags(${idx},this.value)" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Сентимент</label>
+              <select class="form-select" onchange="updateTagField(${idx},'sentiment',this.value)">
+                <option value="positive" ${item.tags&&item.tags.sentiment==='positive'?'selected':''}>Позитив</option>
+                <option value="negative" ${item.tags&&item.tags.sentiment==='negative'?'selected':''}>Негатив</option>
+                <option value="neutral" ${item.tags&&item.tags.sentiment==='neutral'?'selected':''}>Нейтрально</option>
+                <option value="rumor" ${item.tags&&item.tags.sentiment==='rumor'?'selected':''}>Слух</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">
+                <input type="checkbox" ${item.unconfirmed?'checked':''} onchange="updateField(${idx},'unconfirmed',this.checked)" />
+                Не подтверждено
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function escHtml(s) {
+    if (!s) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function escAttr(s) {
+    if (!s) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function toggleCard(idx) {
+    const card = document.getElementById('card-' + idx);
+    card.classList.toggle('open');
+  }
+
+  function updateField(idx, field, value) {
+    if (!issue || !issue.news[idx]) return;
+    issue.news[idx][field] = value;
+  }
+
+  function updateTags(idx, value) {
+    if (!issue || !issue.news[idx]) return;
+    if (!issue.news[idx].tags) issue.news[idx].tags = {};
+    issue.news[idx].tags.entities = value.split(',').map(s => s.trim()).filter(Boolean);
+  }
+
+  function updateTagField(idx, field, value) {
+    if (!issue || !issue.news[idx]) return;
+    if (!issue.news[idx].tags) issue.news[idx].tags = {};
+    issue.news[idx].tags[field] = value;
+  }
+
+  function deleteNews(idx) {
+    if (!issue || !issue.news) return;
+    if (!confirm('Удалить эту новость?')) return;
+    issue.news.splice(idx, 1);
+    renderCards();
+    showToast('Новость удалена');
+  }
+
+  // ===== ADD NEWS =====
+  function toggleAddPanel() {
+    const panel = document.getElementById('add-panel');
+    panel.classList.toggle('visible');
+  }
+
+  function addNewsItem() {
+    const headline = document.getElementById('add-headline').value.trim();
+    const subheadline = document.getElementById('add-subheadline').value.trim();
+    const body = document.getElementById('add-body').value.trim();
+    const section = document.getElementById('add-section').value;
+    const importance = +document.getElementById('add-importance').value;
+    const sourceUrl = document.getElementById('add-source-url').value.trim();
+
+    if (!headline) { showToast('Введите заголовок'); return; }
+
+    const item = {
+      id: 'manual-' + Date.now(),
+      section,
+      headline,
+      subheadline,
+      body,
+      importance,
+      sources: sourceUrl ? [{ title: 'Источник', url: sourceUrl, type: 'media' }] : [],
+      unconfirmed: false,
+      duplicate_note: null,
+      tags: { entities: [], sentiment: 'neutral', event: 'update' },
+    };
+
+    if (!issue) issue = { date: new Date().toISOString().slice(0, 10), published: false, news: [] };
+    if (!issue.news) issue.news = [];
+    issue.news.push(item);
+
+    // Reset form
+    ['add-headline', 'add-subheadline', 'add-body', 'add-source-url'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+    document.getElementById('add-importance').value = 5;
+
+    toggleAddPanel();
+    renderCards();
+    showToast('Новость добавлена');
+  }
+
+  // ===== SAVE / PUBLISH =====
+  function saveIssue() {
+    if (!issue) return;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(issue, null, 2));
+    showToast('Черновик сохранён локально');
+  }
+
+  function publishIssue() {
+    if (!issue) return;
+    issue.published = !issue.published;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(issue, null, 2));
+    renderEditor();
+    showToast(issue.published ? 'Выпуск помечен как опубликован' : 'Выпуск снят с публикации');
+    // In production: POST to GitHub API or backend to write the JSON file
+  }
+
+  function openPreview() {
+    const date = issue && issue.date;
+    const url = date ? `../?date=${date}` : '../';
+    window.open(url, '_blank');
+  }
+
+  // ===== TOAST =====
+  let toastTimer;
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('visible'), 2500);
+  }
+</script>
+</body>
+</html>

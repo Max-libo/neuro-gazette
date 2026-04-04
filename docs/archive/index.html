@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Архив — Нейрогазета</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="masthead-meta">Архив выпусков</span>
+      <nav class="masthead-nav">
+        <a href="../">Главная</a>
+        <a href="../editor/">Редактор</a>
+      </nav>
+    </div>
+    <div class="masthead-title">
+      <h1>Нейрогазета</h1>
+      <p class="masthead-subtitle">Архив выпусков</p>
+    </div>
+    <div class="masthead-rule"></div>
+  </header>
+
+  <main>
+    <div class="archive-list" id="archive-list">
+      <div class="loading-state">Загрузка архива…</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="../">Нейрогазета</a>
+      <span class="footer-sep">·</span>
+      <span>Архив выпусков</span>
+    </div>
+  </footer>
+
+  <script>
+    async function loadArchive() {
+      const el = document.getElementById('archive-list');
+      try {
+        // Load the index of all issues
+        const res = await fetch('../data/index.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const index = await res.json();
+
+        if (!index.issues || index.issues.length === 0) {
+          el.innerHTML = '<div class="loading-state">Архив пуст.</div>';
+          return;
+        }
+
+        // Sort by date descending
+        const sorted = [...index.issues].sort((a, b) => b.date.localeCompare(a.date));
+
+        let html = '';
+        sorted.forEach(issue => {
+          const d = new Date(issue.date + 'T00:00:00');
+          const label = d.toLocaleDateString('ru-RU', {
+            weekday: 'short', year: 'numeric', month: 'long', day: 'numeric',
+          });
+          const status = issue.published
+            ? ''
+            : '<span class="unconfirmed-badge" style="margin-left:.5rem;font-size:.6rem">черновик</span>';
+          html += `
+            <div class="archive-item">
+              <span class="archive-date">${issue.date}</span>
+              <a class="archive-title" href="../?date=${issue.date}">${label}${status}</a>
+              <span class="archive-count">${issue.count} новост${pluralRu(issue.count)}</span>
+            </div>`;
+        });
+
+        el.innerHTML = html;
+      } catch (err) {
+        el.innerHTML = `<div class="error-state">Не удалось загрузить архив.<br><small>${err.message}</small></div>`;
+      }
+    }
+
+    function pluralRu(n) {
+      const mod10 = n % 10;
+      const mod100 = n % 100;
+      if (mod100 >= 11 && mod100 <= 14) return 'ей';
+      if (mod10 === 1) return 'ь';
+      if (mod10 >= 2 && mod10 <= 4) return 'и';
+      return 'ей';
+    }
+
+    loadArchive();
+  </script>
+</body>
+</html>

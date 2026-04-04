@@ -1,0 +1,55 @@
+name: Daily Issue
+
+on:
+  schedule:
+    # 07:00 МСК = 04:00 UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch:    # ручной запуск из GitHub UI
+
+permissions:
+  contents: write       # нужно для коммита JSON
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Collect news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/collect.py
+
+      - name: Commit new issue
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          DATE=$(date -u +%Y-%m-%d)
+          git commit -m "feat: выпуск $DATE"
+          git push
+
+      - name: Notify Telegram
+        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          TEXT="📰 Нейрогазета: новый выпуск $DATE готов к редактуре."
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d chat_id="${CHAT_ID}" \
+            -d text="${TEXT}" \
+            -d parse_mode="Markdown"
