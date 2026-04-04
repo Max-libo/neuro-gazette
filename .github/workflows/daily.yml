@@ -39,6 +39,7 @@ jobs:
           git diff --cached --quiet && echo "No changes" && exit 0
           DATE=$(date -u +%Y-%m-%d)
           git commit -m "feat: выпуск $DATE"
+          git pull --rebase
           git push
 
       - name: Notify Telegram

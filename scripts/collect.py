@@ -262,9 +262,14 @@ async def collect_section(client: AsyncAnthropic, section: str) -> list[dict]:
 
 async def collect_all(api_key: str) -> dict:
     async with AsyncAnthropic(api_key=api_key) as client:
-        log.info("Параллельный сбор %d рубрик через %s…", len(SECTIONS), MODEL)
+        log.info("Сбор %d рубрик через %s (с паузой между запросами)…", len(SECTIONS), MODEL)
+
+        async def collect_staggered(section: str, delay: float) -> list[dict]:
+            await asyncio.sleep(delay)
+            return await collect_section(client, section)
+
         results = await asyncio.gather(
-            *[collect_section(client, s) for s in SECTIONS]
+            *[collect_staggered(s, i * 20) for i, s in enumerate(SECTIONS)]
         )
 
     seen_ids: set[str] = set()
