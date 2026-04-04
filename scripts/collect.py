@@ -39,10 +39,15 @@ SOURCES_FILE = REPO_ROOT / "sources.yaml"
 
 MODEL = "claude-sonnet-4-6"
 
-NOW        = datetime.now(timezone(timedelta(hours=3)))   # UTC+3 (МСК)
-TODAY      = NOW.date()
-TODAY_STR  = TODAY.isoformat()
-CUTOFF_24H = (NOW - timedelta(hours=24)).astimezone(timezone.utc)
+MSK        = timezone(timedelta(hours=3))
+NOW        = datetime.now(MSK)
+# Фиксированное окно: с 07:00 МСК вчера до 07:00 МСК сегодня.
+# Если запуск до 07:00 — берём предыдущее окно (позавчера→вчера).
+_today_0700 = NOW.replace(hour=7, minute=0, second=0, microsecond=0)
+_window_end = _today_0700 if NOW >= _today_0700 else _today_0700 - timedelta(days=1)
+CUTOFF_24H  = (_window_end - timedelta(hours=24)).astimezone(timezone.utc)
+TODAY       = _window_end.date()
+TODAY_STR   = TODAY.isoformat()
 
 SECTIONS  = ["models", "platforms", "industry", "hype"]
 RAW_LIMIT = 60   # максимум статей на вход Claude
