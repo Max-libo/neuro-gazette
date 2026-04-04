@@ -2,7 +2,7 @@
 """
 Нейрогазета — скрипт сборки выпуска.
 
-Параллельно запрашивает Anthropic API (4 запроса по рубрикам) с веб-поиском,
+Один запрос к Anthropic API с веб-поиском (max_uses=3),
 собирает AI-новости за последние 24 часа, сохраняет выпуск в docs/data/.
 """
 
@@ -16,13 +16,6 @@ from pathlib import Path
 
 import anthropic
 from anthropic import AsyncAnthropic
-from tenacity import (
-    retry,
-    stop_after_attempt,
-    wait_exponential,
-    retry_if_exception_type,
-    before_sleep_log,
-)
 import logging
 
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
@@ -81,6 +74,7 @@ SECTION_QUERIES = {
     ],
 }
 
+# JSON-схема вынесена в системный промпт — кешируется между retry-попытками
 SYSTEM_PROMPT = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
 Твой голос: факты и конкретика, без метафор, без восхищения, без воды.
 Правила:
@@ -90,50 +84,55 @@ SYSTEM_PROMPT = """Ты редактор профессионального еж
 - Дедупликация: если одна новость в нескольких источниках — одна запись с полем duplicate_note.
 - Язык: русский, деловой стиль.
 - importance: 9-10 главная новость дня, 6-8 важная, 1-5 краткая заметка.
+- Количество новостей на рубрику: целевой диапазон 5-7, но только реальные.
+  Если реальных новостей 2 — пиши 2, не заполняй рубрику мусором.
+  Если новостей больше 7 — отбери 7 самых важных по importance, остальные отсеки.
+  Обязательные условия для включения: есть конкретный источник с URL, новость произошла в период сбора.
+  Принцип: лучше меньше честных новостей, чем много выдуманных.
 - Возвращай ТОЛЬКО валидный JSON, без markdown-блоков и комментариев.
-"""
 
-def make_user_prompt(section: str, retry_hint: str = "") -> str:
-    name = SECTION_NAMES[section]
-    queries = "\n".join(f'  - "{q}"' for q in SECTION_QUERIES[section])
-    hint = f"\n\nВАЖНО: {retry_hint}" if retry_hint else ""
-    return f"""Дата выпуска: {TODAY_STR}
-Период сбора: с {PERIOD_FROM} по {PERIOD_TO} (строго последние 24 часа)
-Рубрика: {name}{hint}
-
-Выполни поиск по каждому из следующих запросов, затем синтезируй найденное в новости.
-Включай только материалы, опубликованные в период сбора. Если источник датирован раньше — пропусти.
-{queries}
-
-Приоритет источников:
-- Официальные блоги: openai.com/blog, anthropic.com/news, deepmind.google/blog, ai.meta.com/blog, mistral.ai/news, x.ai/blog, stability.ai/news
-- Отраслевые СМИ: techcrunch.com, theverge.com, reuters.com, bloomberg.com, wsj.com, wired.com
-- Открытый веб
-
-Верни JSON строго в формате:
-{{
-  "section": "{section}",
+Формат ответа — один JSON-объект со всеми рубриками:
+{
   "news": [
-    {{
+    {
       "id": "уникальный-id-через-дефис",
-      "section": "{section}",
+      "section": "models|platforms|industry|hype",
       "headline": "Заголовок на русском",
       "subheadline": "Одно предложение — суть новости",
       "body": "Полный текст. Факты, цифры, прямые цитаты.",
       "importance": 1,
       "sources": [
-        {{"title": "Название источника", "url": "https://...", "type": "official|media|rumor"}}
+        {"title": "Название источника", "url": "https://...", "type": "official|media|rumor"}
       ],
       "unconfirmed": false,
       "duplicate_note": null,
-      "tags": {{
+      "tags": {
         "entities": ["название-сущности"],
         "sentiment": "positive|negative|neutral|rumor",
         "event": "release|update|shutdown|investment|regulation|leak"
-      }}
-    }}
+      }
+    }
   ]
-}}"""
+}"""
+
+
+def make_user_prompt(retry_hint: str = "") -> str:
+    hint = f"\n\nВАЖНО: {retry_hint}" if retry_hint else ""
+    sections_block = ""
+    for key in SECTIONS:
+        queries = "\n".join(f'  - "{q}"' for q in SECTION_QUERIES[key])
+        sections_block += f"\n### {SECTION_NAMES[key]}\n{queries}\n"
+
+    return f"""Дата выпуска: {TODAY_STR}
+Период сбора: с {PERIOD_FROM} по {PERIOD_TO} (строго последние 24 часа){hint}
+
+Выполни поиск и собери новости по всем четырём рубрикам.
+Включай только материалы, опубликованные в период сбора.
+{sections_block}
+Приоритет источников:
+- Официальные блоги: openai.com/blog, anthropic.com/news, deepmind.google/blog, ai.meta.com/blog, mistral.ai/news, x.ai/blog, stability.ai/news
+- Отраслевые СМИ: techcrunch.com, theverge.com, reuters.com, bloomberg.com, wsj.com, wired.com
+- Открытый веб"""
 
 
 # ── Вспомогательные функции ─────────────────────────────────────────────────
@@ -225,23 +224,7 @@ def validate_and_fix(item: dict, section: str, seen_ids: set) -> dict | None:
     return item
 
 
-# ── Сбор по рубрике с retry ─────────────────────────────────────────────────
-
-async def _request_section(client: AsyncAnthropic, section: str, retry_hint: str = "") -> list[dict]:
-    """Один запрос к API для одной рубрики. Возвращает список новостей."""
-    response = await client.messages.create(
-        model=MODEL,
-        max_tokens=8192,
-        system=SYSTEM_PROMPT,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        messages=[{"role": "user", "content": make_user_prompt(section, retry_hint)}],
-    )
-
-    text = "".join(block.text for block in response.content if hasattr(block, "text"))
-    text = extract_json(text)
-    data = json.loads(text)  # бросит JSONDecodeError → уйдёт в retry
-    return data.get("news", [])
-
+# ── Единый запрос с retry ────────────────────────────────────────────────────
 
 def _retry_after(e: anthropic.RateLimitError, fallback: float = 65.0) -> float:
     """Читает retry-after из заголовков ответа, иначе возвращает fallback."""
@@ -254,51 +237,59 @@ def _retry_after(e: anthropic.RateLimitError, fallback: float = 65.0) -> float:
     return fallback
 
 
-async def collect_section(client: AsyncAnthropic, section: str) -> list[dict]:
-    """Сбор рубрики: при 429 ждёт retry-after из заголовка, до 5 попыток."""
-    last_error = ""
-    for attempt in range(1, 6):
-        try:
-            hint = f"Предыдущий ответ не был валидным JSON ({last_error}). Верни ТОЛЬКО JSON, без пояснений." if last_error else ""
-            news = await _request_section(client, section, hint)
-            log.info("  [%s] получено %d новостей (попытка %d)", section, len(news), attempt)
-            return news
-        except json.JSONDecodeError as e:
-            last_error = str(e)
-            log.warning("  [%s] невалидный JSON, попытка %d/5: %s", section, attempt, e)
-            if attempt < 5:
-                await asyncio.sleep(10)
-        except anthropic.RateLimitError as e:
-            wait = _retry_after(e)
-            log.warning("  [%s] rate limit, жду %.0fс (попытка %d/5)…", section, wait, attempt)
-            if attempt < 5:
-                await asyncio.sleep(wait)
-        except anthropic.APIError as e:
-            log.warning("  [%s] ошибка API, попытка %d/5: %s", section, attempt, e)
-            last_error = str(e)
-            if attempt < 5:
-                await asyncio.sleep(15)
+async def _request_all(client: AsyncAnthropic, retry_hint: str = "") -> list[dict]:
+    """Один запрос к API для всех рубрик. Возвращает плоский список новостей."""
+    response = await client.messages.create(
+        model=MODEL,
+        max_tokens=3000,
+        system=SYSTEM_PROMPT,
+        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 3}],
+        messages=[{"role": "user", "content": make_user_prompt(retry_hint)}],
+    )
 
-    log.error("  [%s] все попытки исчерпаны, рубрика пропущена", section)
-    return []
+    text = "".join(block.text for block in response.content if hasattr(block, "text"))
+    text = extract_json(text)
+    data = json.loads(text)  # бросит JSONDecodeError → уйдёт в retry
+    return data.get("news", [])
 
-
-# ── Основной сбор ────────────────────────────────────────────────────────────
 
 async def collect_all(api_key: str) -> dict:
+    """Сбор всех рубрик за один запрос: при 429 ждёт retry-after, до 5 попыток."""
     async with AsyncAnthropic(api_key=api_key) as client:
-        log.info("Последовательный сбор %d рубрик через %s…", len(SECTIONS), MODEL)
-        results = []
-        for section in SECTIONS:
-            results.append(await collect_section(client, section))
+        log.info("Сбор всех рубрик одним запросом через %s…", MODEL)
+        last_error = ""
+        news_list = []
+        for attempt in range(1, 6):
+            try:
+                hint = f"Предыдущий ответ не был валидным JSON ({last_error}). Верни ТОЛЬКО JSON, без пояснений." if last_error else ""
+                news_list = await _request_all(client, hint)
+                log.info("Получено %d новостей (попытка %d)", len(news_list), attempt)
+                break
+            except json.JSONDecodeError as e:
+                last_error = str(e)
+                log.warning("Невалидный JSON, попытка %d/5: %s", attempt, e)
+                if attempt < 5:
+                    await asyncio.sleep(10)
+            except anthropic.RateLimitError as e:
+                wait = _retry_after(e)
+                log.warning("Rate limit, жду %.0fс (попытка %d/5)…", wait, attempt)
+                if attempt < 5:
+                    await asyncio.sleep(wait)
+            except anthropic.APIError as e:
+                last_error = str(e)
+                log.warning("Ошибка API, попытка %d/5: %s", attempt, e)
+                if attempt < 5:
+                    await asyncio.sleep(15)
+        else:
+            log.error("Все попытки исчерпаны, выпуск пустой")
 
     seen_ids: set[str] = set()
     all_news = []
-    for section, news_list in zip(SECTIONS, results):
-        for item in news_list:
-            fixed = validate_and_fix(item, section, seen_ids)
-            if fixed:
-                all_news.append(fixed)
+    for item in news_list:
+        section = item.get("section") if item.get("section") in SECTIONS else "models"
+        fixed = validate_and_fix(item, section, seen_ids)
+        if fixed:
+            all_news.append(fixed)
 
     return {
         "date": TODAY_STR,
