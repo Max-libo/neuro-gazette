@@ -105,18 +105,13 @@ function buildMediumHtml(item) {
     </article>`;
 }
 
-/* ── BRIEF (importance 1–4) ── в колонке, компактная заметка */
+/* ── BRIEF (importance 1–4) ── размер как medium, без раскрытия */
 function buildBriefHtml(item) {
   return `
-    <article class="col-article col-article--brief" id="${esc(item.id)}" onclick="toggleExpand(this)">
+    <article class="col-article col-article--brief" id="${esc(item.id)}">
       ${sectionBadge(item.section)}
-      <h5 class="art-headline art-headline--brief">${esc(item.headline)}</h5>
+      <h5 class="art-headline art-headline--medium">${esc(item.headline)}</h5>
       <p class="art-sub art-sub--small">${esc(item.subheadline)}</p>
-      <div class="art-body art-body--collapse">
-        ${esc(item.body)}
-        ${buildMetaHtml(item)}
-      </div>
-      <span class="expand-hint">↓</span>
     </article>`;
 }
 
