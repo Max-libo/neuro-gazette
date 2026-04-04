@@ -330,14 +330,12 @@ async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> s
     return result
 
 
-# ── SYSTEM_PROMPT ─────────────────────────────────────────────────────────────
+# ── Промпты ──────────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
+EDIT_SYSTEM = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
 Голос: факты и конкретика, без метафор, без восхищения, без воды.
 
 Правила:
-- Отбирай только новости об AI/ML: модели, инструменты, инвестиции, регуляция, утечки.
-- Игнорируй нерелевантное: спорт, общая политика, новости без связи с AI.
 - Дедупликация: несколько источников об одном событии — одна запись, поле duplicate_note.
 - Целевой диапазон: 5-7 новостей на рубрику. Меньше честных лучше, чем больше выдуманных.
 - Если новостей по рубрике больше 7 — оставь топ-7 по importance, остальные отсеки.
@@ -374,24 +372,29 @@ SYSTEM_PROMPT = """Ты редактор профессионального еж
 }"""
 
 
-def build_user_prompt(articles: list[dict], hype_text: str) -> str:
+def build_filter_prompt(articles: list[dict], hype_text: str) -> str:
+    lines = [
+        "Из этого списка оставь только статьи с реальной новостной ценностью "
+        "для профессиональной AI-аудитории. Убери маркетинг, туториалы, старые материалы, "
+        "нерелевантное. Верни список в виде: заголовок | URL | источник. Без пояснений.\n",
+        f"Дата: {TODAY_STR}. Статей: {len(articles)}.\n",
+    ]
+    for a in articles:
+        lines.append(f"{a['title']} | {a['url']} | {a['source']} | {a['published']}")
+    if hype_text:
+        lines.append("\n=== ВЕБ-ПОИСК (hype) ===")
+        lines.append(hype_text)
+    return "\n".join(lines)
+
+
+def build_edit_prompt(filtered_text: str, hype_text: str) -> str:
     lines = [f"Дата выпуска: {TODAY_STR}\n"]
-
-    lines.append("=== МАТЕРИАЛЫ (рубрики models / platforms / industry) ===")
-    lines.append(f"Статей: {len(articles)}\n")
-    for i, a in enumerate(articles, 1):
-        lines.append(
-            f"[{i}] {a['title']}\n"
-            f"    Источник: {a['source']} | Дата: {a['published']}\n"
-            f"    URL: {a['url']}\n"
-            f"    Аннотация: {a.get('summary') or '—'}\n"
-        )
-
+    lines.append("=== ОТФИЛЬТРОВАННЫЕ МАТЕРИАЛЫ ===")
+    lines.append(filtered_text)
     if hype_text:
         lines.append("\n=== ВЕБ-ПОИСК (рубрика hype) ===")
         lines.append(hype_text)
-
-    lines.append("\nОтсортируй, дедуплицируй и оформи выпуск по схеме.")
+    lines.append("\nОформи финальный выпуск по схеме JSON.")
     return "\n".join(lines)
 
 
@@ -405,44 +408,13 @@ def _extract_json(text: str) -> str:
     return text.strip()
 
 
-async def process_with_claude(
-    client: AsyncAnthropic,
-    articles: list[dict],
-    hype_text: str,
-) -> list[dict]:
-    """Один запрос к Claude (без инструментов): обработка материалов в JSON."""
-    log.info("Пауза 15с перед вызовом Claude API…")
-    await asyncio.sleep(15)
-
+async def _api_call(client: AsyncAnthropic, **kwargs) -> str:
+    """Вызов Claude API с retry на rate-limit и API-ошибки. Возвращает текст ответа."""
     last_err = ""
     for attempt in range(1, 4):
         try:
-            hint = (
-                f"\n\nВАЖНО: предыдущий ответ не был валидным JSON ({last_err}). "
-                "Верни ТОЛЬКО JSON, без пояснений."
-            ) if last_err else ""
-
-            response = await client.messages.create(
-                model=MODEL,
-                max_tokens=4000,
-                system=SYSTEM_PROMPT,
-                messages=[{
-                    "role": "user",
-                    "content": build_user_prompt(articles, hype_text) + hint,
-                }],
-            )
-            text = _extract_json(response.content[0].text)
-            data = json.loads(text)
-            news = data.get("news", [])
-            log.info("Claude: оформлено %d новостей (попытка %d)", len(news), attempt)
-            return news
-
-        except json.JSONDecodeError as e:
-            last_err = str(e)
-            log.warning("Невалидный JSON, попытка %d/3: %s", attempt, e)
-            if attempt < 3:
-                await asyncio.sleep(10)
-
+            response = await client.messages.create(**kwargs)
+            return response.content[0].text
         except anthropic.RateLimitError as e:
             wait = 65.0
             try:
@@ -454,14 +426,71 @@ async def process_with_claude(
             log.warning("Rate limit, жду %.0fс (попытка %d/3)…", wait, attempt)
             if attempt < 3:
                 await asyncio.sleep(wait)
-
+            last_err = str(e)
         except anthropic.APIError as e:
             last_err = str(e)
             log.warning("Ошибка API, попытка %d/3: %s", attempt, e)
             if attempt < 3:
                 await asyncio.sleep(15)
+    raise RuntimeError(f"Claude API: все попытки исчерпаны. Последняя ошибка: {last_err}")
 
-    log.error("Claude: все попытки исчерпаны")
+
+async def filter_with_claude(
+    client: AsyncAnthropic,
+    articles: list[dict],
+    hype_text: str,
+) -> str:
+    """Вызов 1: Claude выбирает 30-40 самых важных статей. Возвращает текст списка."""
+    log.info("Вызов 1 — фильтрация (%d статей)…", len(articles))
+    text = await _api_call(
+        client,
+        model=MODEL,
+        max_tokens=8000,
+        messages=[{"role": "user", "content": build_filter_prompt(articles, hype_text)}],
+    )
+    log.info("Фильтрация: выбрано ~%d строк", text.count("\n"))
+    return text
+
+
+async def edit_with_claude(
+    client: AsyncAnthropic,
+    filtered_text: str,
+    hype_text: str,
+) -> list[dict]:
+    """Вызов 2: Claude оформляет финальный выпуск в JSON."""
+    log.info("Вызов 2 — редактура…")
+    last_err = ""
+    for attempt in range(1, 4):
+        try:
+            hint = (
+                f"\n\nВАЖНО: предыдущий ответ не был валидным JSON ({last_err}). "
+                "Верни ТОЛЬКО JSON, без пояснений."
+            ) if last_err else ""
+
+            text = await _api_call(
+                client,
+                model=MODEL,
+                max_tokens=8000,
+                system=EDIT_SYSTEM,
+                messages=[{
+                    "role": "user",
+                    "content": build_edit_prompt(filtered_text, hype_text) + hint,
+                }],
+            )
+            data = json.loads(_extract_json(text))
+            news = data.get("news", [])
+            log.info("Редактура: оформлено %d новостей (попытка %d)", len(news), attempt)
+            return news
+        except json.JSONDecodeError as e:
+            last_err = str(e)
+            log.warning("Невалидный JSON, попытка %d/3: %s", attempt, e)
+            if attempt < 3:
+                await asyncio.sleep(10)
+        except RuntimeError as e:
+            log.error("%s", e)
+            return []
+
+    log.error("Редактура: все попытки исчерпаны")
     return []
 
 
@@ -574,8 +603,12 @@ async def amain() -> None:
         log.error("Нет материалов — выпуск пустой")
         sys.exit(1)
 
-    # ── Этап 3: Claude API ────────────────────────────────────────────────────
-    news_list = await process_with_claude(client, raw_items, hype_text)
+    # ── Этап 3: Claude API — фильтрация + редактура ──────────────────────────
+    filtered_text = await filter_with_claude(client, raw_items, hype_text)
+    if not filtered_text.strip():
+        log.error("Фильтрация вернула пустой ответ")
+        sys.exit(1)
+    news_list = await edit_with_claude(client, filtered_text, hype_text)
 
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
