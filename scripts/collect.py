@@ -243,7 +243,7 @@ async def _request_all(client: AsyncAnthropic, retry_hint: str = "") -> list[dic
         model=MODEL,
         max_tokens=3000,
         system=SYSTEM_PROMPT,
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 3}],
+        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
         messages=[{"role": "user", "content": make_user_prompt(retry_hint)}],
     )
 
