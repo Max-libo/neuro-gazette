@@ -135,8 +135,9 @@
     </div>
     <button class="btn" onclick="toggleAddPanel()">+ Добавить новость</button>
     <button class="btn btn-primary" id="publish-btn" onclick="publishIssue()">Опубликовать</button>
-    <button class="btn" onclick="saveIssue()">Сохранить черновик</button>
+    <button class="btn" onclick="saveIssue()">Сохранить в GitHub</button>
     <button class="btn preview-toggle" onclick="openPreview()">Предпросмотр ↗</button>
+    <button class="btn" onclick="toggleTokenPanel()" title="Настройки GitHub токена">⚙</button>
   </div>
 
   <!-- Add news panel -->
@@ -193,6 +194,23 @@
   <!-- News cards -->
   <div id="editor-cards"></div>
 
+  <!-- GitHub token panel -->
+  <div id="token-panel" style="display:none;border:2px solid var(--rule);padding:1.5rem;margin-top:1rem">
+    <div style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-light);margin-bottom:1rem">GitHub токен (хранится локально)</div>
+    <div class="form-row">
+      <div class="form-group full">
+        <input type="password" class="form-input" id="github-token-input" placeholder="ghp_…" />
+      </div>
+    </div>
+    <div style="display:flex;gap:.5rem;margin-top:.5rem">
+      <button class="btn btn-primary" onclick="saveToken()">Сохранить токен</button>
+      <button class="btn" onclick="toggleTokenPanel()">Закрыть</button>
+    </div>
+    <div style="font-family:var(--font-mono);font-size:.65rem;color:var(--ink-faint);margin-top:.75rem">
+      Нужен токен с правом <code>contents: write</code> — создай на github.com/settings/tokens
+    </div>
+  </div>
+
 </main>
 
 <div class="toast" id="toast"></div>
@@ -211,9 +229,9 @@
   // To change: replace with SHA-256 hash of your password.
   const PASSWORD_HASH = '04cdf1da994d913dde4d76b1bdc24a13cf74c3df05178df1122e16e58fee26c5';
 
-  // In a real deployment, the editor would POST to a backend or GitHub API.
-  // Here we work entirely client-side with localStorage as a draft store.
   const STORAGE_KEY = 'neurognewspaper_draft';
+  const GITHUB_REPO = 'Max-libo/neuro-gazette';
+  const GITHUB_TOKEN_KEY = 'ng_github_token';
 
   // ===== AUTH =====
   async function sha256(message) {
@@ -473,20 +491,83 @@
     showToast('Новость добавлена');
   }
 
-  // ===== SAVE / PUBLISH =====
-  function saveIssue() {
-    if (!issue) return;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(issue, null, 2));
-    showToast('Черновик сохранён локально');
+  // ===== GITHUB API =====
+  async function githubPush(filePath, content, message) {
+    const token = localStorage.getItem(GITHUB_TOKEN_KEY);
+    if (!token) throw new Error('GitHub токен не задан — нажми ⚙');
+
+    const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`;
+    const headers = {
+      'Authorization': `Bearer ${token}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+    };
+
+    // Get current SHA
+    const getRes = await fetch(apiUrl, { headers });
+    let sha;
+    if (getRes.ok) { sha = (await getRes.json()).sha; }
+
+    const body = { message, content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))) };
+    if (sha) body.sha = sha;
+
+    const putRes = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (!putRes.ok) {
+      const err = await putRes.json().catch(() => ({}));
+      throw new Error(err.message || `HTTP ${putRes.status}`);
+    }
   }
 
-  function publishIssue() {
+  // ===== SAVE / PUBLISH =====
+  async function saveIssue() {
+    if (!issue) return;
+    showToast('Сохраняю в GitHub…');
+    try {
+      const date = issue.date;
+      await githubPush(`docs/data/${date}.json`, issue, `edit: обновлён выпуск ${date}`);
+      await githubPush('docs/data/latest.json', issue, `edit: latest.json → ${date}`);
+      localStorage.removeItem(STORAGE_KEY);
+      showToast('Сохранено в GitHub ✓');
+    } catch (e) {
+      showToast('Ошибка: ' + e.message);
+    }
+  }
+
+  async function publishIssue() {
     if (!issue) return;
     issue.published = !issue.published;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(issue, null, 2));
     renderEditor();
-    showToast(issue.published ? 'Выпуск помечен как опубликован' : 'Выпуск снят с публикации');
-    // In production: POST to GitHub API or backend to write the JSON file
+    showToast('Публикую в GitHub…');
+    try {
+      const date = issue.date;
+      await githubPush(`docs/data/${date}.json`, issue, `edit: выпуск ${date} ${issue.published ? 'опубликован' : 'снят с публикации'}`);
+      await githubPush('docs/data/latest.json', issue, `edit: latest.json → ${date}`);
+      localStorage.removeItem(STORAGE_KEY);
+      showToast(issue.published ? 'Опубликовано ✓' : 'Снято с публикации ✓');
+    } catch (e) {
+      issue.published = !issue.published;
+      renderEditor();
+      showToast('Ошибка: ' + e.message);
+    }
+  }
+
+  // ===== TOKEN SETTINGS =====
+  function toggleTokenPanel() {
+    const panel = document.getElementById('token-panel');
+    const visible = panel.style.display !== 'none';
+    panel.style.display = visible ? 'none' : 'block';
+    if (!visible) {
+      const stored = localStorage.getItem(GITHUB_TOKEN_KEY) || '';
+      document.getElementById('github-token-input').value = stored;
+    }
+  }
+
+  function saveToken() {
+    const val = document.getElementById('github-token-input').value.trim();
+    if (val) localStorage.setItem(GITHUB_TOKEN_KEY, val);
+    else localStorage.removeItem(GITHUB_TOKEN_KEY);
+    toggleTokenPanel();
+    showToast('Токен сохранён');
   }
 
   function openPreview() {
