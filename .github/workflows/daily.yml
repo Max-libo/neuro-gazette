@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install anthropic tenacity
+        run: pip install anthropic feedparser requests
 
       - name: Collect news
         env:
