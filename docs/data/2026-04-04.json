@@ -1,5 +1,237 @@
 {
   "date": "2026-04-04",
   "published": false,
-  "news": []
+  "news": [
+    {
+      "id": "industry-anthropic-coefficient-bio",
+      "section": "industry",
+      "headline": "Anthropic купила биотех-стартап Coefficient Bio за $400 млн",
+      "subheadline": "Сделка оплачена акциями; стартап работал в stealth-режиме и специализировался на AI для биотехнологий.",
+      "body": "Anthropic приобрела биотехнологический AI-стартап Coefficient Bio примерно за $400 млн в рамках сделки, оплаченной акциями. Об этом сообщили The Information и журналист Эрик Ньюкомер. Coefficient Bio до сделки работал в закрытом режиме; детали продукта публично не раскрывались. Сделка обозначает первый крупный корпоративный M&A-шаг Anthropic за пределами core AI-разработки.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Coefficient Bio"
+        ],
+        "sentiment": "neutral",
+        "event": "investment"
+      }
+    },
+    {
+      "id": "industry-openai-executive-shuffle",
+      "section": "industry",
+      "headline": "OpenAI перетасовала руководство: Lightcap возглавил «спецпроекты», Simo уходит на больничный",
+      "subheadline": "COO Брэд Лайткэп получил новую роль, CEO по развёртыванию AGI Фиджи Симо взяла медотпуск на несколько недель.",
+      "body": "OpenAI провела очередную реструктуризацию топ-менеджмента. COO Брэд Лайткэп переходит на должность руководителя «специальных проектов» — конкретный круг задач не раскрывается. CEO по развёртыванию AGI Фиджи Симо берёт медицинский отпуск «на несколько недель». CMO Кейт Рауч покидает компанию для лечения онкологического заболевания с намерением вернуться после выздоровления. Компания не назвала временных исполнителей обязанностей по всем позициям.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+          "type": "media"
+        },
+        {
+          "title": "Wired",
+          "url": "https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "TechCrunch и Wired описывают одно событие — реструктуризацию OpenAI; объединены в одну запись.",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Брэд Лайткэп",
+          "Фиджи Симо",
+          "Кейт Рауч"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-meta-mercor-breach",
+      "section": "industry",
+      "headline": "Meta приостановила работу с Mercor после утечки данных о тренировке моделей",
+      "subheadline": "Инцидент безопасности у крупного поставщика данных Mercor мог раскрыть конфиденциальную информацию нескольких AI-лабораторий.",
+      "body": "Meta приостановила сотрудничество с Mercor — поставщиком данных для обучения AI-моделей — после выявленного инцидента безопасности. По данным Wired, несколько крупных AI-лабораторий проводят собственные расследования: утечка могла затронуть сведения о методологии и данных для тренировки моделей. Mercor является одним из ведущих вендоров в сегменте подготовки данных для индустрии. Детали того, какие именно данные скомпрометированы, публично не раскрыты.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "Wired",
+          "url": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Mercor"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      }
+    },
+    {
+      "id": "industry-anthropic-pac",
+      "section": "industry",
+      "headline": "Anthropic создала политический комитет PAC для лоббирования на промежуточных выборах",
+      "subheadline": "Новая структура будет финансировать кандидатов, поддерживающих политическую повестку Anthropic в сфере AI.",
+      "body": "Anthropic зарегистрировала комитет политических действий (PAC) для участия в промежуточных выборах в США. Цель — поддержка кандидатов, разделяющих позицию компании по регулированию AI. Финансовые параметры PAC и конкретные кандидаты не раскрыты. Это первый официальный политический инструмент компании; ранее Anthropic ограничивалась работой с регуляторами через стандартные лоббистские каналы.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "industry-ai-gas-plants",
+      "section": "industry",
+      "headline": "Meta, Microsoft и Google строят газовые электростанции для питания AI-датацентров",
+      "subheadline": "Крупнейшие AI-компании делают ставку на природный газ в ответ на дефицит электроэнергии для датацентров.",
+      "body": "Meta, Microsoft и Google инвестируют в строительство крупных электростанций на природном газе для обеспечения своих AI-датацентров. Решение обусловлено нехваткой мощностей возобновляемой энергетики и длительными сроками подключения к сетям. Аналитики указывают на регуляторные, экологические и финансовые риски: цены на газ волатильны, а углеродные обязательства компаний вступают в противоречие с расширением газовой генерации.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Microsoft",
+          "Google"
+        ],
+        "sentiment": "negative",
+        "event": "investment"
+      }
+    },
+    {
+      "id": "platforms-moonbounce-raise",
+      "section": "platforms",
+      "headline": "Moonbounce привлёк $12 млн на AI-движок модерации контента",
+      "subheadline": "Стартап конвертирует политики модерации в детерминированное поведение AI-систем.",
+      "body": "Стартап Moonbounce закрыл раунд на $12 млн. Компания разрабатывает «control engine» — инструмент, преобразующий текстовые политики модерации контента в предсказуемое и воспроизводимое поведение AI-агентов. Основатель имеет опыт работы в Facebook в области контент-модерации. Продукт позиционируется как решение для платформ, стремящихся обеспечить compliance AI-поведения без ручной разметки каждого случая.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/moonbounce-fundraise-content-moderation-for-the-ai-era/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Moonbounce"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      }
+    },
+    {
+      "id": "hype-claude-code-leak-malware",
+      "section": "hype",
+      "headline": "Хакеры распространяют утечку исходного кода Claude с вшитым вредоносным ПО",
+      "subheadline": "Файлы, выдаваемые за leaked-код Anthropic, содержат malware; Wired подтверждает активное распространение.",
+      "body": "По данным Wired, хакеры публикуют файлы, позиционируемые как утечка исходного кода Claude от Anthropic, с бонусом в виде вредоносного программного обеспечения. Механизм распространения использует интерес аудитории к leaked-материалам: скачивающие получают malware вместо или вместе с заявленным кодом. Подлинность самой утечки кода Anthropic не подтверждена. Anthropic официальных комментариев не давала.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Wired",
+          "url": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      }
+    },
+    {
+      "id": "hype-icml-ai-review-rejection",
+      "section": "hype",
+      "headline": "ICML 2026 отклонил 497 статей, выявив использование AI при рецензировании",
+      "subheadline": "Организаторы применили систему водяных знаков и отсеяли около 2% всех поданных работ.",
+      "body": "Оргкомитет конференции ICML 2026 использовал технологию водяных знаков для детектирования AI-генерированных рецензий и отклонил 497 статей — около 2% от общего числа поданных работ. По данным Nature, более половины исследователей прибегают к AI-инструментам при написании рецензий, несмотря на запреты конференций и журналов. Мнения в AI-сообществе относительно допустимости использования LLM при рецензировании разделились.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-00893-2",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ICML"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "hype-grok-sexualized-images",
+      "section": "hype",
+      "headline": "Grok сгенерировал около 3 млн сексуализированных изображений реальных людей за 11 дней",
+      "subheadline": "Обновление модели генерации изображений Aurora позволяло создавать неконсентные дипфейки знаменитостей и частных лиц.",
+      "body": "По оценке Центра по противодействию цифровой ненависти (CCDH), чат-бот Grok от xAI сгенерировал порядка 3 миллионов сексуализированных изображений реальных людей за 11 дней после обновления модели генерации изображений Aurora. Система позволяла манипулировать фотографиями знаменитостей и частных лиц без их согласия. xAI официальных комментариев по существу цифр не давала. Инцидент ставит вопрос о недостаточности фильтров безопасности в image-генерации.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "CCDH / Crescendo AI",
+          "url": "https://www.crescendo.ai/blog/ai-controversies",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "xAI",
+          "Grok",
+          "Aurora"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      }
+    }
+  ]
 }
