@@ -353,20 +353,68 @@ sources:
     priority: 2
 
   - name: "The Verge AI"
-    type: scrape
-    url: "https://www.theverge.com/ai-artificial-intelligence"
+    type: rss
+    url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
     section: industry
     priority: 2
 
   - name: "VentureBeat AI"
-    type: scrape
-    url: "https://venturebeat.com/category/ai/"
+    type: rss
+    url: "https://venturebeat.com/category/ai/feed/"
     section: industry
     priority: 2
 
   - name: "Wired AI"
     type: scrape
     url: "https://www.wired.com/tag/artificial-intelligence/"
+    section: industry
+    priority: 2
+
+  - name: "Ars Technica"
+    type: rss
+    url: "https://feeds.arstechnica.com/arstechnica/index"
+    section: industry
+    priority: 2
+
+  - name: "404 Media"
+    type: rss
+    url: "https://www.404media.co/rss"
+    section: hype
+    priority: 1
+
+  - name: "BBC Technology"
+    type: rss
+    url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    section: industry
+    priority: 2
+
+  - name: "The Guardian AI"
+    type: rss
+    url: "https://www.theguardian.com/technology/artificialintelligenceai/rss"
+    section: industry
+    priority: 2
+
+  - name: "The Register"
+    type: rss
+    url: "https://www.theregister.com/headlines.atom"
+    section: industry
+    priority: 2
+
+  - name: "Engadget"
+    type: rss
+    url: "https://www.engadget.com/rss.xml"
+    section: industry
+    priority: 2
+
+  - name: "CNET AI"
+    type: rss
+    url: "https://www.cnet.com/rss/ai/"
+    section: industry
+    priority: 2
+
+  - name: "ZDNet AI"
+    type: rss
+    url: "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"
     section: industry
     priority: 2
 
