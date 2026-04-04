@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./
-server-dir: ./www/xn--80aahhcll4alt1a.xn--p1ai/
+www/xn--80aahhcll4alt1a.xn--p1ai/
