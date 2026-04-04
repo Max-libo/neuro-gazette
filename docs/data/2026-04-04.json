@@ -3,11 +3,35 @@
   "published": false,
   "news": [
     {
-      "id": "platforms-openclaw-claude-paywall",
+      "id": "models-prismml-1bit",
+      "section": "models",
+      "headline": "PrismML выпустила 1-битную LLM для работы без облака",
+      "subheadline": "Компания представила энергоэффективную языковую модель на 1-битных весах, ориентированную на локальный запуск.",
+      "body": "PrismML анонсировала языковую модель с 1-битными весами, разработанную для снижения энергопотребления и возможности запуска без облачной инфраструктуры. По заявлению компании, модель может работать на потребительском железе при значительно меньших требованиях к памяти и вычислительным ресурсам по сравнению с традиционными моделями с полноразрядными весами. Технические параметры и бенчмарки не раскрываются.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/04/prismml_1bit_llm/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "PrismML"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      }
+    },
+    {
+      "id": "platforms-openclaw-paid",
       "section": "platforms",
-      "headline": "Anthropic вводит доплату за использование Claude через сторонние инструменты",
-      "subheadline": "Подписчики Claude теперь обязаны отдельно платить за доступ через OpenClaw и аналогичные MCP-клиенты.",
-      "body": "Anthropic изменила условия использования API: подписка на Claude больше не покрывает доступ к модели через сторонние инструменты, в частности через OpenClaw — популярный MCP-клиент. Пользователям, работающим с Claude через такие интеграции, потребуется отдельный платный план. По существу это делает бесплатное или льготное использование Claude через OpenClaw невозможным. Критики расценивают шаг как фактический запрет OpenClaw-интеграции без формального её блокирования. Anthropic официальных комментариев с разъяснением мотивации не предоставила.",
+      "headline": "Anthropic сделал использование Claude через OpenClaw платным",
+      "subheadline": "Подписчики Claude теперь должны доплачивать за доступ через сторонний агент OpenClaw — бесплатное использование закрыто.",
+      "body": "Anthropic изменил условия работы с Claude через сторонние инструменты: пользователи, обращающиеся к модели через AI-агент OpenClaw, обязаны оформить отдельную платную подписку. Ранее доступ был включён в базовую подписку Claude. Компания не раскрыла стоимость дополнительного уровня. Решение фактически ограничивает использование OpenClaw без дополнительных трат, что The Verge расценивает как де-факто запрет для большинства пользователей. OpenClaw — один из наиболее популярных AI-агентов: за три недели до этого он набрал 135 000 звёзд на GitHub, однако одновременно стал объектом критики из-за серьёзных проблем с безопасностью.",
       "importance": 8,
       "sources": [
         {
@@ -22,28 +46,83 @@
         },
         {
           "title": "Engadget",
-          "url": "https://www.engadget.com/ai/its-no-longer-free-to-use-claude-through-third-party-tools-like-openclaw-160912082.html?src=rss",
+          "url": "https://www.engadget.com/ai/its-no-longer-free-to-use-claude-through-third-party-tools-like-openclaw-160912082.html",
           "type": "media"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "TechCrunch, The Verge и Engadget освещают одно событие — объединено в одну запись.",
+      "duplicate_note": "TechCrunch, The Verge и Engadget сообщают об одном решении Anthropic — объединено в одну запись.",
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude",
-          "OpenClaw"
+          "OpenClaw",
+          "Claude"
         ],
         "sentiment": "negative",
         "event": "update"
       }
     },
     {
-      "id": "industry-anthropic-coefficient-bio",
+      "id": "platforms-netflix-ai-editor",
+      "section": "platforms",
+      "headline": "Netflix запустил AI-инструмент для редактирования видео",
+      "subheadline": "Стриминговый сервис выпустил собственный AI-видеоредактор для внутреннего использования.",
+      "body": "Netflix представил AI-инструмент для редактирования видеоконтента. Подробности о функциональности и доступности для внешних пользователей не раскрываются. Шаг означает, что Netflix вслед за Meta, Google и другими крупными платформами начинает встраивать генеративные AI-инструменты непосредственно в производственные процессы.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "The Register",
+          "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/03/netflix_video_ai/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Netflix"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      }
+    },
+    {
+      "id": "industry-openai-executive-shuffle",
       "section": "industry",
-      "headline": "Anthropic приобрела биотехнологический стартап Coefficient Bio за $400 млн",
-      "subheadline": "Сделка стала первым крупным поглощением Anthropic в смежной отрасли.",
-      "body": "По данным источников TechCrunch, Anthropic закрыла сделку по приобретению биотехнологического стартапа Coefficient Bio приблизительно за $400 млн. Coefficient Bio специализируется на применении машинного обучения в молекулярной биологии. Официального подтверждения со стороны Anthropic на момент публикации не поступало. Сделка совпадает по времени с периодом активного роста оценки компании на частных рынках.",
+      "headline": "OpenAI перетасовал топ-менеджмент: Брэд Лайткэп возглавит «спецпроекты»",
+      "subheadline": "COO OpenAI Брэд Лайткэп получил новую роль, одновременно в компании произошли другие кадровые перестановки.",
+      "body": "OpenAI провёл реструктуризацию исполнительного руководства. COO Брэд Лайткэп переходит на должность, отвечающую за «специальные проекты». Также изменились роли Фиджи Симо и Кейт Рауч. Одновременно стало известно, что глава направления AGI в OpenAI уходит в отпуск. Компания не прокомментировала причины перестановок.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+          "type": "media"
+        },
+        {
+          "title": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/906965/openais-agi-boss-is-taking-a-leave-of-absence",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "The Verge сообщает об отпуске главы AGI-направления — включено в ту же запись как связанное кадровое событие.",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Брэд Лайткэп",
+          "Фиджи Симо"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-anthropic-biotech",
+      "section": "industry",
+      "headline": "Anthropic приобрёл биотех-стартап Coefficient Bio за $400 млн",
+      "subheadline": "Сделка стала первым крупным поглощением Anthropic в секторе биотехнологий.",
+      "body": "По данным TechCrunch, Anthropic купил биотехнологический стартап Coefficient Bio примерно за $400 млн. Детали сделки и профиль Coefficient Bio компании не раскрывают. Поглощение происходит на фоне активизации Anthropic на частных рынках капитала и одновременного создания собственного PAC для политической деятельности в США.",
       "importance": 8,
       "sources": [
         {
@@ -64,72 +143,49 @@
       }
     },
     {
-      "id": "industry-openai-exec-shuffle",
+      "id": "industry-russia-block-ai",
       "section": "industry",
-      "headline": "OpenAI перетасовала топ-менеджмент: Брэд Лайткап возглавит «специальные проекты»",
-      "subheadline": "COO OpenAI Брэд Лайткап получает новую роль, параллельно компания меняет позиции ещё нескольких руководителей.",
-      "body": "OpenAI провела реструктуризацию на уровне исполнительного руководства. COO Брэд Лайткап переходит на позицию, связанную с «особыми проектами» — направлением, детали которого не раскрываются. Также изменены роли Фиджи Симо и Кейт Руш. Одновременно стало известно, что руководитель направления AGI берёт отпуск. Компания не прокомментировала, связаны ли кадровые изменения с конкретными продуктовыми или стратегическими решениями.",
+      "headline": "Минцифры России подготовило законопроект о блокировке иностранных нейросетей",
+      "subheadline": "Законопроект создаёт реестр «доверенных» ИИ-моделей, одобренных ФСБ, и позволяет блокировать ChatGPT, Claude и Gemini.",
+      "body": "Министерство цифрового развития России подготовило законопроект об ограничении доступа к иностранным AI-моделям, передающим данные российских пользователей за рубеж. Под действие закона могут попасть ChatGPT, Claude и Gemini. Документ вводит реестр «доверенных» нейросетей, требующий одобрения ФСБ. Точные сроки принятия и вступления в силу не указаны.",
       "importance": 7,
       "sources": [
         {
-          "title": "TechCrunch",
-          "url": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+          "title": "НГС",
+          "url": "https://ngs.ru/text/world/2026/03/20/76321611/",
           "type": "media"
         },
         {
-          "title": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/906965/openais-agi-boss-is-taking-a-leave-of-absence",
+          "title": "The Moscow Times",
+          "url": "https://ru.themoscowtimes.com/2026/03/20/vlasti-prigotovilis-zablokirovat-inostrannie-neiroseti-v-rossii-a190341",
           "type": "media"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "TechCrunch и The Verge освещают смежные кадровые изменения в OpenAI — объединено.",
+      "duplicate_note": "НГС и The Moscow Times сообщают об одном законопроекте — объединено в одну запись.",
       "tags": {
         "entities": [
-          "OpenAI",
-          "Брэд Лайткап",
-          "Фиджи Симо",
-          "Кейт Руш"
+          "Минцифры России",
+          "ФСБ",
+          "ChatGPT",
+          "Claude",
+          "Gemini"
         ],
-        "sentiment": "neutral",
-        "event": "update"
-      }
-    },
-    {
-      "id": "industry-anthropic-pac",
-      "section": "industry",
-      "headline": "Anthropic создала политический комитет действий (PAC) для лоббирования в США",
-      "subheadline": "Компания усиливает политическое присутствие в Вашингтоне на фоне роста регуляторного давления на AI-отрасль.",
-      "body": "Anthropic зарегистрировала собственный политический комитет действий (PAC), расширяя активность в сфере GR и лоббирования. Ранее компания ограничивалась участием в отраслевых коалициях. Создание PAC совпадает с периодом обострения дискуссий вокруг регулирования AI в Конгрессе США. Финансовые параметры и конкретные политические приоритеты комитета не раскрыты.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "TechCrunch",
-          "url": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic"
-        ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "event": "regulation"
       }
     },
     {
-      "id": "platforms-prismml-1bit-llm",
-      "section": "platforms",
-      "headline": "PrismML выпустила 1-битную языковую модель для работы без облака",
-      "subheadline": "Стартап заявляет о многократном снижении энергопотребления по сравнению с классическими LLM при локальном развёртывании.",
-      "body": "Стартап PrismML представил 1-битную LLM, предназначенную для запуска на устройствах без подключения к облачной инфраструктуре. По заявлению компании, модель использует существенно меньше энергии по сравнению с традиционными моделями с полной точностью весов. Технология основана на концепции 1-битного квантования, при которой каждый вес представлен одним битом. Детали бенчмарков и сравнительные показатели качества на момент публикации не опубликованы.",
-      "importance": 6,
+      "id": "industry-icml-papers",
+      "section": "industry",
+      "headline": "ICML отклонил 497 научных статей за нарушение запрета на AI при рецензировании",
+      "subheadline": "Авторов поймали с помощью скрытых водяных знаков в текстах статей.",
+      "body": "Конференция по машинному обучению ICML отклонила 497 работ — около 2% от всех поданных материалов — после того, как было установлено, что авторы использовали LLM при рецензировании, нарушив прямой запрет оргкомитета. Для выявления нарушений организаторы применили технологию скрытых водяных знаков, встроенных непосредственно в тексты статей. По данным Nature, это один из крупнейших случаев массового отклонения работ на академической конференции по AI.",
+      "importance": 7,
       "sources": [
         {
-          "title": "The Register",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/04/prismml_1bit_llm/",
+          "title": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-00893-2",
           "type": "media"
         }
       ],
@@ -137,18 +193,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "PrismML"
+          "ICML"
         ],
-        "sentiment": "positive",
-        "event": "release"
+        "sentiment": "negative",
+        "event": "regulation"
       }
     },
     {
-      "id": "hype-musk-grok-spacex-ipo",
+      "id": "hype-musk-grok-spacex",
       "section": "hype",
-      "headline": "Маск требует от банков, ведущих IPO SpaceX, купить подписку на Grok",
-      "subheadline": "По данным источников, Илон Маск выдвинул финансовым организациям условие участия в размещении SpaceX — корпоративный контракт с xAI.",
-      "body": "По информации Ars Technica и Engadget, Илон Маск поставил банкам, привлечённым к работе над возможным IPO SpaceX, условие: они обязаны приобрести корпоративные подписки на Grok — AI-продукт его компании xAI. Источники не называются. Официальных подтверждений ни от SpaceX, ни от xAI не поступало. Если информация соответствует действительности, практика может привлечь внимание регуляторов как принуждение к коммерческим отношениям.",
+      "headline": "Маск потребовал от банков, обслуживающих IPO SpaceX, купить подписку на Grok",
+      "subheadline": "По данным Ars Technica и Engadget, Илон Маск сделал подписку на Grok условием участия банков в подготовке IPO SpaceX.",
+      "body": "Илон Маск, по имеющимся сведениям, потребовал, чтобы финансовые организации, задействованные в подготовке IPO SpaceX, оформили корпоративные подписки на AI-сервис Grok от xAI. Официальных подтверждений от SpaceX или xAI не поступало. Если информация подтвердится, это будет прямым использованием рыночного влияния SpaceX для продвижения продукта аффилированной компании.",
       "importance": 7,
       "sources": [
         {
@@ -158,34 +214,63 @@
         },
         {
           "title": "Engadget",
-          "url": "https://www.engadget.com/ai/banks-working-on-the-spacex-ipo-reportedly-have-to-subscribe-to-grok-200213071.html?src=rss",
+          "url": "https://www.engadget.com/ai/banks-working-on-the-spacex-ipo-reportedly-have-to-subscribe-to-grok-200213071.html",
           "type": "media"
         }
       ],
       "unconfirmed": true,
-      "duplicate_note": "Ars Technica и Engadget освещают один инцидент — объединено.",
+      "duplicate_note": "Ars Technica и Engadget сообщают об одном инциденте — объединено в одну запись.",
       "tags": {
         "entities": [
           "Илон Маск",
           "SpaceX",
-          "xAI",
-          "Grok"
+          "Grok",
+          "xAI"
         ],
         "sentiment": "negative",
         "event": "leak"
       }
     },
     {
-      "id": "hype-pentagon-anthropic-supply-chain",
+      "id": "hype-openclaw-security",
       "section": "hype",
-      "headline": "Пентагон признал Anthropic «угрозой цепочки поставок» и ограничил военным доступ к Claude",
-      "subheadline": "Министерство обороны США заблокировало подрядчикам работу с Claude после отказа Anthropic снять ограничения на автономные вооружения.",
-      "body": "По данным CBS News, Пентагон официально присвоил Anthropic статус «угрозы цепочки поставок» и запретил военным подрядчикам использовать Claude в проектах Министерства обороны. Поводом послужил отказ Anthropic убрать из политики использования модели запрет на применение в системах автономного летального оружия. Anthropic не подтвердила и не опровергла факт переговоров с Пентагоном. Ситуация прямо противоположна позиции OpenAI, заключившей контракт с Министерством обороны.",
+      "headline": "AI-агент OpenClaw: 135 000 звёзд на GitHub и три критические уязвимости за три недели",
+      "subheadline": "В маркетплейсе OpenClaw нашли 335 вредоносных навыков, а 21 639 экземпляров агента оказались открыты в публичном интернете.",
+      "body": "Вирусный AI-агент OpenClaw, набравший 135 000 звёзд на GitHub за несколько недель, получил три критические CVE. Исследователи безопасности обнаружили в его официальном маркетплейсе навыков 335 вредоносных расширений, в том числе кейлоггеры. Параллельно выяснилось, что 21 639 экземпляров агента доступны в открытом интернете без аутентификации. Ars Technica рекомендует всем пользователям OpenClaw считать свои системы скомпрометированными.",
       "importance": 8,
       "sources": [
         {
-          "title": "CBS News",
-          "url": "https://www.cbsnews.com/news/pentagon-anthropic-ai-supply-chain-risk-military/",
+          "title": "Dark Reading",
+          "url": "https://darkreading.com/vulnerabilities-threats/openclaw-viral-ai-agent-security-crisis",
+          "type": "media"
+        },
+        {
+          "title": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Dark Reading и Ars Technica описывают один и тот же кризис безопасности — объединено в одну запись.",
+      "tags": {
+        "entities": [
+          "OpenClaw"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      }
+    },
+    {
+      "id": "hype-maduro-deepfake",
+      "section": "hype",
+      "headline": "Дипфейки с «захватом» Мадуро разошлись в соцсетях и вызвали политический переполох",
+      "subheadline": "Реалистичные AI-изображения несуществующего ареста президента Венесуэлы распространились накануне политического кризиса.",
+      "body": "Около 30 марта 2026 года в социальных сетях распространились сгенерированные AI изображения, имитирующие задержание президента Венесуэлы Николаса Мадуро. Материалы вызвали замешательство среди пользователей и обострили опасения о манипуляции общественным мнением в условиях политического кризиса в стране. Факт фальсификации был установлен, однако изображения продолжали распространяться.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "Crescendo AI",
+          "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
           "type": "media"
         }
       ],
@@ -193,13 +278,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic",
-          "Claude",
-          "Пентагон",
-          "Министерство обороны США"
+          "Николас Мадуро",
+          "Венесуэла"
         ],
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "leak"
       }
     }
   ]
