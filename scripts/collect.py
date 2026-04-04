@@ -37,8 +37,14 @@ LATEST_FILE = DATA_DIR / "latest.json"
 
 MODEL = "claude-sonnet-4-6"
 
-TODAY = datetime.now(timezone(timedelta(hours=3))).date()   # UTC+3 (МСК)
+NOW = datetime.now(timezone(timedelta(hours=3)))            # UTC+3 (МСК)
+TODAY = NOW.date()
 TODAY_STR = TODAY.isoformat()
+YESTERDAY_STR = (TODAY - timedelta(days=1)).isoformat()
+
+# Точный диапазон сбора: последние 24 часа
+PERIOD_FROM = (NOW - timedelta(hours=24)).strftime("%Y-%m-%d %H:%M МСК")
+PERIOD_TO   = NOW.strftime("%Y-%m-%d %H:%M МСК")
 
 SECTIONS = ["models", "platforms", "industry", "hype"]
 SECTION_NAMES = {
@@ -51,33 +57,34 @@ SECTION_NAMES = {
 # Направляющие поисковые запросы по каждой рубрике
 SECTION_QUERIES = {
     "models": [
-        f"new AI language model release {TODAY_STR}",
-        f"LLM benchmark results {TODAY_STR}",
-        f"OpenAI Anthropic Google DeepMind model announcement {TODAY_STR}",
-        f"multimodal AI model update {TODAY_STR}",
+        f"new AI language model release {TODAY_STR} OR {YESTERDAY_STR}",
+        f"LLM benchmark results {TODAY_STR} OR {YESTERDAY_STR}",
+        f"OpenAI Anthropic Google DeepMind model announcement {TODAY_STR} OR {YESTERDAY_STR}",
+        f"multimodal AI model update {TODAY_STR} OR {YESTERDAY_STR}",
     ],
     "platforms": [
-        f"AI developer tools release {TODAY_STR}",
-        f"AI API update IDE integration {TODAY_STR}",
-        f"new AI product launch {TODAY_STR}",
-        f"AI coding assistant update {TODAY_STR}",
+        f"AI developer tools release {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI API update IDE integration {TODAY_STR} OR {YESTERDAY_STR}",
+        f"new AI product launch {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI coding assistant update {TODAY_STR} OR {YESTERDAY_STR}",
     ],
     "industry": [
-        f"AI startup funding investment {TODAY_STR}",
-        f"AI regulation policy {TODAY_STR}",
-        f"AI company acquisition merger {TODAY_STR}",
-        f"AI executive hire {TODAY_STR}",
+        f"AI startup funding investment {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI regulation policy {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI company acquisition merger {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI executive hire {TODAY_STR} OR {YESTERDAY_STR}",
     ],
     "hype": [
-        f"AI leak rumor unconfirmed {TODAY_STR}",
-        f"AI controversy scandal {TODAY_STR}",
-        f"AI model capability claim {TODAY_STR}",
+        f"AI leak rumor unconfirmed {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI controversy scandal {TODAY_STR} OR {YESTERDAY_STR}",
+        f"AI model capability claim {TODAY_STR} OR {YESTERDAY_STR}",
     ],
 }
 
 SYSTEM_PROMPT = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
 Твой голос: факты и конкретика, без метафор, без восхищения, без воды.
 Правила:
+- Включай ТОЛЬКО новости, опубликованные в указанный период сбора. Игнорируй более старые материалы, даже если они релевантны.
 - Пиши только то, что подтверждено источниками или явно помечай как слух.
 - Не раздувай выпуск: если новостей мало — пиши мало.
 - Дедупликация: если одна новость в нескольких источниках — одна запись с полем duplicate_note.
@@ -91,9 +98,11 @@ def make_user_prompt(section: str, retry_hint: str = "") -> str:
     queries = "\n".join(f'  - "{q}"' for q in SECTION_QUERIES[section])
     hint = f"\n\nВАЖНО: {retry_hint}" if retry_hint else ""
     return f"""Дата выпуска: {TODAY_STR}
+Период сбора: с {PERIOD_FROM} по {PERIOD_TO} (строго последние 24 часа)
 Рубрика: {name}{hint}
 
-Выполни поиск по каждому из следующих запросов, затем синтезируй найденное в новости:
+Выполни поиск по каждому из следующих запросов, затем синтезируй найденное в новости.
+Включай только материалы, опубликованные в период сбора. Если источник датирован раньше — пропусти.
 {queries}
 
 Приоритет источников:
