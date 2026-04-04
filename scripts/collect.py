@@ -2,8 +2,8 @@
 """
 Нейрогазета — скрипт сборки выпуска.
 
-Этап 1: RSS-ленты (модели / платформы / индустрия) через feedparser.
-Этап 2: Веб-поиск Claude только для рубрики hype (2 запроса, max_uses=2).
+Этап 1: RSS и scrape из sources.yaml (тип rss / scrape).
+Этап 2: Веб-поиск Claude для рубрики hype (запросы из sources.yaml, max_uses=2).
 Этап 3: Один вызов Claude API — сортировка, дедупликация, JSON.
 """
 
@@ -17,9 +17,12 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib.parse import urljoin
 
 import feedparser
 import requests
+import yaml
+from bs4 import BeautifulSoup
 import anthropic
 from anthropic import AsyncAnthropic
 
@@ -28,81 +31,37 @@ log = logging.getLogger(__name__)
 
 # ── Конфигурация ─────────────────────────────────────────────────────────────
 
-REPO_ROOT   = Path(__file__).parent.parent
-DATA_DIR    = REPO_ROOT / "docs" / "data"
-INDEX_FILE  = DATA_DIR / "index.json"
-LATEST_FILE = DATA_DIR / "latest.json"
+REPO_ROOT    = Path(__file__).parent.parent
+DATA_DIR     = REPO_ROOT / "docs" / "data"
+INDEX_FILE   = DATA_DIR / "index.json"
+LATEST_FILE  = DATA_DIR / "latest.json"
+SOURCES_FILE = REPO_ROOT / "sources.yaml"
 
 MODEL = "claude-sonnet-4-6"
 
 NOW        = datetime.now(timezone(timedelta(hours=3)))   # UTC+3 (МСК)
 TODAY      = NOW.date()
 TODAY_STR  = TODAY.isoformat()
-CUTOFF_UTC = (NOW - timedelta(hours=24)).astimezone(timezone.utc)
+CUTOFF_24H = (NOW - timedelta(hours=24)).astimezone(timezone.utc)
+CUTOFF_48H = (NOW - timedelta(hours=48)).astimezone(timezone.utc)
 
-SECTIONS  = ["models", "platforms", "industry", "hype"]
-RAW_LIMIT = 60   # максимум RSS-статей на вход Claude
+SECTIONS     = ["models", "platforms", "industry", "hype"]
+RAW_LIMIT    = 60   # максимум статей на вход Claude
+MIN_ARTICLES = 10   # если меньше — расширяем окно до 48ч
 
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
-    "Accept": "application/rss+xml, application/xml, text/xml, */*",
+    "Accept": "text/html,application/rss+xml,application/xml,*/*",
 }
 
-# ── Кандидаты RSS-лент ────────────────────────────────────────────────────────
+# ── Загрузка источников ───────────────────────────────────────────────────────
 
-RSS_FEEDS_CANDIDATE = [
-    # Официальные блоги моделей
-    "https://openai.com/blog/rss.xml",
-    "https://www.anthropic.com/rss.xml",
-    "https://deepmind.google/blog/rss.xml",
-    "https://ai.meta.com/blog/feed/",
-    "https://mistral.ai/news/rss",
-    "https://blog.xai.com/rss",
-    "https://huggingface.co/blog/feed.xml",
-    "https://cohere.com/blog/rss",
-    "https://stability.ai/news/rss",
-    "https://runwayml.com/blog/rss",
-    "https://elevenlabs.io/blog/rss",
-    "https://www.midjourney.com/updates/rss",
-    "https://developers.sber.ru/blog/rss",
-    "https://yandex.ru/blog/rss",
-    # Медиа об AI
-    "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml",
-    "https://venturebeat.com/category/ai/feed/",
-    "https://www.wired.com/feed/tag/ai/latest/rss",
-    "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-]
+def load_sources() -> dict:
+    """Читает sources.yaml из корня репозитория."""
+    with open(SOURCES_FILE, encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
-# ── Проверка живых лент ───────────────────────────────────────────────────────
-
-def _check_feed(url: str) -> str | None:
-    """Проверяет доступность RSS-ленты. Возвращает URL если лента рабочая."""
-    try:
-        resp = requests.get(url, headers=HTTP_HEADERS, timeout=10)
-        if resp.status_code != 200:
-            log.debug("Feed dead (%d): %s", resp.status_code, url)
-            return None
-        parsed = feedparser.parse(resp.content)
-        if not parsed.entries:
-            log.debug("Feed empty: %s", url)
-            return None
-        return url
-    except Exception as e:
-        log.debug("Feed error (%s): %s", url, e)
-        return None
-
-
-def probe_feeds(candidates: list[str]) -> list[str]:
-    """Параллельно проверяет ленты, возвращает только рабочие."""
-    with ThreadPoolExecutor(max_workers=len(candidates)) as ex:
-        results = list(ex.map(_check_feed, candidates))
-    live = [url for url in results if url]
-    log.info("Живых лент: %d из %d", len(live), len(candidates))
-    return live
-
-
-# ── Этап 1: RSS ───────────────────────────────────────────────────────────────
+# ── Вспомогательные функции ───────────────────────────────────────────────────
 
 def _clean_text(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text)
@@ -110,16 +69,44 @@ def _clean_text(text: str) -> str:
     return text.strip()
 
 
-def fetch_rss_feed(url: str) -> list[dict]:
+def _parse_date(value: str) -> datetime | None:
+    """Пробует распарсить строку даты в datetime с tzinfo."""
+    if not value:
+        return None
+    value = value.strip()
+    # Обрезаем лишние части (миллисекунды и т.п.)
+    value = re.sub(r"\.\d+", "", value)
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S",
+        "%Y-%m-%d",
+        "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S GMT",
+    ):
+        try:
+            dt = datetime.strptime(value[:25], fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except ValueError:
+            pass
+    return None
+
+
+# ── RSS ───────────────────────────────────────────────────────────────────────
+
+def fetch_rss_feed(source: dict, cutoff: datetime) -> list[dict]:
+    url  = source["url"]
+    name = source["name"]
     try:
         resp = requests.get(url, headers=HTTP_HEADERS, timeout=15)
         resp.raise_for_status()
         feed = feedparser.parse(resp.content)
     except Exception as e:
-        log.warning("RSS %s — ошибка: %s", url, e)
+        log.warning("RSS %s — ошибка: %s", name, e)
         return []
 
-    domain = url.split("/")[2]
     result = []
     for entry in feed.entries:
         pub_dt = None
@@ -132,8 +119,8 @@ def fetch_rss_feed(url: str) -> list[dict]:
                     pass
                 break
 
-        if pub_dt and pub_dt < CUTOFF_UTC:
-            continue  # старше 24ч — пропускаем
+        if pub_dt and pub_dt < cutoff:
+            continue
 
         title = (getattr(entry, "title", "") or "").strip()
         if not title:
@@ -147,21 +134,150 @@ def fetch_rss_feed(url: str) -> list[dict]:
         pub_str = pub_dt.date().isoformat() if pub_dt else TODAY_STR
 
         result.append({
-            "title": title,
-            "url": link,
-            "source": domain,
+            "title":     title,
+            "url":       link,
+            "source":    name,
             "published": pub_str,
-            "summary": summary,
+            "summary":   summary,
         })
 
+    log.debug("RSS %s: %d статей", name, len(result))
     return result
 
 
-def fetch_all_rss(live_feeds: list[str]) -> list[dict]:
-    with ThreadPoolExecutor(max_workers=max(1, len(live_feeds))) as ex:
-        results = list(ex.map(fetch_rss_feed, live_feeds))
-    all_items = [item for chunk in results for item in chunk]
-    log.info("RSS: %d статей из %d живых лент", len(all_items), len(live_feeds))
+# ── Scrape ────────────────────────────────────────────────────────────────────
+
+def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
+    """
+    Парсит HTML-страницу в поисках заголовков и ссылок на статьи.
+    Сначала пробует JSON-LD, затем fallback на теги h1/h2/h3.
+    """
+    url  = source["url"]
+    name = source["name"]
+    try:
+        resp = requests.get(url, headers=HTTP_HEADERS, timeout=15)
+        resp.raise_for_status()
+    except Exception as e:
+        log.warning("Scrape %s — ошибка: %s", name, e)
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    results: list[dict] = []
+    seen_urls: set[str] = set()
+
+    # 1. JSON-LD structured data (самый точный метод)
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string or "")
+            items = data if isinstance(data, list) else [data]
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                if item.get("@type") not in ("Article", "NewsArticle", "BlogPosting"):
+                    continue
+                title = (item.get("headline") or "").strip()
+                main  = item.get("mainEntityOfPage")
+                link  = (
+                    item.get("url") or
+                    (main.get("@id") if isinstance(main, dict) else None) or
+                    ""
+                ).strip()
+                if not link.startswith("http"):
+                    link = urljoin(url, link)
+                if not title or not link or link in seen_urls:
+                    continue
+                pub_dt = _parse_date(
+                    item.get("datePublished") or item.get("dateModified") or ""
+                )
+                if pub_dt and pub_dt < cutoff:
+                    continue
+                seen_urls.add(link)
+                results.append({
+                    "title":     title,
+                    "url":       link,
+                    "source":    name,
+                    "published": pub_dt.date().isoformat() if pub_dt else TODAY_STR,
+                    "summary":   (item.get("description") or "")[:500],
+                })
+        except Exception:
+            pass
+
+    if results:
+        log.debug("Scrape %s (JSON-LD): %d статей", name, len(results))
+        return results
+
+    # 2. Fallback: поиск заголовков h1/h2/h3 со ссылками
+    for heading in soup.find_all(["h1", "h2", "h3"]):
+        # Ищем ссылку внутри заголовка или в ближайшем родителе
+        a = heading.find("a", href=True)
+        if not a:
+            parent = heading.parent
+            a = parent.find("a", href=True) if parent else None
+        if not a:
+            continue
+
+        title = heading.get_text(strip=True)
+        if len(title) < 15:
+            continue
+
+        link = a["href"]
+        if not link.startswith("http"):
+            link = urljoin(url, link)
+        if link in seen_urls or link.rstrip("/") == url.rstrip("/"):
+            continue
+        seen_urls.add(link)
+
+        # Ищем дату в ближайшем блоке-предке
+        pub_dt = None
+        block  = heading.find_parent(["article", "div", "li", "section"])
+        if block:
+            time_tag = block.find("time")
+            if time_tag:
+                pub_dt = _parse_date(
+                    time_tag.get("datetime", "") or time_tag.get_text()
+                )
+            if not pub_dt:
+                for elem in block.find_all(["span", "p", "div"], limit=15):
+                    cls = " ".join(elem.get("class") or [])
+                    if any(k in cls.lower() for k in ("date", "time", "publish", "meta", "ago")):
+                        pub_dt = _parse_date(elem.get_text(strip=True))
+                        if pub_dt:
+                            break
+
+        if pub_dt and pub_dt < cutoff:
+            continue
+
+        results.append({
+            "title":     title,
+            "url":       link,
+            "source":    name,
+            "published": pub_dt.date().isoformat() if pub_dt else TODAY_STR,
+            "summary":   "",
+        })
+
+    log.debug("Scrape %s (HTML): %d статей", name, len(results))
+    return results
+
+
+# ── Сбор всех источников ──────────────────────────────────────────────────────
+
+def collect_from_sources(sources: list[dict], cutoff: datetime) -> list[dict]:
+    """Параллельно собирает материалы из RSS и scrape-источников."""
+    rss_sources    = [s for s in sources if s.get("type") == "rss"]
+    scrape_sources = [s for s in sources if s.get("type") == "scrape"]
+
+    all_items: list[dict] = []
+
+    if rss_sources:
+        with ThreadPoolExecutor(max_workers=len(rss_sources)) as ex:
+            for items in ex.map(lambda s: fetch_rss_feed(s, cutoff), rss_sources):
+                all_items.extend(items)
+
+    if scrape_sources:
+        with ThreadPoolExecutor(max_workers=min(10, len(scrape_sources))) as ex:
+            for items in ex.map(lambda s: scrape_page(s, cutoff), scrape_sources):
+                all_items.extend(items)
+
     return all_items
 
 
@@ -182,20 +298,13 @@ def deduplicate_raw(articles: list[dict]) -> list[dict]:
     return result
 
 
-# ── Этап 2: веб-поиск для hype ────────────────────────────────────────────────
+# ── Hype через веб-поиск ──────────────────────────────────────────────────────
 
-HYPE_QUERIES = [
-    "AI news viral controversy today",
-    "нейросети скандал обсуждение сегодня",
-]
-
-
-async def fetch_hype_via_search(client: AsyncAnthropic) -> str:
-    """Два запроса к Claude с web_search для hype-материалов.
-    Возвращает сводный текст или пустую строку."""
+async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> str:
+    """Запросы к Claude с web_search для hype-материалов."""
     blocks: list[str] = []
 
-    for query in HYPE_QUERIES:
+    for query in queries:
         try:
             response = await client.messages.create(
                 model=MODEL,
@@ -265,17 +374,17 @@ SYSTEM_PROMPT = """Ты редактор профессионального еж
 }"""
 
 
-def build_user_prompt(rss_articles: list[dict], hype_text: str) -> str:
+def build_user_prompt(articles: list[dict], hype_text: str) -> str:
     lines = [f"Дата выпуска: {TODAY_STR}\n"]
 
-    lines.append("=== RSS-МАТЕРИАЛЫ (рубрики models / platforms / industry) ===")
-    lines.append(f"Статей: {len(rss_articles)}\n")
-    for i, a in enumerate(rss_articles, 1):
+    lines.append("=== МАТЕРИАЛЫ (рубрики models / platforms / industry) ===")
+    lines.append(f"Статей: {len(articles)}\n")
+    for i, a in enumerate(articles, 1):
         lines.append(
             f"[{i}] {a['title']}\n"
             f"    Источник: {a['source']} | Дата: {a['published']}\n"
             f"    URL: {a['url']}\n"
-            f"    Аннотация: {a['summary'] or '—'}\n"
+            f"    Аннотация: {a.get('summary') or '—'}\n"
         )
 
     if hype_text:
@@ -286,7 +395,7 @@ def build_user_prompt(rss_articles: list[dict], hype_text: str) -> str:
     return "\n".join(lines)
 
 
-# ── Этап 3: Claude API ────────────────────────────────────────────────────────
+# ── Claude API ────────────────────────────────────────────────────────────────
 
 def _extract_json(text: str) -> str:
     text = text.strip()
@@ -298,7 +407,7 @@ def _extract_json(text: str) -> str:
 
 async def process_with_claude(
     client: AsyncAnthropic,
-    rss_articles: list[dict],
+    articles: list[dict],
     hype_text: str,
 ) -> list[dict]:
     """Один запрос к Claude (без инструментов): обработка материалов в JSON."""
@@ -319,7 +428,7 @@ async def process_with_claude(
                 system=SYSTEM_PROMPT,
                 messages=[{
                     "role": "user",
-                    "content": build_user_prompt(rss_articles, hype_text) + hint,
+                    "content": build_user_prompt(articles, hype_text) + hint,
                 }],
             )
             text = _extract_json(response.content[0].text)
@@ -434,26 +543,39 @@ async def amain() -> None:
         log.error("ANTHROPIC_API_KEY не задан")
         sys.exit(1)
 
+    # ── Загружаем sources.yaml ─────────────────────────────────────────────────
+    config  = load_sources()
+    sources = config.get("sources", [])
+    hype_queries = (config.get("search_queries") or {}).get("hype", [])
+    log.info("Источников: %d, hype-запросов: %d", len(sources), len(hype_queries))
+
     client = AsyncAnthropic(api_key=anthropic_key)
 
-    # ── Этап 1: RSS ────────────────────────────────────────────────────────────
-    log.info("Проверяем RSS-ленты…")
-    live_feeds = probe_feeds(RSS_FEEDS_CANDIDATE)
+    # ── Этап 1: сбор материалов за 24ч ───────────────────────────────────────
+    log.info("Сбор материалов (окно 24ч)…")
+    raw_items = collect_from_sources(sources, CUTOFF_24H)
+    raw_items = deduplicate_raw(raw_items)
+    log.info("Собрано (24ч): %d статей", len(raw_items))
 
-    rss_raw = fetch_all_rss(live_feeds)
-    rss_raw = deduplicate_raw(rss_raw)[:RAW_LIMIT]
-    log.info("RSS после дедупликации: %d статей", len(rss_raw))
+    # Если мало — расширяем до 48ч
+    if len(raw_items) < MIN_ARTICLES:
+        log.info("Меньше %d статей — расширяем окно до 48ч…", MIN_ARTICLES)
+        raw_items = collect_from_sources(sources, CUTOFF_48H)
+        raw_items = deduplicate_raw(raw_items)
+        log.info("Собрано (48ч): %d статей", len(raw_items))
 
-    # ── Этап 2: веб-поиск для hype ────────────────────────────────────────────
+    raw_items = raw_items[:RAW_LIMIT]
+
+    # ── Этап 2: hype через веб-поиск ─────────────────────────────────────────
     log.info("Сбор hype через веб-поиск…")
-    hype_text = await fetch_hype_via_search(client)
+    hype_text = await fetch_hype_via_search(client, hype_queries)
 
-    if not rss_raw and not hype_text:
+    if not raw_items and not hype_text:
         log.error("Нет материалов — выпуск пустой")
         sys.exit(1)
 
-    # ── Этап 3: Claude API ─────────────────────────────────────────────────────
-    news_list = await process_with_claude(client, rss_raw, hype_text)
+    # ── Этап 3: Claude API ────────────────────────────────────────────────────
+    news_list = await process_with_claude(client, raw_items, hype_text)
 
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]

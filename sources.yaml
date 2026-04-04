@@ -1,0 +1,379 @@
+# Нейрогазета — источники новостей
+# Типы: rss (живая лента), scrape (парсим сайт), search (поиск Claude)
+# Приоритет: 1 (высший) — 3 (низший)
+
+sources:
+
+  # ── ЯЗЫКОВЫЕ МОДЕЛИ ──────────────────────────────
+
+  - name: "OpenAI"
+    type: rss
+    url: "https://openai.com/news/rss.xml"
+    section: models
+    priority: 1
+
+  - name: "Anthropic"
+    type: scrape
+    url: "https://www.anthropic.com/news"
+    section: models
+    priority: 1
+
+  - name: "Google DeepMind"
+    type: rss
+    url: "https://deepmind.google/blog/rss.xml"
+    section: models
+    priority: 1
+
+  - name: "Meta AI"
+    type: scrape
+    url: "https://ai.meta.com/blog/"
+    section: models
+    priority: 1
+
+  - name: "Mistral"
+    type: scrape
+    url: "https://mistral.ai/news"
+    section: models
+    priority: 1
+
+  - name: "xAI"
+    type: rss
+    url: "https://status.x.ai/feed.xml"
+    section: models
+    priority: 1
+
+  - name: "Cohere"
+    type: scrape
+    url: "https://cohere.com/blog"
+    section: models
+    priority: 2
+
+  - name: "AI21 Labs"
+    type: scrape
+    url: "https://www.ai21.com/blog"
+    section: models
+    priority: 2
+
+  - name: "Reka AI"
+    type: scrape
+    url: "https://www.reka.ai/news"
+    section: models
+    priority: 2
+
+  - name: "Aleph Alpha"
+    type: scrape
+    url: "https://aleph-alpha.com/news"
+    section: models
+    priority: 2
+
+  - name: "DeepSeek"
+    type: scrape
+    url: "https://www.deepseek.com/news"
+    section: models
+    priority: 1
+
+  - name: "ByteDance Seed"
+    type: scrape
+    url: "https://seed.bytedance.com/en/blog"
+    section: models
+    priority: 1
+
+  - name: "MiniMax"
+    type: scrape
+    url: "https://www.minimax.io/news"
+    section: models
+    priority: 1
+
+  - name: "Alibaba Qwen"
+    type: scrape
+    url: "https://qwenlm.github.io"
+    section: models
+    priority: 1
+
+  - name: "Alibaba Wan"
+    type: scrape
+    url: "https://wan.video/introduction/wan2.6"
+    section: models
+    priority: 2
+
+  - name: "Moonshot (Kimi)"
+    type: scrape
+    url: "https://www.moonshot.cn/news"
+    section: models
+    priority: 2
+
+  - name: "Zhipu AI"
+    type: search
+    query: "Zhipu GLM model release"
+    section: models
+    priority: 2
+
+  # ── ИЗОБРАЖЕНИЯ ───────────────────────────────────
+
+  - name: "Black Forest Labs (Flux)"
+    type: scrape
+    url: "https://bfl.ai/blog"
+    section: models
+    priority: 1
+
+  - name: "Stability AI"
+    type: scrape
+    url: "https://stability.ai/news"
+    section: models
+    priority: 1
+
+  - name: "Midjourney"
+    type: rss
+    url: "https://updates.midjourney.com/rss"
+    section: platforms
+    priority: 1
+
+  - name: "Ideogram"
+    type: scrape
+    url: "https://about.ideogram.ai/blog"
+    section: platforms
+    priority: 2
+
+  - name: "Recraft"
+    type: scrape
+    url: "https://www.recraft.ai/blog"
+    section: platforms
+    priority: 2
+
+  - name: "Reve"
+    type: scrape
+    url: "https://blog.reve.com/"
+    section: platforms
+    priority: 2
+
+  - name: "Topaz Labs"
+    type: scrape
+    url: "https://www.topazlabs.com/news"
+    section: platforms
+    priority: 2
+
+  # ── ВИДЕО ─────────────────────────────────────────
+
+  - name: "Higgsfield AI"
+    type: scrape
+    url: "https://higgsfield.ai/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Runway"
+    type: scrape
+    url: "https://runwayml.com/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Pika"
+    type: scrape
+    url: "https://pika.art/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Luma AI"
+    type: scrape
+    url: "https://lumalabs.ai/news"
+    section: platforms
+    priority: 1
+
+  - name: "Kuaishou (Kling)"
+    type: scrape
+    url: "https://ir.kuaishou.com/news-releases"
+    section: platforms
+    priority: 1
+
+  # ── АУДИО И ГОЛОС ────────────────────────────────
+
+  - name: "ElevenLabs"
+    type: scrape
+    url: "https://elevenlabs.io/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Suno"
+    type: scrape
+    url: "https://suno.com/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Udio"
+    type: scrape
+    url: "https://www.udio.com/announcement"
+    section: platforms
+    priority: 2
+
+  - name: "Sesame"
+    type: scrape
+    url: "https://www.sesame.com/blog"
+    section: platforms
+    priority: 2
+
+  # ── АГЕНТЫ И ИНФРАСТРУКТУРА ───────────────────────
+
+  - name: "Cursor"
+    type: scrape
+    url: "https://www.cursor.com/blog"
+    section: platforms
+    priority: 1
+
+  - name: "Perplexity"
+    type: scrape
+    url: "https://blog.perplexity.ai"
+    section: platforms
+    priority: 1
+
+  - name: "Replit"
+    type: scrape
+    url: "https://blog.replit.com"
+    section: platforms
+    priority: 2
+
+  - name: "Cognition (Devin)"
+    type: scrape
+    url: "https://www.cognition.ai/blog"
+    section: platforms
+    priority: 2
+
+  # ── ЖЕЛЕЗО ────────────────────────────────────────
+
+  - name: "NVIDIA"
+    type: rss
+    url: "https://blogs.nvidia.com/feed/"
+    section: industry
+    priority: 1
+
+  - name: "Groq"
+    type: scrape
+    url: "https://groq.com/blog"
+    section: industry
+    priority: 2
+
+  - name: "Cerebras"
+    type: scrape
+    url: "https://www.cerebras.net/blog"
+    section: industry
+    priority: 2
+
+  # ── АГРЕГАТОРЫ И ПЛАТФОРМЫ ────────────────────────
+
+  - name: "Hugging Face"
+    type: rss
+    url: "https://huggingface.co/blog/feed.xml"
+    section: platforms
+    priority: 1
+
+  - name: "fal"
+    type: rss
+    url: "https://blog.fal.ai/rss"
+    section: platforms
+    priority: 2
+
+  - name: "Replicate"
+    type: scrape
+    url: "https://replicate.com/blog"
+    section: platforms
+    priority: 2
+
+  - name: "OpenRouter"
+    type: scrape
+    url: "https://openrouter.ai/announcements"
+    section: platforms
+    priority: 2
+
+  - name: "Poe"
+    type: scrape
+    url: "https://poe.com/blog"
+    section: platforms
+    priority: 2
+
+  - name: "Krea"
+    type: scrape
+    url: "https://www.krea.ai/blog"
+    section: platforms
+    priority: 2
+
+  - name: "Freepik AI"
+    type: scrape
+    url: "https://www.freepik.com/blog/category/news/"
+    section: platforms
+    priority: 2
+
+  - name: "SYNTX AI"
+    type: scrape
+    url: "https://syntx.ai/updates"
+    section: platforms
+    priority: 2
+
+  - name: "Phygital+"
+    type: scrape
+    url: "https://phygital.plus/blog/"
+    section: platforms
+    priority: 3
+
+  - name: "Leonardo AI"
+    type: scrape
+    url: "https://leonardo.ai/news/"
+    section: platforms
+    priority: 2
+
+  - name: "Civitai"
+    type: scrape
+    url: "https://civitai.green/newsroom"
+    section: platforms
+    priority: 3
+
+  # ── РОССИЙСКИЕ РАЗРАБОТКИ ─────────────────────────
+
+  - name: "Яндекс"
+    type: scrape
+    url: "https://yandex.ru/blog"
+    section: models
+    priority: 1
+
+  - name: "Сбер AI"
+    type: scrape
+    url: "https://developers.sber.ru/blog"
+    section: models
+    priority: 1
+
+  # ── СМИ ───────────────────────────────────────────
+
+  - name: "TechCrunch AI"
+    type: rss
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    section: industry
+    priority: 2
+
+  - name: "MIT Technology Review"
+    type: rss
+    url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+    section: industry
+    priority: 2
+
+  - name: "The Verge AI"
+    type: scrape
+    url: "https://www.theverge.com/ai-artificial-intelligence"
+    section: industry
+    priority: 2
+
+  - name: "VentureBeat AI"
+    type: scrape
+    url: "https://venturebeat.com/category/ai/"
+    section: industry
+    priority: 2
+
+  - name: "Wired AI"
+    type: scrape
+    url: "https://www.wired.com/tag/artificial-intelligence/"
+    section: industry
+    priority: 2
+
+# ── ПОИСКОВЫЕ ЗАПРОСЫ ────────────────────────────────
+
+search_queries:
+
+  hype:
+    - "AI news viral controversy today"
+    - "нейросети скандал обсуждение сегодня"
