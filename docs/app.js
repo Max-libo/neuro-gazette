@@ -30,77 +30,93 @@ function formatDate(dateStr) {
   });
 }
 
-function escapeHtml(str) {
+function esc(str) {
   if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function sectionBadge(section) {
+  const label = SECTION_LABELS[section] || section;
+  return `<span class="section-badge section-badge--${esc(section)}">${esc(label)}</span>`;
 }
 
 function buildSourcesHtml(sources) {
   if (!sources || sources.length === 0) return '';
   const links = sources.map(s =>
-    `<a class="source-link source-type-${escapeHtml(s.type)}" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.title)}</a>`
+    `<a class="source-link source-type-${esc(s.type)}" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`
   ).join('');
   return `<div class="sources-list">${links}</div>`;
 }
 
-function buildTagsHtml(tags) {
-  if (!tags) return '';
-  const parts = [];
-  if (tags.entities) tags.entities.forEach(e => parts.push(`<span class="tag">${escapeHtml(e)}</span>`));
-  if (tags.sentiment) parts.push(`<span class="tag">${escapeHtml(SENTIMENT_LABELS[tags.sentiment] || tags.sentiment)}</span>`);
-  if (tags.event) parts.push(`<span class="tag">${escapeHtml(EVENT_LABELS[tags.event] || tags.event)}</span>`);
-  return parts.length ? `<div class="tag-list">${parts.join('')}</div>` : '';
-}
-
 function buildMetaHtml(item) {
   let html = '<div class="news-meta">';
-  html += `<span class="importance-badge">важность: ${item.importance}/10</span>`;
   if (item.unconfirmed) html += '<span class="unconfirmed-badge">не подтверждено</span>';
-  html += buildTagsHtml(item.tags);
+  if (item.tags && item.tags.sentiment && item.tags.sentiment !== 'neutral') {
+    html += `<span class="sentiment-tag sentiment--${esc(item.tags.sentiment)}">${esc(SENTIMENT_LABELS[item.tags.sentiment] || item.tags.sentiment)}</span>`;
+  }
   html += buildSourcesHtml(item.sources);
   html += '</div>';
   if (item.duplicate_note) {
-    html += `<div class="duplicate-note">Дополнение: ${escapeHtml(item.duplicate_note)}</div>`;
+    html += `<div class="duplicate-note">Дополнение: ${esc(item.duplicate_note)}</div>`;
   }
   return html;
 }
 
+/* ── HERO (importance 9–10) ── полная ширина над колонками */
 function buildHeroHtml(item) {
   return `
-    <article class="news-hero" id="${escapeHtml(item.id)}">
-      <h2 class="news-headline">${escapeHtml(item.headline)}</h2>
-      <p class="news-subheadline">${escapeHtml(item.subheadline)}</p>
-      <div class="news-body">${escapeHtml(item.body)}</div>
+    <article class="art-hero" id="${esc(item.id)}">
+      ${sectionBadge(item.section)}
+      <h2 class="art-headline art-headline--hero">${esc(item.headline)}</h2>
+      <p class="art-sub">${esc(item.subheadline)}</p>
+      <div class="art-body art-body--cols">${esc(item.body)}</div>
       ${buildMetaHtml(item)}
     </article>`;
 }
 
-function buildFeaturedHtml(item) {
+/* ── LARGE (importance 7–8) ── в колонке, крупный заголовок + тело */
+function buildLargeHtml(item) {
   return `
-    <article class="news-featured" id="${escapeHtml(item.id)}" onclick="toggleExpand(this)">
-      <h3 class="news-headline">${escapeHtml(item.headline)}</h3>
-      <p class="news-subheadline">${escapeHtml(item.subheadline)}</p>
-      <span class="expand-hint">↓ читать далее</span>
-      <div class="news-body-collapse">
-        <p>${escapeHtml(item.body)}</p>
+    <article class="col-article col-article--large" id="${esc(item.id)}" onclick="toggleExpand(this)">
+      ${sectionBadge(item.section)}
+      <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
+      <p class="art-sub">${esc(item.subheadline)}</p>
+      <div class="art-body art-body--collapse">
+        ${esc(item.body)}
         ${buildMetaHtml(item)}
       </div>
+      <span class="expand-hint">читать далее ↓</span>
     </article>`;
 }
 
+/* ── MEDIUM (importance 5–6) ── в колонке, средний заголовок */
+function buildMediumHtml(item) {
+  return `
+    <article class="col-article col-article--medium" id="${esc(item.id)}" onclick="toggleExpand(this)">
+      ${sectionBadge(item.section)}
+      <h4 class="art-headline art-headline--medium">${esc(item.headline)}</h4>
+      <p class="art-sub art-sub--small">${esc(item.subheadline)}</p>
+      <div class="art-body art-body--collapse">
+        ${esc(item.body)}
+        ${buildMetaHtml(item)}
+      </div>
+      <span class="expand-hint">читать далее ↓</span>
+    </article>`;
+}
+
+/* ── BRIEF (importance 1–4) ── в колонке, компактная заметка */
 function buildBriefHtml(item) {
   return `
-    <article class="news-brief" id="${escapeHtml(item.id)}" onclick="toggleExpand(this)">
-      <span class="brief-importance">${item.importance}</span>
-      <div class="brief-content">
-        <h4 class="news-headline">${escapeHtml(item.headline)}</h4>
-        <p class="news-subheadline">${escapeHtml(item.subheadline)}</p>
-        <span class="expand-hint">↓ читать далее</span>
-        <div class="news-body-collapse">
-          <p>${escapeHtml(item.body)}</p>
-          ${buildMetaHtml(item)}
-        </div>
+    <article class="col-article col-article--brief" id="${esc(item.id)}" onclick="toggleExpand(this)">
+      ${sectionBadge(item.section)}
+      <h5 class="art-headline art-headline--brief">${esc(item.headline)}</h5>
+      <p class="art-sub art-sub--small">${esc(item.subheadline)}</p>
+      <div class="art-body art-body--collapse">
+        ${esc(item.body)}
+        ${buildMetaHtml(item)}
       </div>
+      <span class="expand-hint">↓</span>
     </article>`;
 }
 
@@ -109,69 +125,55 @@ function toggleExpand(el) {
 }
 
 function renderIssue(issue) {
-  const el = document.getElementById('newspaper');
-
-  // Date
   document.getElementById('issue-date').textContent = formatDate(issue.date);
   document.title = `Нейрогазета — ${issue.date}`;
 
-  const sections = ['models', 'platforms', 'industry', 'hype'];
+  // Сортируем всё глобально по важности — рубрики перемешаны
+  const all = [...(issue.news || [])].sort((a, b) => b.importance - a.importance);
+
+  if (all.length === 0) {
+    document.getElementById('newspaper').innerHTML =
+      '<div class="loading-state">Нет новостей в этом выпуске.</div>';
+    return;
+  }
+
+  const heroes  = all.filter(n => n.importance >= 9);
+  const inCols  = all.filter(n => n.importance < 9);
+
   let html = '';
 
-  sections.forEach(sec => {
-    const items = (issue.news || [])
-      .filter(n => n.section === sec)
-      .sort((a, b) => b.importance - a.importance);
-
-    if (items.length === 0) return;
-
-    html += `
-      <section class="section-group" id="${sec}">
-        <div class="section-header">
-          <span class="section-label">${SECTION_LABELS[sec] || sec}</span>
-          <div class="section-rule"></div>
-        </div>`;
-
-    const heroes = items.filter(n => n.importance >= 9);
-    const featured = items.filter(n => n.importance >= 6 && n.importance < 9);
-    const briefs = items.filter(n => n.importance < 6);
-
+  // Герои — на всю ширину
+  if (heroes.length) {
+    html += '<div class="heroes-zone">';
     heroes.forEach(item => { html += buildHeroHtml(item); });
+    html += '</div>';
+  }
 
-    if (featured.length) {
-      html += '<div class="news-grid">';
-      featured.forEach(item => { html += buildFeaturedHtml(item); });
-      html += '</div>';
-    }
+  // Все остальные — в CSS-колонках, текст затекает сам
+  if (inCols.length) {
+    html += '<div class="columns-body">';
+    inCols.forEach(item => {
+      if (item.importance >= 7)      html += buildLargeHtml(item);
+      else if (item.importance >= 5) html += buildMediumHtml(item);
+      else                           html += buildBriefHtml(item);
+    });
+    html += '</div>';
+  }
 
-    if (briefs.length) {
-      html += '<div class="news-briefs">';
-      briefs.forEach(item => { html += buildBriefHtml(item); });
-      html += '</div>';
-    }
-
-    html += '</section>';
-  });
-
-  el.innerHTML = html || '<div class="loading-state">Нет новостей в этом выпуске.</div>';
+  document.getElementById('newspaper').innerHTML = html;
 }
 
 async function loadIssue(dateStr) {
-  const url = dateStr
-    ? `data/${dateStr}.json`
-    : 'data/latest.json';
-
+  const url = dateStr ? `data/${dateStr}.json` : 'data/latest.json';
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const issue = await res.json();
-    renderIssue(issue);
+    renderIssue(await res.json());
   } catch (err) {
     document.getElementById('newspaper').innerHTML =
       `<div class="error-state">Не удалось загрузить выпуск.<br><small>${err.message}</small></div>`;
   }
 }
 
-// Read ?date= param
 const params = new URLSearchParams(location.search);
 loadIssue(params.get('date'));
