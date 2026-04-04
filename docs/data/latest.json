@@ -3,16 +3,16 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic-pentagon",
-      "section": "industry",
-      "headline": "Пентагон присвоил Anthropic статус «риска для цепочки поставок»",
-      "subheadline": "Военное ведомство США фактически запретило подрядчикам вести дела с Anthropic после отказа компании предоставить неограниченный доступ к Claude.",
-      "body": "Министерство обороны США присвоило Anthropic статус «риска для цепочки поставок» — категорию, обычно применяемую к иностранным противникам, в том числе Huawei. Статус фактически блокирует военным подрядчикам коммерческое взаимодействие с компанией. По данным CBS News, решение последовало за отказом Anthropic предоставить военным неограниченный доступ к модели Claude. Генеральный директор Anthropic Дарио Амодеи охарактеризовал действия Пентагона как «карательные и мстительные». Anthropic официально не подтвердила и не опровергла детали конфликта.",
-      "importance": 9,
+      "id": "platforms-claudecode-openclaw",
+      "section": "platforms",
+      "headline": "Anthropic вводит доплату за OpenClaw для подписчиков Claude Code",
+      "subheadline": "Пользователи Claude Code получат доступ к OpenClaw только за отдельную плату.",
+      "body": "Anthropic объявила, что подписчики Claude Code не смогут использовать интеграцию с OpenClaw в рамках текущей подписки — потребуется дополнительная оплата. Компания не раскрыла тарифы. Решение вызвало критику на фоне уже существующих проблем с безопасностью OpenClaw: инструмент получил три критических CVE, а на его маркетплейсе обнаружено 335 вредоносных «навыков», включая кейлоггеры.",
+      "importance": 7,
       "sources": [
         {
-          "title": "CBS News",
-          "url": "https://www.cbsnews.com/tag/artificial-intelligence/",
+          "title": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
           "type": "media"
         }
       ],
@@ -21,44 +21,19 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Пентагон",
-          "Дарио Амодеи"
+          "Claude Code",
+          "OpenClaw"
         ],
         "sentiment": "negative",
-        "event": "regulation"
-      }
-    },
-    {
-      "id": "industry-anthropic-biotech",
-      "section": "industry",
-      "headline": "Anthropic приобрела биотех-стартап Coefficient Bio за $400 млн",
-      "subheadline": "Сделка расширяет присутствие Anthropic в секторе наук о жизни.",
-      "body": "По данным TechCrunch, Anthropic заключила сделку по приобретению биотехнологического стартапа Coefficient Bio на сумму около $400 млн. Детали сделки и профиль деятельности Coefficient Bio в официальных источниках не раскрывались. Сделка проходит на фоне активных переговоров Anthropic о новых раундах финансирования на частных рынках.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": true,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Coefficient Bio"
-        ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "event": "update"
       }
     },
     {
       "id": "industry-openai-shuffle",
       "section": "industry",
-      "headline": "OpenAI реструктурировала топ-менеджмент: Брэд Лайткэп возглавит «специальные проекты»",
-      "subheadline": "COO OpenAI Брэд Лайткэп получил новую роль, одновременно изменились позиции Фиджи Симо и Кейт Руш.",
-      "body": "OpenAI провела перестановки в руководстве. COO Брэд Лайткэп назначен руководителем направления «специальных проектов» — конкретный круг задач не раскрывается. Фиджи Симо и Кейт Руш также получили обновлённые роли в структуре компании. TechCrunch отмечает, что изменения происходят в период активной коммерческой экспансии OpenAI, включая заключение крупных контрактов с государственными структурами.",
+      "headline": "OpenAI реструктурировала руководство: Брэд Лайткэп возглавит «специальные проекты»",
+      "subheadline": "Операционный директор OpenAI Брэд Лайткэп получил новую роль, компания также обновила позиции Фиджи Симо и Кейт Руш.",
+      "body": "OpenAI провела перестановки в топ-менеджменте. COO Брэд Лайткэп переходит на роль руководителя «специальных проектов» — направление не расшифровывается. Фиджи Симо и Кейт Руш также получили обновлённые позиции. Детали новых обязанностей компания не раскрыла. Перестановки происходят на фоне активного расширения продуктового портфеля OpenAI и сделки по приобретению медиапроекта TBPN.",
       "importance": 7,
       "sources": [
         {
@@ -81,11 +56,36 @@
       }
     },
     {
+      "id": "industry-anthropic-coefficient",
+      "section": "industry",
+      "headline": "Anthropic приобрела биотех-стартап Coefficient Bio за $400 млн",
+      "subheadline": "Сделка расширяет присутствие Anthropic в сфере наук о жизни.",
+      "body": "По данным источников TechCrunch, Anthropic закрыла сделку по покупке биотехнологического стартапа Coefficient Bio на сумму около $400 млн. Официального подтверждения от Anthropic на момент публикации не поступало. Coefficient Bio специализируется на применении вычислительных методов в биологических исследованиях. Сделка сигнализирует о намерении Anthropic выйти за рамки чисто программных продуктов в прикладную науку.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Coefficient Bio"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      }
+    },
+    {
       "id": "industry-anthropic-pac",
       "section": "industry",
-      "headline": "Anthropic создала политический комитет действий",
-      "subheadline": "Компания учредила PAC для участия в политической деятельности в США.",
-      "body": "Anthropic зарегистрировала комитет политических действий (PAC), расширяя своё присутствие в политическом пространстве США. Это первый PAC среди ведущих американских AI-лабораторий. Детали финансирования и конкретные политические приоритеты комитета не раскрывались. Шаг совпадает по времени с конфликтом компании с Пентагоном и активным обсуждением регулирования ИИ в Конгрессе.",
+      "headline": "Anthropic создала политический комитет (PAC) для лоббирования в США",
+      "subheadline": "Компания наращивает политическое влияние на фоне обострения регуляторной среды.",
+      "body": "Anthropic зарегистрировала собственный политический комитет действий (PAC), что означает выход компании на поле прямого политического лоббирования в США. Шаг предпринят на фоне противостояния с администрацией Трампа: ранее сообщалось, что федеральным агентствам предписано отказаться от использования Claude. Наличие PAC позволит Anthropic финансировать политические кампании и оказывать давление на законодателей по вопросам регулирования AI.",
       "importance": 7,
       "sources": [
         {
@@ -105,16 +105,54 @@
       }
     },
     {
-      "id": "platforms-anthropic-claudecode",
-      "section": "platforms",
-      "headline": "Anthropic вводит доплату за OpenClaw в подписке Claude Code",
-      "subheadline": "Подписчики Claude Code должны будут платить отдельно за использование инструмента OpenClaw.",
-      "body": "Anthropic уведомила пользователей Claude Code о том, что доступ к инструменту OpenClaw не будет включён в базовую подписку. Функциональность потребует дополнительной оплаты. Конкретные тарифы на момент публикации не объявлены. TechCrunch указывает, что изменение ценовой политики может затронуть значительную часть существующих подписчиков инструмента для разработчиков.",
+      "id": "industry-russia-block",
+      "section": "industry",
+      "headline": "Минцифры России подготовило законопроект о блокировке иностранных нейросетей",
+      "subheadline": "ChatGPT, Claude и Gemini могут попасть под запрет из-за передачи данных за рубеж.",
+      "body": "Министерство цифрового развития России подготовило законопроект, предусматривающий блокировку иностранных AI-сервисов — в том числе ChatGPT, Claude и Gemini — на основании требований о локализации данных. Документ также вводит реестр «доверенных» моделей с обязательной проверкой ФСБ. Законопроект создаёт регуляторные преимущества для отечественных разработчиков. Дата рассмотрения в Госдуме не объявлена.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "НГС",
+          "url": "https://ngs.ru/text/world/2026/03/20/76321611/",
+          "type": "media"
+        },
+        {
+          "title": "The Moscow Times",
+          "url": "https://ru.themoscowtimes.com/2026/03/20/vlasti-prigotovilis-zablokirovat-inostrannie-neiroseti-v-rossii-a190341",
+          "type": "media"
+        },
+        {
+          "title": "AppleInsider.ru",
+          "url": "https://appleinsider.ru/news/chto-na-samom-dele-grozit-chatgpt-i-drugim-nejrosetyam-v-rossii-v-2026-godu.html",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Три источника освещают один законопроект; объединены в одну запись.",
+      "tags": {
+        "entities": [
+          "Минцифры",
+          "ChatGPT",
+          "Claude",
+          "Gemini",
+          "ФСБ"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "hype-openclaw-security",
+      "section": "hype",
+      "headline": "OpenClaw: 135 тыс. звёзд на GitHub и три критических уязвимости за три недели",
+      "subheadline": "Вирусный AI-агент оказался площадкой для распространения вредоносных «навыков».",
+      "body": "AI-агент OpenClaw, набравший 135 тыс. звёзд на GitHub, получил три критических CVE менее чем за три недели после взрывного роста популярности. На официальном маркетплейсе проекта обнаружено 335 вредоносных «навыков», включая кейлоггеры. Китай запретил использование OpenClaw в государственных системах. Инцидент совпал с объявлением Anthropic о платной интеграции Claude Code с OpenClaw.",
       "importance": 6,
       "sources": [
         {
-          "title": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+          "title": "Dark Reading",
+          "url": "https://darkreading.com/vulnerabilities-threats/openclaw-135k-github-stars-security-crisis",
           "type": "media"
         }
       ],
@@ -122,126 +160,20 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic",
-          "Claude Code",
-          "OpenClaw"
+          "OpenClaw",
+          "GitHub"
         ],
         "sentiment": "negative",
         "event": "update"
       }
     },
     {
-      "id": "models-stability-audio25",
-      "section": "models",
-      "headline": "Stability AI выпустила Stable Audio 2.5 для корпоративного производства звука",
-      "subheadline": "Новая модель позиционируется как первое аудиорешение корпоративного класса для промышленного масштаба.",
-      "body": "Stability AI представила Stable Audio 2.5 — модель генерации звука, ориентированную на корпоративное производство. По заявлению компании, модель является первым аудиоинструментом, созданным специально для промышленного масштаба. Одновременно Stability AI объявила о партнёрствах с Warner Music Group и Universal Music Group для совместной разработки профессиональных AI-инструментов для создания музыки, а также заключила соглашение с Electronic Arts для поддержки разработчиков игр.",
-      "importance": 7,
-      "sources": [
-        {
-          "title": "Stability AI",
-          "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI",
-          "url": "https://stability.ai/news-updates/warner-music-group-and-stability-ai-join-forces-to-build-next-gen-tools",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI",
-          "url": "https://stability.ai/news-updates/universal-music-group-and-stability-ai-announce-strategic-alliance",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Партнёрства WMG, UMG и EA сгруппированы с релизом Stable Audio 2.5 как единый блок активности Stability AI.",
-      "tags": {
-        "entities": [
-          "Stability AI",
-          "Warner Music Group",
-          "Universal Music Group",
-          "Electronic Arts"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      }
-    },
-    {
-      "id": "models-luma-ray3",
-      "section": "models",
-      "headline": "Luma AI выпустила Ray3 с нативным разрешением 1080p и снижением стоимости в 3 раза",
-      "subheadline": "Новая версия видеомодели Ray3 работает в 4 раза быстрее предшественника и дешевле на 67%.",
-      "body": "Luma AI выпустила Ray3 — видеогенеративную модель с нативным разрешением 1080p. По данным компании, скорость генерации выросла в 4 раза, стоимость снизилась в 3 раза по сравнению с предыдущей версией. Одновременно представлен Ray3 Modify — инструмент редактирования видео на базе той же модели. Luma опубликовала отчёт об оценке производительности, позиционируя Ray3 как state-of-the-art решение для профессиональной генерации видео. Интеграция Ray2 с Adobe Firefly анонсирована отдельно.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "Luma AI",
-          "url": "https://lumalabs.ai/news/ray3_14",
-          "type": "official"
-        },
-        {
-          "title": "Luma AI",
-          "url": "https://lumalabs.ai/news/ray3",
-          "type": "official"
-        },
-        {
-          "title": "Luma AI",
-          "url": "https://lumalabs.ai/news/ray3-eval",
-          "type": "official"
-        },
-        {
-          "title": "Luma AI",
-          "url": "https://lumalabs.ai/news/ray3-modify",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Множественные публикации Luma AI о Ray3, Ray3.14 и Ray3 Modify объединены в одну запись.",
-      "tags": {
-        "entities": [
-          "Luma AI",
-          "Ray3"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      }
-    },
-    {
-      "id": "hype-grok-sexualized-images",
-      "section": "hype",
-      "headline": "Grok сгенерировал около 3 млн сексуализированных изображений реальных людей за 11 дней",
-      "subheadline": "Центр по противодействию цифровой ненависти (CCDH) зафиксировал массовое создание нежелательного контента через модель Aurora от xAI.",
-      "body": "По оценке Центра по противодействию цифровой ненависти (CCDH), обновление модели генерации изображений Aurora в чат-боте Grok позволило пользователям создавать сексуализированные изображения реальных людей — знаменитостей и частных лиц — без их согласия. За 11 дней было сгенерировано около 3 млн подобных изображений. xAI и Илон Маск официально не прокомментировали данные CCDH. Источник — блог компании Crescendo AI, независимая верификация данных на момент публикации отсутствует.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "Crescendo AI Blog",
-          "url": "https://www.crescendo.ai/blog/ai-controversies",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": true,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Grok",
-          "xAI",
-          "Aurora",
-          "CCDH",
-          "Илон Маск"
-        ],
-        "sentiment": "negative",
-        "event": "leak"
-      }
-    },
-    {
       "id": "hype-icml-ai-review",
       "section": "hype",
-      "headline": "ICML 2026 отклонила 497 статей за использование ИИ при рецензировании",
-      "subheadline": "Организаторы конференции применили систему водяных знаков и выявили нарушителей среди рецензентов.",
-      "body": "Организаторы Международной конференции по машинному обучению (ICML) 2026 года применили систему водяных знаков в материалах для рецензентов, чтобы выявить использование ИИ при оценке статей. По данным Nature, было отклонено 497 работ — около 2% от общего числа поданных — авторы которых нарушили правила применения ИИ-инструментов. Опрос Frontiers 2025 года показал, что более половины исследователей используют ИИ при рецензировании вопреки запретам. Среди AI-исследователей нет консенсуса относительно допустимости этой практики.",
-      "importance": 7,
+      "headline": "ICML отклонил 497 статей за использование AI при рецензировании",
+      "subheadline": "Организаторы применили систему водяных знаков и выявили нарушителей среди рецензентов.",
+      "body": "Организационный комитет конференции ICML 2026 отклонил 497 статей после того, как система водяных знаков зафиксировала использование авторами больших языковых моделей для написания рецензий — что прямо запрещено регламентом конференции. Это первый задокументированный случай массового применения технических средств обнаружения AI-рецензирования в академической среде. Нарушителям отказано в публикации материалов.",
+      "importance": 6,
       "sources": [
         {
           "title": "Nature",
@@ -253,36 +185,10 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ICML",
-          "Nature"
+          "ICML"
         ],
         "sentiment": "negative",
         "event": "regulation"
-      }
-    },
-    {
-      "id": "hype-reddit-deanon",
-      "section": "hype",
-      "headline": "Нейросеть деанонимизирует пользователей Reddit с точностью 90% за $4",
-      "subheadline": "Исследователи заявили, что AI-анализ позволяет сопоставить анонимные комментарии Reddit с профилями LinkedIn за секунды.",
-      "body": "Группа исследователей заявила о создании системы, способной деанонимизировать пользователей Reddit с точностью до 90% путём сопоставления истории комментариев с публичными профилями LinkedIn. По их данным, анализ, ранее занимавший недели ручной работы, теперь выполняется за секунды и стоит около $4. Академическая публикация и независимая верификация метода на момент выхода материала отсутствуют. Источник — агрегатор новостей VC.ru.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "VC.ru",
-          "url": "https://vc.ru/ai/2788279-novosti-neyrosetey-marta-2026-gpt-5-4-google-agenty-konec-privatnosti",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": true,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Reddit",
-          "LinkedIn"
-        ],
-        "sentiment": "negative",
-        "event": "leak"
       }
     }
   ]
