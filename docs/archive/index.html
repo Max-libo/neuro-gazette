@@ -62,9 +62,7 @@
           const label = d.toLocaleDateString('ru-RU', {
             weekday: 'short', year: 'numeric', month: 'long', day: 'numeric',
           });
-          const status = issue.published
-            ? ''
-            : '<span class="unconfirmed-badge" style="margin-left:.5rem;font-size:.6rem">черновик</span>';
+          const status = '';
           html += `
             <div class="archive-item">
               <span class="archive-date">${issue.date}</span>
