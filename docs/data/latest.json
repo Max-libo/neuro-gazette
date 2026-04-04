@@ -1,152 +1,236 @@
 {
   "date": "2026-04-04",
-  "published": true,
+  "published": false,
   "news": [
     {
-      "id": "openai-gpt5-launch-2026-04-04",
+      "id": "google-gemma-4-release",
       "section": "models",
-      "headline": "OpenAI выпустила GPT-5 с нативным мультимодальным вводом",
-      "subheadline": "Модель принимает текст, аудио и видео в одном запросе без внешних адаптеров.",
-      "body": "OpenAI официально выпустила GPT-5 4 апреля 2026 года. Модель обрабатывает текст, аудио и видео нативно — без конвертации через внешние пайплайны. В бенчмарках MMLU GPT-5 набирает 92.3%, на 4 пункта выше GPT-4o. Контекстное окно расширено до 256K токенов. API доступен сразу для Tier-3 клиентов, массовый доступ — через две недели. Цена: $15 за миллион входных токенов, $60 за выходные.",
-      "importance": 10,
+      "headline": "Google DeepMind выпустила Gemma 4 — семейство открытых моделей на базе Gemini 3",
+      "subheadline": "Четыре модели от 2B до 31B параметров под лицензией Apache 2.0 с мультимодальными возможностями и поддержкой агентных сценариев.",
+      "body": "Google DeepMind опубликовала семейство открытых моделей Gemma 4 в четырёх размерах: Effective 2B (E2B), Effective 4B (E4B), 26B Mixture of Experts и 31B Dense. Модели построены на исследованиях Gemini 3 и выпущены под лицензией Apache 2.0. По данным Google, 31B-модель занимает 3-е место среди открытых моделей в рейтинге Arena AI, а 26B — 6-е, обгоняя модели в 20 раз большего размера. Контекстное окно — до 256K токенов (у E2B/E4B — 128K). Все варианты обрабатывают текст и изображения; малые модели также принимают аудио. Поддерживается более 140 языков. E2B работает в менее чем 1,5 ГБ оперативной памяти, E4B модель до 4 раз быстрее предшественников и потребляет на 60% меньше батареи. Модели доступны через Hugging Face, Kaggle, Ollama, Google AI Studio, Vertex AI и Android AICore Developer Preview. Gemma 4 станет основой для Gemini Nano 4 на Android-устройствах.",
+      "importance": 9,
       "sources": [
-        {"title": "OpenAI Blog", "url": "https://openai.com/blog/gpt-5", "type": "official"},
-        {"title": "The Verge", "url": "https://theverge.com/2026/4/4/gpt-5", "type": "media"}
+        {
+          "title": "Google Blog — Gemma 4",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+          "type": "official"
+        },
+        {
+          "title": "Google Cloud Blog — Gemma 4",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemma-4-available-on-google-cloud",
+          "type": "official"
+        },
+        {
+          "title": "Engadget",
+          "url": "https://www.engadget.com/ai/google-releases-gemma-4-a-family-of-open-models-built-off-of-gemini-3-160000332.html",
+          "type": "media"
+        },
+        {
+          "title": "Google DeepMind — Gemma 4",
+          "url": "https://deepmind.google/models/gemma/gemma-4/",
+          "type": "official"
+        },
+        {
+          "title": "Edge AI and Vision Alliance",
+          "url": "https://www.edge-ai-vision.com/2026/04/google-pushes-multimodal-ai-further-onto-edge-devices-with-gemma-4/",
+          "type": "media"
+        },
+        {
+          "title": "Android Developers Blog",
+          "url": "https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html",
+          "type": "official"
+        }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": ["gpt-5", "openai"],
+        "entities": [
+          "Google DeepMind",
+          "Gemma 4"
+        ],
         "sentiment": "positive",
         "event": "release"
       }
     },
     {
-      "id": "google-gemini-update-2026-04-04",
+      "id": "anthropic-blocks-openclaw-third-party",
       "section": "models",
-      "headline": "Google обновила Gemini 2.0 Ultra: улучшено кодирование и математика",
-      "subheadline": "Новая версия набирает 68.4% на HumanEval — рост на 12 пунктов за месяц.",
-      "body": "Google DeepMind выпустила обновление Gemini 2.0 Ultra с улучшенными возможностями в области кодирования и математики. На бенчмарке HumanEval модель теперь показывает 68.4% против 56.2% месяц назад. В Google объясняют прирост новым методом обучения с использованием синтетических данных, сгенерированных самой моделью. Обновление доступно через Gemini API без изменения цен.",
-      "importance": 7,
+      "headline": "Anthropic с 4 апреля отключает покрытие подписок Claude для сторонних инструментов",
+      "subheadline": "Подписки Pro и Max больше не покрывают использование Claude через OpenClaw и другие сторонние harness-инструменты; пользователям предложен pay-as-you-go.",
+      "body": "С 4 апреля 2026 года, 12:00 PT, подписки Claude Pro и Max перестают покрывать использование моделей Anthropic через сторонние агентные инструменты, начиная с OpenClaw. Борис Черни, руководитель Claude Code, заявил: «Наши подписки не были рассчитаны на паттерны использования этих сторонних инструментов». Anthropic объяснила решение «чрезмерной нагрузкой» на инфраструктуру: сторонние harness не оптимизируют prompt cache hit rate, в отличие от собственных продуктов компании — Claude Code и Claude Cowork. Пользователи сохраняют доступ к Claude через сторонние инструменты, но должны оплачивать его через пакеты extra usage (со скидкой до 30%) или по API. Существующим подписчикам предоставлен разовый кредит в размере месячной подписки (до 17 апреля). Создатель OpenClaw Петер Штейнбергер, недавно перешедший в OpenAI, заявил, что пытался отложить решение, но добился лишь недельной отсрочки. Сообщество разработчиков критикует шаг как ограничение open-source экосистемы.",
+      "importance": 8,
       "sources": [
-        {"title": "Google DeepMind Blog", "url": "https://deepmind.google/blog/gemini-2-update", "type": "official"}
+        {
+          "title": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and",
+          "type": "media"
+        },
+        {
+          "title": "Cybersecurity News",
+          "url": "https://cybersecuritynews.com/claude-ends-openclaw-subscriptions/",
+          "type": "media"
+        },
+        {
+          "title": "Techmeme (via The Verge)",
+          "url": "https://www.techmeme.com/260403/p21",
+          "type": "media"
+        },
+        {
+          "title": "TechBuzz AI",
+          "url": "https://www.techbuzz.ai/articles/anthropic-blocks-openclaw-from-claude-subscriptions",
+          "type": "media"
+        }
       ],
       "unconfirmed": false,
-      "duplicate_note": null,
+      "duplicate_note": "Освещено в VentureBeat, The Verge (через Techmeme), CybersecurityNews, News9Live, Let's Data Science и др. Объединено в одну запись.",
       "tags": {
-        "entities": ["gemini-2.0-ultra", "google", "deepmind"],
-        "sentiment": "positive",
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "OpenClaw"
+        ],
+        "sentiment": "negative",
         "event": "update"
       }
     },
     {
-      "id": "anthropic-funding-2026-04-04",
-      "section": "industry",
-      "headline": "Anthropic привлекла $3 млрд в раунде Series F",
-      "subheadline": "Оценка компании достигла $61 млрд — крупнейший раунд в истории AI-стартапов.",
-      "body": "Anthropic закрыла раунд Series F на $3 млрд при оценке компании в $61 млрд. Лид-инвестор — Amazon, который увеличил суммарные вложения до $8 млрд. Среди новых инвесторов — суверенный фонд Саудовской Аравии PIF. Средства планируется направить на масштабирование вычислительной инфраструктуры и расширение исследований безопасности. Компания сообщила о 400% росте ARR за последние 12 месяцев.",
-      "importance": 8,
-      "sources": [
-        {"title": "Bloomberg", "url": "https://bloomberg.com/anthropic-series-f", "type": "media"},
-        {"title": "Anthropic Press Release", "url": "https://anthropic.com/news/series-f", "type": "official"}
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": ["anthropic", "amazon", "pif"],
-        "sentiment": "positive",
-        "event": "investment"
-      }
-    },
-    {
-      "id": "eu-ai-act-enforcement-2026-04-04",
-      "section": "industry",
-      "headline": "ЕС начал первые проверки компаний по AI Act",
-      "subheadline": "Регулятор запросил документацию у OpenAI, Google и Meta по системам высокого риска.",
-      "body": "Европейское агентство по AI направило официальные запросы трём крупнейшим AI-компаниям — OpenAI, Google и Meta. Компании обязаны предоставить документацию о системах высокого риска в течение 30 дней. Проверки касаются рекомендательных алгоритмов и систем оценки кредитоспособности. За нарушения предусмотрен штраф до 3% от глобального оборота.",
+      "id": "microsoft-mai-multimodal-models",
+      "section": "models",
+      "headline": "Microsoft AI выпустила три мультимодальные модели: MAI-Transcribe-1, MAI-Voice-1 и MAI-Image-2",
+      "subheadline": "Собственные модели Microsoft для речи, голоса и изображений доступны через Foundry — прямая конкуренция с OpenAI.",
+      "body": "2 апреля Microsoft AI представила публичные превью трёх моделей, разработанных командой MAI Superintelligence под руководством Мустафы Сулеймана. MAI-Transcribe-1 — модель распознавания речи на 25 языках, в 2,5 раза быстрее текущего Azure Fast, при «примерно на 50% меньших затратах на GPU», чем конкуренты (по данным компании). MAI-Voice-1 генерирует 60 секунд аудио за менее чем 1 секунду на одном GPU и позволяет создавать пользовательские голоса. MAI-Image-2 — модель генерации изображений из текста. Все модели доступны через Microsoft Foundry (ранее Azure AI Studio). По словам Сулеймана, MAI-Transcribe-1 создана командой из 10 человек, а компания планирует «быть полностью независимой» в разработке фронтирной LLM. Модели уже используются в Copilot, Bing, PowerPoint и Azure Speech.",
       "importance": 7,
       "sources": [
-        {"title": "Reuters", "url": "https://reuters.com/eu-ai-act-enforcement", "type": "media"}
+        {
+          "title": "Microsoft AI Blog",
+          "url": "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/",
+          "type": "official"
+        },
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+          "type": "media"
+        },
+        {
+          "title": "The Register",
+          "url": "https://www.theregister.com/2026/04/02/microsoft_models_homegrown_ai_models/",
+          "type": "media"
+        },
+        {
+          "title": "GeekWire",
+          "url": "https://www.geekwire.com/2026/microsoft-releases-new-ai-models-to-further-expand-beyond-openai/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Освещено в TechCrunch, The Register, GeekWire, The AI Insider. Объединено в одну запись.",
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "MAI-Transcribe-1",
+          "MAI-Voice-1",
+          "MAI-Image-2"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "prismml-bonsai-1bit-8b",
+      "section": "models",
+      "headline": "PrismML (Caltech) выпустила 1-bit Bonsai — 8B-модель размером 1,15 ГБ",
+      "subheadline": "Первая коммерчески жизнеспособная 1-битная LLM: в 14 раз компактнее, в 8 раз быстрее 16-битных аналогов, работает на iPhone.",
+      "body": "1 апреля лаборатория PrismML, основанная математиком Caltech Бабаком Хассиби, вышла из stealth-режима и опубликовала открытую (Apache 2.0) серию 1-битных языковых моделей. Флагман Bonsai 8B — 8,2 млрд параметров, 1,15 ГБ памяти (против ~16 ГБ у стандартной FP16-модели того же масштаба). На iPhone 17 Pro Max модель выдаёт ~44 токена/с, на RTX 4090 — ~440 токенов/с. Средний бенчмарк-балл — 70,5 (IFEval, GSM8K, HumanEval+, MMLU-Redux и др.), что выше Llama 3.1 8B (67,1). PrismML вводит метрику intelligence density (1,06/ГБ против ~0,10 у ближайшего конкурента Qwen 3 8B). Также выпущены Bonsai 4B (0,57 ГБ) и Bonsai 1.7B (0,24 ГБ). PrismML привлекла $16,25 млн от Khosla Ventures, Cerberus Capital и Caltech. Критики отмечают, что поддержка CPU «сырая», а независимая верификация бенчмарков ещё не проведена.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "OfficeChai",
+          "url": "https://officechai.com/ai/prismml-1-bit-bonsai-8b/",
+          "type": "media"
+        },
+        {
+          "title": "KuCoin News",
+          "url": "https://www.kucoin.com/news/flash/caltech-open-sources-1-bit-bonsai-model-8b-parameters-at-1-15gb-44-tok-s-on-iphone",
+          "type": "media"
+        },
+        {
+          "title": "GetDeploying",
+          "url": "https://getdeploying.com/guides/bonsai-1bit-llm",
+          "type": "media"
+        }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": ["eu", "openai", "google", "meta", "ai-act"],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entities": [
+          "PrismML",
+          "Bonsai 8B",
+          "Caltech"
+        ],
+        "sentiment": "positive",
+        "event": "release"
       }
     },
     {
-      "id": "midjourney-v7-leak-2026-04-04",
-      "section": "hype",
-      "headline": "Утечка: Midjourney v7 генерирует видео длиной до 10 секунд",
-      "subheadline": "Скриншоты из закрытого теста показывают новый интерфейс с таймлайном.",
-      "body": "В Discord появились скриншоты, предположительно из закрытого бета-теста Midjourney v7. На них видны элементы интерфейса для генерации видео с таймлайном и настройками движения камеры. Длина клипов — до 10 секунд. Midjourney официально не комментировала утечку. Источник скриншотов неизвестен, подлинность не подтверждена.",
-      "importance": 4,
+      "id": "claude-mythos-leak-status",
+      "section": "models",
+      "headline": "Anthropic Claude Mythos: утечка подтверждает существование модели следующего поколения",
+      "subheadline": "Внутренние документы описывают Claude Mythos как «шаг вперёд» за пределы Opus; модель проходит раннее тестирование с партнёрами по кибербезопасности.",
+      "body": "Утечка данных от 26 марта 2026 года подтвердила, что Anthropic тренирует модель под кодовым названием Claude Mythos, позиционируемую внутри компании как «самую мощную модель, которую мы когда-либо разрабатывали». По данным Renovate QR, обучение завершено, модель тестируется с ранними клиентами, в первую очередь — в сфере кибербезопасности. Публичная дата выхода не объявлена. Некоторые источники (mean.ceo) называют модель «Claude Mythos 5» с 10 триллионами параметров, однако эти цифры не подтверждены Anthropic официально.",
+      "importance": 6,
       "sources": [
-        {"title": "Twitter / X", "url": "https://x.com/midjourney-leak", "type": "rumor"}
+        {
+          "title": "Renovate QR — AI Models April 2026",
+          "url": "https://renovateqr.com/blog/ai-models-april-2026",
+          "type": "media"
+        },
+        {
+          "title": "mean.ceo Blog",
+          "url": "https://blog.mean.ceo/new-ai-model-releases-news-april-2026/",
+          "type": "media"
+        }
       ],
       "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
-        "entities": ["midjourney", "midjourney-v7"],
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
         "sentiment": "rumor",
         "event": "leak"
       }
     },
     {
-      "id": "nvidia-chips-export-2026-04-04",
-      "section": "industry",
-      "headline": "США расширили ограничения на экспорт чипов Nvidia в ещё 12 стран",
-      "subheadline": "Под новые санкции попали ОАЭ, Вьетнам и Индонезия — крупные покупатели H100.",
-      "body": "Министерство торговли США добавило 12 стран в список ограниченного экспорта GPU Nvidia класса H100 и выше. Среди попавших под ограничения — ОАЭ, Вьетнам и Индонезия. Новые правила вступают в силу через 45 дней. Nvidia потеряла около 4% капитализации на новости. Аналитики оценивают потери выручки в $2-3 млрд ежегодно.",
-      "importance": 6,
-      "sources": [
-        {"title": "Wall Street Journal", "url": "https://wsj.com/nvidia-export-controls", "type": "media"},
-        {"title": "Commerce Dept. Notice", "url": "https://commerce.gov/nvidia-chips-2026", "type": "official"}
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": ["nvidia", "h100", "usa"],
-        "sentiment": "negative",
-        "event": "regulation"
-      }
-    },
-    {
-      "id": "cursor-ide-million-2026-04-04",
-      "section": "platforms",
-      "headline": "Cursor достиг 1 миллиона платных подписчиков",
-      "subheadline": "AI-редактор кода вырос с 200 тысяч до миллиона за 6 месяцев.",
-      "body": "Cursor объявил о преодолении отметки в 1 миллион платных пользователей. Рост с 200 тысяч до миллиона занял 6 месяцев. Средний чек — $20/месяц, ARR компании составляет около $240 млн. CEO компании Майкл Триклер сообщил, что основной драйвер роста — корпоративные лицензии, которые выросли в 8 раз за год.",
-      "importance": 6,
-      "sources": [
-        {"title": "TechCrunch", "url": "https://techcrunch.com/cursor-million-users", "type": "media"}
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": ["cursor", "anysphere"],
-        "sentiment": "positive",
-        "event": "update"
-      }
-    },
-    {
-      "id": "grok-3-api-2026-04-04",
-      "section": "platforms",
-      "headline": "xAI открыла Grok-3 API для разработчиков",
-      "subheadline": "Модель доступна по цене $2 за миллион токенов — дешевле конкурентов.",
-      "body": "xAI запустила публичный API для Grok-3. Входные токены стоят $2 за миллион, выходные — $6. Контекстное окно — 128K токенов. API поддерживает function calling и streaming. В xAI заявили, что это первый шаг перед запуском корпоративных тарифов. Доступ — через ключи на x.ai/api.",
+      "id": "aime-2026-benchmark-leaders",
+      "section": "models",
+      "headline": "Бенчмарк AIME 2026: Qwen 3.6 Plus Preview лидирует с 95,3%, Claude Opus 4.5 — 93,3%",
+      "subheadline": "Обновлённый рейтинг математических задач олимпиадного уровня показывает плотную конкуренцию между моделями Alibaba и Anthropic.",
+      "body": "По данным DataLearnerAI (обновление 3 апреля), в бенчмарке AIME 2026 (15 задач олимпиадного уровня) лидирует Qwen 3.6 Plus Preview (Alibaba) с точностью 95,3% в режиме Thinking Medium. На втором месте — Claude Opus 4.5 (93,3%), на третьем — GLM-4.7. Бенчмарк покрывает алгебру, геометрию, теорию чисел и комбинаторику. Отдельно, по данным LXT.ai (февраль 2026), на GPQA-Diamond лидирует Gemini 3.1 Pro (94,3%), Claude Opus 4.6 (91,3%), GPT-5.3 Codex (81%). На SWE-bench Verified: Claude Opus 4.6 — 80,8%, Gemini 3.1 Pro — 80,6%.",
       "importance": 5,
       "sources": [
-        {"title": "xAI Announcement", "url": "https://x.ai/blog/grok-3-api", "type": "official"}
+        {
+          "title": "DataLearnerAI — AIME 2026",
+          "url": "https://www.datalearner.com/en/benchmarks/aime-2026",
+          "type": "media"
+        },
+        {
+          "title": "LXT.ai — LLM Benchmarks 2026",
+          "url": "https://www.lxt.ai/blog/llm-benchmarks/",
+          "type": "media"
+        }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": ["grok-3", "xai", "elon-musk"],
-        "sentiment": "positive",
-        "event": "release"
+        "entities": [
+          "Qwen",
+          "Claude Opus 4.5",
+          "GLM-4.7",
+          "Gemini 3.1 Pro"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
       }
     }
   ]
