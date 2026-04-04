@@ -43,11 +43,9 @@ NOW        = datetime.now(timezone(timedelta(hours=3)))   # UTC+3 (МСК)
 TODAY      = NOW.date()
 TODAY_STR  = TODAY.isoformat()
 CUTOFF_24H = (NOW - timedelta(hours=24)).astimezone(timezone.utc)
-CUTOFF_48H = (NOW - timedelta(hours=48)).astimezone(timezone.utc)
 
-SECTIONS     = ["models", "platforms", "industry", "hype"]
-RAW_LIMIT    = 60   # максимум статей на вход Claude
-MIN_ARTICLES = 10   # если меньше — расширяем окно до 48ч
+SECTIONS  = ["models", "platforms", "industry", "hype"]
+RAW_LIMIT = 60   # максимум статей на вход Claude
 
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
@@ -645,13 +643,6 @@ async def amain() -> None:
     raw_items = collect_from_sources(sources, CUTOFF_24H)
     raw_items = deduplicate_raw(raw_items)
     log.info("Собрано (24ч): %d статей", len(raw_items))
-
-    # Если мало — расширяем до 48ч
-    if len(raw_items) < MIN_ARTICLES:
-        log.info("Меньше %d статей — расширяем окно до 48ч…", MIN_ARTICLES)
-        raw_items = collect_from_sources(sources, CUTOFF_48H)
-        raw_items = deduplicate_raw(raw_items)
-        log.info("Собрано (48ч): %d статей", len(raw_items))
 
     raw_items = raw_items[:RAW_LIMIT]
 
