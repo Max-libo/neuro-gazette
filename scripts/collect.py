@@ -234,10 +234,21 @@ async def _request_section(client: AsyncAnthropic, section: str, retry_hint: str
     return data.get("news", [])
 
 
+def _retry_after(e: anthropic.RateLimitError, fallback: float = 65.0) -> float:
+    """Читает retry-after из заголовков ответа, иначе возвращает fallback."""
+    try:
+        val = e.response.headers.get("retry-after")
+        if val:
+            return float(val) + 2  # +2с буфер
+    except Exception:
+        pass
+    return fallback
+
+
 async def collect_section(client: AsyncAnthropic, section: str) -> list[dict]:
-    """Сбор рубрики с до 3 попыток при ошибке."""
+    """Сбор рубрики: при 429 ждёт retry-after из заголовка, до 5 попыток."""
     last_error = ""
-    for attempt in range(1, 4):
+    for attempt in range(1, 6):
         try:
             hint = f"Предыдущий ответ не был валидным JSON ({last_error}). Верни ТОЛЬКО JSON, без пояснений." if last_error else ""
             news = await _request_section(client, section, hint)
@@ -245,14 +256,19 @@ async def collect_section(client: AsyncAnthropic, section: str) -> list[dict]:
             return news
         except json.JSONDecodeError as e:
             last_error = str(e)
-            log.warning("  [%s] невалидный JSON, попытка %d/3: %s", section, attempt, e)
-            if attempt < 3:
-                await asyncio.sleep(10 * attempt)
+            log.warning("  [%s] невалидный JSON, попытка %d/5: %s", section, attempt, e)
+            if attempt < 5:
+                await asyncio.sleep(10)
+        except anthropic.RateLimitError as e:
+            wait = _retry_after(e)
+            log.warning("  [%s] rate limit, жду %.0fс (попытка %d/5)…", section, wait, attempt)
+            if attempt < 5:
+                await asyncio.sleep(wait)
         except anthropic.APIError as e:
-            log.warning("  [%s] ошибка API, попытка %d/3: %s", section, attempt, e)
+            log.warning("  [%s] ошибка API, попытка %d/5: %s", section, attempt, e)
             last_error = str(e)
-            if attempt < 3:
-                await asyncio.sleep(15 * attempt)
+            if attempt < 5:
+                await asyncio.sleep(15)
 
     log.error("  [%s] все попытки исчерпаны, рубрика пропущена", section)
     return []
@@ -264,10 +280,7 @@ async def collect_all(api_key: str) -> dict:
     async with AsyncAnthropic(api_key=api_key) as client:
         log.info("Последовательный сбор %d рубрик через %s…", len(SECTIONS), MODEL)
         results = []
-        for i, section in enumerate(SECTIONS):
-            if i > 0:
-                log.info("Пауза 65с перед следующей рубрикой…")
-                await asyncio.sleep(65)
+        for section in SECTIONS:
             results.append(await collect_section(client, section))
 
     seen_ids: set[str] = set()
