@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install anthropic tenacity
 
       - name: Collect news
         env:
@@ -42,11 +42,11 @@ jobs:
           git push
 
       - name: Notify Telegram
-        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          [ -z "$BOT_TOKEN" ] && exit 0
           DATE=$(date -u +%Y-%m-%d)
           TEXT="📰 Нейрогазета: новый выпуск $DATE готов к редактуре."
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \

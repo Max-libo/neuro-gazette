@@ -2,10 +2,11 @@
 """
 Нейрогазета — скрипт сборки выпуска.
 
-Вызывает Anthropic API с веб-поиском, собирает AI-новости за последние 24 часа,
-сохраняет выпуск в docs/data/YYYY-MM-DD.json и обновляет docs/data/latest.json.
+Параллельно запрашивает Anthropic API (4 запроса по рубрикам) с веб-поиском,
+собирает AI-новости за последние 24 часа, сохраняет выпуск в docs/data/.
 """
 
+import asyncio
 import json
 import os
 import sys
@@ -14,6 +15,18 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import anthropic
+from anthropic import AsyncAnthropic
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    retry_if_exception_type,
+    before_sleep_log,
+)
+import logging
+
+logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
+log = logging.getLogger(__name__)
 
 # ── Конфигурация ────────────────────────────────────────────────────────────
 
@@ -22,17 +35,44 @@ DATA_DIR = REPO_ROOT / "docs" / "data"
 INDEX_FILE = DATA_DIR / "index.json"
 LATEST_FILE = DATA_DIR / "latest.json"
 
-MODEL = "claude-opus-4-6"          # самая мощная модель для сборки
+MODEL = "claude-opus-4-6"
 
 TODAY = datetime.now(timezone(timedelta(hours=3))).date()   # UTC+3 (МСК)
 TODAY_STR = TODAY.isoformat()
 
 SECTIONS = ["models", "platforms", "industry", "hype"]
 SECTION_NAMES = {
-    "models": "Модели (выпуски и обновления языковых моделей)",
+    "models":    "Модели (выпуски и обновления языковых и мультимодальных моделей)",
     "platforms": "Платформы (инструменты, IDE, API, продукты на базе AI)",
-    "industry": "Индустрия (инвестиции, регуляция, кадры, бизнес)",
-    "hype": "Желтуха (слухи, утечки, неподтверждённые данные, курьёзы)",
+    "industry":  "Индустрия (инвестиции, регуляция, кадры, бизнес)",
+    "hype":      "Желтуха (слухи, утечки, неподтверждённые данные, курьёзы)",
+}
+
+# Направляющие поисковые запросы по каждой рубрике
+SECTION_QUERIES = {
+    "models": [
+        f"new AI language model release {TODAY_STR}",
+        f"LLM benchmark results {TODAY_STR}",
+        f"OpenAI Anthropic Google DeepMind model announcement {TODAY_STR}",
+        f"multimodal AI model update {TODAY_STR}",
+    ],
+    "platforms": [
+        f"AI developer tools release {TODAY_STR}",
+        f"AI API update IDE integration {TODAY_STR}",
+        f"new AI product launch {TODAY_STR}",
+        f"AI coding assistant update {TODAY_STR}",
+    ],
+    "industry": [
+        f"AI startup funding investment {TODAY_STR}",
+        f"AI regulation policy {TODAY_STR}",
+        f"AI company acquisition merger {TODAY_STR}",
+        f"AI executive hire {TODAY_STR}",
+    ],
+    "hype": [
+        f"AI leak rumor unconfirmed {TODAY_STR}",
+        f"AI controversy scandal {TODAY_STR}",
+        f"AI model capability claim {TODAY_STR}",
+    ],
 }
 
 SYSTEM_PROMPT = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
@@ -46,13 +86,15 @@ SYSTEM_PROMPT = """Ты редактор профессионального еж
 - Возвращай ТОЛЬКО валидный JSON, без markdown-блоков и комментариев.
 """
 
-USER_PROMPT = f"""Дата выпуска: {TODAY_STR}
+def make_user_prompt(section: str, retry_hint: str = "") -> str:
+    name = SECTION_NAMES[section]
+    queries = "\n".join(f'  - "{q}"' for q in SECTION_QUERIES[section])
+    hint = f"\n\nВАЖНО: {retry_hint}" if retry_hint else ""
+    return f"""Дата выпуска: {TODAY_STR}
+Рубрика: {name}{hint}
 
-Найди AI-новости за последние 24 часа по четырём рубрикам:
-1. Модели — выпуски, обновления, бенчмарки языковых и мультимодальных моделей
-2. Платформы — инструменты разработки, IDE с AI, API, новые продукты на базе моделей
-3. Индустрия — инвестиции, регуляция, кадровые перестановки, слияния и поглощения
-4. Желтуха — слухи, утечки, неподтверждённые данные, скандалы, курьёзы
+Выполни поиск по каждому из следующих запросов, затем синтезируй найденное в новости:
+{queries}
 
 Приоритет источников:
 - Официальные блоги: openai.com/blog, anthropic.com/news, deepmind.google/blog, ai.meta.com/blog, mistral.ai/news, x.ai/blog, stability.ai/news
@@ -61,12 +103,11 @@ USER_PROMPT = f"""Дата выпуска: {TODAY_STR}
 
 Верни JSON строго в формате:
 {{
-  "date": "{TODAY_STR}",
-  "published": false,
+  "section": "{section}",
   "news": [
     {{
       "id": "уникальный-id-через-дефис",
-      "section": "models|platforms|industry|hype",
+      "section": "{section}",
       "headline": "Заголовок на русском",
       "subheadline": "Одно предложение — суть новости",
       "body": "Полный текст. Факты, цифры, прямые цитаты.",
@@ -83,8 +124,7 @@ USER_PROMPT = f"""Дата выпуска: {TODAY_STR}
       }}
     }}
   ]
-}}
-"""
+}}"""
 
 
 # ── Вспомогательные функции ─────────────────────────────────────────────────
@@ -117,107 +157,129 @@ def make_id(headline: str, section: str, date: str) -> str:
     return f"{section}-{h}-{date}"
 
 
-def validate_and_fix(issue: dict) -> dict:
-    """Проверяет структуру, устанавливает дефолты, генерирует ID."""
+def extract_json(text: str) -> str:
+    """Убирает markdown-обёртки и возвращает чистый JSON."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n")
+        text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
+    return text.strip()
+
+
+def validate_and_fix(item: dict, section: str, seen_ids: set) -> dict | None:
+    """Валидирует одну новость; возвращает None если невалидна."""
     valid_sections = set(SECTIONS)
     valid_sentiments = {"positive", "negative", "neutral", "rumor"}
     valid_events = {"release", "update", "shutdown", "investment", "regulation", "leak"}
     valid_source_types = {"official", "media", "rumor"}
 
-    seen_ids: set[str] = set()
-    clean_news = []
+    if not item.get("headline"):
+        return None
 
-    for item in issue.get("news", []):
-        if not item.get("headline"):
-            continue
+    if item.get("section") not in valid_sections:
+        item["section"] = section
 
-        # Section
-        if item.get("section") not in valid_sections:
-            item["section"] = "industry"
+    raw_id = item.get("id") or make_id(item["headline"], item["section"], TODAY_STR)
+    uid = raw_id
+    suffix = 2
+    while uid in seen_ids:
+        uid = f"{raw_id}-{suffix}"
+        suffix += 1
+    item["id"] = uid
+    seen_ids.add(uid)
 
-        # ID
-        raw_id = item.get("id") or make_id(item["headline"], item["section"], issue["date"])
-        uid = raw_id
-        suffix = 2
-        while uid in seen_ids:
-            uid = f"{raw_id}-{suffix}"
-            suffix += 1
-        item["id"] = uid
-        seen_ids.add(uid)
+    try:
+        imp = int(item.get("importance", 5))
+        item["importance"] = max(1, min(10, imp))
+    except (TypeError, ValueError):
+        item["importance"] = 5
 
-        # Importance
-        try:
-            imp = int(item.get("importance", 5))
-            item["importance"] = max(1, min(10, imp))
-        except (TypeError, ValueError):
-            item["importance"] = 5
+    item.setdefault("subheadline", "")
+    item.setdefault("body", "")
+    item.setdefault("unconfirmed", False)
+    item.setdefault("duplicate_note", None)
 
-        # Defaults
-        item.setdefault("subheadline", "")
-        item.setdefault("body", "")
-        item.setdefault("unconfirmed", False)
-        item.setdefault("duplicate_note", None)
+    sources = item.get("sources", []) or []
+    item["sources"] = [
+        {**s, "type": s.get("type") if s.get("type") in valid_source_types else "media"}
+        for s in sources if isinstance(s, dict) and s.get("url")
+    ]
 
-        # Sources
-        sources = item.get("sources", []) or []
-        clean_sources = []
-        for s in sources:
-            if isinstance(s, dict) and s.get("url"):
-                s["type"] = s.get("type") if s.get("type") in valid_source_types else "media"
-                clean_sources.append(s)
-        item["sources"] = clean_sources
+    tags = item.get("tags") or {}
+    tags.setdefault("entities", [])
+    if tags.get("sentiment") not in valid_sentiments:
+        tags["sentiment"] = "neutral"
+    if tags.get("event") not in valid_events:
+        tags["event"] = "update"
+    item["tags"] = tags
 
-        # Tags
-        tags = item.get("tags") or {}
-        tags.setdefault("entities", [])
-        if tags.get("sentiment") not in valid_sentiments:
-            tags["sentiment"] = "neutral"
-        if tags.get("event") not in valid_events:
-            tags["event"] = "update"
-        item["tags"] = tags
-
-        clean_news.append(item)
-
-    issue["news"] = clean_news
-    issue["date"] = issue.get("date") or TODAY_STR
-    issue.setdefault("published", False)
-    return issue
+    return item
 
 
-# ── Сборка через API ─────────────────────────────────────────────────────────
+# ── Сбор по рубрике с retry ─────────────────────────────────────────────────
 
-def collect_news() -> dict:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY не задан")
-
-    client = anthropic.Anthropic(api_key=api_key)
-
-    print(f"[collect] Запрос к {MODEL} с web_search_20250305…", flush=True)
-
-    response = client.messages.create(
+async def _request_section(client: AsyncAnthropic, section: str, retry_hint: str = "") -> list[dict]:
+    """Один запрос к API для одной рубрики. Возвращает список новостей."""
+    response = await client.messages.create(
         model=MODEL,
         max_tokens=8192,
         system=SYSTEM_PROMPT,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        messages=[{"role": "user", "content": USER_PROMPT}],
+        messages=[{"role": "user", "content": make_user_prompt(section, retry_hint)}],
     )
 
-    # Извлекаем текстовый контент из ответа
-    text = ""
-    for block in response.content:
-        if hasattr(block, "text"):
-            text += block.text
+    text = "".join(block.text for block in response.content if hasattr(block, "text"))
+    text = extract_json(text)
+    data = json.loads(text)  # бросит JSONDecodeError → уйдёт в retry
+    return data.get("news", [])
 
-    # Парсим JSON
-    text = text.strip()
-    # Убираем возможные markdown-блоки
-    if text.startswith("```"):
-        lines = text.split("\n")
-        text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
 
-    issue = json.loads(text)
-    return validate_and_fix(issue)
+async def collect_section(client: AsyncAnthropic, section: str) -> list[dict]:
+    """Сбор рубрики с до 3 попыток при ошибке."""
+    last_error = ""
+    for attempt in range(1, 4):
+        try:
+            hint = f"Предыдущий ответ не был валидным JSON ({last_error}). Верни ТОЛЬКО JSON, без пояснений." if last_error else ""
+            news = await _request_section(client, section, hint)
+            log.info("  [%s] получено %d новостей (попытка %d)", section, len(news), attempt)
+            return news
+        except json.JSONDecodeError as e:
+            last_error = str(e)
+            log.warning("  [%s] невалидный JSON, попытка %d/3: %s", section, attempt, e)
+            if attempt < 3:
+                await asyncio.sleep(10 * attempt)
+        except anthropic.APIError as e:
+            log.warning("  [%s] ошибка API, попытка %d/3: %s", section, attempt, e)
+            last_error = str(e)
+            if attempt < 3:
+                await asyncio.sleep(15 * attempt)
+
+    log.error("  [%s] все попытки исчерпаны, рубрика пропущена", section)
+    return []
+
+
+# ── Основной сбор ────────────────────────────────────────────────────────────
+
+async def collect_all(api_key: str) -> dict:
+    async with AsyncAnthropic(api_key=api_key) as client:
+        log.info("Параллельный сбор %d рубрик через %s…", len(SECTIONS), MODEL)
+        results = await asyncio.gather(
+            *[collect_section(client, s) for s in SECTIONS]
+        )
+
+    seen_ids: set[str] = set()
+    all_news = []
+    for section, news_list in zip(SECTIONS, results):
+        for item in news_list:
+            fixed = validate_and_fix(item, section, seen_ids)
+            if fixed:
+                all_news.append(fixed)
+
+    return {
+        "date": TODAY_STR,
+        "published": False,
+        "news": all_news,
+    }
 
 
 # ── Основная логика ──────────────────────────────────────────────────────────
@@ -225,32 +287,31 @@ def collect_news() -> dict:
 def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    print(f"[collect] Дата выпуска: {TODAY_STR}", flush=True)
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        log.error("ANTHROPIC_API_KEY не задан")
+        sys.exit(1)
+
+    log.info("Дата выпуска: %s", TODAY_STR)
 
     try:
-        issue = collect_news()
-    except json.JSONDecodeError as e:
-        print(f"[error] Не удалось распарсить JSON: {e}", file=sys.stderr)
-        sys.exit(1)
+        issue = asyncio.run(collect_all(api_key))
     except Exception as e:
-        print(f"[error] {e}", file=sys.stderr)
+        log.error("Критическая ошибка: %s", e)
         sys.exit(1)
 
     count = len(issue.get("news", []))
-    print(f"[collect] Собрано новостей: {count}", flush=True)
+    log.info("Итого новостей: %d", count)
 
-    # Сохраняем выпуск
     out_path = DATA_DIR / f"{TODAY_STR}.json"
     out_path.write_text(json.dumps(issue, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[collect] Сохранено: {out_path}", flush=True)
+    log.info("Сохранено: %s", out_path)
 
-    # Обновляем latest.json
     LATEST_FILE.write_text(json.dumps(issue, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[collect] Обновлён: {LATEST_FILE}", flush=True)
+    log.info("Обновлён: %s", LATEST_FILE)
 
-    # Обновляем индекс архива
     update_index(TODAY_STR, count, published=False)
-    print(f"[collect] Индекс обновлён", flush=True)
+    log.info("Индекс обновлён")
 
 
 if __name__ == "__main__":
