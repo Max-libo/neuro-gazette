@@ -149,13 +149,22 @@ function renderIssue(issue) {
     html += '</div>';
   }
 
-  // Все остальные — в CSS-колонках, текст затекает сам
+  // Все остальные — в трёх фиксированных колонках.
+  // Статьи распределяются round-robin при рендере и больше не мигрируют.
   if (inCols.length) {
-    html += '<div class="columns-body">';
-    inCols.forEach(item => {
-      if (item.importance >= 7)      html += buildLargeHtml(item);
-      else if (item.importance >= 5) html += buildMediumHtml(item);
-      else                           html += buildBriefHtml(item);
+    const NUM_COLS = 3;
+    const cols = Array.from({ length: NUM_COLS }, () => []);
+    inCols.forEach((item, i) => cols[i % NUM_COLS].push(item));
+
+    html += '<div class="col-wrap">';
+    cols.forEach(colItems => {
+      html += '<div class="col">';
+      colItems.forEach(item => {
+        if (item.importance >= 7)      html += buildLargeHtml(item);
+        else if (item.importance >= 5) html += buildMediumHtml(item);
+        else                           html += buildBriefHtml(item);
+      });
+      html += '</div>';
     });
     html += '</div>';
   }

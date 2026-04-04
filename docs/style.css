@@ -196,17 +196,21 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .expanded .art-body--collapse { display: block; }
 .expanded .expand-hint { display: none; }
 
-/* ── COLUMNS BODY — CSS columns, текст затекает сам ── */
-.columns-body {
-  column-count: 3;
-  column-gap: 0;
-  column-rule: 1px solid var(--rule);
+/* ── FIXED COLUMNS — три жёстких контейнера, статьи не мигрируют ── */
+.col-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border-top: 2px solid var(--ink);
+  align-items: start;   /* колонки не растягиваются до высоты соседа */
 }
 
-/* Каждая статья в колонках */
+.col {
+  border-right: 1px solid var(--rule);
+}
+.col:last-child { border-right: none; }
+
+/* Каждая статья в колонке */
 .col-article {
-  break-inside: avoid;
   padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--rule);
   cursor: pointer;
@@ -488,13 +492,14 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .columns-body { column-count: 2; }
+  .col-wrap { grid-template-columns: 1fr 1fr; }
   .art-body--cols { column-count: 1; }
 }
 
 @media (max-width: 768px) {
   :root { --page-pad: 1rem; }
-  .columns-body { column-count: 1; }
+  .col-wrap { grid-template-columns: 1fr; }
+  .col { border-right: none; }
   .form-row { grid-template-columns: 1fr; }
   .masthead-title h1 { font-size: 2.6rem; }
 }
