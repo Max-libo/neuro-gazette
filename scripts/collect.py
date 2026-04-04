@@ -63,6 +63,32 @@ def load_sources() -> dict:
 
 # ── Вспомогательные функции ───────────────────────────────────────────────────
 
+# Паттерны URL, которые никогда не указывают на конкретную статью
+_ALWAYS_VAGUE_URL = re.compile(
+    r"/(?:tags?|categories?|topics?|labels?|sections?)/",
+    re.IGNORECASE,
+)
+_VAGUE_INDEX_URL = re.compile(
+    r"/(?:blog|news|articles?)/?$",
+    re.IGNORECASE,
+)
+
+
+def _is_vague_url(url: str) -> bool:
+    """True если URL — тег-страница, раздел или главная, а не конкретная статья."""
+    if not url or not url.startswith("http"):
+        return True
+    from urllib.parse import urlparse
+    path = urlparse(url.split("?")[0]).path.rstrip("/")
+    if not path or path == "/":
+        return True
+    if _ALWAYS_VAGUE_URL.search(path):
+        return True
+    if _VAGUE_INDEX_URL.search(path):
+        return True
+    return False
+
+
 def _clean_text(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text)
@@ -119,7 +145,9 @@ def fetch_rss_feed(source: dict, cutoff: datetime) -> list[dict]:
                     pass
                 break
 
-        if pub_dt and pub_dt < cutoff:
+        if not pub_dt:
+            continue
+        if pub_dt < cutoff:
             continue
 
         title = (getattr(entry, "title", "") or "").strip()
@@ -127,6 +155,8 @@ def fetch_rss_feed(source: dict, cutoff: datetime) -> list[dict]:
             continue
 
         link    = getattr(entry, "link", "") or ""
+        if _is_vague_url(link):
+            continue
         summary = _clean_text(
             getattr(entry, "summary", "") or
             getattr(entry, "description", "") or ""
@@ -186,10 +216,14 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                     link = urljoin(url, link)
                 if not title or not link or link in seen_urls:
                     continue
+                if _is_vague_url(link):
+                    continue
                 pub_dt = _parse_date(
                     item.get("datePublished") or item.get("dateModified") or ""
                 )
-                if pub_dt and pub_dt < cutoff:
+                if not pub_dt:
+                    continue
+                if pub_dt < cutoff:
                     continue
                 seen_urls.add(link)
                 results.append({
@@ -225,6 +259,8 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
             link = urljoin(url, link)
         if link in seen_urls or link.rstrip("/") == url.rstrip("/"):
             continue
+        if _is_vague_url(link):
+            continue
         seen_urls.add(link)
 
         # Ищем дату в ближайшем блоке-предке
@@ -244,7 +280,9 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                         if pub_dt:
                             break
 
-        if pub_dt and pub_dt < cutoff:
+        if not pub_dt:
+            continue
+        if pub_dt < cutoff:
             continue
 
         results.append({
@@ -314,14 +352,32 @@ async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> s
                     "role": "user",
                     "content": (
                         f"Найди самые обсуждаемые и скандальные AI-новости по запросу: «{query}». "
-                        "Перечисли 3-5 результатов с заголовком, URL и кратким описанием. "
-                        "Только факты, без оценок."
+                        "Перечисли 3-5 результатов строго в формате одной строки каждый:\n"
+                        "ЗАГОЛОВОК | URL конкретной статьи | ДАТА (YYYY-MM-DD) | краткое описание\n"
+                        "Требования: URL должен вести на конкретную статью, не на тег-страницу, "
+                        "раздел или главную. Если конкретного URL нет — пропусти результат. "
+                        "Только строки в указанном формате, без пояснений."
                     ),
                 }],
             )
             for block in response.content:
-                if hasattr(block, "text") and block.text:
-                    blocks.append(block.text.strip())
+                if not (hasattr(block, "text") and block.text):
+                    continue
+                valid_lines = []
+                for line in block.text.strip().splitlines():
+                    line = line.strip()
+                    if not line:
+                        continue
+                    parts = [p.strip() for p in line.split("|")]
+                    if len(parts) < 2:
+                        continue
+                    article_url = parts[1].strip()
+                    if _is_vague_url(article_url):
+                        log.debug("Hype: отброшен результат без конкретного URL: %r", article_url)
+                        continue
+                    valid_lines.append(line)
+                if valid_lines:
+                    blocks.append("\n".join(valid_lines))
         except Exception as e:
             log.warning("Hype search (%r) ошибка: %s", query, e)
 
