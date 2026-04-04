@@ -35,7 +35,7 @@ DATA_DIR = REPO_ROOT / "docs" / "data"
 INDEX_FILE = DATA_DIR / "index.json"
 LATEST_FILE = DATA_DIR / "latest.json"
 
-MODEL = "claude-opus-4-6"
+MODEL = "claude-sonnet-4-6"
 
 TODAY = datetime.now(timezone(timedelta(hours=3))).date()   # UTC+3 (МСК)
 TODAY_STR = TODAY.isoformat()
