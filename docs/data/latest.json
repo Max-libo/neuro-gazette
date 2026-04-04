@@ -1,5 +1,228 @@
 {
   "date": "2026-04-04",
   "published": false,
-  "news": []
+  "news": [
+    {
+      "id": "models-ray314",
+      "section": "models",
+      "headline": "Luma AI выпустила Ray3.14: 1080p, в 3 раза дешевле, в 4 раза быстрее",
+      "subheadline": "Luma AI представила обновлённую модель генерации видео Ray3.14 с нативным разрешением 1080p и значительно сниженной стоимостью.",
+      "body": "Luma AI анонсировала Ray3.14 — обновление флагманской видеомодели Ray3. Ключевые параметры: нативное разрешение 1080p, стоимость генерации снижена в 3 раза, скорость обработки увеличена в 4 раза по сравнению с предыдущей версией. Одновременно компания опубликовала технический отчёт об оценке производительности Ray3, позиционируя его как state-of-the-art в сегменте профессиональной генерации видео. Также опубликованы исследовательские материалы по методам масштабирования вычислений на этапе инференса (Terminal Velocity Matching) и предобучения (Inductive Moment Matching).",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Ray3.14 is here",
+          "url": "https://lumalabs.ai/news/ray3_14",
+          "type": "official"
+        },
+        {
+          "title": "Ray3 Evaluation Report",
+          "url": "https://lumalabs.ai/news/ray3-eval",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Luma AI",
+          "Ray3.14"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "models-stability-bundle",
+      "section": "models",
+      "headline": "Stability AI выпустила три новые модели: видео, 3D-камера и аудио",
+      "subheadline": "Stability AI одновременно анонсировала Stable Video 4D 2.0, Stable Virtual Camera и Stable Audio 2.5.",
+      "body": "Stability AI опубликовала сразу три релиза. Stable Video 4D 2.0 — обновление модели для генерации новых ракурсов и 4D-контента из одного видео с повышенной точностью. Stable Virtual Camera — модель многовидовой генерации видео с управлением положением камеры в 3D-пространстве. Stable Audio 2.5 позиционируется как первая аудиомодель, ориентированная на корпоративное производство звука в промышленных масштабах. Все три продукта анонсированы в рамках единого обновления продуктовой линейки компании.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Stable Video 4D 2.0",
+          "url": "https://stability.ai/news-updates/stable-video-4d-20-new-upgrades-for-high-fidelity-novel-views-and-4d-generation-from-a-single-video",
+          "type": "official"
+        },
+        {
+          "title": "Introducing Stable Virtual Camera",
+          "url": "https://stability.ai/news-updates/introducing-stable-virtual-camera-multi-view-video-generation-with-3d-camera-control",
+          "type": "official"
+        },
+        {
+          "title": "Stable Audio 2.5",
+          "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Stability AI",
+          "Stable Video 4D",
+          "Stable Virtual Camera",
+          "Stable Audio"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "platforms-claudecode-openclaw",
+      "section": "platforms",
+      "headline": "Anthropic введёт доплату за поддержку OpenClaw в Claude Code",
+      "subheadline": "Подписчики Claude Code получат доступ к AI-агенту OpenClaw только за дополнительную плату.",
+      "body": "Anthropic объявила, что интеграция с AI-агентом OpenClaw в среде разработки Claude Code не будет входить в базовую подписку. Пользователям потребуется отдельная оплата для использования этой функциональности. Решение вызвало критику в сообществе разработчиков на фоне того, что OpenClaw приобрёл значительную популярность как инструмент автономного программирования.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
+          "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Code",
+          "OpenClaw"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-anthropic-coefficientbio",
+      "section": "industry",
+      "headline": "Anthropic приобрела биотех-стартап Coefficient Bio за $400 млн",
+      "subheadline": "Сделка стала первым крупным поглощением Anthropic в области биологических наук.",
+      "body": "По данным СМИ, Anthropic закрыла сделку по покупке биотехнологического стартапа Coefficient Bio на сумму около $400 млн. Официального подтверждения от Anthropic на момент публикации не поступало. Coefficient Bio специализируется на применении вычислительных методов в биологических исследованиях. Приобретение сигнализирует о намерении Anthropic расширить присутствие в сфере научного AI за пределами языковых моделей.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Coefficient Bio"
+        ],
+        "sentiment": "neutral",
+        "event": "investment"
+      }
+    },
+    {
+      "id": "industry-openai-reshuffle",
+      "section": "industry",
+      "headline": "OpenAI реорганизовала топ-менеджмент: Брэд Лайткэп возглавил «специальные проекты»",
+      "subheadline": "COO OpenAI Брэд Лайткэп получил новую роль, компания провела перестановки в руководстве.",
+      "body": "OpenAI провела реорганизацию исполнительного состава. COO Брэд Лайткэп переходит на позицию, курирующую «специальные проекты» — направление, детали которого компания не раскрывает. Также изменены роли Фиджи Симо и Кейт Роуч. Перестановки происходят на фоне продолжающейся корпоративной трансформации OpenAI и подготовки к смене юридической структуры.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "OpenAI executive shuffle includes new role for COO Brad Lightcap",
+          "url": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Брэд Лайткэп",
+          "Фиджи Симо"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-anthropic-pac",
+      "section": "industry",
+      "headline": "Anthropic создала политический комитет (PAC) для лоббирования интересов в Вашингтоне",
+      "subheadline": "Компания институционализирует политическую деятельность в США через собственный PAC.",
+      "body": "Anthropic зарегистрировала политический комитет действий (Political Action Committee, PAC), расширяя лоббистское присутствие в Вашингтоне. Это происходит на фоне роста регуляторного давления на AI-отрасль и активизации законодательных инициатив по управлению искусственным интеллектом в США. Anthropic ранее участвовала в слушаниях Конгресса и публично выступала за разработку отраслевых стандартов безопасности.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "Anthropic ramps up its political activities with a new PAC",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "hype-openclaw-security",
+      "section": "hype",
+      "headline": "AI-агент OpenClaw с 135 тыс. звёзд на GitHub накопил три критические уязвимости за три недели",
+      "subheadline": "Вирусный агент для автономного программирования стал источником угроз безопасности.",
+      "body": "По данным отраслевых изданий, AI-агент OpenClaw, собравший свыше 135 000 звёзд на GitHub, за три недели с момента релиза накопил три критические уязвимости с присвоенными CVE-идентификаторами. Инструмент позиционировался как решение для автономного написания и выполнения кода. Проблемы безопасности актуализировались после того, как Anthropic объявила о платной интеграции OpenClaw в Claude Code. Детали уязвимостей и патч-статус на момент публикации не верифицированы.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "AI Weekly",
+          "url": "https://aiweekly.co/",
+          "type": "media"
+        },
+        {
+          "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
+          "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenClaw",
+          "Anthropic"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      }
+    },
+    {
+      "id": "hype-icml-ai-review",
+      "section": "hype",
+      "headline": "ICML 2026 отклонил 497 статей за тайное использование AI при рецензировании",
+      "subheadline": "Организаторы конференции применили систему скрытых водяных знаков для выявления нарушителей.",
+      "body": "Организаторы Международной конференции по машинному обучению (ICML) 2026 отклонили 497 поданных статей — около 2% от общего числа заявок. Авторы этих работ нарушили запрет на использование AI при рецензировании чужих статей. Нарушения выявлены с помощью системы скрытых водяных знаков: в статьи встраивались специальные маркерные фразы, которые языковые модели воспроизводили в текстах рецензий. Информация со ссылкой на Nature не получила официального подтверждения от ICML на момент публикации.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-00893-2",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ICML"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    }
+  ]
 }
