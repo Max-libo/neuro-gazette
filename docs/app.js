@@ -77,7 +77,7 @@ function buildRelatedHtml(related) {
   const links = related.map(r =>
     `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`
   ).join('');
-  return `<details class="related-block"><summary class="related-summary">ещё ${related.length} ${related.length === 1 ? 'новость' : related.length < 5 ? 'новости' : 'новостей'} по теме</summary><ul class="related-list">${links}</ul></details>`;
+  return `<details class="related-block" onclick="event.stopPropagation()"><summary class="related-summary">ещё ${related.length} ${related.length === 1 ? 'новость' : related.length < 5 ? 'новости' : 'новостей'} по теме</summary><ul class="related-list">${links}</ul></details>`;
 }
 
 function buildMetaHtml(item) {
@@ -122,17 +122,18 @@ function buildRegularHtml(item) {
     </article>`;
 }
 
-/* ── COMPACT (importance < 5) ── тот же кегль, но описание под катом */
+/* ── COMPACT (importance < 5) ── тот же кегль, подзаголовок и тело под катом */
 function buildCompactHtml(item) {
   return `
     <article class="col-article col-article--compact" id="${esc(item.id)}" onclick="toggleExpand(this)">
       ${sectionBadge(item.section)}
       <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
-      <p class="art-sub">${esc(item.subheadline)}</p>
       <div class="art-body art-body--collapse">
+        <p class="art-sub">${esc(item.subheadline)}</p>
         ${esc(item.body)}
         ${buildMetaHtml(item)}
       </div>
+      <span class="expand-hint">подробнее ↓</span>
     </article>`;
 }
 

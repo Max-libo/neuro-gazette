@@ -270,6 +270,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .source-badge.source-type-rumor { color: var(--accent); border-color: var(--accent); }
 .source-badge.source-type-rumor:hover { background: var(--accent); color: var(--paper); }
 
+
 .expand-hint {
   font-family: var(--font-mono);
   font-size: 0.62rem;
