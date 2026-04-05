@@ -467,8 +467,11 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 - Покрытие секций: старайся включить новости во ВСЕ 4 рубрики. Не допускай ситуации, когда целая рубрика пуста, если для неё есть материалы.
 - Разнообразие: если несколько пресс-релизов от одной компании — объедини связанные в одну новость с несколькими sources, а не создавай отдельные записи на каждый пресс-релиз.
 - Тематическая дедупликация: если несколько статей описывают одну тенденцию (например, три новости про копирайт и AI) — объедини их в одну аналитическую заметку с несколькими sources, а не создавай отдельные записи.
-- importance: РОВНО ОДНА новость в выпуске должна иметь importance 9 или 10 — это главная новость дня. Все остальные: 6-8 важные, 1-5 краткие заметки. Не ставь 9-10 более чем одной новости.
-- Если новость помечена unconfirmed: true — её importance не может быть выше 6. Непроверенные новости не бывают главными.
+- tier: у каждой новости поле "tier" — одно из трёх значений:
+  * "hero" — РОВНО ОДНА на весь выпуск. Самое значимое событие дня. Развёрнутый body.
+  * "regular" — основные новости. Полноценный body и подзаголовок.
+  * "compact" — мелкие заметки. Короткий body, на фронтенде подзаголовок скрыт под катом.
+  Непроверенные новости (unconfirmed: true) не могут быть hero.
 - Качество body: текст body должен содержать факты, цифры или контекст, которых НЕТ в headline и subheadline. Если body просто пересказывает заголовок другими словами — перепиши, добавив детали из источника. «Подробности в публикации» — не body.
 - Группировка по компании: если от одной компании/темы много новостей — оформи 1-2 самые важные как полноценные статьи. Остальные менее значимые помести в поле "related" главной статьи (массив объектов {title, url}). Это даст компактный блок «ещё N новостей» со ссылками, без потери информации. Не создавай отдельные записи на каждый мелкий пресс-релиз.
 - Язык выпуска: русский, деловой стиль. Переводи заголовки и тексты на русский.
@@ -489,7 +492,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
       "headline": "Заголовок на русском",
       "subheadline": "Одно предложение — суть новости",
       "body": "Полный текст. Факты, цифры, прямые цитаты — сверх того, что уже сказано в заголовке.",
-      "importance": 1,
+      "tier": "hero|regular|compact",
       "sources": [{"title": "Название", "url": "https://...", "type": "official|media|rumor"}],
       "related": [{"title": "Заголовок менее значимой новости", "url": "https://...", "entities": ["Company"], "sentiment": "positive|negative|neutral"}],
       "unconfirmed": false,
@@ -679,10 +682,13 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     item["id"] = uid
     seen_ids.add(uid)
 
-    try:
-        item["importance"] = max(1, min(10, int(item.get("importance", 5))))
-    except (TypeError, ValueError):
-        item["importance"] = 5
+    # tier → importance для обратной совместимости
+    TIER_MAP = {"hero": 9, "regular": 7, "compact": 5}
+    tier = item.get("tier", "regular")
+    if tier not in TIER_MAP:
+        tier = "regular"
+    item["tier"] = tier
+    item["importance"] = TIER_MAP[tier]
 
     item.setdefault("subheadline", "")
     item.setdefault("body", "")
@@ -871,22 +877,24 @@ async def _run_pipeline(
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
 
-    # Потолок importance 6 для непроверенных новостей
+    # unconfirmed не может быть hero
     for n in all_news:
-        if n.get("unconfirmed") and n["importance"] > 6:
-            log.info("Снижен importance %d→6 для unconfirmed: %s", n["importance"], n["headline"][:60])
-            n["importance"] = 6
+        if n.get("unconfirmed") and n["tier"] == "hero":
+            log.info("Понижен tier hero→regular для unconfirmed: %s", n["headline"][:60])
+            n["tier"] = "regular"
+            n["importance"] = 7
 
-    # Ровно одна hero-новость (importance >= 9): оставляем самую важную, остальные → 8
-    heroes = [n for n in all_news if n["importance"] >= 9]
+    # Ровно одна hero-новость
+    heroes = [n for n in all_news if n["tier"] == "hero"]
     if len(heroes) > 1:
-        heroes.sort(key=lambda n: n["importance"], reverse=True)
         for n in heroes[1:]:
-            log.info("Снижен importance %d→8 (лишний hero): %s", n["importance"], n["headline"][:60])
-            n["importance"] = 8
+            log.info("Понижен tier hero→regular (лишний hero): %s", n["headline"][:60])
+            n["tier"] = "regular"
+            n["importance"] = 7
     elif not heroes and all_news:
         top = max(all_news, key=lambda n: n["importance"])
-        log.info("Повышен importance %d→9 (нет hero): %s", top["importance"], top["headline"][:60])
+        log.info("Повышен tier %s→hero (нет hero): %s", top["tier"], top["headline"][:60])
+        top["tier"] = "hero"
         top["importance"] = 9
 
     log.info("Итого новостей в выпуске: %d", len(all_news))

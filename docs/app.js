@@ -145,8 +145,11 @@ function renderIssue(issue) {
   document.getElementById('issue-date').textContent = formatDate(issue.date);
   document.title = `Нейрогазета — ${issue.date}`;
 
-  // Сортируем всё глобально по важности — рубрики перемешаны
-  const all = [...(issue.news || [])].sort((a, b) => b.importance - a.importance);
+  // Сортируем: hero → regular → compact
+  const TIER_ORDER = { hero: 0, regular: 1, compact: 2 };
+  const all = [...(issue.news || [])].sort((a, b) =>
+    (TIER_ORDER[a.tier] ?? 1) - (TIER_ORDER[b.tier] ?? 1) || b.importance - a.importance
+  );
 
   if (all.length === 0) {
     document.getElementById('newspaper').innerHTML =
@@ -154,9 +157,9 @@ function renderIssue(issue) {
     return;
   }
 
-  // Ровно одна hero-новость — самая важная
-  const hero   = all[0];
-  const inCols = all.slice(1);
+  // Ровно одна hero-новость
+  const hero   = all.find(n => n.tier === 'hero') || all[0];
+  const inCols = all.filter(n => n !== hero);
 
   let html = '';
 
@@ -165,7 +168,7 @@ function renderIssue(issue) {
   html += '</div>';
 
   // Все остальные — в трёх фиксированных колонках, одинаковый кегль.
-  // У менее важных (importance < 5) описание под катом без подсказки.
+  // compact-новости: подзаголовок и тело под катом.
   if (inCols.length) {
     const NUM_COLS = 3;
     const cols = Array.from({ length: NUM_COLS }, () => []);
@@ -175,8 +178,8 @@ function renderIssue(issue) {
     cols.forEach(colItems => {
       html += '<div class="col">';
       colItems.forEach(item => {
-        if (item.importance >= 5) html += buildRegularHtml(item);
-        else                      html += buildCompactHtml(item);
+        if (item.tier === 'compact') html += buildCompactHtml(item);
+        else                         html += buildRegularHtml(item);
       });
       html += '</div>';
     });
