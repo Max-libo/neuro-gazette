@@ -54,7 +54,7 @@ _cutoff_msk     = CUTOFF_24H.astimezone(MSK)
 WINDOW_STR      = f"{_cutoff_msk.strftime('%Y-%m-%d %H:%M')} МСК — {_window_end.strftime('%Y-%m-%d %H:%M')} МСК"
 
 SECTIONS  = ["models", "platforms", "industry", "hype"]
-RAW_LIMIT = 120  # максимум статей на вход Claude
+RAW_LIMIT = 200  # максимум статей на вход Claude
 
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
