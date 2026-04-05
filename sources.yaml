@@ -54,17 +54,6 @@ sources:
     section: models
     priority: 2
 
-  - name: "Reka AI"
-    type: scrape
-    url: "https://www.reka.ai/news"
-    section: models
-    priority: 2
-
-  - name: "Aleph Alpha"
-    type: scrape
-    url: "https://aleph-alpha.com/blog"
-    section: models
-    priority: 2
 
   - name: "DeepSeek"
     type: scrape
@@ -129,8 +118,8 @@ sources:
     priority: 1
 
   - name: "Ideogram"
-    type: scrape
-    url: "https://ideogram.ai/blog"
+    type: rss
+    url: "https://ideogram.ai/blog/rss.xml"
     section: platforms
     priority: 2
 
@@ -179,8 +168,8 @@ sources:
     priority: 1
 
   - name: "Kuaishou (Kling)"
-    type: scrape
-    url: "https://ir.kuaishou.com/news-releases"
+    type: rss
+    url: "https://ir.kuaishou.com/rss/news-releases.xml"
     section: platforms
     priority: 1
 
@@ -289,11 +278,6 @@ sources:
     section: platforms
     priority: 2
 
-  - name: "Freepik AI"
-    type: scrape
-    url: "https://www.freepik.com/blog/category/news/"
-    section: platforms
-    priority: 2
 
   - name: "SYNTX AI"
     type: scrape
@@ -307,11 +291,6 @@ sources:
     section: platforms
     priority: 3
 
-  - name: "Leonardo AI"
-    type: scrape
-    url: "https://leonardo.ai/blog"
-    section: platforms
-    priority: 2
 
   - name: "Civitai"
     type: scrape
@@ -328,8 +307,8 @@ sources:
     priority: 1
 
   - name: "Сбер AI"
-    type: scrape
-    url: "https://developers.sber.ru/blog"
+    type: rss
+    url: "https://developers.sber.ru/blog/rss"
     section: models
     priority: 1
 
@@ -417,6 +396,8 @@ search_queries:
     - "LLM multimodal model announcement benchmark"
     - "image generation model release update today"
     - "video generation AI model announcement today"
+    - "Kling AI video generation update release"
+    - "Сбер GigaChat YandexGPT обновление релиз"
 
   hype:
     - "AI news viral controversy today"
