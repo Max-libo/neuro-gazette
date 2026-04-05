@@ -3,152 +3,41 @@
   "published": false,
   "news": [
     {
-      "id": "platforms-claude-openclaw",
-      "section": "platforms",
-      "headline": "Anthropic вводит отдельную плату за использование Claude через сторонние инструменты",
-      "subheadline": "Подписчики Claude Code теперь должны платить дополнительно за доступ через OpenClaw и аналогичные сервисы.",
-      "body": "Anthropic объявила об изменении условий использования Claude для сторонних интеграций: подписчики Claude Code, ранее получавшие доступ к модели через инструменты вроде OpenClaw бесплатно в рамках подписки, теперь обязаны оплачивать использование отдельно. Engadget и TechCrunch подтвердили, что бесплатный доступ через третьи стороны прекращён. Конкретные тарифы в публикациях не раскрываются.",
+      "id": "hype-001",
+      "section": "hype",
+      "headline": "AI-агент взломал FreeBSD за 4 часа",
+      "subheadline": "Неназванный AI-агент обнаружил и эксплуатировал уязвимость в FreeBSD менее чем за рабочий день.",
+      "body": "По данным дайджеста The Neuron за 4–5 апреля 2026 года, AI-агент самостоятельно провёл атаку на систему FreeBSD и добился успеха в течение 4 часов. Детали о том, какая именно уязвимость была использована, и кто стоит за разработкой агента, в открытых источниках не раскрываются. Инцидент упоминается в контексте нарастающих опасений относительно автономных наступательных возможностей AI-систем. Подробности и независимое подтверждение на момент публикации отсутствуют.",
       "importance": 7,
       "sources": [
         {
-          "title": "TechCrunch",
-          "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
-          "type": "media"
-        },
-        {
-          "title": "Engadget",
-          "url": "https://www.engadget.com/ai/its-no-longer-free-to-use-claude-through-third-party-tools-like-openclaw-160912082.html?src=rss",
+          "title": "Around the Horn Digest: Everything That Happened in AI This Weekend (April 4–5, 2026)",
+          "url": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-thursday-april-2-2026-/",
           "type": "media"
         }
       ],
-      "unconfirmed": false,
-      "duplicate_note": "TechCrunch и Engadget освещают одно событие — объединены в одну запись.",
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude Code",
-          "OpenClaw"
-        ],
-        "sentiment": "negative",
-        "event": "update"
-      }
-    },
-    {
-      "id": "platforms-prismml-1bit",
-      "section": "platforms",
-      "headline": "PrismML выпустила 1-битную LLM для локального запуска без облака",
-      "subheadline": "Стартап представил энергоэффективную языковую модель на базе 1-битных вычислений, ориентированную на edge-устройства.",
-      "body": "Компания PrismML анонсировала языковую модель с 1-битными весами, разработанную для запуска на устройствах без подключения к облаку. По заявлению компании, архитектура существенно снижает энергопотребление по сравнению с классическими LLM. Технические характеристики — число параметров, бенчмарки — в публикации The Register не раскрываются. Позиционирование: альтернатива облачным решениям для корпоративных и встраиваемых сценариев.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "The Register",
-          "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/04/prismml_1bit_llm/",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": false,
+      "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "PrismML"
-        ],
-        "sentiment": "neutral",
-        "event": "release"
-      }
-    },
-    {
-      "id": "industry-icml-paper-rejection",
-      "section": "industry",
-      "headline": "ICML 2026 отклонил 497 статей из-за незаконного использования ИИ при рецензировании",
-      "subheadline": "Конференция выявила нарушителей запрета на LLM-рецензирование через скрытые водяные знаки в текстах.",
-      "body": "Международная конференция по машинному обучению ICML 2026 отклонила 497 научных статей после того, как организаторы обнаружили, что их авторы использовали языковые модели при рецензировании — вопреки установленным правилам. Нарушители были идентифицированы благодаря скрытым водяным знакам, встроенным в тексты материалов для рецензирования. Об этом сообщила Nature. Инцидент фиксирует растущую проблему контроля за использованием генеративного ИИ в академическом процессе.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "Nature",
-          "url": "https://www.nature.com/articles/d41586-026-00893-2",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "ICML 2026"
-        ],
-        "sentiment": "negative",
-        "event": "regulation"
-      }
-    },
-    {
-      "id": "industry-russia-ai-law",
-      "section": "industry",
-      "headline": "Россия готовит законопроект о блокировке зарубежных ИИ-сервисов и регулировании «доверенных моделей»",
-      "subheadline": "Минцифры предложило запретить ИИ-модели, передающие данные граждан за рубеж; отдельный законопроект регулирует авторство нейросетей и доступ иностранных алгоритмов к госсистемам.",
-      "body": "По данным НГС (20 марта 2026), Министерство цифрового развития России разработало законопроект, предусматривающий блокировку ИИ-сервисов, передающих персональные данные россиян на зарубежные серверы. Под действие закона могут попасть ChatGPT, Claude и Gemini. Параллельно, по информации Российского союза журналистов (17 марта 2026), на публичное обсуждение вынесен отдельный законопроект о регулировании ИИ: он вводит понятие «доверенных моделей», регулирует вопросы авторства контента, созданного нейросетями, и запрещает применение зарубежных алгоритмов в государственных информационных системах.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "НГС",
-          "url": "https://ngs.ru/text/world/2026/03/20/76321611/",
-          "type": "media"
-        },
-        {
-          "title": "РСЖ",
-          "url": "https://ruj.ru/news/blogs/chto-menyaet-novyi-zakonoproekt-o-neirosetyakh-23941",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Два законопроекта от разных ведомств, освещённых разными источниками; объединены как связанный регуляторный пакет.",
-      "tags": {
-        "entities": [
-          "Минцифры",
-          "ChatGPT",
-          "Claude",
-          "Gemini"
-        ],
-        "sentiment": "negative",
-        "event": "regulation"
-      }
-    },
-    {
-      "id": "hype-deepfake-maduro",
-      "section": "hype",
-      "headline": "Дипфейки «ареста» Мадуро распространились в соцсетях",
-      "subheadline": "ИИ-сгенерированные изображения, имитирующие задержание президента Венесуэлы, вызвали массовую путаницу до вмешательства фактчекеров.",
-      "body": "Около 30 марта 2026 года в социальных сетях распространилась серия реалистичных изображений, на которых президент Венесуэлы Николас Мадуро якобы был задержан. Фактчекеры подтвердили: снимки сгенерированы с помощью ИИ и не соответствуют действительности. Источник распространения и использованный инструмент генерации не установлены. Инцидент стал очередным примером применения генеративного ИИ для политической дезинформации.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "Crescendo AI",
-          "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
-          "type": "media"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Мадуро",
-          "Венесуэла"
+          "FreeBSD",
+          "The Neuron"
         ],
         "sentiment": "negative",
         "event": "leak"
       }
     },
     {
-      "id": "hype-grok-images-scandal",
+      "id": "hype-002",
       "section": "hype",
-      "headline": "Grok сгенерировал около 3 млн сексуализированных изображений реальных людей за 11 дней",
-      "subheadline": "Обновление модели Aurora в Grok позволило массово создавать интимные изображения реальных людей без их согласия.",
-      "body": "По данным Crescendo AI, после обновления модели Aurora в сервисе Grok (xAI) пользователи в течение 11 дней сгенерировали порядка 3 млн изображений сексуального характера с реальными людьми без их согласия. Инцидент вызвал широкий общественный резонанс. Дата события — январь 2026 года. Реакция xAI и последующие меры по ограничению функционала в источнике не детализированы. Crescendo AI является единственным источником приведённых цифр.",
-      "importance": 7,
+      "headline": "DeepSeek V4 запущен на чипах Huawei",
+      "subheadline": "Новая версия китайской модели DeepSeek предположительно работает на отечественном оборудовании Huawei.",
+      "body": "Дайджест The Neuron от 4–5 апреля 2026 года сообщает о запуске DeepSeek V4 на чипах Huawei. Если информация подтвердится, это будет означать, что китайские AI-разработчики способны обходить американские санкции на экспорт чипов NVIDIA, используя собственную аппаратную базу. Официальных заявлений от DeepSeek или Huawei не поступало. Данные неподтверждены.",
+      "importance": 6,
       "sources": [
         {
-          "title": "Crescendo AI",
-          "url": "https://www.crescendo.ai/blog/ai-controversies",
+          "title": "Around the Horn Digest: Everything That Happened in AI This Weekend (April 4–5, 2026)",
+          "url": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-thursday-april-2-2026-/",
           "type": "media"
         }
       ],
@@ -156,25 +45,24 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Grok",
-          "xAI",
-          "Aurora"
+          "DeepSeek",
+          "Huawei"
         ],
-        "sentiment": "negative",
-        "event": "update"
+        "sentiment": "neutral",
+        "event": "release"
       }
     },
     {
-      "id": "hype-openai-pentagon",
+      "id": "hype-003",
       "section": "hype",
-      "headline": "OpenAI заключила контракт с Пентагоном на $200 млн",
-      "subheadline": "По данным VC.ru, OpenAI подписала военный контракт на фоне выхода GPT-5.4 с режимом Thinking.",
-      "body": "Согласно материалу VC.ru от 10 марта 2026 года, OpenAI заключила контракт с Министерством обороны США на сумму $200 млн. Одновременно компания представила модель GPT-5.4, оснащённую режимом Thinking. Военный контракт вызвал публичную критику. Официальных подтверждений от OpenAI или Пентагона в доступных источниках не зафиксировано; исходный материал VC.ru носит агрегирующий характер.",
+      "headline": "Иранские удары положили AWS в Персидском заливе",
+      "subheadline": "По данным дайджеста, удары по инфраструктуре в регионе Персидского залива привели к сбою в работе Amazon Web Services.",
+      "body": "Дайджест The Neuron за 4–5 апреля 2026 года упоминает, что иранские военные удары по объектам в зоне Персидского залива вызвали перебои в работе дата-центров Amazon Web Services. Официальных подтверждений от AWS или государственных структур в открытом доступе не зафиксировано. Информация основана на единственном агрегаторном источнике и требует верификации.",
       "importance": 5,
       "sources": [
         {
-          "title": "VC.ru",
-          "url": "https://vc.ru/ai/2788279-novosti-neyrosetey-marta-2026-gpt-5-4-google-agenty-konec-privatnosti",
+          "title": "Around the Horn Digest: Everything That Happened in AI This Weekend (April 4–5, 2026)",
+          "url": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-thursday-april-2-2026-/",
           "type": "media"
         }
       ],
@@ -182,12 +70,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "GPT-5.4",
-          "Пентагон"
+          "Amazon Web Services",
+          "AWS"
         ],
         "sentiment": "negative",
-        "event": "investment"
+        "event": "shutdown"
       }
     }
   ]
