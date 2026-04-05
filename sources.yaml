@@ -37,8 +37,8 @@ sources:
     priority: 1
 
   - name: "xAI"
-    type: rss
-    url: "https://status.x.ai/feed.xml"
+    type: scrape
+    url: "https://x.ai/blog"
     section: models
     priority: 1
 
@@ -411,6 +411,12 @@ sources:
 # ── ПОИСКОВЫЕ ЗАПРОСЫ ────────────────────────────────
 
 search_queries:
+
+  models:
+    - "new AI language model release today"
+    - "LLM multimodal model announcement benchmark"
+    - "image generation model release update today"
+    - "video generation AI model announcement today"
 
   hype:
     - "AI news viral controversy today"

@@ -341,8 +341,8 @@ def deduplicate_raw(articles: list[dict]) -> list[dict]:
 
 # ── Hype через веб-поиск ──────────────────────────────────────────────────────
 
-async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> str:
-    """Запросы к Claude с web_search для hype-материалов."""
+async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[str]) -> str:
+    """Запросы к Claude с web_search для заданной рубрики."""
     blocks: list[str] = []
 
     for query in queries:
@@ -354,7 +354,7 @@ async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> s
                 messages=[{
                     "role": "user",
                     "content": (
-                        f"Найди самые обсуждаемые и скандальные AI-новости по запросу: «{query}». "
+                        f"Найди актуальные AI-новости по запросу: «{query}». "
                         f"Только публикации за период {WINDOW_STR}. "
                         "Материалы вне этого периода не включай. "
                         "Перечисли 3-5 результатов строго в формате одной строки каждый:\n"
@@ -378,16 +378,16 @@ async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> s
                         continue
                     article_url = parts[1].strip()
                     if _is_vague_url(article_url):
-                        log.debug("Hype: отброшен результат без конкретного URL: %r", article_url)
+                        log.debug("%s search: отброшен результат без конкретного URL: %r", section, article_url)
                         continue
                     valid_lines.append(line)
                 if valid_lines:
                     blocks.append("\n".join(valid_lines))
         except Exception as e:
-            log.warning("Hype search (%r) ошибка: %s", query, e)
+            log.warning("%s search (%r) ошибка: %s", section, query, e)
 
     result = "\n\n---\n\n".join(blocks)
-    log.info("Hype web-search: %d символов", len(result))
+    log.info("%s web-search: %d символов", section, len(result))
     return result
 
 
@@ -434,7 +434,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 }"""
 
 
-def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: list[str]) -> str:
+def build_filter_prompt(articles: list[dict], search_texts: dict[str, str], prev_headlines: list[str]) -> str:
     lines = [
         "Ты редактор профессионального AI-издания. Из этого списка оставь все статьи которые "
         "могут быть интересны AI-специалисту — анонсы моделей, обновления продуктов, новые функции, "
@@ -446,9 +446,10 @@ def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: li
     ]
     for a in articles:
         lines.append(f"{a['title']} | {a['url']} | {a['source']} | {a['published']}")
-    if hype_text:
-        lines.append("\n=== ВЕБ-ПОИСК (hype) ===")
-        lines.append(hype_text)
+    for section, text in search_texts.items():
+        if text:
+            lines.append(f"\n=== ВЕБ-ПОИСК ({section}) ===")
+            lines.append(text)
     if prev_headlines:
         lines.append("\n=== УЖЕ ОПУБЛИКОВАНО ВЧЕРА — НЕ ВКЛЮЧАТЬ ===")
         for h in prev_headlines:
@@ -456,7 +457,7 @@ def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: li
     return "\n".join(lines)
 
 
-def build_edit_prompt(filtered_text: str, hype_text: str, prev_headlines: list[str]) -> str:
+def build_edit_prompt(filtered_text: str, search_texts: dict[str, str], prev_headlines: list[str]) -> str:
     lines = [f"Дата выпуска: {TODAY_STR}. Период сбора: {WINDOW_STR}. Новости опубликованные вне этого периода не включать.\n"]
     if prev_headlines:
         lines.append("=== УЖЕ ОПУБЛИКОВАНО В ПРЕДЫДУЩЕМ ВЫПУСКЕ — НЕ ВКЛЮЧАТЬ ===")
@@ -465,9 +466,10 @@ def build_edit_prompt(filtered_text: str, hype_text: str, prev_headlines: list[s
         lines.append("")
     lines.append("=== ОТФИЛЬТРОВАННЫЕ МАТЕРИАЛЫ ===")
     lines.append(filtered_text)
-    if hype_text:
-        lines.append("\n=== ВЕБ-ПОИСК (рубрика hype) ===")
-        lines.append(hype_text)
+    for section, text in search_texts.items():
+        if text:
+            lines.append(f"\n=== ВЕБ-ПОИСК (рубрика {section}) ===")
+            lines.append(text)
     lines.append("\nОформи финальный выпуск по схеме JSON.")
     return "\n".join(lines)
 
@@ -512,7 +514,7 @@ async def _api_call(client: AsyncAnthropic, **kwargs) -> str:
 async def filter_with_claude(
     client: AsyncAnthropic,
     articles: list[dict],
-    hype_text: str,
+    search_texts: dict[str, str],
     prev_headlines: list[str],
 ) -> str:
     """Вызов 1: Claude выбирает 30-40 самых важных статей. Возвращает текст списка."""
@@ -521,7 +523,7 @@ async def filter_with_claude(
         client,
         model=MODEL,
         max_tokens=8000,
-        messages=[{"role": "user", "content": build_filter_prompt(articles, hype_text, prev_headlines)}],
+        messages=[{"role": "user", "content": build_filter_prompt(articles, search_texts, prev_headlines)}],
     )
     log.info("Фильтрация: выбрано ~%d строк", text.count("\n"))
     return text
@@ -530,7 +532,7 @@ async def filter_with_claude(
 async def edit_with_claude(
     client: AsyncAnthropic,
     filtered_text: str,
-    hype_text: str,
+    search_texts: dict[str, str],
     prev_headlines: list[str],
 ) -> list[dict]:
     """Вызов 2: Claude оформляет финальный выпуск в JSON."""
@@ -550,7 +552,7 @@ async def edit_with_claude(
                 system=EDIT_SYSTEM,
                 messages=[{
                     "role": "user",
-                    "content": build_edit_prompt(filtered_text, hype_text, prev_headlines) + hint,
+                    "content": build_edit_prompt(filtered_text, search_texts, prev_headlines) + hint,
                 }],
             )
             data = json.loads(_extract_json(text))
@@ -685,8 +687,8 @@ async def amain() -> None:
     # ── Загружаем sources.yaml ─────────────────────────────────────────────────
     config  = load_sources()
     sources = config.get("sources", [])
-    hype_queries = (config.get("search_queries") or {}).get("hype", [])
-    log.info("Источников: %d, hype-запросов: %d", len(sources), len(hype_queries))
+    search_queries = config.get("search_queries") or {}
+    log.info("Источников: %d, секций с web-поиском: %s", len(sources), list(search_queries.keys()))
 
     client = AsyncAnthropic(api_key=anthropic_key)
 
@@ -710,20 +712,23 @@ async def amain() -> None:
 
     raw_items = raw_items[:RAW_LIMIT]
 
-    # ── Этап 2: hype через веб-поиск ─────────────────────────────────────────
-    log.info("Сбор hype через веб-поиск…")
-    hype_text = await fetch_hype_via_search(client, hype_queries)
+    # ── Этап 2: веб-поиск по секциям ─────────────────────────────────────────
+    search_texts: dict[str, str] = {}
+    for section, queries in search_queries.items():
+        if queries:
+            log.info("Веб-поиск для секции %s…", section)
+            search_texts[section] = await fetch_via_search(client, section, queries)
 
-    if not raw_items and not hype_text:
+    if not raw_items and not any(search_texts.values()):
         log.error("Нет материалов — выпуск пустой")
         sys.exit(1)
 
     # ── Этап 3: Claude API — фильтрация + редактура ──────────────────────────
-    filtered_text = await filter_with_claude(client, raw_items, hype_text, prev_headlines)
+    filtered_text = await filter_with_claude(client, raw_items, search_texts, prev_headlines)
     if not filtered_text.strip():
         log.error("Фильтрация вернула пустой ответ")
         sys.exit(1)
-    news_list = await edit_with_claude(client, filtered_text, hype_text, prev_headlines)
+    news_list = await edit_with_claude(client, filtered_text, search_texts, prev_headlines)
 
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
