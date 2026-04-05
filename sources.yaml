@@ -434,10 +434,18 @@ search_queries:
 
   models:
     - "AI language model release announcement"
-    - "image video audio generation model release update"
-    - "новая AI модель релиз анонс"
-    - "AI model benchmark research release"
+    - "image video audio generation model new release"
+    - "OpenAI Anthropic Google Meta AI model announcement"
+    - "AI model benchmark research breakthrough"
+
+  platforms:
+    - "AI developer tool IDE coding assistant release update"
+    - "AI API platform product launch new feature"
+
+  industry:
+    - "AI investment funding acquisition partnership"
+    - "AI regulation policy government"
 
   hype:
-    - "AI news viral controversy"
-    - "нейросети скандал обсуждение"
+    - "AI news viral controversy scandal"
+    - "нейросети ИИ скандал утечка обсуждение"

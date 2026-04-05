@@ -358,16 +358,27 @@ def collect_from_sources(sources: list[dict], cutoff: datetime) -> list[dict]:
     scrape_sources = [s for s in sources if s.get("type") == "scrape"]
 
     all_items: list[dict] = []
+    source_counts: dict[str, int] = {}
 
     if rss_sources:
         with ThreadPoolExecutor(max_workers=min(10, len(rss_sources))) as ex:
-            for items in ex.map(lambda s: fetch_rss_feed(s, cutoff), rss_sources):
+            for src, items in zip(rss_sources, ex.map(lambda s: fetch_rss_feed(s, cutoff), rss_sources)):
+                source_counts[src["name"]] = len(items)
                 all_items.extend(items)
 
     if scrape_sources:
         with ThreadPoolExecutor(max_workers=min(10, len(scrape_sources))) as ex:
-            for items in ex.map(lambda s: scrape_page(s, cutoff), scrape_sources):
+            for src, items in zip(scrape_sources, ex.map(lambda s: scrape_page(s, cutoff), scrape_sources)):
+                source_counts[src["name"]] = len(items)
                 all_items.extend(items)
+
+    # Диагностика: какие источники вернули 0 статей
+    empty = [name for name, count in source_counts.items() if count == 0]
+    active = {name: count for name, count in source_counts.items() if count > 0}
+    if empty:
+        log.warning("0 статей от %d источников: %s", len(empty), ", ".join(empty))
+    if active:
+        log.info("Активные источники: %s", ", ".join(f"{n}({c})" for n, c in sorted(active.items(), key=lambda x: -x[1])))
 
     return all_items
 
@@ -527,7 +538,9 @@ def build_filter_prompt(articles: list[dict], search_texts: dict[str, str], prev
     for a in articles:
         pri = a.get("priority", 2)
         pri_mark = " ★" if pri == 1 else ""
-        lines.append(f"{a['title']} | {a['url']} | {a['source']}{pri_mark} | {a['published']}")
+        summary = a.get("summary", "").strip()[:200]
+        summary_part = f" | {summary}" if summary else ""
+        lines.append(f"{a['title']} | {a['url']} | {a['source']}{pri_mark} | {a['published']}{summary_part}")
     for section, text in search_texts.items():
         if text:
             lines.append(f"\n=== ВЕБ-ПОИСК ({section}) ===")
