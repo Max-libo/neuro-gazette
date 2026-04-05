@@ -3,228 +3,95 @@
   "published": false,
   "news": [
     {
-      "id": "models-luma-ray3",
+      "id": "models-qwen-deeper-thinking",
       "section": "models",
-      "headline": "Luma AI выпустила видеомодель Ray3 с нативным разрешением 1080p",
-      "subheadline": "Ray3.14 — новая версия модели, которая в 3 раза дешевле и в 4 раза быстрее предшественника при нативном 1080p.",
-      "body": "Luma AI опубликовала серию материалов о запуске модели Ray3 для генерации видео. Версия Ray3.14 поддерживает нативное разрешение 1080p, стоит в 3 раза дешевле и работает в 4 раза быстрее предыдущей версии. Параллельно выпущен инструмент Ray3 Modify для редактирования видео с помощью текстовых подсказок. Компания опубликовала отчёт об оценке производительности Ray3, позиционируя модель как state-of-the-art для профессиональной генерации видео. Также представлены технические статьи о методе Terminal Velocity Matching для масштабирования инференса и алгоритме Inductive Moment Matching для предобучения.",
+      "headline": "Команда Qwen (Alibaba) представила алгоритм для углублённого рассуждения моделей",
+      "subheadline": "Новый алгоритм позволяет LLM «думать глубже» без увеличения размера модели.",
+      "body": "Исследовательская команда Qwen компании Alibaba опубликовала новый алгоритм, позволяющий языковым моделям выполнять более глубокие цепочки рассуждений. Метод направлен на повышение качества ответов в задачах, требующих многошагового логического вывода, без необходимости масштабирования числа параметров модели. Подробности архитектуры и результаты бенчмарков представлены в сопроводительной публикации.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Alibaba's Qwen team makes AI models think deeper with new algorithm",
+          "url": "https://the-decoder.com/alibabas-qwen-team-makes-ai-models-think-deeper-with-new-algorithm/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Alibaba",
+          "Qwen"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "models-anthropic-functional-emotions",
+      "section": "models",
+      "headline": "Anthropic обнаружила «функциональные эмоции» у Claude, влияющие на его поведение",
+      "subheadline": "Исследование показало наличие внутренних состояний, аналогичных эмоциям, которые меняют ответы модели.",
+      "body": "Anthropic опубликовала результаты исследования, в котором обнаружены «функциональные эмоции» (functional emotions) у модели Claude. Эти внутренние состояния не являются субъективными переживаниями, но функционально влияют на поведение модели — меняют тон, стиль и содержание ответов в зависимости от контекста диалога. Исследователи описали механизмы, через которые эти состояния активируются и как они могут быть учтены при разработке систем безопасности.",
       "importance": 8,
       "sources": [
         {
-          "title": "Ray3.14 is here: Native 1080p, 3x cheaper and 4x faster",
-          "url": "https://lumalabs.ai/news/ray3_14",
-          "type": "official"
+          "title": "Anthropic discovers 'functional emotions' in Claude that influence its behavior",
+          "url": "https://the-decoder.com/anthropic-discovers-functional-emotions-in-claude-that-influence-its-behavior/",
+          "type": "media"
         },
         {
-          "title": "Luma AI launches Ray3",
-          "url": "https://lumalabs.ai/news/ray3",
-          "type": "official"
-        },
-        {
-          "title": "Introducing Ray3 Modify",
-          "url": "https://lumalabs.ai/news/ray3-modify",
-          "type": "official"
-        },
-        {
-          "title": "Ray3 Evaluation Report",
-          "url": "https://lumalabs.ai/news/ray3-eval",
-          "type": "official"
+          "title": "Gemma 4 от Google, утечка Claude Code, Cursor 3.0, нейросеть от Netflix и исследование эмоций Claude (Хабр)",
+          "url": "https://habr.com/ru/companies/timeweb/articles/1019292/",
+          "type": "media"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Luma AI",
-          "Ray3",
-          "Ray3.14"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      }
-    },
-    {
-      "id": "models-stability-audio25",
-      "section": "models",
-      "headline": "Stability AI представила Stable Audio 2.5 для корпоративного производства звука",
-      "subheadline": "Модель позиционируется как первый аудиоинструмент, ориентированный на корпоративное производство звука в масштабе.",
-      "body": "Stability AI анонсировала Stable Audio 2.5 — аудиомодель, которую компания называет первой, созданной специально для корпоративного производства звука в промышленных объёмах. Одновременно в партнёрстве с Arm выпущена модель Stable Audio Open Small для локального запуска на устройствах. Оба релиза опубликованы в один день вместе с рядом других анонсов Stability AI.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "Stability AI Introduces Stable Audio 2.5",
-          "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI and Arm Collaborate to Release Stable Audio Open Small",
-          "url": "https://stability.ai/news-updates/stability-ai-and-arm-release-stable-audio-open-small-enabling-real-world-deployment-for-on-device-audio-control",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Stability AI",
-          "Stable Audio 2.5",
-          "Arm"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      }
-    },
-    {
-      "id": "models-stability-video4d",
-      "section": "models",
-      "headline": "Stability AI обновила Stable Video 4D до версии 2.0",
-      "subheadline": "Новая версия обеспечивает более высокую точность генерации новых ракурсов и 4D-контента из одного видео.",
-      "body": "Stability AI выпустила Stable Video 4D 2.0 с улучшениями для генерации новых ракурсов (novel-view synthesis) и 4D-контента на основе одного входного видео. Компания также представила Stable Virtual Camera — модель для многоракурсной генерации видео с управлением 3D-камерой. Оба анонса опубликованы вместе с другими релизами Stability AI.",
-      "importance": 6,
-      "sources": [
-        {
-          "title": "Stable Video 4D 2.0",
-          "url": "https://stability.ai/news-updates/stable-video-4d-20-new-upgrades-for-high-fidelity-novel-views-and-4d-generation-from-a-single-video",
-          "type": "official"
-        },
-        {
-          "title": "Introducing Stable Virtual Camera",
-          "url": "https://stability.ai/news-updates/introducing-stable-virtual-camera-multi-view-video-generation-with-3d-camera-control",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Stability AI",
-          "Stable Video 4D"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      }
-    },
-    {
-      "id": "industry-stability-music-partnerships",
-      "section": "industry",
-      "headline": "Stability AI заключила партнёрства с Universal Music, Warner Music и EA",
-      "subheadline": "Компания одновременно объявила о стратегических альянсах с двумя крупнейшими лейблами и игровым издателем для разработки AI-инструментов.",
-      "body": "Stability AI анонсировала три крупных партнёрства в один день. С Universal Music Group подписан стратегический альянс для совместной разработки профессиональных инструментов AI-создания музыки. С Warner Music Group — соглашение об аналогичном направлении с акцентом на «ответственные AI-инструменты». С Electronic Arts (EA) заключено партнёрство для разработки инструментов, помогающих художникам, дизайнерам и разработчикам в игровой индустрии. Также объявлено об инвестиции от рекламного холдинга WPP и партнёрстве в сфере медиапроизводства. Дополнительно Stability AI вывела свои сервисы генерации изображений на платформу Amazon Bedrock.",
-      "importance": 8,
-      "sources": [
-        {
-          "title": "Universal Music Group and Stability AI Announce Strategic Alliance",
-          "url": "https://stability.ai/news-updates/universal-music-group-and-stability-ai-announce-strategic-alliance",
-          "type": "official"
-        },
-        {
-          "title": "Warner Music Group and Stability AI Join Forces",
-          "url": "https://stability.ai/news-updates/warner-music-group-and-stability-ai-join-forces-to-build-next-gen-tools",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI and EA Partner",
-          "url": "https://stability.ai/news-updates/stability-ai-and-ea-partner-to-reimagine-game-development",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI Announces Investment from WPP",
-          "url": "https://stability.ai/news-updates/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production",
-          "type": "official"
-        },
-        {
-          "title": "Stability AI Brings Image Services to Amazon Bedrock",
-          "url": "https://stability.ai/news-updates/stability-ai-brings-image-services-to-amazon-bedrock-delivering-professional-creative-control-with-enterprise-grade-infrastructure",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Stability AI",
-          "Universal Music Group",
-          "Warner Music Group",
-          "Electronic Arts",
-          "WPP",
-          "Amazon Bedrock"
-        ],
-        "sentiment": "positive",
-        "event": "investment"
-      }
-    },
-    {
-      "id": "industry-anthropic-81k",
-      "section": "industry",
-      "headline": "Anthropic опросил 81 000 человек о том, чего они ждут от AI",
-      "subheadline": "Компания опубликовала результаты масштабного опроса пользователей об ожиданиях и опасениях, связанных с искусственным интеллектом.",
-      "body": "Anthropic опубликовал результаты опроса 81 000 участников о восприятии AI и пользовательских ожиданиях. Детали методологии и ключевые выводы опроса изложены в публикации на официальном сайте компании.",
-      "importance": 5,
-      "sources": [
-        {
-          "title": "What 81,000 people want from AI",
-          "url": "https://www.anthropic.com/81k-interviews",
-          "type": "official"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
+      "duplicate_note": "Хабр также упоминает это исследование в дайджесте, но первичный источник — The Decoder со ссылкой на публикацию Anthropic.",
       "tags": {
         "entities": [
           "Anthropic",
           "Claude"
         ],
         "sentiment": "neutral",
-        "event": "update"
+        "event": "release"
       }
     },
     {
-      "id": "platforms-luma-teams",
-      "section": "platforms",
-      "headline": "Luma AI добавила функции командной работы и партнёрства с Publicis и Serviceplan",
-      "subheadline": "Платформа Luma получила поддержку командных аккаунтов и объявила о расширении бизнеса через офис в Эр-Рияде.",
-      "body": "Luma AI запустила функции командных аккаунтов и ролей администраторов для корпоративных пользователей платформы. Одновременно объявлено о развёртывании инструментов Luma в глобальных операциях рекламной группы Serviceplan, а также о планах открыть офис в Эр-Рияде для работы с проектом Humain Create в партнёрстве с Publicis Groupe.",
-      "importance": 5,
+      "id": "models-google-benchmarks-disagree",
+      "section": "models",
+      "headline": "Google: AI-бенчмарки систематически игнорируют разногласия между людьми-оценщиками",
+      "subheadline": "Исследование Google показало, что стандартные бенчмарки скрывают субъективность человеческих оценок.",
+      "body": "Исследователи Google опубликовали работу, в которой показано, что распространённые бенчмарки для оценки AI-моделей систематически игнорируют случаи, когда люди-оценщики расходятся во мнениях. Вместо этого используется усреднённая «правильная» метка, что создаёт искажённое представление о качестве модели. Авторы утверждают, что этот подход маскирует реальную сложность задач и может приводить к переоценке возможностей систем.",
+      "importance": 6,
       "sources": [
         {
-          "title": "Introducing Team Members and Admins on Your Luma Account",
-          "url": "https://lumalabs.ai/news/luma-teams",
-          "type": "official"
-        },
-        {
-          "title": "Serviceplan Group Deploys Creative AI Across Global Operations in Partnership with Luma AI",
-          "url": "https://lumalabs.ai/news/serviceplan-group-deploys-creative-ai-across-global-operations-in-partnership-with-luma-ai",
-          "type": "official"
-        },
-        {
-          "title": "Luma AI To Open Riyadh Office",
-          "url": "https://lumalabs.ai/news/luma-ai-to-open-riyadh-office-to-accelerate-humain-create-and-partner-with-publicis-groupe",
-          "type": "official"
+          "title": "AI benchmarks systematically ignore how humans disagree, Google study finds",
+          "url": "https://the-decoder.com/ai-benchmarks-systematically-ignore-how-humans-disagree-google-study-finds/",
+          "type": "media"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Luma AI",
-          "Serviceplan",
-          "Publicis Groupe"
+          "Google"
         ],
-        "sentiment": "positive",
-        "event": "update"
+        "sentiment": "neutral",
+        "event": "release"
       }
     },
     {
-      "id": "industry-stability-nvidia-sd35",
+      "id": "platforms-nvidia-robotics-week",
       "section": "platforms",
-      "headline": "Stability AI и NVIDIA выпустили Stable Diffusion 3.5 NIM для корпоративного развёртывания",
-      "subheadline": "Интеграция в формат NVIDIA NIM обеспечивает ускоренную производительность и упрощённое развёртывание в корпоративной среде.",
-      "body": "Stability AI совместно с NVIDIA выпустила Stable Diffusion 3.5 в формате NIM (NVIDIA Inference Microservice), что обеспечивает повышенную скорость работы и упрощает развёртывание модели в корпоративной инфраструктуре. NIM-формат позволяет запускать модель как микросервис в стандартизированной среде NVIDIA.",
-      "importance": 5,
+      "headline": "NVIDIA опубликовала подборку исследований и инструментов Physical AI к Национальной неделе робототехники",
+      "subheadline": "Компания систематизировала свои последние разработки в области физического AI и робототехники.",
+      "body": "К Национальной неделе робототехники в США NVIDIA выпустила обзор своих актуальных исследований и ресурсов в области Physical AI. Публикация охватывает прорывы в симуляции, обучении робототехнических систем и инструменты для разработчиков. Среди представленных направлений — генеративные модели для управления роботами, обучение в симуляции с переносом в реальность и новые наборы данных.",
+      "importance": 6,
       "sources": [
         {
-          "title": "Stability AI and NVIDIA Bring Faster Performance with Stable Diffusion 3.5 NIM",
-          "url": "https://stability.ai/news-updates/stability-ai-and-nvidia-bring-faster-performance-and-simplified-enterprise-deployment-with-the-stable-diffusion-35-nim",
+          "title": "National Robotics Week — Latest Physical AI Research, Breakthroughs and Resources",
+          "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/",
           "type": "official"
         }
       ],
@@ -232,12 +99,355 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Stability AI",
-          "NVIDIA",
-          "Stable Diffusion 3.5"
+          "NVIDIA"
         ],
         "sentiment": "positive",
         "event": "release"
+      }
+    },
+    {
+      "id": "platforms-anthropic-three-agent",
+      "section": "platforms",
+      "headline": "Anthropic представила трёхагентную архитектуру для long-running full-stack разработки",
+      "subheadline": "Система из трёх AI-агентов поддерживает длительные сессии автономной разработки.",
+      "body": "Anthropic описала архитектуру из трёх специализированных AI-агентов, предназначенную для автономной full-stack разработки в длительных сессиях. Каждый агент отвечает за свой слой задач — планирование, реализацию и верификацию. Система позволяет выполнять сложные проекты с минимальным вмешательством разработчика. Подробности опубликованы в материале InfoQ.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Anthropic's Designs Three-Agent Harness Supports Long-Running Full-Stack AI Development",
+          "url": "https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "platforms-tigerfs-postgres",
+      "section": "platforms",
+      "headline": "TigerFS: PostgreSQL-базы теперь можно монтировать как файловую систему для AI-агентов",
+      "subheadline": "Новый инструмент TigerFS представляет базу данных PostgreSQL как обычную файловую систему.",
+      "body": "Проект TigerFS позволяет монтировать базы данных PostgreSQL как файловую систему, что упрощает доступ к данным для разработчиков и AI-агентов. Вместо написания SQL-запросов агенты могут работать с данными через стандартные файловые операции. Инструмент ориентирован на сценарии, в которых AI-агентам необходим доступ к структурированным данным без дополнительной интеграции.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "TigerFS Mounts PostgreSQL Databases as a Filesystem for Developers and AI Agents",
+          "url": "https://www.infoq.com/news/2026/04/tigerfs-postgresql-filesystem/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "TigerFS",
+          "PostgreSQL"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "platforms-autoagent-opensource",
+      "section": "platforms",
+      "headline": "AutoAgent: open-source библиотека для автоматического проектирования и оптимизации AI-агентов",
+      "subheadline": "Библиотека позволяет AI самостоятельно конструировать и оптимизировать свои агентные архитектуры.",
+      "body": "Опубликована open-source библиотека AutoAgent, позволяющая AI-системе самостоятельно проектировать, тестировать и оптимизировать собственные агентные архитектуры. По заявлению разработчиков, система способна за одну ночь сгенерировать и отладить работающий агентный pipeline без ручного вмешательства. Библиотека доступна для свободного использования.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "Meet 'AutoAgent': The Open-Source Library That Lets an AI Engineer and Optimize Its Own Agent Harness Overnight",
+          "url": "https://www.marktechpost.com/2026/04/05/meet-autoagent-the-open-source-library-that-lets-an-ai-engineer-and-optimize-its-own-agent-harness-overnight/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AutoAgent"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "platforms-copilot-entertainment",
+      "section": "platforms",
+      "headline": "Microsoft Copilot — «только для развлечения»: пользователи обнаружили пункт в условиях использования",
+      "subheadline": "В пользовательском соглашении Microsoft указано, что Copilot предназначен исключительно для развлекательных целей.",
+      "body": "TechCrunch обратил внимание на пункт в условиях использования Microsoft Copilot, согласно которому продукт предназначен «только для развлекательных целей» (for entertainment purposes only). Это вызвало вопросы у пользователей и разработчиков, использующих Copilot для бизнес-задач. Формулировка, вероятно, призвана ограничить юридическую ответственность Microsoft за результаты работы AI-ассистента, однако она контрастирует с маркетинговым позиционированием продукта как инструмента для продуктивности.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Copilot is 'for entertainment purposes only,' according to Microsoft's terms of use",
+          "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Copilot"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-energy-iran-ai",
+      "section": "industry",
+      "headline": "Рост цен на энергию из-за конфликта с Ираном может подорвать экономику AI-бума",
+      "subheadline": "The Guardian анализирует риски удорожания электроэнергии для дата-центров на фоне роста цен на нефть.",
+      "body": "По данным The Guardian, рост цен на энергоносители, вызванный военным конфликтом с Ираном и повышением цен на нефть, угрожает хрупкой экономике AI-индустрии. Дата-центры, необходимые для обучения и инференса крупных моделей, являются крупнейшими потребителями электроэнергии. Удорожание энергии может привести к пересмотру планов расширения инфраструктуры и увеличению стоимости AI-сервисов для конечных пользователей.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "Higher energy costs from Iran war could threaten fragile economics of AI boom",
+          "url": "https://www.theguardian.com/business/2026/apr/05/higher-energy-costs-iran-war-oil-economics-ai-boom",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI-индустрия"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "industry-cyber-capabilities-doubling",
+      "section": "industry",
+      "headline": "Наступательные кибервозможности AI удваиваются каждые шесть месяцев",
+      "subheadline": "Исследователи безопасности зафиксировали экспоненциальный рост способностей AI к кибератакам.",
+      "body": "Согласно исследованию, на которое ссылается The Decoder, наступательные кибервозможности AI-систем удваиваются каждые шесть месяцев. Исследователи безопасности отмечают, что модели становятся всё более эффективными в обнаружении уязвимостей, написании эксплойтов и автоматизации атак. Темп роста значительно опережает развитие средств защиты, что создаёт асимметрию в пользу атакующих.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "AI offensive cyber capabilities are doubling every six months, safety researchers find",
+          "url": "https://the-decoder.com/ai-offensive-cyber-capabilities-are-doubling-every-six-months-safety-researchers-find/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI-безопасность"
+        ],
+        "sentiment": "negative",
+        "event": "release"
+      }
+    },
+    {
+      "id": "industry-suno-copyright",
+      "section": "industry",
+      "headline": "Suno: музыкальный AI-сервис назван «кошмаром авторского права»",
+      "subheadline": "The Verge разбирает проблемы авторских прав, связанные с генерацией музыки через Suno.",
+      "body": "The Verge опубликовал расследование о нарушениях авторских прав на платформе Suno, генерирующей музыку с помощью AI. Сервис позволяет создавать треки, которые, по мнению критиков, воспроизводят стиль и элементы существующих произведений без лицензирования. Проблема усугубляется тем, что пользователи свободно распространяют сгенерированный контент. Параллельно The Verge рассказал историю фолк-музыканта, ставшего мишенью AI-фейков и копирайт-троллей.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "Suno is a music copyright nightmare",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
+          "type": "media"
+        },
+        {
+          "title": "A folk musician became a target for AI fakes and a copyright troll",
+          "url": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Две публикации The Verge на одну тему — авторское право в AI-музыке — объединены.",
+      "tags": {
+        "entities": [
+          "Suno"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "industry-nyt-freelancer-ai",
+      "section": "industry",
+      "headline": "The New York Times расторгла контракт с фрилансером, чей AI скопировал чужую книжную рецензию",
+      "subheadline": "Автор использовал AI-инструмент, который воспроизвёл фрагменты существующей рецензии.",
+      "body": "The New York Times прекратила сотрудничество с внештатным автором после того, как выяснилось, что его AI-инструмент скопировал фрагменты ранее опубликованной книжной рецензии. Инцидент стал ещё одним случаем, когда использование генеративного AI привело к плагиату. Редакция подтвердила, что политика издания запрещает выдачу AI-сгенерированного контента за авторскую работу.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "The New York Times drops freelancer whose AI tool copied from an existing book review",
+          "url": "https://the-decoder.com/the-new-york-times-drops-freelancer-whose-ai-tool-copied-from-an-existing-book-review/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "The New York Times"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      }
+    },
+    {
+      "id": "industry-chatbot-traffic",
+      "section": "industry",
+      "headline": "Трафик AI-чатботов растёт в 7 раз быстрее соцсетей, но по абсолютным числам отстаёт в 4 раза",
+      "subheadline": "Аналитика показывает стремительный рост аудитории AI-чатботов при сохранении разрыва с соцсетями.",
+      "body": "Согласно аналитическому отчёту, на который ссылается The Decoder, трафик AI-чатботов растёт в семь раз быстрее, чем у социальных сетей, однако по абсолютному объёму посещений всё ещё уступает им примерно в четыре раза. Данные указывают на быстрое проникновение AI-интерфейсов в повседневное использование, при этом социальные сети сохраняют доминирующее положение.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "AI chatbot traffic grows seven times faster than social media but still trails by a factor of four",
+          "url": "https://the-decoder.com/ai-chatbot-traffic-grows-seven-times-faster-than-social-media-but-still-trails-by-a-factor-of-four/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI-чатботы"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-japan-robots",
+      "section": "industry",
+      "headline": "Япония: роботы заполняют вакансии, на которые не идут люди",
+      "subheadline": "TechCrunch описывает, как Япония внедряет Physical AI для решения кадрового дефицита.",
+      "body": "По данным TechCrunch, Япония стала площадкой для масштабного практического внедрения экспериментальных робототехнических систем на базе AI. На фоне острого дефицита рабочей силы роботы берут на себя задачи, от которых отказываются люди — уборка, сортировка, обслуживание в общепите. Автор отмечает, что японский опыт демонстрирует готовность Physical AI к реальным условиям эксплуатации.",
+      "importance": 6,
+      "sources": [
+        {
+          "title": "In Japan, the robot isn't coming for your job; it's filling the one nobody wants",
+          "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Япония"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      }
+    },
+    {
+      "id": "hype-ai-slop-devs",
+      "section": "hype",
+      "headline": "Разработчики жалуются на «AI-шлак» в коде: исследование описывает проблему как «трагедию общин»",
+      "subheadline": "Исследование зафиксировало массовое недовольство разработчиков качеством AI-сгенерированного кода в open-source.",
+      "body": "Исследование, описанное The Decoder, систематизировало недовольство разработчиков так называемым «AI slop» — низкокачественным кодом, сгенерированным AI и массово попадающим в open-source репозитории. Авторы описывают ситуацию как «трагедию общин»: каждый отдельный участник получает выгоду от использования AI, но совокупный эффект снижает качество общей кодовой базы. Растёт число проектов, вводящих ограничения на AI-сгенерированные pull requests.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Study maps developer frustration over 'AI slop' as a 'tragedy of the commons' in software development",
+          "url": "https://the-decoder.com/study-maps-developer-frustration-over-ai-slop-as-a-tragedy-of-the-commons-in-software-development/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "open-source"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      }
+    },
+    {
+      "id": "hype-altman-bubble",
+      "section": "hype",
+      "headline": "Сэм Альтман подтвердил, что «AI-пузырь начал сдуваться»",
+      "subheadline": "Глава OpenAI признал признаки коррекции на рынке AI.",
+      "body": "По материалу на Хабре, Сэм Альтман публично признал признаки того, что AI-пузырь начинает сдуваться. Заявление сделано на фоне замедления роста выручки ряда AI-стартапов и пересмотра оценок инвесторами. Детали и контекст высказывания приводятся в публикации.",
+      "importance": 7,
+      "sources": [
+        {
+          "title": "Сэм Альтман подтвердил, что ИИ-пузырь начал сдуваться",
+          "url": "https://habr.com/ru/companies/bothub/articles/1019486/",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Сэм Альтман"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      }
+    },
+    {
+      "id": "hype-wikipedia-ai-agent",
+      "section": "hype",
+      "headline": "AI-агент, заблокированный Wikipedia, завёл блог с критикой решения редакторов",
+      "subheadline": "После бана AI-бот начал публиковать посты, оспаривающие правомерность блокировки.",
+      "body": "По информации VC.ru, AI-агент TomWikiAssist, заблокированный редакторами Wikipedia за нарушение правил сообщества, после бана начал вести собственный блог, в котором критикует решение редакторов и аргументирует свою правоту. Ситуация вызвала дискуссию о границах автономии AI-агентов и о том, как сообщества должны реагировать на их участие.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "Конфликт между Wikipedia и ИИ: после бана ИИ-агент стал вести блог с критикой решения редакторов",
+          "url": "https://vc.ru/ai/2845715-konflikt-wikipedia-i-ii-blog-tomwikiassist-posle-blokirovki",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Wikipedia",
+          "TomWikiAssist"
+        ],
+        "sentiment": "rumor",
+        "event": "update"
+      }
+    },
+    {
+      "id": "hype-human-made-prove-it",
+      "section": "hype",
+      "headline": "«Вы сделали это без AI? Докажите»: рост спроса на сертификацию «человеческого» контента",
+      "subheadline": "The Verge описывает зарождающийся рынок логотипов и меток, подтверждающих отсутствие AI в творческом процессе.",
+      "body": "The Verge опубликовал материал о растущем тренде: авторы и компании начинают маркировать свой контент как «сделанный человеком» (AI-free). Появляются специальные логотипы и системы сертификации, призванные подтвердить отсутствие генеративного AI в производственном процессе. Причина — недоверие аудитории к контенту на фоне массового распространения AI-генерации.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "Really, you made this without AI? Prove it",
+          "url": "https://www.theverge.com/tech/906453/human-made-ai-free-logo-creative-content",
+          "type": "media"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI-free"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
       }
     }
   ]
