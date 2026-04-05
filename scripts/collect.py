@@ -345,9 +345,13 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
     """Запросы к Claude с web_search для заданной рубрики."""
     blocks: list[str] = []
 
-    for query in queries:
+    for i, query in enumerate(queries):
+        if i > 0:
+            log.info("%s search: пауза 30с перед следующим запросом…", section)
+            await asyncio.sleep(30)
         try:
-            response = await client.messages.create(
+            text = await _api_call(
+                client,
                 model=MODEL,
                 max_tokens=1000,
                 tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 2}],
@@ -365,24 +369,21 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
                     ),
                 }],
             )
-            for block in response.content:
-                if not (hasattr(block, "text") and block.text):
+            valid_lines = []
+            for line in text.strip().splitlines():
+                line = line.strip()
+                if not line:
                     continue
-                valid_lines = []
-                for line in block.text.strip().splitlines():
-                    line = line.strip()
-                    if not line:
-                        continue
-                    parts = [p.strip() for p in line.split("|")]
-                    if len(parts) < 2:
-                        continue
-                    article_url = parts[1].strip()
-                    if _is_vague_url(article_url):
-                        log.debug("%s search: отброшен результат без конкретного URL: %r", section, article_url)
-                        continue
-                    valid_lines.append(line)
-                if valid_lines:
-                    blocks.append("\n".join(valid_lines))
+                parts = [p.strip() for p in line.split("|")]
+                if len(parts) < 2:
+                    continue
+                article_url = parts[1].strip()
+                if _is_vague_url(article_url):
+                    log.debug("%s search: отброшен результат без конкретного URL: %r", section, article_url)
+                    continue
+                valid_lines.append(line)
+            if valid_lines:
+                blocks.append("\n".join(valid_lines))
         except Exception as e:
             log.warning("%s search (%r) ошибка: %s", section, query, e)
 
