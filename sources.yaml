@@ -382,11 +382,11 @@ sources:
 search_queries:
 
   models:
-    - "new AI language model release announcement today"
-    - "image video generation AI model release update today"
-    - "Kling Sora Runway video AI model update release"
-    - "Сбер GigaChat YandexGPT обновление релиз"
+    - "AI language model release announcement"
+    - "image video audio generation model release update"
+    - "новая AI модель релиз анонс"
+    - "AI model benchmark research release"
 
   hype:
-    - "AI news viral controversy today"
-    - "нейросети скандал обсуждение сегодня"
+    - "AI news viral controversy"
+    - "нейросети скандал обсуждение"

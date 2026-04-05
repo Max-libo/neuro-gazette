@@ -349,6 +349,7 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
         if i > 0:
             log.info("%s search: пауза 30с перед следующим запросом…", section)
             await asyncio.sleep(30)
+        dated_query = f"{query} {CUTOFF_DATE_STR}"
         try:
             text = await _api_call(
                 client,
@@ -358,7 +359,7 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
                 messages=[{
                     "role": "user",
                     "content": (
-                        f"Найди актуальные AI-новости по запросу: «{query}». "
+                        f"Найди актуальные AI-новости по запросу: «{dated_query}». "
                         f"Только публикации за период {WINDOW_STR}. "
                         "Материалы вне этого периода не включай. "
                         "Перечисли 3-5 результатов строго в формате одной строки каждый:\n"
