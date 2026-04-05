@@ -719,8 +719,11 @@ async def amain() -> None:
 
     # ── Этап 2: веб-поиск по секциям ─────────────────────────────────────────
     search_texts: dict[str, str] = {}
-    for section, queries in search_queries.items():
+    for i, (section, queries) in enumerate(search_queries.items()):
         if queries:
+            if i > 0:
+                log.info("Пауза 30с перед веб-поиском секции %s…", section)
+                await asyncio.sleep(30)
             log.info("Веб-поиск для секции %s…", section)
             search_texts[section] = await fetch_via_search(client, section, queries)
 

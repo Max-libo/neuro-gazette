@@ -382,11 +382,9 @@ sources:
 search_queries:
 
   models:
-    - "new AI language model release today"
-    - "LLM multimodal model announcement benchmark"
-    - "image generation model release update today"
-    - "video generation AI model announcement today"
-    - "Kling AI video generation update release"
+    - "new AI language model release announcement today"
+    - "image video generation AI model release update today"
+    - "Kling Sora Runway video AI model update release"
     - "Сбер GigaChat YandexGPT обновление релиз"
 
   hype:
