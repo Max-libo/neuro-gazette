@@ -466,7 +466,11 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 - Если новостей по рубрике больше 7 — оставь топ-7 по importance, остальные отсеки.
 - Покрытие секций: старайся включить новости во ВСЕ 4 рубрики. Не допускай ситуации, когда целая рубрика пуста, если для неё есть материалы.
 - Разнообразие: если несколько пресс-релизов от одной компании — объедини связанные в одну новость с несколькими sources, а не создавай отдельные записи на каждый пресс-релиз.
-- importance: 9-10 главная новость дня, 6-8 важная, 1-5 краткая заметка.
+- Тематическая дедупликация: если несколько статей описывают одну тенденцию (например, три новости про копирайт и AI) — объедини их в одну аналитическую заметку с несколькими sources, а не создавай отдельные записи.
+- importance: РОВНО ОДНА новость в выпуске должна иметь importance 9 или 10 — это главная новость дня. Все остальные: 6-8 важные, 1-5 краткие заметки. Не ставь 9-10 более чем одной новости.
+- Если новость помечена unconfirmed: true — её importance не может быть выше 6. Непроверенные новости не бывают главными.
+- Качество body: текст body должен содержать факты, цифры или контекст, которых НЕТ в headline и subheadline. Если body просто пересказывает заголовок другими словами — перепиши, добавив детали из источника. «Подробности в публикации» — не body.
+- Группировка по компании: если от одной компании/темы много новостей — оформи 1-2 самые важные как полноценные статьи. Остальные менее значимые помести в поле "related" главной статьи (массив объектов {title, url}). Это даст компактный блок «ещё N новостей» со ссылками, без потери информации. Не создавай отдельные записи на каждый мелкий пресс-релиз.
 - Язык выпуска: русский, деловой стиль. Переводи заголовки и тексты на русский.
 - Возвращай ТОЛЬКО валидный JSON без markdown-блоков и комментариев.
 
@@ -484,9 +488,10 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
       "section": "models|platforms|industry|hype",
       "headline": "Заголовок на русском",
       "subheadline": "Одно предложение — суть новости",
-      "body": "Полный текст. Факты, цифры, прямые цитаты.",
+      "body": "Полный текст. Факты, цифры, прямые цитаты — сверх того, что уже сказано в заголовке.",
       "importance": 1,
       "sources": [{"title": "Название", "url": "https://...", "type": "official|media|rumor"}],
+      "related": [{"title": "Заголовок менее значимой новости", "url": "https://...", "entities": ["Company"], "sentiment": "positive|negative|neutral"}],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
@@ -684,6 +689,20 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     item.setdefault("unconfirmed", False)
     item.setdefault("duplicate_note", None)
 
+    valid_sentiments_rel = {"positive", "negative", "neutral"}
+    related = item.get("related") or []
+    fixed_related = []
+    for r in related:
+        if not isinstance(r, dict) or not r.get("title") or not r.get("url") or not str(r["url"]).startswith("http"):
+            continue
+        fixed_related.append({
+            "title": r["title"],
+            "url": r["url"],
+            "entities": r.get("entities") or [],
+            "sentiment": r["sentiment"] if r.get("sentiment") in valid_sentiments_rel else "neutral",
+        })
+    item["related"] = fixed_related
+
     sources = item.get("sources") or []
     item["sources"] = [
         {**s, "type": s["type"] if s.get("type") in valid_source_types else "media"}
@@ -702,38 +721,49 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     return item
 
 
-# ── Предыдущий выпуск ────────────────────────────────────────────────────────
+# ── Предыдущие выпуски (7 дней) ──────────────────────────────────────────────
 
-def load_previous_issue() -> dict | None:
-    """Загружает выпуск за предыдущий день."""
-    yesterday = (TODAY - timedelta(days=1)).isoformat()
-    prev_path = DATA_DIR / f"{yesterday}.json"
-    if prev_path.exists():
-        try:
-            return json.loads(prev_path.read_text(encoding="utf-8"))
-        except Exception:
-            pass
-    return None
+HISTORY_DAYS = 7
 
 
-def get_prev_urls(prev_issue: dict | None) -> set[str]:
-    """Возвращает множество URL из предыдущего выпуска."""
-    if not prev_issue:
-        return set()
+def load_recent_issues() -> list[dict]:
+    """Загружает выпуски за последние HISTORY_DAYS дней (без сегодняшнего)."""
+    issues = []
+    for i in range(1, HISTORY_DAYS + 1):
+        date_str = (TODAY - timedelta(days=i)).isoformat()
+        path = DATA_DIR / f"{date_str}.json"
+        if path.exists():
+            try:
+                issues.append(json.loads(path.read_text(encoding="utf-8")))
+            except Exception:
+                pass
+    return issues
+
+
+def get_prev_urls(issues: list[dict]) -> set[str]:
+    """Возвращает множество URL из списка выпусков."""
     urls = set()
-    for item in prev_issue.get("news", []):
-        for src in item.get("sources", []):
-            url = src.get("url", "").split("?")[0].rstrip("/")
-            if url:
-                urls.add(url)
+    for issue in issues:
+        for item in issue.get("news", []):
+            for src in item.get("sources", []):
+                url = src.get("url", "").split("?")[0].rstrip("/")
+                if url:
+                    urls.add(url)
+            for rel in item.get("related") or []:
+                url = rel.get("url", "").split("?")[0].rstrip("/")
+                if url:
+                    urls.add(url)
     return urls
 
 
-def get_prev_headlines(prev_issue: dict | None) -> list[str]:
-    """Возвращает список заголовков из предыдущего выпуска."""
-    if not prev_issue:
-        return []
-    return [item["headline"] for item in prev_issue.get("news", []) if item.get("headline")]
+def get_prev_headlines(issues: list[dict]) -> list[str]:
+    """Возвращает список заголовков из списка выпусков."""
+    headlines = []
+    for issue in issues:
+        for item in issue.get("news", []):
+            if item.get("headline"):
+                headlines.append(item["headline"])
+    return headlines
 
 
 # ── Индекс ────────────────────────────────────────────────────────────────────
@@ -776,11 +806,12 @@ async def _run_pipeline(
     sources: list[dict],
     search_queries: dict,
 ) -> None:
-    # ── Загружаем предыдущий выпуск ──────────────────────────────────────────
-    prev_issue    = load_previous_issue()
-    prev_urls     = get_prev_urls(prev_issue)
-    prev_headlines = get_prev_headlines(prev_issue)
-    log.info("Предыдущий выпуск: %d URL, %d заголовков для исключения", len(prev_urls), len(prev_headlines))
+    # ── Загружаем выпуски за последние 7 дней ──────────────────────────────────
+    recent_issues  = load_recent_issues()
+    prev_urls      = get_prev_urls(recent_issues)
+    prev_headlines = get_prev_headlines(recent_issues)
+    log.info("История (%d выпусков): %d URL, %d заголовков для исключения",
+             len(recent_issues), len(prev_urls), len(prev_headlines))
 
     # ── Этап 1: сбор материалов за 24ч ───────────────────────────────────────
     log.info("Сбор материалов (окно 24ч)…")
@@ -825,6 +856,25 @@ async def _run_pipeline(
 
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
+
+    # Потолок importance 6 для непроверенных новостей
+    for n in all_news:
+        if n.get("unconfirmed") and n["importance"] > 6:
+            log.info("Снижен importance %d→6 для unconfirmed: %s", n["importance"], n["headline"][:60])
+            n["importance"] = 6
+
+    # Ровно одна hero-новость (importance >= 9): оставляем самую важную, остальные → 8
+    heroes = [n for n in all_news if n["importance"] >= 9]
+    if len(heroes) > 1:
+        heroes.sort(key=lambda n: n["importance"], reverse=True)
+        for n in heroes[1:]:
+            log.info("Снижен importance %d→8 (лишний hero): %s", n["importance"], n["headline"][:60])
+            n["importance"] = 8
+    elif not heroes and all_news:
+        top = max(all_news, key=lambda n: n["importance"])
+        log.info("Повышен importance %d→9 (нет hero): %s", top["importance"], top["headline"][:60])
+        top["importance"] = 9
+
     log.info("Итого новостей в выпуске: %d", len(all_news))
 
     if not all_news:
@@ -837,6 +887,13 @@ async def _run_pipeline(
     LATEST_FILE.write_text(json.dumps(issue, ensure_ascii=False, indent=2), encoding="utf-8")
     update_index(TODAY_STR, len(all_news))
     log.info("Готово: %s", out_path)
+
+    # ── Обновляем статистику по сущностям ────────────────────────────────────
+    try:
+        from stats import generate as generate_stats
+        generate_stats()
+    except Exception as e:
+        log.warning("Не удалось обновить статистику: %s", e)
 
 
 def main() -> None:

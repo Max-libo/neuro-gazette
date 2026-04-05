@@ -42,12 +42,42 @@ function sectionBadge(section) {
   return `<span class="section-badge section-badge--${esc(section)}">${esc(label)}</span>`;
 }
 
+function domainName(url) {
+  try {
+    let host = new URL(url).hostname.replace(/^www\./, '');
+    // Известные домены → красивые названия
+    const NAMES = {
+      'openai.com': 'OpenAI', 'anthropic.com': 'Anthropic',
+      'deepmind.google': 'DeepMind', 'ai.meta.com': 'Meta AI',
+      'blogs.nvidia.com': 'NVIDIA', 'techcrunch.com': 'TechCrunch',
+      'theverge.com': 'The Verge', 'theguardian.com': 'The Guardian',
+      'wired.com': 'Wired', 'the-decoder.com': 'The Decoder',
+      'habr.com': 'Habr', 'vc.ru': 'VC.ru',
+      'venturebeat.com': 'VentureBeat', 'zdnet.com': 'ZDNet',
+      'aibusiness.com': 'AI Business', 'infoq.com': 'InfoQ',
+      'marktechpost.com': 'MarkTechPost', 'lumalabs.ai': 'Luma AI',
+      'stability.ai': 'Stability AI', 'mistral.ai': 'Mistral',
+      'blog.google': 'Google', 'blogs.microsoft.com': 'Microsoft',
+      'spectrum.ieee.org': 'IEEE Spectrum', 'technologyreview.com': 'MIT Tech Review',
+    };
+    return NAMES[host] || host.split('.').slice(-2, -1)[0];
+  } catch { return 'источник'; }
+}
+
 function buildSourcesHtml(sources) {
   if (!sources || sources.length === 0) return '';
-  const links = sources.map(s =>
-    `<a class="source-link source-type-${esc(s.type)}" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`
+  const badges = sources.map(s =>
+    `<a class="source-badge source-type-${esc(s.type)}" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(domainName(s.url))}</a>`
   ).join('');
-  return `<div class="sources-list">${links}</div>`;
+  return `<div class="sources-list">${badges}</div>`;
+}
+
+function buildRelatedHtml(related) {
+  if (!related || related.length === 0) return '';
+  const links = related.map(r =>
+    `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`
+  ).join('');
+  return `<details class="related-block"><summary class="related-summary">ещё ${related.length} ${related.length === 1 ? 'новость' : related.length < 5 ? 'новости' : 'новостей'} по теме</summary><ul class="related-list">${links}</ul></details>`;
 }
 
 function buildMetaHtml(item) {
@@ -61,6 +91,7 @@ function buildMetaHtml(item) {
   if (item.duplicate_note) {
     html += `<div class="duplicate-note">Дополнение: ${esc(item.duplicate_note)}</div>`;
   }
+  html += buildRelatedHtml(item.related);
   return html;
 }
 
@@ -76,10 +107,10 @@ function buildHeroHtml(item) {
     </article>`;
 }
 
-/* ── LARGE (importance 7–8) ── в колонке, крупный заголовок + тело */
-function buildLargeHtml(item) {
+/* ── REGULAR (importance ≥ 5) ── в колонке, тело раскрывается по клику */
+function buildRegularHtml(item) {
   return `
-    <article class="col-article col-article--large" id="${esc(item.id)}" onclick="toggleExpand(this)">
+    <article class="col-article col-article--regular" id="${esc(item.id)}" onclick="toggleExpand(this)">
       ${sectionBadge(item.section)}
       <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
       <p class="art-sub">${esc(item.subheadline)}</p>
@@ -91,28 +122,13 @@ function buildLargeHtml(item) {
     </article>`;
 }
 
-/* ── MEDIUM (importance 5–6) ── в колонке, средний заголовок */
-function buildMediumHtml(item) {
+/* ── COMPACT (importance < 5) ── тот же кегль, но описание под катом */
+function buildCompactHtml(item) {
   return `
-    <article class="col-article col-article--medium" id="${esc(item.id)}" onclick="toggleExpand(this)">
+    <article class="col-article col-article--compact" id="${esc(item.id)}" onclick="toggleExpand(this)">
       ${sectionBadge(item.section)}
-      <h4 class="art-headline art-headline--medium">${esc(item.headline)}</h4>
-      <p class="art-sub art-sub--small">${esc(item.subheadline)}</p>
-      <div class="art-body art-body--collapse">
-        ${esc(item.body)}
-        ${buildMetaHtml(item)}
-      </div>
-      <span class="expand-hint">читать далее ↓</span>
-    </article>`;
-}
-
-/* ── BRIEF (importance 1–4) ── размер как medium, раскрывается по клику */
-function buildBriefHtml(item) {
-  return `
-    <article class="col-article col-article--brief" id="${esc(item.id)}" onclick="toggleExpand(this)">
-      ${sectionBadge(item.section)}
-      <h5 class="art-headline art-headline--medium">${esc(item.headline)}</h5>
-      <p class="art-sub art-sub--small">${esc(item.subheadline)}</p>
+      <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
+      <p class="art-sub">${esc(item.subheadline)}</p>
       <div class="art-body art-body--collapse">
         ${esc(item.body)}
         ${buildMetaHtml(item)}
@@ -137,20 +153,18 @@ function renderIssue(issue) {
     return;
   }
 
-  const heroes  = all.filter(n => n.importance >= 9);
-  const inCols  = all.filter(n => n.importance < 9);
+  // Ровно одна hero-новость — самая важная
+  const hero   = all[0];
+  const inCols = all.slice(1);
 
   let html = '';
 
-  // Герои — на всю ширину
-  if (heroes.length) {
-    html += '<div class="heroes-zone">';
-    heroes.forEach(item => { html += buildHeroHtml(item); });
-    html += '</div>';
-  }
+  html += '<div class="heroes-zone">';
+  html += buildHeroHtml(hero);
+  html += '</div>';
 
-  // Все остальные — в трёх фиксированных колонках.
-  // Статьи распределяются round-robin при рендере и больше не мигрируют.
+  // Все остальные — в трёх фиксированных колонках, одинаковый кегль.
+  // У менее важных (importance < 5) описание под катом без подсказки.
   if (inCols.length) {
     const NUM_COLS = 3;
     const cols = Array.from({ length: NUM_COLS }, () => []);
@@ -160,9 +174,8 @@ function renderIssue(issue) {
     cols.forEach(colItems => {
       html += '<div class="col">';
       colItems.forEach(item => {
-        if (item.importance >= 7)      html += buildLargeHtml(item);
-        else if (item.importance >= 5) html += buildMediumHtml(item);
-        else                           html += buildBriefHtml(item);
+        if (item.importance >= 5) html += buildRegularHtml(item);
+        else                      html += buildCompactHtml(item);
       });
       html += '</div>';
     });

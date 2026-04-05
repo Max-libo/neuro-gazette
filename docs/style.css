@@ -158,8 +158,6 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 }
 .art-headline--hero   { font-size: clamp(1.6rem, 3.5vw, 2.5rem); font-weight: 700; }
 .art-headline--large  { font-size: 1.15rem; font-weight: 700; }
-.art-headline--medium { font-size: 0.98rem; font-weight: 700; }
-.art-headline--brief  { font-size: 0.88rem; font-weight: 600; }
 
 /* ── Подзаголовок ── */
 .art-sub {
@@ -170,9 +168,9 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   line-height: 1.45;
   margin-bottom: 0.6rem;
 }
-.art-sub--small {
-  font-size: 0.8rem;
-  margin-bottom: 0.4rem;
+/* Compact-статьи — подзаголовок чуть мельче, чтобы сигнализировать кат */
+.col-article--compact .art-sub {
+  color: var(--ink-light);
 }
 
 /* ── Тело статьи ── */
@@ -255,16 +253,22 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   margin-top: 0.4rem;
 }
 
-.source-link {
+.source-badge {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
   color: var(--ink-light);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  border: 1px solid var(--rule);
+  padding: 0.15rem 0.45rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
 }
-.source-link:hover { color: var(--ink); }
-.source-type-rumor { color: var(--accent); }
+.source-badge:hover { background: var(--ink); color: var(--paper); text-decoration: none; }
+.source-badge.source-type-official { color: #1a5276; border-color: #1a5276; }
+.source-badge.source-type-official:hover { background: #1a5276; color: var(--paper); }
+.source-badge.source-type-rumor { color: var(--accent); border-color: var(--accent); }
+.source-badge.source-type-rumor:hover { background: var(--accent); color: var(--paper); }
 
 .expand-hint {
   font-family: var(--font-mono);
@@ -285,6 +289,37 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   margin-top: 0.4rem;
   font-style: italic;
 }
+
+.related-block {
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.4rem;
+}
+.related-summary {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-light);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.related-summary:hover { color: var(--ink); }
+.related-list {
+  list-style: none;
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.related-list li {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--rule);
+}
+.related-list a { color: var(--ink-mid); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.related-list a:hover { color: var(--ink); }
 
 /* ===== LOADING / ERROR ===== */
 .loading-state, .error-state {

@@ -1,0 +1,647 @@
+{
+  "updated": "2026-04-05",
+  "total_issues": 2,
+  "total_entities": 40,
+  "entities": {
+    "Anthropic": {
+      "mentions": 4,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 2,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 4,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 2
+        }
+      }
+    },
+    "Claude": {
+      "mentions": 3,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 3,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 1
+        }
+      }
+    },
+    "OpenClaw": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 0
+        }
+      }
+    },
+    "OpenAI": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        }
+      }
+    },
+    "PrismML": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Netflix": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Брэд Лайткэп": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Фиджи Симо": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Coefficient Bio": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Минцифры России": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "ФСБ": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "ChatGPT": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Gemini": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "ICML": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Илон Маск": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "SpaceX": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Grok": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "xAI": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Николас Мадуро": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Венесуэла": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-04",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Alibaba": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Qwen": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Google": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "NVIDIA": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "TigerFS": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "PostgreSQL": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "AutoAgent": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Microsoft": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Copilot": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "AI-индустрия": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "AI-безопасность": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Suno": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "The New York Times": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "AI-чатботы": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Япония": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "open-source": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Сэм Альтман": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Wikipedia": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "TomWikiAssist": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "AI-free": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    }
+  }
+}
