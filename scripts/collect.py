@@ -428,7 +428,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 }"""
 
 
-def build_filter_prompt(articles: list[dict], hype_text: str) -> str:
+def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: list[str]) -> str:
     lines = [
         "Ты редактор профессионального AI-издания. Из этого списка оставь все статьи которые "
         "могут быть интересны AI-специалисту — анонсы моделей, обновления продуктов, новые функции, "
@@ -443,11 +443,20 @@ def build_filter_prompt(articles: list[dict], hype_text: str) -> str:
     if hype_text:
         lines.append("\n=== ВЕБ-ПОИСК (hype) ===")
         lines.append(hype_text)
+    if prev_headlines:
+        lines.append("\n=== УЖЕ ОПУБЛИКОВАНО ВЧЕРА — НЕ ВКЛЮЧАТЬ ===")
+        for h in prev_headlines:
+            lines.append(f"- {h}")
     return "\n".join(lines)
 
 
-def build_edit_prompt(filtered_text: str, hype_text: str) -> str:
+def build_edit_prompt(filtered_text: str, hype_text: str, prev_headlines: list[str]) -> str:
     lines = [f"Дата выпуска: {TODAY_STR}\n"]
+    if prev_headlines:
+        lines.append("=== УЖЕ ОПУБЛИКОВАНО В ПРЕДЫДУЩЕМ ВЫПУСКЕ — НЕ ВКЛЮЧАТЬ ===")
+        for h in prev_headlines:
+            lines.append(f"- {h}")
+        lines.append("")
     lines.append("=== ОТФИЛЬТРОВАННЫЕ МАТЕРИАЛЫ ===")
     lines.append(filtered_text)
     if hype_text:
@@ -498,6 +507,7 @@ async def filter_with_claude(
     client: AsyncAnthropic,
     articles: list[dict],
     hype_text: str,
+    prev_headlines: list[str],
 ) -> str:
     """Вызов 1: Claude выбирает 30-40 самых важных статей. Возвращает текст списка."""
     log.info("Вызов 1 — фильтрация (%d статей)…", len(articles))
@@ -505,7 +515,7 @@ async def filter_with_claude(
         client,
         model=MODEL,
         max_tokens=8000,
-        messages=[{"role": "user", "content": build_filter_prompt(articles, hype_text)}],
+        messages=[{"role": "user", "content": build_filter_prompt(articles, hype_text, prev_headlines)}],
     )
     log.info("Фильтрация: выбрано ~%d строк", text.count("\n"))
     return text
@@ -515,6 +525,7 @@ async def edit_with_claude(
     client: AsyncAnthropic,
     filtered_text: str,
     hype_text: str,
+    prev_headlines: list[str],
 ) -> list[dict]:
     """Вызов 2: Claude оформляет финальный выпуск в JSON."""
     log.info("Вызов 2 — редактура…")
@@ -533,7 +544,7 @@ async def edit_with_claude(
                 system=EDIT_SYSTEM,
                 messages=[{
                     "role": "user",
-                    "content": build_edit_prompt(filtered_text, hype_text) + hint,
+                    "content": build_edit_prompt(filtered_text, hype_text, prev_headlines) + hint,
                 }],
             )
             data = json.loads(_extract_json(text))
@@ -606,6 +617,40 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     return item
 
 
+# ── Предыдущий выпуск ────────────────────────────────────────────────────────
+
+def load_previous_issue() -> dict | None:
+    """Загружает выпуск за предыдущий день."""
+    yesterday = (TODAY - timedelta(days=1)).isoformat()
+    prev_path = DATA_DIR / f"{yesterday}.json"
+    if prev_path.exists():
+        try:
+            return json.loads(prev_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return None
+
+
+def get_prev_urls(prev_issue: dict | None) -> set[str]:
+    """Возвращает множество URL из предыдущего выпуска."""
+    if not prev_issue:
+        return set()
+    urls = set()
+    for item in prev_issue.get("news", []):
+        for src in item.get("sources", []):
+            url = src.get("url", "").split("?")[0].rstrip("/")
+            if url:
+                urls.add(url)
+    return urls
+
+
+def get_prev_headlines(prev_issue: dict | None) -> list[str]:
+    """Возвращает список заголовков из предыдущего выпуска."""
+    if not prev_issue:
+        return []
+    return [item["headline"] for item in prev_issue.get("news", []) if item.get("headline")]
+
+
 # ── Индекс ────────────────────────────────────────────────────────────────────
 
 def update_index(date_str: str, count: int) -> None:
@@ -639,11 +684,23 @@ async def amain() -> None:
 
     client = AsyncAnthropic(api_key=anthropic_key)
 
+    # ── Загружаем предыдущий выпуск ──────────────────────────────────────────
+    prev_issue    = load_previous_issue()
+    prev_urls     = get_prev_urls(prev_issue)
+    prev_headlines = get_prev_headlines(prev_issue)
+    log.info("Предыдущий выпуск: %d URL, %d заголовков для исключения", len(prev_urls), len(prev_headlines))
+
     # ── Этап 1: сбор материалов за 24ч ───────────────────────────────────────
     log.info("Сбор материалов (окно 24ч)…")
     raw_items = collect_from_sources(sources, CUTOFF_24H)
     raw_items = deduplicate_raw(raw_items)
     log.info("Собрано (24ч): %d статей", len(raw_items))
+
+    # Исключаем статьи, URL которых уже есть в предыдущем выпуске
+    if prev_urls:
+        before = len(raw_items)
+        raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
+        log.info("После исключения дублей с предыдущим выпуском: %d → %d статей", before, len(raw_items))
 
     raw_items = raw_items[:RAW_LIMIT]
 
@@ -656,11 +713,11 @@ async def amain() -> None:
         sys.exit(1)
 
     # ── Этап 3: Claude API — фильтрация + редактура ──────────────────────────
-    filtered_text = await filter_with_claude(client, raw_items, hype_text)
+    filtered_text = await filter_with_claude(client, raw_items, hype_text, prev_headlines)
     if not filtered_text.strip():
         log.error("Фильтрация вернула пустой ответ")
         sys.exit(1)
-    news_list = await edit_with_claude(client, filtered_text, hype_text)
+    news_list = await edit_with_claude(client, filtered_text, hype_text, prev_headlines)
 
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
