@@ -470,7 +470,8 @@ def build_edit_prompt(filtered_text: str, search_texts: dict[str, str], prev_hea
         for h in prev_headlines:
             lines.append(f"- {h}")
         lines.append("")
-    lines.append("=== ОТФИЛЬТРОВАННЫЕ МАТЕРИАЛЫ ===")
+    lines.append("=== ОТФИЛЬТРОВАННЫЕ МАТЕРИАЛЫ (формат: заголовок | URL | источник | дата публикации) ===")
+    lines.append("ВАЖНО: последнее поле — реальная дата публикации источника. Включай статью только если эта дата попадает в период сбора. Дата выпуска и дата события — разные вещи.")
     lines.append(filtered_text)
     for section, text in search_texts.items():
         if text:
@@ -496,7 +497,8 @@ async def _api_call(client: AsyncAnthropic, **kwargs) -> str:
     for attempt in range(1, 4):
         try:
             response = await client.messages.create(**kwargs)
-            return response.content[0].text
+            text_parts = [b.text for b in response.content if getattr(b, "type", None) == "text" and b.text]
+            return "\n".join(text_parts)
         except anthropic.RateLimitError as e:
             wait = 65.0
             try:
