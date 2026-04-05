@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write       # нужно для коммита JSON
+  actions: write        # нужно для запуска deploy.yml
 
 jobs:
   collect:
