@@ -62,7 +62,7 @@ sources:
 
   - name: "Aleph Alpha"
     type: scrape
-    url: "https://aleph-alpha.com/news"
+    url: "https://aleph-alpha.com/blog"
     section: models
     priority: 2
 
@@ -130,7 +130,7 @@ sources:
 
   - name: "Ideogram"
     type: scrape
-    url: "https://about.ideogram.ai/blog"
+    url: "https://ideogram.ai/blog"
     section: platforms
     priority: 2
 
@@ -206,7 +206,7 @@ sources:
 
   - name: "Sesame"
     type: scrape
-    url: "https://www.sesame.com/blog"
+    url: "https://www.sesame.com/research"
     section: platforms
     priority: 2
 
@@ -218,11 +218,6 @@ sources:
     section: platforms
     priority: 1
 
-  - name: "Perplexity"
-    type: scrape
-    url: "https://blog.perplexity.ai"
-    section: platforms
-    priority: 1
 
   - name: "Replit"
     type: scrape
@@ -314,7 +309,7 @@ sources:
 
   - name: "Leonardo AI"
     type: scrape
-    url: "https://leonardo.ai/news/"
+    url: "https://leonardo.ai/blog"
     section: platforms
     priority: 2
 
@@ -406,11 +401,6 @@ sources:
     section: industry
     priority: 2
 
-  - name: "CNET AI"
-    type: rss
-    url: "https://www.cnet.com/rss/ai/"
-    section: industry
-    priority: 2
 
   - name: "ZDNet AI"
     type: rss

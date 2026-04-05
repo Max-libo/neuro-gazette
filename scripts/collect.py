@@ -50,7 +50,7 @@ TODAY       = _window_end.date()
 TODAY_STR   = TODAY.isoformat()
 
 SECTIONS  = ["models", "platforms", "industry", "hype"]
-RAW_LIMIT = 60   # максимум статей на вход Claude
+RAW_LIMIT = 120  # максимум статей на вход Claude
 
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
@@ -224,9 +224,7 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                 pub_dt = _parse_date(
                     item.get("datePublished") or item.get("dateModified") or ""
                 )
-                if not pub_dt:
-                    continue
-                if pub_dt < cutoff:
+                if pub_dt and pub_dt < cutoff:
                     continue
                 seen_urls.add(link)
                 results.append({
@@ -283,9 +281,7 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                         if pub_dt:
                             break
 
-        if not pub_dt:
-            continue
-        if pub_dt < cutoff:
+        if pub_dt and pub_dt < cutoff:
             continue
 
         results.append({
