@@ -117,11 +117,6 @@ sources:
     section: platforms
     priority: 1
 
-  - name: "Ideogram"
-    type: rss
-    url: "https://ideogram.ai/blog/rss.xml"
-    section: platforms
-    priority: 2
 
   - name: "Recraft"
     type: scrape
@@ -306,11 +301,6 @@ sources:
     section: models
     priority: 1
 
-  - name: "Сбер AI"
-    type: rss
-    url: "https://developers.sber.ru/blog/rss"
-    section: models
-    priority: 1
 
   # ── СМИ ───────────────────────────────────────────
 
