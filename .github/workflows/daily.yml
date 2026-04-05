@@ -36,9 +36,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/
+          git add docs/data/ ':!docs/data/*_raw.json'
           git diff --cached --quiet && echo "No changes" && exit 0
-          DATE=$(date -u +%Y-%m-%d)
+          DATE=$(python3 -c "import json; print(json.load(open('docs/data/latest.json'))['date'])")
           git commit -m "feat: выпуск $DATE"
           git pull --rebase
           git push

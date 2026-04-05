@@ -17,7 +17,7 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import feedparser
 import requests
@@ -37,7 +37,8 @@ INDEX_FILE   = DATA_DIR / "index.json"
 LATEST_FILE  = DATA_DIR / "latest.json"
 SOURCES_FILE = REPO_ROOT / "sources.yaml"
 
-MODEL = "claude-sonnet-4-6"
+MODEL_FAST = "claude-sonnet-4-6"   # поиск, фильтрация
+MODEL_EDIT = "claude-opus-4-6"    # финальная редактура
 
 MSK        = timezone(timedelta(hours=3))
 NOW        = datetime.now(MSK)
@@ -79,13 +80,16 @@ _VAGUE_INDEX_URL = re.compile(
     r"/(?:blog|news|articles?)/?$",
     re.IGNORECASE,
 )
+_AGGREGATE_URL = re.compile(
+    r"/(?:latest|roundup|digest|weekly|daily|this-week|updates?)(?:[/-]|$)",
+    re.IGNORECASE,
+)
 
 
 def _is_vague_url(url: str) -> bool:
     """True если URL — тег-страница, раздел или главная, а не конкретная статья."""
     if not url or not url.startswith("http"):
         return True
-    from urllib.parse import urlparse
     path = urlparse(url.split("?")[0]).path.rstrip("/")
     if not path or path == "/":
         return True
@@ -93,7 +97,32 @@ def _is_vague_url(url: str) -> bool:
         return True
     if _VAGUE_INDEX_URL.search(path):
         return True
+    if _AGGREGATE_URL.search(path):
+        return True
     return False
+
+
+_URL_DATE_YMD = re.compile(r"/(\d{4})/(\d{2})/(\d{2})/")
+_URL_DATE_YM  = re.compile(r"/(\d{4})/(\d{2})/[^/\d]")
+
+
+def _extract_date_from_url(url: str) -> datetime | None:
+    """Извлекает дату из URL вида /2026/04/05/... или /2026/04/..."""
+    m = _URL_DATE_YMD.search(url)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                            tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    m = _URL_DATE_YM.search(url)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), 1,
+                            tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    return None
 
 
 def _clean_text(text: str) -> str:
@@ -118,12 +147,28 @@ def _parse_date(value: str) -> datetime | None:
         "%a, %d %b %Y %H:%M:%S GMT",
     ):
         try:
-            dt = datetime.strptime(value[:25], fmt)
+            dt = datetime.strptime(value, fmt)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return dt
         except ValueError:
             pass
+    return None
+
+
+# ── HTTP с retry ─────────────────────────────────────────────────────────────
+
+def _http_get(url: str, retries: int = 2) -> requests.Response | None:
+    """GET-запрос с простым retry при сетевых ошибках."""
+    for attempt in range(1, retries + 2):
+        try:
+            resp = requests.get(url, headers=HTTP_HEADERS, timeout=15)
+            resp.raise_for_status()
+            return resp
+        except Exception as e:
+            if attempt > retries:
+                raise
+            log.debug("HTTP retry %d/%d для %s: %s", attempt, retries, url, e)
     return None
 
 
@@ -133,8 +178,7 @@ def fetch_rss_feed(source: dict, cutoff: datetime) -> list[dict]:
     url  = source["url"]
     name = source["name"]
     try:
-        resp = requests.get(url, headers=HTTP_HEADERS, timeout=15)
-        resp.raise_for_status()
+        resp = _http_get(url)
         feed = feedparser.parse(resp.content)
     except Exception as e:
         log.warning("RSS %s — ошибка: %s", name, e)
@@ -176,9 +220,10 @@ def fetch_rss_feed(source: dict, cutoff: datetime) -> list[dict]:
             "source":    name,
             "published": pub_str,
             "summary":   summary,
+            "priority":  source.get("priority", 2),
         })
 
-    log.debug("RSS %s: %d статей", name, len(result))
+    log.info("RSS %s: %d статей", name, len(result))
     return result
 
 
@@ -192,8 +237,7 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
     url  = source["url"]
     name = source["name"]
     try:
-        resp = requests.get(url, headers=HTTP_HEADERS, timeout=15)
-        resp.raise_for_status()
+        resp = _http_get(url)
     except Exception as e:
         log.warning("Scrape %s — ошибка: %s", name, e)
         return []
@@ -228,6 +272,8 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                 pub_dt = _parse_date(
                     item.get("datePublished") or item.get("dateModified") or ""
                 )
+                if not pub_dt:
+                    pub_dt = _extract_date_from_url(link)
                 if pub_dt and pub_dt < cutoff:
                     continue
                 seen_urls.add(link)
@@ -235,14 +281,15 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                     "title":     title,
                     "url":       link,
                     "source":    name,
-                    "published": pub_dt.date().isoformat() if pub_dt else TODAY_STR,
+                    "published": pub_dt.date().isoformat() if pub_dt else "unknown",
                     "summary":   (item.get("description") or "")[:500],
+                    "priority":  source.get("priority", 2),
                 })
         except Exception:
             pass
 
     if results:
-        log.debug("Scrape %s (JSON-LD): %d статей", name, len(results))
+        log.info("Scrape %s (JSON-LD): %d статей", name, len(results))
         return results
 
     # 2. Fallback: поиск заголовков h1/h2/h3 со ссылками
@@ -285,6 +332,8 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
                         if pub_dt:
                             break
 
+        if not pub_dt:
+            pub_dt = _extract_date_from_url(link)
         if pub_dt and pub_dt < cutoff:
             continue
 
@@ -292,11 +341,12 @@ def scrape_page(source: dict, cutoff: datetime) -> list[dict]:
             "title":     title,
             "url":       link,
             "source":    name,
-            "published": pub_dt.date().isoformat() if pub_dt else TODAY_STR,
+            "published": pub_dt.date().isoformat() if pub_dt else "unknown",
             "summary":   "",
+            "priority":  source.get("priority", 2),
         })
 
-    log.debug("Scrape %s (HTML): %d статей", name, len(results))
+    log.info("Scrape %s (HTML): %d статей", name, len(results))
     return results
 
 
@@ -310,7 +360,7 @@ def collect_from_sources(sources: list[dict], cutoff: datetime) -> list[dict]:
     all_items: list[dict] = []
 
     if rss_sources:
-        with ThreadPoolExecutor(max_workers=len(rss_sources)) as ex:
+        with ThreadPoolExecutor(max_workers=min(10, len(rss_sources))) as ex:
             for items in ex.map(lambda s: fetch_rss_feed(s, cutoff), rss_sources):
                 all_items.extend(items)
 
@@ -328,7 +378,7 @@ def deduplicate_raw(articles: list[dict]) -> list[dict]:
     result = []
     for a in articles:
         url       = a.get("url", "").split("?")[0].rstrip("/")
-        title_key = re.sub(r"\W+", " ", a.get("title", "").lower())[:60].strip()
+        title_key = re.sub(r"\W+", " ", a.get("title", "").lower()).strip()[:120]
         if (url and url in seen_urls) or title_key in seen_titles:
             continue
         if url:
@@ -353,7 +403,7 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
         try:
             text = await _api_call(
                 client,
-                model=MODEL,
+                model=MODEL_FAST,
                 max_tokens=1000,
                 tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 2}],
                 messages=[{
@@ -382,6 +432,15 @@ async def fetch_via_search(client: AsyncAnthropic, section: str, queries: list[s
                 if _is_vague_url(article_url):
                     log.debug("%s search: отброшен результат без конкретного URL: %r", section, article_url)
                     continue
+                # Валидация даты: отбрасываем результаты вне окна сбора
+                if len(parts) >= 3:
+                    search_dt = _parse_date(parts[2].strip())
+                    if not search_dt:
+                        search_dt = _extract_date_from_url(article_url)
+                    if search_dt and search_dt < CUTOFF_24H:
+                        log.info("%s search: отброшена старая статья (%s): %s",
+                                 section, parts[2].strip(), parts[0].strip()[:60])
+                        continue
                 valid_lines.append(line)
             if valid_lines:
                 blocks.append("\n".join(valid_lines))
@@ -405,6 +464,8 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 - Дедупликация: несколько источников об одном событии — одна запись, поле duplicate_note.
 - Целевой диапазон: 5-7 новостей на рубрику. Меньше честных лучше, чем больше выдуманных.
 - Если новостей по рубрике больше 7 — оставь топ-7 по importance, остальные отсеки.
+- Покрытие секций: старайся включить новости во ВСЕ 4 рубрики. Не допускай ситуации, когда целая рубрика пуста, если для неё есть материалы.
+- Разнообразие: если несколько пресс-релизов от одной компании — объедини связанные в одну новость с несколькими sources, а не создавай отдельные записи на каждый пресс-релиз.
 - importance: 9-10 главная новость дня, 6-8 важная, 1-5 краткая заметка.
 - Язык выпуска: русский, деловой стиль. Переводи заголовки и тексты на русский.
 - Возвращай ТОЛЬКО валидный JSON без markdown-блоков и комментариев.
@@ -446,12 +507,19 @@ def build_filter_prompt(articles: list[dict], search_texts: dict[str, str], prev
         "новостной ценности, туториалы типа 'как использовать X', и материалы старше периода сбора. "
         "ВАЖНО: у каждой статьи указана дата публикации (последнее поле). Убирай статьи у которых "
         "дата публикации источника выходит за пределы периода сбора — даже если заголовок звучит актуально. "
+        "Статьи с датой «unknown» — дата не определена автоматически. Включай их ТОЛЬКО если по заголовку "
+        "и URL очевидно, что это свежая новость. При сомнении — убирай. "
+        "Разнообразие: следи за тем, чтобы в отфильтрованный список попадали статьи от РАЗНЫХ компаний "
+        "и источников. Если от одной компании много пресс-релизов — оставь 2-3 самых значимых, "
+        "а освободившееся место отдай другим компаниям �� темам. "
         "Лучше оставить лишнее чем потерять важное. "
         "Верни список в виде: заголовок | URL | источник | дата. Без пояснений.\n",
         f"Период сбора: {WINDOW_STR}. Статей: {len(articles)}.\n",
     ]
     for a in articles:
-        lines.append(f"{a['title']} | {a['url']} | {a['source']} | {a['published']}")
+        pri = a.get("priority", 2)
+        pri_mark = " ★" if pri == 1 else ""
+        lines.append(f"{a['title']} | {a['url']} | {a['source']}{pri_mark} | {a['published']}")
     for section, text in search_texts.items():
         if text:
             lines.append(f"\n=== ВЕБ-ПОИСК ({section}) ===")
@@ -477,7 +545,7 @@ def build_edit_prompt(filtered_text: str, search_texts: dict[str, str], prev_hea
         if text:
             lines.append(f"\n=== ВЕБ-ПОИСК (рубрика {section}) ===")
             lines.append(text)
-    lines.append("\nОформи финальный выпуск по схеме JSON.")
+    lines.append("\nОформи финальный выпуск по схеме JSON. Обеспечь покрытие всех 4 рубрик (models, platforms, industry, hype) — если для рубрики есть материалы, она не должна быть пустой. Источники со ★ — приоритетные.")
     return "\n".join(lines)
 
 
@@ -529,7 +597,7 @@ async def filter_with_claude(
     log.info("Вызов 1 — фильтрация (%d статей)…", len(articles))
     text = await _api_call(
         client,
-        model=MODEL,
+        model=MODEL_FAST,
         max_tokens=8000,
         messages=[{"role": "user", "content": build_filter_prompt(articles, search_texts, prev_headlines)}],
     )
@@ -555,7 +623,7 @@ async def edit_with_claude(
 
             text = await _api_call(
                 client,
-                model=MODEL,
+                model=MODEL_EDIT,
                 max_tokens=8000,
                 system=EDIT_SYSTEM,
                 messages=[{
@@ -619,7 +687,8 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     sources = item.get("sources") or []
     item["sources"] = [
         {**s, "type": s["type"] if s.get("type") in valid_source_types else "media"}
-        for s in sources if isinstance(s, dict) and s.get("url")
+        for s in sources
+        if isinstance(s, dict) and s.get("url") and str(s["url"]).startswith("http")
     ]
 
     tags = item.get("tags") or {}
@@ -698,8 +767,15 @@ async def amain() -> None:
     search_queries = config.get("search_queries") or {}
     log.info("Источников: %d, секций с web-поиском: %s", len(sources), list(search_queries.keys()))
 
-    client = AsyncAnthropic(api_key=anthropic_key)
+    async with AsyncAnthropic(api_key=anthropic_key) as client:
+        await _run_pipeline(client, sources, search_queries)
 
+
+async def _run_pipeline(
+    client: AsyncAnthropic,
+    sources: list[dict],
+    search_queries: dict,
+) -> None:
     # ── Загружаем предыдущий выпуск ──────────────────────────────────────────
     prev_issue    = load_previous_issue()
     prev_urls     = get_prev_urls(prev_issue)
@@ -718,7 +794,13 @@ async def amain() -> None:
         raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
         log.info("После исключения дублей с предыдущим выпуском: %d → %d статей", before, len(raw_items))
 
+    raw_items.sort(key=lambda a: a.get("priority", 2))
     raw_items = raw_items[:RAW_LIMIT]
+
+    # Кэшируем собранные статьи на случай сбоя Claude API
+    raw_cache = DATA_DIR / f"{TODAY_STR}_raw.json"
+    raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    log.info("Сырые статьи сохранены: %s", raw_cache)
 
     # ── Этап 2: веб-поиск по секциям ─────────────────────────────────────────
     search_texts: dict[str, str] = {}
@@ -745,14 +827,16 @@ async def amain() -> None:
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
     log.info("Итого новостей в выпуске: %d", len(all_news))
 
+    if not all_news:
+        log.error("Выпуск пуст после редактуры — файл не записан")
+        sys.exit(1)
+
     issue    = {"date": TODAY_STR, "published": False, "news": all_news}
     out_path = DATA_DIR / f"{TODAY_STR}.json"
     out_path.write_text(json.dumps(issue, ensure_ascii=False, indent=2), encoding="utf-8")
     LATEST_FILE.write_text(json.dumps(issue, ensure_ascii=False, indent=2), encoding="utf-8")
     update_index(TODAY_STR, len(all_news))
     log.info("Готово: %s", out_path)
-
-    await client.close()
 
 
 def main() -> None:

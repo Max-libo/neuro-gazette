@@ -33,7 +33,8 @@ function formatDate(dateStr) {
 function esc(str) {
   if (!str) return '';
   return String(str)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
 function sectionBadge(section) {
@@ -179,7 +180,7 @@ async function loadIssue(dateStr) {
     renderIssue(await res.json());
   } catch (err) {
     document.getElementById('newspaper').innerHTML =
-      `<div class="error-state">Не удалось загрузить выпуск.<br><small>${err.message}</small></div>`;
+      `<div class="error-state">Не удалось загрузить выпуск.<br><small>${esc(err.message)}</small></div>`;
   }
 }
 

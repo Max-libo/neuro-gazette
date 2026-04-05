@@ -73,8 +73,13 @@
 
         el.innerHTML = html;
       } catch (err) {
-        el.innerHTML = `<div class="error-state">Не удалось загрузить архив.<br><small>${err.message}</small></div>`;
+        el.innerHTML = `<div class="error-state">Не удалось загрузить архив.<br><small>${escHtml(err.message)}</small></div>`;
       }
+    }
+
+    function escHtml(s) {
+      if (!s) return '';
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
 
     function pluralRu(n) {

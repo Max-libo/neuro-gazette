@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Running locally
 
 ```bash
-pip install anthropic
+pip install -r requirements.txt
 ANTHROPIC_API_KEY=sk-... python scripts/collect.py
 # then open docs/index.html in a browser
 ```
@@ -19,10 +19,19 @@ The script writes `docs/data/YYYY-MM-DD.json`, `docs/data/latest.json`, and upda
 ## Architecture
 
 ### Data pipeline (`scripts/collect.py`)
-- Single async call to `claude-sonnet-4-6` with `web_search_20250305` tool (`max_uses=8`)
-- Collects all 4 sections (`models`, `platforms`, `industry`, `hype`) in one request using `SYSTEM_PROMPT` (cached) + `make_user_prompt()`
-- Retries up to 5 times on JSON parse errors, rate limits (reads `retry-after` header), or API errors
+
+Three-stage pipeline:
+
+1. **Сбор (RSS + scrape)** — parallel HTTP fetch from `sources.yaml` (types `rss` / `scrape`). Each item gets a `priority` (1-3) from its source config. Results are deduplicated and sorted by priority before the `RAW_LIMIT` (200) cutoff.
+2. **Веб-поиск** — `fetch_via_search()` calls `claude-sonnet-4-6` with `web_search_20250305` tool (`max_uses=2`) for each query in `search_queries` (currently `models` and `hype` sections).
+3. **Фильтрация + редактура** — two Claude API calls:
+   - `filter_with_claude()` — selects 30-40 most relevant articles from the raw list
+   - `edit_with_claude()` — formats the final issue as JSON with `EDIT_SYSTEM` prompt
+
+- `_api_call()` retries up to 3 times on rate limits (reads `retry-after` header) and API errors
+- `edit_with_claude()` retries up to 3 times on JSON parse errors
 - `validate_and_fix()` normalises each news item and deduplicates IDs before saving
+- Raw articles are cached to `docs/data/YYYY-MM-DD_raw.json` before Claude calls
 
 ### JSON schema for a news item
 ```json

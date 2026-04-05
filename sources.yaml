@@ -92,8 +92,8 @@ sources:
     priority: 2
 
   - name: "Zhipu AI"
-    type: search
-    query: "Zhipu GLM model release"
+    type: scrape
+    url: "https://zhipuai.cn/news"
     section: models
     priority: 2
 

@@ -422,27 +422,39 @@
     card.classList.toggle('open');
   }
 
+  let _saveDraftTimer;
+  function saveDraft() {
+    clearTimeout(_saveDraftTimer);
+    _saveDraftTimer = setTimeout(() => {
+      if (issue) localStorage.setItem(STORAGE_KEY, JSON.stringify(issue));
+    }, 500);
+  }
+
   function updateField(idx, field, value) {
     if (!issue || !issue.news[idx]) return;
     issue.news[idx][field] = value;
+    saveDraft();
   }
 
   function updateTags(idx, value) {
     if (!issue || !issue.news[idx]) return;
     if (!issue.news[idx].tags) issue.news[idx].tags = {};
     issue.news[idx].tags.entities = value.split(',').map(s => s.trim()).filter(Boolean);
+    saveDraft();
   }
 
   function updateTagField(idx, field, value) {
     if (!issue || !issue.news[idx]) return;
     if (!issue.news[idx].tags) issue.news[idx].tags = {};
     issue.news[idx].tags[field] = value;
+    saveDraft();
   }
 
   function deleteNews(idx) {
     if (!issue || !issue.news) return;
     if (!confirm('Удалить эту новость?')) return;
     issue.news.splice(idx, 1);
+    saveDraft();
     renderCards();
     showToast('Новость удалена');
   }
