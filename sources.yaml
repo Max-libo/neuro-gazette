@@ -370,6 +370,50 @@ sources:
     section: models
     priority: 2
 
+  - name: "The Decoder"
+    type: rss
+    url: "https://the-decoder.com/feed/"
+    section: industry
+    priority: 1
+
+  - name: "AI Business"
+    type: rss
+    url: "https://aibusiness.com/rss.xml"
+    section: industry
+    priority: 2
+
+  - name: "IEEE Spectrum AI"
+    type: rss
+    url: "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"
+    section: industry
+    priority: 2
+
+  - name: "InfoQ AI"
+    type: rss
+    url: "https://feed.infoq.com/ai-ml-data-eng/"
+    section: platforms
+    priority: 2
+
+  # ── ОФИЦИАЛЬНЫЕ БЛОГИ ПЛАТФОРМ ────────────────────
+
+  - name: "AWS ML Blog"
+    type: rss
+    url: "https://aws.amazon.com/blogs/machine-learning/feed/"
+    section: platforms
+    priority: 2
+
+  - name: "Microsoft AI Blog"
+    type: rss
+    url: "https://blogs.microsoft.com/ai/feed/"
+    section: models
+    priority: 1
+
+  - name: "Google AI Blog"
+    type: rss
+    url: "https://blog.google/technology/ai/rss/"
+    section: models
+    priority: 1
+
   # ── РУССКОЯЗЫЧНЫЕ СМИ ─────────────────────────────
 
   - name: "Хабр AI"
