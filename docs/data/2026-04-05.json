@@ -3,16 +3,31 @@
   "published": false,
   "news": [
     {
-      "id": "models-gptimage15",
+      "id": "models-luma-ray3",
       "section": "models",
-      "headline": "OpenAI выпустила GPT-Image-1.5: скорость генерации выросла в 4 раза",
-      "subheadline": "Обновлённая модель доступна всем пользователям ChatGPT и через API.",
-      "body": "OpenAI опубликовала GPT-Image-1.5 5 апреля 2026 года. По заявлению компании, скорость генерации изображений увеличилась в 4 раза по сравнению с предыдущей версией. Улучшено точное редактирование с сохранением деталей исходного изображения. Модель доступна всем пользователям ChatGPT бесплатно и платно, а также разработчикам через API.",
+      "headline": "Luma AI выпустила видеомодель Ray3 с нативным разрешением 1080p",
+      "subheadline": "Ray3.14 — новая версия модели, которая в 3 раза дешевле и в 4 раза быстрее предшественника при нативном 1080p.",
+      "body": "Luma AI опубликовала серию материалов о запуске модели Ray3 для генерации видео. Версия Ray3.14 поддерживает нативное разрешение 1080p, стоит в 3 раза дешевле и работает в 4 раза быстрее предыдущей версии. Параллельно выпущен инструмент Ray3 Modify для редактирования видео с помощью текстовых подсказок. Компания опубликовала отчёт об оценке производительности Ray3, позиционируя модель как state-of-the-art для профессиональной генерации видео. Также представлены технические статьи о методе Terminal Velocity Matching для масштабирования инференса и алгоритме Inductive Moment Matching для предобучения.",
       "importance": 8,
       "sources": [
         {
-          "title": "The new ChatGPT Images is here (GPT-Image-1.5)",
-          "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+          "title": "Ray3.14 is here: Native 1080p, 3x cheaper and 4x faster",
+          "url": "https://lumalabs.ai/news/ray3_14",
+          "type": "official"
+        },
+        {
+          "title": "Luma AI launches Ray3",
+          "url": "https://lumalabs.ai/news/ray3",
+          "type": "official"
+        },
+        {
+          "title": "Introducing Ray3 Modify",
+          "url": "https://lumalabs.ai/news/ray3-modify",
+          "type": "official"
+        },
+        {
+          "title": "Ray3 Evaluation Report",
+          "url": "https://lumalabs.ai/news/ray3-eval",
           "type": "official"
         }
       ],
@@ -20,25 +35,30 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "GPT-Image-1.5",
-          "ChatGPT"
+          "Luma AI",
+          "Ray3",
+          "Ray3.14"
         ],
         "sentiment": "positive",
         "event": "release"
       }
     },
     {
-      "id": "models-maiimage2",
+      "id": "models-stability-audio25",
       "section": "models",
-      "headline": "Microsoft представила MAI-Image-2, MAI-Voice-1 и MAI-Transcribe-1",
-      "subheadline": "Флагманская модель генерации изображений MAI-Image-2 работает в 2 раза быстрее предшественника и уже интегрирована в Copilot, Bing и PowerPoint.",
-      "body": "5 апреля 2026 года Microsoft объявила о выпуске трёх новых моделей под брендом MAI: MAI-Image-2 — генерация изображений, MAI-Voice-1 — голосовая модель, MAI-Transcribe-1 — транскрибация. MAI-Image-2 позиционируется как флагман: скорость генерации вдвое выше предыдущей версии. Все три модели доступны в Microsoft Foundry, а MAI-Image-2 также интегрирована в Copilot, Bing и PowerPoint.",
-      "importance": 8,
+      "headline": "Stability AI представила Stable Audio 2.5 для корпоративного производства звука",
+      "subheadline": "Модель позиционируется как первый аудиоинструмент, ориентированный на корпоративное производство звука в масштабе.",
+      "body": "Stability AI анонсировала Stable Audio 2.5 — аудиомодель, которую компания называет первой, созданной специально для корпоративного производства звука в промышленных объёмах. Одновременно в партнёрстве с Arm выпущена модель Stable Audio Open Small для локального запуска на устройствах. Оба релиза опубликованы в один день вместе с рядом других анонсов Stability AI.",
+      "importance": 6,
       "sources": [
         {
-          "title": "Introducing MAI-Image-2, MAI-Voice-1, and MAI-Transcribe-1",
-          "url": "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/",
+          "title": "Stability AI Introduces Stable Audio 2.5",
+          "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
+          "type": "official"
+        },
+        {
+          "title": "Stability AI and Arm Collaborate to Release Stable Audio Open Small",
+          "url": "https://stability.ai/news-updates/stability-ai-and-arm-release-stable-audio-open-small-enabling-real-world-deployment-for-on-device-audio-control",
           "type": "official"
         }
       ],
@@ -46,30 +66,30 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft",
-          "MAI-Image-2",
-          "MAI-Voice-1",
-          "MAI-Transcribe-1",
-          "Microsoft Foundry",
-          "Copilot",
-          "Bing",
-          "PowerPoint"
+          "Stability AI",
+          "Stable Audio 2.5",
+          "Arm"
         ],
         "sentiment": "positive",
         "event": "release"
       }
     },
     {
-      "id": "models-qwenimage20",
+      "id": "models-stability-video4d",
       "section": "models",
-      "headline": "Alibaba выпустила Qwen-Image-2.0: 7B параметров и поддержка разрешения 2K",
-      "subheadline": "Модель объединяет генерацию и редактирование изображений в едином пайплайне с профессиональной типографикой.",
-      "body": "4 апреля 2026 года Alibaba опубликовала Qwen-Image-2.0 — модель генерации изображений на 7 миллиардов параметров. Ключевые характеристики: нативная поддержка разрешения 2K, единый пайплайн для генерации и редактирования изображений, улучшенная работа с типографикой для профессиональных задач. Модель ориентирована на конкуренцию с более крупными закрытыми системами при меньшем числе параметров.",
-      "importance": 7,
+      "headline": "Stability AI обновила Stable Video 4D до версии 2.0",
+      "subheadline": "Новая версия обеспечивает более высокую точность генерации новых ракурсов и 4D-контента из одного видео.",
+      "body": "Stability AI выпустила Stable Video 4D 2.0 с улучшениями для генерации новых ракурсов (novel-view synthesis) и 4D-контента на основе одного входного видео. Компания также представила Stable Virtual Camera — модель для многоракурсной генерации видео с управлением 3D-камерой. Оба анонса опубликованы вместе с другими релизами Stability AI.",
+      "importance": 6,
       "sources": [
         {
-          "title": "Qwen-Image-2.0 Released: Next-Gen 7B Image Model with Native 2K Resolution",
-          "url": "https://qwenimages.com/blog/qwen-image-2-release",
+          "title": "Stable Video 4D 2.0",
+          "url": "https://stability.ai/news-updates/stable-video-4d-20-new-upgrades-for-high-fidelity-novel-views-and-4d-generation-from-a-single-video",
+          "type": "official"
+        },
+        {
+          "title": "Introducing Stable Virtual Camera",
+          "url": "https://stability.ai/news-updates/introducing-stable-virtual-camera-multi-view-video-generation-with-3d-camera-control",
           "type": "official"
         }
       ],
@@ -77,8 +97,144 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Alibaba",
-          "Qwen-Image-2.0"
+          "Stability AI",
+          "Stable Video 4D"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      }
+    },
+    {
+      "id": "industry-stability-music-partnerships",
+      "section": "industry",
+      "headline": "Stability AI заключила партнёрства с Universal Music, Warner Music и EA",
+      "subheadline": "Компания одновременно объявила о стратегических альянсах с двумя крупнейшими лейблами и игровым издателем для разработки AI-инструментов.",
+      "body": "Stability AI анонсировала три крупных партнёрства в один день. С Universal Music Group подписан стратегический альянс для совместной разработки профессиональных инструментов AI-создания музыки. С Warner Music Group — соглашение об аналогичном направлении с акцентом на «ответственные AI-инструменты». С Electronic Arts (EA) заключено партнёрство для разработки инструментов, помогающих художникам, дизайнерам и разработчикам в игровой индустрии. Также объявлено об инвестиции от рекламного холдинга WPP и партнёрстве в сфере медиапроизводства. Дополнительно Stability AI вывела свои сервисы генерации изображений на платформу Amazon Bedrock.",
+      "importance": 8,
+      "sources": [
+        {
+          "title": "Universal Music Group and Stability AI Announce Strategic Alliance",
+          "url": "https://stability.ai/news-updates/universal-music-group-and-stability-ai-announce-strategic-alliance",
+          "type": "official"
+        },
+        {
+          "title": "Warner Music Group and Stability AI Join Forces",
+          "url": "https://stability.ai/news-updates/warner-music-group-and-stability-ai-join-forces-to-build-next-gen-tools",
+          "type": "official"
+        },
+        {
+          "title": "Stability AI and EA Partner",
+          "url": "https://stability.ai/news-updates/stability-ai-and-ea-partner-to-reimagine-game-development",
+          "type": "official"
+        },
+        {
+          "title": "Stability AI Announces Investment from WPP",
+          "url": "https://stability.ai/news-updates/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production",
+          "type": "official"
+        },
+        {
+          "title": "Stability AI Brings Image Services to Amazon Bedrock",
+          "url": "https://stability.ai/news-updates/stability-ai-brings-image-services-to-amazon-bedrock-delivering-professional-creative-control-with-enterprise-grade-infrastructure",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Stability AI",
+          "Universal Music Group",
+          "Warner Music Group",
+          "Electronic Arts",
+          "WPP",
+          "Amazon Bedrock"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      }
+    },
+    {
+      "id": "industry-anthropic-81k",
+      "section": "industry",
+      "headline": "Anthropic опросил 81 000 человек о том, чего они ждут от AI",
+      "subheadline": "Компания опубликовала результаты масштабного опроса пользователей об ожиданиях и опасениях, связанных с искусственным интеллектом.",
+      "body": "Anthropic опубликовал результаты опроса 81 000 участников о восприятии AI и пользовательских ожиданиях. Детали методологии и ключевые выводы опроса изложены в публикации на официальном сайте компании.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "What 81,000 people want from AI",
+          "url": "https://www.anthropic.com/81k-interviews",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      }
+    },
+    {
+      "id": "platforms-luma-teams",
+      "section": "platforms",
+      "headline": "Luma AI добавила функции командной работы и партнёрства с Publicis и Serviceplan",
+      "subheadline": "Платформа Luma получила поддержку командных аккаунтов и объявила о расширении бизнеса через офис в Эр-Рияде.",
+      "body": "Luma AI запустила функции командных аккаунтов и ролей администраторов для корпоративных пользователей платформы. Одновременно объявлено о развёртывании инструментов Luma в глобальных операциях рекламной группы Serviceplan, а также о планах открыть офис в Эр-Рияде для работы с проектом Humain Create в партнёрстве с Publicis Groupe.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "Introducing Team Members and Admins on Your Luma Account",
+          "url": "https://lumalabs.ai/news/luma-teams",
+          "type": "official"
+        },
+        {
+          "title": "Serviceplan Group Deploys Creative AI Across Global Operations in Partnership with Luma AI",
+          "url": "https://lumalabs.ai/news/serviceplan-group-deploys-creative-ai-across-global-operations-in-partnership-with-luma-ai",
+          "type": "official"
+        },
+        {
+          "title": "Luma AI To Open Riyadh Office",
+          "url": "https://lumalabs.ai/news/luma-ai-to-open-riyadh-office-to-accelerate-humain-create-and-partner-with-publicis-groupe",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Luma AI",
+          "Serviceplan",
+          "Publicis Groupe"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      }
+    },
+    {
+      "id": "industry-stability-nvidia-sd35",
+      "section": "platforms",
+      "headline": "Stability AI и NVIDIA выпустили Stable Diffusion 3.5 NIM для корпоративного развёртывания",
+      "subheadline": "Интеграция в формат NVIDIA NIM обеспечивает ускоренную производительность и упрощённое развёртывание в корпоративной среде.",
+      "body": "Stability AI совместно с NVIDIA выпустила Stable Diffusion 3.5 в формате NIM (NVIDIA Inference Microservice), что обеспечивает повышенную скорость работы и упрощает развёртывание модели в корпоративной инфраструктуре. NIM-формат позволяет запускать модель как микросервис в стандартизированной среде NVIDIA.",
+      "importance": 5,
+      "sources": [
+        {
+          "title": "Stability AI and NVIDIA Bring Faster Performance with Stable Diffusion 3.5 NIM",
+          "url": "https://stability.ai/news-updates/stability-ai-and-nvidia-bring-faster-performance-and-simplified-enterprise-deployment-with-the-stable-diffusion-35-nim",
+          "type": "official"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Stability AI",
+          "NVIDIA",
+          "Stable Diffusion 3.5"
         ],
         "sentiment": "positive",
         "event": "release"
