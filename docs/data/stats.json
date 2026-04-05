@@ -67,6 +67,38 @@
         }
       }
     },
+    "ChatGPT": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 0
+        }
+      }
+    },
+    "Google": {
+      "mentions": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
     "PrismML": {
       "mentions": 1,
       "positive": 0,
@@ -164,22 +196,6 @@
       }
     },
     "ФСБ": {
-      "mentions": 1,
-      "positive": 0,
-      "negative": 1,
-      "neutral": 0,
-      "first_seen": "2026-04-04",
-      "last_seen": "2026-04-04",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 0
-        }
-      }
-    },
-    "ChatGPT": {
       "mentions": 1,
       "positive": 0,
       "negative": 1,
@@ -355,39 +371,7 @@
         }
       }
     },
-    "Google": {
-      "mentions": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-04-05",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        }
-      }
-    },
     "NVIDIA": {
-      "mentions": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-04-05",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
-    "Physical AI": {
       "mentions": 1,
       "positive": 1,
       "negative": 0,
@@ -499,6 +483,22 @@
         }
       }
     },
+    "Samsung": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
     "Suno": {
       "mentions": 1,
       "positive": 0,
@@ -515,7 +515,7 @@
         }
       }
     },
-    "NYT": {
+    "The New York Times": {
       "mentions": 1,
       "positive": 0,
       "negative": 1,
@@ -531,18 +531,18 @@
         }
       }
     },
-    "Sam Altman": {
+    "Veo": {
       "mentions": 1,
-      "positive": 0,
-      "negative": 1,
+      "positive": 1,
+      "negative": 0,
       "neutral": 0,
       "first_seen": "2026-04-05",
       "last_seen": "2026-04-05",
       "by_month": {
         "2026-04": {
           "mentions": 1,
-          "positive": 0,
-          "negative": 1,
+          "positive": 1,
+          "negative": 0,
           "neutral": 0
         }
       }
