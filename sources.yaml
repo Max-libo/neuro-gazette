@@ -334,23 +334,11 @@ sources:
     section: industry
     priority: 2
 
-  - name: "Ars Technica"
-    type: rss
-    url: "https://feeds.arstechnica.com/arstechnica/index"
-    section: industry
-    priority: 2
-
   - name: "404 Media"
     type: rss
     url: "https://www.404media.co/rss"
     section: hype
     priority: 1
-
-  - name: "BBC Technology"
-    type: rss
-    url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
-    section: industry
-    priority: 2
 
   - name: "The Guardian AI"
     type: rss
@@ -358,22 +346,41 @@ sources:
     section: industry
     priority: 2
 
-  - name: "The Register"
-    type: rss
-    url: "https://www.theregister.com/headlines.atom"
-    section: industry
-    priority: 2
-
-  - name: "Engadget"
-    type: rss
-    url: "https://www.engadget.com/rss.xml"
-    section: industry
-    priority: 2
-
-
   - name: "ZDNet AI"
     type: rss
     url: "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"
+    section: industry
+    priority: 2
+
+  - name: "AI News"
+    type: rss
+    url: "https://www.artificialintelligence-news.com/feed/"
+    section: industry
+    priority: 2
+
+  - name: "Synced Global"
+    type: rss
+    url: "https://syncedreview.com/feed/"
+    section: models
+    priority: 2
+
+  - name: "MarkTechPost"
+    type: rss
+    url: "https://www.marktechpost.com/feed/"
+    section: models
+    priority: 2
+
+  # ── РУССКОЯЗЫЧНЫЕ СМИ ─────────────────────────────
+
+  - name: "Хабр AI"
+    type: rss
+    url: "https://habr.com/ru/rss/hub/artificial_intelligence/all/"
+    section: industry
+    priority: 2
+
+  - name: "VC.ru AI"
+    type: rss
+    url: "https://vc.ru/rss/tag/ИИ"
     section: industry
     priority: 2
 
