@@ -45,9 +45,10 @@ NOW        = datetime.now(MSK)
 # Если запуск до 07:00 — берём предыдущее окно (позавчера→вчера).
 _today_0700 = NOW.replace(hour=7, minute=0, second=0, microsecond=0)
 _window_end = _today_0700 if NOW >= _today_0700 else _today_0700 - timedelta(days=1)
-CUTOFF_24H  = (_window_end - timedelta(hours=24)).astimezone(timezone.utc)
-TODAY       = _window_end.date()
-TODAY_STR   = TODAY.isoformat()
+CUTOFF_24H      = (_window_end - timedelta(hours=24)).astimezone(timezone.utc)
+TODAY           = _window_end.date()
+TODAY_STR       = TODAY.isoformat()
+CUTOFF_DATE_STR = (TODAY - timedelta(days=1)).isoformat()  # дата начала окна сбора
 
 SECTIONS  = ["models", "platforms", "industry", "hype"]
 RAW_LIMIT = 120  # максимум статей на вход Claude
@@ -351,6 +352,8 @@ async def fetch_hype_via_search(client: AsyncAnthropic, queries: list[str]) -> s
                     "role": "user",
                     "content": (
                         f"Найди самые обсуждаемые и скандальные AI-новости по запросу: «{query}». "
+                        f"Только публикации за период {CUTOFF_DATE_STR} — {TODAY_STR}. "
+                        "Материалы старше этого периода не включай. "
                         "Перечисли 3-5 результатов строго в формате одной строки каждый:\n"
                         "ЗАГОЛОВОК | URL конкретной статьи | ДАТА (YYYY-MM-DD) | краткое описание\n"
                         "Требования: URL должен вести на конкретную статью, не на тег-страницу, "
@@ -391,7 +394,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 Голос: факты и конкретика, без метафор, без восхищения, без воды.
 
 Правила:
-- Включай новость только если у неё есть конкретный URL статьи и дата публикации в пределах периода сбора. Тег-страницы, главные страницы сайтов и URL без конкретного материала — не источники. Лучше меньше новостей чем одна выдуманная.
+- Включай новость только если у неё есть конкретный URL статьи и дата публикации в пределах периода сбора, указанного в начале промпта. Новости старше периода сбора — не включай, даже если они кажутся важными. Тег-страницы, главные страницы сайтов и URL без конкретного материала — не источники. Лучше меньше новостей чем одна выдуманная.
 - Дедупликация: несколько источников об одном событии — одна запись, поле duplicate_note.
 - Целевой диапазон: 5-7 новостей на рубрику. Меньше честных лучше, чем больше выдуманных.
 - Если новостей по рубрике больше 7 — оставь топ-7 по importance, остальные отсеки.
@@ -436,7 +439,7 @@ def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: li
         "новостной ценности, туториалы типа 'как использовать X', и материалы старше периода сбора. "
         "Лучше оставить лишнее чем потерять важное. "
         "Верни список в виде: заголовок | URL | источник. Без пояснений.\n",
-        f"Дата: {TODAY_STR}. Статей: {len(articles)}.\n",
+        f"Период сбора: {CUTOFF_DATE_STR} — {TODAY_STR}. Статей: {len(articles)}.\n",
     ]
     for a in articles:
         lines.append(f"{a['title']} | {a['url']} | {a['source']} | {a['published']}")
@@ -451,7 +454,7 @@ def build_filter_prompt(articles: list[dict], hype_text: str, prev_headlines: li
 
 
 def build_edit_prompt(filtered_text: str, hype_text: str, prev_headlines: list[str]) -> str:
-    lines = [f"Дата выпуска: {TODAY_STR}\n"]
+    lines = [f"Дата выпуска: {TODAY_STR}. Период сбора: {CUTOFF_DATE_STR} — {TODAY_STR}. Новости вне этого периода не включать.\n"]
     if prev_headlines:
         lines.append("=== УЖЕ ОПУБЛИКОВАНО В ПРЕДЫДУЩЕМ ВЫПУСКЕ — НЕ ВКЛЮЧАТЬ ===")
         for h in prev_headlines:
