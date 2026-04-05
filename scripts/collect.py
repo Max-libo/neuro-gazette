@@ -797,14 +797,18 @@ async def amain() -> None:
     search_queries = config.get("search_queries") or {}
     log.info("Источников: %d, секций с web-поиском: %s", len(sources), list(search_queries.keys()))
 
+    from_raw = "--from-raw" in sys.argv
+
     async with AsyncAnthropic(api_key=anthropic_key) as client:
-        await _run_pipeline(client, sources, search_queries)
+        await _run_pipeline(client, sources, search_queries, from_raw=from_raw)
 
 
 async def _run_pipeline(
     client: AsyncAnthropic,
     sources: list[dict],
     search_queries: dict,
+    *,
+    from_raw: bool = False,
 ) -> None:
     # ── Загружаем выпуски за последние 7 дней ──────────────────────────────────
     recent_issues  = load_recent_issues()
@@ -813,35 +817,45 @@ async def _run_pipeline(
     log.info("История (%d выпусков): %d URL, %d заголовков для исключения",
              len(recent_issues), len(prev_urls), len(prev_headlines))
 
-    # ── Этап 1: сбор материалов за 24ч ───────────────────────────────────────
-    log.info("Сбор материалов (окно 24ч)…")
-    raw_items = collect_from_sources(sources, CUTOFF_24H)
-    raw_items = deduplicate_raw(raw_items)
-    log.info("Собрано (24ч): %d статей", len(raw_items))
-
-    # Исключаем статьи, URL которых уже есть в предыдущем выпуске
-    if prev_urls:
-        before = len(raw_items)
-        raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
-        log.info("После исключения дублей с предыдущим выпуском: %d → %d статей", before, len(raw_items))
-
-    raw_items.sort(key=lambda a: a.get("priority", 2))
-    raw_items = raw_items[:RAW_LIMIT]
-
-    # Кэшируем собранные статьи на случай сбоя Claude API
-    raw_cache = DATA_DIR / f"{TODAY_STR}_raw.json"
-    raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
-    log.info("Сырые статьи сохранены: %s", raw_cache)
-
-    # ── Этап 2: веб-поиск по секциям ─────────────────────────────────────────
     search_texts: dict[str, str] = {}
-    for i, (section, queries) in enumerate(search_queries.items()):
-        if queries:
-            if i > 0:
-                log.info("Пауза 30с перед веб-поиском секции %s…", section)
-                await asyncio.sleep(30)
-            log.info("Веб-поиск для секции %s…", section)
-            search_texts[section] = await fetch_via_search(client, section, queries)
+
+    if from_raw:
+        # ── Режим --from-raw: пропускаем сбор и веб-поиск, берём кэш ────────
+        raw_cache = DATA_DIR / f"{TODAY_STR}_raw.json"
+        if not raw_cache.exists():
+            log.error("Кэш %s не найден. Сначала запустите полный сбор.", raw_cache)
+            sys.exit(1)
+        raw_items = json.loads(raw_cache.read_text(encoding="utf-8"))
+        log.info("--from-raw: загружено %d статей из кэша %s", len(raw_items), raw_cache)
+    else:
+        # ── Этап 1: сбор материалов за 24ч ───────────────────────────────────
+        log.info("Сбор материалов (окно 24ч)…")
+        raw_items = collect_from_sources(sources, CUTOFF_24H)
+        raw_items = deduplicate_raw(raw_items)
+        log.info("Собрано (24ч): %d статей", len(raw_items))
+
+        # Исключаем статьи, URL которых уже есть в предыдущих выпусках
+        if prev_urls:
+            before = len(raw_items)
+            raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
+            log.info("После исключения дублей с предыдущими выпусками: %d → %d статей", before, len(raw_items))
+
+        raw_items.sort(key=lambda a: a.get("priority", 2))
+        raw_items = raw_items[:RAW_LIMIT]
+
+        # Кэшируем собранные статьи на случай сбоя Claude API
+        raw_cache = DATA_DIR / f"{TODAY_STR}_raw.json"
+        raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
+        log.info("Сырые статьи сохранены: %s", raw_cache)
+
+        # ── Этап 2: веб-поиск по секциям ─────────────────────────────────────
+        for i, (section, queries) in enumerate(search_queries.items()):
+            if queries:
+                if i > 0:
+                    log.info("Пауза 30с перед веб-поиском секции %s…", section)
+                    await asyncio.sleep(30)
+                log.info("Веб-поиск для секции %s…", section)
+                search_texts[section] = await fetch_via_search(client, section, queries)
 
     if not raw_items and not any(search_texts.values()):
         log.error("Нет материалов — выпуск пустой")

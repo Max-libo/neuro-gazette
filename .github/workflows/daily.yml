@@ -4,7 +4,13 @@ on:
   schedule:
     # 07:00 МСК = 04:00 UTC
     - cron: '0 4 * * *'
-  workflow_dispatch:    # ручной запуск из GitHub UI
+  workflow_dispatch:
+    inputs:
+      from_raw:
+        description: 'Пропустить сбор и веб-поиск, переделать только редактуру из кэша'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write       # нужно для коммита JSON
@@ -30,13 +36,19 @@ jobs:
       - name: Collect news
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/collect.py
+        run: |
+          ARGS=""
+          if [ "${{ inputs.from_raw }}" = "true" ]; then
+            ARGS="--from-raw"
+            echo "Режим --from-raw: пропускаем сбор и веб-поиск"
+          fi
+          python scripts/collect.py $ARGS
 
       - name: Commit new issue
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/ ':!docs/data/*_raw.json'
+          git add docs/data/
           git diff --cached --quiet && echo "No changes" && exit 0
           DATE=$(python3 -c "import json; print(json.load(open('docs/data/latest.json'))['date'])")
           git commit -m "feat: выпуск $DATE"
