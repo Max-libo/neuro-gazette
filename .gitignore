@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 docs/data/*_raw.json
+docs/data/*_filtered.txt
+docs/data/*_search.json
