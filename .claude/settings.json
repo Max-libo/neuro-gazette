@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "Проверь, изменились ли в этой сессии ключевые файлы проекта Нейрогазета, и если да — обнови docs/data/changelog.json.\n\nШаг 1. Определи изменённые файлы:\n  git diff HEAD --name-only\n  git show HEAD --name-only --format=''\nОбъедини результаты, удали дубли.\n\nШаг 2. Ключевые файлы (если хоть один изменился — продолжай):\n  - sources.yaml                         → источники RSS/scrape\n  - scripts/pipeline/stage1_collect.py   → логика сборщика\n  - scripts/pipeline/stage2_search.py    → запросы веб-поиска\n  - scripts/pipeline/stage3_filter.py    → логика фильтрации\n  - scripts/pipeline/stage4_edit.py      → правила редактуры (EDIT_SYSTEM)\n  - scripts/pipeline/common.py           → общая логика\n  - docs/app.js                          → фронтенд\n  - docs/style.css                       → стили\n  - docs/index.html                      → разметка\nИгнорируй: docs/data/*.json, run.sh, .github/, .claude/, requirements.txt\n\nШаг 3. Если ключевые файлы НЕ изменились — заверши работу, ничего не делай.\n\nШаг 4. Прочитай docs/data/changelog.json. Извлеки текущую версию (формат: vX.NN).\n\nШаг 5. Инкрементируй патч-версию:\n  python3 -c \"\nimport json, re\ncl = json.load(open('docs/data/changelog.json'))\nm = re.match(r'v(\\d+)\\.(\\d+)', cl['version'])\nmaj, min_ = int(m.group(1)), int(m.group(2))\nmin_ += 1\nif min_ > 99: maj += 1; min_ = 0\nprint(f'v{maj}.{min_:02d}')\n\"\n\nШаг 6. Прочитай git diff изменённых ключевых файлов (git diff HEAD -- <file> или git show HEAD -- <file>). Определи суть изменений.\n\nШаг 7. Напиши changelog-запись на русском языке — одно-два предложения. Конкретно: что добавлено/изменено. Без воды.\nПримеры:\n  «Добавлены источники ByteDance Seed и MiniMax в раздел models. Обновлены запросы веб-поиска для секции hype.»\n  «Рефакторинг пайплайна: логика сборщика разбита на четыре независимых этапа.»\n  «Новый layout для hero-карточки, правки стилей колонок на мобильных.»\n\nШаг 8. Запиши новый docs/data/changelog.json:\n  {\"version\": \"<новая версия>\", \"changelog\": \"<текст изменений>\"}\n\nВажно: не делай git commit — только обнови файл. Не трогай другие файлы.",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
