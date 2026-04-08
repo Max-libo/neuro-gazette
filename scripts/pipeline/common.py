@@ -265,6 +265,34 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
     return all_news
 
 
+# ── Changelog-карточка ───────────────────────────────────────────────────────
+CHANGELOG_FILE = REPO_ROOT / "docs" / "data" / "changelog.json"
+
+
+def build_changelog_item() -> dict:
+    """Закреплённая карточка changelog — добавляется последней в каждый выпуск."""
+    try:
+        cl = json.loads(CHANGELOG_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        cl = {}
+    version = cl.get("version", "v0.01")
+    return {
+        "id":             f"changelog-{TODAY_STR}",
+        "section":        "changelog",
+        "tier":           "changelog",
+        "version":        version,
+        "headline":       f"Нейрогазета {version}",
+        "subheadline":    f"Текущая версия: {version}",
+        "body":           cl.get("changelog", ""),
+        "importance":     0,
+        "sources":        [],
+        "related":        [],
+        "unconfirmed":    False,
+        "duplicate_note": None,
+        "tags":           {"entities": [], "sentiment": "neutral", "event": "update"},
+    }
+
+
 # ── Вызов claude CLI ──────────────────────────────────────────────────────────
 def run_claude(
     prompt: str,

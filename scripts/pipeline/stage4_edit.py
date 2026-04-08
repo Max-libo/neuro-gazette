@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from common import (
     DATA_DIR, LATEST_FILE, TODAY_STR, WINDOW_STR,
     load_recent_issues, get_prev_headlines,
-    finalize_news, update_index, run_claude, log,
+    finalize_news, update_index, run_claude, build_changelog_item, log,
 )
 
 EDIT_SYSTEM = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
@@ -160,6 +160,7 @@ def main() -> None:
         sys.exit(1)
 
     all_news = finalize_news(news_list)
+    all_news.append(build_changelog_item())
 
     if not all_news:
         log.error("Выпуск пуст после редактуры — файл не записан")

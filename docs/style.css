@@ -322,6 +322,59 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .related-list a { color: var(--ink-mid); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .related-list a:hover { color: var(--ink); }
 
+/* ===== CHANGELOG (закреплённая карточка внизу выпуска) ===== */
+.changelog-zone {
+  border-top: 1px solid var(--rule);
+  padding: 0.65rem 0 0;
+}
+
+.art-changelog {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.changelog-version-badge {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-light);
+  border: 1px solid var(--rule);
+  padding: 0.1rem 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.changelog-content {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.changelog-headline {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  letter-spacing: 0.01em;
+}
+
+.changelog-body {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  line-height: 1.5;
+}
+
+.changelog-body::before {
+  content: '·';
+  margin-right: 0.4rem;
+  color: var(--ink-faint);
+}
+
 /* ===== LOADING / ERROR ===== */
 .loading-state, .error-state {
   text-align: center;

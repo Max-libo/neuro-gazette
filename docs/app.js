@@ -141,34 +141,53 @@ function toggleExpand(el) {
   el.classList.toggle('expanded');
 }
 
+/* ── CHANGELOG (закреплённая карточка внизу, без плашки) ── */
+function buildChangelogHtml(item) {
+  return `
+    <div class="changelog-zone">
+      <article class="art-changelog">
+        <span class="changelog-version-badge">${esc(item.version || item.headline.match(/v[\d.]+/)?.[0] || '')}</span>
+        <div class="changelog-content">
+          <span class="changelog-headline">${esc(item.headline)}</span>
+          ${item.body ? `<span class="changelog-body">${esc(item.body)}</span>` : ''}
+        </div>
+      </article>
+    </div>`;
+}
+
 function renderIssue(issue) {
   document.getElementById('issue-date').textContent = formatDate(issue.date);
   document.title = `Нейрогазета — ${issue.date}`;
 
-  // Сортируем: hero → regular → compact
-  const TIER_ORDER = { hero: 0, regular: 1, compact: 2 };
+  // Сортируем: hero → regular → compact → changelog
+  const TIER_ORDER = { hero: 0, regular: 1, compact: 2, changelog: 99 };
   const all = [...(issue.news || [])].sort((a, b) =>
     (TIER_ORDER[a.tier] ?? 1) - (TIER_ORDER[b.tier] ?? 1) || b.importance - a.importance
   );
 
-  if (all.length === 0) {
+  // Выделяем changelog-карточку
+  const changelog = all.find(n => n.section === 'changelog' || n.tier === 'changelog');
+  const newsItems  = all.filter(n => n !== changelog);
+
+  if (newsItems.length === 0 && !changelog) {
     document.getElementById('newspaper').innerHTML =
       '<div class="loading-state">Нет новостей в этом выпуске.</div>';
     return;
   }
 
   // Ровно одна hero-новость
-  const hero   = all.find(n => n.tier === 'hero') || all[0];
-  const inCols = all.filter(n => n !== hero);
+  const hero   = newsItems.find(n => n.tier === 'hero') || newsItems[0];
+  const inCols = newsItems.filter(n => n !== hero);
 
   let html = '';
 
-  html += '<div class="heroes-zone">';
-  html += buildHeroHtml(hero);
-  html += '</div>';
+  if (hero) {
+    html += '<div class="heroes-zone">';
+    html += buildHeroHtml(hero);
+    html += '</div>';
+  }
 
-  // Все остальные — в трёх фиксированных колонках, одинаковый кегль.
-  // compact-новости: подзаголовок и тело под катом.
+  // Все остальные — в трёх фиксированных колонках
   if (inCols.length) {
     const NUM_COLS = 3;
     const cols = Array.from({ length: NUM_COLS }, () => []);
@@ -184,6 +203,17 @@ function renderIssue(issue) {
       html += '</div>';
     });
     html += '</div>';
+  }
+
+  // Changelog-карточка в самом конце
+  if (changelog) {
+    html += buildChangelogHtml(changelog);
+    // Обновляем версию в футере
+    const version = changelog.version || (changelog.headline.match(/v[\d.]+/) || [])[0];
+    if (version) {
+      const el = document.getElementById('footer-title');
+      if (el) el.textContent = `Нейрогазета ${version}`;
+    }
   }
 
   document.getElementById('newspaper').innerHTML = html;

@@ -5,59 +5,45 @@
     {
       "id": "models-mythos-2026-04-08",
       "section": "models",
-      "headline": "Anthropic представила Claude Mythos — самую мощную модель компании, слишком опасную для публичного релиза",
-      "subheadline": "Модель набрала 93.9% на SWE-bench Verified и нашла тысячи zero-day уязвимостей во всех основных ОС и браузерах.",
-      "body": "Anthropic анонсировала Claude Mythos Preview и одновременно запустила Project Glasswing — консорциум с участием Amazon, Apple, Google и Microsoft для контролируемого использования модели в кибербезопасности. Mythos показала 83.1% на CyberGym-бенчмарке и разработала 181 рабочий эксплойт для JS-движка Firefox — против 2 у предыдущей модели Opus 4.6. Компания выделила $100 млн кредитов на оборонную кибербезопасность и ограничила доступ 12 партнёрами. Публичного релиза не будет: по оценке Anthropic, модель слишком эффективна как инструмент атаки. Mythos также доступна в Private Preview на Google Cloud Vertex AI.",
+      "headline": "Anthropic представила Claude Mythos — модель, слишком опасную для публичного релиза",
+      "subheadline": "Новая модель нашла тысячи zero-day уязвимостей во всех основных ОС и браузерах; доступ ограничен консорциумом Project Glasswing",
+      "body": "Claude Mythos Preview установила рекорд на SWE-bench Verified — 93.9%, а на кибербезопасном бенчмарке CyberGym набрала 83.1%. В ходе внутреннего тестирования модель разработала 181 рабочий эксплойт для JS-движка Firefox против двух у Claude Opus 4.6. Anthropic приняла беспрецедентное решение не выпускать Mythos публично: вместо этого компания запустила Project Glasswing — консорциум с участием Apple, Google, Microsoft и Amazon, предоставив доступ 40+ организациям и выделив $100 млн кредитов на защитную кибербезопасность. Модель также стала доступна в Private Preview на Google Cloud Vertex AI для оборонных сценариев.",
       "tier": "hero",
       "sources": [
         {
-          "title": "TechCrunch",
+          "title": "TechCrunch: Anthropic debuts Mythos in cybersecurity initiative",
           "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
           "type": "media"
         },
         {
-          "title": "Fortune",
+          "title": "Fortune: Early access to Claude Mythos",
           "url": "https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/",
           "type": "media"
         },
         {
-          "title": "CNBC",
+          "title": "CNBC: Anthropic limits Mythos over hacker fears",
           "url": "https://www.cnbc.com/2026/04/07/anthropic-claude-mythos-ai-hackers-cyberattacks.html",
           "type": "media"
         },
         {
-          "title": "CNN",
+          "title": "CNN: Anthropic's latest AI model",
           "url": "https://edition.cnn.com/2026/04/07/tech/anthropic-claude-mythos-preview-cybersecurity",
           "type": "media"
         },
         {
-          "title": "Anthropic",
+          "title": "The Verge: Anthropic Project Glasswing",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity",
+          "type": "media"
+        },
+        {
+          "title": "Anthropic: Project Glasswing",
           "url": "https://www.anthropic.com/glasswing",
           "type": "official"
         }
       ],
       "related": [
         {
-          "title": "ZDNet: Apple, Google и Microsoft присоединились к Project Glasswing",
-          "url": "https://www.zdnet.com/article/project-glasswing-microsoft-google-apple-anthropic/",
-          "entities": [
-            "Anthropic",
-            "Apple",
-            "Google",
-            "Microsoft"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "The Verge: Mythos нашла проблемы безопасности в каждом крупном ОС и браузере",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity",
-          "entities": [
-            "Anthropic"
-          ],
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Claude Mythos Preview на Vertex AI",
+          "title": "Claude Mythos Preview доступен на Vertex AI",
           "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai",
           "entities": [
             "Google Cloud",
@@ -75,16 +61,14 @@
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "Освещают TechCrunch, Fortune, CNBC, CNN, VentureBeat, The Verge, ZDNet и другие — крупнейшая новость дня в AI.",
+      "duplicate_note": null,
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude Mythos",
-          "Project Glasswing",
-          "Amazon",
           "Apple",
           "Google",
-          "Microsoft"
+          "Microsoft",
+          "Amazon"
         ],
         "sentiment": "positive",
         "event": "release"
@@ -94,18 +78,18 @@
     {
       "id": "models-glm51-2026-04-08",
       "section": "models",
-      "headline": "Zhipu AI выпустила GLM-5.1 — open-source агент для кодинга, работающий до 8 часов автономно",
-      "subheadline": "Модель с 754B параметрами под MIT-лицензией обогнала GPT-5.4 и Claude Opus 4.6 на SWE-Bench Pro.",
-      "body": "Китайская компания Zhipu AI (Z.ai) представила GLM-5.1 — архитектуру Mixture-of-Experts на 754 млрд параметров, доступную под MIT-лицензией на Hugging Face. Ключевая особенность — способность автономно выполнять сложные задачи кодирования в течение 8 часов без вмешательства пользователя. На бенчмарке SWE-Bench Pro модель обошла GPT-5.4 и Claude Opus 4.6.",
+      "headline": "Zhipu AI выпустила GLM-5.1 — open-source агент для кодинга, обогнавший GPT-5.4 и Opus 4.6",
+      "subheadline": "Модель на 754 млрд параметров работает автономно до 8 часов и распространяется под MIT-лицензией",
+      "body": "Китайская Zhipu AI (Z.ai) представила GLM-5.1 — MoE-модель на 754 млрд параметров, заточенную под длительные агентные задачи. На SWE-Bench Pro модель обошла GPT-5.4 и Claude Opus 4.6. Ключевая особенность — возможность автономной работы до 8 часов без вмешательства пользователя. Модель доступна на Hugging Face под MIT-лицензией.",
       "tier": "regular",
       "sources": [
         {
-          "title": "VentureBeat",
+          "title": "VentureBeat: GLM ships 5.1 open source LLM",
           "url": "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4",
           "type": "media"
         },
         {
-          "title": "TestingCatalog",
+          "title": "TestingCatalog: Zhipu AI launches GLM-5.1",
           "url": "https://www.testingcatalog.com/zhipu-ai-launches-open-source-glm-5-1-model-for-coding-tasks/",
           "type": "media"
         }
@@ -115,8 +99,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Zhipu AI",
-          "GLM-5.1"
+          "Zhipu AI"
         ],
         "sentiment": "positive",
         "event": "release"
@@ -127,12 +110,12 @@
       "id": "models-lyria3-2026-04-08",
       "section": "models",
       "headline": "Google открыла публичный доступ к моделям музыкальной генерации Lyria 3 и Lyria 3 Pro",
-      "subheadline": "Модели доступны на Vertex AI и генерируют стерео-треки до 3 минут с вокалом из текста и изображений.",
-      "body": "Google запустила публичный превью моделей Lyria 3 и Lyria 3 Pro на платформе Vertex AI. Lyria 3 Pro генерирует полноценные стерео-треки продолжительностью до 3 минут с поддержкой вокала. Входные данные — текстовое описание или изображение. Lyria 3 — облегчённая версия для менее ресурсоёмких задач.",
+      "subheadline": "Модели генерируют стерео-треки до 3 минут с вокалом из текстовых и визуальных описаний",
+      "body": "Google запустила публичный превью Lyria 3 и Lyria 3 Pro на Vertex AI. Модели создают полноценные стерео-треки длительностью до трёх минут, включая вокальные партии, по текстовому или визуальному промпту. Lyria 3 Pro предназначена для профессиональных сценариев с более высокой точностью следования инструкциям.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Google Cloud Blog",
+          "title": "Google Cloud Blog: Lyria 3 and Lyria 3 Pro on Vertex AI",
           "url": "https://cloud.google.com/blog/products/ai-machine-learning/lyria-3-and-lyria-3-pro-on-vertex-ai",
           "type": "official"
         }
@@ -142,8 +125,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google",
-          "Lyria 3"
+          "Google"
         ],
         "sentiment": "positive",
         "event": "release"
@@ -153,13 +135,13 @@
     {
       "id": "models-wan27-2026-04-08",
       "section": "models",
-      "headline": "Alibaba представила Wan2.7-Image для генерации изображений с точным контролем цвета и текста",
-      "subheadline": "Новый компонент платформы Wan улучшает консистентность персонажей и рендеринг текста.",
-      "body": "Alibaba выпустила Wan2.7-Image — модель генерации изображений, входящую в флагманскую платформу Wan. Ключевые улучшения: устойчивое воспроизведение персонажей между кадрами, точное управление цветовой палитрой и читаемый рендеринг текста на изображениях — одна из давних проблем генеративных моделей.",
+      "headline": "Alibaba представила Wan2.7-Image — генерацию изображений с точным контролем цвета и текста",
+      "subheadline": "Новый компонент платформы Wan улучшает консистентность персонажей и рендеринг текста на картинках",
+      "body": "Wan2.7-Image входит в флагманскую мультимодальную платформу Alibaba Wan. Модель обеспечивает точное управление цветовой палитрой, корректный рендеринг текста на изображениях и стабильную консистентность персонажей между генерациями.",
       "tier": "compact",
       "sources": [
         {
-          "title": "BizTechTimes",
+          "title": "BizTechTimes: Alibaba Wan2.7-Image",
           "url": "https://biztechtimes.com.my/2026/04/07/alibaba-unveils-wan2-7-image-for-next-gen-ai-visuals/",
           "type": "media"
         }
@@ -169,8 +151,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Alibaba",
-          "Wan2.7"
+          "Alibaba"
         ],
         "sentiment": "positive",
         "event": "release"
@@ -180,13 +161,13 @@
     {
       "id": "models-harrier-2026-04-08",
       "section": "models",
-      "headline": "Microsoft открыла код эмбеддинг-модели Harrier для поиска Bing",
-      "subheadline": "Команда Bing опубликовала модель, используемую в продакшене для семантического поиска.",
-      "body": "Команда Microsoft Bing выложила в открытый доступ эмбеддинг-модель Harrier, применяемую в продакшене для семантического поиска. Модель оптимизирована для задач retrieval и работает с запросами на нескольких языках.",
+      "headline": "Команда Bing открыла исходный код embedding-модели Harrier",
+      "subheadline": "Microsoft выложила модель для векторных представлений текста, используемую в поиске Bing",
+      "body": "Harrier — embedding-модель, разработанная поисковой командой Bing. Публикация под открытой лицензией позволяет использовать её для задач семантического поиска, кластеризации и RAG-пайплайнов.",
       "tier": "compact",
       "sources": [
         {
-          "title": "The Decoder",
+          "title": "The Decoder: Microsoft's Bing team open-sources Harrier",
           "url": "https://the-decoder.com/microsofts-bing-team-open-sources-harrier-embedding-model/",
           "type": "media"
         }
@@ -196,9 +177,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft",
-          "Bing",
-          "Harrier"
+          "Microsoft"
         ],
         "sentiment": "positive",
         "event": "release"
@@ -206,42 +185,15 @@
       "importance": 5
     },
     {
-      "id": "models-veo31lite-2026-04-08",
-      "section": "models",
-      "headline": "Google снизила цены на видеогенерацию: Veo 3.1 Lite стоит менее половины Fast-версии",
-      "subheadline": "Бюджетная модель поддерживает text-to-video и image-to-video.",
-      "body": "Google подтвердила доступность Veo 3.1 Lite — облегчённой версии модели видеогенерации, которая стоит менее 50% от цены Veo 3.1 Fast. Одновременно снижены цены на саму Fast-версию. Обе модели поддерживают генерацию видео из текстовых описаний и из изображений.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Google Blog",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google",
-          "Veo 3.1"
-        ],
-        "sentiment": "positive",
-        "event": "update"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-jetbrains-survey-2026-04-08",
+      "id": "platforms-jetbrains-2026-04-08",
       "section": "platforms",
-      "headline": "Опрос JetBrains: 90% разработчиков используют AI-инструменты ежедневно, Claude Code вырос в 6 раз",
-      "subheadline": "GitHub Copilot стагнирует, а Claude Code показал шестикратный рост за год.",
-      "body": "JetBrains опубликовал результаты опроса более 10 000 разработчиков об использовании AI-инструментов для кодирования. 90% опрошенных применяют AI ежедневно. Главный тренд — шестикратный рост аудитории Claude Code за последний год на фоне стагнации GitHub Copilot. Исследование фиксирует сдвиг от автокомплита к агентным инструментам, способным выполнять многошаговые задачи.",
+      "headline": "JetBrains: 90% разработчиков используют AI-инструменты ежедневно, Claude Code вырос в 6 раз",
+      "subheadline": "Опрос 10 000+ разработчиков показал стагнацию GitHub Copilot и резкий рост альтернатив",
+      "body": "JetBrains опубликовала результаты опроса среди более чем 10 000 разработчиков об использовании AI-ассистентов для кода. 90% респондентов применяют AI-инструменты ежедневно. Claude Code показал шестикратный рост за год, тогда как GitHub Copilot стагнирует. Среди причин переключения — качество генерации, поддержка контекста проекта и интеграция с терминальными рабочими процессами.",
       "tier": "regular",
       "sources": [
         {
-          "title": "JetBrains Blog",
+          "title": "JetBrains Blog: Which AI Coding Tools Do Developers Actually Use at Work?",
           "url": "https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/",
           "type": "official"
         }
@@ -252,24 +204,24 @@
       "tags": {
         "entities": [
           "JetBrains",
-          "Claude Code",
-          "GitHub Copilot"
+          "GitHub",
+          "Anthropic"
         ],
         "sentiment": "neutral",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
     {
-      "id": "platforms-google-scion-2026-04-08",
+      "id": "platforms-scion-2026-04-08",
       "section": "platforms",
       "headline": "Google открыла исходный код Scion — тестовой среды для мультиагентной оркестрации",
-      "subheadline": "Экспериментальная платформа позволяет тестировать взаимодействие нескольких AI-агентов.",
-      "body": "Google опубликовала исходный код Scion — экспериментальной платформы для тестирования оркестрации нескольких AI-агентов. Scion позволяет моделировать сценарии совместной работы агентов, отслеживать передачу контекста между ними и измерять качество решений при делегировании задач.",
-      "tier": "regular",
+      "subheadline": "Экспериментальный фреймворк позволяет тестировать взаимодействие нескольких AI-агентов в контролируемой среде",
+      "body": "Scion — экспериментальный тестбед, в котором можно запускать сценарии взаимодействия нескольких AI-агентов с мониторингом и логированием на каждом шаге. Google подчёркивает, что проект находится на ранней стадии и предназначен для исследователей.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "InfoQ",
+          "title": "InfoQ: Google Open Sources Scion",
           "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
           "type": "media"
         }
@@ -279,24 +231,23 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google",
-          "Scion"
+          "Google"
         ],
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 7
+      "importance": 5
     },
     {
-      "id": "platforms-google-dictation-2026-04-08",
+      "id": "platforms-dictation-2026-04-08",
       "section": "platforms",
-      "headline": "Google тихо выпустила AI-приложение для диктовки, работающее офлайн",
-      "subheadline": "Приложение для iOS распознаёт речь локально без подключения к интернету.",
-      "body": "Google без особого анонса опубликовала в App Store приложение для AI-диктовки, способное работать полностью офлайн. Модель распознавания речи выполняется на устройстве, что обеспечивает приватность и скорость. Приложение ориентировано на пользователей с нестабильным интернетом или повышенными требованиями к конфиденциальности.",
+      "headline": "Google тихо выпустила офлайн-приложение для AI-диктовки на iOS",
+      "subheadline": "Приложение работает без подключения к интернету и использует локальную модель распознавания речи",
+      "body": "Google без анонса выложила в App Store приложение для диктовки на базе AI, работающее полностью офлайн. Модель распознавания речи выполняется локально на устройстве, что обеспечивает приватность и отсутствие задержек.",
       "tier": "compact",
       "sources": [
         {
-          "title": "TechCrunch",
+          "title": "TechCrunch: Google quietly releases offline AI dictation app",
           "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
           "type": "media"
         }
@@ -314,11 +265,37 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-codex-2026-04-08",
+      "id": "platforms-claudecodeleak-2026-04-08",
+      "section": "platforms",
+      "headline": "Исходный код Claude Code случайно утёк через source map в npm-пакете",
+      "subheadline": "Anthropic оставила source map файл в публичном npm-пакете, позволивший восстановить 512 тыс. строк кода",
+      "body": "В npm-пакете Claude Code обнаружился source map, через который удалось восстановить полный исходный код продукта — около 512 тысяч строк. Anthropic оперативно удалила файл и выпустила обновлённую версию пакета.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "InfoQ: Anthropic Accidentally Exposes Claude Code Source",
+          "url": "https://www.infoq.com/news/2026/04/claude-code-source-leak/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-codex-2026-04-08",
       "section": "platforms",
       "headline": "OpenAI убрала устаревшие модели GPT-5.1 и GPT-5.2 из Codex",
-      "subheadline": "С 7 апреля в Codex остались только GPT-5.4 и GPT-5.3-codex.",
-      "body": "OpenAI обновила пикер моделей в Codex, удалив устаревшие версии GPT-5.1 и GPT-5.2. Для разработчиков остаются доступными GPT-5.4 и специализированная GPT-5.3-codex. Компания рекомендует миграцию проектов, зависящих от старых моделей.",
+      "subheadline": "С 7 апреля в пикере моделей Codex остаются только GPT-5.4 и GPT-5.3-codex",
+      "body": "OpenAI провела плановую чистку моделей в Codex: из интерфейса удалены GPT-5.1 и GPT-5.2. Пользователям, использовавшим эти модели через API, рекомендовано перейти на GPT-5.3-codex или GPT-5.4.",
       "tier": "compact",
       "sources": [
         {
@@ -332,8 +309,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "Codex"
+          "OpenAI"
         ],
         "sentiment": "neutral",
         "event": "update"
@@ -341,81 +317,32 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-photos-ai-2026-04-08",
-      "section": "platforms",
-      "headline": "Google Photos получил AI-инструмент Enhance для автоматической обработки снимков",
-      "subheadline": "Функция кадрирует, корректирует свет и исправляет дефекты фотографий.",
-      "body": "Google добавила в Photos инструмент AI Enhance, который автоматически кадрирует, выравнивает освещение и исправляет типичные дефекты снимков. Инструмент работает в один клик и анализирует композицию, экспозицию и баланс белого.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "ZDNet",
-          "url": "https://www.zdnet.com/article/google-photos-ai-enhance-tool-cropping-lighting-fixes-limitations/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google",
-          "Google Photos"
-        ],
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-claude-code-leak-2026-04-08",
-      "section": "platforms",
-      "headline": "Исходный код Claude Code утёк через source map в npm-пакете",
-      "subheadline": "Anthropic случайно опубликовала source map файл, раскрывший 512 тысяч строк кода.",
-      "body": "Anthropic допустила утечку исходного кода Claude Code: в npm-пакет попал source map файл, содержащий около 512 тысяч строк кода. Утечка позволила сообществу изучить внутреннюю архитектуру инструмента. Anthropic удалила файл из последующих версий пакета.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "InfoQ",
-          "url": "https://www.infoq.com/news/2026/04/claude-code-source-leak/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude Code"
-        ],
-        "sentiment": "negative",
-        "event": "leak"
-      },
-      "importance": 5
-    },
-    {
-      "id": "industry-anthropic-tpu-2026-04-08",
+      "id": "industry-tpudeal-2026-04-08",
       "section": "industry",
       "headline": "Anthropic заключила мультигигаваттную сделку на TPU с Google и Broadcom",
-      "subheadline": "Компания наращивает вычислительные мощности на фоне стремительного роста спроса на Claude.",
-      "body": "Anthropic подписала масштабное соглашение с Google и Broadcom на поставку TPU-чипов мощностью в несколько гигаватт. Сделка призвана обеспечить вычислительные ресурсы для растущей нагрузки на модели Claude и для проектов вроде Glasswing. Параллельно Uber стал очередной крупной компанией, перешедшей на AI-чипы Amazon.",
+      "subheadline": "Крупнейшая вычислительная сделка Anthropic обеспечит инфраструктуру для масштабирования Claude",
+      "body": "Anthropic подписала соглашение с Google и Broadcom на поставку TPU-мощностей масштаба нескольких гигаватт. Сделка заключена на фоне стремительного роста спроса на API Claude — компании необходимы вычислительные ресурсы для обучения следующих поколений моделей и обслуживания растущей базы пользователей.",
       "tier": "regular",
       "sources": [
         {
-          "title": "The Decoder",
+          "title": "The Decoder: Anthropic signs multi-gigawatt TPU deal",
           "url": "https://the-decoder.com/anthropic-signs-multi-gigawatt-tpu-deal-with-google-and-broadcom/",
           "type": "media"
         },
         {
-          "title": "TechCrunch",
+          "title": "TechCrunch: Anthropic compute deal with Google and Broadcom",
           "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+          "type": "media"
+        },
+        {
+          "title": "AI Business: Anthropic Forges Chip Deals",
+          "url": "https://aibusiness.com/generative-ai/anthropic-forges-chip-deals-accelerate-claude-s-growth",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Uber перешёл на AI-чипы Amazon",
+          "title": "Uber переходит на кастомные AI-чипы Amazon",
           "url": "https://techcrunch.com/2026/04/07/uber-is-the-latest-to-be-won-over-by-amazons-ai-chips/",
           "entities": [
             "Uber",
@@ -425,7 +352,7 @@
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "TechCrunch и The Decoder публикуют параллельные материалы.",
+      "duplicate_note": null,
       "tags": {
         "entities": [
           "Anthropic",
@@ -438,20 +365,20 @@
       "importance": 7
     },
     {
-      "id": "industry-intel-terafab-2026-04-08",
+      "id": "industry-terafab-2026-04-08",
       "section": "industry",
-      "headline": "Intel присоединилась к проекту Маска Terafab по производству AI-чипов",
-      "subheadline": "Компания станет производственным партнёром фабрики AI-чипов, анонсированной Маском.",
-      "body": "Intel подписала соглашение об участии в Terafab — проекте Илона Маска по строительству фабрики для производства AI-чипов. Intel выступит в роли производственного партнёра, предоставив мощности своих полупроводниковых заводов. Для Intel это способ загрузить простаивающие фабрики, для xAI — путь к собственным чипам без зависимости от TSMC.",
+      "headline": "Intel присоединилась к проекту Terafab Илона Маска по производству AI-чипов",
+      "subheadline": "Intel станет производственным партнёром чиповой фабрики xAI, связанной с SpaceX и Tesla",
+      "body": "Intel подписала соглашение об участии в Terafab — проекте Маска по строительству фабрики AI-чипов. Intel будет выступать производственным партнёром, используя свои мощности. Проект Terafab связан с экосистемой xAI и предполагает вертикальную интеграцию с инфраструктурой SpaceX и Tesla.",
       "tier": "regular",
       "sources": [
         {
-          "title": "TechCrunch",
+          "title": "TechCrunch: Intel signs on to Musk's Terafab",
           "url": "https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/",
           "type": "media"
         },
         {
-          "title": "The Verge",
+          "title": "The Verge: Intel will help build Musk's Terafab",
           "url": "https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla",
           "type": "media"
         }
@@ -462,9 +389,8 @@
       "tags": {
         "entities": [
           "Intel",
-          "Elon Musk",
           "xAI",
-          "Terafab"
+          "Elon Musk"
         ],
         "sentiment": "positive",
         "event": "investment"
@@ -472,40 +398,38 @@
       "importance": 7
     },
     {
-      "id": "industry-eclipse-fund-2026-04-08",
+      "id": "industry-eclipse-2026-04-08",
       "section": "industry",
-      "headline": "Eclipse закрыл фонд на $1.3 млрд для инвестиций в физический ИИ",
-      "subheadline": "Фонд сфокусирован на робототехнике, обороне и AI-инфраструктуре.",
-      "body": "Венчурный фонд Eclipse закрыл раунд на $1.3 млрд: $720 млн для ранних стадий и $591 млн для поздних. Приоритетные направления — робототехника, оборонные технологии, транспорт, энергетика и вычислительная инфраструктура. Eclipse — ранний инвестор Cerebras.",
+      "headline": "Eclipse закрыла фонд на $1,3 млрд для инвестиций в робототехнику и AI-инфраструктуру",
+      "subheadline": "Фонд разделён на ранние ($720 млн) и поздние ($591 млн) стадии с фокусом на «физический AI»",
+      "body": "Венчурный фонд Eclipse закрыл раунд на $1,3 млрд для инвестиций в «физический AI» — робототехнику, оборонные технологии и AI-инфраструктуру. $720 млн выделены на ранние стадии, $591 млн — на поздние. Eclipse был ранним инвестором Cerebras. Фокус — транспорт, энергетика, вычисления и оборона.",
       "tier": "regular",
       "sources": [
         {
-          "title": "TechCrunch",
+          "title": "TechCrunch: Eclipse raises $1.3B for physical AI",
           "url": "https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-to-back-and-build-physical-ai-startups/",
           "type": "media"
         },
         {
-          "title": "Investing.com",
+          "title": "Investing.com: Eclipse fund details",
           "url": "https://www.investing.com/news/company-news/eclipse-raises-13b-for-ai-infrastructure-and-defense-startups-93CH-4600185",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Бывшие сотрудники OpenAI запустили фонд Zero Shot на $100 млн",
+          "title": "Выпускники OpenAI запустили AI-фонд Zero Shot на $100 млн",
           "url": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/",
           "entities": [
-            "OpenAI",
-            "Zero Shot"
+            "OpenAI"
           ],
           "sentiment": "positive"
         },
         {
-          "title": "Firmus, строитель дата-центров при поддержке Nvidia, достиг оценки $5.5 млрд",
-          "url": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
+          "title": "Xoople привлекла $130 млн на AI-спутники",
+          "url": "https://aibusiness.com/generative-ai/spanish-startup-xoople-lands-130m-build-satellites-for-ai",
           "entities": [
-            "Firmus",
-            "Nvidia"
+            "Xoople"
           ],
           "sentiment": "positive"
         }
@@ -514,7 +438,8 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Eclipse"
+          "Eclipse",
+          "Cerebras"
         ],
         "sentiment": "positive",
         "event": "investment"
@@ -522,63 +447,26 @@
       "importance": 7
     },
     {
-      "id": "industry-regulation-us-2026-04-08",
+      "id": "industry-regulation-2026-04-08",
       "section": "industry",
-      "headline": "Регулирование AI в США: штаты против федерального центра на фоне выборов-2026",
-      "subheadline": "AI-отрасль вкладывается в предвыборные кампании, пока штаты замораживают собственные законопроекты.",
-      "body": "В США нарастает противостояние федерального центра и штатов в регулировании ИИ. Миссури заморозил рассмотрение AI-законопроектов из-за риска потери федерального финансирования широкополосной связи. Мэн близок к принятию моратория на строительство новых дата-центров. Одновременно AI-компании активно инвестируют в предвыборные кампании на промежуточных выборах 2026 года, пытаясь повлиять на будущее регулирование.",
+      "headline": "Регулирование AI в США: штаты и федеральный центр не могут договориться, отрасль вкладывается в выборы",
+      "subheadline": "Миссури заморозила AI-законопроекты, а AI-компании наращивают расходы на лоббирование перед выборами 2026 года",
+      "body": "Законодатели Миссури приостановили рассмотрение законопроектов об AI, опасаясь потерять федеральное финансирование сельской широкополосной связи. Параллельно нарастает конфликт между штатами, принимающими собственные AI-законы, и федеральным правительством после исполнительного приказа Трампа. AI-отрасль активно инвестирует в предвыборные кампании: промежуточные выборы 2026 года станут ключевым полем битвы за будущее регулирования.",
       "tier": "regular",
       "sources": [
         {
-          "title": "ABC News",
-          "url": "https://abcnews.com/Politics/ai-industry-2026-midterms-government-regulations-looming/story?id=131610305",
-          "type": "media"
-        },
-        {
-          "title": "Missouri Independent",
+          "title": "Missouri Independent: AI regulations stall",
           "url": "https://missouriindependent.com/2026/04/07/missouri-ai-regulations-stall-as-lawmakers-fear-loss-of-rural-broadband-funds/",
           "type": "media"
         },
         {
-          "title": "National Law Review",
+          "title": "National Law Review: Federal vs. States AI regulation",
           "url": "https://natlawreview.com/article/politics-ai-regulation-federal-government-v-states",
           "type": "media"
-        }
-      ],
-      "related": [
+        },
         {
-          "title": "Мэн близок к принятию моратория на строительство новых дата-центров",
-          "url": "https://www.404media.co/maine-datacenter-construction-bill-ld-307/",
-          "entities": [
-            "Maine"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Тематическая сводка по трём публикациям о регулировании AI в США.",
-      "tags": {
-        "entities": [
-          "US Government",
-          "Missouri",
-          "Maine"
-        ],
-        "sentiment": "neutral",
-        "event": "regulation"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-china-taiwan-chips-2026-04-08",
-      "section": "industry",
-      "headline": "Доклад: Китай активно переманивает чип-специалистов и технологии Тайваня",
-      "subheadline": "Отчёт по безопасности указывает на систематическое таргетирование полупроводниковой отрасли Тайваня.",
-      "body": "Новый отчёт по безопасности зафиксировал систематические попытки Китая привлечь специалистов тайваньской полупроводниковой отрасли и получить доступ к технологиям производства чипов. Речь идёт как о найме инженеров, так и о промышленном шпионаже. На фоне глобального дефицита AI-чипов контроль над полупроводниковыми технологиями становится вопросом национальной безопасности.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "The Decoder",
-          "url": "https://the-decoder.com/china-actively-targeting-taiwans-chip-talent-and-technology-security-report-says/",
+          "title": "ABC News: AI industry all in for 2026 midterms",
+          "url": "https://abcnews.com/Politics/ai-industry-2026-midterms-government-regulations-looming/story?id=131610305",
           "type": "media"
         }
       ],
@@ -587,8 +475,69 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "China",
-          "Taiwan"
+          "US Government"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-firmus-2026-04-08",
+      "section": "industry",
+      "headline": "Строитель AI-дата-центров Firmus оценён в $5,5 млрд",
+      "subheadline": "Стартап из Юго-Восточной Азии, поддерживаемый NVIDIA, наращивает строительство дата-центров",
+      "body": "Firmus, специализирующийся на строительстве AI-дата-центров в Юго-Восточной Азии при поддержке NVIDIA, достиг оценки $5,5 млрд. Компания строит объекты под инференс и обучение моделей в регионе с относительно дешёвой электроэнергией.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "TechCrunch: Firmus hits $5.5B valuation",
+          "url": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Firmus",
+          "NVIDIA"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-maine-2026-04-08",
+      "section": "industry",
+      "headline": "Мэн близок к принятию моратория на строительство новых дата-центров",
+      "subheadline": "Штат может стать первым в США, кто законодательно ограничит строительство AI-инфраструктуры",
+      "body": "Законопроект LD 307 в штате Мэн предусматривает мораторий на возведение новых дата-центров. Инициатива вызвана обеспокоенностью жителей нагрузкой на электросети и водные ресурсы. Параллельно лоббисты технологических компаний пытаются откатить законы о праве на ремонт оборудования дата-центров.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "404 Media: Maine Is Close to Passing a Moratorium",
+          "url": "https://www.404media.co/maine-datacenter-construction-bill-ld-307/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Лоббисты дата-центров пытаются откатить закон о праве на ремонт",
+          "url": "https://www.404media.co/data-center-tech-lobbyists-fearmonger-in-attempt-to-retroactively-roll-back-right-to-repair-law/",
+          "entities": [
+            "US Government"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Maine"
         ],
         "sentiment": "negative",
         "event": "regulation"
@@ -596,15 +545,15 @@
       "importance": 5
     },
     {
-      "id": "industry-bezos-prometheus-2026-04-08",
+      "id": "industry-prometheus-2026-04-08",
       "section": "industry",
-      "headline": "Project Prometheus Безоса нанял сооснователя xAI",
-      "subheadline": "AI-проект основателя Amazon продолжает переманивать ключевых специалистов из конкурирующих компаний.",
-      "body": "Проект Джеффа Безоса Project Prometheus нанял сооснователя xAI, ранее работавшего в OpenAI. Переход подтверждает серьёзность амбиций Безоса в сфере AI за пределами Amazon и AWS.",
+      "headline": "Project Prometheus Безоса переманил сооснователя xAI",
+      "subheadline": "AI-проект Джеффа Безоса нанял бывшего сооснователя xAI, ранее работавшего в OpenAI",
+      "body": "Закрытый AI-проект Джеффа Безоса Project Prometheus усилил команду, наняв сооснователя xAI, который до этого работал в OpenAI. Подробности о целях и продуктах Prometheus остаются неизвестными.",
       "tier": "compact",
       "sources": [
         {
-          "title": "The Decoder",
+          "title": "The Decoder: Bezos' Project Prometheus hires xAI co-founder",
           "url": "https://the-decoder.com/bezos-project-prometheus-hires-xai-co-founder-from-openai/",
           "type": "media"
         }
@@ -615,7 +564,6 @@
       "tags": {
         "entities": [
           "Jeff Bezos",
-          "Project Prometheus",
           "xAI"
         ],
         "sentiment": "neutral",
@@ -624,20 +572,69 @@
       "importance": 5
     },
     {
-      "id": "hype-slopaganda-2026-04-08",
+      "id": "hype-antidistillation-2026-04-08",
       "section": "hype",
-      "headline": "Войны слопаганды: США и Иран заполняют соцсети AI-сгенерированным шумом",
-      "subheadline": "Белый дом микширует реальные атаки с кино и играми, Иран отвечает вирусными LEGO-роликами.",
-      "body": "На фоне обострения конфликта между США и Ираном обе стороны массово генерируют AI-контент для информационных войн. Белый дом публикует материалы, смешивающие реальные военные кадры с кинематографической и игровой стилистикой. Иранская сторона распространяет вирусные ролики с Трампом и Нетаньяху в виде LEGO-фигурок. Эксперты ввели термин «слопаганда» для описания этого потока низкокачественной AI-пропаганды.",
+      "headline": "OpenAI, Anthropic и Google объединились против китайского копирования моделей",
+      "subheadline": "Конкуренты через Frontier Model Forum обмениваются данными для блокировки несанкционированной дистилляции",
+      "body": "Три крупнейшие AI-компании договорились совместно выявлять и блокировать массовое копирование ответов моделей китайскими конкурентами. Через Frontier Model Forum компании обмениваются данными об аномальном трафике и планируют блокировать аккаунты при обнаружении дистилляции. Объединение конкурентов вызвало вопросы у антимонопольных юристов о допустимости обмена информацией.",
       "tier": "regular",
       "sources": [
         {
-          "title": "The Conversation",
+          "title": "Japan Times: OpenAI, Anthropic, Google cooperate",
+          "url": "https://www.japantimes.co.jp/business/2026/04/07/tech/openai-anthropic-google-china-copy/",
+          "type": "media"
+        },
+        {
+          "title": "The Decoder: Team up against unauthorized model copying",
+          "url": "https://the-decoder.com/openai-anthropic-and-google-team-up-against-unauthorized-chinese-model-copying/",
+          "type": "media"
+        },
+        {
+          "title": "Bankless Times: antitrust concerns",
+          "url": "https://www.banklesstimes.com/articles/2026/04/07/openai-google-anthropic-team-up-to-block-chinese-scraping/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Китай активно переманивает чиповых специалистов Тайваня",
+          "url": "https://the-decoder.com/china-actively-targeting-taiwans-chip-talent-and-technology-security-report-says/",
+          "entities": [
+            "China",
+            "Taiwan"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Anthropic",
+          "Google",
+          "Frontier Model Forum"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-slopaganda-2026-04-08",
+      "section": "hype",
+      "headline": "США и Иран ведут «слопагандную войну» — заполняя соцсети AI-мусором",
+      "subheadline": "Обе стороны используют генеративный AI для массового производства вирусной пропаганды",
+      "body": "Термин «slopaganda» описывает новый вид информационной войны: Белый дом микширует реальные кадры атак с кинематографическими и игровыми сценами, а Иран создаёт вирусные ролики с Трампом и Нетаньяху в виде LEGO-фигурок. Исследователи указывают, что цель — не убедить, а перегрузить информационное пространство шумом.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The Conversation: Slopaganda wars",
           "url": "https://theconversation.com/slopaganda-wars-how-and-why-the-us-and-iran-are-flooding-the-zone-with-viral-ai-generated-noise-280024",
           "type": "media"
         },
         {
-          "title": "The Guardian",
+          "title": "The Guardian: AI-generated Lego videos and slopaganda",
           "url": "https://www.theguardian.com/commentisfree/2026/apr/08/lego-videos-iran-trump-ai-video-meme-propaganda-movie-animation",
           "type": "media"
         }
@@ -656,15 +653,15 @@
       "importance": 7
     },
     {
-      "id": "hype-assam-disinfo-2026-04-08",
+      "id": "hype-assam-2026-04-08",
       "section": "hype",
-      "headline": "Первая промышленная AI-дезинформационная кампания на выборах в Индии: 432 поста, 45 млн просмотров",
-      "subheadline": "На региональных выборах в Ассаме зафиксировано 31 дипфейковое видео против оппозиционного кандидата.",
-      "body": "Отчёт CounterView зафиксировал масштабную AI-дезинформационную операцию на выборах в индийском штате Ассам. Документально подтверждено 432 AI-сгенерированных поста с суммарным охватом 45 млн просмотров. 31 дипфейковое видео было направлено против конкретного оппозиционного кандидата. Исследователи называют это первой «промышленной» AI-кампанией на региональном уровне.",
+      "headline": "Первая «промышленная» AI-дезинформация на выборах в Ассаме: 432 поста, 45 млн просмотров",
+      "subheadline": "31 дипфейк против оппозиционного кандидата зафиксирован в ходе региональных выборов в Индии",
+      "body": "Доклад зафиксировал 432 подтверждённых AI-сгенерированных публикации с суммарным охватом 45 млн просмотров. Среди них — 31 дипфейк, направленный против кандидата от оппозиции. Исследователи называют это первым задокументированным случаем применения AI-дезинформации в промышленных масштабах на региональных выборах.",
       "tier": "regular",
       "sources": [
         {
-          "title": "CounterView",
+          "title": "CounterView: Report on AI-weaponised disinformation in Assam",
           "url": "https://www.counterview.net/2026/04/report-on-ai-weaponised-disinformation.html",
           "type": "media"
         }
@@ -674,8 +671,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "India",
-          "Assam"
+          "India"
         ],
         "sentiment": "negative",
         "event": "update"
@@ -683,50 +679,15 @@
       "importance": 7
     },
     {
-      "id": "hype-chinese-distillation-2026-04-08",
+      "id": "hype-nota-2026-04-08",
       "section": "hype",
-      "headline": "OpenAI, Anthropic и Google объединились против несанкционированного копирования моделей Китаем",
-      "subheadline": "Конкуренты обмениваются данными для блокировки массовой «дистилляции» через Frontier Model Forum.",
-      "body": "Три крупнейших разработчика AI-моделей координируют усилия через Frontier Model Forum для противодействия несанкционированному копированию моделей китайскими компаниями. Компании разрабатывают методы выявления аномального трафика и планируют блокировать аккаунты при обнаружении массового копирования ответов. Объединение прямых конкурентов уже вызвало вопросы антимонопольных регуляторов о допустимости обмена информацией.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "The Decoder",
-          "url": "https://the-decoder.com/openai-anthropic-and-google-team-up-against-unauthorized-chinese-model-copying/",
-          "type": "media"
-        },
-        {
-          "title": "Japan Times",
-          "url": "https://www.japantimes.co.jp/business/2026/04/07/tech/openai-anthropic-google-china-copy/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "Anthropic",
-          "Google",
-          "China",
-          "Frontier Model Forum"
-        ],
-        "sentiment": "negative",
-        "event": "regulation"
-      },
-      "importance": 7
-    },
-    {
-      "id": "hype-nota-plagiarism-2026-04-08",
-      "section": "hype",
-      "headline": "AI-стартап Nota закрыл локальные новостные сайты после скандала с массовым плагиатом",
-      "subheadline": "Компания, обещавшая заполнить «новостные пустыни», копировала материалы местных журналистов.",
-      "body": "AI-стартап Nota, сотрудничавший с The Boston Globe для создания сети локальных новостных сайтов, свернул проект после расследования Poynter. Выяснилось, что вместо генерации оригинального контента система массово копировала материалы местных журналистов и изданий, выдавая их за собственные.",
+      "headline": "AI-стартап Nota закрыл сеть локальных новостных сайтов после скандала с плагиатом",
+      "subheadline": "Компания, сотрудничавшая с The Boston Globe, массово копировала материалы местных журналистов",
+      "body": "Nota позиционировала себя как решение проблемы «новостных пустынь» в малых городах. Расследование Poynter выявило, что AI-система систематически копировала материалы локальных изданий без атрибуции. После публикации отчёта компания свернула проект.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Poynter",
+          "title": "Poynter: AI company copied local journalists' work",
           "url": "https://www.poynter.org/ethics-trust/2026/nota-news-local-outlets-ai-plagiarism/",
           "type": "media"
         }
@@ -745,15 +706,15 @@
       "importance": 5
     },
     {
-      "id": "hype-colleague-skill-2026-04-08",
+      "id": "hype-colleague-2026-04-08",
       "section": "hype",
-      "headline": "Китайский проект Colleague Skill «клонирует» навыки сотрудников в ИИ — 8000 звёзд на GitHub",
-      "subheadline": "Open-source инструмент позволяет создать AI-копию работника, вызвав волну обсуждений об этике.",
-      "body": "Проект Colleague Skill набрал более 8000 звёзд на GitHub. Инструмент позволяет «клонировать» профессиональные навыки сотрудника в AI-систему, которая затем может выполнять его функции. В Китае проект вызвал широкую дискуссию об этике: работники опасаются, что руководство будет использовать инструмент для оправдания увольнений.",
+      "headline": "Проект Colleague Skill позволяет «клонировать» навыки сотрудника в AI — 8000 звёзд на GitHub",
+      "subheadline": "Китайский open-source инструмент вызвал дискуссию об этике увольнений после передачи знаний AI",
+      "body": "Colleague Skill — open-source проект, набравший более 8000 звёзд на GitHub, который записывает рабочие навыки сотрудника и воспроизводит их через AI-агента. В Китае инструмент вызвал волну обсуждений: работники опасаются, что после «клонирования» навыков их уволят.",
       "tier": "compact",
       "sources": [
         {
-          "title": "MenToday",
+          "title": "MenToday: ИИ начал заменять сотрудников в Китае",
           "url": "https://www.mentoday.ru/life/news/07-04-2026/iskusstvennyi-intellekt-nachal-zamenyat-sotrudnikov-v-kitae-on-idealno-kopiruet-ih-navyki/",
           "type": "media"
         }
@@ -763,8 +724,7 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Colleague Skill",
-          "China"
+          "Colleague Skill"
         ],
         "sentiment": "negative",
         "event": "release"
@@ -772,20 +732,29 @@
       "importance": 5
     },
     {
-      "id": "hype-meta-taskers-2026-04-08",
+      "id": "hype-metatask-2026-04-08",
       "section": "hype",
-      "headline": "Расследование Guardian: «таскеры» Scale AI собирают для Meta данные из соцсетей, порно и уличных камер",
-      "subheadline": "Низкооплачиваемые работники скрейпят интернет без разбора для обучения AI-моделей Meta.",
-      "body": "The Guardian опубликовала расследование о работниках Scale AI, выполняющих задания для дочерней AI-компании Meta. «Таскеры» за минимальную оплату собирают и размечают данные из соцсетей, порнографических сайтов и уличных камер наблюдения. Работники не имеют контроля над тем, какие данные им поручают обрабатывать.",
+      "headline": "Расследование The Guardian: «таскеры» Meta скрейпят личные фото и порно для обучения AI",
+      "subheadline": "Сотрудники подрядчика Scale AI описали условия работы по сбору данных для Meta",
+      "body": "The Guardian поговорил с работниками Scale AI, которые по заказу Meta собирают данные из соцсетей для обучения AI-моделей. Среди материалов — личные фото, порнография и бытовые снимки. Работники описывают процесс как бессистемный и психологически тяжёлый.",
       "tier": "compact",
       "sources": [
         {
-          "title": "The Guardian",
+          "title": "The Guardian: The 'taskers' scraping the internet for Meta-owned AI firm",
           "url": "https://www.theguardian.com/technology/2026/apr/07/meta-scale-ai-social-media-technology",
           "type": "media"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "title": "Внутренний лидерборд Meta: сотрудники соревнуются в потреблении AI-токенов",
+          "url": "https://the-decoder.com/meta-employees-compete-for-token-consumption-on-an-internal-ai-leaderboard/",
+          "entities": [
+            "Meta"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
@@ -797,6 +766,25 @@
         "event": "update"
       },
       "importance": 5
+    },
+    {
+      "id": "changelog-2026-04-08",
+      "section": "changelog",
+      "tier": "changelog",
+      "version": "v0.01",
+      "headline": "Нейрогазета v0.01",
+      "subheadline": "Текущая версия: v0.01",
+      "body": "Запущен пайплайн на подписке Claude вместо прямых вызовов API: четыре независимых этапа сборки — RSS/scrape, WebSearch, фильтрация (Sonnet), редактура (Opus). Ежедневный запуск по расписанию через Claude Code Remote.",
+      "importance": 0,
+      "sources": [],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "event": "update"
+      }
     }
   ]
 }
