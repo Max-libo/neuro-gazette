@@ -1,9 +1,9 @@
 name: Daily Issue
 
 on:
-  schedule:
-    # 07:00 МСК = 04:00 UTC
-    - cron: '0 4 * * *'
+  # schedule отключён — пайплайн запускается через cron на сервере
+  # schedule:
+  #   - cron: '0 4 * * *'
   workflow_dispatch:
     inputs:
       from_raw:
