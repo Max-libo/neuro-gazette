@@ -11,6 +11,9 @@
 set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
+
+# Загружаем .env если есть (TG_TOKEN, TG_CHAT_ID)
+[ -f "$REPO/.env" ] && set -a && source "$REPO/.env" && set +a
 SCRIPTS="$REPO/scripts/pipeline"
 FROM_RAW=false
 FROM_FILTER=false
@@ -94,3 +97,13 @@ git pull --rebase
 git push
 
 log "Готово: выпуск $DATE опубликован."
+
+# ── Telegram-уведомление ──────────────────────────────────────────────────────
+if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
+  curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+    -d chat_id="${TG_CHAT_ID}" \
+    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru" \
+    -d parse_mode="HTML" \
+    -d disable_web_page_preview="false" \
+    > /dev/null && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
+fi
