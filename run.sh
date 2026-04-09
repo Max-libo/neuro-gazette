@@ -108,8 +108,8 @@ if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
   sleep 90
   curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
     -d chat_id="${TG_CHAT_ID}" \
-    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru/preview/${DATE}.html" \
-    -d parse_mode="HTML" \
-    -d disable_web_page_preview="false" \
+    --data-urlencode "text=📰 Нейрогазета — выпуск ${DATE} опубликован
+
+Читать: https://neurogazeta.ru/preview/${DATE}.html" \
     > /dev/null && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
 fi
