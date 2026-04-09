@@ -13,7 +13,7 @@ set -euo pipefail
 REPO="$(cd "$(dirname "$0")" && pwd)"
 
 # Загружаем .env если есть (TG_TOKEN, TG_CHAT_ID)
-[ -f "$REPO/.env" ] && set -a && source "$REPO/.env" && set +a
+if [ -f "$REPO/.env" ]; then set -a; source "$REPO/.env"; set +a; fi
 SCRIPTS="$REPO/scripts/pipeline"
 FROM_RAW=false
 FROM_FILTER=false
@@ -104,12 +104,6 @@ log "Готово: выпуск $DATE опубликован."
 
 # ── Telegram-уведомление ──────────────────────────────────────────────────────
 if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
-  log "Ждём деплой GitHub Pages (90с)…"
-  sleep 90
-  curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-    -d chat_id="${TG_CHAT_ID}" \
-    --data-urlencode "text=📰 Нейрогазета — выпуск ${DATE} опубликован
-
-Читать: https://neurogazeta.ru/preview/${DATE}.html" \
-    > /dev/null && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
+  python3 "$REPO/scripts/tg_notify.py" "$DATE" \
+    && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
 fi
