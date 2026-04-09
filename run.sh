@@ -100,9 +100,11 @@ log "Готово: выпуск $DATE опубликован."
 
 # ── Telegram-уведомление ──────────────────────────────────────────────────────
 if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
+  log "Ждём деплой GitHub Pages (90с)…"
+  sleep 90
   curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
     -d chat_id="${TG_CHAT_ID}" \
-    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru" \
+    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru/?date=${DATE}" \
     -d parse_mode="HTML" \
     -d disable_web_page_preview="false" \
     > /dev/null && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
