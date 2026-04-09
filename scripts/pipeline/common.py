@@ -314,7 +314,11 @@ def run_claude(
     # Системный промпт добавляем в начало сообщения, если CLI не поддерживает --system-prompt
     full_prompt = f"<system>\n{system}\n</system>\n\n{prompt}" if system else prompt
 
+    RATE_LIMIT_WAIT = 60 * 60  # 60 минут ожидания при исчерпании лимита
+    RATE_LIMIT_RETRIES = 6     # до 6 часов суммарного ожидания
+
     last_err = ""
+    rate_limit_attempt = 0
     for attempt in range(1, retries + 1):
         try:
             result = subprocess.run(
@@ -326,8 +330,19 @@ def run_claude(
             )
             if result.returncode == 0:
                 return result.stdout.strip()
-            last_err = result.stderr.strip()
-            log.warning("claude CLI попытка %d/%d: %s", attempt, retries, last_err[:200])
+            last_err = (result.stderr or result.stdout).strip()
+            if "rate limit" in last_err.lower():
+                rate_limit_attempt += 1
+                if rate_limit_attempt > RATE_LIMIT_RETRIES:
+                    raise RuntimeError(f"claude CLI: rate limit не снялся за {RATE_LIMIT_RETRIES} ч. Последняя ошибка: {last_err}")
+                log.warning(
+                    "claude CLI: rate limit (%d/%d), жду %d мин…",
+                    rate_limit_attempt, RATE_LIMIT_RETRIES, RATE_LIMIT_WAIT // 60,
+                )
+                time.sleep(RATE_LIMIT_WAIT)
+                continue  # не считаем за обычный retry
+            else:
+                log.warning("claude CLI попытка %d/%d: %s", attempt, retries, last_err[:200])
         except subprocess.TimeoutExpired:
             last_err = f"timeout ({timeout}s)"
             log.warning("claude CLI таймаут, попытка %d/%d", attempt, retries)
