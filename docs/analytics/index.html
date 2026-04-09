@@ -336,8 +336,9 @@ async function initAnalytics() {
 // ===== HELPERS =====
 function countBy(arr, key) {
   const map = {};
+  const get = typeof key === 'function' ? key : item => item[key];
   arr.forEach(item => {
-    const v = item[key] || 'unknown';
+    const v = get(item) || 'unknown';
     map[v] = (map[v] || 0) + 1;
   });
   return map;
