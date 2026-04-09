@@ -16,7 +16,7 @@ def main():
         print("[WARN] TG_TOKEN / TG_CHAT_ID / date не заданы", file=sys.stderr)
         sys.exit(1)
 
-    caption = f"📰 Нейрогазета — выпуск {date} опубликован\n\nЧитать: https://neurogazeta.ru/?date={date}"
+    caption = f"📰 Нейрогазета — выпуск {date} опубликован\n\nЧитать: https://нейрогазета.рф/?date={date}"
     preview_img = os.path.join(REPO, "docs", "data", f"{date}_preview.png")
 
     api = f"https://api.telegram.org/bot{token}"
