@@ -146,7 +146,6 @@ function buildChangelogHtml(item) {
   return `
     <div class="changelog-zone">
       <article class="art-changelog">
-        <span class="changelog-version-badge">${esc(item.version || item.headline.match(/v[\d.]+/)?.[0] || '')}</span>
         <div class="changelog-content">
           <span class="changelog-headline">${esc(item.headline)}</span>
           ${item.body ? `<span class="changelog-body">${esc(item.body)}</span>` : ''}
