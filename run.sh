@@ -75,6 +75,10 @@ fi
 log "Этап 4: редактура (Opus)…"
 python3 "$SCRIPTS/stage4_edit.py"
 
+# ── Превью для Telegram (OG-картинка + HTML) ─────────────────────────────────
+log "Генерация OG-превью…"
+python3 "$REPO/scripts/generate_preview.py"
+
 # ── Git commit + push ─────────────────────────────────────────────────────────
 if $NO_PUSH; then
   log "Готово. Git push пропущен (--no-push)."
@@ -84,7 +88,7 @@ fi
 log "Коммит…"
 git config user.name  "github-actions[bot]"
 git config user.email "github-actions[bot]@users.noreply.github.com"
-git add docs/data/
+git add docs/data/ docs/preview/
 
 if git diff --cached --quiet; then
   log "Нет изменений для коммита."
@@ -104,7 +108,7 @@ if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
   sleep 90
   curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
     -d chat_id="${TG_CHAT_ID}" \
-    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru/?date=${DATE}" \
+    -d text="📰 <b>Нейрогазета</b> — выпуск ${DATE} опубликован&#10;&#10;Читать: https://neurogazeta.ru/preview/${DATE}.html" \
     -d parse_mode="HTML" \
     -d disable_web_page_preview="false" \
     > /dev/null && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
