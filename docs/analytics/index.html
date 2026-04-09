@@ -253,6 +253,10 @@
         <div class="chart-box-title">Упоминания по выпускам (позитив / нейтрально / негатив)</div>
         <canvas id="chart-report-timeline" height="60"></canvas>
       </div>
+      <div class="chart-box-full">
+        <div class="chart-box-title">Динамика тональности (линии)</div>
+        <canvas id="chart-report-lines" height="60"></canvas>
+      </div>
       <div class="article-list" id="report-articles"></div>
     </div>
 
@@ -523,7 +527,7 @@ function populateCompanySelect() {
 }
 
 // ===== COMPANY REPORT =====
-let chartReportTimeline;
+let chartReportTimeline, chartReportLines;
 function buildReport() {
   const company = document.getElementById('report-company').value;
   const section = document.getElementById('report-section');
@@ -595,6 +599,55 @@ function buildReport() {
       scales: {
         x: { stacked: true, grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
         y: { stacked: true, grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 }, stepSize: 1 } },
+      },
+    }
+  });
+
+  // Line chart: pos / neg / total per issue
+  if (chartReportLines) chartReportLines.destroy();
+  const totalData = dates.map((_, i) => posData[i] + negData[i] + neuData[i]);
+  chartReportLines = new Chart(document.getElementById('chart-report-lines'), {
+    type: 'line',
+    data: {
+      labels: dates,
+      datasets: [
+        {
+          label: 'Всего упоминаний',
+          data: totalData,
+          borderColor: '#1e1e1e',
+          backgroundColor: 'rgba(30,30,30,0.06)',
+          borderWidth: 2,
+          pointRadius: 4,
+          fill: true,
+          tension: 0.3,
+        },
+        {
+          label: 'Позитив',
+          data: posData,
+          borderColor: '#27ae60',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 4,
+          tension: 0.3,
+        },
+        {
+          label: 'Негатив',
+          data: negData,
+          borderColor: '#c0392b',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          pointRadius: 4,
+          tension: 0.3,
+        },
+      ]
+    },
+    options: {
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { family: 'IBM Plex Mono', size: 11 }, padding: 12 } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+        y: { grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 }, stepSize: 1 } },
       },
     }
   });
