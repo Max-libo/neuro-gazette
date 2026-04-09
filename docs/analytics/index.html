@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Аналитика — Нейрогазета</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <style>
+    /* ── Layout ── */
+    .analytics-page { max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+
+    /* ── Summary cards ── */
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      border: 1px solid var(--rule);
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-card .stat-val {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .stat-card .stat-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--ink-light);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .4rem;
+      margin: 2rem 0 1.2rem;
+    }
+
+    /* ── Chart containers ── */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+    .chart-box {
+      border: 1px solid var(--rule);
+      padding: 1rem;
+    }
+    .chart-box-title {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--ink-light);
+      margin-bottom: .75rem;
+    }
+    .chart-box-full {
+      border: 1px solid var(--rule);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Company report ── */
+    .report-controls {
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+    .report-select {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      padding: .4rem .6rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      color: var(--ink);
+      min-width: 200px;
+    }
+    .report-select:focus { outline: none; border-color: var(--ink); }
+
+    .report-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: .75rem;
+      margin-bottom: 1.2rem;
+    }
+    .report-stat {
+      border: 1px solid var(--rule);
+      padding: .6rem .75rem;
+      text-align: center;
+    }
+    .report-stat .rs-val {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      display: block;
+    }
+    .report-stat .rs-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .rs-val.positive { color: #27ae60; }
+    .rs-val.negative { color: #c0392b; }
+    .rs-val.neutral  { color: var(--ink-light); }
+
+    /* ── Article list ── */
+    .article-list { margin-top: 1.2rem; }
+    .article-item {
+      border-bottom: 1px solid var(--rule);
+      padding: .6rem 0;
+      display: flex;
+      gap: .75rem;
+      align-items: baseline;
+    }
+    .article-item:last-child { border-bottom: none; }
+    .article-date {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--ink-faint);
+      white-space: nowrap;
+    }
+    .article-headline {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      flex: 1;
+      line-height: 1.35;
+    }
+    .sentiment-badge {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      padding: .1rem .35rem;
+      border: 1px solid;
+      white-space: nowrap;
+    }
+    .sentiment-badge.positive { border-color: #27ae60; color: #27ae60; }
+    .sentiment-badge.negative { border-color: #c0392b; color: #c0392b; }
+    .sentiment-badge.neutral  { border-color: var(--ink-faint); color: var(--ink-faint); }
+    .sentiment-badge.rumor    { border-color: #e67e22; color: #e67e22; }
+
+    /* ── Loading / empty ── */
+    .analytics-loading {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      padding: 3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Password overlay -->
+<div class="password-overlay" id="password-overlay">
+  <div class="password-box">
+    <h2>Нейрогазета</h2>
+    <p>Аналитика — только для авторизованных</p>
+    <div class="form-group" style="margin-bottom:.75rem">
+      <input type="password" id="pw-input" class="form-input"
+             placeholder="Пароль" autocomplete="current-password" />
+    </div>
+    <button class="btn btn-primary" onclick="checkPassword()" style="width:100%">Войти</button>
+    <div class="password-error" id="pw-error"></div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-meta">Аналитика</span>
+    <nav class="masthead-nav">
+      <a href="../">Главная</a>
+      <a href="../archive/">Архив</a>
+    </nav>
+  </div>
+  <div class="masthead-title">
+    <h1>Нейрогазета</h1>
+    <p class="masthead-subtitle">Аналитика и статистика</p>
+  </div>
+  <div class="masthead-rule"></div>
+</header>
+
+<main id="analytics-page" style="display:none">
+  <div class="analytics-page">
+
+    <!-- Summary -->
+    <div class="section-heading">Общая статистика</div>
+    <div class="stat-row" id="stat-row">
+      <div class="analytics-loading">Загрузка данных…</div>
+    </div>
+
+    <!-- Charts row 1: entities + sentiment -->
+    <div class="section-heading">Упоминания компаний и моделей</div>
+    <div class="chart-box-full">
+      <div class="chart-box-title">Топ упоминаемых компаний и моделей (все выпуски)</div>
+      <canvas id="chart-entities" height="80"></canvas>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-box">
+        <div class="chart-box-title">Тональность новостей</div>
+        <canvas id="chart-sentiment"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-box-title">Типы событий</div>
+        <canvas id="chart-events"></canvas>
+      </div>
+    </div>
+
+    <!-- Timeline chart -->
+    <div class="section-heading">Активность по дням</div>
+    <div class="chart-box-full">
+      <div class="chart-box-title">Количество новостей по выпускам</div>
+      <canvas id="chart-timeline" height="60"></canvas>
+    </div>
+
+    <!-- Company report -->
+    <div class="section-heading">Отчёт по компании / модели</div>
+    <div class="report-controls">
+      <select class="report-select" id="report-company" onchange="buildReport()">
+        <option value="">— Выберите компанию —</option>
+      </select>
+      <span id="report-hint" style="font-family:var(--font-mono);font-size:.65rem;color:var(--ink-faint)">
+        Выберите компанию для отчёта
+      </span>
+    </div>
+
+    <div id="report-section" style="display:none">
+      <div class="report-summary" id="report-summary"></div>
+      <div class="chart-box-full">
+        <div class="chart-box-title">Упоминания по выпускам (позитив / нейтрально / негатив)</div>
+        <canvas id="chart-report-timeline" height="60"></canvas>
+      </div>
+      <div class="article-list" id="report-articles"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="../">Нейрогазета</a>
+    <span class="footer-sep">·</span>
+    <span>Аналитика</span>
+  </div>
+</footer>
+
+<script>
+// ===== AUTH =====
+const PASSWORD_HASH = '04cdf1da994d913dde4d76b1bdc24a13cf74c3df05178df1122e16e58fee26c5';
+
+async function sha256(message) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(message));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function checkPassword() {
+  const val = document.getElementById('pw-input').value;
+  const hash = await sha256(val);
+  const sessionOk = sessionStorage.getItem('ng_auth') === '1';
+  if (sessionOk || hash === PASSWORD_HASH) {
+    sessionStorage.setItem('ng_auth', '1');
+    document.getElementById('password-overlay').style.display = 'none';
+    document.getElementById('analytics-page').style.display = 'block';
+    await initAnalytics();
+  } else {
+    document.getElementById('pw-error').textContent = 'Неверный пароль';
+  }
+}
+document.getElementById('pw-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') checkPassword();
+});
+
+window.addEventListener('DOMContentLoaded', async () => {
+  if (sessionStorage.getItem('ng_auth') === '1') {
+    document.getElementById('password-overlay').style.display = 'none';
+    document.getElementById('analytics-page').style.display = 'block';
+    await initAnalytics();
+  }
+});
+
+// ===== DATA LOADING =====
+let allIssues = []; // [{date, news:[...]}]
+let allNews = [];   // flat list with .date attached
+
+async function initAnalytics() {
+  try {
+    const idx = await fetch('../data/index.json').then(r => r.json());
+    const dates = (idx.issues || []).map(i => i.date || i).filter(Boolean).sort();
+
+    const results = await Promise.all(
+      dates.map(d => fetch(`../data/${d}.json`).then(r => r.ok ? r.json() : null).catch(() => null))
+    );
+
+    results.forEach((issue, i) => {
+      if (!issue || !issue.news) return;
+      const date = dates[i];
+      allIssues.push({ date, news: issue.news });
+      issue.news.forEach(item => allNews.push({ ...item, _date: date }));
+    });
+
+    renderStats();
+    renderEntitiesChart();
+    renderSentimentChart();
+    renderEventsChart();
+    renderTimelineChart();
+    populateCompanySelect();
+  } catch (e) {
+    document.getElementById('stat-row').innerHTML =
+      `<div class="analytics-loading">Ошибка загрузки: ${e.message}</div>`;
+  }
+}
+
+// ===== HELPERS =====
+function countBy(arr, key) {
+  const map = {};
+  arr.forEach(item => {
+    const v = item[key] || 'unknown';
+    map[v] = (map[v] || 0) + 1;
+  });
+  return map;
+}
+
+function entityCounts() {
+  const map = {};
+  allNews.forEach(item => {
+    (item.tags?.entities || []).forEach(e => {
+      map[e] = (map[e] || 0) + 1;
+    });
+  });
+  return map;
+}
+
+function topN(obj, n) {
+  return Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, n);
+}
+
+const SENTIMENT_LABELS = { positive: 'Позитив', negative: 'Негатив', neutral: 'Нейтрально', rumor: 'Слух' };
+const SENTIMENT_COLORS = { positive: '#27ae60', negative: '#c0392b', neutral: '#7f8c8d', rumor: '#e67e22' };
+const EVENT_LABELS = {
+  release: 'Релиз', update: 'Обновление', investment: 'Инвестиции',
+  regulation: 'Регуляция', leak: 'Утечка', shutdown: 'Закрытие',
+};
+const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', hype: 'Желтуха' };
+
+// ===== RENDER STATS =====
+function renderStats() {
+  const totalIssues = allIssues.length;
+  const totalNews = allNews.length;
+  const ec = entityCounts();
+  const topEntity = topN(ec, 1)[0] || ['—', 0];
+  const sentiments = countBy(allNews, item => item.tags?.sentiment);
+  const posRatio = totalNews
+    ? Math.round(((sentiments.positive || 0) / totalNews) * 100)
+    : 0;
+
+  document.getElementById('stat-row').innerHTML = `
+    <div class="stat-card">
+      <span class="stat-val">${totalIssues}</span>
+      <span class="stat-lbl">Выпусков</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-val">${totalNews}</span>
+      <span class="stat-lbl">Новостей</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-val">${Object.keys(ec).length}</span>
+      <span class="stat-lbl">Упомянуто компаний</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-val">${topEntity[0]}</span>
+      <span class="stat-lbl">Самая частая (${topEntity[1]})</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-val" style="color:#27ae60">${posRatio}%</span>
+      <span class="stat-lbl">Позитивных новостей</span>
+    </div>
+  `;
+}
+
+// ===== ENTITIES CHART =====
+let chartEntities;
+function renderEntitiesChart() {
+  const top = topN(entityCounts(), 20);
+  const labels = top.map(([k]) => k);
+  const data = top.map(([, v]) => v);
+
+  if (chartEntities) chartEntities.destroy();
+  chartEntities = new Chart(document.getElementById('chart-entities'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: 'rgba(30,30,30,0.8)',
+        borderWidth: 0,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+        y: { grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+      },
+    }
+  });
+}
+
+// ===== SENTIMENT CHART =====
+let chartSentiment;
+function renderSentimentChart() {
+  const sc = countBy(allNews, item => item.tags?.sentiment || 'neutral');
+  const keys = ['positive', 'negative', 'neutral', 'rumor'];
+  const labels = keys.map(k => SENTIMENT_LABELS[k] || k);
+  const data = keys.map(k => sc[k] || 0);
+  const colors = keys.map(k => SENTIMENT_COLORS[k]);
+
+  if (chartSentiment) chartSentiment.destroy();
+  chartSentiment = new Chart(document.getElementById('chart-sentiment'), {
+    type: 'doughnut',
+    data: { labels, datasets: [{ data, backgroundColor: colors, borderWidth: 2, borderColor: '#faf9f7' }] },
+    options: {
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { font: { family: 'IBM Plex Mono', size: 11 }, padding: 12 }
+        }
+      }
+    }
+  });
+}
+
+// ===== EVENTS CHART =====
+let chartEvents;
+function renderEventsChart() {
+  const ec = countBy(allNews, item => item.tags?.event || 'unknown');
+  const keys = Object.keys(ec).sort((a, b) => ec[b] - ec[a]);
+
+  if (chartEvents) chartEvents.destroy();
+  chartEvents = new Chart(document.getElementById('chart-events'), {
+    type: 'bar',
+    data: {
+      labels: keys.map(k => EVENT_LABELS[k] || k),
+      datasets: [{
+        data: keys.map(k => ec[k]),
+        backgroundColor: 'rgba(30,30,30,0.7)',
+        borderWidth: 0,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+        y: { grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+      },
+    }
+  });
+}
+
+// ===== TIMELINE CHART =====
+let chartTimeline;
+function renderTimelineChart() {
+  const dates = allIssues.map(i => i.date);
+  const counts = allIssues.map(i => i.news.length);
+
+  if (chartTimeline) chartTimeline.destroy();
+  chartTimeline = new Chart(document.getElementById('chart-timeline'), {
+    type: 'bar',
+    data: {
+      labels: dates,
+      datasets: [{
+        label: 'Новостей',
+        data: counts,
+        backgroundColor: 'rgba(30,30,30,0.75)',
+        borderWidth: 0,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+        y: { grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 }, stepSize: 1 } },
+      },
+    }
+  });
+}
+
+// ===== COMPANY SELECT =====
+function populateCompanySelect() {
+  const ec = entityCounts();
+  const top = topN(ec, 50);
+  const sel = document.getElementById('report-company');
+  top.forEach(([name, count]) => {
+    const opt = document.createElement('option');
+    opt.value = name;
+    opt.textContent = `${name} (${count})`;
+    sel.appendChild(opt);
+  });
+}
+
+// ===== COMPANY REPORT =====
+let chartReportTimeline;
+function buildReport() {
+  const company = document.getElementById('report-company').value;
+  const section = document.getElementById('report-section');
+  if (!company) { section.style.display = 'none'; return; }
+
+  const items = allNews.filter(item =>
+    (item.tags?.entities || []).some(e => e.toLowerCase() === company.toLowerCase())
+  );
+
+  if (items.length === 0) {
+    section.style.display = 'none';
+    document.getElementById('report-hint').textContent = 'Нет данных по этой компании';
+    return;
+  }
+
+  document.getElementById('report-hint').textContent = `${items.length} упоминаний`;
+  section.style.display = 'block';
+
+  // Summary stats
+  const sc = countBy(items, item => item.tags?.sentiment || 'neutral');
+  document.getElementById('report-summary').innerHTML = `
+    <div class="report-stat">
+      <span class="rs-val">${items.length}</span>
+      <span class="rs-lbl">Упоминаний</span>
+    </div>
+    <div class="report-stat">
+      <span class="rs-val positive">${sc.positive || 0}</span>
+      <span class="rs-lbl">Позитивных</span>
+    </div>
+    <div class="report-stat">
+      <span class="rs-val negative">${sc.negative || 0}</span>
+      <span class="rs-lbl">Негативных</span>
+    </div>
+    <div class="report-stat">
+      <span class="rs-val neutral">${sc.neutral || 0}</span>
+      <span class="rs-lbl">Нейтральных</span>
+    </div>
+    <div class="report-stat">
+      <span class="rs-val">${Math.round(((sc.positive || 0) / items.length) * 100)}%</span>
+      <span class="rs-lbl">Позитивность</span>
+    </div>
+  `;
+
+  // Timeline chart (per issue)
+  const dates = allIssues.map(i => i.date);
+  const posData = [], negData = [], neuData = [];
+  dates.forEach(date => {
+    const dayItems = items.filter(item => item._date === date);
+    posData.push(dayItems.filter(i => i.tags?.sentiment === 'positive').length);
+    negData.push(dayItems.filter(i => i.tags?.sentiment === 'negative').length);
+    neuData.push(dayItems.filter(i => i.tags?.sentiment === 'neutral' || i.tags?.sentiment === 'rumor').length);
+  });
+
+  if (chartReportTimeline) chartReportTimeline.destroy();
+  chartReportTimeline = new Chart(document.getElementById('chart-report-timeline'), {
+    type: 'bar',
+    data: {
+      labels: dates,
+      datasets: [
+        { label: 'Позитив',    data: posData, backgroundColor: '#27ae60', borderWidth: 0 },
+        { label: 'Нейтрально', data: neuData, backgroundColor: '#bdc3c7', borderWidth: 0 },
+        { label: 'Негатив',    data: negData, backgroundColor: '#c0392b', borderWidth: 0 },
+      ]
+    },
+    options: {
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { family: 'IBM Plex Mono', size: 11 }, padding: 12 } }
+      },
+      scales: {
+        x: { stacked: true, grid: { display: false }, ticks: { font: { family: 'IBM Plex Mono', size: 11 } } },
+        y: { stacked: true, grid: { color: 'rgba(0,0,0,.07)' }, ticks: { font: { family: 'IBM Plex Mono', size: 11 }, stepSize: 1 } },
+      },
+    }
+  });
+
+  // Article list (sorted by date desc, then importance)
+  const sorted = [...items].sort((a, b) => {
+    if (b._date !== a._date) return b._date.localeCompare(a._date);
+    return (b.importance || 0) - (a.importance || 0);
+  });
+
+  document.getElementById('report-articles').innerHTML = sorted.map(item => `
+    <div class="article-item">
+      <span class="article-date">${item._date}</span>
+      <span class="article-headline">${escHtml(item.headline)}</span>
+      <span class="sentiment-badge ${item.tags?.sentiment || 'neutral'}">
+        ${SENTIMENT_LABELS[item.tags?.sentiment] || 'нейтр.'}
+      </span>
+    </div>
+  `).join('');
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+</script>
+</body>
+</html>
