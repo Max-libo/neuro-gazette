@@ -161,7 +161,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 
 /* ── Подзаголовок ── */
 .art-sub {
-  font-family: var(--font-serif);
+  font-family: 'IBM Plex Serif', Georgia, serif;
   font-style: italic;
   font-size: 0.92rem;
   color: var(--ink-mid);
