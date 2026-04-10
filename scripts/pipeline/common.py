@@ -269,28 +269,13 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
 CHANGELOG_FILE = REPO_ROOT / "docs" / "data" / "changelog.json"
 
 
-def _bump_version(version: str) -> str:
-    """v0.01 → v0.02, v0.09 → v0.10, v1.99 → v1.100 и т.д."""
-    import re
-    m = re.match(r"^(v\d+\.)(\d+)$", version)
-    if not m:
-        return version
-    return m.group(1) + str(int(m.group(2)) + 1).zfill(len(m.group(2)))
-
-
 def build_changelog_item() -> dict:
-    """Закреплённая карточка changelog — добавляется последней в каждый выпуск.
-    При каждом вызове инкрементирует версию и сохраняет в changelog.json."""
+    """Закреплённая карточка changelog — добавляется последней в каждый выпуск."""
     try:
         cl = json.loads(CHANGELOG_FILE.read_text(encoding="utf-8"))
     except Exception:
         cl = {}
-    version = _bump_version(cl.get("version", "v0.01"))
-    cl["version"] = version
-    try:
-        CHANGELOG_FILE.write_text(json.dumps(cl, ensure_ascii=False, indent=2), encoding="utf-8")
-    except Exception as e:
-        log.warning("Не удалось сохранить changelog.json: %s", e)
+    version = cl.get("version", "v0.01")
     return {
         "id":             f"changelog-{TODAY_STR}",
         "section":        "changelog",
