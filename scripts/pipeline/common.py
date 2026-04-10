@@ -278,20 +278,46 @@ def _bump_version(version: str) -> str:
     return m.group(1) + str(int(m.group(2)) + 1).zfill(len(m.group(2)))
 
 
+CODE_PATHS = ["scripts/", "docs/app.js", "docs/style.css"]
+
+
+def _code_changed_since(commit_hash: str) -> bool:
+    """Проверяет, менялись ли файлы кода с момента указанного коммита."""
+    if not commit_hash:
+        return False
+    try:
+        result = subprocess.run(
+            ["git", "diff", "--name-only", commit_hash, "HEAD", "--"] + CODE_PATHS,
+            capture_output=True, text=True, cwd=REPO_ROOT,
+        )
+        return bool(result.stdout.strip())
+    except Exception:
+        return False
+
+
+def _git_head() -> str:
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True, text=True, cwd=REPO_ROOT,
+        )
+        return result.stdout.strip()
+    except Exception:
+        return ""
+
+
 def build_changelog_item() -> dict:
     """Закреплённая карточка changelog — добавляется последней в каждый выпуск.
-    Версия бампается автоматически, если текст changelog изменился."""
+    Версия бампается если с момента прошлого бампа менялись файлы кода."""
     try:
         cl = json.loads(CHANGELOG_FILE.read_text(encoding="utf-8"))
     except Exception:
         cl = {}
 
-    current_text = cl.get("changelog", "")
-    last_text = cl.get("_last_published_changelog", "")
-
-    if current_text and current_text != last_text:
+    last_commit = cl.get("_last_version_commit", "")
+    if _code_changed_since(last_commit):
         cl["version"] = _bump_version(cl.get("version", "v0.01"))
-        cl["_last_published_changelog"] = current_text
+        cl["_last_version_commit"] = _git_head()
         try:
             CHANGELOG_FILE.write_text(json.dumps(cl, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception as e:
