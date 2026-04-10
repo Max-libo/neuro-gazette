@@ -162,7 +162,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 /* ── Подзаголовок ── */
 .art-sub {
   font-family: 'IBM Plex Serif', Georgia, serif;
-  font-style: italic;
+  font-style: normal;
   font-size: 0.92rem;
   color: var(--ink-mid);
   line-height: 1.45;
