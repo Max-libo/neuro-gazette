@@ -122,6 +122,16 @@ function buildRegularHtml(item) {
     </article>`;
 }
 
+/* ── CONTINUATION ── только бейдж + заголовок, без тела и дескриптора */
+function buildContinuationHtml(item) {
+  return `
+    <article class="col-article col-article--continuation" id="${esc(item.id)}">
+      ${sectionBadge(item.section)}
+      <h3 class="art-headline art-headline--continuation">${esc(item.headline)}</h3>
+      ${buildSourcesHtml(item.sources)}
+    </article>`;
+}
+
 /* ── COMPACT (importance < 5) ── тот же кегль, подзаголовок и тело под катом */
 function buildCompactHtml(item) {
   return `
@@ -196,7 +206,8 @@ function renderIssue(issue) {
     cols.forEach(colItems => {
       html += '<div class="col">';
       colItems.forEach(item => {
-        if (item.tier === 'compact') html += buildCompactHtml(item);
+        if (item.duplicate_note)     html += buildContinuationHtml(item);
+        else if (item.tier === 'compact') html += buildCompactHtml(item);
         else                         html += buildRegularHtml(item);
       });
       html += '</div>';

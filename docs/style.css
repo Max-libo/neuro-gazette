@@ -173,6 +173,22 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   color: var(--ink-light);
 }
 
+/* Continuation-статьи — только бейдж и заголовок, без интерактива */
+.col-article--continuation {
+  cursor: default;
+  opacity: 0.75;
+}
+.col-article--continuation:hover {
+  background: transparent;
+}
+.art-headline--continuation {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--ink-light);
+  line-height: 1.35;
+}
+
 /* ── Тело статьи ── */
 .art-body {
   font-family: var(--font-sans);
