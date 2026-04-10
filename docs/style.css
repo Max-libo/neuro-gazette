@@ -175,11 +175,10 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 
 /* Continuation-статьи — только бейдж и заголовок, без интерактива */
 .col-article--continuation {
-  cursor: default;
   opacity: 0.75;
 }
 .col-article--continuation:hover {
-  background: transparent;
+  opacity: 1;
 }
 .art-headline--continuation {
   font-family: var(--font-sans);

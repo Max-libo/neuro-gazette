@@ -122,13 +122,17 @@ function buildRegularHtml(item) {
     </article>`;
 }
 
-/* ── CONTINUATION ── только бейдж + заголовок, без тела и дескриптора */
+/* ── CONTINUATION ── только заголовок, тело и источники скрыты под катом */
 function buildContinuationHtml(item) {
   return `
-    <article class="col-article col-article--continuation" id="${esc(item.id)}">
+    <article class="col-article col-article--continuation" id="${esc(item.id)}" onclick="toggleExpand(this)">
       ${sectionBadge(item.section)}
       <h3 class="art-headline art-headline--continuation">${esc(item.headline)}</h3>
-      ${buildSourcesHtml(item.sources)}
+      <div class="art-body art-body--collapse">
+        ${item.body ? esc(item.body) : ''}
+        ${buildMetaHtml(item)}
+      </div>
+      <span class="expand-hint">подробнее ↓</span>
     </article>`;
 }
 
