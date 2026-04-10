@@ -132,7 +132,6 @@ function buildContinuationHtml(item) {
         ${item.body ? esc(item.body) : ''}
         ${buildMetaHtml(item)}
       </div>
-      <span class="expand-hint">подробнее ↓</span>
     </article>`;
 }
 
