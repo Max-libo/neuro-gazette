@@ -40,3 +40,14 @@ claude \
   >> "$LOG" 2>&1
 
 log "Готово."
+
+# Личное уведомление об окончании
+if [ -f "$REPO/.env" ]; then set -a; source "$REPO/.env"; set +a; fi
+if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_PERSONAL_ID:-}" ]; then
+  DATE=$(date +%Y-%m-%d)
+  STATUS="✅ Выпуск $DATE собран и опубликован"
+  curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+    -d chat_id="${TG_PERSONAL_ID}" \
+    -d text="${STATUS}" > /dev/null
+  log "Личное уведомление отправлено."
+fi
