@@ -1,22 +1,28 @@
 #!/usr/bin/env bash
 # Ставит отложенный запуск пайплайна на 07:00 МСК следующего утра.
-# Запускается каждый вечер по крону — передаёт текущее окружение (токен Claude).
-# Запускать вручную тоже можно: bash schedule_morning.sh
+# Инжектирует "запускай" в терминал Claude Code — как будто пользователь написал сам.
+# Запускается каждый вечер по крону в 21:00 МСК.
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
 LOG="$REPO/pipeline.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
 
-# Экспортируем переменные окружения в задание at
-# (at по умолчанию не наследует окружение — передаём явно)
-ENV_VARS=""
-for var in HOME PATH CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_EXECPATH CLAUDECODE; do
-  val="${!var:-}"
-  [ -n "$val" ] && ENV_VARS="export $var='$val'; $ENV_VARS"
-done
+# Найти pts Claude Code процесса
+PTS=$(ls -la /proc/$(pgrep -f "^claude$" | head -1)/fd/0 2>/dev/null | grep -o '/dev/pts/[0-9]*')
 
-JOB="${ENV_VARS} bash $REPO/run.sh >> $LOG 2>&1"
+if [ -z "$PTS" ]; then
+  log "Не найден pts Claude Code — запланирован прямой запуск run.sh"
+  echo "bash $REPO/run.sh >> $LOG 2>&1" | TZ=Europe/Moscow at 07:00 2>&1 | tee -a "$LOG"
+else
+  log "Claude Code на $PTS — запланирован инжект 'запускай' в 07:00"
+  cat << EOF > /tmp/inject_morning.py
+import fcntl, termios
+with open('$PTS', 'w') as f:
+    for char in 'запускай\r':
+        fcntl.ioctl(f, termios.TIOCSTI, char.encode())
+EOF
+  echo "python3 /tmp/inject_morning.py" | TZ=Europe/Moscow at 07:00 2>&1 | tee -a "$LOG"
+fi
 
-echo "$JOB" | TZ=Europe/Moscow at 07:00 2>&1 | tee -a "$LOG"
-log "Пайплайн запланирован на 07:00 МСК."
+log "Готово."
