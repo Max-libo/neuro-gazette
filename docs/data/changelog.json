@@ -1,5 +1,5 @@
 {
-  "version": "v0.01",
+  "version": "v0.02",
   "changelog": "Запущен пайплайн на подписке Claude вместо прямых вызовов API: четыре независимых этапа сборки — RSS/scrape, WebSearch, фильтрация (Sonnet), редактура (Opus). Ежедневный запуск по расписанию через Claude Code Remote.",
-  "_last_version_commit": "b1042cb37b374d76235a5ac4008c88d52c82f7db"
+  "_last_version_commit": "f6a32708a321226ad26051a4fa5282b8b7ba999c"
 }
