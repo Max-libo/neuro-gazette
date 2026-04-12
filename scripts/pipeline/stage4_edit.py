@@ -172,7 +172,9 @@ def main() -> None:
         sys.exit(1)
 
     all_news = finalize_news(news_list)
-    all_news.append(build_changelog_item())
+    changelog = build_changelog_item()
+    if changelog:
+        all_news.append(changelog)
 
     if not all_news:
         log.error("Выпуск пуст после редактуры — файл не записан")

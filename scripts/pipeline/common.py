@@ -306,8 +306,8 @@ def _git_head() -> str:
         return ""
 
 
-def build_changelog_item() -> dict:
-    """Закреплённая карточка changelog — добавляется последней в каждый выпуск.
+def build_changelog_item() -> dict | None:
+    """Карточка changelog — добавляется в выпуск только если версия бампнулась.
     Версия бампается если с момента прошлого бампа менялись файлы кода."""
     try:
         cl = json.loads(CHANGELOG_FILE.read_text(encoding="utf-8"))
@@ -315,13 +315,15 @@ def build_changelog_item() -> dict:
         cl = {}
 
     last_commit = cl.get("_last_version_commit", "")
-    if _code_changed_since(last_commit):
-        cl["version"] = _bump_version(cl.get("version", "v0.01"))
-        cl["_last_version_commit"] = _git_head()
-        try:
-            CHANGELOG_FILE.write_text(json.dumps(cl, ensure_ascii=False, indent=2), encoding="utf-8")
-        except Exception as e:
-            log.warning("Не удалось сохранить changelog.json: %s", e)
+    if not _code_changed_since(last_commit):
+        return None
+
+    cl["version"] = _bump_version(cl.get("version", "v0.01"))
+    cl["_last_version_commit"] = _git_head()
+    try:
+        CHANGELOG_FILE.write_text(json.dumps(cl, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as e:
+        log.warning("Не удалось сохранить changelog.json: %s", e)
 
     version = cl.get("version", "v0.01")
     return {
