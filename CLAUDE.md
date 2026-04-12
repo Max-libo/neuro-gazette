@@ -4,34 +4,65 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-**Нейрогазета** — an automated daily AI-news digest. A GitHub Actions workflow runs every day at 07:00 МСК (04:00 UTC), calls the Anthropic API with `web_search` tool to collect AI news for the last 24 hours, and commits the result as JSON to `docs/data/`. GitHub Pages serves the static frontend from `docs/`.
+**Нейрогазета** — an automated daily AI-news digest. Each morning at 07:00 МСК a 4-stage pipeline runs, collects AI news, calls Claude to filter and edit it into a structured JSON issue, and publishes the result. The static frontend in `docs/` is deployed to REG.RU via FTP on every push to `main`.
 
-## Running locally
+## Running the pipeline locally
 
+**Primary method — Claude CLI subscription (no API key needed):**
 ```bash
 pip install -r requirements.txt
-ANTHROPIC_API_KEY=sk-... python scripts/collect.py
-# then open docs/index.html in a browser
+./run.sh              # full run: stages 1-4 + git push
+./run.sh --no-push    # run without committing
+./run.sh --from-raw   # skip stages 1-2, reuse cached raw+search data
+./run.sh --from-filter  # skip stages 1-3, reuse filtered list
 ```
 
-The script writes `docs/data/YYYY-MM-DD.json`, `docs/data/latest.json`, and updates `docs/data/index.json`.
+**Legacy single-script method — requires ANTHROPIC_API_KEY:**
+```bash
+ANTHROPIC_API_KEY=sk-... python scripts/collect.py
+```
 
-## Architecture
+After either method, open `docs/index.html` in a browser to see the result.
 
-### Data pipeline (`scripts/collect.py`)
+## Pipeline architecture
 
-Three-stage pipeline:
+`run.sh` orchestrates four Python scripts in `scripts/pipeline/`:
 
-1. **Сбор (RSS + scrape)** — parallel HTTP fetch from `sources.yaml` (types `rss` / `scrape`). Each item gets a `priority` (1-3) from its source config. Results are deduplicated and sorted by priority before the `RAW_LIMIT` (200) cutoff.
-2. **Веб-поиск** — `fetch_via_search()` calls `claude-sonnet-4-6` with `web_search_20250305` tool (`max_uses=2`) for each query in `search_queries` (currently `models` and `hype` sections).
-3. **Фильтрация + редактура** — two Claude API calls:
-   - `filter_with_claude()` — selects 30-40 most relevant articles from the raw list
-   - `edit_with_claude()` — formats the final issue as JSON with `EDIT_SYSTEM` prompt
+| Stage | Script | Input | Output | Model |
+|-------|--------|-------|--------|-------|
+| 1 | `stage1_collect.py` | `sources.yaml` | `{date}_raw.json` | — |
+| 2 | `stage2_search.py` | `sources.yaml` search_queries | `{date}_search.json` | Sonnet (WebSearch tool via CLI) |
+| 3 | `stage3_filter.py` | `_raw.json` + `_search.json` | `{date}_filtered.txt` | Sonnet (via CLI) |
+| 4 | `stage4_edit.py` | `_filtered.txt` + `_search.json` | `{date}.json`, `latest.json` | Opus (via CLI) |
 
-- `_api_call()` retries up to 3 times on rate limits (reads `retry-after` header) and API errors
-- `edit_with_claude()` retries up to 3 times on JSON parse errors
-- `validate_and_fix()` normalises each news item and deduplicates IDs before saving
-- Raw articles are cached to `docs/data/YYYY-MM-DD_raw.json` before Claude calls
+After stage 4, `generate_preview.py` builds OG-preview HTML in `docs/preview/`, then `run.sh` commits `docs/data/` and `docs/preview/` and optionally notifies Telegram.
+
+**Shared code:** `scripts/pipeline/common.py` — time window calculation, URL validation, date parsing, `validate_and_fix()`, `finalize_news()`, `run_claude()` (wraps `claude --print`), changelog versioning.
+
+**`run_claude()`** calls `claude --print --model <model>` via subprocess, reads stdin. Rate-limit handling: waits 60 min and retries up to 6 times.
+
+### Stage 1: collect
+
+Parallel HTTP fetch (ThreadPoolExecutor, 10 workers) from all `sources` in `sources.yaml`. Source types:
+- `rss` — parsed with feedparser
+- `scrape` — HTML parsed with BeautifulSoup; tries JSON-LD structured data first, falls back to `h1/h2/h3` scan
+
+Items filtered by 24h window, deduplicated by URL and title. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200`.
+
+### Stage 2: web search
+
+For each query in `search_queries` (by section), calls `claude --print --allowedTools WebSearch`. Parses `TITLE | URL | DATE | description` lines, validates URLs (`is_vague_url()`), drops results outside the time window.
+
+### Stage 3: filter
+
+Single Claude call with the raw article list and search results. Returns filtered `title | URL | source | date` lines as `{date}_filtered.txt`. Checks 7 days of history to flag duplicate headlines.
+
+### Stage 4: edit (Opus)
+
+Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up to 3 times on JSON parse errors. Output validated by `finalize_news()`:
+- `validate_and_fix()` normalises each item, deduplicates IDs, maps `tier` → `importance` (hero=9, regular=7, compact=5)
+- `finalize_news()` enforces exactly one `"tier": "hero"` per issue
+- Appends a `changelog` card (auto-version-bumped when code files change)
 
 ### JSON schema for a news item
 ```json
@@ -41,28 +72,43 @@ Three-stage pipeline:
   "headline": "...",
   "subheadline": "...",
   "body": "...",
-  "importance": 1-10,
+  "tier": "hero|regular|compact",
+  "importance": 9,
   "sources": [{"title": "...", "url": "...", "type": "official|media|rumor"}],
+  "related": [{"title": "...", "url": "...", "entities": [], "sentiment": "positive|negative|neutral"}],
   "unconfirmed": false,
   "duplicate_note": null,
-  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|shutdown|investment|regulation|leak"}
+  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|..."}
 }
 ```
 
-### Frontend (`docs/`)
-- Pure static HTML/CSS/JS, no build step
-- `app.js` renders JSON data; items with `importance` 9-10 → hero layout, 7-8 → large, ≤6 → compact
-- `editor/index.html` — password-protected editor (SHA-256 hash stored in `PASSWORD_HASH` variable; default password: `neuro2026`)
+## Frontend (`docs/`)
+
+Pure static HTML/CSS/JS, no build step.
+
+- `app.js` — fetches `data/latest.json`, renders the issue. Layout by tier: `hero` → hero card, `regular` → large card, `compact` → compact card. `changelog` tier → pinned footer card.
 - `archive/index.html` — lists all issues from `data/index.json`
+- `editor/index.html` — password-protected in-browser editor. `PASSWORD_HASH` = SHA-256 of password. Default password: `neuro2026`. Change: `echo -n "new_password" | sha256sum`
+- `analytics/index.html` — entity/sentiment stats from `data/stats.json` (generated by `scripts/stats.py`)
+- `preview/` — OG-image HTML files (one per issue), generated by `scripts/generate_preview.py`
 
-### CI (`daily.yml`)
-- Runs `collect.py`, commits changes to `docs/data/`, pushes, optionally notifies Telegram
-- Required secret: `ANTHROPIC_API_KEY`
-- Optional secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+## CI / Deployment
 
-## Changing the editor password
+`.github/workflows/deploy.yml` — on push to `main`, deploys `docs/` to REG.RU via FTP (excludes `editor/`). Required secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
 
-```bash
-echo -n "new_password" | sha256sum
-# update PASSWORD_HASH in docs/editor/index.html
+There is no separate daily CI workflow in this repo; the pipeline is triggered locally via `morning.sh` (run by cron at 04:00 UTC / 07:00 МСК) or manually via `./run.sh`.
+
+**Scheduling helpers:**
+- `morning.sh` — runs `run.sh`, logs to `pipeline.log`, sends personal Telegram notification (uses `TG_PERSONAL_ID` from `.env`)
+- `schedule_morning.sh` — schedules the next morning run using `at`; tries to inject "запускай" into an active Claude Code terminal session via `TIOCSTI`
+
+## Environment / secrets
+
+Create `.env` in the repo root (gitignored) for local use:
 ```
+TG_TOKEN=...
+TG_CHAT_ID=...       # public channel
+TG_PERSONAL_ID=...   # personal notification
+```
+
+The pipeline uses the Claude Code CLI subscription — no `ANTHROPIC_API_KEY` needed for `run.sh`.
