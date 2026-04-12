@@ -97,13 +97,21 @@ fi
 
 DATE=$(python3 -c "import json; print(json.load(open('docs/data/latest.json'))['date'])")
 git commit -m "feat: выпуск $DATE"
-git pull --rebase
+git pull --rebase || log "git pull --rebase не удался, продолжаем"
 git push
 
 log "Готово: выпуск $DATE опубликован."
 
-# ── Telegram-уведомление ──────────────────────────────────────────────────────
+# ── Telegram-уведомление в канал ─────────────────────────────────────────────
 if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT_ID:-}" ]; then
   python3 "$REPO/scripts/tg_notify.py" "$DATE" \
-    && log "Telegram: уведомление отправлено." || log "Telegram: ошибка отправки."
+    && log "Telegram: уведомление в канал отправлено." || log "Telegram: ошибка отправки в канал."
+fi
+
+# ── Личное Telegram-уведомление ──────────────────────────────────────────────
+if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_PERSONAL_ID:-}" ]; then
+  curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+    -d chat_id="${TG_PERSONAL_ID}" \
+    -d text="✅ Выпуск $DATE собран и опубликован" > /dev/null \
+    && log "Telegram: личное уведомление отправлено." || log "Telegram: ошибка личного уведомления."
 fi
