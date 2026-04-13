@@ -1,53 +1,53 @@
 {
   "updated": "2026-04-13",
   "total_issues": 8,
-  "total_entities": 128,
+  "total_entities": 134,
   "entities": {
     "OpenAI": {
-      "mentions": 31,
+      "mentions": 33,
       "positive": 7,
-      "negative": 16,
-      "neutral": 8,
+      "negative": 17,
+      "neutral": 9,
       "first_seen": "2026-04-04",
       "last_seen": "2026-04-13",
       "by_month": {
         "2026-04": {
-          "mentions": 31,
+          "mentions": 33,
           "positive": 7,
-          "negative": 16,
-          "neutral": 8
+          "negative": 17,
+          "neutral": 9
         }
       }
     },
     "Anthropic": {
-      "mentions": 29,
-      "positive": 13,
+      "mentions": 28,
+      "positive": 12,
       "negative": 6,
       "neutral": 10,
       "first_seen": "2026-04-04",
       "last_seen": "2026-04-13",
       "by_month": {
         "2026-04": {
-          "mentions": 29,
-          "positive": 13,
+          "mentions": 28,
+          "positive": 12,
           "negative": 6,
           "neutral": 10
         }
       }
     },
     "Google": {
-      "mentions": 14,
+      "mentions": 15,
       "positive": 11,
       "negative": 1,
-      "neutral": 2,
+      "neutral": 3,
       "first_seen": "2026-04-05",
-      "last_seen": "2026-04-12",
+      "last_seen": "2026-04-13",
       "by_month": {
         "2026-04": {
-          "mentions": 14,
+          "mentions": 15,
           "positive": 11,
           "negative": 1,
-          "neutral": 2
+          "neutral": 3
         }
       }
     },
@@ -195,6 +195,22 @@
         }
       }
     },
+    "Wikipedia": {
+      "mentions": 4,
+      "positive": 0,
+      "negative": 3,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 4,
+          "positive": 0,
+          "negative": 3,
+          "neutral": 1
+        }
+      }
+    },
     "Amazon": {
       "mentions": 4,
       "positive": 4,
@@ -211,6 +227,22 @@
         }
       }
     },
+    "GitHub": {
+      "mentions": 4,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 2,
+      "first_seen": "2026-04-08",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 4,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 2
+        }
+      }
+    },
     "AWS": {
       "mentions": 4,
       "positive": 3,
@@ -223,22 +255,6 @@
           "mentions": 4,
           "positive": 3,
           "negative": 0,
-          "neutral": 1
-        }
-      }
-    },
-    "Sam Altman": {
-      "mentions": 4,
-      "positive": 0,
-      "negative": 3,
-      "neutral": 1,
-      "first_seen": "2026-04-09",
-      "last_seen": "2026-04-13",
-      "by_month": {
-        "2026-04": {
-          "mentions": 4,
-          "positive": 0,
-          "negative": 3,
           "neutral": 1
         }
       }
@@ -259,22 +275,6 @@
         }
       }
     },
-    "GitHub": {
-      "mentions": 3,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 1,
-      "first_seen": "2026-04-08",
-      "last_seen": "2026-04-13",
-      "by_month": {
-        "2026-04": {
-          "mentions": 3,
-          "positive": 2,
-          "negative": 0,
-          "neutral": 1
-        }
-      }
-    },
     "HappyHorse": {
       "mentions": 3,
       "positive": 3,
@@ -288,6 +288,22 @@
           "positive": 3,
           "negative": 0,
           "neutral": 0
+        }
+      }
+    },
+    "Sam Altman": {
+      "mentions": 3,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 1,
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 3,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 1
         }
       }
     },
@@ -320,38 +336,6 @@
           "positive": 2,
           "negative": 0,
           "neutral": 0
-        }
-      }
-    },
-    "Suno": {
-      "mentions": 2,
-      "positive": 1,
-      "negative": 1,
-      "neutral": 0,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-04-13",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 0
-        }
-      }
-    },
-    "Wikipedia": {
-      "mentions": 2,
-      "positive": 0,
-      "negative": 1,
-      "neutral": 1,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-04-13",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
         }
       }
     },
@@ -435,6 +419,22 @@
         }
       }
     },
+    "Maine": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 1,
+      "first_seen": "2026-04-08",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        }
+      }
+    },
     "Iran": {
       "mentions": 2,
       "positive": 0,
@@ -499,22 +499,6 @@
         }
       }
     },
-    "Россия": {
-      "mentions": 2,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 2,
-      "first_seen": "2026-04-12",
-      "last_seen": "2026-04-13",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 2
-        }
-      }
-    },
     "Claude Mythos": {
       "mentions": 2,
       "positive": 1,
@@ -528,6 +512,22 @@
           "positive": 1,
           "negative": 0,
           "neutral": 1
+        }
+      }
+    },
+    "Russia": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 0,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 0
         }
       }
     },
@@ -819,6 +819,22 @@
         }
       }
     },
+    "Suno": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
     "The New York Times": {
       "mentions": 1,
       "positive": 0,
@@ -975,22 +991,6 @@
           "mentions": 1,
           "positive": 1,
           "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
-    "Maine": {
-      "mentions": 1,
-      "positive": 0,
-      "negative": 1,
-      "neutral": 0,
-      "first_seen": "2026-04-08",
-      "last_seen": "2026-04-08",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 1,
           "neutral": 0
         }
       }
@@ -1827,6 +1827,22 @@
         }
       }
     },
+    "Россия": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-12",
+      "last_seen": "2026-04-12",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
     "Maven": {
       "mentions": 1,
       "positive": 0,
@@ -2003,18 +2019,18 @@
         }
       }
     },
-    "Malwarebytes": {
+    "White House": {
       "mentions": 1,
-      "positive": 0,
-      "negative": 1,
+      "positive": 1,
+      "negative": 0,
       "neutral": 0,
       "first_seen": "2026-04-13",
       "last_seen": "2026-04-13",
       "by_month": {
         "2026-04": {
           "mentions": 1,
-          "positive": 0,
-          "negative": 1,
+          "positive": 1,
+          "negative": 0,
           "neutral": 0
         }
       }
@@ -2047,6 +2063,86 @@
           "mentions": 1,
           "positive": 1,
           "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Big Tech": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Nebraska": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Maryland": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Malwarebytes": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "Florida": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
           "neutral": 0
         }
       }
