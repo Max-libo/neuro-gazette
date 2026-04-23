@@ -96,11 +96,11 @@ Pure static HTML/CSS/JS, no build step.
 
 `.github/workflows/deploy.yml` — on push to `main`, deploys `docs/` to REG.RU via FTP (excludes `editor/`). Required secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
 
-There is no separate daily CI workflow in this repo; the pipeline is triggered locally via `morning.sh` (run by cron at 04:00 UTC / 07:00 МСК) or manually via `./run.sh`.
+There is no separate daily CI workflow in this repo; the pipeline is triggered locally via `morning.sh` (run by cron at 07:00/10:00/14:00 МСК) or manually via `./run.sh`.
 
-**Scheduling helpers:**
-- `morning.sh` — runs `run.sh`, logs to `pipeline.log`, sends personal Telegram notification (uses `TG_PERSONAL_ID` from `.env`)
-- `schedule_morning.sh` — schedules the next morning run using `at`; tries to inject "запускай" into an active Claude Code terminal session via `TIOCSTI`
+**Scheduling:**
+- `morning.sh` — идемпотентный триггер: если `docs/data/<today>.json` уже есть, выходит мгновенно. Иначе автоматически выбирает самый дальний кэш (`--from-filter` / `--from-raw`) и запускает `run.sh`. Три запуска в день (07:00 — первичный, 10:00 и 14:00 — self-heal) гарантируют выпуск даже после одиночного сбоя.
+- `run.sh` — держит `flock` на `/tmp/neurogazette.lock` (повторные запуски no-op), шлёт Telegram-алерт в личку при любом падении (через `trap ERR` + переменная `CURRENT_STAGE`).
 
 ## Environment / secrets
 

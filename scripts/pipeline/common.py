@@ -4,8 +4,10 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import queue
 import re
 import subprocess
+import threading
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -350,52 +352,110 @@ def run_claude(
     model: str = "claude-sonnet-4-6",
     system: str | None = None,
     allowed_tools: list[str] | None = None,
-    timeout: int = 600,
+    idle_timeout: int = 180,
     retries: int = 3,
 ) -> str:
     """
-    Вызывает `claude --print` с промптом через stdin.
-    Использует токены подписки (не API-ключ).
+    Вызывает `claude --print --output-format stream-json`, читает события построчно.
+    Тайм-аут считается по тишине от CLI (idle_timeout сек без событий) — не по wall-clock,
+    чтобы длинные ответы Opus не обрывались.
     """
-    cmd = ["claude", "--print", "--model", model]
+    cmd = [
+        "claude", "--print",
+        "--model", model,
+        "--output-format", "stream-json",
+        "--include-partial-messages",
+        "--verbose",
+    ]
     if allowed_tools:
         cmd += ["--allowedTools", ",".join(allowed_tools)]
 
-    # Системный промпт добавляем в начало сообщения, если CLI не поддерживает --system-prompt
     full_prompt = f"<system>\n{system}\n</system>\n\n{prompt}" if system else prompt
 
-    RATE_LIMIT_WAIT = 60 * 60  # 60 минут ожидания при исчерпании лимита
-    RATE_LIMIT_RETRIES = 6     # до 6 часов суммарного ожидания
+    RATE_LIMIT_WAIT = 60 * 60
+    RATE_LIMIT_RETRIES = 6
 
     last_err = ""
     rate_limit_attempt = 0
+
     for attempt in range(1, retries + 1):
-        try:
-            result = subprocess.run(
-                cmd,
-                input=full_prompt,
-                capture_output=True,
-                text=True,
-                timeout=timeout,
-            )
-            if result.returncode == 0:
-                return result.stdout.strip()
-            last_err = (result.stderr or result.stdout).strip()
+        proc = subprocess.Popen(
+            cmd,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            bufsize=1,
+        )
+        assert proc.stdin and proc.stdout and proc.stderr
+        proc.stdin.write(full_prompt)
+        proc.stdin.close()
+
+        q: queue.Queue = queue.Queue()
+
+        def _reader(stream, q=q):
+            try:
+                for line in stream:
+                    q.put(line)
+            finally:
+                q.put(None)
+
+        threading.Thread(target=_reader, args=(proc.stdout,), daemon=True).start()
+
+        result_text = ""
+        api_error = ""
+        last_activity = time.time()
+        hung = False
+
+        while True:
+            try:
+                line = q.get(timeout=1.0)
+            except queue.Empty:
+                if time.time() - last_activity > idle_timeout:
+                    proc.kill()
+                    hung = True
+                    break
+                continue
+            if line is None:
+                break
+            last_activity = time.time()
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                evt = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if evt.get("type") == "result":
+                if evt.get("subtype") == "success" and not evt.get("is_error"):
+                    result_text = evt.get("result", "") or result_text
+                else:
+                    api_error = evt.get("result") or evt.get("api_error_status") or "result error"
+
+        proc.wait()
+        stderr_out = (proc.stderr.read() or "").strip()
+
+        if hung:
+            last_err = f"idle timeout ({idle_timeout}s без событий)"
+            log.warning("claude CLI зависание (попытка %d/%d), kill()", attempt, retries)
+        elif proc.returncode == 0 and result_text and not api_error:
+            return result_text.strip()
+        else:
+            last_err = api_error or stderr_out or f"exit={proc.returncode}"
             if "rate limit" in last_err.lower():
                 rate_limit_attempt += 1
                 if rate_limit_attempt > RATE_LIMIT_RETRIES:
-                    raise RuntimeError(f"claude CLI: rate limit не снялся за {RATE_LIMIT_RETRIES} ч. Последняя ошибка: {last_err}")
+                    raise RuntimeError(
+                        f"claude CLI: rate limit не снялся за {RATE_LIMIT_RETRIES} ч. Последняя ошибка: {last_err}"
+                    )
                 log.warning(
                     "claude CLI: rate limit (%d/%d), жду %d мин…",
                     rate_limit_attempt, RATE_LIMIT_RETRIES, RATE_LIMIT_WAIT // 60,
                 )
                 time.sleep(RATE_LIMIT_WAIT)
-                continue  # не считаем за обычный retry
-            else:
-                log.warning("claude CLI попытка %d/%d: %s", attempt, retries, last_err[:200])
-        except subprocess.TimeoutExpired:
-            last_err = f"timeout ({timeout}s)"
-            log.warning("claude CLI таймаут, попытка %d/%d", attempt, retries)
+                continue
+            log.warning("claude CLI попытка %d/%d: %s", attempt, retries, last_err[:200])
+
         if attempt < retries:
             time.sleep(15)
 

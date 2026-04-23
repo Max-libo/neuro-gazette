@@ -74,7 +74,6 @@ def search_section(section: str, queries: list[str]) -> str:
                 build_search_prompt(query),
                 allowed_tools=["WebSearch"],
                 model="claude-sonnet-4-6",
-                timeout=300,
                 retries=2,
             )
             valid = filter_search_lines(text, section)
