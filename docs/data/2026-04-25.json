@@ -1,0 +1,526 @@
+{
+  "date": "2026-04-25",
+  "published": false,
+  "news": [
+    {
+      "id": "models-deepseek-v4-2026-04-24",
+      "section": "models",
+      "headline": "DeepSeek выпустила V4 с миллионным контекстом и сжатым вниманием",
+      "subheadline": "Модель использует Compressed Sparse Attention и Heavily Compressed Attention, удерживая до 1 млн токенов и при этом сохраняя цены ниже конкурентов",
+      "body": "DeepSeek-V4 объединяет две техники сжатия внимания: Compressed Sparse Attention для разреженного доступа к длинным последовательностям и Heavily Compressed Attention для агрессивного снижения KV-кэша. По данным MIT Technology Review, ставка DeepSeek сделана на дешёвый инференс именно тогда, когда конкуренты поднимают цены и вводят лимиты на agentic-режим. The Decoder отмечает, что модель уже доступна по API по цене, кратно меньшей, чем у GPT-5.5 и Opus 4.7, и претендует на статус «достаточно хорошей» для большинства задач без подписки. Релиз сопровождается технической статьёй и open-weight-чекпойнтами для исследовательского сообщества.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "DeepSeek AI Releases DeepSeek-V4: Compressed Sparse Attention and Heavily Compressed Attention Enable One-Million-Token Contexts",
+          "url": "https://www.marktechpost.com/2026/04/24/deepseek-ai-releases-deepseek-v4-compressed-sparse-attention-and-heavily-compressed-attention-enable-one-million-token-contexts/",
+          "type": "media"
+        },
+        {
+          "title": "Three reasons why DeepSeek's new model matters",
+          "url": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/",
+          "type": "media"
+        },
+        {
+          "title": "As agentic AI pushes rivals to raise prices and cap usage, Deepseek ships a good-enough model for almost nothing",
+          "url": "https://the-decoder.com/as-agentic-ai-pushes-rivals-to-raise-prices-and-cap-usage-deepseek-ships-a-good-enough-model-for-almost-nothing/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "GPT-5.5 против DeepSeek-V4: почему OpenAI удваивает цены, пока Китай демпингует",
+          "url": "https://habr.com/ru/articles/1027564/",
+          "entities": [
+            "DeepSeek",
+            "OpenAI"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DeepSeek"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-gpt55-benchmarks-2026-04-24",
+      "section": "models",
+      "headline": "Продолжение: GPT-5.5 лидирует на бенчмарках, но галлюцинирует и стоит на 20% дороже",
+      "subheadline": null,
+      "body": "По данным The Decoder, GPT-5.5 занимает первые места в большинстве публичных тестов, однако частота галлюцинаций сопоставима с GPT-5, а API-токены подорожали примерно на 20% относительно предыдущей версии.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "GPT-5.5 tops benchmarks but still hallucinates frequently and costs 20 percent more over the API",
+          "url": "https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: OpenAI официально выпустила GPT-5.5 и опубликовала system card",
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-openai-progress-slow-2026-04-24",
+      "section": "models",
+      "headline": "Главный научный директор OpenAI назвал прогресс AI «удивительно медленным»",
+      "subheadline": "Якуб Пахоцкий заявил, что текущий темп ниже ожиданий, но обещает «большие скачки» в ближайшие месяцы",
+      "body": "В интервью, на которое ссылается The Decoder, главный научный директор OpenAI Якуб Пахоцкий признал, что развитие моделей в последнее время идёт «удивительно медленно» по сравнению с внутренними планами. Он связывает это с переходом от чистого scaling к обучению агентов длительным цепочкам задач и пообещал «большие скачки» в течение года. Заявление прозвучало на фоне публичной дискуссии о замедлении эффекта от увеличения параметров.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI's chief scientist says AI progress has been 'surprisingly slow' and promises big leaps ahead",
+          "url": "https://the-decoder.com/openais-chief-scientist-says-ai-progress-has-been-surprisingly-slow-and-promises-big-leaps-ahead/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-claude-code-quality-2026-04-24",
+      "section": "platforms",
+      "headline": "Anthropic подтвердила проблемы Claude Code и пообещала ужесточить контроль качества",
+      "subheadline": "Компания признала жалобы пользователей на регрессию агентного кодинга и анонсировала новые этапы тестирования релизов",
+      "body": "По данным The Decoder, Anthropic официально ответила на волну претензий к Claude Code: пользователи жаловались на ухудшение качества генерации, выпадение контекста и нестабильность агентного режима после последних обновлений. Компания сообщила, что добавит дополнительные регрессионные прогоны и расширит набор внутренних бенчмарков перед каждым публичным деплоем модели в Claude Code, а также пообещала более прозрачные релизные ноты.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic confirms Claude Code problems and promises stricter quality controls",
+          "url": "https://the-decoder.com/anthropic-confirms-claude-code-problems-and-promises-stricter-quality-controls/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-comfyui-500m-2026-04-24",
+      "section": "platforms",
+      "headline": "ComfyUI оценили в $500 млн на фоне спроса на контроль над генеративным медиа",
+      "subheadline": "Open-source-инструмент для нодовых пайплайнов диффузионных моделей привлёк инвесторов, ищущих альтернативу закрытым генераторам",
+      "body": "TechCrunch сообщает, что вокруг ComfyUI закрыт раунд при оценке $500 млн. Авторы и студии всё чаще выбирают нодовые пайплайны вместо облачных «чёрных ящиков» из-за необходимости фиксировать сиды, версии моделей и постобработку. Раунд пройдёт на фоне роста корпоративного интереса к контролируемой генерации видео и изображений.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ComfyUI hits $500M valuation as creators seek more control over AI-generated media",
+          "url": "https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ComfyUI"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-nothing-dictation-2026-04-24",
+      "section": "platforms",
+      "headline": "Nothing запустила собственный AI-инструмент диктовки",
+      "subheadline": "Производитель смартфонов добавил локальную транскрибацию и редактирование текста голосом в системную оболочку",
+      "body": "По данным TechCrunch, Nothing встроила AI-диктовку непосредственно в Nothing OS: инструмент работает в произвольных полях ввода и поддерживает базовое редактирование команд голосом. Компания позиционирует функцию как ответ на голосовой ввод в iOS и Pixel.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nothing introduces an AI-powered dictation tool",
+          "url": "https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nothing"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-gov-ai-agents-2026-04-24",
+      "section": "platforms",
+      "headline": "Госсектор может обогнать бизнес по внедрению AI-агентов",
+      "subheadline": "ZDNet: правительственные ведомства США агрессивнее закупают агентов для рутинных процессов, чем средний enterprise",
+      "body": "ZDNet, опираясь на отраслевые отчёты, фиксирует разворот: государственные агентства в США закладывают AI-агентов в процессы работы с гражданами и обработки документов быстрее, чем большинство частных компаний. Драйвером выступают типовые регламенты и крупные контракты с ведущими облачными провайдерами, а сдерживающий фактор для бизнеса — внутренние требования к данным и совместимость с ERP.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Government adoption of AI agents could outpace the private sector",
+          "url": "https://www.zdnet.com/article/government-adoption-of-ai-agents-may-outpace-the-private-sector/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-google-anthropic-40b-2026-04-24",
+      "section": "industry",
+      "headline": "Продолжение: Google вложит до $40 млрд в Anthropic деньгами и вычислениями",
+      "subheadline": null,
+      "body": "TechCrunch уточняет параметры сделки: до $40 млрд комбинируют прямую инвестицию и оплаченные TPU-мощности, что делает Google крупнейшим инвестором Anthropic после Amazon.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google to invest up to $40B in Anthropic in cash and compute",
+          "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic расширяет сотрудничество с Google и Broadcom на гигаватты TPU с 2027 года",
+      "tags": {
+        "entities": [
+          "Google",
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-compute-crunch-2026-04-24",
+      "section": "industry",
+      "headline": "404 Media: дефицит вычислений для AI бьёт по всей экономике",
+      "subheadline": "Нехватка GPU и памяти разогревает цены на потребительскую электронику, облака и аренду дата-центров",
+      "body": "404 Media собрало признаки общеэкономического эффекта от AI-гонки: задержки поставок Mac mini и серверных компонентов, скачок цен на DRAM, очереди на коммерческие облачные мощности и пересмотр капексов телеком-операторов. Издание утверждает, что компании за пределами AI-сектора впервые заметно почувствовали на себе перенаправление производственных линий и контрактов на инференс-инфраструктуру.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The AI Compute Crunch Is Here (and It's Affecting the Entire Economy)",
+          "url": "https://www.404media.co/the-ai-compute-crunch-is-here-and-its-affecting-the-entire-economy/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Marked-up Mac minis flood eBay amid shortages driven by AI",
+          "url": "https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/",
+          "entities": [
+            "Apple"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-meta-graviton-2026-04-24",
+      "section": "industry",
+      "headline": "Meta закупит у Amazon десятки миллионов ядер AWS Graviton 5",
+      "subheadline": "Сделка переключает значительную часть инфраструктуры Meta на ARM-процессоры собственного дизайна Amazon",
+      "body": "По данным The Decoder, контракт между Meta и AWS предусматривает поставку «десятков миллионов» ядер Graviton 5. Meta планирует использовать ARM-процессоры на собственных серверах для инференса и обслуживающих рабочих нагрузок, разгружая GPU-кластеры. Сделка усиливает позиции AWS как поставщика чипов независимо от Nvidia и Intel.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta buys tens of millions of AWS Graviton 5 processor cores from Amazon",
+          "url": "https://the-decoder.com/meta-buys-tens-of-millions-of-aws-graviton-5-processor-cores-from-amazon/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "AWS",
+          "Amazon"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-cohere-aleph-alpha-2026-04-24",
+      "section": "industry",
+      "headline": "Cohere поглощает немецкую Aleph Alpha после ухода основателя",
+      "subheadline": "Канадская компания получает контроль над одним из главных европейских AI-стартапов на ослабленных условиях",
+      "body": "The Decoder сообщает, что Cohere забирает Aleph Alpha вскоре после того, как немецкий стартап вытеснил собственного основателя. Сделка включает команду, инфраструктуру в Германии и продуктовые контракты с европейскими корпоративными клиентами. Для Cohere это шаг к расширению присутствия в ЕС, для Aleph Alpha — фактический отказ от самостоятельной фронтир-стратегии.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Cohere takes over Aleph Alpha shortly after the German startup ousted its original founder",
+          "url": "https://the-decoder.com/cohere-takes-over-aleph-alpha-shortly-after-the-german-startup-ousted-its-original-founder/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cohere",
+          "Aleph Alpha"
+        ],
+        "sentiment": "neutral",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-china-us-money-2026-04-24",
+      "section": "industry",
+      "headline": "Китай готов запретить технологическим компаниям брать деньги США без санкции властей",
+      "subheadline": "Новые правила распространятся на инвестиции в AI и полупроводники, ужесточая разделение технологических рынков",
+      "body": "По данным The Decoder, китайские регуляторы подготовили обязательное согласование для любых инвестиций из США в местные технологические компании, включая AI-стартапы и производителей чипов. Мера направлена на снижение влияния американских фондов и стратегических инвесторов на ключевые сегменты, ускоряя формирование двух относительно изолированных стеков.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "China moves to block tech firms from taking US money without government approval",
+          "url": "https://the-decoder.com/china-moves-to-block-tech-firms-from-taking-us-money-without-government-approval/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Китай",
+          "США"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-thinking-machines-meta-2026-04-24",
+      "section": "industry",
+      "headline": "Thinking Machines выигрывает от кадровых проблем Meta",
+      "subheadline": "Стартап Миры Мурати усиливается исследователями, уходящими из Meta после волны сокращений и реорганизаций",
+      "body": "TechCrunch описывает кадровый перевес: на фоне планов Meta сократить 10% персонала и реорганизации AI-подразделения часть ведущих исследователей переходит в Thinking Machines Lab. Стартап одновременно расширяет компьют-сделки и выигрывает от роста бренда среди академических кандидатов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta's loss is Thinking Machines' gain",
+          "url": "https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Thinking Machines Lab",
+          "Meta"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-florida-openai-2026-04-24",
+      "section": "industry",
+      "headline": "Генпрокурор Флориды начал уголовное расследование против OpenAI из-за роли ChatGPT в стрельбе в FSU",
+      "subheadline": "Власти штата проверяют, как чат-бот взаимодействовал со стрелком до нападения в кампусе Университета штата Флорида",
+      "body": "VC.ru со ссылкой на сообщения американских СМИ пишет, что Генпрокуратура Флориды открыла уголовное производство в отношении OpenAI: следствие изучает логи ChatGPT, к которым обращался стрелок, совершивший нападение в FSU, и оценивает, насколько компания соблюдала собственные правила безопасности при обработке потенциально опасных запросов. Это первое уголовное расследование такого уровня против OpenAI в США.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Генпрокурор Флориды начал уголовное расследование против OpenAI из-за роли ChatGPT в стрельбе в FSU",
+          "url": "https://vc.ru/ai/2882884-genprokuror-floridy-nachal-rassledovanie-protiv-openai-iz-za-chatgpt",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Флорида"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-maine-datacenter-veto-2026-04-24",
+      "section": "industry",
+      "headline": "Губернатор Мэна заветовал первый в США мораторий на новые дата-центры",
+      "subheadline": "Демократка Джанет Миллс отклонила законопроект, который должен был приостановить строительство ЦОД в штате",
+      "body": "По данным The Guardian, губернатор Мэна Джанет Миллс наложила вето на законопроект, вводивший мораторий на новые дата-центры — первая подобная инициатива на уровне штата в США. В обосновании указано, что мораторий повредит инвестициям и рабочим местам, тогда как энергетическая нагрузка может регулироваться отдельными нормами по подключению к сети.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Democratic Maine governor vetoes first US state freeze on new datacenters",
+          "url": "https://www.theguardian.com/us-news/2026/apr/24/maine-governor-blocks-datacenter-moratorium",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Officials hugely underestimated impact of AI datacentres on UK carbon emissions",
+          "url": "https://www.theguardian.com/technology/2026/apr/24/officials-hugely-underestimated-impact-of-ai-datacentres-on-uk-carbon-emissions",
+          "entities": [
+            "Великобритания"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Мэн"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-musk-altman-2026-04-24",
+      "section": "hype",
+      "headline": "Маск против Альтмана: конфликт OpenAI и xAI выходит в открытую фазу",
+      "subheadline": "The Verge собирает свежие выпады, иски и публичные намёки на новые судебные процессы",
+      "body": "The Verge обобщает обмен ударами между Илоном Маском и Сэмом Альтманом: новые ремарки в соцсетях, расширяющиеся иски xAI и OpenAI друг к другу, а также конкуренция за подрядчиков в облаке и кадры. Издание прогнозирует, что предстоящие месяцы будут публично «грязными», но не ждёт быстрого судебного финала.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Musk vs. Altman is here, and it's going to get messy",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "US justice department steps in on behalf of xAI in Colorado regulation case",
+          "url": "https://www.theguardian.com/us-news/2026/apr/24/xai-colorado-elon-musk-trump",
+          "entities": [
+            "xAI",
+            "Минюст США"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "xAI"
+        ],
+        "sentiment": "rumor",
+        "event": "leak"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-china-driverless-2026-04-24",
+      "section": "hype",
+      "headline": "Китай демонстрирует «беспилотную мечту» на пекинском автосалоне",
+      "subheadline": "Производители показывают модели с системами уровня L3+ и обещают массовое внедрение в течение года",
+      "body": "The Guardian с автосалона в Пекине описывает экспозиции, на которых китайские автоконцерны выкатили десятки моделей с расширенным автопилотом, демонстрируя поездки «без рук» прямо у стендов. Производители заявляют о планах массового внедрения L3+ в течение 12 месяцев, тогда как регуляторы ещё не закрепили правила для коммерческой эксплуатации.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "'Look, no hands': China chases the driverless dream at Beijing car show",
+          "url": "https://www.theguardian.com/technology/2026/apr/24/china-chases-driverless-dream-beijing-car-show-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Китай"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-mac-mini-shortage-2026-04-24",
+      "section": "hype",
+      "headline": "На eBay хлынули Mac mini с наценкой из-за дефицита, вызванного AI",
+      "subheadline": "Перекупщики продают новые модели заметно дороже розницы на фоне нехватки памяти и проблем с поставками",
+      "body": "TechCrunch фиксирует резкий рост числа Mac mini на вторичном рынке по ценам выше официальных. Дефицит связан с глобальной нехваткой DRAM и переориентацией поставок памяти на AI-сервера. Покупатели жалуются на длинные сроки доставки в Apple Store и пользуются eBay как способом получить устройство сразу.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Marked-up Mac minis flood eBay amid shortages driven by AI",
+          "url": "https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 5
+    }
+  ]
+}

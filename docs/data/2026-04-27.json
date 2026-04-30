@@ -1,0 +1,313 @@
+{
+  "date": "2026-04-27",
+  "published": false,
+  "news": [
+    {
+      "id": "models-codex-folded-2026-04-27",
+      "section": "models",
+      "headline": "OpenAI снова закрыла Codex и перенесла его функции в GPT-5.5",
+      "subheadline": "Отдельная модель для кода уходит, программирование становится частью базовой линейки",
+      "body": "OpenAI повторно ликвидировала бренд Codex как отдельную модель для разработки и интегрировала его возможности в GPT-5.5. Компания позиционирует решение как объединение универсальных и специализированных кодинговых сценариев в единый стек, чтобы разработчики не выбирали между моделями. Это вторая итерация закрытия Codex: первый раз бренд был свёрнут в 2023 году, затем возрождён в 2024-м под линейку coding-моделей.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "OpenAI kills its dedicated coding model Codex again, folding it into GPT-5.5",
+          "url": "https://the-decoder.com/openai-kills-its-dedicated-coding-model-codex-again-folding-it-into-gpt-5-5/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh baseline",
+          "url": "https://the-decoder.com/openai-says-old-prompts-are-holding-gpt-5-5-back-and-developers-need-a-fresh-baseline/",
+          "entities": [
+            "OpenAI",
+            "GPT-5.5"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Codex",
+          "GPT-5.5"
+        ],
+        "sentiment": "neutral",
+        "event": "shutdown"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-openai-principles-2026-04-27",
+      "section": "industry",
+      "headline": "OpenAI опубликовала свод принципов работы компании",
+      "subheadline": "Документ закрепляет публичные обязательства по безопасности, исследованиям и коммерческой стратегии",
+      "body": "OpenAI выпустила официальный документ «Our principles» с описанием базовых ценностей и правил, которыми компания руководствуется в разработке и развёртывании AI. Публикация формализует подход OpenAI к балансу между скоростью развития, безопасностью пользователей и коммерческими интересами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Our principles",
+          "url": "https://openai.com/index/our-principles",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-bankers-ai-output-2026-04-27",
+      "section": "industry",
+      "headline": "500 инвестбанкиров оценили AI-выдачу: ни одна не готова для клиентов",
+      "subheadline": "Опрос показал, что результаты моделей пока не проходят порог финансовой индустрии",
+      "body": "Исследование, в котором 500 инвестиционных банкиров проверяли результаты работы AI-моделей, показало: ни один проанализированный материал не достиг качества, пригодного для передачи клиенту без существенной доработки. Банкиры отмечали ошибки в цифрах, поверхностный анализ и недостаточную релевантность контексту сделок.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "500 investment bankers review AI outputs and find none ready for client delivery",
+          "url": "https://the-decoder.com/500-investment-bankers-review-ai-outputs-and-find-none-ready-for-client-delivery/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "finance",
+          "investment banking"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-claude-wealthy-users-2026-04-27",
+      "section": "industry",
+      "headline": "Аудитория Claude в США оказалась заметно богаче пользователей конкурирующих ассистентов",
+      "subheadline": "Опрос фиксирует выраженный перекос Anthropic в сторону высокодоходных сегментов",
+      "body": "Результаты опроса показали, что недельная аудитория Claude в США смещена в сторону существенно более состоятельных пользователей, чем у любого другого AI-ассистента. Anthropic исторически делает ставку на корпоративный и профессиональный сегмент, и данные подтверждают, что эта стратегия отражается на демографии конечных пользователей.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Survey finds Claude's weekly active users in the US skew far wealthier than any rival AI assistant",
+          "url": "https://the-decoder.com/survey-finds-claudes-weekly-active-users-in-the-us-skew-far-wealthier-than-any-rival-ai-assistant/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-uk-datacenter-energy-2026-04-27",
+      "section": "industry",
+      "headline": "Британские министерства не могут договориться об энергопотреблении AI-дата-центров",
+      "subheadline": "Внутри правительства идёт спор о допустимой нагрузке на сеть со стороны AI-инфраструктуры",
+      "body": "По данным The Guardian, между ведомствами Великобритании возникли разногласия из-за энергопотребления AI-дата-центров: одни ведомства настаивают на ускоренном расширении мощностей ради конкурентоспособности страны, другие предупреждают о нагрузке на электросеть и климатических обязательствах. Разногласия осложняют выработку единой государственной политики по AI-инфраструктуре.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "UK departments at odds over energy demands of AI datacentres",
+          "url": "https://www.theguardian.com/technology/2026/apr/26/uk-departments-at-odds-over-energy-demands-of-ai-datacentres",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "UK government",
+          "data centers"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-agents-expand-engineering-2026-04-27",
+      "section": "platforms",
+      "headline": "Исследователи: AI-агенты не заменяют разработку, а расширяют её за пределы кода",
+      "subheadline": "В работе утверждается, что инженерия ПО эволюционирует, а не сжимается под действием агентов",
+      "body": "Исследователи приводят аргументы против тезиса о том, что AI-агенты сокращают потребность в программистах. По их данным, агенты переносят задачи разработчиков в смежные области — управление инфраструктурой, оркестрация процессов, проверка результатов работы AI — фактически расширяя сферу инженерии ПО, а не вытесняя её.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI agents aren't replacing software engineering but expanding it far beyond code, researchers argue",
+          "url": "https://the-decoder.com/ai-agents-arent-replacing-software-engineering-but-expanding-it-far-beyond-code-researchers-argue/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI agents",
+          "software engineering"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-agentic-benchmarks-2026-04-27",
+      "section": "platforms",
+      "headline": "MarkTechPost составил список из 7 ключевых бенчмарков для агентного reasoning",
+      "subheadline": "Подборка фокусируется на том, какие тесты реально отражают способности LLM к агентным задачам",
+      "body": "MarkTechPost опубликовал обзор семи бенчмарков, которые, по мнению авторов, действительно отражают способность больших языковых моделей выполнять агентные сценарии: многошаговое планирование, использование инструментов, длительное удержание контекста и проверку собственных действий. Подборка предлагает разработчикам ориентиры для оценки моделей за пределами стандартных академических тестов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Top 7 Benchmarks That Actually Matter for Agentic Reasoning in Large Language Models",
+          "url": "https://www.marktechpost.com/2026/04/26/top-7-benchmarks-that-actually-matter-for-agentic-reasoning-in-large-language-models/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "benchmarks",
+          "LLM"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-cursor-cve-2026-04-27",
+      "section": "platforms",
+      "headline": "Опубликован технический разбор безопасности AI-редактора Cursor",
+      "subheadline": "Авторы описывают охоту на CVE в Cursor IDE и потенциальные векторы атак на AI-редакторы",
+      "body": "На Хабре вышел разбор охоты на уязвимости в Cursor IDE: исследователи описывают подходы к поиску CVE в популярном AI-редакторе кода и связанные с этим риски — от выполнения произвольного кода через инструменты агента до утечек контекста. Материал представляет интерес для команд, внедряющих AI-кодинг в продакшн-процессы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Охота на CVE в Cursor IDE: полный технический разбор безопасности AI-редактора",
+          "url": "https://habr.com/ru/articles/1028196/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cursor",
+          "security"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-cannes-ai-film-festival-2026-04-27",
+      "section": "hype",
+      "headline": "В Каннах прошёл первый AI-кинофестиваль — реакция индустрии раскололась",
+      "subheadline": "Показ полностью или частично сгенерированных лент вызвал споры о будущем кинопроизводства",
+      "body": "В Каннах состоялся фестиваль фильмов, созданных с использованием AI. The Guardian отмечает, что мероприятие вызвало неоднозначную реакцию: часть индустрии увидела в нём площадку для нового жанра, другая — угрозу труду сценаристов, актёров и режиссёров. Фестиваль ставит вопрос о том, как традиционные киноинституты будут классифицировать и оценивать AI-контент.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Cannes AI film festival raises eyebrows – and questions about future",
+          "url": "https://www.theguardian.com/technology/2026/apr/26/cannes-ai-film-festival-raises-eyebrows-questions-future",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cannes",
+          "AI film"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-ai-brain-overheat-2026-04-27",
+      "section": "hype",
+      "headline": "Описан «синдром перегрева мозга от AI» у самых активных пользователей",
+      "subheadline": "Авторы перевода фиксируют рост жалоб от тех, кто работает с AI наибольшее количество часов",
+      "body": "Хабр опубликовал перевод материала о новом «синдроме перегрева мозга от AI», который, по утверждению автора, фиксируется у пользователей, проводящих с моделями максимум времени. Симптомы описываются как когнитивная усталость и сложность переключения между задачами после длительной работы с генеративными инструментами. Научный статус явления пока не подтверждён.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Перегрев мозга от ИИ: новый синдром, который бьёт по самым активным пользователям",
+          "url": "https://habr.com/ru/articles/1028258/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI users",
+          "health"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-chatgpt-medical-2026-04-27",
+      "section": "hype",
+      "headline": "ChatGPT правильно ответил во всех пяти медицинских кейсах, но проиграл людям",
+      "subheadline": "Хабр разбирает, почему точность ответов не гарантировала победу в сравнительном тесте",
+      "body": "Автор Хабра разбирает кейс, в котором ChatGPT не ошибся ни в одном из пяти медицинских сценариев, но всё равно проиграл по итоговой оценке. В материале указывается, что разница объяснялась критериями вне фактической точности: качество объяснений, учёт контекста пациента и форма ответа повлияли на результат сильнее, чем верность диагноза.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ChatGPT не промахнулся ни в одном из пяти медицинских кейсов. И всё равно проиграл",
+          "url": "https://habr.com/ru/articles/1028186/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ChatGPT",
+          "healthcare"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    }
+  ]
+}

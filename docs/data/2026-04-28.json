@@ -1,0 +1,672 @@
+{
+  "date": "2026-04-28",
+  "published": false,
+  "news": [
+    {
+      "id": "industry-msoai-next-phase-2026-04-28",
+      "section": "industry",
+      "headline": "Microsoft и OpenAI объявили следующую фазу партнёрства",
+      "subheadline": "OpenAI получает право на самостоятельные сделки и независимый запуск AGI, Microsoft — продлённый коммерческий доступ и долю в реструктурированной компании",
+      "body": "OpenAI опубликовала описание новой структуры отношений с Microsoft. Корпорация получает 27% долю в реорганизованной OpenAI Group PBC и эксклюзивные права на использование интеллектуальной собственности модели до 2032 года, включая модели после AGI с защитными ограничениями. Соглашение по доходам от Azure продлевается, право первого предложения по облачной инфраструктуре для Microsoft сохраняется, но OpenAI впервые получает разрешение совместно разрабатывать продукты со сторонними компаниями и независимо выпускать инфраструктуру для государственных заказчиков. Признание AGI теперь подтверждается независимой экспертной комиссией, а не самой OpenAI. Раздел исследовательской IP-лицензии Microsoft заканчивается в 2030 году или при подтверждении AGI.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "The next phase of the Microsoft OpenAI partnership",
+          "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Microsoft"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-deepmind-silver-1b-2026-04-28",
+      "section": "industry",
+      "headline": "Дэвид Сильвер из DeepMind привлёк $1,1 млрд на AI, обучающийся без человеческих данных",
+      "subheadline": "Соавтор AlphaGo собрал крупнейший раунд для лаборатории, делающей ставку на reinforcement learning без размеченных данных",
+      "body": "Дэвид Сильвер, ведущий исследователь reinforcement learning в Google DeepMind и соавтор AlphaGo и AlphaZero, поднял $1,1 млрд на новый стартап. Лаборатория ставит на «эру опыта»: модели должны обучаться через взаимодействие со средой, а не на размеченных данных интернета. Сильвер утверждает, что предел масштабирования через предобучение на текстах достигнут, и следующий скачок возможностей придёт от агентов, генерирующих собственные данные через действия. Раунд закрыт без раскрытия имён инвесторов и оценки.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "DeepMind's David Silver just raised $1.1B to build an AI that learns without human data",
+          "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "David Silver"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-china-blocks-meta-manus-2026-04-28",
+      "section": "industry",
+      "headline": "Китай заблокировал сделку Meta по покупке AI-стартапа Manus за $2 млрд",
+      "subheadline": "Регуляторы остановили поглощение разработчика автономных AI-агентов из Уханя, ссылаясь на национальные интересы",
+      "body": "Китайские власти отказали Meta в одобрении приобретения стартапа Manus, оценённого в $2 млрд. Manus известен платформой автономных агентов, которые планируют и выполняют задачи без постоянного участия человека. Решение принято на фоне ужесточающейся политики Пекина по контролю над утечками AI-технологий и зарубежными инвестициями в стратегические сектора — ранее сообщалось, что Китай готовится запретить технологическим компаниям брать средства США без согласия властей.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "China blocks Meta's $2 billion acquisition of AI startup Manus",
+          "url": "https://the-decoder.com/china-blocks-metas-2-billion-acquisition-of-ai-startup-manus/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Manus",
+          "China"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-google-employees-pentagon-2026-04-28",
+      "section": "industry",
+      "headline": "Сотрудники Google потребовали от Пичаи отказаться от секретных военных контрактов",
+      "subheadline": "Открытое письмо подписали тысячи работников после новостей о возможном использовании Gemini в оборонных проектах",
+      "body": "Сотрудники Google направили генеральному директору Сундару Пичаи коллективное письмо с требованием не заключать контракты на использование AI-систем компании в засекреченных военных операциях. Подписанты ссылаются на старые принципы AI Google, отвергавшие применение технологий для оружия и слежки, и предупреждают, что развёртывание Gemini в Пентагоне противоречит этическим обязательствам компании перед сотрудниками и обществом.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google employees ask Sundar Pichai to say no to classified military AI use",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/919326/google-ai-pentagon-classified-letter",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Pentagon"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-ms-junior-devs-2026-04-28",
+      "section": "industry",
+      "headline": "Microsoft предупредила: AI выкашивает стартовый уровень разработчиков",
+      "subheadline": "Марк Руссинович и Скотт Хансельман заявили, что компании перестают нанимать джуниоров — и через 5 лет некому будет занимать сеньорские позиции",
+      "body": "На внутренней конференции Microsoft технические директора Марк Руссинович и Скотт Хансельман предупредили, что массовое внедрение AI-кодогенераторов уничтожает традиционный путь карьерного роста разработчиков. Компании сокращают найм junior-инженеров, полагаясь на Copilot и Claude Code, в результате через 5–7 лет образуется кадровая дыра — некому будет переходить на senior-позиции. Руссинович назвал это «съеданием семенного фонда индустрии» и призвал работодателей рассматривать наём джуниоров как стратегическую инвестицию, а не операционный расход.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft's Russinovich and Hanselman Warn AI Is Hollowing Out the Junior Developer Pipeline",
+          "url": "https://www.infoq.com/news/2026/04/junior-developer-pipeline-crisis/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-musk-altman-court-2026-04-28",
+      "section": "industry",
+      "headline": "Продолжение: Маск и Альтман встретятся в суде из-за будущего OpenAI",
+      "subheadline": null,
+      "body": "MIT Technology Review сообщает, что иск Илона Маска против OpenAI о реструктуризации в коммерческую организацию переходит в фазу слушаний. Маск утверждает, что трансформация противоречит изначальному уставу нонпрофита, OpenAI настаивает на необходимости капитала для конкуренции с xAI и Google.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Elon Musk and Sam Altman are going to court over OpenAI's future",
+          "url": "https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Маск против Альтмана: конфликт OpenAI и xAI выходит в открытую фазу",
+      "tags": {
+        "entities": [
+          "Elon Musk",
+          "Sam Altman",
+          "OpenAI"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-palantir-khan-2026-04-28",
+      "section": "industry",
+      "headline": "Продолжение: Мэр Лондона может заблокировать контракт Скотленд-Ярда с Palantir",
+      "subheadline": null,
+      "body": "Садик Хан рассматривает юридические возможности остановить подписание Скотленд-Ярдом контракта на AI-аналитику Palantir, ссылаясь на отсутствие общественной консультации и риски расового профилирования.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Sadiq Khan may try to stop Scotland Yard signing Palantir contract",
+          "url": "https://www.theguardian.com/politics/2026/apr/27/sadiq-khan-may-try-to-stop-scotland-yard-signing-palantir-contract",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Полиция Лондона обсуждает закупку AI-системы Palantir для уголовных расследований",
+      "tags": {
+        "entities": [
+          "Palantir",
+          "Scotland Yard",
+          "Sadiq Khan"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-openai-fedramp-2026-04-28",
+      "section": "platforms",
+      "headline": "OpenAI получила сертификацию FedRAMP Moderate",
+      "subheadline": "ChatGPT Enterprise и API теперь доступны федеральным агентствам США для работы с чувствительными неклассифицированными данными",
+      "body": "OpenAI объявила о получении авторизации FedRAMP Moderate — стандарта безопасности для облачных сервисов, обрабатывающих данные правительства США среднего уровня чувствительности. Сертификация позволяет федеральным агентствам и подрядчикам использовать ChatGPT Enterprise, ChatGPT Edu и OpenAI API без отдельного процесса оценки безопасности. До этого государственные заказчики могли использовать только специальную версию OpenAI for Government. Авторизация открывает рынок десятков федеральных ведомств, ранее закрытый для коммерческих развёртываний.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI available at FedRAMP Moderate",
+          "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-deepmind-korea-2026-04-28",
+      "section": "platforms",
+      "headline": "Google DeepMind заключил партнёрство с Республикой Корея",
+      "subheadline": "Совместные программы по исследованиям, госсервисам и подготовке кадров с правительственным AI-офисом",
+      "body": "Google DeepMind подписал соглашение о сотрудничестве с правительством Южной Кореи. Стороны договорились о совместных исследовательских проектах в области биомедицины и климата, развёртывании Gemini в государственных сервисах для граждан и совместной программе подготовки специалистов. Корея становится одним из первых правительственных партнёров DeepMind за пределами Великобритании. Конкретные финансовые параметры не раскрываются.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Announcing our partnership with the Republic of Korea",
+          "url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "South Korea"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-canonical-ubuntu-ai-2026-04-28",
+      "section": "platforms",
+      "headline": "Canonical представила план интеграции AI в Ubuntu Linux",
+      "subheadline": "Дистрибутив получит локальные модели, ассистента в терминале и инструменты для запуска LLM на устройстве",
+      "body": "Canonical опубликовала roadmap по добавлению AI-возможностей в Ubuntu. Запланированы: предустановленные локальные модели через Ollama-подобный интерфейс, AI-ассистент в Bash для генерации команд и объяснения вывода, упрощённый запуск приватных LLM на оборудовании пользователя без отправки данных в облако. Canonical делает ставку на приватность и контроль — в противовес встроенным AI-функциям Windows и macOS.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Canonical lays out a plan for AI in Ubuntu Linux",
+          "url": "https://www.theverge.com/tech/919411/canonical-ubuntu-linux-ai-features",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Canonical",
+          "Ubuntu"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-copilot-usage-pricing-2026-04-28",
+      "section": "platforms",
+      "headline": "GitHub Copilot переходит на оплату по использованию с 1 июня",
+      "subheadline": "Фиксированная подписка $10/мес заменяется тарифом по токенам после взрывного роста нагрузки",
+      "body": "GitHub объявил о смене ценовой модели Copilot: с 1 июня 2026 года вместо фиксированной подписки в $10/мес индивидуальные пользователи будут платить по фактическому потреблению — за токены и вызовы агента. Существующие подписки сохранят базовый лимит, превышение тарифицируется отдельно. Переход вызван взрывным ростом затрат на инференс после внедрения Copilot Agent: ранее GitHub приостанавливал регистрацию в Copilot Pro из-за нагрузки.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "GitHub Copilot shifts to usage-based pricing June 1 - why that's no surprise",
+          "url": "https://www.zdnet.com/article/github-copilot-shifts-to-usage-based-pricing/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "GitHub",
+          "Copilot"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-midjourney-highres-2026-04-28",
+      "section": "platforms",
+      "headline": "Midjourney запустила оценку изображений в высоком разрешении",
+      "subheadline": null,
+      "body": "Midjourney добавила систему рейтинга, в которой пользователи оценивают изображения в полном разрешении вместо превью. Компания использует данные для тонкой настройки моделей под детализированные генерации.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "High-res rating",
+          "url": "https://updates.midjourney.com/high-res-rating/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Midjourney"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-google-youtube-chatbot-2026-04-28",
+      "section": "platforms",
+      "headline": "Google тестирует AI-чат-поиск внутри YouTube",
+      "subheadline": null,
+      "body": "Google запустил эксперимент с AI-ассистентом «Ask YouTube» — пользователи могут задавать вопросы о видео и получать ответы со ссылками на конкретные таймкоды. Функция доступна ограниченной группе подписчиков Premium в США.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google is testing AI chatbot search for YouTube",
+          "url": "https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "YouTube"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-google-poisoning-agents-2026-04-28",
+      "section": "platforms",
+      "headline": "Google: вредоносные веб-страницы массово отравляют AI-агентов",
+      "subheadline": null,
+      "body": "Команда безопасности Google зафиксировала рост атак, в которых злоумышленники прячут на страницах инструкции, перехватывающие управление AI-агентами при веб-сёрфинге. Атаки направлены на агентов с правами на покупки и доступ к почте.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google warns malicious web pages are poisoning AI agents",
+          "url": "https://www.artificialintelligence-news.com/news/google-warns-malicious-web-pages-poisoning-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-meta-sapiens2-2026-04-28",
+      "section": "models",
+      "headline": "Meta выпустила Sapiens2 — мультизадачную модель для анализа человеческой фигуры",
+      "subheadline": "Открытая модель решает позирование, сегментацию, нормали, pointmap и albedo в высоком разрешении",
+      "body": "Meta AI опубликовала Sapiens2 — модель, обученную на 1+ миллиарде изображений людей и работающую с разрешением до 4K. Архитектура поддерживает пять задач в одной сети: оценку позы, семантическую сегментацию, предсказание нормалей поверхности, pointmap и albedo (отделение цвета от освещения). Модель распространяется с открытыми весами и предназначена для VFX-индустрии, AR/VR и роботизированного восприятия. По заявленным метрикам Sapiens2 превосходит специализированные модели на каждой из задач.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta AI Releases Sapiens2: A High-Resolution Human-Centric Vision Model",
+          "url": "https://www.marktechpost.com/2026/04/27/meta-ai-releases-sapiens2-a-high-resolution-human-centric-vision-model-for-pose-segmentation-normals-pointmap-and-albedo/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-moss-audio-2026-04-28",
+      "section": "models",
+      "headline": "OpenMOSS выпустила MOSS-Audio — открытую foundation-модель для звука",
+      "subheadline": "Единая модель работает с речью, музыкой, звуковыми эффектами и temporal-reasoning по аудио",
+      "body": "Лаборатория OpenMOSS опубликовала MOSS-Audio — open-source foundation-модель, обрабатывающую все классы аудио в одной архитектуре: речь, музыку, окружающие звуки и логические рассуждения о временной структуре аудиозаписи. Модель умеет описывать сцены, отвечать на вопросы о происходящем в записи, генерировать речь и музыку. Веса и код опубликованы на Hugging Face. По бенчмаркам аудиоанализа MOSS-Audio находится на уровне закрытых моделей при значительно меньшем размере.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenMOSS Releases MOSS-Audio: An Open-Source Foundation Model for Speech, Sound, Music, and Time-Aware Audio Reasoning",
+          "url": "https://www.marktechpost.com/2026/04/27/openmoss-releases-moss-audio-an-open-source-foundation-model-for-speech-sound-music-and-time-aware-audio-reasoning/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenMOSS"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-talkie-1930-2026-04-28",
+      "section": "models",
+      "headline": "Talkie-1930: 13B-модель, обученная только на текстах до 1931 года",
+      "subheadline": null,
+      "body": "Исследовательская группа выложила открытую LLM на 13 млрд параметров, обученную исключительно на корпусе английских текстов, опубликованных до 1931 года. Цель — изолировать историческое мышление от современных смещений и изучить, что модель «знает» о мире без современных данных.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meet Talkie-1930: A 13B Open-Weight LLM Trained on Pre-1931 English Text",
+          "url": "https://www.marktechpost.com/2026/04/27/meet-talkie-1930-a-13b-open-weight-llm-trained-on-pre-1931-english-text-for-historical-reasoning-and-generalization-research/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-nvidia-raw2insights-2026-04-28",
+      "section": "models",
+      "headline": "NVIDIA выпустила Raw2Insights-US для адаптивной ультразвуковой визуализации",
+      "subheadline": null,
+      "body": "NVIDIA опубликовала на Hugging Face модель Raw2Insights-US — physics-informed AI, преобразующий сырые сигналы ультразвукового сканера в улучшенные изображения. Модель адаптируется к настройкам датчика без переобучения и предназначена для встраивания в портативные сканеры.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Adaptive Ultrasound Imaging with Physics-Informed NV-Raw2Insights-US AI",
+          "url": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-openai-phone-chips-2026-04-28",
+      "section": "hype",
+      "headline": "OpenAI разрабатывает собственный смартфон с AI-агентами вместо приложений",
+      "subheadline": "По данным источников, чипы делают MediaTek и Qualcomm, интерфейс заменит традиционные иконки агентами",
+      "body": "Сразу несколько изданий сообщили о разработке OpenAI собственного смартфона. The Decoder со ссылкой на источники в цепочке поставок утверждает, что OpenAI ведёт работу с MediaTek и Qualcomm над специализированными чипами для AI-инференса на устройстве. TechCrunch добавляет, что архитектура устройства строится вокруг агентов: вместо привычных приложений пользователь общается с AI-агентами, которые выполняют задачи в системе. Сроки выхода и название устройства не подтверждены, OpenAI комментариев не давала.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI reportedly developing its own smartphone chips with MediaTek and Qualcomm",
+          "url": "https://the-decoder.com/openai-reportedly-developing-its-own-smartphone-chips-with-mediatek-and-qualcomm/",
+          "type": "rumor"
+        },
+        {
+          "title": "OpenAI could be making a phone with AI agents replacing apps",
+          "url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "MediaTek",
+          "Qualcomm"
+        ],
+        "sentiment": "rumor",
+        "event": "leak"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-canva-palestine-2026-04-28",
+      "section": "hype",
+      "headline": "Canva извинилась за AI-инструмент, заменявший слово «Palestine» в дизайнах",
+      "subheadline": "Magic Layers удалял или подменял палестинский флаг и название страны в пользовательских макетах",
+      "body": "Canva публично извинилась после того, как пользователи обнаружили, что AI-инструмент Magic Layers систематически удалял или заменял слово «Palestine» и палестинский флаг в загруженных дизайнах. Компания заявила, что поведение вызвано ошибкой в фильтрах модерации, и пообещала отключить соответствующие правила. Скандал разгорелся в соцсетях после того, как несколько графических дизайнеров опубликовали пары «до/после».",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Canva apologizes after its AI tool replaces 'Palestine' in designs",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Canva"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-taylor-swift-trademark-2026-04-28",
+      "section": "hype",
+      "headline": "Тейлор Свифт зарегистрировала торговые марки на голос и образ",
+      "subheadline": null,
+      "body": "Тейлор Свифт подала заявки на торговые марки, охватывающие её голос и визуальный образ, чтобы юридически блокировать AI-дипфейки. Заявки распространяются на музыкальные, мерчандайзинговые и развлекательные категории.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Taylor Swift files trademarks for voice and image amid concern over AI misuse",
+          "url": "https://www.theguardian.com/music/2026/apr/27/taylor-swift-trademarks-voice-image-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Taylor Swift"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-japan-baggage-robots-2026-04-28",
+      "section": "hype",
+      "headline": "Японский аэропорт начал тесты гуманоидных роботов-грузчиков",
+      "subheadline": null,
+      "body": "В аэропорту Японии запустили эксперимент: гуманоидные роботы загружают и выгружают багаж пассажиров. Цель — компенсировать дефицит наземного персонала на фоне старения населения и роста авиапотока.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Humanoid robots to become baggage handlers in Japan airport experiment",
+          "url": "https://www.theguardian.com/world/2026/apr/28/humanoid-robots-baggage-handlers-japan-airports",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Japan"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-third-websites-ai-2026-04-28",
+      "section": "hype",
+      "headline": "Треть новых сайтов в интернете создаётся AI",
+      "subheadline": null,
+      "body": "Исследование обнаружило, что около 33% всех сайтов, зарегистрированных за последние месяцы, содержат преимущественно сгенерированный AI контент. Большинство — SEO-фермы и партнёрские страницы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Study Finds A Third of New Websites are AI-Generated",
+          "url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-deepmind-llm-conscious-2026-04-28",
+      "section": "hype",
+      "headline": "Google DeepMind: LLM никогда не станут сознательными",
+      "subheadline": null,
+      "body": "В новой работе исследователи DeepMind утверждают, что архитектура трансформеров принципиально неспособна к сознанию: у моделей отсутствует непрерывное самовосприятие и интегрированный опыт. Авторы предлагают сосредоточиться на безопасности и полезности, а не на «оживлении» моделей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google DeepMind Paper Argues LLMs Will Never Be Conscious",
+          "url": "https://www.404media.co/google-deepmind-paper-argues-llms-will-never-be-conscious/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-asu-ai-slop-lectures-2026-04-28",
+      "section": "hype",
+      "headline": "Профессоры ASU обнаружили, что их лекции переработаны в AI-курс без согласия",
+      "subheadline": null,
+      "body": "Преподаватели Аризонского университета обвинили программу Atomic AI в том, что она автоматически нарезает их лекции и превращает в синтетические учебные модули с AI-голосами и фейковыми аватарами, размывая авторство и искажая содержание.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "University Professors Disturbed to Find Their Lectures Chopped Up and Turned Into AI Slop",
+          "url": "https://www.404media.co/asu-atomic-ai-modules-arizona-state-university/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Arizona State University"
+        ],
+        "sentiment": "negative",
+        "event": "update"
+      },
+      "importance": 5
+    }
+  ]
+}

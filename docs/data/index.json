@@ -79,6 +79,36 @@
       "date": "2026-04-23",
       "published": false,
       "count": 27
+    },
+    {
+      "date": "2026-04-24",
+      "published": false,
+      "count": 21
+    },
+    {
+      "date": "2026-04-25",
+      "published": false,
+      "count": 18
+    },
+    {
+      "date": "2026-04-26",
+      "published": false,
+      "count": 6
+    },
+    {
+      "date": "2026-04-27",
+      "published": false,
+      "count": 11
+    },
+    {
+      "date": "2026-04-28",
+      "published": false,
+      "count": 25
+    },
+    {
+      "date": "2026-04-29",
+      "published": false,
+      "count": 21
     }
   ]
 }

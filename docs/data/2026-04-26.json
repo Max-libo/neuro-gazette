@@ -1,0 +1,165 @@
+{
+  "date": "2026-04-26",
+  "published": false,
+  "news": [
+    {
+      "id": "industry-fed-coders-2026-04-26",
+      "section": "industry",
+      "headline": "ФРС: рост занятости программистов в США сократился почти вдвое после запуска ChatGPT",
+      "subheadline": "Исследование Федерального резервного банка фиксирует структурный сдвиг на рынке труда разработчиков",
+      "body": "Экономисты Федеральной резервной системы США сравнили динамику занятости программистов до и после ноября 2022 года и обнаружили, что годовой темп роста числа рабочих мест в профессии упал почти вдвое. Авторы связывают замедление с распространением генеративных ассистентов кода и отмечают, что эффект концентрируется в junior-сегменте: компании сокращают наём начинающих разработчиков, тогда как спрос на senior-специалистов остаётся устойчивым. Параллельно растёт доля задач, выполняемых меньшим числом инженеров с помощью AI-инструментов.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "US programmer job growth nearly halved since ChatGPT launched, Fed study finds",
+          "url": "https://the-decoder.com/us-programmer-job-growth-nearly-halved-since-chatgpt-launched-fed-study-finds/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Federal Reserve",
+          "ChatGPT"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-uae-agents-2026-04-26",
+      "section": "industry",
+      "headline": "ОАЭ хотят перевести половину работы правительства на автономных AI-агентов за два года",
+      "subheadline": "Эмираты делают ставку на агентную автоматизацию госуслуг",
+      "body": "Власти Объединённых Арабских Эмиратов поставили цель: к 2028 году не менее 50% операций госаппарата должны выполняться автономными AI-агентами. План охватывает обработку обращений граждан, выдачу разрешений и внутренние бэк-офисные процессы. Инициатива дополняет ранее анонсированную стратегию страны по AI и предполагает централизованную закупку моделей и оркестраторов агентов через государственный технологический фонд.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The UAE wants half its government run by autonomous AI agents within two years",
+          "url": "https://the-decoder.com/the-uae-wants-half-its-government-run-by-autonomous-ai-agents-within-two-years/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "UAE"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-met-palantir-2026-04-26",
+      "section": "industry",
+      "headline": "Полиция Лондона расследует сотни своих сотрудников после использования AI-инструмента Palantir",
+      "subheadline": "Внутренняя проверка вскрыла нарушения при работе с системой анализа данных",
+      "body": "Метрополитен-полиция Лондона начала дисциплинарные расследования в отношении нескольких сотен офицеров, чьи запросы к AI-системе Palantir были признаны неправомерными. Проверка стала результатом аудита логов: система анализирует связи между лицами, делами и адресами, и часть обращений не имела законного оперативного основания. Скандал разворачивается на фоне продолжающихся переговоров Met о расширении контракта с Palantir для уголовных расследований.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Met investigates hundreds of officers after using Palantir AI tool",
+          "url": "https://www.theguardian.com/uk-news/2026/apr/25/met-police-investigates-hundreds-officers-palantir-ai-tool",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Metropolitan Police",
+          "Palantir"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-altman-tumblerridge-2026-04-26",
+      "section": "industry",
+      "headline": "Сэм Альтман извинился перед жителями Tumbler Ridge",
+      "subheadline": null,
+      "body": "Глава OpenAI принёс извинения общине канадского городка Tumbler Ridge, ставшей объектом конфликта вокруг планов по дата-центру и потреблению воды и энергии. Альтман признал, что компания недостаточно консультировалась с местными жителями.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI CEO apologizes to Tumbler Ridge community",
+          "url": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-anthropic-negotiation-2026-04-26",
+      "section": "models",
+      "headline": "Anthropic: более сильные модели обыгрывают слабые в переговорах, а проигравшая сторона этого не замечает",
+      "subheadline": "Исследование показало асимметрию переговорных способностей между AI-моделями разных поколений",
+      "body": "Исследователи Anthropic поставили AI-модели разной мощности друг против друга в задачах переговоров и торга. В большинстве сценариев более сильная модель добивалась лучшего распределения ресурсов, при этом более слабая модель в самооценке считала результат справедливым. Авторы предупреждают, что аналогичная динамика возникнет в реальных мультиагентных системах, где менее способный агент будет систематически уступать в сделках, не сигнализируя об ущербе пользователю.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic says stronger AI models cut better deals, and the losers don't even notice",
+          "url": "https://the-decoder.com/anthropic-says-stronger-ai-models-cut-better-deals-and-the-losers-dont-even-notice/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-iqiyi-ai-films-2026-04-26",
+      "section": "hype",
+      "headline": "iQiyi планирует переводить значительную часть новых фильмов и сериалов на AI-производство",
+      "subheadline": "Крупнейший китайский стриминг переводит контентную линейку на генеративные пайплайны",
+      "body": "Стриминговая платформа iQiyi заявила о намерении использовать AI-инструменты для производства существенной доли нового оригинального контента. Речь идёт не только о вспомогательных задачах вроде дубляжа и пост-продакшна, но и о генерации сцен и сокращении численности съёмочных групп. Решение мотивировано экономикой: китайский видеорынок переживает спад выручки от подписок, и менеджмент рассчитывает срезать бюджеты производства за счёт нейросетей.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Крупнейший китайский стриминг-сервис хочет перевести большую часть новых фильмов и сериалов на ИИ",
+          "url": "https://vc.ru/ai/2883987-kitayskiy-striming-iqiyi-primenyaet-ii-dlya-sozdaniya-filmov?from=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "iQiyi"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    }
+  ]
+}

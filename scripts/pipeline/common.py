@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 import queue
 import re
 import subprocess
@@ -28,8 +29,14 @@ SOURCES_FILE = REPO_ROOT / "sources.yaml"
 # ── Временное окно ────────────────────────────────────────────────────────────
 MSK         = timezone(timedelta(hours=3))
 NOW         = datetime.now(MSK)
-_today_0700 = NOW.replace(hour=7, minute=0, second=0, microsecond=0)
-_window_end = _today_0700 if NOW >= _today_0700 else _today_0700 - timedelta(days=1)
+# NEUROGAZETTE_DATE=YYYY-MM-DD — догон пропущенных выпусков из кэша.
+_override_date = os.environ.get("NEUROGAZETTE_DATE", "").strip()
+if _override_date:
+    _od = datetime.strptime(_override_date, "%Y-%m-%d").replace(tzinfo=MSK)
+    _window_end = _od.replace(hour=7, minute=0, second=0, microsecond=0)
+else:
+    _today_0700 = NOW.replace(hour=7, minute=0, second=0, microsecond=0)
+    _window_end = _today_0700 if NOW >= _today_0700 else _today_0700 - timedelta(days=1)
 CUTOFF_24H      = (_window_end - timedelta(hours=24)).astimezone(timezone.utc)
 TODAY           = _window_end.date()
 TODAY_STR       = TODAY.isoformat()
