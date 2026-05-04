@@ -94,10 +94,39 @@ def fetch_rss(source: dict) -> list[dict]:
     return result
 
 
+# ── Scrape bookmark (отслеживание последней известной статьи) ─────────────────
+
+SCRAPE_STATE_FILE = DATA_DIR / "scrape_state.json"
+SCRAPE_MAX_DEFAULT = 10  # максимум статей за один скрейп (защита от зависания)
+
+
+def load_scrape_state() -> dict:
+    if SCRAPE_STATE_FILE.exists():
+        try:
+            return json.loads(SCRAPE_STATE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def save_scrape_state(state: dict) -> None:
+    try:
+        SCRAPE_STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as e:
+        log.warning("Не удалось сохранить scrape_state.json: %s", e)
+
+
+def _norm_url(url: str) -> str:
+    return url.split("?")[0].rstrip("/")
+
+
 # ── Scrape ────────────────────────────────────────────────────────────────────
 
 def scrape_page(source: dict) -> list[dict]:
     url, name = source["url"], source["name"]
+    last_url  = _norm_url(source.get("_last_url", ""))
+    max_items = source.get("max_items", SCRAPE_MAX_DEFAULT)
+
     try:
         resp = _http_get(url)
     except Exception as e:
@@ -107,6 +136,7 @@ def scrape_page(source: dict) -> list[dict]:
     soup = BeautifulSoup(resp.text, "html.parser")
     results: list[dict] = []
     seen_urls: set[str] = set()
+    hit_bookmark = False
 
     # 1. JSON-LD (самый точный)
     for script in soup.find_all("script", type="application/ld+json"):
@@ -128,6 +158,9 @@ def scrape_page(source: dict) -> list[dict]:
                     link = urljoin(url, link)
                 if not title or not link or link in seen_urls or is_vague_url(link):
                     continue
+                if last_url and _norm_url(link) == last_url:
+                    hit_bookmark = True
+                    break
                 pub_dt = parse_date(item.get("datePublished") or item.get("dateModified") or "")
                 if not pub_dt:
                     pub_dt = extract_date_from_url(link)
@@ -142,14 +175,20 @@ def scrape_page(source: dict) -> list[dict]:
                     "summary":   (item.get("description") or "")[:500],
                     "priority":  source.get("priority", 2),
                 })
+                if len(results) >= max_items:
+                    break
+            if hit_bookmark or len(results) >= max_items:
+                break
         except Exception:
             pass
 
-    if results:
-        log.info("Scrape %s (JSON-LD): %d статей", name, len(results))
+    if results or hit_bookmark:
+        log.info("Scrape %s (JSON-LD): %d статей%s", name, len(results),
+                 " [bookmark]" if hit_bookmark else "")
         return results
 
     # 2. Fallback: h1/h2/h3
+    hit_bookmark = False
     for heading in soup.find_all(["h1", "h2", "h3"]):
         a = heading.find("a", href=True)
         if not a:
@@ -167,6 +206,11 @@ def scrape_page(source: dict) -> list[dict]:
             continue
         if is_vague_url(link):
             continue
+
+        if last_url and _norm_url(link) == last_url:
+            hit_bookmark = True
+            break
+
         seen_urls.add(link)
 
         pub_dt = None
@@ -194,16 +238,24 @@ def scrape_page(source: dict) -> list[dict]:
             "summary":   "",
             "priority":  source.get("priority", 2),
         })
+        if len(results) >= max_items:
+            break
 
-    log.info("Scrape %s (HTML): %d статей", name, len(results))
+    log.info("Scrape %s (HTML): %d статей%s", name, len(results),
+             " [bookmark]" if hit_bookmark else "")
     return results
 
 
 # ── Сбор и дедупликация ───────────────────────────────────────────────────────
 
-def collect_all(sources: list[dict]) -> list[dict]:
+def collect_all(sources: list[dict], state: dict) -> list[dict]:
     rss_sources    = [s for s in sources if s.get("type") == "rss"]
     scrape_sources = [s for s in sources if s.get("type") == "scrape"]
+
+    # Инжектируем bookmark в каждый scrape-источник
+    for s in scrape_sources:
+        s["_last_url"] = state.get(s["name"], {}).get("last_url", "")
+
     all_items: list[dict] = []
     counts: dict[str, int] = {}
 
@@ -259,7 +311,10 @@ def main() -> None:
     prev_urls = get_prev_urls(load_recent_issues())
     log.info("Предыдущие выпуски: %d URL для исключения", len(prev_urls))
 
-    raw_items = collect_all(sources)
+    # Загружаем bookmark-состояние scrape-источников
+    scrape_state = load_scrape_state()
+
+    raw_items = collect_all(sources, scrape_state)
     raw_items = deduplicate(raw_items)
     log.info("После дедупликации: %d статей", len(raw_items))
 
@@ -273,6 +328,19 @@ def main() -> None:
 
     raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
     log.info("Этап 1 готов: %d статей → %s", len(raw_items), raw_cache)
+
+    # Обновляем bookmark: запоминаем первую (новейшую) статью каждого scrape-источника
+    scrape_sources = [s for s in sources if s.get("type") == "scrape"]
+    source_names   = {s["name"] for s in scrape_sources}
+    newest: dict[str, str] = {}
+    for item in raw_items:
+        name = item.get("source", "")
+        if name in source_names and name not in newest:
+            newest[name] = item.get("url", "")
+    for name, url in newest.items():
+        scrape_state[name] = {"last_url": url}
+    save_scrape_state(scrape_state)
+    log.info("Bookmark обновлён: %d источников", len(newest))
 
 
 if __name__ == "__main__":
