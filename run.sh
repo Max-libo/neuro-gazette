@@ -37,17 +37,31 @@ done
 
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
-# ── Алерт в личку при любом падении ───────────────────────────────────────────
+# ── Telegram-алерт в личку ────────────────────────────────────────────────────
 CURRENT_STAGE="init"
+tg_send_personal() {
+  local text="$1"
+  if [ -z "${TG_TOKEN:-}" ] || [ -z "${TG_PERSONAL_ID:-}" ]; then
+    log "TG: TG_TOKEN или TG_PERSONAL_ID не заданы — алерт не отправлен"
+    return 0
+  fi
+  local resp
+  resp=$(curl -sS --max-time 15 -X POST \
+    "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+    -d chat_id="${TG_PERSONAL_ID}" \
+    -d text="$text" 2>&1) || {
+      log "TG: curl упал ($?): $resp"
+      return 0
+    }
+  if [[ "$resp" != *'"ok":true'* ]]; then
+    log "TG: API ответил не ok: $resp"
+  fi
+}
+
 notify_failure() {
   local stage="${1:-$CURRENT_STAGE}"
   log "FAIL: стадия «$stage»"
-  if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_PERSONAL_ID:-}" ]; then
-    curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-      -d chat_id="${TG_PERSONAL_ID}" \
-      -d text="❌ Нейрогазета: пайплайн упал на стадии «${stage}». Смотри pipeline.log" \
-      > /dev/null || true
-  fi
+  tg_send_personal "❌ Нейрогазета: пайплайн упал на стадии «${stage}». Смотри pipeline.log"
 }
 trap 'notify_failure "$CURRENT_STAGE"' ERR
 
@@ -58,6 +72,21 @@ if ! command -v claude &>/dev/null; then
 fi
 
 cd "$REPO"
+
+# ── Healthcheck Claude CLI ───────────────────────────────────────────────────
+# Защита от длинной серии 403: лучше упасть сразу с понятным алертом,
+# чем 8 минут крутить три попытки ретраев на каждой стадии.
+CURRENT_STAGE="healthcheck"
+log "Healthcheck: проверяю авторизацию claude CLI…"
+HEALTH_OUT=$(timeout 30 claude --print --model claude-haiku-4-5-20251001 'ping' 2>&1) || HEALTH_RC=$?
+HEALTH_RC=${HEALTH_RC:-0}
+if [ "$HEALTH_RC" -ne 0 ] || [[ "$HEALTH_OUT" == *"403"* ]] || [[ "$HEALTH_OUT" == *"Failed to authenticate"* ]]; then
+  log "Healthcheck: claude CLI не авторизован. Ответ: ${HEALTH_OUT:0:200}"
+  tg_send_personal "🔑 Нейрогазета: Claude CLI не авторизован (403/Failed to authenticate). Зайди на сервер и обнови подписку: claude /login. До этого утренние выпуски собираться не будут."
+  trap - ERR
+  exit 0
+fi
+log "Healthcheck: OK"
 
 # ── Этап 1: Сбор RSS/scrape ───────────────────────────────────────────────────
 if $FROM_RAW || $FROM_FILTER; then
