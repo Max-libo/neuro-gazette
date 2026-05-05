@@ -1,0 +1,554 @@
+{
+  "date": "2026-05-03",
+  "published": false,
+  "news": [
+    {
+      "id": "industry-summary-2026-05-03",
+      "section": "industry",
+      "headline": "Сводный выпуск 30 апреля — 3 мая",
+      "subheadline": "Четыре дня в одном выпуске: пайплайн не работал из-за технического сбоя",
+      "body": "С 30 апреля по 3 мая ежедневные выпуски не выходили: cron-окружение запускалось без HTTPS-прокси, и Claude CLI получал 403 от Anthropic. Прокси-конфигурация перенесена в окружение cron, пайплайн восстановлен. Ключевые темы периода: Пентагон подписал контракты на развёртывание AI в засекреченных сетях с Nvidia, Microsoft, AWS, Google и OpenAI; KKR поднял свыше $10 млрд под новую компанию AI-инфраструктуры Helix; OpenAI открыла бесплатный ChatGPT для верифицированных клиницистов в США; Microsoft Agent 365 вышел в общую доступность по $15 за пользователя.",
+      "tier": "hero",
+      "sources": [],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Нейрогазета"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-pentagon-il6-il7-2026-05-03",
+      "section": "industry",
+      "headline": "Пентагон развернёт AI Nvidia, Microsoft, AWS, Google и OpenAI в засекреченных сетях",
+      "subheadline": "Контракты охватывают уровни IL6 и IL7; Anthropic в список не попала из-за ограничений на слежку и автономное оружие",
+      "body": "Минобороны США заключило соглашения с Nvidia, Microsoft, AWS, Google, OpenAI, SpaceX, Reflection AI и Oracle на развёртывание моделей в закрытых сетях уровней IL6 и IL7. Anthropic в списке отсутствует: компания отказалась снимать ограничения use policy на использование Claude для слежки и автономных систем вооружений. Параллельно по данным Bloomberg АНБ начало тестировать Claude Mythos для автоматического поиска уязвимостей в массовом ПО, включая продукты Microsoft.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Pentagon inks deals with Nvidia, Microsoft and AWS",
+          "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+          "type": "media"
+        },
+        {
+          "title": "Nvidia, Microsoft, AWS expanding classified military AI use",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Pentagon",
+          "Nvidia",
+          "Microsoft",
+          "AWS",
+          "OpenAI",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-kkr-helix-10b-2026-05-03",
+      "section": "industry",
+      "headline": "KKR поднял свыше $10 млрд под новую AI-инфраструктурную компанию Helix",
+      "subheadline": "Helix Digital Infrastructure возглавит экс-глава AWS Адам Селипски",
+      "body": "Private equity гигант KKR привлёк более $10 млрд под Helix Digital Infrastructure — новую компанию, которая будет строить и эксплуатировать дата-центры, генерацию и сети для гиперскейлеров. Главой назначен бывший CEO Amazon Web Services Адам Селипски. Это один из крупнейших разовых пулов капитала под AI-инфраструктуру со стороны PE.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "KKR Preparing New $10 Billion AI Firm Led by Ex-Amazon Web Chief",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-30/kkr-preparing-new-10-billion-ai-firm-led-by-ex-amazon-web-chief",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "KKR",
+          "Helix Digital Infrastructure",
+          "Adam Selipsky"
+        ],
+        "sentiment": "neutral",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-meta-ari-robotics-2026-05-03",
+      "section": "industry",
+      "headline": "Meta купила робототехнический стартап ARI и забрала команду в Superintelligence Labs",
+      "subheadline": "Сделка усиливает направление гуманоидных роботов и «физического AGI»",
+      "body": "Meta поглотила Assured Robot Intelligence (ARI) — разработчика моделей для гуманоидных роботов. Команда во главе с Леррелем Пинто и Сяолуном Ваном переходит в Meta Superintelligence Labs и Meta Robotics Studio. Сумма сделки не раскрыта; покупка отражает ставку Meta на робототехнику как одно из направлений после реорганизации AI-подразделения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
+          "url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Assured Robot Intelligence"
+        ],
+        "sentiment": "neutral",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-common-crawl-publishers-2026-05-03",
+      "section": "industry",
+      "headline": "CNN, NBC, USA Today и другие требуют удалить их контент из Common Crawl",
+      "subheadline": "News/Media Alliance подал формальное письмо с запретом на использование архивов для обучения AI",
+      "body": "News/Media Alliance передал Common Crawl формальное требование удалить контент издателей и явно запретить его использование для обучения моделей. К инициативе присоединились NBCUniversal, CNN, McClatchy, Vox Media, Ziff Davis, USA Today и десятки других. Common Crawl — один из основных источников веб-данных для обучения LLM.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "News organizations push back against web archive used for AI",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-30/news-organizations-push-back-against-web-archive-used-for-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Common Crawl",
+          "News/Media Alliance",
+          "CNN",
+          "NBCUniversal"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-china-court-ai-firing-2026-05-03",
+      "section": "industry",
+      "headline": "Суд в Китае запретил увольнять сотрудников ради замены ИИ",
+      "subheadline": "Прецедент по делу технического работника, чью роль автоматизировали LLM",
+      "body": "Китайский суд постановил, что работодатель не вправе уволить сотрудника на основании одной лишь экономии при замене его языковой моделью. Дело касалось технического работника, чья роль была автоматизирована LLM. Решение создаёт прецедент для трудовых споров, связанных с внедрением AI-систем.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI News May 1, 2026",
+          "url": "https://www.cryptointegrat.com/p/ai-news-may-1-2026",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "China"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-microsoft-agent-365-ga-2026-05-03",
+      "section": "platforms",
+      "headline": "Microsoft Agent 365 вышел в общую доступность по $15 за пользователя в месяц",
+      "subheadline": "Control plane для AI-агентов в корпоративной среде с интеграциями AWS Bedrock и Google Cloud",
+      "body": "Microsoft вывела Agent 365 в GA — единая панель управления AI-агентами для предприятий по цене $15/пользователь/мес. В публичном превью — синхронизация с AWS Bedrock и Google Cloud. Через Defender и Intune администраторы могут блокировать неуправляемые локальные агенты на корпоративных машинах.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft Agent 365 now generally available",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Agent 365",
+          "AWS Bedrock",
+          "Google Cloud"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-openai-codex-upgrade-2026-05-03",
+      "section": "platforms",
+      "headline": "OpenAI расширила Codex до фонового агента на macOS с 90+ интеграциями",
+      "subheadline": "Альтман назвал апдейт «ChatGPT-моментом» Codex; недельная аудитория — 3+ млн разработчиков",
+      "body": "OpenAI выпустила Codex v26.429.20946 с фоновым управлением компьютером на macOS, ускорением на 20% и более чем 90 интеграциями — включая Slack, Google Workspace и Atlassian. По заявлению Сэма Альтмана, недельная аудитория Codex превысила 3 млн разработчиков. Анонс сделан в X.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Sam Altman о Codex",
+          "url": "https://x.com/sama/status/2049946120441520624",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Codex"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-anthropic-claude-security-beta-2026-05-03",
+      "section": "platforms",
+      "headline": "Anthropic открыла Claude Security в публичной бете для Enterprise",
+      "subheadline": "Сканирование уязвимостей, валидация ложных срабатываний и предложения патчей без API-интеграции",
+      "body": "Anthropic запустила Claude Security в публичной бете для корпоративных клиентов: сервис автоматически сканирует кодовые базы на уязвимости, фильтрует ложные срабатывания и предлагает патчи. Ключевая особенность — работа без обязательной интеграции через API.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic — Claude Security beta",
+          "url": "https://x.com/claudeai/status/2049898739783897537",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Security"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-gemini-cli-v040-2026-05-03",
+      "section": "platforms",
+      "headline": "Gemini CLI v0.40.0 получил многоуровневую память и локальный роутинг в Gemma",
+      "subheadline": "Автогенерация skills и переработанный UI",
+      "body": "Google выпустила Gemini CLI v0.40.0 с многоуровневой системой памяти, автоматической генерацией skills, экспериментальным локальным роутингом части запросов в Gemma и обновлённым интерфейсом. Анонс сделан в официальном аккаунте Gemini CLI.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Gemini CLI v0.40.0",
+          "url": "https://x.com/geminicli/status/2049875287924465715",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Gemini CLI",
+          "Gemma"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-manus-cloud-computer-2026-05-03",
+      "section": "platforms",
+      "headline": "Manus запустила Cloud Computer для постоянно работающих агентов",
+      "subheadline": "24/7 боты, постоянные базы и плановые скрейперы без необходимости писать код",
+      "body": "Manus представила Cloud Computer — облачную инфраструктуру для всегда-онлайн AI-агентов. Сценарии использования: круглосуточные боты, постоянные базы данных и плановые скрейперы, настраиваемые без кода. Анонс сделан в X.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Manus AI — Cloud Computer",
+          "url": "https://x.com/manusai/status/2049870078896963962",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Manus"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-replit-agent-free-day-2026-05-03",
+      "section": "platforms",
+      "headline": "Replit на 10-летие открыл бесплатный доступ к Agent на сутки",
+      "subheadline": "Кампания «Agent on us» — 2 мая",
+      "body": "К десятилетию компании Replit 2 мая открыл всем пользователям бесплатный доступ к своему AI-агенту на сутки в рамках кампании «Agent on us». Промо-акция, без структурных изменений тарифов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Replit — Agent on us",
+          "url": "https://x.com/Replit/status/2049866538317189564",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Replit"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-openai-chatgpt-clinicians-2026-05-03",
+      "section": "models",
+      "headline": "OpenAI запустила бесплатный ChatGPT для клиницистов в США",
+      "subheadline": "Поиск с цитатами, deep research по медлитературе и поддержка CME для верифицированных пользователей",
+      "body": "OpenAI представила ChatGPT for Clinicians — бесплатный инструмент для верифицированных врачей, медсестёр-практиков, фельдшеров и фармацевтов в США. Включает поиск с цитированием источников, deep research по медицинской литературе и поддержку CME. Параллельно открыт бенчмарк HealthBench Professional.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Making ChatGPT better for clinicians",
+          "url": "https://openai.com/index/making-chatgpt-better-for-clinicians/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-nsa-anthropic-mythos-2026-05-03",
+      "section": "models",
+      "headline": "АНБ тестирует Claude Mythos для поиска уязвимостей в массовом ПО",
+      "subheadline": "По данным Bloomberg, в фокусе — продукты Microsoft",
+      "body": "Bloomberg сообщил, что Агентство нацбезопасности США начало тестировать новейшую модель Anthropic — Claude Mythos — для автоматического поиска киберуязвимостей в массовом ПО, включая продукты Microsoft. Anthropic при этом не вошла в список вендоров, развёртывающих AI в засекреченных сетях Пентагона: компания не сняла ограничения на слежку и автономное оружие.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nvidia, Microsoft, AWS expanding classified military AI use",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "NSA",
+          "Microsoft"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-qwen-scope-sae-2026-05-03",
+      "section": "models",
+      "headline": "Alibaba открыла Qwen-Scope — sparse-автоэнкодеры для интерпретации Qwen3",
+      "subheadline": "14 SAE-весов под 7 вариантов моделей Qwen3 и Qwen3.5",
+      "body": "Команда Qwen выложила открытый набор из 14 sparse-автоэнкодеров под 7 вариантов моделей Qwen3 и Qwen3.5. Инструмент позволяет управлять выходом модели через прямую манипуляцию внутренними фичами, без промпт-инжиниринга — практическая реализация интерпретируемости поверх production-моделей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Qwen AI Releases Qwen-Scope",
+          "url": "https://www.marktechpost.com/2026/05/01/qwen-ai-releases-qwen-scope-an-open-source-sparse-autoencoders-sae-suite-that-turns-llm-internal-features-into-practical-development-tools/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Alibaba",
+          "Qwen"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-apple-afm-plus-150b-2026-05-03",
+      "section": "hype",
+      "headline": "В тестовых сборках Apple всплыла модель AFM Plus на 150B параметров",
+      "subheadline": "За месяц до WWDC 2026, где ожидается крупный апгрейд Siri",
+      "body": "TestingCatalog обнаружил во внутренних тестовых приложениях Apple фундаментальную модель AFM Plus Instruct на 150 млрд параметров и её 30B-вариант. Утечка совпадает по таймингу с WWDC 2026, где ожидается крупный апгрейд Siri. Официальных подтверждений со стороны Apple нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "TestingCatalog — AFM Plus 150B",
+          "url": "https://x.com/testingcatalog/status/2049905421595353213",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple",
+          "AFM Plus",
+          "Siri"
+        ],
+        "sentiment": "rumor",
+        "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-anthropic-claude-jupiter-2026-05-03",
+      "section": "hype",
+      "headline": "Anthropic запустила red-team тест модели claude-jupiter-v1-p",
+      "subheadline": "Внутреннее кодовое имя замечено TestingCatalog",
+      "body": "TestingCatalog заметил, что Anthropic ведёт внутренний red-team тест новой модели под кодовым именем claude-jupiter-v1-p. Официальных заявлений компания не делала; принадлежность модели к семейству Claude и её позиционирование пока не раскрыты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "TestingCatalog — claude-jupiter-v1-p",
+          "url": "https://x.com/testingcatalog/status/2049896926997369194",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "rumor",
+        "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-sacks-mythos-cyber-2026-05-03",
+      "section": "hype",
+      "headline": "Дэвид Сакс назвал Anthropic Mythos первой моделью, автоматизирующей кибератаки",
+      "subheadline": "Цифровой царь Белого дома: остальные frontier-модели догонят за полгода",
+      "body": "Цифровой царь администрации Белого дома Дэвид Сакс заявил, что Mythos от Anthropic — первая AI-модель, реально автоматизирующая киберзадачи, но не «апокалиптическое оружие». По его словам, GPT-5.5-Cyber уже сократил отставание, а все frontier-модели сравняются по этим возможностям в течение полугода.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cointelegraph — David Sacks о Mythos",
+          "url": "https://x.com/cointelegraph/status/2050042608672456759",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "David Sacks",
+          "Anthropic",
+          "Mythos"
+        ],
+        "sentiment": "rumor",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-clawbank-agent-incorporation-2026-05-03",
+      "section": "hype",
+      "headline": "ClawBank показал AI-агента, который сам зарегистрировал юрлицо и открыл счёт",
+      "subheadline": "Демо вызвало дискуссию о границах KYC/AML для автономных агентов",
+      "body": "Команда ClawBank продемонстрировала автономного AI-агента, который без участия человека прошёл процедуру инкорпорации компании и получил банковские реквизиты. Демо распространилось в X и спровоцировало обсуждение того, как регуляторы будут трактовать KYC/AML, когда заявителем выступает агент.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ClawBank — autonomous incorporation demo",
+          "url": "https://x.com/ClawBankHQ/status/2050022473194758205",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ClawBank"
+        ],
+        "sentiment": "rumor",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-oobit-tether-agent-cards-2026-05-03",
+      "section": "hype",
+      "headline": "Oobit от Tether запустил Visa-совместимые «Agent Cards» для покупок ботами",
+      "subheadline": "Виртуальные карты с лимитами в USDT и без человеческого подтверждения",
+      "body": "Tether-бэкнутый Oobit представил Agent Cards — виртуальные Visa-совместимые карты, позволяющие AI-ботам совершать покупки в USDT с лимитом на транзакцию и без человеческого подтверждения. Anonsing сделан в X; продукт нацелен на сценарии автономных закупок агентами.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Oobit — Agent Cards",
+          "url": "https://x.com/oobit/status/2049852277955932541",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Oobit",
+          "Tether",
+          "Visa"
+        ],
+        "sentiment": "rumor",
+        "event": "release"
+      },
+      "importance": 5
+    }
+  ]
+}
