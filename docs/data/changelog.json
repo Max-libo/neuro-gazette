@@ -1,5 +1,5 @@
 {
-  "version": "v0.03",
-  "changelog": "Запущен пайплайн на подписке Claude вместо прямых вызовов API: четыре независимых этапа сборки — RSS/scrape, WebSearch, фильтрация (Sonnet), редактура (Opus). Ежедневный запуск по расписанию через Claude Code Remote.",
-  "_last_version_commit": "3e7235bb37db3d8056cca6113f87eb1f00f300ac"
+  "version": "v0.04",
+  "changelog": "Пайплайн теперь запускается и на macOS: healthcheck работает без утилиты timeout, сборщик совместим с Python 3.9, OG-превью использует системные шрифты, если нет DejaVu.",
+  "_last_version_commit": "2c02aa10092ed55894f5e2fef2b580cad45def3d"
 }
