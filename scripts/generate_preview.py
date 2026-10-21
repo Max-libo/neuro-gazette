@@ -18,8 +18,18 @@ PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
 
 FONT_PLAYFAIR      = str(FONTS_DIR / "PlayfairDisplay.ttf")
 FONT_PLAYFAIR_IT   = str(FONTS_DIR / "PlayfairDisplay-Italic.ttf")
-FONT_SANS          = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-FONT_SANS_BOLD     = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+def _first_existing(*paths: str) -> str:
+    """Первый существующий шрифт: DejaVu (Linux-сервер) или Arial (macOS)."""
+    return next((p for p in paths if Path(p).exists()), paths[0])
+
+FONT_SANS = _first_existing(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+)
+FONT_SANS_BOLD = _first_existing(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+)
 
 W, H = 1200, 630
 

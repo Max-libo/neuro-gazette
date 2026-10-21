@@ -7,6 +7,8 @@
 Этап 3: Один вызов Claude API — сортировка, дедупликация, JSON.
 """
 
+from __future__ import annotations
+
 import asyncio
 import json
 import os

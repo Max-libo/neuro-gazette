@@ -5,3 +5,5 @@ docs/data/*_filtered.txt
 docs/data/*_search.json
 .env
 pipeline.log
+
+.venv/
