@@ -1,0 +1,40 @@
+name: Проверка источников
+
+# Ручная проверка живости источников из sources.yaml — без Claude,
+# только HTTP, минуты подписки не тратит. Ничего не коммитит.
+#
+# Запуск с iPad: GitHub → Actions → «Проверка источников» → Run workflow.
+# Рубрики через пробел (content models …) или пусто — проверить все.
+# Результат — таблица в Summary запуска: ❌ недоступен, ⚠️ 0 статей,
+# 🟡 даты не определяются, ✅ живой, плюс первые 3 статьи каждого источника.
+
+on:
+  workflow_dispatch:
+    inputs:
+      sections:
+        description: 'Рубрики через пробел (пусто — все): models platforms industry content hype'
+        required: false
+        default: 'content'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Установить зависимости
+        run: pip install -r requirements.txt
+
+      - name: Проверить источники
+        env:
+          SECTIONS: ${{ github.event.inputs.sections }}
+        run: python3 scripts/check_sources.py $SECTIONS
