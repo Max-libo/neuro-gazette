@@ -188,9 +188,62 @@ def _make_id(headline: str, section: str) -> str:
     return f"{section}-{h}-{TODAY_STR}"
 
 
+SENTIMENTS = ("positive", "negative", "neutral")
+
+# Сколько тональностей по сущностям пришлось дозаполнить общим тоном новости (для лога)
+_entity_sentiment_filled = 0
+
+
+def _fix_entity_tags(item: dict, tags: dict) -> None:
+    """
+    tags.entities → канонические имена; tags.sentiment → positive|negative|neutral;
+    tags.entity_sentiment → {сущность: тональность} ровно по списку entities.
+
+    «rumor» — это не тональность, а достоверность: переводим в unconfirmed=true.
+    Принимает и запасной формат entities: [{"name": ..., "sentiment": ...}].
+    """
+    global _entity_sentiment_filled
+    d = entity_directory()
+
+    names: list[str] = []
+    pairs: list[tuple[str, object]] = []
+    for e in tags.get("entities") or []:
+        if isinstance(e, dict) and isinstance(e.get("name"), str):
+            names.append(e["name"])
+            pairs.append((e["name"], e.get("sentiment")))
+        elif isinstance(e, str):
+            names.append(e)
+    raw_map = tags.get("entity_sentiment")
+    if isinstance(raw_map, dict):
+        pairs.extend((k, v) for k, v in raw_map.items() if isinstance(k, str))
+    tags["entities"] = normalize_entities(names)
+
+    overall = tags.get("sentiment")
+    if overall == "rumor":
+        item["unconfirmed"] = True
+        overall = "neutral"
+    if overall not in SENTIMENTS:
+        overall = "neutral"
+    tags["sentiment"] = overall
+
+    by_entity: dict[str, str] = {}
+    for raw_name, value in pairs:
+        canon = d.canonical(raw_name)
+        if canon == "":
+            continue
+        canon = canon or " ".join(raw_name.split())
+        if value == "rumor":
+            value = "neutral"
+        if value in SENTIMENTS and canon not in by_entity:
+            by_entity[canon] = value
+
+    missing = [e for e in tags["entities"] if e not in by_entity]
+    _entity_sentiment_filled += len(missing)
+    tags["entity_sentiment"] = {e: by_entity.get(e, overall) for e in tags["entities"]}
+
+
 def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     valid_sections     = set(SECTIONS)
-    valid_sentiments   = {"positive", "negative", "neutral", "rumor"}
     valid_events       = {"release", "update", "shutdown", "investment", "regulation", "leak"}
     valid_source_types = {"official", "media", "rumor"}
 
@@ -229,7 +282,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
             "title":     r["title"],
             "url":       r["url"],
             "entities":  normalize_entities(r.get("entities")),
-            "sentiment": r["sentiment"] if r.get("sentiment") in {"positive", "negative", "neutral"} else "neutral",
+            "sentiment": r["sentiment"] if r.get("sentiment") in SENTIMENTS else "neutral",
         })
     item["related"] = fixed_related
 
@@ -240,9 +293,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     ]
 
     tags = item.get("tags") or {}
-    tags["entities"] = normalize_entities(tags.get("entities"))
-    if tags.get("sentiment") not in valid_sentiments:
-        tags["sentiment"] = "neutral"
+    _fix_entity_tags(item, tags)
     if tags.get("event") not in valid_events:
         tags["event"] = "update"
     item["tags"] = tags
@@ -272,6 +323,12 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
         log.info("Повышен tier %s→hero (нет hero): %s", top["tier"], top["headline"][:60])
         top["tier"] = "hero"
         top["importance"] = 9
+
+    global _entity_sentiment_filled
+    if _entity_sentiment_filled:
+        log.info("Тональность по сущностям: дозаполнено общим тоном новости — %d",
+                 _entity_sentiment_filled)
+        _entity_sentiment_filled = 0
 
     unknown = entity_directory().unknown
     if unknown:

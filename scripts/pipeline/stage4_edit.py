@@ -51,6 +51,17 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 - Новой сущности в справочнике нет — тогда компании, продукты, модели и люди в оригинальном написании
   (Sam Altman, не «Сэм Альтман»), страны и госорганы — по-русски (США, Пентагон, Еврокомиссия).
 
+Тональность:
+- tags.sentiment — общий тон новости: positive | negative | neutral.
+- tags.entity_sentiment — тональность ОТДЕЛЬНО для каждой сущности из tags.entities: как новость сказывается
+  именно на этом участнике. Ключи — ровно те же имена, что в tags.entities.
+  * positive — новость в его пользу: релиз, рост, сделка, выигранный суд, полученные инвестиции, похвала;
+  * negative — против него: иск или штраф против него, утечка, сбой, отток людей, запрет, критика;
+  * neutral — упомянут без последствий для него: регулятор, площадка, контрагент, источник данных.
+  Пример: «OpenAI подала в суд на xAI за кражу кода» → {"OpenAI": "neutral", "xAI": "negative"}.
+  Пример: «Anthropic купила Coefficient Bio» → {"Anthropic": "positive", "Coefficient Bio": "positive"}.
+- Слух — это не тональность. Неподтверждённая новость: "unconfirmed": true, а тональность — обычная.
+
 Рубрики:
 - models    — выпуски и обновления языковых и мультимодальных моделей
 - platforms — инструменты, IDE, API, продукты на базе AI
@@ -73,7 +84,8 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
       "duplicate_note": null,
       "tags": {
         "entities": ["OpenAI", "GPT-5.5"],
-        "sentiment": "positive|negative|neutral|rumor",
+        "sentiment": "positive|negative|neutral",
+        "entity_sentiment": {"OpenAI": "positive", "GPT-5.5": "positive"},
         "event": "release|update|shutdown|investment|regulation|leak"
       }
     }
