@@ -16,6 +16,8 @@ from urllib.parse import urlparse
 
 import yaml
 
+from entities import directory as entity_directory, normalize_entities
+
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 
@@ -226,7 +228,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
         fixed_related.append({
             "title":     r["title"],
             "url":       r["url"],
-            "entities":  r.get("entities") or [],
+            "entities":  normalize_entities(r.get("entities")),
             "sentiment": r["sentiment"] if r.get("sentiment") in {"positive", "negative", "neutral"} else "neutral",
         })
     item["related"] = fixed_related
@@ -238,7 +240,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     ]
 
     tags = item.get("tags") or {}
-    tags.setdefault("entities", [])
+    tags["entities"] = normalize_entities(tags.get("entities"))
     if tags.get("sentiment") not in valid_sentiments:
         tags["sentiment"] = "neutral"
     if tags.get("event") not in valid_events:
@@ -270,6 +272,15 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
         log.info("Повышен tier %s→hero (нет hero): %s", top["tier"], top["headline"][:60])
         top["tier"] = "hero"
         top["importance"] = 9
+
+    unknown = entity_directory().unknown
+    if unknown:
+        log.info(
+            "Сущности не из entities.yaml (%d) — проверь и добавь в справочник: %s",
+            len(unknown), ", ".join(sorted(unknown, key=str.casefold)),
+        )
+    for err in entity_directory().errors:
+        log.warning("entities.yaml: %s", err)
 
     return all_news
 

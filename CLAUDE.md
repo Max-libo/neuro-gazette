@@ -39,6 +39,12 @@ After stage 4, `generate_preview.py` builds OG-preview HTML in `docs/preview/`, 
 
 **Shared code:** `scripts/pipeline/common.py` — time window calculation, URL validation, date parsing, `validate_and_fix()`, `finalize_news()`, `run_claude()` (wraps `claude --print`), changelog versioning.
 
+**Справочник сущностей:** `entities.yaml` (корень репо) + `scripts/pipeline/entities.py`. `validate_and_fix()` приводит `tags.entities` и `related[].entities` к каноническим именам (регистр, дефисы, точки, «ё» не важны; варианты — в `aliases`), выкидывает темы из `stoplist`, неизвестные сущности пропускает как есть и пишет их списком в лог этапа 4. Этап 4 получает список канонических имён в системном промпте. Каноническое имя: компании, продукты, модели, люди — в оригинальном написании; страны и госорганы — по-русски. Поле `parent` (продукт → компания) пока используется только справочником, для статистики — следующий шаг.
+```bash
+python scripts/pipeline/entities.py --check    # проверить справочник
+python scripts/pipeline/entities.py --report   # что склеится в истории и чего нет в справочнике
+```
+
 **`run_claude()`** calls `claude --print --model <model>` via subprocess, reads stdin. Rate-limit handling: waits 60 min and retries up to 6 times.
 
 ### Stage 1: collect

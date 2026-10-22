@@ -1,0 +1,484 @@
+# Справочник сущностей Нейрогазеты.
+#
+# Используется в validate_and_fix(): каждая сущность из tags.entities и related[].entities
+# приводится к каноническому имени отсюда. Сущности, которых здесь нет, проходят как есть
+# и попадают в отчёт: python scripts/pipeline/entities.py --report
+#
+# Формат:   Каноническое имя: {type: <тип>, parent: <каноническое имя>, aliases: [вариант, вариант]}
+#   type    — company | model | product | person | gov | place | org | law | tech
+#   parent  — владелец/семейство (продукт → компания, модель → семейство → компания).
+#             Людям parent не ставим: CEO — не часть компании в статистике.
+#   aliases — варианты написания. Регистр, пробелы, дефисы, точки и «ё» учитываются
+#             автоматически: «Nvidia», «NVIDIA», «GPT Image 2», «GPT-Image-2» склеятся сами.
+#
+# Правило канонического имени:
+#   компании, продукты, модели, люди — в оригинальном написании (OpenAI, Sam Altman, Сбер);
+#   страны, регионы и госорганы с устоявшимся русским названием — по-русски
+#   (США, Китай, Белый дом, Пентагон, ЦРУ); аббревиатуры без русского аналога — как есть (NIST, FTC).
+
+entities:
+
+  # ── OpenAI ────────────────────────────────────────────────────────────────
+  OpenAI:              {type: company}
+  ChatGPT:             {type: product, parent: OpenAI}
+  Codex:               {type: product, parent: OpenAI}
+  GPT-5.2:             {type: model,   parent: OpenAI}
+  GPT-5.3-Codex:       {type: model,   parent: OpenAI}
+  GPT-5.4:             {type: model,   parent: OpenAI}
+  GPT-5.5:             {type: model,   parent: OpenAI}
+  GPT-6:               {type: model,   parent: OpenAI}
+  GPT-Image-2:         {type: model,   parent: OpenAI}
+  GPT-Rosalind:        {type: model,   parent: OpenAI}
+  DALL-E:              {type: model,   parent: OpenAI}
+
+  # ── Anthropic ─────────────────────────────────────────────────────────────
+  Anthropic:           {type: company}
+  Claude:              {type: model,   parent: Anthropic}
+  Claude Opus 4.7:     {type: model,   parent: Claude}
+  Claude Mythos:       {type: model,   parent: Claude, aliases: [Mythos]}
+  Claude Code:         {type: product, parent: Anthropic}
+  Claude Cowork:       {type: product, parent: Anthropic}
+  Claude Design:       {type: product, parent: Anthropic}
+  Claude Duet:         {type: product, parent: Anthropic}
+  Claude Security:     {type: product, parent: Anthropic}
+  Managed Agents:      {type: product, parent: Anthropic}
+  Project Glasswing:   {type: product, parent: Anthropic}
+  Coefficient Bio:     {type: company, parent: Anthropic}
+
+  # ── Google ────────────────────────────────────────────────────────────────
+  Google:              {type: company}
+  Google DeepMind:     {type: company, parent: Google, aliases: [DeepMind]}
+  Google Cloud:        {type: product, parent: Google}
+  Gemini:              {type: model,   parent: Google, aliases: [Google Gemini]}
+  Gemini 3.2 Flash:    {type: model,   parent: Gemini}
+  Gemini Omni:         {type: model,   parent: Gemini}
+  Gemini API:          {type: product, parent: Gemini}
+  Gemini CLI:          {type: product, parent: Gemini}
+  Gemini Enterprise:   {type: product, parent: Gemini}
+  Gemma:               {type: model,   parent: Google DeepMind}
+  Gemma 4:             {type: model,   parent: Gemma}
+  Veo:                 {type: model,   parent: Google DeepMind}
+  Veo 3:               {type: model,   parent: Veo}
+  Veo 3.1:             {type: model,   parent: Veo}
+  Lyria:               {type: model,   parent: Google DeepMind}
+  Genie:               {type: model,   parent: Google DeepMind}
+  AlphaProof:          {type: model,   parent: Google DeepMind}
+  SynthID:             {type: product, parent: Google DeepMind}
+  Project Mariner:     {type: product, parent: Google DeepMind}
+  AI Studio:           {type: product, parent: Google, aliases: [Google AI Studio]}
+  Antigravity:         {type: product, parent: Google}
+  NotebookLM:          {type: product, parent: Google}
+  Colab:               {type: product, parent: Google, aliases: [Google Colab]}
+  Genkit:              {type: product, parent: Google}
+  TPU:                 {type: product, parent: Google}
+  Android:             {type: product, parent: Google}
+  Chrome:              {type: product, parent: Google}
+  Gmail:               {type: product, parent: Google}
+  Google Maps:         {type: product, parent: Google}
+  Google Meet:         {type: product, parent: Google}
+  reCAPTCHA:           {type: product, parent: Google}
+  YouTube:             {type: product, parent: Google}
+
+  # ── Microsoft ─────────────────────────────────────────────────────────────
+  Microsoft:           {type: company}
+  Copilot:             {type: product, parent: Microsoft, aliases: [Microsoft Copilot]}
+  Agent 365:           {type: product, parent: Microsoft}
+  Microsoft Office:    {type: product, parent: Microsoft}
+  Excel:               {type: product, parent: Microsoft Office}
+  Word:                {type: product, parent: Microsoft Office}
+  PowerPoint:          {type: product, parent: Microsoft Office}
+  Visual Studio:       {type: product, parent: Microsoft}
+  VS Code:             {type: product, parent: Microsoft, aliases: [Visual Studio Code]}
+  GitHub:              {type: company, parent: Microsoft}
+  GitHub Copilot:      {type: product, parent: GitHub}
+  LinkedIn:            {type: product, parent: Microsoft}
+
+  # ── Meta ──────────────────────────────────────────────────────────────────
+  Meta:                {type: company}
+  Llama:               {type: model,   parent: Meta}
+  Superintelligence Labs: {type: org,  parent: Meta, aliases: [Meta Superintelligence Labs]}
+  Facebook:            {type: product, parent: Meta}
+  Instagram:           {type: product, parent: Meta}
+
+  # ── Amazon ────────────────────────────────────────────────────────────────
+  Amazon:              {type: company}
+  AWS:                 {type: company, parent: Amazon, aliases: [Amazon Web Services]}
+  Bedrock:             {type: product, parent: AWS, aliases: [Amazon Bedrock, AWS Bedrock]}
+  SageMaker:           {type: product, parent: AWS}
+  Trainium:            {type: product, parent: AWS}
+  Amazon Quick:        {type: product, parent: AWS}
+  Nova:                {type: model,   parent: Amazon, aliases: [Amazon Nova]}
+  Nova Act:            {type: product, parent: Amazon}
+
+  # ── Apple ─────────────────────────────────────────────────────────────────
+  Apple:               {type: company}
+  Apple Intelligence:  {type: product, parent: Apple}
+  Siri:                {type: product, parent: Apple}
+  iOS:                 {type: product, parent: Apple}
+
+  # ── NVIDIA и железо ───────────────────────────────────────────────────────
+  NVIDIA:              {type: company}
+  Nemotron:            {type: model,   parent: NVIDIA}
+  Cosmos:              {type: model,   parent: NVIDIA}
+  Rubin:               {type: product, parent: NVIDIA}
+  Spectrum-X:          {type: product, parent: NVIDIA}
+  NVFP4:               {type: tech,    parent: NVIDIA}
+  AMD:                 {type: company}
+  Intel:               {type: company}
+  Qualcomm:            {type: company}
+  MediaTek:            {type: company}
+  Broadcom:            {type: company}
+  Marvell:             {type: company}
+  Arm:                 {type: company}
+  ASML:                {type: company}
+  Cerebras:            {type: company}
+  Corning:             {type: company}
+  Samsung:             {type: company}
+  Dell:                {type: company}
+  CoreWeave:           {type: company}
+
+  # ── xAI / Маск ────────────────────────────────────────────────────────────
+  xAI:                 {type: company}
+  Grok:                {type: model,   parent: xAI}
+  Grok Build:          {type: product, parent: Grok}
+  SpaceX:              {type: company}
+  Tesla:               {type: company}
+
+  # ── Китай ─────────────────────────────────────────────────────────────────
+  DeepSeek:            {type: company}
+  High-Flyer Capital:  {type: company, aliases: [High-Flyer]}
+  Alibaba:             {type: company}
+  Qwen:                {type: model,   parent: Alibaba}
+  HappyHorse:          {type: model,   parent: Alibaba, aliases: [HappyHorse-1.0]}
+  Manus:               {type: company}
+  Big Fund:            {type: gov}
+  ByteDance:           {type: company}
+  Seedance:            {type: model,   parent: ByteDance}
+  Tencent:             {type: company}
+  Baidu:               {type: company}
+  PaddlePaddle:        {type: product, parent: Baidu}
+  PaddleOCR:           {type: model,   parent: Baidu}
+  Moonshot AI:         {type: company}
+  Kimi K2.6:           {type: model,   parent: Moonshot AI}
+  Xiaomi:              {type: company}
+  MiMo:                {type: model,   parent: Xiaomi}
+  MiniMax:             {type: company}
+  Zhipu AI:            {type: company, aliases: [Zhipu]}
+  StepFun:             {type: company}
+  Kuaishou:            {type: company}
+  iQiyi:               {type: company}
+  Oppo:                {type: company}
+
+  # ── Россия ────────────────────────────────────────────────────────────────
+  Сбер:                {type: company, aliases: [Sber, Сбербанк, Sberbank]}
+  Kandinsky:           {type: model,   parent: Сбер}
+  Яндекс:              {type: company, aliases: [Yandex]}
+  Хабр:                {type: org,     aliases: [Habr]}
+
+  # ── AI-лаборатории и стартапы ─────────────────────────────────────────────
+  Mistral:             {type: company, aliases: [Mistral AI]}
+  Le Chat:             {type: product, parent: Mistral}
+  Cohere:              {type: company}
+  Hugging Face:        {type: company}
+  Perplexity:          {type: company}
+  Thinking Machines Lab: {type: company, aliases: [Thinking Machines]}
+  Safe Superintelligence: {type: company, aliases: [SSI]}
+  Sakana AI:           {type: company}
+  Nous Research:       {type: company}
+  Hermes 4:            {type: model,   parent: Nous Research}
+  Zyphra:              {type: company}
+  ZAYA1:               {type: model,   parent: Zyphra}
+  Black Forest Labs:   {type: company}
+  Flux:                {type: model,   parent: Black Forest Labs}
+  Midjourney:          {type: company}
+  Runway:              {type: company}
+  Stability AI:        {type: company}
+  ElevenLabs:          {type: company}
+  Suno:                {type: company}
+  HeyGen:              {type: company}
+  Higgsfield AI:       {type: company, aliases: [Higgsfield]}
+  fal:                 {type: company, aliases: [fal.ai]}
+  Character.AI:        {type: company}
+  Scale AI:            {type: company}
+  Databricks:          {type: company}
+  Together AI:         {type: company}
+  Inception Labs:      {type: company}
+  Recursive Superintelligence: {type: company}
+  Subquadratic:        {type: company}
+  SubQ:                {type: model,   parent: Subquadratic}
+  Parasail:            {type: company}
+  Euclyd:              {type: company}
+  Sierra:              {type: company}
+  TomWikiAssist:       {type: product}
+  Arcee AI:            {type: company}
+  Aleph Alpha:         {type: company}
+  Prior Labs:          {type: company}
+  Goodfire:            {type: company}
+  Epoch AI:            {type: company}
+  Artificial Analysis: {type: company}
+  Allen Institute:     {type: org,     aliases: [Allen AI, Ai2, Allen Institute for AI]}
+  Inworld AI:          {type: company}
+  SoundHound AI:       {type: company}
+  Boston Dynamics:     {type: company}
+  Anysphere:           {type: company}
+  Cursor:              {type: product, parent: Anysphere}
+  Composer 2.5:        {type: model,   parent: Cursor}
+  Cognition:           {type: company}
+  Devin:               {type: product, parent: Cognition}
+  Windsurf:            {type: product, parent: Cognition}
+  Replit:              {type: company}
+  Lovable:             {type: company}
+  Vercel:              {type: company}
+  LangChain:           {type: company}
+  Otter.ai:            {type: company, aliases: [Otter AI, Otter]}
+  OpenClaw:            {type: product}
+  LiteLLM:             {type: product}
+  llama.cpp:           {type: product}
+  ComfyUI:             {type: product}
+
+  # ── Технологические компании и платформы ──────────────────────────────────
+  IBM:                 {type: company}
+  IBM Research:        {type: org,     parent: IBM}
+  Granite:             {type: model,   parent: IBM}
+  Salesforce:          {type: company}
+  ServiceNow:          {type: company}
+  SAP:                 {type: company}
+  Workday:             {type: company}
+  Atlassian:           {type: company}
+  Confluence:          {type: product, parent: Atlassian}
+  JetBrains:           {type: company}
+  Cloudflare:          {type: company}
+  Palantir:            {type: company}
+  Anduril:             {type: company}
+  Canonical:           {type: company}
+  Ubuntu:              {type: product, parent: Canonical}
+  Linux:               {type: product}
+  Mozilla:             {type: org}
+  Firefox:             {type: product, parent: Mozilla}
+  PostgreSQL:          {type: product}
+  Blender:             {type: product}
+  Adobe:               {type: company}
+  Canva:               {type: company}
+  Figma:               {type: company}
+  Notion:              {type: company}
+  Zoom:                {type: company}
+  Stripe:              {type: company}
+  Plaid:               {type: company}
+  Ramp:                {type: company}
+  Visa:                {type: company}
+  Uber:                {type: company}
+  Uber Eats:           {type: product, parent: Uber}
+  DoorDash:            {type: company}
+  Airbnb:              {type: company}
+  Spotify:             {type: company}
+  Netflix:             {type: company}
+  Snap:                {type: company}
+  Telegram:            {type: company}
+  Shutterstock:        {type: company}
+  Ubisoft:             {type: company}
+  Etsy:                {type: company}
+  Intuit:              {type: company}
+  TurboTax:            {type: product, parent: Intuit}
+  SK Telecom:          {type: company}
+  BT:                  {type: company}
+  Infosys:             {type: company}
+  TCS:                 {type: company}
+  Accenture:           {type: company}
+  Deloitte:            {type: company}
+  McKinsey:            {type: company}
+  PwC:                 {type: company}
+  WPP:                 {type: company}
+  Novo Nordisk:        {type: company}
+  Moderna:             {type: company}
+  Amgen:               {type: company}
+  Universal Music Group: {type: company}
+  NBCUniversal:        {type: company}
+  Wikipedia:           {type: org}
+
+  # ── Инвесторы ─────────────────────────────────────────────────────────────
+  Andreessen Horowitz: {type: company, aliases: [a16z]}
+  Y Combinator:        {type: company, aliases: [YC]}
+  General Catalyst:    {type: company}
+  Blackstone:          {type: company}
+  BlackRock:           {type: company}
+  Goldman Sachs:       {type: company}
+  JPMorgan:            {type: company, aliases: [JPMorgan Chase, JP Morgan]}
+  KKR:                 {type: company}
+  TPG:                 {type: company}
+  Bain Capital:        {type: company}
+  Brookfield:          {type: company}
+  Hellman & Friedman:  {type: company}
+  Standard Chartered:  {type: company}
+
+  # ── Медиа и наука ─────────────────────────────────────────────────────────
+  The New York Times:  {type: org,     aliases: [New York Times, NYT]}
+  The Boston Globe:    {type: org,     aliases: [Boston Globe]}
+  McClatchy:           {type: company}
+  Miami Herald:        {type: org,     parent: McClatchy}
+  Sacramento Bee:      {type: org,     parent: McClatchy}
+  Bloomberg:           {type: org}
+  CNN:                 {type: org}
+  TechCrunch:          {type: org}
+  ProPublica:          {type: org}
+  IEEE Spectrum:       {type: org}
+  Nature:              {type: org}
+  arXiv:               {type: org}
+  Xinhua:              {type: org}
+  CCTV:                {type: org}
+  News/Media Alliance: {type: org}
+  MIT:                 {type: org}
+  Stanford:            {type: org,     aliases: [Stanford University]}
+  Stanford HAI:        {type: org,     parent: Stanford}
+  Harvard:             {type: org,     aliases: [Harvard University]}
+  UC Berkeley:         {type: org}
+  Oxford University:   {type: org,     aliases: [University of Oxford]}
+  Tsinghua University: {type: org}
+  Arizona State University: {type: org}
+  НИЯУ МИФИ:           {type: org,     aliases: [МИФИ]}
+  Mayo Clinic:         {type: org}
+  NHS:                 {type: gov}
+  Frontier Model Forum: {type: org}
+  Common Crawl:        {type: org}
+  ICML:                {type: org}
+  SXSW:                {type: org}
+  Cannes:              {type: org,     aliases: [Каннский фестиваль, Cannes Film Festival]}
+
+  # ── Люди ──────────────────────────────────────────────────────────────────
+  Sam Altman:          {type: person,  aliases: [Сэм Альтман, Altman]}
+  Elon Musk:           {type: person,  aliases: [Илон Маск, Musk]}
+  Dario Amodei:        {type: person,  aliases: [Дарио Амодеи]}
+  Demis Hassabis:      {type: person,  aliases: [Демис Хассабис]}
+  Jensen Huang:        {type: person,  aliases: [Дженсен Хуанг]}
+  Mark Zuckerberg:     {type: person,  aliases: [Марк Цукерберг, Zuckerberg]}
+  Greg Brockman:       {type: person}
+  Brad Lightcap:       {type: person,  aliases: [Брэд Лайткэп]}
+  Fidji Simo:          {type: person,  aliases: [Фиджи Симо]}
+  Kevin Weil:          {type: person}
+  Jerry Tworek:        {type: person}
+  Bill Peebles:        {type: person}
+  Jack Clark:          {type: person}
+  Mira Murati:         {type: person}
+  Mustafa Suleyman:    {type: person,  aliases: [Mustafa Suleiman]}
+  Yann LeCun:          {type: person}
+  David Silver:        {type: person}
+  Andrej Karpathy:     {type: person}
+  Alexandr Wang:       {type: person}
+  Arthur Mensch:       {type: person}
+  Matei Zaharia:       {type: person}
+  Jeff Bezos:          {type: person}
+  Marc Benioff:        {type: person}
+  Bret Taylor:         {type: person}
+  Eric Schmidt:        {type: person}
+  Peter Thiel:         {type: person}
+  Peter Steinberger:   {type: person}
+  George Hotz:         {type: person}
+  Linus Torvalds:      {type: person}
+  Adam Selipsky:       {type: person}
+  Donald Trump:        {type: person,  aliases: [Trump, Трамп, Дональд Трамп]}
+  David Sacks:         {type: person}
+  Elizabeth Warren:    {type: person}
+  Linda McMahon:       {type: person,  aliases: [Линда Макмэхон]}
+  Nicolás Maduro:      {type: person,  aliases: [Николас Мадуро, Nicolas Maduro]}
+  Liz Kendall:         {type: person}
+  Nigel Farage:        {type: person}
+  Sadiq Khan:          {type: person}
+
+  # ── Госорганы ─────────────────────────────────────────────────────────────
+  Правительство США:   {type: gov,     aliases: [US Government, U.S. Government]}
+  Белый дом:           {type: gov,     aliases: [White House]}
+  Пентагон:            {type: gov,     aliases: [Pentagon, Минобороны США, Department of Defense, DoD, Department of War]}
+  Армия США:           {type: gov,     aliases: [US Army]}
+  Конгресс США:        {type: gov,     aliases: [Congress, US Congress]}
+  Сенат США:           {type: gov,     aliases: [US Senate]}
+  Минфин США:          {type: gov,     aliases: [US Treasury]}
+  Минэнерго США:       {type: gov,     aliases: [Министерство энергетики США, Department of Energy, DOE]}
+  Минюст США:          {type: gov,     aliases: [Department of Justice, DOJ]}
+  ФРС:                 {type: gov,     aliases: [Federal Reserve]}
+  ЦРУ:                 {type: gov,     aliases: [CIA]}
+  АНБ:                 {type: gov,     aliases: [NSA]}
+  NIST:                {type: gov}
+  CAISI:               {type: gov,     parent: NIST}
+  CISA:                {type: gov}
+  GSA:                 {type: gov}
+  FTC:                 {type: gov}
+  FDA:                 {type: gov}
+  NTSB:                {type: gov}
+  ARPA-E:              {type: gov}
+  Правительство Великобритании: {type: gov, aliases: [UK Government]}
+  Столичная полиция Лондона: {type: gov, aliases: [Metropolitan Police, Met Police, Scotland Yard]}
+  ЕС:                  {type: gov,     aliases: [EU, European Union, Евросоюз]}
+  Еврокомиссия:        {type: gov,     parent: ЕС, aliases: [European Commission]}
+  Минцифры:            {type: gov,     aliases: [Минцифры России]}
+  Госдума:             {type: gov}
+  Верховный суд России: {type: gov}
+  ФСБ:                 {type: gov}
+  ФСТЭК:               {type: gov}
+  Ватикан:             {type: gov,     aliases: [Vatican]}
+
+  # ── Законы ────────────────────────────────────────────────────────────────
+  AI Act:              {type: law,     parent: ЕС, aliases: [EU AI Act]}
+  SB 435:              {type: law}
+
+  # ── Страны и регионы ──────────────────────────────────────────────────────
+  США:                 {type: place,   aliases: [USA, US, United States]}
+  Китай:               {type: place,   aliases: [China]}
+  Россия:              {type: place,   aliases: [Russia]}
+  Великобритания:      {type: place,   aliases: [UK, United Kingdom, Britain]}
+  Шотландия:           {type: place,   aliases: [Scotland]}
+  Франция:             {type: place,   aliases: [France]}
+  Австрия:             {type: place,   aliases: [Austria]}
+  Украина:             {type: place,   aliases: [Ukraine]}
+  Япония:              {type: place,   aliases: [Japan]}
+  Южная Корея:         {type: place,   aliases: [South Korea, Корея]}
+  Тайвань:             {type: place,   aliases: [Taiwan]}
+  Сингапур:            {type: place,   aliases: [Singapore]}
+  Индия:               {type: place,   aliases: [India]}
+  Иран:                {type: place,   aliases: [Iran]}
+  ОАЭ:                 {type: place,   aliases: [UAE]}
+  Кения:               {type: place,   aliases: [Kenya]}
+  Австралия:           {type: place,   aliases: [Australia]}
+  Венесуэла:           {type: place,   aliases: [Venezuela]}
+  Калифорния:          {type: place,   aliases: [California]}
+  Колорадо:            {type: place,   aliases: [Colorado]}
+  Коннектикут:         {type: place,   aliases: [Connecticut]}
+  Мэн:                 {type: place,   aliases: [Maine]}
+  Мэриленд:            {type: place,   aliases: [Maryland]}
+  Флорида:             {type: place,   aliases: [Florida]}
+  Иллинойс:            {type: place,   aliases: [Illinois]}
+  Небраска:            {type: place,   aliases: [Nebraska]}
+  Пенсильвания:        {type: place,   aliases: [Pennsylvania]}
+  Луизиана:            {type: place,   aliases: [Louisiana]}
+
+  # ── Технологии и протоколы ────────────────────────────────────────────────
+  MCP:                 {type: tech,    aliases: [Model Context Protocol]}
+  RISC-V:              {type: tech}
+  Mamba:               {type: tech}
+
+# Не сущности, а темы. Из tags.entities удаляются.
+stoplist:
+  - AI agents
+  - AI film
+  - AI users
+  - ASI
+  - benchmarks
+  - Big Tech
+  - data centers
+  - finance
+  - health
+  - healthcare
+  - investment banking
+  - LLM
+  - LLM benchmark
+  - MAGA
+  - math
+  - MoE
+  - open source
+  - robotics
+  - SaaS
+  - security
+  - Silicon Valley
+  - software engineering
+  - video generation
+  - Wall Street
+  - стартапы
+  - Нейрогазета
