@@ -21,7 +21,7 @@
     "last_url": "https://pika.art/home"
   },
   "Luma AI": {
-    "last_url": "https://lumalabs.ai/news/uni-1-1-api"
+    "last_url": "https://lumalabs.ai/news/veo-3.1-vs-runway-gen-4.5"
   },
   "Cursor": {
     "last_url": "https://www.cursor.com/download"
@@ -63,7 +63,7 @@
     "last_url": "https://groq.com/blog/inside-the-lpu-deconstructing-groq-speed"
   },
   "Poe": {
-    "last_url": "https://poe.com/blog/introducing-script-bots"
+    "last_url": "https://poe.com/login"
   },
   "Phygital+": {
     "last_url": "https://phygital.plus/blog/qwen-image-guide-text-editing-multi-reference/"
@@ -73,5 +73,8 @@
   },
   "Moonshot (Kimi)": {
     "last_url": "https://chromewebstore.google.com/detail/kimi/fldmhceldgbpfpkbgopacenieobmligc"
+  },
+  "Cohere": {
+    "last_url": "https://cohere.com/blog/enterprise-ai-maturity-model"
   }
 }
