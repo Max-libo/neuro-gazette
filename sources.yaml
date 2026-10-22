@@ -54,7 +54,6 @@ sources:
     section: models
     priority: 2
 
-
   - name: "DeepSeek"
     type: scrape
     url: "https://www.deepseek.com/news"
@@ -119,49 +118,14 @@ sources:
     section: content
     priority: 1
 
-
-  - name: "Recraft"
-    type: scrape
-    url: "https://www.recraft.ai/blog"
-    section: content
-    priority: 2
-
-  - name: "Reve"
-    type: scrape
-    url: "https://blog.reve.com/"
-    section: content
-    priority: 2
-
-  - name: "Topaz Labs"
-    type: scrape
-    url: "https://www.topazlabs.com/news"
-    section: content
-    priority: 2
-
-  # Новые кандидаты (окт 2026) — живость не проверена, смотри воркфлоу
-  # «Проверка источников» в Actions и выкидывай те, что отдают 0 или мусор.
-
-  - name: "Ideogram"
-    type: scrape
-    url: "https://about.ideogram.ai/blog"
-    section: content
-    priority: 2
-
-  - name: "Leonardo.ai"
-    type: scrape
-    url: "https://leonardo.ai/news/"
-    section: content
-    priority: 2
+  # Проверено 22.10.2026 воркфлоу «Проверка источников» и убрано как мёртвое —
+  # эти сервисы покрываются поисковыми запросами рубрики content:
+  #   Recraft, Reve, Topaz Labs, Krea — 0 статей (скрейп не находит постов)
+  #   Ideogram, Adobe Firefly — 404; Leonardo.ai, Civitai — 403
 
   - name: "Google Labs"
     type: rss
     url: "https://blog.google/technology/google-labs/rss/"
-    section: content
-    priority: 2
-
-  - name: "Adobe Firefly"
-    type: scrape
-    url: "https://blog.adobe.com/en/topics/firefly"
     section: content
     priority: 2
 
@@ -231,7 +195,6 @@ sources:
     section: platforms
     priority: 1
 
-
   - name: "Replit"
     type: scrape
     url: "https://blog.replit.com"
@@ -296,13 +259,6 @@ sources:
     section: platforms
     priority: 2
 
-  - name: "Krea"
-    type: scrape
-    url: "https://www.krea.ai/blog"
-    section: content
-    priority: 2
-
-
   - name: "SYNTX AI"
     type: scrape
     url: "https://syntx.ai/updates"
@@ -315,13 +271,6 @@ sources:
     section: content
     priority: 3
 
-
-  - name: "Civitai"
-    type: scrape
-    url: "https://civitai.green/newsroom"
-    section: content
-    priority: 3
-
   # ── РОССИЙСКИЕ РАЗРАБОТКИ ─────────────────────────
 
   - name: "Яндекс"
@@ -329,7 +278,6 @@ sources:
     url: "https://yandex.ru/blog"
     section: models
     priority: 1
-
 
   # ── СМИ ───────────────────────────────────────────
 
@@ -461,7 +409,9 @@ sources:
   # Общие арт-СМИ: про ИИ там малая доля, поэтому стоит фильтр keywords —
   # в сырой список попадают только материалы, где в заголовке/анонсе есть
   # одно из слов. «слово*» — префикс, без звёздочки — целое слово.
-  # Живость не проверена — см. воркфлоу «Проверка источников».
+  # Проверено 22.10.2026. Убраны: The Art Newspaper Russia (не парсится),
+  # Artguide (недоступен с серверов GitHub в США) — российские выставки
+  # ловим поисковыми запросами на русском.
 
   - name: "Artnet News"
     type: rss
@@ -482,20 +432,6 @@ sources:
   - name: "The Art Newspaper"
     type: rss
     url: "https://www.theartnewspaper.com/rss.xml"
-    section: content
-    priority: 2
-    keywords: *ai_keywords
-
-  - name: "The Art Newspaper Russia"
-    type: scrape
-    url: "https://www.theartnewspaper.ru/"
-    section: content
-    priority: 2
-    keywords: *ai_keywords
-
-  - name: "Artguide"
-    type: scrape
-    url: "https://artguide.com/news"
     section: content
     priority: 2
     keywords: *ai_keywords
@@ -522,7 +458,9 @@ search_queries:
     # Генерация изображений: релизы и обновления
     - "Midjourney Flux Ideogram Recraft image model new version update"
     - "Nano Banana Imagen GPT-image Seedream Firefly image generation update"
+    - "Krea Leonardo Reve Ideogram Recraft Freepik AI image update"
     - "нейросеть генерация изображений обновление новая версия"
+    - "Kandinsky Шедеврум GigaChat генерация изображений обновление"
     # Бесплатное и скидки
     - "AI image generator free plan new free tier launch"
     - "AI image video generator subscription discount sale promo"
@@ -530,6 +468,7 @@ search_queries:
     # Выставки, музеи, арт-события
     - "AI art exhibition museum generative art show opens"
     - "выставка нейросети искусственный интеллект искусство музей"
+    - "нейроарт выставка Москва Санкт-Петербург открытие ИИ-искусство"
 
   hype:
     - "AI news viral controversy scandal"
