@@ -96,10 +96,12 @@ Pure static HTML/CSS/JS, no build step.
 
 `.github/workflows/deploy.yml` — on push to `main`, deploys `docs/` to REG.RU via FTP (excludes `editor/`). Required secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
 
-There is no separate daily CI workflow in this repo; the pipeline is triggered locally via `morning.sh` (run by cron at 07:00/10:00/14:00 МСК) or manually via `./run.sh`.
+`.github/workflows/daily.yml` — ежедневный сбор выпуска в GitHub Actions (не зависит от мака/VPS). Запуски в 07:07 / 10:07 / 14:07 МСК (10:07 и 14:07 — self-heal). Ставит Claude Code CLI, авторизуется через секрет `CLAUDE_CODE_OAUTH_TOKEN` (подписка, получить: `claude setup-token`), запускает `morning.sh`, затем явно вызывает `deploy.yml` (пуш от `GITHUB_TOKEN` сам деплой не триггерит). Кэш этапов 1–3 (`*_raw.json`, `*_search.json`, `*_filtered.txt`) переносится между запусками одного дня через `actions/cache`. Секреты: `CLAUDE_CODE_OAUTH_TOKEN`, `TG_TOKEN`, `TG_CHAT_ID`, `TG_PERSONAL_ID`, плюс FTP-секреты деплоя. Ручной запуск: Actions → «Ежедневный выпуск» → Run workflow.
+
+Локальный запуск (`./run.sh`, `morning.sh`) по-прежнему работает, но cron на маке нужно выключить, чтобы не было двойных выпусков.
 
 **Scheduling:**
-- `morning.sh` — идемпотентный триггер: если `docs/data/<today>.json` уже есть, выходит мгновенно. Иначе автоматически выбирает самый дальний кэш (`--from-filter` / `--from-raw`) и запускает `run.sh`. Три запуска в день (07:00 — первичный, 10:00 и 14:00 — self-heal) гарантируют выпуск даже после одиночного сбоя.
+- `morning.sh` — идемпотентный триггер: если `docs/data/<today>.json` уже есть, выходит мгновенно. Иначе автоматически выбирает самый дальний кэш (`--from-filter` / `--from-raw`) и запускает `run.sh`. Три запуска в день гарантируют выпуск даже после одиночного сбоя.
 - `run.sh` — держит `flock` на `/tmp/neurogazette.lock` (повторные запуски no-op), шлёт Telegram-алерт в личку при любом падении (через `trap ERR` + переменная `CURRENT_STAGE`).
 
 ## Environment / secrets

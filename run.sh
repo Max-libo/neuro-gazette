@@ -87,7 +87,7 @@ HEALTH_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model claude
 HEALTH_RC=${HEALTH_RC:-0}
 if [ "$HEALTH_RC" -ne 0 ] || [[ "$HEALTH_OUT" == *"403"* ]] || [[ "$HEALTH_OUT" == *"Failed to authenticate"* ]]; then
   log "Healthcheck: claude CLI не авторизован. Ответ: ${HEALTH_OUT:0:200}"
-  tg_send_personal "🔑 Нейрогазета: Claude CLI не авторизован (403/Failed to authenticate). Зайди на сервер и обнови подписку: claude /login. До этого утренние выпуски собираться не будут."
+  tg_send_personal "🔑 Нейрогазета: Claude CLI не авторизован (403/Failed to authenticate). Сделай на маке `claude setup-token` и обнови секрет CLAUDE_CODE_OAUTH_TOKEN в GitHub (Settings → Secrets → Actions). До этого утренние выпуски собираться не будут."
   trap - ERR
   exit 0
 fi

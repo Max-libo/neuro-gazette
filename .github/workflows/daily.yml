@@ -1,0 +1,137 @@
+name: Ежедневный выпуск
+
+# Собирает выпуск в облаке GitHub — без включённого макбука и без VPS.
+# Логика та же, что у cron на маке: morning.sh → run.sh → коммит → деплой.
+#
+# Три запуска в день, как раньше (07:00 / 10:00 / 14:00 МСК), но со сдвигом
+# на +7 минут: окно выпуска закрывается в 07:00 МСК, а GitHub перегружен
+# ровно в начале часа. 10:07 и 14:07 — self-heal: если выпуск уже есть,
+# morning.sh выходит мгновенно и минуты не тратятся.
+#
+# Нужные секреты (Settings → Secrets and variables → Actions):
+#   CLAUDE_CODE_OAUTH_TOKEN — токен подписки, получить: `claude setup-token`
+#   TG_TOKEN, TG_CHAT_ID, TG_PERSONAL_ID — Telegram (необязательно)
+#   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD — уже есть для deploy.yml
+
+on:
+  schedule:
+    - cron: '7 4 * * *'    # 07:07 МСК — основной запуск
+    - cron: '7 7 * * *'    # 10:07 МСК — self-heal
+    - cron: '7 11 * * *'   # 14:07 МСК — self-heal
+  workflow_dispatch:       # кнопка Run workflow во вкладке Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-issue
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    # run_claude() при rate limit ждёт по 60 мин до 6 раз — это больше
+    # лимита GitHub. Обрываем через 3 часа: следующий self-heal продолжит
+    # с кэша этапов 1–3.
+    timeout-minutes: 180
+    env:
+      TZ: Europe/Moscow
+    outputs:
+      published: ${{ steps.result.outputs.published }}
+
+    steps:
+      - name: Забрать репо
+        uses: actions/checkout@v4
+        with:
+          # Полная история нужна для автоверсии changelog
+          # (git diff <прошлый коммит версии> HEAD в common.py)
+          fetch-depth: 0
+
+      - name: Проверить, есть ли уже выпуск
+        id: check
+        run: |
+          TODAY=$(date +%F)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+          if [ -f "docs/data/${TODAY}.json" ]; then
+            echo "Выпуск $TODAY уже опубликован — пропускаю."
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Восстановить кэш этапов 1–3
+        if: steps.check.outputs.exists == 'false'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            docs/data/*_raw.json
+            docs/data/*_search.json
+            docs/data/*_filtered.txt
+          key: pipeline-${{ steps.check.outputs.today }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: pipeline-${{ steps.check.outputs.today }}-
+
+      - name: Поставить Python
+        if: steps.check.outputs.exists == 'false'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Установить зависимости Python
+        if: steps.check.outputs.exists == 'false'
+        run: pip install -r requirements.txt
+
+      - name: Поставить Node
+        if: steps.check.outputs.exists == 'false'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Установить Claude Code CLI
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude --version
+
+      - name: Собрать и опубликовать выпуск
+        if: steps.check.outputs.exists == 'false'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          TG_PERSONAL_ID: ${{ secrets.TG_PERSONAL_ID }}
+        run: bash morning.sh
+
+      - name: Показать лог пайплайна
+        if: always() && steps.check.outputs.exists == 'false'
+        run: cat pipeline.log 2>/dev/null || echo "pipeline.log не создан"
+
+      - name: Сохранить кэш этапов 1–3
+        # Сохраняем и при падении — чтобы self-heal не начинал с нуля
+        if: always() && steps.check.outputs.exists == 'false'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            docs/data/*_raw.json
+            docs/data/*_search.json
+            docs/data/*_filtered.txt
+          key: pipeline-${{ steps.check.outputs.today }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Итог
+        id: result
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          if [ -f "docs/data/${{ steps.check.outputs.today }}.json" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Выпуск не собран — смотри лог выше"
+          fi
+
+  # Пуш от GITHUB_TOKEN не запускает другие воркфлоу (защита GitHub от
+  # бесконечных циклов), поэтому deploy.yml вызываем отсюда явно.
+  deploy:
+    needs: collect
+    if: needs.collect.outputs.published == 'true'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

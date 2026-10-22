@@ -5,6 +5,13 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # Вызывается из daily.yml после сбора выпуска
+  # (пуш от GITHUB_TOKEN сам по себе этот воркфлоу не запускает)
+  workflow_call:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -13,6 +20,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # При вызове из daily.yml нужен свежий main с только что
+          # закоммиченным выпуском, а не коммит, с которого стартовал запуск
+          ref: main
 
       - name: Deploy docs folder via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
