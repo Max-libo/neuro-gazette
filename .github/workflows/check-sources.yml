@@ -9,6 +9,11 @@ name: Проверка источников
 # 🟡 даты не определяются, ✅ живой, плюс первые 3 статьи каждого источника.
 
 on:
+  # Автоматически — на PR, где меняются источники (проверяет рубрику content)
+  pull_request:
+    paths:
+      - 'sources.yaml'
+      - 'scripts/check_sources.py'
   workflow_dispatch:
     inputs:
       sections:
@@ -36,5 +41,5 @@ jobs:
 
       - name: Проверить источники
         env:
-          SECTIONS: ${{ github.event.inputs.sections }}
+          SECTIONS: ${{ github.event_name == 'pull_request' && 'content' || github.event.inputs.sections }}
         run: python3 scripts/check_sources.py $SECTIONS
