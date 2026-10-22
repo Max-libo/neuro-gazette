@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write   # отчёт комментарием в PR
 
 jobs:
   check:
@@ -42,4 +43,10 @@ jobs:
       - name: Проверить источники
         env:
           SECTIONS: ${{ github.event_name == 'pull_request' && 'content' || github.event.inputs.sections }}
-        run: python3 scripts/check_sources.py $SECTIONS
+        run: python3 scripts/check_sources.py $SECTIONS | tee report.md
+
+      - name: Отчёт комментарием в PR
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body-file report.md
