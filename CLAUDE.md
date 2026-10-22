@@ -84,9 +84,16 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
   "related": [{"title": "...", "url": "...", "entities": [], "sentiment": "positive|negative|neutral"}],
   "unconfirmed": false,
   "duplicate_note": null,
-  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|..."}
+  "tags": {
+    "entities": ["OpenAI", "xAI"],
+    "sentiment": "positive|negative|neutral",
+    "entity_sentiment": {"OpenAI": "neutral", "xAI": "negative"},
+    "event": "release|update|..."
+  }
 }
 ```
+
+`tags.sentiment` — общий тон новости, `tags.entity_sentiment` — тональность для каждой сущности из `tags.entities` (как новость сказывается именно на ней); ключи всегда совпадают со списком `entities`, пропуски дозаполняются общим тоном. Слух — не тональность: `"rumor"` превращается в `unconfirmed: true` + `neutral`. В выпусках до октября 2026 карты нет — `stats.py` и аналитика берут общий тон.
 
 ## Frontend (`docs/`)
 
