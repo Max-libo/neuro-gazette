@@ -17,6 +17,7 @@ from common import (
     load_recent_issues, get_prev_headlines,
     finalize_news, update_index, run_claude, build_changelog_item, log,
 )
+from entities import prompt_reference
 
 EDIT_SYSTEM = """Ты редактор профессионального ежедневного издания об AI «Нейрогазета».
 Голос: факты и конкретика, без метафор, без восхищения, без воды.
@@ -42,6 +43,14 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
 - Язык выпуска: русский, деловой стиль. Переводи заголовки и тексты на русский.
 - Возвращай ТОЛЬКО валидный JSON без markdown-блоков и комментариев.
 
+Теги сущностей (tags.entities и related[].entities):
+- 1–5 главных участников новости: компании, модели, продукты, люди, госорганы, страны, законы.
+  Не темы и не отрасли: «роботы», «стартапы», «бенчмарки», «open source», «AI agents» — не сущности.
+- Если в новости есть конкретный участник — хотя бы одна сущность обязательна.
+- Если сущность есть в справочнике в конце промпта — пиши её ровно так, как там.
+- Новой сущности в справочнике нет — тогда компании, продукты, модели и люди в оригинальном написании
+  (Sam Altman, не «Сэм Альтман»), страны и госорганы — по-русски (США, Пентагон, Еврокомиссия).
+
 Рубрики:
 - models    — выпуски и обновления языковых и мультимодальных моделей
 - platforms — инструменты, IDE, API, продукты на базе AI
@@ -63,7 +72,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": ["название-сущности"],
+        "entities": ["OpenAI", "GPT-5.5"],
         "sentiment": "positive|negative|neutral|rumor",
         "event": "release|update|shutdown|investment|regulation|leak"
       }
@@ -153,7 +162,7 @@ def main() -> None:
             log.info("Редактура, попытка %d/3…", attempt)
             text = run_claude(
                 prompt + hint,
-                system=EDIT_SYSTEM,
+                system=EDIT_SYSTEM + "\n\nСправочник сущностей:\n" + prompt_reference(),
                 model="claude-opus-4-7",
             )
             data = json.loads(extract_json(text))
