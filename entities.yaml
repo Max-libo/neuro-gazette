@@ -210,6 +210,9 @@ entities:
   Euclyd:              {type: company}
   Sierra:              {type: company}
   TomWikiAssist:       {type: product}
+  PrismML:             {type: company}
+  TigerFS:             {type: product}
+  AutoAgent:           {type: product}
   Arcee AI:            {type: company}
   Aleph Alpha:         {type: company}
   Prior Labs:          {type: company}
@@ -294,6 +297,7 @@ entities:
   Universal Music Group: {type: company}
   NBCUniversal:        {type: company}
   Wikipedia:           {type: org}
+  Stack Overflow:      {type: org}
 
   # ── Инвесторы ─────────────────────────────────────────────────────────────
   Andreessen Horowitz: {type: company, aliases: [a16z]}

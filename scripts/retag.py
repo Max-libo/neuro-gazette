@@ -26,7 +26,7 @@ from common import DATA_DIR, EVENTS, LATEST_FILE, SENTIMENTS  # noqa: E402
 from entities import directory, prompt_reference  # noqa: E402
 from stage4_edit import TAGGING_RULES  # noqa: E402
 
-KIT_VERSION = 1
+KIT_VERSION = 2
 
 
 # ── Экспорт ───────────────────────────────────────────────────────────────────
