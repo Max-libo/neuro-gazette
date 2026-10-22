@@ -4,7 +4,7 @@
 Вход:  {date}_filtered.txt, {date}_search.json
 Выход: {date}.json, latest.json, обновление index.json
 
-Использует Opus — лучшее качество, без доплаты на подписке Max.
+Модель — MODEL_EDIT из common.py (Opus).
 """
 import json
 import re
@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
+    MODEL_EDIT,
     DATA_DIR, LATEST_FILE, TODAY_STR, WINDOW_STR,
     load_recent_issues, get_prev_headlines,
     finalize_news, update_index, run_claude, build_changelog_item, log,
@@ -154,7 +155,7 @@ def main() -> None:
             text = run_claude(
                 prompt + hint,
                 system=EDIT_SYSTEM,
-                model="claude-opus-4-7",
+                model=MODEL_EDIT,
             )
             data = json.loads(extract_json(text))
             news_list = data.get("news", [])

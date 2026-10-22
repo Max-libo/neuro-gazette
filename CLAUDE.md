@@ -31,9 +31,11 @@ After either method, open `docs/index.html` in a browser to see the result.
 | Stage | Script | Input | Output | Model |
 |-------|--------|-------|--------|-------|
 | 1 | `stage1_collect.py` | `sources.yaml` | `{date}_raw.json` | — |
-| 2 | `stage2_search.py` | `sources.yaml` search_queries | `{date}_search.json` | Sonnet (WebSearch tool via CLI) |
-| 3 | `stage3_filter.py` | `_raw.json` + `_search.json` | `{date}_filtered.txt` | Sonnet (via CLI) |
-| 4 | `stage4_edit.py` | `_filtered.txt` + `_search.json` | `{date}.json`, `latest.json` | Opus (via CLI) |
+| 2 | `stage2_search.py` | `sources.yaml` search_queries | `{date}_search.json` | Sonnet 5.5 (WebSearch tool via CLI) |
+| 3 | `stage3_filter.py` | `_raw.json` + `_search.json` | `{date}_filtered.txt` | Sonnet 5.5 (via CLI) |
+| 4 | `stage4_edit.py` | `_filtered.txt` + `_search.json` | `{date}.json`, `latest.json` | Opus 5.5 (via CLI) |
+
+Модели заданы в одном месте — `MODEL_FAST` / `MODEL_EDIT` в `common.py`; переопределяются переменными `NEUROGAZETTE_MODEL_FAST` / `_EDIT` / `_PING` (в Actions — Settings → Variables, без правки кода). Healthcheck в `run.sh` — Haiku 5.5. Нужен Claude Code CLI ≥ 2.1.293 (в Actions ставится свежий; на маке — `claude update`).
 
 After stage 4, `generate_preview.py` builds OG-preview HTML in `docs/preview/`, then `run.sh` commits `docs/data/` and `docs/preview/` and optionally notifies Telegram.
 
