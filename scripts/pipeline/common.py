@@ -190,6 +190,60 @@ def _make_id(headline: str, section: str) -> str:
 
 SENTIMENTS = ("positive", "negative", "neutral")
 
+# Типы событий: код → (русская метка, когда ставить). Из этого словаря собираются
+# и валидация, и описание для промпта этапа 4. Метки для сайта — в docs/analytics.
+EVENTS: dict[str, tuple[str, str]] = {
+    "release":     ("Релиз",          "запуск нового: модель, продукт, функция, открытые веса"),
+    "update":      ("Обновление",     "изменение уже существующего: новая версия, расширение доступа, цены, лимиты"),
+    "shutdown":    ("Закрытие",       "закрытие или свёртывание продукта, сервиса, компании"),
+    "investment":  ("Инвестиции",     "раунды, вложения, госфинансирование, оценка в рамках раунда"),
+    "finance":     ("Финансы",        "выручка, расходы, убытки, отчётность, IPO, оценка без раунда"),
+    "acquisition": ("Сделка M&A",     "покупка, слияние, поглощение, покупка команды"),
+    "partnership": ("Партнёрство",    "партнёрство, контракт, интеграция, поставка вычислений"),
+    "regulation":  ("Регулирование",  "законы, требования регуляторов, госполитика, запреты"),
+    "legal":       ("Суд",            "иски, суды, приговоры, расследования властей против конкретной компании или человека"),
+    "people":      ("Кадры",          "назначения, уходы, найм, увольнения и сокращения"),
+    "research":    ("Исследование",   "научные работы, бенчмарки, опросы, отчёты и данные о рынке"),
+    "incident":    ("Инцидент",       "сбой, взлом, утечка данных, вред от AI, злоупотребление, мошенничество, скандал"),
+    "leak":        ("Утечка",         "утечка сведений о неанонсированном продукте или планах компании"),
+    "statement":   ("Заявление",      "заявления, интервью, прогнозы, извинения, мнения публичных лиц"),
+    "other":       ("Другое",         "ничего из перечисленного не подходит"),
+}
+
+# Что модель иногда пишет вместо кода события
+EVENT_SYNONYMS: dict[str, str] = {
+    "launch": "release", "new": "release", "announcement": "release",
+    "funding": "investment", "round": "investment", "raise": "investment",
+    "revenue": "finance", "earnings": "finance", "ipo": "finance", "valuation": "finance",
+    "merger": "acquisition", "m&a": "acquisition", "acquire": "acquisition",
+    "contract": "partnership", "integration": "partnership", "collaboration": "partnership",
+    "law": "regulation", "policy": "regulation", "ban": "regulation",
+    "lawsuit": "legal", "court": "legal", "trial": "legal",
+    "hiring": "people", "layoffs": "people", "appointment": "people", "departure": "people",
+    "study": "research", "paper": "research", "benchmark": "research", "survey": "research", "report": "research",
+    "outage": "incident", "breach": "incident", "security": "incident", "scandal": "incident",
+    "rumor": "leak",
+    "interview": "statement", "opinion": "statement", "forecast": "statement",
+}
+
+# Сырые значения event, которых нет ни в EVENTS, ни в синонимах (для лога)
+_unknown_events: list[str] = []
+
+
+def _fix_event(tags: dict) -> None:
+    raw = tags.get("event")
+    value = str(raw).strip().lower() if raw is not None else ""
+    value = EVENT_SYNONYMS.get(value, value)
+    if value not in EVENTS:
+        if raw:
+            _unknown_events.append(str(raw))
+        value = "other"
+    tags["event"] = value
+
+
+def events_prompt() -> str:
+    return "\n".join(f"  * {code} — {desc}" for code, (_, desc) in EVENTS.items())
+
 # Сколько тональностей по сущностям пришлось дозаполнить общим тоном новости (для лога)
 _entity_sentiment_filled = 0
 
@@ -244,7 +298,6 @@ def _fix_entity_tags(item: dict, tags: dict) -> None:
 
 def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     valid_sections     = set(SECTIONS)
-    valid_events       = {"release", "update", "shutdown", "investment", "regulation", "leak"}
     valid_source_types = {"official", "media", "rumor"}
 
     if not item.get("headline"):
@@ -294,8 +347,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
 
     tags = item.get("tags") or {}
     _fix_entity_tags(item, tags)
-    if tags.get("event") not in valid_events:
-        tags["event"] = "update"
+    _fix_event(tags)
     item["tags"] = tags
 
     return item
@@ -329,6 +381,10 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
         log.info("Тональность по сущностям: дозаполнено общим тоном новости — %d",
                  _entity_sentiment_filled)
         _entity_sentiment_filled = 0
+
+    if _unknown_events:
+        log.info("Неизвестные типы событий → other: %s", ", ".join(sorted(set(_unknown_events))))
+        _unknown_events.clear()
 
     unknown = entity_directory().unknown
     if unknown:
