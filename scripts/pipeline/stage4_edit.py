@@ -16,6 +16,7 @@ from common import (
     DATA_DIR, LATEST_FILE, TODAY_STR, WINDOW_STR,
     load_recent_issues, get_prev_headlines,
     finalize_news, update_index, run_claude, build_changelog_item, log,
+    events_prompt,
 )
 from entities import prompt_reference
 
@@ -62,6 +63,12 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
   Пример: «Anthropic купила Coefficient Bio» → {"Anthropic": "positive", "Coefficient Bio": "positive"}.
 - Слух — это не тональность. Неподтверждённая новость: "unconfirmed": true, а тональность — обычная.
 
+Тип события (tags.event) — ровно один код из списка «Типы событий» в конце промпта:
+- Подходит несколько — выбирай главное действие новости («Meta купила стартап и наняла его команду» → acquisition).
+- update — только изменение уже существующего продукта. Прогноз, интервью, мнение — statement, а не update.
+- leak — утечка сведений о планах компании. Утечка пользовательских данных или взлом — incident.
+- Ничего не подходит — other. Не подставляй update по умолчанию.
+
 Рубрики:
 - models    — выпуски и обновления языковых и мультимодальных моделей
 - platforms — инструменты, IDE, API, продукты на базе AI
@@ -86,7 +93,7 @@ EDIT_SYSTEM = """Ты редактор профессионального еже
         "entities": ["OpenAI", "GPT-5.5"],
         "sentiment": "positive|negative|neutral",
         "entity_sentiment": {"OpenAI": "positive", "GPT-5.5": "positive"},
-        "event": "release|update|shutdown|investment|regulation|leak"
+        "event": "код из списка «Типы событий»"
       }
     }
   ]
@@ -174,7 +181,11 @@ def main() -> None:
             log.info("Редактура, попытка %d/3…", attempt)
             text = run_claude(
                 prompt + hint,
-                system=EDIT_SYSTEM + "\n\nСправочник сущностей:\n" + prompt_reference(),
+                system=(
+                    EDIT_SYSTEM
+                    + "\n\nТипы событий:\n" + events_prompt()
+                    + "\n\nСправочник сущностей:\n" + prompt_reference()
+                ),
                 model="claude-opus-4-7",
             )
             data = json.loads(extract_json(text))

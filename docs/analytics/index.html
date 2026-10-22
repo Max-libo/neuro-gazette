@@ -373,9 +373,13 @@ function topN(obj, n) {
 
 const SENTIMENT_LABELS = { positive: 'Позитив', negative: 'Негатив', neutral: 'Нейтрально', rumor: 'Слух' };
 const SENTIMENT_COLORS = { positive: '#27ae60', negative: '#c0392b', neutral: '#7f8c8d', rumor: '#e67e22' };
+// Совпадает с EVENTS в scripts/pipeline/common.py
 const EVENT_LABELS = {
-  release: 'Релиз', update: 'Обновление', investment: 'Инвестиции',
-  regulation: 'Регуляция', leak: 'Утечка', shutdown: 'Закрытие',
+  release: 'Релиз', update: 'Обновление', shutdown: 'Закрытие',
+  investment: 'Инвестиции', finance: 'Финансы', acquisition: 'Сделка M&A',
+  partnership: 'Партнёрство', regulation: 'Регулирование', legal: 'Суд',
+  people: 'Кадры', research: 'Исследование', incident: 'Инцидент',
+  leak: 'Утечка', statement: 'Заявление', other: 'Другое',
 };
 const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', hype: 'Желтуха' };
 

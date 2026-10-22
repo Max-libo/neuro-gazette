@@ -490,7 +490,7 @@
       sources: sourceUrl ? [{ title: 'Источник', url: sourceUrl, type: 'media' }] : [],
       unconfirmed: false,
       duplicate_note: null,
-      tags: { entities: [], sentiment: 'neutral', event: 'update' },
+      tags: { entities: [], sentiment: 'neutral', entity_sentiment: {}, event: 'other' },
     };
 
     if (!issue) issue = { date: new Date().toISOString().slice(0, 10), published: false, news: [] };
