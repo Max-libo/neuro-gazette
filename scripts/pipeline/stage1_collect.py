@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
-    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT,
+    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT, RAW_CONTENT_RESERVE,
     is_vague_url, clean_text, parse_date, extract_date_from_url,
     load_sources, load_recent_issues, get_prev_urls, log,
 )
@@ -47,6 +47,37 @@ def _http_get(url: str, retries: int = 2) -> requests.Response | None:
                 raise
             log.debug("HTTP retry %d/%d для %s: %s", attempt, retries, url, e)
     return None
+
+
+# ── Фильтр по ключевым словам ─────────────────────────────────────────────────
+# Для общих источников (арт-СМИ, музеи), где про ИИ — малая доля материалов.
+# В sources.yaml: keywords: ["AI", "нейросет*", ...]
+#   слово без звёздочки — целое слово ("AI" не поймает "Aircraft"),
+#   слово со звёздочкой — префикс ("нейросет*" ловит "нейросети", "нейросетью").
+
+def _compile_keywords(keywords: list[str] | None) -> re.Pattern | None:
+    if not keywords:
+        return None
+    parts = []
+    for kw in keywords:
+        kw = str(kw).strip()
+        if not kw:
+            continue
+        if kw.endswith("*"):
+            parts.append(r"(?<!\w)" + re.escape(kw[:-1]))
+        else:
+            parts.append(r"(?<!\w)" + re.escape(kw) + r"(?!\w)")
+    return re.compile("|".join(parts), re.IGNORECASE) if parts else None
+
+
+def apply_keyword_filter(source: dict, items: list[dict]) -> list[dict]:
+    pattern = _compile_keywords(source.get("keywords"))
+    if not pattern:
+        return items
+    kept = [a for a in items if pattern.search(f"{a.get('title', '')} {a.get('summary', '')}")]
+    if len(kept) != len(items):
+        log.info("%s: фильтр по ключевым словам %d → %d", source["name"], len(items), len(kept))
+    return kept
 
 
 # ── RSS ───────────────────────────────────────────────────────────────────────
@@ -90,10 +121,11 @@ def fetch_rss(source: dict) -> list[dict]:
             "published": pub_dt.date().isoformat(),
             "summary":   summary,
             "priority":  source.get("priority", 2),
+            "section":   source.get("section", ""),
         })
 
     log.info("RSS %s: %d статей", name, len(result))
-    return result
+    return apply_keyword_filter(source, result)
 
 
 # ── Scrape bookmark (отслеживание последней известной статьи) ─────────────────
@@ -176,6 +208,7 @@ def scrape_page(source: dict) -> list[dict]:
                     "published": pub_dt.date().isoformat() if pub_dt else "unknown",
                     "summary":   (item.get("description") or "")[:500],
                     "priority":  source.get("priority", 2),
+                    "section":   source.get("section", ""),
                 })
                 if len(results) >= max_items:
                     break
@@ -187,7 +220,7 @@ def scrape_page(source: dict) -> list[dict]:
     if results or hit_bookmark:
         log.info("Scrape %s (JSON-LD): %d статей%s", name, len(results),
                  " [bookmark]" if hit_bookmark else "")
-        return results
+        return apply_keyword_filter(source, results)
 
     # 2. Fallback: h1/h2/h3
     hit_bookmark = False
@@ -239,13 +272,14 @@ def scrape_page(source: dict) -> list[dict]:
             "published": pub_dt.date().isoformat() if pub_dt else "unknown",
             "summary":   "",
             "priority":  source.get("priority", 2),
+            "section":   source.get("section", ""),
         })
         if len(results) >= max_items:
             break
 
     log.info("Scrape %s (HTML): %d статей%s", name, len(results),
              " [bookmark]" if hit_bookmark else "")
-    return results
+    return apply_keyword_filter(source, results)
 
 
 # ── Сбор и дедупликация ───────────────────────────────────────────────────────
@@ -299,6 +333,19 @@ def deduplicate(articles: list[dict]) -> list[dict]:
     return result
 
 
+def trim_with_reserve(items: list[dict]) -> list[dict]:
+    """Обрезка до RAW_LIMIT по приоритету, но с гарантированными местами
+    для рубрики «Нейроконтент»: её источники обычно priority 2–3 и иначе
+    вытесняются официальными блогами и СМИ ещё до фильтра."""
+    items = sorted(items, key=lambda a: a.get("priority", 2))
+    content = [a for a in items if a.get("section") == "content"][:RAW_CONTENT_RESERVE]
+    reserved = {id(a) for a in content}
+    rest = [a for a in items if id(a) not in reserved][:max(RAW_LIMIT - len(content), 0)]
+    result = sorted(content + rest, key=lambda a: a.get("priority", 2))
+    log.info("Обрезка: %d → %d (из них нейроконтент: %d)", len(items), len(result), len(content))
+    return result
+
+
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -325,8 +372,7 @@ def main() -> None:
         raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
         log.info("После исключения дублей с историей: %d → %d", before, len(raw_items))
 
-    raw_items.sort(key=lambda a: a.get("priority", 2))
-    raw_items = raw_items[:RAW_LIMIT]
+    raw_items = trim_with_reserve(raw_items)
 
     raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
     log.info("Этап 1 готов: %d статей → %s", len(raw_items), raw_cache)

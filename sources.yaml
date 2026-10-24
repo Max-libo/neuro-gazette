@@ -54,7 +54,6 @@ sources:
     section: models
     priority: 2
 
-
   - name: "DeepSeek"
     type: scrape
     url: "https://www.deepseek.com/news"
@@ -97,43 +96,37 @@ sources:
     section: models
     priority: 2
 
-  # ── ИЗОБРАЖЕНИЯ ───────────────────────────────────
+  # ── НЕЙРОКОНТЕНТ: ИЗОБРАЖЕНИЯ ─────────────────────
+  # section: content — рубрика «Нейроконтент». Под неё зарезервировано
+  # RAW_CONTENT_RESERVE мест в сыром списке (см. common.py).
 
   - name: "Black Forest Labs (Flux)"
     type: scrape
     url: "https://bfl.ai/blog"
-    section: models
+    section: content
     priority: 1
 
   - name: "Stability AI"
     type: scrape
     url: "https://stability.ai/news"
-    section: models
+    section: content
     priority: 1
 
   - name: "Midjourney"
     type: rss
     url: "https://updates.midjourney.com/rss"
-    section: platforms
+    section: content
     priority: 1
 
+  # Проверено 22.10.2026 воркфлоу «Проверка источников» и убрано как мёртвое —
+  # эти сервисы покрываются поисковыми запросами рубрики content:
+  #   Recraft, Reve, Topaz Labs, Krea — 0 статей (скрейп не находит постов)
+  #   Ideogram, Adobe Firefly — 404; Leonardo.ai, Civitai — 403
 
-  - name: "Recraft"
-    type: scrape
-    url: "https://www.recraft.ai/blog"
-    section: platforms
-    priority: 2
-
-  - name: "Reve"
-    type: scrape
-    url: "https://blog.reve.com/"
-    section: platforms
-    priority: 2
-
-  - name: "Topaz Labs"
-    type: scrape
-    url: "https://www.topazlabs.com/news"
-    section: platforms
+  - name: "Google Labs"
+    type: rss
+    url: "https://blog.google/technology/google-labs/rss/"
+    section: content
     priority: 2
 
   # ── ВИДЕО ─────────────────────────────────────────
@@ -202,7 +195,6 @@ sources:
     section: platforms
     priority: 1
 
-
   - name: "Replit"
     type: scrape
     url: "https://blog.replit.com"
@@ -267,13 +259,6 @@ sources:
     section: platforms
     priority: 2
 
-  - name: "Krea"
-    type: scrape
-    url: "https://www.krea.ai/blog"
-    section: platforms
-    priority: 2
-
-
   - name: "SYNTX AI"
     type: scrape
     url: "https://syntx.ai/updates"
@@ -283,14 +268,7 @@ sources:
   - name: "Phygital+"
     type: scrape
     url: "https://phygital.plus/blog/"
-    section: platforms
-    priority: 3
-
-
-  - name: "Civitai"
-    type: scrape
-    url: "https://civitai.green/newsroom"
-    section: platforms
+    section: content
     priority: 3
 
   # ── РОССИЙСКИЕ РАЗРАБОТКИ ─────────────────────────
@@ -300,7 +278,6 @@ sources:
     url: "https://yandex.ru/blog"
     section: models
     priority: 1
-
 
   # ── СМИ ───────────────────────────────────────────
 
@@ -428,13 +405,44 @@ sources:
     section: industry
     priority: 2
 
+  # ── НЕЙРОКОНТЕНТ: ВЫСТАВКИ, МУЗЕИ, АРТ-СОБЫТИЯ ───
+  # Общие арт-СМИ: про ИИ там малая доля, поэтому стоит фильтр keywords —
+  # в сырой список попадают только материалы, где в заголовке/анонсе есть
+  # одно из слов. «слово*» — префикс, без звёздочки — целое слово.
+  # Проверено 22.10.2026. Убраны: The Art Newspaper Russia (не парсится),
+  # Artguide (недоступен с серверов GitHub в США) — российские выставки
+  # ловим поисковыми запросами на русском.
+
+  - name: "Artnet News"
+    type: rss
+    url: "https://news.artnet.com/feed"
+    section: content
+    priority: 2
+    keywords: &ai_keywords ["AI", "A.I.", "artificial intelligence", "generative*", "machine learning",
+                            "neural", "algorithm*", "Midjourney", "Stable Diffusion", "DALL-E", "Refik Anadol",
+                            "ИИ", "искусственн*", "нейросет*", "нейро*", "генератив*", "алгоритм*"]
+
+  - name: "Hyperallergic"
+    type: rss
+    url: "https://hyperallergic.com/feed/"
+    section: content
+    priority: 3
+    keywords: *ai_keywords
+
+  - name: "The Art Newspaper"
+    type: rss
+    url: "https://www.theartnewspaper.com/rss.xml"
+    section: content
+    priority: 2
+    keywords: *ai_keywords
+
 # ── ПОИСКОВЫЕ ЗАПРОСЫ ────────────────────────────────
 
 search_queries:
 
   models:
     - "AI language model release announcement"
-    - "image video audio generation model new release"
+    - "video audio generation model new release"
     - "OpenAI Anthropic Google Meta AI model announcement"
     - "AI model benchmark research breakthrough"
 
@@ -445,6 +453,22 @@ search_queries:
   industry:
     - "AI investment funding acquisition partnership"
     - "AI regulation policy government"
+
+  content:
+    # Генерация изображений: релизы и обновления
+    - "Midjourney Flux Ideogram Recraft image model new version update"
+    - "Nano Banana Imagen GPT-image Seedream Firefly image generation update"
+    - "Krea Leonardo Reve Ideogram Recraft Freepik AI image update"
+    - "нейросеть генерация изображений обновление новая версия"
+    - "Kandinsky Шедеврум GigaChat генерация изображений обновление"
+    # Бесплатное и скидки
+    - "AI image generator free plan new free tier launch"
+    - "AI image video generator subscription discount sale promo"
+    - "нейросеть бесплатно генерация картинок скидка подписка акция"
+    # Выставки, музеи, арт-события
+    - "AI art exhibition museum generative art show opens"
+    - "выставка нейросети искусственный интеллект искусство музей"
+    - "нейроарт выставка Москва Санкт-Петербург открытие ИИ-искусство"
 
   hype:
     - "AI news viral controversy scandal"
