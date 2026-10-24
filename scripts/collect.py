@@ -39,8 +39,8 @@ INDEX_FILE   = DATA_DIR / "index.json"
 LATEST_FILE  = DATA_DIR / "latest.json"
 SOURCES_FILE = REPO_ROOT / "sources.yaml"
 
-MODEL_FAST = "claude-sonnet-4-6"   # поиск, фильтрация
-MODEL_EDIT = "claude-opus-4-6"    # финальная редактура
+MODEL_FAST = "claude-sonnet-5-5"   # поиск, фильтрация
+MODEL_EDIT = "claude-opus-5-5"    # финальная редактура
 
 MSK        = timezone(timedelta(hours=3))
 NOW        = datetime.now(MSK)

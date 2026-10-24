@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
+    MODEL_FAST,
     DATA_DIR, TODAY_STR, CUTOFF_24H, CUTOFF_DATE_STR, WINDOW_STR,
     is_vague_url, parse_date, extract_date_from_url,
     load_sources, run_claude, log,
@@ -73,7 +74,7 @@ def search_section(section: str, queries: list[str]) -> str:
             text = run_claude(
                 build_search_prompt(query),
                 allowed_tools=["WebSearch"],
-                model="claude-sonnet-4-6",
+                model=MODEL_FAST,
                 retries=2,
             )
             valid = filter_search_lines(text, section)

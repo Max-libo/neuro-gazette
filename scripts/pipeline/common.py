@@ -48,6 +48,12 @@ WINDOW_STR      = (
 )
 
 SECTIONS  = ["models", "platforms", "industry", "hype"]
+
+# ── Модели ────────────────────────────────────────────────────────────────────
+# Обновлять здесь. Без правки кода — переменными окружения; в GitHub Actions это
+# Settings → Secrets and variables → Actions → Variables (NEUROGAZETTE_MODEL_*).
+MODEL_FAST = os.environ.get("NEUROGAZETTE_MODEL_FAST") or "claude-sonnet-5-5"   # этапы 2–3
+MODEL_EDIT = os.environ.get("NEUROGAZETTE_MODEL_EDIT") or "claude-opus-5-5"     # этап 4
 RAW_LIMIT = 200
 
 
@@ -356,7 +362,7 @@ def build_changelog_item() -> dict | None:
 def run_claude(
     prompt: str,
     *,
-    model: str = "claude-sonnet-4-6",
+    model: str = MODEL_FAST,
     system: str | None = None,
     allowed_tools: list[str] | None = None,
     idle_timeout: int = 180,
