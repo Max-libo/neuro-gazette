@@ -94,7 +94,12 @@ jobs:
         if: always()
         run: |
           TODAY=$(date +%F)
-          code=$(curl -sS --max-time 20 -o latest.json -w '%{http_code}' "$SITE/data/latest.json" || echo 000)
+          # Хостинг REG.RU может не пускать зарубежные IP раннеров GitHub —
+          # тогда это предупреждение, а не провал: деплой идёт по FTP и от этого не зависит.
+          if ! code=$(curl -sS --max-time 20 -o latest.json -w '%{http_code}' "$SITE/data/latest.json" 2>curl.err); then
+            echo "::warning::Сайт недоступен с серверов GitHub (вероятно, гео-ограничение хостинга): $(head -c 200 curl.err)"
+            exit 0
+          fi
           if [ "$code" != "200" ]; then
             echo "::error::Сайт ответил HTTP $code"; exit 1
           fi
