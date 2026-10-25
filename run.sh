@@ -147,6 +147,14 @@ if $NO_PUSH; then
 fi
 
 CURRENT_STAGE="git_commit"
+# Защита от двойного выпуска: если параллельный запуск уже опубликовал
+# выпуск за эту дату, не коммитим свой и не шлём алерт об ошибке пуша.
+ISSUE_DATE=$(python3 -c "import json; print(json.load(open('docs/data/latest.json'))['date'])")
+if git fetch -q origin main 2>/dev/null && git cat-file -e "origin/main:docs/data/${ISSUE_DATE}.json" 2>/dev/null; then
+  log "Выпуск $ISSUE_DATE уже опубликован другим запуском — свой не коммичу."
+  trap - ERR
+  exit 0
+fi
 log "Коммит…"
 git config user.name  "github-actions[bot]"
 git config user.email "github-actions[bot]@users.noreply.github.com"
