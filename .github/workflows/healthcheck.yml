@@ -1,0 +1,139 @@
+name: Проверка работоспособности
+
+# Проверяет всё, от чего зависит утренний выпуск, не собирая его:
+# секреты, Telegram-бот, доступ к каналу (без поста), личку (тестовое
+# сообщение), авторизацию Claude CLI и свежесть сайта.
+# Каждая проверка — отдельный шаг: упавший шаг сразу видно во вкладке Actions.
+# Запуск: Actions → «Проверка работоспособности» → Run workflow.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Moscow
+      SITE: https://xn--80aahhcll4alt1a.xn--p1ai   # нейрогазета.рф
+
+    steps:
+      - name: Секрет CLAUDE_CODE_OAUTH_TOKEN
+        env: { V: "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" }
+        run: |
+          [ -n "$V" ] && echo "::notice::CLAUDE_CODE_OAUTH_TOKEN задан" \
+            || { echo "::error::CLAUDE_CODE_OAUTH_TOKEN не задан"; exit 1; }
+
+      - name: Секрет TG_TOKEN
+        if: always()
+        env: { V: "${{ secrets.TG_TOKEN }}" }
+        run: |
+          [ -n "$V" ] && echo "::notice::TG_TOKEN задан" \
+            || { echo "::error::TG_TOKEN не задан"; exit 1; }
+
+      - name: Секрет TG_CHAT_ID
+        if: always()
+        env: { V: "${{ secrets.TG_CHAT_ID }}" }
+        run: |
+          [ -n "$V" ] && echo "::notice::TG_CHAT_ID задан" \
+            || { echo "::error::TG_CHAT_ID не задан"; exit 1; }
+
+      - name: Секрет TG_PERSONAL_ID
+        if: always()
+        env: { V: "${{ secrets.TG_PERSONAL_ID }}" }
+        run: |
+          [ -n "$V" ] && echo "::notice::TG_PERSONAL_ID задан" \
+            || { echo "::error::TG_PERSONAL_ID не задан"; exit 1; }
+
+      - name: Секреты FTP
+        if: always()
+        env:
+          S: ${{ secrets.FTP_SERVER }}
+          U: ${{ secrets.FTP_USERNAME }}
+          P: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          missing=""
+          [ -z "$S" ] && missing="$missing FTP_SERVER"
+          [ -z "$U" ] && missing="$missing FTP_USERNAME"
+          [ -z "$P" ] && missing="$missing FTP_PASSWORD"
+          [ -z "$missing" ] && echo "::notice::FTP-секреты заданы" \
+            || { echo "::error::Не заданы:$missing"; exit 1; }
+
+      - name: Telegram — бот отвечает
+        if: always()
+        env: { TG_TOKEN: "${{ secrets.TG_TOKEN }}" }
+        run: |
+          resp=$(curl -sS --max-time 15 "https://api.telegram.org/bot${TG_TOKEN}/getMe" || true)
+          if [[ "$resp" == *'"ok":true'* ]]; then
+            name=$(echo "$resp" | python3 -c "import json,sys;print(json.load(sys.stdin)['result']['username'])")
+            echo "::notice::Бот @$name отвечает"
+          else
+            echo "::error::Бот не отвечает: ${resp:0:200}"; exit 1
+          fi
+
+      - name: Telegram — бот видит канал
+        if: always()
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          # getChat ничего не публикует — только проверяет доступ
+          resp=$(curl -sS --max-time 15 "https://api.telegram.org/bot${TG_TOKEN}/getChat" -d chat_id="${TG_CHAT_ID}" || true)
+          if [[ "$resp" != *'"ok":true'* ]]; then
+            echo "::error::Канал недоступен боту: ${resp:0:200}"; exit 1
+          fi
+          title=$(echo "$resp" | python3 -c "import json,sys;print(json.load(sys.stdin)['result'].get('title','?'))")
+          bot_id=$(curl -sS --max-time 15 "https://api.telegram.org/bot${TG_TOKEN}/getMe" | python3 -c "import json,sys;print(json.load(sys.stdin)['result']['id'])")
+          member=$(curl -sS --max-time 15 "https://api.telegram.org/bot${TG_TOKEN}/getChatMember" -d chat_id="${TG_CHAT_ID}" -d user_id="${bot_id}" || true)
+          if [[ "$member" == *'"can_post_messages":true'* ]] || [[ "$member" == *'"status":"creator"'* ]]; then
+            echo "::notice::Канал «$title»: бот может публиковать"
+          else
+            echo "::error::Канал «$title» найден, но у бота нет права публикации: ${member:0:200}"; exit 1
+          fi
+
+      - name: Сайт — свежий выпуск
+        if: always()
+        run: |
+          TODAY=$(date +%F)
+          code=$(curl -sS --max-time 20 -o latest.json -w '%{http_code}' "$SITE/data/latest.json" || echo 000)
+          if [ "$code" != "200" ]; then
+            echo "::error::Сайт ответил HTTP $code"; exit 1
+          fi
+          read -r d n < <(python3 -c "import json;x=json.load(open('latest.json'));print(x['date'], len(x['news']))")
+          if [ "$d" = "$TODAY" ]; then
+            echo "::notice::На сайте выпуск $d ($n материалов)"
+          else
+            echo "::error::На сайте выпуск $d, а сегодня $TODAY"; exit 1
+          fi
+
+      - name: Claude CLI — авторизация
+        if: always()
+        env: { CLAUDE_CODE_OAUTH_TOKEN: "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" }
+        run: |
+          npm install -g @anthropic-ai/claude-code >/dev/null 2>&1
+          out=$(timeout 60 claude --print --model claude-haiku-4-5-20251001 'Ответь одним словом: ok' 2>&1) || rc=$?
+          if [ "${rc:-0}" -eq 0 ] && [[ "$out" != *"403"* ]] && [[ "$out" != *"Failed to authenticate"* ]]; then
+            echo "::notice::Claude CLI авторизован (ответ: ${out:0:40})"
+          else
+            echo "::error::Claude CLI не работает (rc=${rc:-0}): ${out:0:200}"; exit 1
+          fi
+
+      - name: Итог в личку
+        if: always()
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_PERSONAL_ID: ${{ secrets.TG_PERSONAL_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$TG_TOKEN" ] || [ -z "$TG_PERSONAL_ID" ]; then
+            echo "::error::Нечем отправить итог: нет TG_TOKEN или TG_PERSONAL_ID"; exit 1
+          fi
+          text="🩺 Нейрогазета: проверка работоспособности
+          Если это сообщение пришло — личные уведомления работают.
+          Подробности по каждой проверке: $RUN_URL"
+          resp=$(curl -sS --max-time 15 -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            -d chat_id="${TG_PERSONAL_ID}" --data-urlencode text="$text" || true)
+          if [[ "$resp" == *'"ok":true'* ]]; then
+            echo "::notice::Сообщение в личку отправлено"
+          else
+            echo "::error::Личка не принимает сообщения: ${resp:0:200}"; exit 1
+          fi
