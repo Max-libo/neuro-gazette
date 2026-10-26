@@ -22,11 +22,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent / "pipeline"))
 
 import common  # noqa: E402
-from common import DATA_DIR, EVENTS, LATEST_FILE, SENTIMENTS  # noqa: E402
+from common import CREATIVE_SECTIONS, DATA_DIR, EVENTS, LATEST_FILE, SECTIONS, SENTIMENTS  # noqa: E402
 from entities import directory, prompt_reference  # noqa: E402
-from stage4_edit import TAGGING_RULES  # noqa: E402
+from stage4_edit import RUBRIC_RULES, TAGGING_RULES  # noqa: E402
 
-KIT_VERSION = 2
+KIT_VERSION = 3
+MOVES_FILE = "ПЕРЕНОСЫ.json"   # переносы новостей в творческие рубрики (content, art)
 
 
 # ── Экспорт ───────────────────────────────────────────────────────────────────
@@ -116,7 +117,8 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
 сущностей. Новые выпуски уже размечаются по новым правилам. Нужно переразметить архив —
 **{n_files} выпусков, {n_items} новостей, {n_related} связанных заметок** — по тем же правилам.
 
-Тексты новостей не меняются. Меняются только теги.
+Тексты новостей не меняются. Меняются теги и — для части новостей — рубрика: недавно появились
+рубрики «Нейроконтент» (`content`) и «Искусство» (`art`), и подходящие новости архива переезжают туда.
 
 ## Что в папке
 
@@ -125,7 +127,7 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
 | `ЗАДАНИЕ.md` | этот файл |
 | `справочник.md` | канонические имена сущностей — писать ровно так |
 | `input/ГГГГ-ММ-ДД.json` | новости одного выпуска: текст и старые теги (только читать) |
-| `output/` | сюда класть ответы: по одному файлу на выпуск, с тем же именем |
+| `output/` | сюда класть ответы: по одному файлу на выпуск, с тем же именем, и `{MOVES_FILE}` |
 | `check.py` | проверка ответов: `python3 check.py` (только стандартная библиотека) |
 | `_kit/` | служебные данные для `check.py`, не трогать |
 
@@ -137,7 +139,9 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
    и исправь ошибки. Предупреждения (⚠) — не ошибки, но посмотри на них.
 4. Когда готовы все файлы — `python3 check.py` без аргументов должен показать
    «Ошибок нет» и «готово {n_files} из {n_files}».
-5. Напиши `output/ОТЧЁТ.md`: сколько сделано, какие были сомнения, какие новые сущности
+5. Пройди архив ещё раз по рубрикам (раздел «Рубрики» ниже) и запиши переносы
+   в `output/{MOVES_FILE}`. `python3 check.py` проверяет и его.
+6. Напиши `output/ОТЧЁТ.md`: сколько сделано, какие были сомнения, какие новые сущности
    добавил (их нет в справочнике), что в правилах показалось неоднозначным. Коротко, списком.
 
 Нельзя: менять файлы в `input/`, `_kit/` и `check.py`; создавать файлы вне `output/`;
@@ -176,6 +180,29 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
   (приведя к справочнику), а тональность и тип события оцени заново по правилам ниже.
 - `unconfirmed` во входе — для контекста. Если стоит `true`, это неподтверждённая новость:
   тональность и тип ставь как обычно (утечка о планах компании — `leak`).
+
+## Переносы в рубрики `content` и `art`: `output/{MOVES_FILE}`
+
+```json
+[
+  {{"id": "models-1a2b3c-2026-04-22", "section": "content"}},
+  {{"id": "hype-4d5e6f-2026-05-25", "section": "art", "details": "Канны · 13–24 мая"}}
+]
+```
+
+- Только новости, которые по правилам ниже должны быть в `content` или `art`, а сейчас в другой рубрике
+  (рубрика есть во входе, поле `section`). Остальные не упоминай.
+- В файлах `output/ГГГГ-ММ-ДД.json` поле `section` не ставь — рубрика меняется только здесь.
+- `details` — необязательно, одна строка до 120 символов, только то, что явно есть в тексте новости.
+- Тип события у перенесённой новости проверь заново: выставка — `exhibition`, скидка или акция — `promo`.
+  Его правь в файле выпуска, как обычно.
+- Переносов не нашлось — запиши пустой список `[]`.
+
+## Рубрики
+
+Это тот же текст, по которому рубрика выбирается для новых выпусков.
+
+{RUBRIC_RULES}
 
 ## Правила тегирования
 
@@ -288,6 +315,8 @@ def check_file(date):
 
         if it.get("sentiment") not in SENTIMENTS:
             errors.append(f"{where}: sentiment = {it.get('sentiment')!r}, нужно positive|negative|neutral")
+        if "section" in it:
+            errors.append(f"{where}: section в файле выпуска не ставь — переносы только в {KIT['moves_file']}")
         if it.get("event") not in EVENTS:
             errors.append(f"{where}: event = {it.get('event')!r} — нет такого кода")
 
@@ -310,6 +339,49 @@ def check_file(date):
                 _check_entities(re_, rw, errors, warnings)
             if r.get("sentiment") not in SENTIMENTS:
                 errors.append(f"{rw}: sentiment = {r.get('sentiment')!r}")
+    return not errors, errors, warnings
+
+
+def check_moves():
+    """output/ПЕРЕНОСЫ.json: [{id, section, details?}] — переносы в творческие рубрики."""
+    path = HERE / "output" / KIT["moves_file"]
+    if not path.exists():
+        return None, [], []
+    try:
+        moves = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        return False, [f"невалидный JSON: {e}"], []
+    if not isinstance(moves, list):
+        return False, ["нужен список объектов {id, section, details?}"], []
+    known = {}
+    for f in (HERE / "input").glob("*.json"):
+        for it in json.loads(f.read_text(encoding="utf-8"))["items"]:
+            known[it["id"]] = it
+    errors, warnings, seen = [], [], set()
+    for m in moves:
+        if not isinstance(m, dict):
+            errors.append(f"элемент {m!r} — нужен объект")
+            continue
+        mid, sec = m.get("id"), m.get("section")
+        if mid not in known:
+            errors.append(f"{mid}: нет такой новости во входе")
+            continue
+        where = f"{mid} ({known[mid]['headline'][:50]})"
+        if mid in seen:
+            errors.append(f"{where}: повторяется")
+        seen.add(mid)
+        if sec not in KIT["creative_sections"]:
+            errors.append(f"{where}: section = {sec!r}, можно только {', '.join(KIT['creative_sections'])}")
+        elif known[mid]["section"] == sec:
+            warnings.append(f"{where}: уже в рубрике {sec} — перенос не нужен")
+        det = m.get("details")
+        if det is not None and (not isinstance(det, str) or not det.strip()):
+            errors.append(f"{where}: details — непустая строка или не указывать")
+        elif isinstance(det, str) and len(det) > 120:
+            errors.append(f"{where}: details длиннее 120 символов")
+        extra = set(m) - {"id", "section", "details"}
+        if extra:
+            errors.append(f"{where}: лишние поля {', '.join(sorted(extra))}")
     return not errors, errors, warnings
 
 
@@ -347,6 +419,18 @@ def main():
             print(f"    ✗ {e}")
         for w in warnings:
             print(f"    ⚠ {w}")
+    if len(sys.argv) == 1:
+        ok, errors, warnings = check_moves()
+        name = KIT["moves_file"]
+        if ok is None:
+            print(f"· {name}: ещё нет")
+        else:
+            n_err += len(errors)
+            print(f"{'✓' if ok else '✗'} {name}: ошибок {len(errors)}, предупреждений {len(warnings)}")
+            for e in errors:
+                print(f"    ✗ {e}")
+            for w in warnings:
+                print(f"    ⚠ {w}")
     print()
     print("Ошибок нет." if n_err == 0 else f"Ошибок: {n_err} — исправь и запусти снова.")
     if len(sys.argv) == 1:
@@ -387,6 +471,8 @@ def cmd_export(out_dir: Path) -> None:
         "events":     list(EVENTS),
         "entities":   {n: m["aliases"] for n, m in d.entities.items()},
         "stoplist":   _stoplist(),
+        "creative_sections": list(CREATIVE_SECTIONS),
+        "moves_file": MOVES_FILE,
     }
     (out_dir / "_kit" / "rules.json").write_text(json.dumps(rules, ensure_ascii=False, indent=2), encoding="utf-8")
     (out_dir / "check.py").write_text(CHECK_PY, encoding="utf-8")
@@ -470,6 +556,35 @@ def cmd_apply(kit_dir: Path, write: bool) -> None:
             problems.append(f"{path.stem}: лишний id в ответе {extra}")
         updated[path] = new_issue
 
+    # Переносы в творческие рубрики
+    moves_path = out_dir / MOVES_FILE
+    moved: list[str] = []
+    if moves_path.exists():
+        try:
+            moves = json.loads(moves_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            problems.append(f"{MOVES_FILE}: невалидный JSON ({e})")
+            moves = []
+        by_id = {it.get("id"): (issue, it) for issue in updated.values() for it in issue.get("news", [])}
+        for m in moves if isinstance(moves, list) else []:
+            found = by_id.get(m.get("id")) if isinstance(m, dict) else None
+            if not found:
+                problems.append(f"{MOVES_FILE}: нет новости {m.get('id') if isinstance(m, dict) else m!r}")
+                continue
+            if m.get("section") not in CREATIVE_SECTIONS:
+                problems.append(f"{MOVES_FILE}: {m.get('id')} — недопустимая рубрика {m.get('section')!r}")
+                continue
+            issue, it = found
+            old_section = it.get("section")
+            it["section"] = m["section"]
+            det = m.get("details")
+            if isinstance(det, str) and det.strip():
+                it["details"] = det.strip()[:140]
+            moved.append(f"{issue.get('date')} · {old_section} → {m['section']} · {it['headline'][:70]}"
+                         + (f" · {it['details']}" if it.get("details") else ""))
+    else:
+        problems.append(f"нет {MOVES_FILE} (если переносов нет — пустой список [])")
+
     def table(b: Counter, a: Counter, keys) -> str:
         return "\n".join(f"  {k:<12} {b.get(k, 0):>4} → {a.get(k, 0):>4}" for k in keys)
 
@@ -484,6 +599,11 @@ def cmd_apply(kit_dir: Path, write: bool) -> None:
     if unknown:
         print(f"\nНовые сущности (нет в entities.yaml): {len(unknown)}")
         print("  " + ", ".join(f"{n} ×{c}" for n, c in unknown.most_common()))
+    if moves_path.exists():
+        print(f"\nПереносы в рубрики ({len(moved)}): " + ", ".join(
+            f"{s} {n}" for s, n in Counter(x.split(" · ")[1].split(" → ")[1] for x in moved).items()))
+        for m in moved:
+            print(f"  · {m}")
     if notes:
         print(f"\nЗаметки исполнителя ({len(notes)}):")
         for n in notes:
