@@ -49,7 +49,11 @@ Parallel HTTP fetch (ThreadPoolExecutor, 10 workers) from all `sources` in `sour
 - `rss` — parsed with feedparser
 - `scrape` — HTML parsed with BeautifulSoup; tries JSON-LD structured data first, falls back to `h1/h2/h3` scan
 
-Items filtered by 24h window, deduplicated by URL and title. **Защита от сборки без сети:** если не загрузилось больше половины источников (`NEUROGAZETTE_MAX_FAILED_SOURCES`, по умолчанию 0.5), этап 1 падает без записи `_raw.json` — `run.sh` шлёт алерт, self-heal-запуск повторяет. Так урезанная сеть (облачная сессия, сбой прокси) не превращается в тощий выпуск. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200`.
+Items filtered by 24h window, deduplicated by URL and title. **Защита от сборки без сети:** если не загрузилось больше половины источников (`NEUROGAZETTE_MAX_FAILED_SOURCES`, по умолчанию 0.5), этап 1 падает без записи `_raw.json` — `run.sh` шлёт алерт, self-heal-запуск повторяет. Так урезанная сеть (облачная сессия, сбой прокси) не превращается в тощий выпуск. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200` — but up to `RAW_CONTENT_RESERVE=40` places are guaranteed to `section: content` and `section: art` sources (`RAW_ART_RESERVE=10` of them to `art`; they are usually priority 2–3 and would otherwise be cut before filtering).
+
+Optional per-source `keywords:` list — only items whose title/summary match are kept. Used for general art media where AI is a small share. `"нейросет*"` = prefix match, `"AI"` = whole word.
+
+`is_vague_url()` also rejects service pages (`/home`, `/pricing`, `/press-inquiry`…) and SEO listicles (`/best-…`, `/top-10-…`).
 
 ### Stage 2: web search
 
@@ -70,7 +74,7 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
 ```json
 {
   "id": "section-md5hash-YYYY-MM-DD",
-  "section": "models|platforms|industry|hype",
+  "section": "models|platforms|industry|content|art|hype",
   "headline": "...",
   "subheadline": "...",
   "body": "...",
@@ -80,9 +84,20 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
   "related": [{"title": "...", "url": "...", "entities": [], "sentiment": "positive|negative|neutral"}],
   "unconfirmed": false,
   "duplicate_note": null,
-  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|..."}
+  "details": "content/art only, optional: «Москва, ГЭС-2 · 20 окт — 15 янв» / «−40% на год · до 31 окт»",
+  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|shutdown|investment|regulation|leak|promo|exhibition"}
 }
 ```
+
+### Rubrics
+`models` Модели · `platforms` Платформы · `industry` Индустрия · `content` Нейроконтент · `art` Искусство · `hype` Желтуха.
+
+**Нейроконтент (`content`)** — нейросети, которыми пользуются нейрокреаторы: генерация фото, видео, 3D-моделей, миров и игр (Midjourney, Flux, Nano Banana, GPT-image, Kandinsky, Veo, Sora, Kling, Runway, Seedance, Meshy, Genie…) — релизы и обновления, бесплатные генераторы и тарифы, скидки на подписки. Универсальные мультимодальные модели остаются в `models`; деньги, суды и кадры вокруг этих компаний — в `industry`/`hype`. Скидки — только объявленные самим сервисом, с размером и сроком, всегда `compact` + `event: promo`; «бесплатно» — с указанием лимита.
+
+**Искусство (`art`)** — выставки, нейромузеи, фестивали, конкурсы и премии ИИ-искусства (мир + Россия); только с площадкой и датами, `event: exhibition`. `details` (практическая строка: место и даты, срок скидки, лимит) сохраняется только для `content` и `art`.
+
+### Source health check
+`scripts/check_sources.py [sections…]` — HTTP-only, no Claude, 30-day window, same fetch functions as stage 1. In CI: Actions → «Проверка источников» → Run workflow (default `content`); report lands in the run Summary.
 
 ## Frontend (`docs/`)
 

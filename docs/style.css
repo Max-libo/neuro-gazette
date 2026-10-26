@@ -134,7 +134,20 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .section-badge--models   { color: #1a5276; }
 .section-badge--platforms { color: #145a32; }
 .section-badge--industry  { color: #4a235a; }
+.section-badge--content   { color: #8a5a00; }
+.section-badge--art       { color: #7b2d26; }
 .section-badge--hype      { color: var(--accent); }
+
+/* Практическая строка рубрик «Нейроконтент» и «Искусство»: даты, место, срок скидки */
+.art-details {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-mid);
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #8a5a00;
+}
 
 /* ── HERO ZONE — полная ширина, над колонками ── */
 .heroes-zone {
