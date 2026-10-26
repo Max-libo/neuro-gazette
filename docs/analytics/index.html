@@ -358,15 +358,28 @@ function entityCounts() {
   return map;
 }
 
+// Тональность новости для конкретной сущности: из tags.entity_sentiment,
+// в старых выпусках карты нет — общий тон новости. Слух считается нейтральным.
+function entitySentiment(item, name) {
+  const map = (item.tags && item.tags.entity_sentiment) || {};
+  const key = Object.keys(map).find(k => k.toLowerCase() === name.toLowerCase());
+  const s = key ? map[key] : (item.tags && item.tags.sentiment);
+  return ['positive', 'negative', 'neutral'].includes(s) ? s : 'neutral';
+}
+
 function topN(obj, n) {
   return Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, n);
 }
 
 const SENTIMENT_LABELS = { positive: 'Позитив', negative: 'Негатив', neutral: 'Нейтрально', rumor: 'Слух' };
 const SENTIMENT_COLORS = { positive: '#27ae60', negative: '#c0392b', neutral: '#7f8c8d', rumor: '#e67e22' };
+// Совпадает с EVENTS в scripts/pipeline/common.py
 const EVENT_LABELS = {
-  release: 'Релиз', update: 'Обновление', investment: 'Инвестиции',
-  regulation: 'Регуляция', leak: 'Утечка', shutdown: 'Закрытие',
+  release: 'Релиз', update: 'Обновление', shutdown: 'Закрытие',
+  investment: 'Инвестиции', finance: 'Финансы', acquisition: 'Сделка M&A',
+  partnership: 'Партнёрство', regulation: 'Регулирование', legal: 'Суд',
+  people: 'Кадры', research: 'Исследование', incident: 'Инцидент', criticism: 'Критика',
+  leak: 'Утечка', statement: 'Заявление', other: 'Другое',
 };
 const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', hype: 'Желтуха' };
 
@@ -547,7 +560,7 @@ function buildReport() {
   section.style.display = 'block';
 
   // Summary stats
-  const sc = countBy(items, item => item.tags?.sentiment || 'neutral');
+  const sc = countBy(items, item => entitySentiment(item, company));
   document.getElementById('report-summary').innerHTML = `
     <div class="report-stat">
       <span class="rs-val">${items.length}</span>
@@ -576,9 +589,9 @@ function buildReport() {
   const posData = [], negData = [], neuData = [];
   dates.forEach(date => {
     const dayItems = items.filter(item => item._date === date);
-    posData.push(dayItems.filter(i => i.tags?.sentiment === 'positive').length);
-    negData.push(dayItems.filter(i => i.tags?.sentiment === 'negative').length);
-    neuData.push(dayItems.filter(i => i.tags?.sentiment === 'neutral' || i.tags?.sentiment === 'rumor').length);
+    posData.push(dayItems.filter(i => entitySentiment(i, company) === 'positive').length);
+    negData.push(dayItems.filter(i => entitySentiment(i, company) === 'negative').length);
+    neuData.push(dayItems.filter(i => entitySentiment(i, company) === 'neutral').length);
   });
 
   if (chartReportTimeline) chartReportTimeline.destroy();
@@ -662,8 +675,8 @@ function buildReport() {
     <div class="article-item">
       <span class="article-date">${item._date}</span>
       <span class="article-headline">${escHtml(item.headline)}</span>
-      <span class="sentiment-badge ${item.tags?.sentiment || 'neutral'}">
-        ${SENTIMENT_LABELS[item.tags?.sentiment] || 'нейтр.'}
+      <span class="sentiment-badge ${entitySentiment(item, company)}">
+        ${SENTIMENT_LABELS[entitySentiment(item, company)]}
       </span>
     </div>
   `).join('');
