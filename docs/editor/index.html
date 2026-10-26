@@ -403,8 +403,7 @@
               <select class="form-select" onchange="updateTagField(${idx},'sentiment',this.value)">
                 <option value="positive" ${item.tags&&item.tags.sentiment==='positive'?'selected':''}>Позитив</option>
                 <option value="negative" ${item.tags&&item.tags.sentiment==='negative'?'selected':''}>Негатив</option>
-                <option value="neutral" ${item.tags&&item.tags.sentiment==='neutral'?'selected':''}>Нейтрально</option>
-                <option value="rumor" ${item.tags&&item.tags.sentiment==='rumor'?'selected':''}>Слух</option>
+                <option value="neutral" ${item.tags&&(item.tags.sentiment==='neutral'||item.tags.sentiment==='rumor')?'selected':''}>Нейтрально</option>
               </select>
             </div>
           </div>
@@ -451,7 +450,13 @@
   function updateTags(idx, value) {
     if (!issue || !issue.news[idx]) return;
     if (!issue.news[idx].tags) issue.news[idx].tags = {};
-    issue.news[idx].tags.entities = value.split(',').map(s => s.trim()).filter(Boolean);
+    const tags = issue.news[idx].tags;
+    tags.entities = value.split(',').map(s => s.trim()).filter(Boolean);
+    // Карта тональностей по сущностям повторяет список: убранные — удаляем,
+    // новые — получают общий тон новости.
+    const prev = tags.entity_sentiment || {};
+    const overall = ['positive', 'negative', 'neutral'].includes(tags.sentiment) ? tags.sentiment : 'neutral';
+    tags.entity_sentiment = Object.fromEntries(tags.entities.map(e => [e, prev[e] || overall]));
     saveDraft();
   }
 
@@ -497,7 +502,7 @@
       sources: sourceUrl ? [{ title: 'Источник', url: sourceUrl, type: 'media' }] : [],
       unconfirmed: false,
       duplicate_note: null,
-      tags: { entities: [], sentiment: 'neutral', event: 'update' },
+      tags: { entities: [], sentiment: 'neutral', entity_sentiment: {}, event: 'other' },
     };
 
     if (!issue) issue = { date: new Date().toISOString().slice(0, 10), published: false, news: [] };

@@ -45,20 +45,26 @@ def build_stats(issues: list[dict]) -> dict:
         month = date[:7]  # "2026-04"
 
         for item in issue.get("news", []):
-            sentiment = (item.get("tags") or {}).get("sentiment", "neutral")
-            # rumor → neutral для статистики
-            if sentiment == "rumor":
-                sentiment = "neutral"
+            tags = item.get("tags") or {}
+            sentiment = _clean_sentiment(tags.get("sentiment"))
+            # Тональность по сущности; в старых выпусках карты нет — берём общий тон новости
+            by_entity = tags.get("entity_sentiment") or {}
 
-            for entity in (item.get("tags") or {}).get("entities", []):
-                _record(entities, entity, sentiment, date, month)
+            # Сущность считается один раз на новость: если она есть и в основной
+            # новости, и в её related — упоминание одно, тональность из основной.
+            counted: set[str] = set()
+            for entity in tags.get("entities", []):
+                if entity in counted:
+                    continue
+                counted.add(entity)
+                _record(entities, entity, _clean_sentiment(by_entity.get(entity, sentiment)), date, month)
 
-            # related items
             for rel in item.get("related") or []:
-                rel_sentiment = rel.get("sentiment", "neutral")
-                if rel_sentiment not in ("positive", "negative", "neutral"):
-                    rel_sentiment = "neutral"
+                rel_sentiment = _clean_sentiment(rel.get("sentiment"))
                 for entity in rel.get("entities") or []:
+                    if entity in counted:
+                        continue
+                    counted.add(entity)
                     _record(entities, entity, rel_sentiment, date, month)
 
     # Сортируем по количеству упоминаний
@@ -76,6 +82,11 @@ def build_stats(issues: list[dict]) -> dict:
         "total_entities": len(sorted_entities),
         "entities": sorted_entities,
     }
+
+
+def _clean_sentiment(value) -> str:
+    """rumor и мусор → neutral: слух — это достоверность, а не тональность."""
+    return value if value in ("positive", "negative", "neutral") else "neutral"
 
 
 def _record(entities: dict, entity: str, sentiment: str, date: str, month: str):

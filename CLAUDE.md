@@ -41,6 +41,12 @@ After stage 4, `generate_preview.py` builds OG-preview HTML in `docs/preview/`, 
 
 **Shared code:** `scripts/pipeline/common.py` — time window calculation, URL validation, date parsing, `validate_and_fix()`, `finalize_news()`, `run_claude()` (wraps `claude --print`), changelog versioning.
 
+**Справочник сущностей:** `entities.yaml` (корень репо) + `scripts/pipeline/entities.py`. `validate_and_fix()` приводит `tags.entities` и `related[].entities` к каноническим именам (регистр, дефисы, точки, «ё» не важны; варианты — в `aliases`), выкидывает темы из `stoplist`, неизвестные сущности пропускает как есть и пишет их списком в лог этапа 4. Этап 4 получает список канонических имён в системном промпте. Каноническое имя: компании, продукты, модели, люди — в оригинальном написании; страны и госорганы — по-русски. Поле `parent` (продукт → компания) пока используется только справочником, для статистики — следующий шаг.
+```bash
+python scripts/pipeline/entities.py --check    # проверить справочник
+python scripts/pipeline/entities.py --report   # что склеится в истории и чего нет в справочнике
+```
+
 **`run_claude()`** calls `claude --print --model <model>` via subprocess, reads stdin. Rate-limit handling: waits 60 min and retries up to 6 times.
 
 ### Stage 1: collect
@@ -85,9 +91,24 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
   "unconfirmed": false,
   "duplicate_note": null,
   "details": "content/art only, optional: «Москва, ГЭС-2 · 20 окт — 15 янв» / «−40% на год · до 31 окт»",
-  "tags": {"entities": [], "sentiment": "positive|negative|neutral|rumor", "event": "release|update|shutdown|investment|regulation|leak|promo|exhibition"}
+  "tags": {
+    "entities": ["OpenAI", "xAI"],
+    "sentiment": "positive|negative|neutral",
+    "entity_sentiment": {"OpenAI": "neutral", "xAI": "negative"},
+    "event": "код из EVENTS (release, update, research, criticism, promo, exhibition, …)"
+  }
 }
 ```
+
+`tags.sentiment` — общий тон новости, `tags.entity_sentiment` — тональность для каждой сущности из `tags.entities` (как новость сказывается именно на ней); ключи всегда совпадают со списком `entities`, пропуски дозаполняются общим тоном. Слух — не тональность: `"rumor"` превращается в `unconfirmed: true` + `neutral`. Типы событий (`tags.event`) заданы словарём `EVENTS` в `common.py` — из него собираются валидация и описание для промпта; метки для сайта — `EVENT_LABELS` в `docs/analytics/index.html`. Неизвестное значение → `other` с записью в лог (раньше молча становилось `update`). В выпусках до октября 2026 карты нет — `stats.py` и аналитика берут общий тон.
+
+**Перетегирование истории** (`scripts/retag.py`) — для внешнего исполнителя (GPT, Claude, человек):
+```bash
+python scripts/retag.py export ПАПКА          # ЗАДАНИЕ.md, справочник.md, input/*.json, check.py
+python scripts/retag.py apply  ПАПКА          # пробный прогон: сводка изменений, новые сущности, заметки
+python scripts/retag.py apply  ПАПКА --write  # записать теги в docs/data/*.json, latest.json, stats.json
+```
+Правила в задании — те же `TAGGING_RULES` и `EVENTS`, что в этапе 4. `apply` прогоняет ответы через `_fix_entity_tags` / `_fix_event` и не пишет ничего, если хоть одна новость без ответа.
 
 ### Rubrics
 `models` Модели · `platforms` Платформы · `industry` Индустрия · `content` Нейроконтент · `art` Искусство · `hype` Желтуха.
@@ -97,7 +118,7 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
 **Искусство (`art`)** — выставки, нейромузеи, фестивали, конкурсы и премии ИИ-искусства (мир + Россия); только с площадкой и датами, `event: exhibition`. `details` (практическая строка: место и даты, срок скидки, лимит) сохраняется только для `content` и `art`.
 
 ### Source health check
-`scripts/check_sources.py [sections…]` — HTTP-only, no Claude, 30-day window, same fetch functions as stage 1. In CI: Actions → «Проверка источников» → Run workflow (default `content`); report lands in the run Summary.
+`scripts/check_sources.py [sections…]` — HTTP-only, no Claude, 30-day window, same fetch functions as stage 1. In CI: Actions → «Проверка источников» → Run workflow (default `content art`); report lands in the run Summary.
 
 ## Frontend (`docs/`)
 
