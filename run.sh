@@ -83,7 +83,7 @@ if command -v timeout &>/dev/null; then TIMEOUT_CMD=(timeout 30)
 elif command -v gtimeout &>/dev/null; then TIMEOUT_CMD=(gtimeout 30)
 else TIMEOUT_CMD=()
 fi
-HEALTH_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model claude-haiku-4-5-20251001 'ping' 2>&1) || HEALTH_RC=$?
+HEALTH_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model "${NEUROGAZETTE_MODEL_PING:-claude-haiku-5-5}" 'ping' 2>&1) || HEALTH_RC=$?
 HEALTH_RC=${HEALTH_RC:-0}
 if [ "$HEALTH_RC" -ne 0 ] || [[ "$HEALTH_OUT" == *"403"* ]] || [[ "$HEALTH_OUT" == *"Failed to authenticate"* ]]; then
   log "Healthcheck: claude CLI не авторизован. Ответ: ${HEALTH_OUT:0:200}"
@@ -147,6 +147,14 @@ if $NO_PUSH; then
 fi
 
 CURRENT_STAGE="git_commit"
+# Защита от двойного выпуска: если параллельный запуск уже опубликовал
+# выпуск за эту дату, не коммитим свой и не шлём алерт об ошибке пуша.
+ISSUE_DATE=$(python3 -c "import json; print(json.load(open('docs/data/latest.json'))['date'])")
+if git fetch -q origin main 2>/dev/null && git cat-file -e "origin/main:docs/data/${ISSUE_DATE}.json" 2>/dev/null; then
+  log "Выпуск $ISSUE_DATE уже опубликован другим запуском — свой не коммичу."
+  trap - ERR
+  exit 0
+fi
 log "Коммит…"
 git config user.name  "github-actions[bot]"
 git config user.email "github-actions[bot]@users.noreply.github.com"

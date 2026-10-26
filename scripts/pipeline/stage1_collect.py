@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -23,7 +24,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
-    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT,
+    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT, RAW_CONTENT_RESERVE, RAW_ART_RESERVE, CREATIVE_SECTIONS,
     is_vague_url, clean_text, parse_date, extract_date_from_url,
     load_sources, load_recent_issues, get_prev_urls, log,
 )
@@ -32,6 +33,15 @@ HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
     "Accept": "text/html,application/rss+xml,application/xml,*/*",
 }
+
+
+# ── Защита от «тихой» сборки без сети ──────────────────────────────────────────
+# Ошибка загрузки и «нет новых статей» иначе неотличимы: оба дают пустой список.
+# Если недоступна большая часть источников, это не новостной штиль, а проблема
+# окружения (урезанная сеть, блокировка, падение прокси). Публиковать такой
+# выпуск нельзя — этап 1 падает, run.sh шлёт алерт, self-heal-запуск повторит.
+MAX_FAILED_SHARE = float(os.environ.get("NEUROGAZETTE_MAX_FAILED_SOURCES") or 0.5)
+_failed_sources: set[str] = set()   # set.add потокобезопасен в CPython
 
 
 # ── HTTP ──────────────────────────────────────────────────────────────────────
@@ -49,6 +59,37 @@ def _http_get(url: str, retries: int = 2) -> requests.Response | None:
     return None
 
 
+# ── Фильтр по ключевым словам ─────────────────────────────────────────────────
+# Для общих источников (арт-СМИ, музеи), где про ИИ — малая доля материалов.
+# В sources.yaml: keywords: ["AI", "нейросет*", ...]
+#   слово без звёздочки — целое слово ("AI" не поймает "Aircraft"),
+#   слово со звёздочкой — префикс ("нейросет*" ловит "нейросети", "нейросетью").
+
+def _compile_keywords(keywords: list[str] | None) -> re.Pattern | None:
+    if not keywords:
+        return None
+    parts = []
+    for kw in keywords:
+        kw = str(kw).strip()
+        if not kw:
+            continue
+        if kw.endswith("*"):
+            parts.append(r"(?<!\w)" + re.escape(kw[:-1]))
+        else:
+            parts.append(r"(?<!\w)" + re.escape(kw) + r"(?!\w)")
+    return re.compile("|".join(parts), re.IGNORECASE) if parts else None
+
+
+def apply_keyword_filter(source: dict, items: list[dict]) -> list[dict]:
+    pattern = _compile_keywords(source.get("keywords"))
+    if not pattern:
+        return items
+    kept = [a for a in items if pattern.search(f"{a.get('title', '')} {a.get('summary', '')}")]
+    if len(kept) != len(items):
+        log.info("%s: фильтр по ключевым словам %d → %d", source["name"], len(items), len(kept))
+    return kept
+
+
 # ── RSS ───────────────────────────────────────────────────────────────────────
 
 def fetch_rss(source: dict) -> list[dict]:
@@ -58,6 +99,7 @@ def fetch_rss(source: dict) -> list[dict]:
         feed = feedparser.parse(resp.content)
     except Exception as e:
         log.warning("RSS %s — ошибка: %s", name, e)
+        _failed_sources.add(name)
         return []
 
     result = []
@@ -90,10 +132,11 @@ def fetch_rss(source: dict) -> list[dict]:
             "published": pub_dt.date().isoformat(),
             "summary":   summary,
             "priority":  source.get("priority", 2),
+            "section":   source.get("section", ""),
         })
 
     log.info("RSS %s: %d статей", name, len(result))
-    return result
+    return apply_keyword_filter(source, result)
 
 
 # ── Scrape bookmark (отслеживание последней известной статьи) ─────────────────
@@ -133,6 +176,7 @@ def scrape_page(source: dict) -> list[dict]:
         resp = _http_get(url)
     except Exception as e:
         log.warning("Scrape %s — ошибка: %s", name, e)
+        _failed_sources.add(name)
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -176,6 +220,7 @@ def scrape_page(source: dict) -> list[dict]:
                     "published": pub_dt.date().isoformat() if pub_dt else "unknown",
                     "summary":   (item.get("description") or "")[:500],
                     "priority":  source.get("priority", 2),
+                    "section":   source.get("section", ""),
                 })
                 if len(results) >= max_items:
                     break
@@ -187,7 +232,7 @@ def scrape_page(source: dict) -> list[dict]:
     if results or hit_bookmark:
         log.info("Scrape %s (JSON-LD): %d статей%s", name, len(results),
                  " [bookmark]" if hit_bookmark else "")
-        return results
+        return apply_keyword_filter(source, results)
 
     # 2. Fallback: h1/h2/h3
     hit_bookmark = False
@@ -239,13 +284,14 @@ def scrape_page(source: dict) -> list[dict]:
             "published": pub_dt.date().isoformat() if pub_dt else "unknown",
             "summary":   "",
             "priority":  source.get("priority", 2),
+            "section":   source.get("section", ""),
         })
         if len(results) >= max_items:
             break
 
     log.info("Scrape %s (HTML): %d статей%s", name, len(results),
              " [bookmark]" if hit_bookmark else "")
-    return results
+    return apply_keyword_filter(source, results)
 
 
 # ── Сбор и дедупликация ───────────────────────────────────────────────────────
@@ -299,6 +345,25 @@ def deduplicate(articles: list[dict]) -> list[dict]:
     return result
 
 
+def trim_with_reserve(items: list[dict]) -> list[dict]:
+    """Обрезка до RAW_LIMIT по приоритету, но с гарантированными местами
+    для творческих рубрик («Нейроконтент», «Искусство»): их источники обычно priority 2–3 и иначе
+    вытесняются официальными блогами и СМИ ещё до фильтра."""
+    items = sorted(items, key=lambda a: a.get("priority", 2))
+    art_all     = [a for a in items if a.get("section") == "art"]
+    content_all = [a for a in items if a.get("section") in CREATIVE_SECTIONS and a.get("section") != "art"]
+    art_take     = art_all[:RAW_ART_RESERVE]
+    content_take = content_all[:RAW_CONTENT_RESERVE - len(art_take)]
+    spare        = RAW_CONTENT_RESERVE - len(art_take) - len(content_take)
+    art_take    += art_all[len(art_take):len(art_take) + spare]
+    content = content_take + art_take
+    reserved = {id(a) for a in content}
+    rest = [a for a in items if id(a) not in reserved][:max(RAW_LIMIT - len(content), 0)]
+    result = sorted(content + rest, key=lambda a: a.get("priority", 2))
+    log.info("Обрезка: %d → %d (из них нейроконтент и искусство: %d)", len(items), len(result), len(content))
+    return result
+
+
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -317,6 +382,18 @@ def main() -> None:
     scrape_state = load_scrape_state()
 
     raw_items = collect_all(sources, scrape_state)
+
+    failed = len(_failed_sources)
+    share = failed / len(sources) if sources else 0
+    log.info("Недоступны: %d из %d источников (%.0f%%, порог %.0f%%)",
+             failed, len(sources), share * 100, MAX_FAILED_SHARE * 100)
+    if share > MAX_FAILED_SHARE:
+        log.error(
+            "Недоступна большая часть источников — похоже на проблему сети, а не на тихий день. "
+            "Выпуск не собираю. Недоступны: %s", ", ".join(sorted(_failed_sources))
+        )
+        sys.exit(1)
+
     raw_items = deduplicate(raw_items)
     log.info("После дедупликации: %d статей", len(raw_items))
 
@@ -325,8 +402,7 @@ def main() -> None:
         raw_items = [a for a in raw_items if a.get("url", "").split("?")[0].rstrip("/") not in prev_urls]
         log.info("После исключения дублей с историей: %d → %d", before, len(raw_items))
 
-    raw_items.sort(key=lambda a: a.get("priority", 2))
-    raw_items = raw_items[:RAW_LIMIT]
+    raw_items = trim_with_reserve(raw_items)
 
     raw_cache.write_text(json.dumps(raw_items, ensure_ascii=False, indent=2), encoding="utf-8")
     log.info("Этап 1 готов: %d статей → %s", len(raw_items), raw_cache)

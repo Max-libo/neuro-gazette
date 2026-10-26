@@ -1,0 +1,301 @@
+{
+  "date": "2026-10-24",
+  "published": false,
+  "news": [
+    {
+      "id": "models-moonshot-kimi-k31-2026-10-23",
+      "section": "models",
+      "headline": "Moonshot AI выпустила флагман Kimi K3.1 Pro на 3 трлн параметров",
+      "subheadline": "Китайская лаборатория показывает лучшие результаты на инженерных бенчмарках и намеренно убирает кибербезопасность из post-training",
+      "body": "Kimi K3.1 Pro набрал 92,7% на BenchCAD 3D и обошёл конкурентов на OfficeQA Pro v2. Moonshot заявила, что кибербезопасность исключена из этапа post-training сознательно — компания позиционирует модель как инструмент для инженерных и офисных задач, а не для red-teaming. Это первый китайский флагман, перешагнувший порог 3 трлн параметров.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Moonshot AI launches new flagship Kimi K3.1 Pro model with 3T parameters",
+          "url": "https://siliconangle.com/2026/10/23/moonshot-ai-launches-new-flagship-kim-k3-1-pro-model-with-3t-parameters/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Moonshot AI",
+          "Kimi"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-bytedance-seedance-25-2026-10-23",
+      "section": "models",
+      "headline": "ByteDance выпустила Seedance 2.5 4K для кино- и телепроизводства",
+      "subheadline": "Модель генерирует видео до 30 секунд в разрешении 4K со встроенным аудио",
+      "body": "Через облачное подразделение Volcano Engine ByteDance открыла доступ к Seedance 2.5 4K. Пока модель доступна только корпоративным пилотам в кино- и телеиндустрии; технических деталей архитектуры и данных обучения компания не раскрыла.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ByteDance Launches Seedance 2.5 4K Video Model for Film Production",
+          "url": "https://technode.com/2026/10/23/bytedance-launches-seedance-2-5-4k-video-model-for-film-production",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ByteDance",
+          "Volcano Engine",
+          "Seedance"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-hf-carbonx-2026-10-23",
+      "section": "models",
+      "headline": "Hugging Face представила Carbon-X для работы с ДНК",
+      "subheadline": "Модель Carbon-3B показывает результаты уровня Evo2-7B при значительно более высокой скорости",
+      "body": "Carbon-X — семейство моделей для анализа и генерации ДНК-последовательностей. На восьми zero-shot DNA-задачах Carbon-3B выходит на уровень Evo2-7B, уступая в размере более чем вдвое. Hugging Face позиционирует релиз как доступную базу для биотех-исследований.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Hugging Face Unveils Carbon-X: AI Model Can Chat And Interact With DNA",
+          "url": "https://www.techtimes.com/articles/329400/20261023/hugging-face-unveils-carbon-x-ai-model-can-chat-interact-dna.htm",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Hugging Face",
+          "Carbon-X"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-harness-cost-study-2026-10-23",
+      "section": "platforms",
+      "headline": "Сложные обёртки для кодинг-агентов утраивают стоимость без прироста точности",
+      "subheadline": "Исследование на SWE-bench показало: harness-слой не улучшает качество агентов",
+      "body": "Авторы работы сравнили агентные обёртки разной сложности на одной и той же базовой модели. Более сложные harness-архитектуры с планировщиками, рефлексией и дополнительными шагами триплицировали расходы на инференс, но не дали статистически значимого прироста точности на SWE-bench. Вывод: инвестировать стоит в саму модель, а не в orchestration-слой.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "A coding agent's harness can triple its cost without making it more accurate, study finds",
+          "url": "https://venturebeat.com/orchestration/a-coding-agents-harness-can-triple-its-cost-without-making-it-more-accurate-study-finds",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SWE-bench"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-decisions-image-2026-10-23",
+      "section": "platforms",
+      "headline": "Продолжение: Decisions API получил поддержку изображений и prompt caching",
+      "subheadline": null,
+      "body": "OpenAI добавила в Decisions API image input и prompt caching, позиционируя продукт как прямого конкурента Jev от TypeSafe.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI opens Decisions API to all developers, adding image input",
+          "url": "https://app.dealroom.co/news/note/openai-opens-decisions-api-to-all-developers-adding-image-input-in-challenge-to-typesafe-s-jev",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "OpenAI вывела Decisions API в общий доступ на базе GPT-6 Luna",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Decisions API"
+        ],
+        "sentiment": "neutral",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-whop-sequoia-2026-10-23",
+      "section": "industry",
+      "headline": "Sequoia возглавила раунд Whop на $205 млн — после прежнего отказа",
+      "subheadline": "Платформа цифровых продуктов закрыла Series B у инвестора, который ранее её отверг",
+      "body": "Sequoia Capital ведёт Series B на $205 млн в платформу Whop, которую фонд несколько лет назад отказался финансировать. Whop работает в сегменте продажи цифровых продуктов и сообществ, активно внедряя AI-инструменты для продавцов. Оценка в рамках раунда не раскрыта.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Sequoia Once Rejected Whop, Its Leading A $205M Funding Round",
+          "url": "https://americanbazaaronline.com/2026/10/23/sequoia-once-rejected-whop-its-leading-a-205m-funding-round-490640",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Sequoia Capital",
+          "Whop"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-asi-325m-2026-10-23",
+      "section": "industry",
+      "headline": "ASI привлекла $325 млн при оценке $3 млрд",
+      "subheadline": "Раунд закрыт на фоне разогретого рынка AI-инфраструктурных стартапов",
+      "body": "ASI закрыла раунд $325 млн при оценке $3 млрд. Параллельно в сводке дня — анонс новых медицинских AI-решений Microsoft и подвижки по полупроводниковому финансированию в США, что подчёркивает конкуренцию за капитал на инфраструктурном уровне.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Top Tech News Today: ASI's $3B Valuation, AI Hiring, Microsoft's Medical AI",
+          "url": "https://analyticsinsight.net/tech-news/top-tech-news-today-us-semiconductor-funding-asis-3b-valuation-ai-hiring-xrp-ledger-microsofts-medical-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ASI",
+          "Microsoft"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-congress-model-theft-2026-10-23",
+      "section": "industry",
+      "headline": "Конгресс США рассматривает защиту моделей от distillation-атак",
+      "subheadline": "Законопроекты недели охватывают кражу AI-моделей и регулирование политического AI-контента",
+      "body": "В Конгрессе на этой неделе внесены законопроекты, криминализирующие кражу весов и distillation-атаки на коммерческие модели, а также регулирующие политический контент, созданный ИИ. Отдельный блок направлен на маркировку AI-материалов в предвыборных кампаниях.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Tech bills of the week: Preventing AI model theft; Regulating AI-generated political content",
+          "url": "https://nextgov.com/policy/2026/10/tech-bills-week-preventing-ai-model-theft-regulating-ai-generated-political-content-and-more/416796",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "US Congress"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-openai-leak-firings-2026-10-23",
+      "section": "hype",
+      "headline": "OpenAI уволила трёх исследователей за утечку внутренних данных",
+      "subheadline": "Компания сослалась на разглашение секретов разработки ИИ",
+      "body": "OpenAI уволила трёх исследователей, обвинив их в разглашении внутренней информации об ИИ-разработках. Детали — какие именно материалы ушли и куда — компания не раскрыла.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI уволила трёх исследователей за утечку секретов искусственного интеллекта",
+          "url": "https://vz.ru/news/2026/10/23/1466687.html",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-leire-diez-lawsuit-2026-10-23",
+      "section": "hype",
+      "headline": "Продолжение: Leire Díez подала иск против PP за дипфейк-ролик",
+      "subheadline": null,
+      "body": "Испанская политик Leire Díez подала в суд на Народную партию: AI-ролик с её «признаниями» собрал 2 млн просмотров за первые часы. Юристы расходятся во мнениях о том, подпадает ли видео под действующий закон о политической рекламе.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Leire Díez files lawsuit against PP over viral deepfake clip",
+          "url": "https://www.todoalicante.es/english/leire-diez-files-lawsuit-20261023091015-nt.html",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Испанская PP выпустила AI-видео с «признаниями» политиков PSOE",
+      "tags": {
+        "entities": [
+          "Leire Díez",
+          "Partido Popular"
+        ],
+        "sentiment": "negative",
+        "event": "regulation"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-russia-access-risk-2026-10-23",
+      "section": "hype",
+      "headline": "Эксперты обсуждают риск потери доступа россиян к ChatGPT и Claude",
+      "subheadline": "Выход OpenAI и Anthropic на биржу может ужесточить соблюдение санкций",
+      "body": "В обзоре эксперты допускают сценарий полной блокировки ChatGPT и Claude для российских пользователей: при IPO обе компании окажутся под более жёстким comply-режимом по санкциям. Конкретных решений или заявлений от OpenAI и Anthropic по этому вопросу нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Пользователи из России рискуют потерять доступ к нейросетям",
+          "url": "https://ircity.ru/text/world/2026/10/23/76717999/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Anthropic"
+        ],
+        "sentiment": "rumor",
+        "event": "regulation"
+      },
+      "importance": 5
+    }
+  ]
+}

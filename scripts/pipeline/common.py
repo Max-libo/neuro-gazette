@@ -49,8 +49,23 @@ WINDOW_STR      = (
     f" — {_window_end.strftime('%Y-%m-%d %H:%M')} МСК"
 )
 
-SECTIONS  = ["models", "platforms", "industry", "hype"]
+SECTIONS  = ["models", "platforms", "industry", "content", "art", "hype"]
+# Творческие рубрики: «Нейроконтент» (инструменты нейрокреаторов) и «Искусство» (выставки, музеи)
+CREATIVE_SECTIONS = ("content", "art")
+
+# ── Модели ────────────────────────────────────────────────────────────────────
+# Обновлять здесь. Без правки кода — переменными окружения; в GitHub Actions это
+# Settings → Secrets and variables → Actions → Variables (NEUROGAZETTE_MODEL_*).
+MODEL_FAST = os.environ.get("NEUROGAZETTE_MODEL_FAST") or "claude-sonnet-5-5"   # этапы 2–3
+MODEL_EDIT = os.environ.get("NEUROGAZETTE_MODEL_EDIT") or "claude-opus-5-5"     # этап 4
+
 RAW_LIMIT = 200
+# Сколько мест в сыром списке гарантировано творческим рубрикам (content + art),
+# чтобы их источники (часто priority 2–3) не вылетали при обрезке до RAW_LIMIT.
+RAW_CONTENT_RESERVE = 40
+# Из них гарантировано «Искусству»: его источники — общие арт-СМИ с priority 2–3,
+# и без своей квоты их вытесняет «Нейроконтент». Неиспользованное отходит content.
+RAW_ART_RESERVE = 10
 
 
 # ── Источники ─────────────────────────────────────────────────────────────────
@@ -68,6 +83,14 @@ _AGGREGATE_URL   = re.compile(
     r"/(?:latest|roundup|digest|weekly|daily|this-week|updates?)(?:[/-]|$)",
     re.IGNORECASE,
 )
+# Служебные страницы сайта, которые скрейпер иногда принимает за статьи
+# (pika.art/home, civitai…/press-inquiry), и SEO-листиклы (/best-image-upscalers).
+_SERVICE_PAGE_URL = re.compile(
+    r"/(?:home|index|pricing|plans|about|contact|careers|jobs|login|signin|signup|"
+    r"faq|help|support|privacy|terms|legal|press|press-inquiry|download|app|explore)$",
+    re.IGNORECASE,
+)
+_SEO_LISTICLE_URL = re.compile(r"/(?:best|top-\d+)-[^/]*$", re.IGNORECASE)
 
 
 def is_vague_url(url: str) -> bool:
@@ -81,6 +104,10 @@ def is_vague_url(url: str) -> bool:
     if _VAGUE_INDEX_URL.search(path):
         return True
     if _AGGREGATE_URL.search(path):
+        return True
+    if _SERVICE_PAGE_URL.search(path):
+        return True
+    if _SEO_LISTICLE_URL.search(path):
         return True
     return False
 
@@ -208,6 +235,8 @@ EVENTS: dict[str, tuple[str, str]] = {
     "criticism":   ("Критика",        "журналистское расследование, критика, скандал или спор вокруг решений компании — без происшествия, иска и нового продукта"),
     "leak":        ("Утечка",         "утечка сведений о неанонсированном продукте или планах компании"),
     "statement":   ("Заявление",      "заявления, интервью, прогнозы, извинения, мнения публичных лиц"),
+    "promo":       ("Акция",          "скидка, промо или бесплатный период, объявленные самим сервисом (рубрика content)"),
+    "exhibition":  ("Выставка",       "выставка, музей, фестиваль, конкурс ИИ-искусства (рубрика art)"),
     "other":       ("Другое",         "ничего из перечисленного не подходит"),
 }
 
@@ -226,6 +255,8 @@ EVENT_SYNONYMS: dict[str, str] = {
     "scandal": "criticism", "controversy": "criticism", "investigation": "criticism", "critique": "criticism",
     "rumor": "leak",
     "interview": "statement", "opinion": "statement", "forecast": "statement",
+    "discount": "promo", "sale": "promo", "promotion": "promo", "free_tier": "promo",
+    "exhibit": "exhibition", "museum": "exhibition", "festival": "exhibition", "contest": "exhibition",
 }
 
 # Сырые значения event, которых нет ни в EVENTS, ни в синонимах (для лога)
@@ -326,6 +357,14 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     item.setdefault("body", "")
     item.setdefault("unconfirmed", False)
     item.setdefault("duplicate_note", None)
+
+    # details — короткая служебная строка: даты и место выставки, срок скидки.
+    details = item.get("details")
+    if (item["section"] in CREATIVE_SECTIONS and isinstance(details, str) and details.strip()
+            and not details.strip().lower().startswith("только для")):
+        item["details"] = details.strip()[:140]
+    else:
+        item.pop("details", None)
 
     fixed_related = []
     for r in item.get("related") or []:
@@ -482,7 +521,7 @@ def build_changelog_item() -> dict | None:
 def run_claude(
     prompt: str,
     *,
-    model: str = "claude-sonnet-4-6",
+    model: str = MODEL_FAST,
     system: str | None = None,
     allowed_tools: list[str] | None = None,
     idle_timeout: int = 180,

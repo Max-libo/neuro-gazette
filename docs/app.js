@@ -4,6 +4,8 @@ const SECTION_LABELS = {
   models: 'Модели',
   platforms: 'Платформы',
   industry: 'Индустрия',
+  content: 'Нейроконтент',
+  art: 'Искусство',
   hype: 'Желтуха',
 };
 
@@ -21,6 +23,8 @@ const EVENT_LABELS = {
   investment: 'инвестиции',
   regulation: 'регуляция',
   leak: 'утечка',
+  promo: 'акция',
+  exhibition: 'выставка',
 };
 
 function formatDate(dateStr) {
@@ -42,6 +46,12 @@ function sectionBadge(section) {
   return `<span class="section-badge section-badge--${esc(section)}">${esc(label)}</span>`;
 }
 
+/* Практическая строка для рубрик «Нейроконтент» и «Искусство»: даты выставки, срок скидки, лимиты */
+function buildDetailsHtml(item) {
+  if (!item.details) return '';
+  return `<p class="art-details">${esc(item.details)}</p>`;
+}
+
 function domainName(url) {
   try {
     let host = new URL(url).hostname.replace(/^www\./, '');
@@ -59,6 +69,12 @@ function domainName(url) {
       'stability.ai': 'Stability AI', 'mistral.ai': 'Mistral',
       'blog.google': 'Google', 'blogs.microsoft.com': 'Microsoft',
       'spectrum.ieee.org': 'IEEE Spectrum', 'technologyreview.com': 'MIT Tech Review',
+      'bfl.ai': 'Black Forest Labs', 'midjourney.com': 'Midjourney',
+      'recraft.ai': 'Recraft', 'krea.ai': 'Krea', 'ideogram.ai': 'Ideogram',
+      'leonardo.ai': 'Leonardo', 'blog.adobe.com': 'Adobe',
+      'news.artnet.com': 'Artnet', 'hyperallergic.com': 'Hyperallergic',
+      'theartnewspaper.com': 'The Art Newspaper', 'theartnewspaper.ru': 'The Art Newspaper Russia',
+      'artguide.com': 'Artguide',
     };
     return NAMES[host] || host.split('.').slice(-2, -1)[0];
   } catch { return 'источник'; }
@@ -102,6 +118,7 @@ function buildHeroHtml(item) {
       ${sectionBadge(item.section)}
       <h2 class="art-headline art-headline--hero">${esc(item.headline)}</h2>
       <p class="art-sub">${esc(item.subheadline)}</p>
+      ${buildDetailsHtml(item)}
       <div class="art-body art-body--cols">${esc(item.body)}</div>
       ${buildMetaHtml(item)}
     </article>`;
@@ -114,6 +131,7 @@ function buildRegularHtml(item) {
       ${sectionBadge(item.section)}
       <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
       <p class="art-sub">${esc(item.subheadline)}</p>
+      ${buildDetailsHtml(item)}
       <div class="art-body art-body--collapse">
         ${esc(item.body)}
         ${buildMetaHtml(item)}
@@ -141,6 +159,7 @@ function buildCompactHtml(item) {
     <article class="col-article col-article--compact" id="${esc(item.id)}" onclick="toggleExpand(this)">
       ${sectionBadge(item.section)}
       <h3 class="art-headline art-headline--large">${esc(item.headline)}</h3>
+      ${buildDetailsHtml(item)}
       <div class="art-body art-body--collapse">
         <p class="art-sub">${esc(item.subheadline)}</p>
         ${esc(item.body)}

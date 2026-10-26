@@ -150,6 +150,8 @@
           <option value="models">Модели</option>
           <option value="platforms">Платформы</option>
           <option value="industry">Индустрия</option>
+          <option value="content">Нейроконтент</option>
+          <option value="art">Искусство</option>
           <option value="hype">Желтуха</option>
         </select>
       </div>
@@ -307,7 +309,7 @@
     renderCards();
   }
 
-  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', hype: 'Желтуха' };
+  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', content: 'Нейроконтент', art: 'Искусство', hype: 'Желтуха' };
 
   function renderCards() {
     const el = document.getElementById('editor-cards');
@@ -346,6 +348,8 @@
                 <option value="models" ${item.section==='models'?'selected':''}>Модели</option>
                 <option value="platforms" ${item.section==='platforms'?'selected':''}>Платформы</option>
                 <option value="industry" ${item.section==='industry'?'selected':''}>Индустрия</option>
+                <option value="content" ${item.section==='content'?'selected':''}>Нейроконтент</option>
+                <option value="art" ${item.section==='art'?'selected':''}>Искусство</option>
                 <option value="hype" ${item.section==='hype'?'selected':''}>Желтуха</option>
               </select>
             </div>
@@ -370,6 +374,14 @@
               <label class="form-label">Подзаголовок</label>
               <input type="text" class="form-input" value="${escAttr(item.subheadline)}"
                      oninput="updateField(${idx},'subheadline',this.value)" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label class="form-label">Детали (Нейроконтент: даты, место, срок скидки)</label>
+              <input type="text" class="form-input" value="${escAttr(item.details || '')}"
+                     placeholder="Москва, ГЭС-2 · 20 окт — 15 янв"
+                     oninput="updateField(${idx},'details',this.value)" />
             </div>
           </div>
           <div class="form-row">

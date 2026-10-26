@@ -46,6 +46,10 @@ jobs:
           # Полная история нужна для автоверсии changelog
           # (git diff <прошлый коммит версии> HEAD в common.py)
           fetch-depth: 0
+          # Свежий main, а не коммит на момент постановки в очередь: запуск,
+          # простоявший в concurrency-очереди, иначе не увидит выпуск, который
+          # успел опубликовать предыдущий запуск, и начнёт сборку заново.
+          ref: main
 
       - name: Проверить, есть ли уже выпуск
         id: check
@@ -100,6 +104,10 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           TG_PERSONAL_ID: ${{ secrets.TG_PERSONAL_ID }}
+          # Необязательные переопределения моделей (Settings → Variables); пусто — берутся из common.py
+          NEUROGAZETTE_MODEL_FAST: ${{ vars.NEUROGAZETTE_MODEL_FAST }}
+          NEUROGAZETTE_MODEL_EDIT: ${{ vars.NEUROGAZETTE_MODEL_EDIT }}
+          NEUROGAZETTE_MODEL_PING: ${{ vars.NEUROGAZETTE_MODEL_PING }}
         run: bash morning.sh
 
       - name: Показать лог пайплайна

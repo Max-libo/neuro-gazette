@@ -30,6 +30,7 @@ entities:
   GPT-Image-2:         {type: model,   parent: OpenAI}
   GPT-Rosalind:        {type: model,   parent: OpenAI}
   DALL-E:              {type: model,   parent: OpenAI}
+  The Deployment Company: {type: company, parent: OpenAI, aliases: [Deployment Company]}
 
   # ── Anthropic ─────────────────────────────────────────────────────────────
   Anthropic:           {type: company}
@@ -49,6 +50,7 @@ entities:
   Google:              {type: company}
   Google DeepMind:     {type: company, parent: Google, aliases: [DeepMind]}
   Google Cloud:        {type: product, parent: Google}
+  Agents CLI:          {type: product, parent: Google Cloud}
   Gemini:              {type: model,   parent: Google, aliases: [Google Gemini]}
   Gemini 3.2 Flash:    {type: model,   parent: Gemini}
   Gemini Omni:         {type: model,   parent: Gemini}
@@ -105,6 +107,7 @@ entities:
   AWS:                 {type: company, parent: Amazon, aliases: [Amazon Web Services]}
   Bedrock:             {type: product, parent: AWS, aliases: [Amazon Bedrock, AWS Bedrock]}
   SageMaker:           {type: product, parent: AWS}
+  Agent Registry:      {type: product, parent: AWS}
   Trainium:            {type: product, parent: AWS}
   Amazon Quick:        {type: product, parent: AWS}
   Nova:                {type: model,   parent: Amazon, aliases: [Amazon Nova]}
@@ -115,10 +118,13 @@ entities:
   Apple Intelligence:  {type: product, parent: Apple}
   Siri:                {type: product, parent: Apple}
   iOS:                 {type: product, parent: Apple}
+  App Store:           {type: product, parent: Apple}
+  Mac mini:            {type: product, parent: Apple}
 
   # ── NVIDIA и железо ───────────────────────────────────────────────────────
   NVIDIA:              {type: company}
   Nemotron:            {type: model,   parent: NVIDIA}
+  Ising:               {type: model,   parent: NVIDIA}
   Cosmos:              {type: model,   parent: NVIDIA}
   Rubin:               {type: product, parent: NVIDIA}
   Spectrum-X:          {type: product, parent: NVIDIA}
@@ -142,6 +148,7 @@ entities:
   Grok:                {type: model,   parent: xAI}
   Grok Build:          {type: product, parent: Grok}
   SpaceX:              {type: company}
+  X:                   {type: company, aliases: [Twitter]}
   Tesla:               {type: company}
 
   # ── Китай ─────────────────────────────────────────────────────────────────
@@ -180,6 +187,7 @@ entities:
   Le Chat:             {type: product, parent: Mistral}
   Cohere:              {type: company}
   Hugging Face:        {type: company}
+  Transformers:        {type: product, parent: Hugging Face, aliases: [Hugging Face Transformers]}
   Perplexity:          {type: company}
   Thinking Machines Lab: {type: company, aliases: [Thinking Machines]}
   Safe Superintelligence: {type: company, aliases: [SSI]}
@@ -251,6 +259,7 @@ entities:
   Confluence:          {type: product, parent: Atlassian}
   JetBrains:           {type: company}
   Cloudflare:          {type: company}
+  AI Gateway:          {type: product, parent: Cloudflare, aliases: [Cloudflare AI Gateway]}
   Palantir:            {type: company}
   Anduril:             {type: company}
   Canonical:           {type: company}
@@ -280,6 +289,7 @@ entities:
   Shutterstock:        {type: company}
   Ubisoft:             {type: company}
   Etsy:                {type: company}
+  eBay:                {type: company}
   Intuit:              {type: company}
   TurboTax:            {type: product, parent: Intuit}
   SK Telecom:          {type: company}
@@ -352,6 +362,7 @@ entities:
   Elon Musk:           {type: person,  aliases: [Илон Маск, Musk]}
   Dario Amodei:        {type: person,  aliases: [Дарио Амодеи]}
   Demis Hassabis:      {type: person,  aliases: [Демис Хассабис]}
+  Sundar Pichai:       {type: person,  aliases: [Сундар Пичаи]}
   Jensen Huang:        {type: person,  aliases: [Дженсен Хуанг]}
   Mark Zuckerberg:     {type: person,  aliases: [Марк Цукерберг, Zuckerberg]}
   Greg Brockman:       {type: person}
@@ -459,11 +470,11 @@ entities:
   Mamba:               {type: tech}
 
 # Не сущности, а темы. Из tags.entities удаляются.
+# ASI сюда не входит: в октябре 2026 так называется стартап (см. отчёт перетегирования).
 stoplist:
   - AI agents
   - AI film
   - AI users
-  - ASI
   - benchmarks
   - Big Tech
   - data centers
