@@ -93,7 +93,15 @@ Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up t
 }
 ```
 
-`tags.sentiment` — общий тон новости, `tags.entity_sentiment` — тональность для каждой сущности из `tags.entities` (как новость сказывается именно на ней); ключи всегда совпадают со списком `entities`, пропуски дозаполняются общим тоном. Слух — не тональность: `"rumor"` превращается в `unconfirmed: true` + `neutral`. В выпусках до октября 2026 карты нет — `stats.py` и аналитика берут общий тон.
+`tags.sentiment` — общий тон новости, `tags.entity_sentiment` — тональность для каждой сущности из `tags.entities` (как новость сказывается именно на ней); ключи всегда совпадают со списком `entities`, пропуски дозаполняются общим тоном. Слух — не тональность: `"rumor"` превращается в `unconfirmed: true` + `neutral`. Типы событий (`tags.event`) заданы словарём `EVENTS` в `common.py` — из него собираются валидация и описание для промпта; метки для сайта — `EVENT_LABELS` в `docs/analytics/index.html`. Неизвестное значение → `other` с записью в лог (раньше молча становилось `update`). В выпусках до октября 2026 карты нет — `stats.py` и аналитика берут общий тон.
+
+**Перетегирование истории** (`scripts/retag.py`) — для внешнего исполнителя (GPT, Claude, человек):
+```bash
+python scripts/retag.py export ПАПКА          # ЗАДАНИЕ.md, справочник.md, input/*.json, check.py
+python scripts/retag.py apply  ПАПКА          # пробный прогон: сводка изменений, новые сущности, заметки
+python scripts/retag.py apply  ПАПКА --write  # записать теги в docs/data/*.json, latest.json, stats.json
+```
+Правила в задании — те же `TAGGING_RULES` и `EVENTS`, что в этапе 4. `apply` прогоняет ответы через `_fix_entity_tags` / `_fix_event` и не пишет ничего, если хоть одна новость без ответа.
 
 ## Frontend (`docs/`)
 
