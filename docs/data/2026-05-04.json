@@ -40,7 +40,7 @@
             "Goldman Sachs",
             "Blackstone"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         },
         {
           "title": "OpenAI and Anthropic partner with private equity",
@@ -49,7 +49,7 @@
             "OpenAI",
             "Anthropic"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -58,14 +58,19 @@
         "entities": [
           "OpenAI",
           "Anthropic",
+          "The Deployment Company",
           "Goldman Sachs",
-          "Blackstone",
-          "TPG",
-          "Bain Capital",
-          "Brookfield"
+          "Blackstone"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Anthropic": "positive",
+          "The Deployment Company": "positive",
+          "Goldman Sachs": "neutral",
+          "Blackstone": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 9
     },
@@ -89,11 +94,14 @@
       "tags": {
         "entities": [
           "Xiaomi",
-          "MiMo",
-          "Claude"
+          "MiMo"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Xiaomi": "positive",
+          "MiMo": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 7
     },
@@ -119,8 +127,12 @@
           "Sakana AI",
           "KAME"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Sakana AI": "positive",
+          "KAME": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -145,8 +157,11 @@
         "entities": [
           "MIT"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "MIT": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -169,11 +184,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "США",
-          "Китай"
+          "Китай",
+          "США"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Китай": "negative",
+          "США": "positive"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 5
     },
@@ -203,8 +222,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "neutral",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -229,8 +249,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -262,8 +285,11 @@
         "entities": [
           "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -290,8 +316,13 @@
           "GitHub Copilot",
           "VS Code"
         ],
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "GitHub Copilot": "negative",
+          "VS Code": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -314,17 +345,19 @@
           "title": "Agent-guided workflows to accelerate model customization in Amazon SageMaker AI",
           "url": "https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai/",
           "entities": [
-            "AWS"
+            "AWS",
+            "SageMaker"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         },
         {
           "title": "Capacity-aware inference: Automatic instance fallback for SageMaker AI endpoints",
           "url": "https://aws.amazon.com/blogs/machine-learning/capacity-aware-inference-automatic-instance-fallback-for-sagemaker-ai-endpoints/",
           "entities": [
-            "AWS"
+            "AWS",
+            "SageMaker"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -332,10 +365,15 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon",
-          "Bedrock"
+          "Bedrock",
+          "AgentCore Optimization"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Bedrock": "positive",
+          "AgentCore Optimization": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -368,16 +406,21 @@
       "duplicate_note": "Google подписал AI-сделку с Пентагоном вопреки протесту 600 сотрудников",
       "tags": {
         "entities": [
-          "Pentagon",
+          "Пентагон",
           "OpenAI",
           "Google",
           "Microsoft",
-          "Amazon",
-          "Nvidia",
           "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Пентагон": "neutral",
+          "OpenAI": "positive",
+          "Google": "positive",
+          "Microsoft": "positive",
+          "Anthropic": "negative"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -403,6 +446,10 @@
           "Sierra",
           "Bret Taylor"
         ],
+        "entity_sentiment": {
+          "Sierra": "positive",
+          "Bret Taylor": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -429,8 +476,11 @@
         "entities": [
           "Cerebras"
         ],
+        "entity_sentiment": {
+          "Cerebras": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -468,11 +518,16 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "EU",
-          "European Commission",
+          "ЕС",
+          "Еврокомиссия",
           "AI Act"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "ЕС": "neutral",
+          "Еврокомиссия": "negative",
+          "AI Act": "neutral"
+        },
+        "sentiment": "negative",
         "event": "regulation"
       },
       "importance": 7
@@ -496,8 +551,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Colorado"
+          "Колорадо"
         ],
+        "entity_sentiment": {
+          "Колорадо": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -522,8 +580,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {},
+        "sentiment": "negative",
+        "event": "finance"
       },
       "importance": 5
     },
@@ -549,8 +608,12 @@
           "Nature",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "Nature": "neutral",
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "other"
       },
       "importance": 5
     },
@@ -579,12 +642,20 @@
       "tags": {
         "entities": [
           "Grok",
-          "xAI",
           "Claude",
-          "GPT-5.2"
+          "GPT-5.2",
+          "CUNY",
+          "King’s College London"
         ],
+        "entity_sentiment": {
+          "Grok": "negative",
+          "Claude": "positive",
+          "GPT-5.2": "positive",
+          "CUNY": "neutral",
+          "King’s College London": "neutral"
+        },
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -641,8 +712,14 @@
           "Sam Altman",
           "Greg Brockman"
         ],
+        "entity_sentiment": {
+          "Elon Musk": "negative",
+          "OpenAI": "negative",
+          "Sam Altman": "negative",
+          "Greg Brockman": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -665,10 +742,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US Treasury"
+          "Минфин США"
         ],
+        "entity_sentiment": {
+          "Минфин США": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -691,8 +771,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -717,8 +798,11 @@
         "entities": [
           "Harvard"
         ],
+        "entity_sentiment": {
+          "Harvard": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     }

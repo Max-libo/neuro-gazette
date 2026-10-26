@@ -24,8 +24,12 @@
           "Alibaba",
           "Qwen"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -51,8 +55,12 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -77,8 +85,11 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -101,7 +112,7 @@
           "title": "В Японии роботы заполняют вакансии, на которые не идут люди",
           "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
           "entities": [
-            "Japan"
+            "Япония"
           ],
           "sentiment": "positive"
         }
@@ -112,8 +123,11 @@
         "entities": [
           "NVIDIA"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -138,8 +152,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -174,6 +191,10 @@
           "TigerFS",
           "PostgreSQL"
         ],
+        "entity_sentiment": {
+          "TigerFS": "positive",
+          "PostgreSQL": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -201,8 +222,12 @@
           "Microsoft",
           "Copilot"
         ],
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "Copilot": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 9
     },
@@ -225,8 +250,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -257,9 +283,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Иран",
+          "США"
+        ],
+        "entity_sentiment": {
+          "Иран": "neutral",
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -293,8 +326,11 @@
         "entities": [
           "Suno"
         ],
+        "entity_sentiment": {
+          "Suno": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -316,9 +352,18 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "entity_sentiment": {
+          "ChatGPT": "positive",
+          "Claude": "positive",
+          "Gemini": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -340,15 +385,20 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Stack Overflow"
+        ],
+        "entity_sentiment": {
+          "Stack Overflow": "negative"
+        },
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
     {
       "id": "hype-veo-free-generations",
-      "section": "hype",
+      "section": "content",
       "headline": "Google Veo 3.1: 10 бесплатных генераций видео в месяц для всех аккаунтов",
       "subheadline": "Google открыла ограниченный бесплатный доступ к видеогенератору Veo 3.1.",
       "body": "Согласно публикации на Хабре, Google предоставила бесплатный доступ к модели видеогенерации Veo 3.1 — любой аккаунт получает 10 генераций в месяц без оплаты. Ранее Veo был доступен только в платных тарифах. Шаг направлен на расширение пользовательской базы и конкуренцию с Sora от OpenAI и другими видеогенераторами. Качество генерации и ограничения по длительности в бесплатном режиме в источнике детально не описаны.",
@@ -366,12 +416,17 @@
       "tags": {
         "entities": [
           "Google",
-          "Veo"
+          "Veo 3.1"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Veo 3.1": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "10 генераций в месяц · для любого аккаунта"
     },
     {
       "id": "hype-wikipedia-ai-agent-conflict",
@@ -395,8 +450,12 @@
           "Wikipedia",
           "TomWikiAssist"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Wikipedia": "neutral",
+          "TomWikiAssist": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -419,11 +478,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     }

@@ -26,6 +26,12 @@
           "OpenAI",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Fara1.5": "positive",
+          "OpenAI": "neutral",
+          "Gemini": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -53,10 +59,18 @@
           "Air Street Capital",
           "DeepSeek",
           "Qwen",
-          "Llama"
+          "Llama",
+          "GPT-4"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Air Street Capital": "neutral",
+          "DeepSeek": "positive",
+          "Qwen": "positive",
+          "Llama": "positive",
+          "GPT-4": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -80,8 +94,14 @@
       "tags": {
         "entities": [
           "Google",
-          "Lyria"
+          "Lyria",
+          "Gemini API"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Lyria": "positive",
+          "Gemini API": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -106,7 +126,8 @@
           "title": "Cloudflare CEO Prince says builders and sellers are safe but AI is coming for the measurers",
           "url": "https://the-decoder.com/cloudflare-ceo-prince-says-builders-and-sellers-are-safe-but-ai-is-coming-for-the-measurers/",
           "entities": [
-            "Cloudflare"
+            "Cloudflare",
+            "Matthew Prince"
           ],
           "sentiment": "neutral"
         }
@@ -115,10 +136,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cloudflare"
+          "Cloudflare",
+          "Browser Run"
         ],
+        "entity_sentiment": {
+          "Cloudflare": "positive",
+          "Browser Run": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -146,7 +172,9 @@
           "title": "OpenAI launches a ChatGPT Powerpoint plugin and warns it might accidentally delete your content",
           "url": "https://the-decoder.com/openai-launches-a-chatgpt-powerpoint-plugin-and-warns-it-might-accidentally-delete-your-content/",
           "entities": [
-            "OpenAI"
+            "OpenAI",
+            "ChatGPT",
+            "PowerPoint"
           ],
           "sentiment": "neutral"
         }
@@ -156,10 +184,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Codex"
+          "Codex",
+          "Appshots"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Codex": "positive",
+          "Appshots": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
@@ -185,8 +219,12 @@
           "Cursor",
           "Claude Code"
         ],
+        "entity_sentiment": {
+          "Cursor": "positive",
+          "Claude Code": "neutral"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
@@ -215,16 +253,22 @@
       "tags": {
         "entities": [
           "xAI",
-          "Grok"
+          "Grok",
+          "Grok Skills"
         ],
+        "entity_sentiment": {
+          "xAI": "positive",
+          "Grok": "positive",
+          "Grok Skills": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
     {
       "id": "platforms-runway-aleph2-2026-05-23",
-      "section": "platforms",
+      "section": "content",
       "headline": "Runway выпустила Aleph 2.0 — «фотошоп для видео»",
       "subheadline": "Обновление позиционируется как инструмент покадрового редактирования видео по образцу графических редакторов",
       "body": "Runway представила Aleph 2.0 — инструмент видеоредактирования, который сама компания и обозреватели сравнивают с Photoshop для видео. Акцент сделан на возможности точечно изменять и пересобирать видеоматериал, перенося логику графических редакторов в работу с движущимся изображением.",
@@ -244,8 +288,12 @@
           "Runway",
           "Aleph"
         ],
+        "entity_sentiment": {
+          "Runway": "positive",
+          "Aleph": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -269,8 +317,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -296,9 +348,15 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini",
+          "AI Mode"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "AI Mode": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -322,9 +380,12 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "California"
+          "Калифорния"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Калифорния": "neutral"
+        },
+        "sentiment": "positive",
         "event": "regulation"
       },
       "importance": 9
@@ -350,8 +411,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -377,8 +441,12 @@
           "TechCrunch",
           "Spellbook"
         ],
+        "entity_sentiment": {
+          "TechCrunch": "neutral",
+          "Spellbook": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -400,12 +468,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "Bloomberg",
-          "Wall Street"
-        ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entities": [],
+        "entity_sentiment": {},
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -430,8 +496,11 @@
         "entities": [
           "DeepSeek"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -454,10 +523,17 @@
       "duplicate_note": "OpenAI движется к IPO, которое может состояться в сентябре",
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Goldman Sachs",
+          "Morgan Stanley"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Goldman Sachs": "neutral",
+          "Morgan Stanley": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "finance"
       },
       "importance": 5
     },
@@ -482,8 +558,11 @@
         "entities": [
           "Standard Chartered"
         ],
+        "entity_sentiment": {
+          "Standard Chartered": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -508,8 +587,11 @@
         "entities": [
           "NTSB"
         ],
+        "entity_sentiment": {
+          "NTSB": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "shutdown"
       },
       "importance": 7
     },
@@ -534,8 +616,11 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -560,8 +645,11 @@
         "entities": [
           "MIT"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "MIT": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -584,10 +672,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "China"
+          "Китай"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Китай": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -610,8 +701,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     }

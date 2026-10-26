@@ -25,7 +25,7 @@
             "OpenAI",
             "Anthropic"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -36,6 +36,11 @@
           "Anthropic",
           "Replit"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Anthropic": "negative",
+          "Replit": "positive"
+        },
         "sentiment": "negative",
         "event": "update"
       },
@@ -61,8 +66,14 @@
       "tags": {
         "entities": [
           "NVIDIA",
-          "Flora"
+          "Flora",
+          "GPT-6"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Flora": "positive",
+          "GPT-6": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -92,9 +103,11 @@
           "title": "Jack Dorsey's new voice AI is impressing users and alarming fraud watchers",
           "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
           "entities": [
-            "Block"
+            "Block",
+            "Dessa",
+            "Jack Dorsey"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
@@ -105,7 +118,12 @@
           "Dessa",
           "Jack Dorsey"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Block": "positive",
+          "Dessa": "positive",
+          "Jack Dorsey": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -131,8 +149,11 @@
         "entities": [
           "OpenMobile-2"
         ],
+        "entity_sentiment": {
+          "OpenMobile-2": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -163,6 +184,10 @@
           "Moonshot AI",
           "Kimi K3.1 Pro"
         ],
+        "entity_sentiment": {
+          "Moonshot AI": "neutral",
+          "Kimi K3.1 Pro": "neutral"
+        },
         "sentiment": "neutral",
         "event": "update"
       },
@@ -190,6 +215,10 @@
           "Microsoft",
           "Agensh"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Agensh": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -217,6 +246,10 @@
           "Anthropic",
           "sandbox-runtime"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "sandbox-runtime": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -242,9 +275,14 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini 4 Argon",
+          "Gemini",
           "Agent Development Kit"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "Agent Development Kit": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -271,8 +309,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -298,8 +339,12 @@
           "Google",
           "Data Agent Kit"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Data Agent Kit": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -325,6 +370,10 @@
           "Cognition",
           "Devin"
         ],
+        "entity_sentiment": {
+          "Cognition": "positive",
+          "Devin": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -352,8 +401,12 @@
           "Jack Clark",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Jack Clark": "neutral",
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -380,8 +433,13 @@
           "OpenAI",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Eric Schmidt": "neutral",
+          "OpenAI": "negative",
+          "Anthropic": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -416,10 +474,17 @@
         "entities": [
           "NVIDIA",
           "CoreWeave",
-          "Meta"
+          "Meta",
+          "Jensen Huang"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "CoreWeave": "negative",
+          "Meta": "negative",
+          "Jensen Huang": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -442,10 +507,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US banks"
+          "США"
         ],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entity_sentiment": {
+          "США": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "update"
       },
       "importance": 5
     },
@@ -473,8 +541,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Pennsylvania"
+          "Пенсильвания"
         ],
+        "entity_sentiment": {
+          "Пенсильвания": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -500,10 +571,14 @@
       "tags": {
         "entities": [
           "G42",
-          "Greece"
+          "Греция"
         ],
+        "entity_sentiment": {
+          "G42": "positive",
+          "Греция": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -526,10 +601,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US federal court"
+          "США"
         ],
+        "entity_sentiment": {
+          "США": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -554,8 +632,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "research"
       },
       "importance": 7
     },
@@ -581,8 +662,12 @@
           "Meta",
           "Muse"
         ],
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Muse": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -610,10 +695,19 @@
       "duplicate_note": "OpenAI уволила трёх исследователей за утечку внутренних данных",
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Jasmine Wang",
+          "Tomek Korbak",
+          "Mikita Balesni"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Jasmine Wang": "neutral",
+          "Tomek Korbak": "neutral",
+          "Mikita Balesni": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     }

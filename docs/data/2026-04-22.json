@@ -4,7 +4,7 @@
   "news": [
     {
       "id": "models-gptimage2-2026-04-22",
-      "section": "models",
+      "section": "content",
       "headline": "OpenAI выпустила GPT-Image-2 — генератор изображений с нативным reasoning",
       "subheadline": "Модель рассуждает перед генерацией, рендерит мультиязычный текст и за 12 часов заняла первое место на Image Arena",
       "body": "GPT-Image-2 поддерживает разрешение до 4K, генерирует до 8 связных изображений за один запрос и корректно отображает текст на латинице, CJK-скриптах, хинди и бенгальском. На Image Arena модель набрала отрыв в 242 пункта — крупнейший в истории лидерборда. DALL-E 2 и DALL-E 3 будут выведены из API 12 мая 2026 года. Модель доступна через ChatGPT и API.",
@@ -31,7 +31,8 @@
           "title": "Images in ChatGPT are getting a major update",
           "url": "https://www.axios.com/2026/04/21/chatgpt-images-major-update",
           "entities": [
-            "OpenAI"
+            "OpenAI",
+            "ChatGPT"
           ],
           "sentiment": "positive"
         },
@@ -39,9 +40,10 @@
           "title": "OpenAI unveils new image generator",
           "url": "https://gizmodo.com/openai-unveils-new-image-generator-to-usher-in-an-ai-slop-renaissance-2000749159",
           "entities": [
-            "OpenAI"
+            "OpenAI",
+            "GPT-Image-2"
           ],
-          "sentiment": "negative"
+          "sentiment": "positive"
         },
         {
           "title": "fal launches enterprise API for GPT Image 2",
@@ -62,10 +64,17 @@
           "ChatGPT",
           "DALL-E"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-Image-2": "positive",
+          "ChatGPT": "positive",
+          "DALL-E": "negative"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 9
+      "importance": 9,
+      "details": "До 4K · до 8 связных изображений за запрос · ChatGPT и API"
     },
     {
       "id": "models-mlintern-2026-04-22",
@@ -87,8 +96,14 @@
       "tags": {
         "entities": [
           "Hugging Face",
-          "ml-intern"
+          "ml-intern",
+          "Claude Code"
         ],
+        "entity_sentiment": {
+          "Hugging Face": "positive",
+          "ml-intern": "positive",
+          "Claude Code": "negative"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -115,8 +130,11 @@
         "entities": [
           "НИЯУ МИФИ"
         ],
+        "entity_sentiment": {
+          "НИЯУ МИФИ": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -143,8 +161,13 @@
           "Claude Opus 4.7",
           "Gemma 4"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Opus 4.7": "negative",
+          "Gemma 4": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -172,7 +195,8 @@
           "title": "GitHub Copilot pauses new sign-ups: alternatives",
           "url": "https://roboin.io/article/en/2026/04/21/github-copilot-sign-ups-suspended/",
           "entities": [
-            "GitHub"
+            "GitHub",
+            "GitHub Copilot"
           ],
           "sentiment": "negative"
         },
@@ -180,7 +204,8 @@
           "title": "GitHub Copilot restrictions, token-based billing",
           "url": "https://gigazine.net/gsc_news/en/20260421-github-copilot-plans-changes/",
           "entities": [
-            "GitHub"
+            "GitHub",
+            "GitHub Copilot"
           ],
           "sentiment": "negative"
         }
@@ -190,8 +215,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "negative",
+          "GitHub Copilot": "negative"
+        },
         "sentiment": "negative",
         "event": "update"
       },
@@ -199,7 +228,7 @@
     },
     {
       "id": "platforms-fal-2026-04-22",
-      "section": "platforms",
+      "section": "content",
       "headline": "fal открыла корпоративный API-доступ к GPT Image 2 без листа ожидания",
       "subheadline": "Платформа предлагает генерацию, редактирование, апскейл и конвертацию в видео через единый API",
       "body": "Платформа fal запустила enterprise-доступ к модели GPT Image 2 от OpenAI с коммерческим использованием с первого дня. API включает генерацию изображений, редактирование, масштабирование и конвертацию в видео.",
@@ -218,12 +247,18 @@
         "entities": [
           "fal",
           "OpenAI",
-          "GPT Image 2"
+          "GPT-Image-2"
         ],
+        "entity_sentiment": {
+          "fal": "positive",
+          "OpenAI": "positive",
+          "GPT-Image-2": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Корпоративный API · коммерческое использование с первого дня"
     },
     {
       "id": "platforms-geminiapi-2026-04-22",
@@ -248,6 +283,11 @@
           "Gemma 4",
           "Gemini API"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemma 4": "positive",
+          "Gemini API": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -296,11 +336,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Amazon",
           "Anthropic",
+          "Amazon",
           "AWS",
           "Trainium"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Amazon": "neutral",
+          "AWS": "positive",
+          "Trainium": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -325,11 +371,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Jeff Bezos",
           "Project Prometheus",
+          "Jeff Bezos",
           "JPMorgan",
           "BlackRock"
         ],
+        "entity_sentiment": {
+          "Project Prometheus": "positive",
+          "Jeff Bezos": "positive",
+          "JPMorgan": "neutral",
+          "BlackRock": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -357,8 +409,12 @@
           "SpaceX",
           "Cursor"
         ],
+        "entity_sentiment": {
+          "SpaceX": "positive",
+          "Cursor": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -384,8 +440,12 @@
           "SoundHound AI",
           "LivePerson"
         ],
-        "sentiment": "negative",
-        "event": "investment"
+        "entity_sentiment": {
+          "SoundHound AI": "negative",
+          "LivePerson": "positive"
+        },
+        "sentiment": "neutral",
+        "event": "acquisition"
       },
       "importance": 5
     },
@@ -408,8 +468,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Коннектикут"
+          "Коннектикут",
+          "SB 5"
         ],
+        "entity_sentiment": {
+          "Коннектикут": "neutral",
+          "SB 5": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -446,6 +511,10 @@
           "Еврокомиссия",
           "Digital Europe"
         ],
+        "entity_sentiment": {
+          "Еврокомиссия": "neutral",
+          "Digital Europe": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -474,6 +543,11 @@
           "Cambium Capital",
           "Walden Catalyst"
         ],
+        "entity_sentiment": {
+          "NeoCognition": "positive",
+          "Cambium Capital": "neutral",
+          "Walden Catalyst": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -500,8 +574,11 @@
         "entities": [
           "Meta"
         ],
+        "entity_sentiment": {
+          "Meta": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -540,10 +617,17 @@
         "entities": [
           "McClatchy",
           "Sacramento Bee",
-          "Miami Herald"
+          "Miami Herald",
+          "Kansas City Star"
         ],
+        "entity_sentiment": {
+          "McClatchy": "negative",
+          "Sacramento Bee": "negative",
+          "Miami Herald": "negative",
+          "Kansas City Star": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -569,8 +653,12 @@
           "Wikipedia",
           "TomWikiAssist"
         ],
+        "entity_sentiment": {
+          "Wikipedia": "neutral",
+          "TomWikiAssist": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -593,8 +681,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Госдума"
+          "Госдума",
+          "Россия"
         ],
+        "entity_sentiment": {
+          "Госдума": "neutral",
+          "Россия": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -619,10 +712,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Верховный суд России"
+          "Верховный суд России",
+          "Vyacheslav Gorshkov"
         ],
+        "entity_sentiment": {
+          "Верховный суд России": "neutral",
+          "Vyacheslav Gorshkov": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -644,9 +742,18 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Бразилия",
+          "Индия",
+          "Мексика"
+        ],
+        "entity_sentiment": {
+          "Бразилия": "neutral",
+          "Индия": "neutral",
+          "Мексика": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     }

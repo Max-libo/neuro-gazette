@@ -22,8 +22,12 @@
       "tags": {
         "entities": [
           "DeepSeek",
-          "OpenAI"
+          "GPT-5.5"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "positive",
+          "GPT-5.5": "neutral"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -50,8 +54,11 @@
         "entities": [
           "Nous Research"
         ],
+        "entity_sentiment": {
+          "Nous Research": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -74,8 +81,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Tencent"
+          "Tencent",
+          "TencentDB Agent Memory"
         ],
+        "entity_sentiment": {
+          "Tencent": "positive",
+          "TencentDB Agent Memory": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -100,8 +112,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Perplexity"
+          "Perplexity",
+          "Bumblebee"
         ],
+        "entity_sentiment": {
+          "Perplexity": "positive",
+          "Bumblebee": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -126,10 +143,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "CodeGraph",
           "Claude Code"
         ],
+        "entity_sentiment": {
+          "CodeGraph": "neutral",
+          "Claude Code": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -155,8 +177,12 @@
           "Anthropic",
           "Claude Mythos"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude Mythos": "positive"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -181,6 +207,9 @@
         "entities": [
           "Сингапур"
         ],
+        "entity_sentiment": {
+          "Сингапур": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -205,8 +234,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entity_sentiment": {},
+        "sentiment": "neutral",
+        "event": "other"
       },
       "importance": 7
     },
@@ -229,10 +259,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "Sundar Pichai"
         ],
+        "entity_sentiment": {
+          "Google": "neutral",
+          "Sundar Pichai": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -255,10 +290,13 @@
       "duplicate_note": "Трамп отложил указ о безопасности AI",
       "tags": {
         "entities": [
-          "Trump"
+          "Donald Trump"
         ],
+        "entity_sentiment": {
+          "Donald Trump": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -281,8 +319,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -308,8 +347,12 @@
           "Google",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Google": "negative",
+          "Gemini": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     }

@@ -22,10 +22,17 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "NSA",
-          "Pentagon"
+          "Claude",
+          "Пентагон",
+          "АНБ"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude": "negative",
+          "Пентагон": "neutral",
+          "АНБ": "neutral"
+        },
+        "sentiment": "negative",
         "event": "regulation"
       },
       "importance": 9
@@ -51,8 +58,11 @@
         "entities": [
           "ByteDance"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "ByteDance": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -75,8 +85,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "StepFun"
+          "StepFun",
+          "StepAudio 2.5 Realtime"
         ],
+        "entity_sentiment": {
+          "StepFun": "positive",
+          "StepAudio 2.5 Realtime": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -101,10 +116,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Gated DeltaNet-2"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Gated DeltaNet-2": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -127,11 +147,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic",
-          "Claude Code"
+          "Claude Code",
+          "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Claude Code": "positive",
+          "Anthropic": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -154,8 +178,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft"
+          "Microsoft",
+          "Webwright",
+          "GPT-5.4"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Webwright": "positive",
+          "GPT-5.4": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -181,10 +212,16 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon"
+          "AWS MCP Server",
+          "MCP"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "AWS MCP Server": "positive",
+          "MCP": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -210,7 +247,11 @@
           "Google",
           "Genkit"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Genkit": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -234,10 +275,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Amazon"
+          "Amazon",
+          "Bee"
         ],
+        "entity_sentiment": {
+          "Amazon": "neutral",
+          "Bee": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -260,8 +306,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -284,10 +331,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Scotland"
+          "Шотландия"
         ],
+        "entity_sentiment": {
+          "Шотландия": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -311,10 +361,14 @@
       "tags": {
         "entities": [
           "DeepSeek",
-          "Russia"
+          "Россия"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "negative",
+          "Россия": "negative"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -337,11 +391,15 @@
       "duplicate_note": "Хассабис назвал нынешний момент «предгорьями сингулярности»",
       "tags": {
         "entities": [
-          "DeepMind",
-          "Meta"
+          "Yann LeCun",
+          "Demis Hassabis"
         ],
+        "entity_sentiment": {
+          "Yann LeCun": "neutral",
+          "Demis Hassabis": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -364,14 +422,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
     {
       "id": "hype-cannes-ai-faultlines",
-      "section": "hype",
+      "section": "art",
       "headline": "Линии разлома вокруг ИИ обозначились в Каннах",
       "subheadline": "The Guardian: на фестивале спорят, расширяет ли ИИ «кинематографический инструментарий».",
       "body": "На Каннском кинофестивале тема ИИ обнажила противоречия в индустрии: одни участники говорят о расширении «кинематографического инструментария», другие видят угрозу. The Guardian фиксирует столкновение этих позиций как линию разлома.",
@@ -388,9 +447,11 @@
           "title": "Higgsfield AI показала в Каннах 95-минутный фильм Hell Grind, созданный с помощью ИИ за две недели",
           "url": "https://vc.ru/ai/2944018-higgsfield-ai-film-hell-grind-ii-kanakh",
           "entities": [
-            "Higgsfield AI"
+            "Higgsfield AI",
+            "Hell Grind",
+            "Cannes"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -399,14 +460,17 @@
         "entities": [
           "Cannes"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Cannes": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 7
     },
     {
       "id": "hype-higgsfield-hell-grind",
-      "section": "hype",
+      "section": "art",
       "headline": "Higgsfield AI показала в Каннах 95-минутный фильм, снятый ИИ за две недели",
       "subheadline": "Полнометражный Hell Grind создан с помощью ИИ примерно за две недели.",
       "body": "Higgsfield AI представила в Каннах фильм Hell Grind длительностью 95 минут, созданный с помощью ИИ за две недели. Кейс используется как демонстрация сжатия сроков производства полнометражного контента при генеративном подходе.",
@@ -423,10 +487,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Higgsfield AI"
+          "Higgsfield AI",
+          "Hell Grind",
+          "Cannes"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Higgsfield AI": "positive",
+          "Hell Grind": "positive",
+          "Cannes": "positive"
+        },
+        "sentiment": "positive",
+        "event": "exhibition"
       },
       "importance": 5
     },
@@ -449,8 +520,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "leak"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -473,8 +545,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "neutral",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 5
     }

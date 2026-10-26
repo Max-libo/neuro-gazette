@@ -22,8 +22,11 @@
         "entities": [
           "PrismML"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "PrismML": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       }
     },
     {
@@ -58,13 +61,18 @@
           "OpenClaw",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "OpenClaw": "negative",
+          "Claude": "negative"
+        },
         "sentiment": "negative",
         "event": "update"
       }
     },
     {
       "id": "platforms-netflix-ai-editor",
-      "section": "platforms",
+      "section": "content",
       "headline": "Netflix запустил AI-инструмент для редактирования видео",
       "subheadline": "Стриминговый сервис выпустил собственный AI-видеоредактор для внутреннего использования.",
       "body": "Netflix представил AI-инструмент для редактирования видеоконтента. Подробности о функциональности и доступности для внешних пользователей не раскрываются. Шаг означает, что Netflix вслед за Meta, Google и другими крупными платформами начинает встраивать генеративные AI-инструменты непосредственно в производственные процессы.",
@@ -82,9 +90,13 @@
         "entities": [
           "Netflix"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Netflix": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
-      }
+      },
+      "details": "Только для внутреннего использования Netflix"
     },
     {
       "id": "industry-openai-executive-shuffle",
@@ -110,11 +122,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Брэд Лайткэп",
-          "Фиджи Симо"
+          "Brad Lightcap",
+          "Fidji Simo"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Brad Lightcap": "neutral",
+          "Fidji Simo": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "people"
       }
     },
     {
@@ -138,8 +155,12 @@
           "Anthropic",
           "Coefficient Bio"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Coefficient Bio": "positive"
+        },
+        "sentiment": "positive",
+        "event": "acquisition"
       }
     },
     {
@@ -165,12 +186,19 @@
       "duplicate_note": "НГС и The Moscow Times сообщают об одном законопроекте — объединено в одну запись.",
       "tags": {
         "entities": [
-          "Минцифры России",
+          "Минцифры",
           "ФСБ",
           "ChatGPT",
           "Claude",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Минцифры": "neutral",
+          "ФСБ": "neutral",
+          "ChatGPT": "negative",
+          "Claude": "negative",
+          "Gemini": "negative"
+        },
         "sentiment": "negative",
         "event": "regulation"
       }
@@ -195,8 +223,11 @@
         "entities": [
           "ICML"
         ],
+        "entity_sentiment": {
+          "ICML": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "incident"
       }
     },
     {
@@ -222,13 +253,19 @@
       "duplicate_note": "Ars Technica и Engadget сообщают об одном инциденте — объединено в одну запись.",
       "tags": {
         "entities": [
-          "Илон Маск",
+          "Elon Musk",
           "SpaceX",
           "Grok",
           "xAI"
         ],
+        "entity_sentiment": {
+          "Elon Musk": "negative",
+          "SpaceX": "negative",
+          "Grok": "positive",
+          "xAI": "positive"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "criticism"
       }
     },
     {
@@ -256,8 +293,11 @@
         "entities": [
           "OpenClaw"
         ],
+        "entity_sentiment": {
+          "OpenClaw": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       }
     },
     {
@@ -278,11 +318,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Николас Мадуро",
+          "Nicolás Maduro",
           "Венесуэла"
         ],
+        "entity_sentiment": {
+          "Nicolás Maduro": "negative",
+          "Венесуэла": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       }
     }
   ]

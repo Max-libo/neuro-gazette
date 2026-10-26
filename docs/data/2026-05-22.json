@@ -23,8 +23,11 @@
         "entities": [
           "Meta"
         ],
+        "entity_sentiment": {
+          "Meta": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 9
     },
@@ -50,8 +53,12 @@
           "Spotify",
           "Universal Music Group"
         ],
+        "entity_sentiment": {
+          "Spotify": "positive",
+          "Universal Music Group": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -74,8 +81,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Donald Trump"
+          "Donald Trump",
+          "США"
         ],
+        "entity_sentiment": {
+          "Donald Trump": "neutral",
+          "США": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -102,8 +114,13 @@
         "entities": [
           "Sadiq Khan",
           "Palantir",
-          "Met Police"
+          "Столичная полиция Лондона"
         ],
+        "entity_sentiment": {
+          "Sadiq Khan": "neutral",
+          "Palantir": "negative",
+          "Столичная полиция Лондона": "negative"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -130,8 +147,11 @@
         "entities": [
           "SpaceX"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "SpaceX": "negative"
+        },
+        "sentiment": "negative",
+        "event": "finance"
       },
       "importance": 7
     },
@@ -156,8 +176,11 @@
         "entities": [
           "BT"
         ],
+        "entity_sentiment": {
+          "BT": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -190,11 +213,18 @@
       "tags": {
         "entities": [
           "Google",
-          "Antigravity",
-          "Gemini CLI"
+          "Gemini CLI",
+          "Gemini Code Assist",
+          "Antigravity"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Google": "neutral",
+          "Gemini CLI": "negative",
+          "Gemini Code Assist": "negative",
+          "Antigravity": "positive"
+        },
+        "sentiment": "negative",
+        "event": "shutdown"
       },
       "importance": 7
     },
@@ -218,12 +248,18 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "NVIDIA",
           "GPT-5.5",
-          "Codex"
+          "Codex",
+          "NVIDIA"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.5": "positive",
+          "Codex": "positive",
+          "NVIDIA": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -247,9 +283,16 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot",
-          "GPT-5.3-Codex"
+          "GitHub Copilot",
+          "GPT-5.3-Codex",
+          "Gemini"
         ],
+        "entity_sentiment": {
+          "GitHub": "neutral",
+          "GitHub Copilot": "neutral",
+          "GPT-5.3-Codex": "positive",
+          "Gemini": "negative"
+        },
         "sentiment": "neutral",
         "event": "update"
       },
@@ -277,7 +320,7 @@
             "Spotify",
             "ElevenLabs"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -285,9 +328,12 @@
       "tags": {
         "entities": [
           "Spotify",
-          "ElevenLabs",
-          "NotebookLM"
+          "ElevenLabs"
         ],
+        "entity_sentiment": {
+          "Spotify": "positive",
+          "ElevenLabs": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -315,6 +361,10 @@
           "Cerebras",
           "Kimi K2.6"
         ],
+        "entity_sentiment": {
+          "Cerebras": "positive",
+          "Kimi K2.6": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -342,6 +392,10 @@
           "Amazon",
           "Nova Act"
         ],
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "Nova Act": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -368,6 +422,9 @@
         "entities": [
           "Cohere"
         ],
+        "entity_sentiment": {
+          "Cohere": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -392,9 +449,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Qwen",
-          "Alibaba"
+          "Alibaba",
+          "Qwen"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -422,6 +483,10 @@
           "ByteDance",
           "Lance"
         ],
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Lance": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -429,7 +494,7 @@
     },
     {
       "id": "models-veo31-gemini-api",
-      "section": "models",
+      "section": "content",
       "headline": "Продолжение: Veo 3.1 в Gemini API",
       "subheadline": null,
       "body": "Google добавила Veo 3.1 и Veo 3.1 Fast в платный preview Gemini API: улучшенное нативное аудио, синхронизированные звуковые эффекты, консистентность персонажей и более кинематографичный нарративный контроль при image-to-video.",
@@ -447,12 +512,19 @@
       "tags": {
         "entities": [
           "Google",
-          "Veo 3.1"
+          "Veo 3.1",
+          "Gemini API"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Veo 3.1": "positive",
+          "Gemini API": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Платный preview Gemini API · Veo 3.1 и Veo 3.1 Fast"
     },
     {
       "id": "hype-radnor-deepfakes",
@@ -475,8 +547,11 @@
         "entities": [
           "Radnor High School"
         ],
+        "entity_sentiment": {
+          "Radnor High School": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -499,8 +574,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -522,11 +598,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "Maori"
-        ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entities": [],
+        "entity_sentiment": {},
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -551,7 +626,10 @@
         "entities": [
           "Google"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5

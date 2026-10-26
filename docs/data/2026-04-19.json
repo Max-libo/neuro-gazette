@@ -22,10 +22,16 @@
       "tags": {
         "entities": [
           "xAI",
-          "NVIDIA"
+          "NVIDIA",
+          "Colossus 2"
         ],
+        "entity_sentiment": {
+          "xAI": "positive",
+          "NVIDIA": "positive",
+          "Colossus 2": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 9
     },
@@ -51,6 +57,10 @@
           "xAI",
           "Grok"
         ],
+        "entity_sentiment": {
+          "xAI": "positive",
+          "Grok": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -78,8 +88,12 @@
           "Google DeepMind",
           "Aletheia"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Aletheia": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -102,8 +116,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -126,8 +141,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Epoch AI"
+          "Epoch AI",
+          "Benchmarking Hub"
         ],
+        "entity_sentiment": {
+          "Epoch AI": "positive",
+          "Benchmarking Hub": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -152,8 +172,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -178,6 +199,9 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -204,8 +228,11 @@
         "entities": [
           "General Compute"
         ],
+        "entity_sentiment": {
+          "General Compute": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -229,11 +256,16 @@
       "tags": {
         "entities": [
           "Meta",
-          "OpenClaw",
-          "Ray-Ban"
+          "Ray-Ban",
+          "OpenClaw"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Ray-Ban": "positive",
+          "OpenClaw": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -259,8 +291,12 @@
           "Salesforce",
           "Marc Benioff"
         ],
+        "entity_sentiment": {
+          "Salesforce": "neutral",
+          "Marc Benioff": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -283,15 +319,17 @@
           "title": "White House Meets With Anthropic After Claude AI Blacklist",
           "url": "https://nationaltoday.com/us/dc/washington/news/2026/04/18/white-house-meets-with-anthropic-after-claude-ai-blacklist/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Белый дом"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         },
         {
           "title": "The Pentagon Blacklisted Anthropic. Federal Agencies Are Using It Anyway",
           "url": "https://redstate.com/ben-smith/2026/04/18/pentagon-blacklisted-anthropic-federal-agencies-are-using-it-anyway-n2201421",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Пентагон"
           ],
           "sentiment": "neutral"
         },
@@ -300,9 +338,10 @@
           "url": "https://gizmodo.com/trump-when-asked-about-white-house-meeting-with-anthropics-dario-amodei-who-2000748236",
           "entities": [
             "Anthropic",
-            "Trump"
+            "Dario Amodei",
+            "Donald Trump"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
@@ -311,9 +350,18 @@
         "entities": [
           "Anthropic",
           "Dario Amodei",
-          "Trump"
+          "Claude Mythos",
+          "Белый дом",
+          "Пентагон"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Dario Amodei": "positive",
+          "Claude Mythos": "positive",
+          "Белый дом": "neutral",
+          "Пентагон": "neutral"
+        },
+        "sentiment": "positive",
         "event": "regulation"
       },
       "importance": 7
@@ -339,8 +387,11 @@
         "entities": [
           "Tesla"
         ],
+        "entity_sentiment": {
+          "Tesla": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -362,11 +413,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "NVIDIA"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -391,8 +441,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 5
     },
@@ -414,9 +467,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Германия",
+          "Федеральный суд Германии"
+        ],
+        "entity_sentiment": {
+          "Германия": "neutral",
+          "Федеральный суд Германии": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -442,8 +502,12 @@
           "Anthropic",
           "Dario Amodei"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Dario Amodei": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -465,9 +529,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Shy Girl",
+          "ChatGPT"
+        ],
+        "entity_sentiment": {
+          "Shy Girl": "negative",
+          "ChatGPT": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -490,11 +561,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Trump",
-          "Nawrocki"
+          "Donald Trump",
+          "Польша"
         ],
+        "entity_sentiment": {
+          "Donald Trump": "negative",
+          "Польша": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -519,7 +594,10 @@
         "entities": [
           "Россия"
         ],
-        "sentiment": "negative",
+        "entity_sentiment": {
+          "Россия": "neutral"
+        },
+        "sentiment": "neutral",
         "event": "release"
       },
       "importance": 7
@@ -543,10 +621,15 @@
       "duplicate_note": "AI-дипфейки захлестнули предвыборную кампанию в США",
       "tags": {
         "entities": [
-          "Trump"
+          "Donald Trump",
+          "США"
         ],
+        "entity_sentiment": {
+          "Donald Trump": "positive",
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -572,8 +655,12 @@
           "Anthropic",
           "Claude Opus 4.7"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Opus 4.7": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -596,8 +683,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     }

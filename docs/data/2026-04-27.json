@@ -35,6 +35,11 @@
           "Codex",
           "GPT-5.5"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Codex": "negative",
+          "GPT-5.5": "positive"
+        },
         "sentiment": "neutral",
         "event": "shutdown"
       },
@@ -61,8 +66,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -84,12 +92,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "finance",
-          "investment banking"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "research"
       },
       "importance": 7
     },
@@ -113,10 +119,16 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude"
+          "Claude",
+          "США"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "США": "neutral"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -139,11 +151,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "UK government",
-          "data centers"
+          "Правительство Великобритании"
         ],
+        "entity_sentiment": {
+          "Правительство Великобритании": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -165,12 +179,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "AI agents",
-          "software engineering"
-        ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entities": [],
+        "entity_sentiment": {},
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -193,11 +205,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "benchmarks",
-          "LLM"
+          "MarkTechPost"
         ],
+        "entity_sentiment": {
+          "MarkTechPost": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -220,17 +234,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cursor",
-          "security"
+          "Cursor"
         ],
+        "entity_sentiment": {
+          "Cursor": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
     {
       "id": "hype-cannes-ai-film-festival-2026-04-27",
-      "section": "hype",
+      "section": "art",
       "headline": "В Каннах прошёл первый AI-кинофестиваль — реакция индустрии раскололась",
       "subheadline": "Показ полностью или частично сгенерированных лент вызвал споры о будущем кинопроизводства",
       "body": "В Каннах состоялся фестиваль фильмов, созданных с использованием AI. The Guardian отмечает, что мероприятие вызвало неоднозначную реакцию: часть индустрии увидела в нём площадку для нового жанра, другая — угрозу труду сценаристов, актёров и режиссёров. Фестиваль ставит вопрос о том, как традиционные киноинституты будут классифицировать и оценивать AI-контент.",
@@ -247,11 +263,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cannes",
-          "AI film"
+          "Cannes"
         ],
+        "entity_sentiment": {
+          "Cannes": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "exhibition"
       },
       "importance": 7
     },
@@ -273,12 +291,10 @@
       "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "AI users",
-          "health"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -301,11 +317,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ChatGPT",
-          "healthcare"
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     }

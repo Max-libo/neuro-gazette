@@ -22,11 +22,18 @@
       "tags": {
         "entities": [
           "Microsoft",
+          "Copilot",
           "Word",
           "Excel",
-          "PowerPoint",
-          "Copilot"
+          "PowerPoint"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Copilot": "positive",
+          "Word": "positive",
+          "Excel": "positive",
+          "PowerPoint": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -66,8 +73,14 @@
           "NVIDIA",
           "Codex"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.5": "positive",
+          "NVIDIA": "positive",
+          "Codex": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -93,8 +106,12 @@
           "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -119,6 +136,9 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -145,8 +165,11 @@
         "entities": [
           "Google"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Google": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -175,8 +198,15 @@
           "Uber Eats",
           "TurboTax"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "Spotify": "positive",
+          "Uber Eats": "positive",
+          "TurboTax": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -199,10 +229,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google Cloud"
+          "Google Cloud",
+          "ReasoningBank"
         ],
+        "entity_sentiment": {
+          "Google Cloud": "positive",
+          "ReasoningBank": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -225,8 +260,13 @@
       "duplicate_note": "Google запустила стандарт генеративного UI для AI-агентов",
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "DESIGN.md"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "DESIGN.md": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -252,8 +292,12 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon"
+          "Amazon Quick"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Amazon Quick": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -281,8 +325,12 @@
           "Microsoft",
           "Meta"
         ],
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "Meta": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 5
     },
@@ -308,8 +356,12 @@
           "OpenAI",
           "Microsoft"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Microsoft": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -334,10 +386,17 @@
         "entities": [
           "Sierra",
           "Fragment",
+          "Bret Taylor",
           "Y Combinator"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Sierra": "positive",
+          "Fragment": "positive",
+          "Bret Taylor": "positive",
+          "Y Combinator": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -364,8 +423,13 @@
           "Yann LeCun",
           "Meta"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "AMI Labs": "positive",
+          "Yann LeCun": "positive",
+          "Meta": "negative"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -388,12 +452,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "США",
           "Китай",
-          "Белый дом"
+          "Белый дом",
+          "США"
         ],
+        "entity_sentiment": {
+          "Китай": "negative",
+          "Белый дом": "neutral",
+          "США": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -419,6 +488,10 @@
           "Google",
           "Австрия"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Австрия": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -445,6 +518,9 @@
         "entities": [
           "Era Computer"
         ],
+        "entity_sentiment": {
+          "Era Computer": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -472,8 +548,12 @@
           "Grok",
           "xAI"
         ],
+        "entity_sentiment": {
+          "Grok": "negative",
+          "xAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "research"
       },
       "importance": 7
     },
@@ -496,8 +576,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -522,7 +603,10 @@
         "entities": [
           "Luna"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Luna": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -546,7 +630,8 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "negative",
+        "entity_sentiment": {},
+        "sentiment": "neutral",
         "event": "regulation"
       },
       "importance": 5
@@ -573,8 +658,12 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     }

@@ -25,8 +25,13 @@
           "Claude Code",
           "Linux"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive",
+          "Linux": "negative"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "incident"
       },
       "importance": 9
     },
@@ -52,8 +57,12 @@
           "OpenAI",
           "GPT-5.4"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.4": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -76,11 +85,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic",
-          "Claude"
+          "Claude",
+          "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Claude": "negative",
+          "Anthropic": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -103,10 +116,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "IBM Research"
+          "IBM Research",
+          "VAKRA"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "IBM Research": "neutral",
+          "VAKRA": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 5
     },
@@ -129,10 +147,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "TurboQuant"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "TurboQuant": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -156,10 +179,16 @@
       "tags": {
         "entities": [
           "Windsurf",
-          "Devin"
+          "Devin",
+          "SWE-1.5"
         ],
+        "entity_sentiment": {
+          "Windsurf": "positive",
+          "Devin": "positive",
+          "SWE-1.5": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -195,8 +224,13 @@
           "Claude Code",
           "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "JetBrains": "neutral",
+          "Claude Code": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -220,8 +254,14 @@
       "tags": {
         "entities": [
           "Microsoft",
-          "Copilot"
+          "Copilot",
+          "Word"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Copilot": "positive",
+          "Word": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -247,8 +287,14 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini API",
+          "AI Studio"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini API": "positive",
+          "AI Studio": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -273,16 +319,21 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "HCompany"
+          "HCompany",
+          "HoloTab"
         ],
+        "entity_sentiment": {
+          "HCompany": "positive",
+          "HoloTab": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 5
     },
     {
       "id": "platforms-shutterstock-video-2026-04-16",
-      "section": "platforms",
+      "section": "content",
       "headline": "Shutterstock запустил AI Video Generator для коммерческого видеопроизводства",
       "subheadline": "Платформа объединила модели Google и Runway с лицензионной библиотекой",
       "body": "Shutterstock представил AI Video Generator, объединяющий модели генерации видео от Google и Runway с собственной лицензионной библиотекой активов. Инструмент поддерживает text-to-video и image-to-video, все сгенерированные материалы покрываются коммерческой лицензией Shutterstock.",
@@ -300,13 +351,21 @@
       "tags": {
         "entities": [
           "Shutterstock",
+          "AI Video Generator",
           "Google",
           "Runway"
         ],
+        "entity_sentiment": {
+          "Shutterstock": "positive",
+          "AI Video Generator": "positive",
+          "Google": "positive",
+          "Runway": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Text-to-video и image-to-video · коммерческая лицензия Shutterstock"
     },
     {
       "id": "platforms-copilot-cli-2026-04-16",
@@ -328,8 +387,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -356,8 +419,11 @@
         "entities": [
           "Workday"
         ],
+        "entity_sentiment": {
+          "Workday": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -389,8 +455,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Parasail"
+          "Parasail",
+          "Touring Capital",
+          "Kindred Ventures"
         ],
+        "entity_sentiment": {
+          "Parasail": "positive",
+          "Touring Capital": "neutral",
+          "Kindred Ventures": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -418,8 +491,12 @@
           "Boston Dynamics",
           "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "Boston Dynamics": "positive",
+          "Google DeepMind": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -444,8 +521,11 @@
         "entities": [
           "Hightouch"
         ],
+        "entity_sentiment": {
+          "Hightouch": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 5
     },
@@ -470,6 +550,9 @@
         "entities": [
           "Gizmo"
         ],
+        "entity_sentiment": {
+          "Gizmo": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -496,8 +579,11 @@
         "entities": [
           "NVIDIA"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -520,9 +606,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Австралия"
+          "Австралия",
+          "Федеральный суд Австралии"
         ],
-        "sentiment": "negative",
+        "entity_sentiment": {
+          "Австралия": "neutral",
+          "Федеральный суд Австралии": "neutral"
+        },
+        "sentiment": "neutral",
         "event": "regulation"
       },
       "importance": 5
@@ -546,7 +637,8 @@
           "title": "Anthropic to Launch Claude Opus 4.7 This Week",
           "url": "https://dataconomy.com/2026/04/15/anthropic-to-launch-claude-opus-4-7-this-week/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Claude Opus 4.7"
           ],
           "sentiment": "positive"
         },
@@ -554,7 +646,8 @@
           "title": "Anthropic анонсировала Opus 4.7 и AI-инструмент для визуального дизайна",
           "url": "https://thetechportal.com/2026/04/15/anthropic-could-soon-release-opus-4-7-model-and-ai-design-tool/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Claude Opus 4.7"
           ],
           "sentiment": "positive"
         }
@@ -564,9 +657,13 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude"
+          "Claude Opus 4.7"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Opus 4.7": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 7
@@ -592,8 +689,11 @@
         "entities": [
           "MyLovely.AI"
         ],
+        "entity_sentiment": {
+          "MyLovely.AI": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -616,11 +716,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ChatGPT",
-          "OpenAI"
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -643,8 +745,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "shutdown"
       },
       "importance": 5
     },
@@ -669,8 +772,11 @@
         "entities": [
           "Narwhal Labs"
         ],
+        "entity_sentiment": {
+          "Narwhal Labs": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -695,8 +801,11 @@
         "entities": [
           "Peter Thiel"
         ],
+        "entity_sentiment": {
+          "Peter Thiel": "negative"
+        },
         "sentiment": "negative",
-        "event": "release"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -720,11 +829,18 @@
       "tags": {
         "entities": [
           "OpenAI",
+          "Stargate",
           "Microsoft",
           "Google"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Stargate": "negative",
+          "Microsoft": "positive",
+          "Google": "positive"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "shutdown"
       },
       "importance": 5
     }

@@ -32,8 +32,13 @@
         "entities": [
           "Anthropic",
           "Claude Mythos",
-          "White House"
+          "Белый дом"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "Белый дом": "neutral"
+        },
         "sentiment": "positive",
         "event": "regulation"
       },
@@ -60,8 +65,11 @@
         "entities": [
           "Arcee AI"
         ],
-        "sentiment": "positive",
-        "event": "release"
+        "entity_sentiment": {
+          "Arcee AI": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "finance"
       },
       "importance": 7
     },
@@ -83,9 +91,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "event": "release"
+        "entities": [
+          "Sora",
+          "Runway"
+        ],
+        "entity_sentiment": {
+          "Sora": "negative",
+          "Runway": "negative"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -108,8 +123,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -134,6 +150,9 @@
         "entities": [
           "llama.cpp"
         ],
+        "entity_sentiment": {
+          "llama.cpp": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -159,10 +178,14 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -188,10 +211,18 @@
           "OpenAI",
           "Google",
           "Anthropic",
-          "GitHub"
+          "GitHub Copilot",
+          "Claude Code"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Google": "neutral",
+          "Anthropic": "neutral",
+          "GitHub Copilot": "neutral",
+          "Claude Code": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -214,10 +245,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Apple"
+          "Apple",
+          "App Store"
         ],
+        "entity_sentiment": {
+          "Apple": "positive",
+          "App Store": "positive"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -241,10 +277,18 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude"
+          "Claude",
+          "Claude Code",
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "Claude Code": "positive",
+          "ChatGPT": "negative"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -270,8 +314,12 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -293,18 +341,21 @@
         {
           "title": "AI companies know they have an image problem. Will funding thinktanks dig them out?",
           "url": "https://www.theguardian.com/technology/2026/apr/12/ai-image-problem-policy-papers-thinktanks",
-          "entities": [
-            "Big Tech"
-          ],
+          "entities": [],
           "sentiment": "negative"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "США"
+        ],
+        "entity_sentiment": {
+          "США": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -327,10 +378,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nebraska",
-          "Maryland",
-          "Maine"
+          "Небраска",
+          "Мэриленд",
+          "Мэн",
+          "Конгресс США"
         ],
+        "entity_sentiment": {
+          "Небраска": "neutral",
+          "Мэриленд": "neutral",
+          "Мэн": "neutral",
+          "Конгресс США": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -355,10 +413,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Russia"
+          "Россия"
         ],
+        "entity_sentiment": {
+          "Россия": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -381,8 +442,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "neutral",
+        "event": "research"
       },
       "importance": 5
     },
@@ -405,8 +467,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -429,7 +492,8 @@
           "title": "AI agent runs the 'I'm being censored' playbook after Wikipedia ban",
           "url": "https://gizmodo.com/ai-agent-runs-the-im-being-censored-playbook-after-getting-banned-from-wikipedia-2000739845",
           "entities": [
-            "Wikipedia"
+            "Wikipedia",
+            "TomWikiAssist"
           ],
           "sentiment": "negative"
         },
@@ -447,11 +511,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Wikipedia",
-          "TomWikiAssist"
+          "TomWikiAssist",
+          "Wikipedia"
         ],
+        "entity_sentiment": {
+          "TomWikiAssist": "negative",
+          "Wikipedia": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -485,10 +553,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Elon Musk"
+          "Elon Musk",
+          "Sam Altman"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Elon Musk": "neutral",
+          "Sam Altman": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -511,11 +585,13 @@
       "duplicate_note": "В дом Сэма Альтмана бросили коктейль Молотова",
       "tags": {
         "entities": [
-          "Sam Altman",
-          "OpenAI"
+          "Sam Altman"
         ],
+        "entity_sentiment": {
+          "Sam Altman": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -541,8 +617,12 @@
           "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -566,10 +646,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Florida"
+          "ChatGPT",
+          "Флорида"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative",
+          "Флорида": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -592,8 +678,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -616,10 +703,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Russia"
+          "Россия"
         ],
+        "entity_sentiment": {
+          "Россия": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "incident"
       },
       "importance": 5
     }

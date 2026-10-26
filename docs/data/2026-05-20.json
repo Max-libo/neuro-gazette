@@ -31,7 +31,8 @@
           "title": "I/O 2026: Welcome to the agentic Gemini era",
           "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
           "entities": [
-            "Google"
+            "Google",
+            "Gemini"
           ],
           "sentiment": "positive"
         },
@@ -39,7 +40,8 @@
           "title": "Google claims new Gemini 3.5 Flash runs 4x faster than rival frontier models",
           "url": "https://interestingengineering.com/ai-robotics/google-gemini-3-5-flash-launch",
           "entities": [
-            "Google"
+            "Google",
+            "Gemini"
           ],
           "sentiment": "positive"
         }
@@ -50,11 +52,17 @@
         "entities": [
           "Google",
           "Gemini",
-          "OpenAI",
-          "Anthropic"
+          "GPT-5.5",
+          "Claude Opus 4.7"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "GPT-5.5": "negative",
+          "Claude Opus 4.7": "negative"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
@@ -83,9 +91,18 @@
       "tags": {
         "entities": [
           "Google",
+          "Gemini Omni",
           "Gemini",
-          "YouTube"
+          "YouTube",
+          "Google Flow"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini Omni": "positive",
+          "Gemini": "positive",
+          "YouTube": "positive",
+          "Google Flow": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -119,8 +136,13 @@
           "Lyria",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Lyria": "positive",
+          "Gemini": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -144,10 +166,16 @@
       "tags": {
         "entities": [
           "Google",
-          "Genie"
+          "Genie",
+          "Street View"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Google": "positive",
+          "Genie": "positive",
+          "Street View": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -170,11 +198,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Allen AI",
+          "Allen Institute",
+          "OlmoEarth",
           "Hugging Face"
         ],
+        "entity_sentiment": {
+          "Allen Institute": "positive",
+          "OlmoEarth": "positive",
+          "Hugging Face": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -204,7 +238,7 @@
           "entities": [
             "Google"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -214,6 +248,10 @@
           "Google",
           "Gemini API"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini API": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -249,9 +287,16 @@
       "tags": {
         "entities": [
           "Google",
-          "Android",
-          "AI Studio"
+          "Android CLI",
+          "AI Studio",
+          "Android"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Android CLI": "positive",
+          "AI Studio": "positive",
+          "Android": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -282,9 +327,14 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude",
+          "Managed Agents",
           "MCP"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Managed Agents": "positive",
+          "MCP": "neutral"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -314,9 +364,10 @@
           "title": "Google updates its Gemini app to take on ChatGPT and Claude at IO 2026",
           "url": "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude/",
           "entities": [
-            "Google"
+            "Google",
+            "Gemini"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -324,9 +375,16 @@
       "tags": {
         "entities": [
           "Google",
+          "Gemini Spark",
           "Gemini",
           "Gmail"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini Spark": "positive",
+          "Gemini": "positive",
+          "Gmail": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -351,12 +409,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cloudflare",
           "Anthropic",
-          "Mythos"
+          "Claude Mythos",
+          "Cloudflare"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "Cloudflare": "negative"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -383,8 +446,13 @@
           "Anthropic",
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "Andrej Karpathy": "positive",
+          "Anthropic": "positive",
+          "OpenAI": "neutral"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "people"
       },
       "importance": 7
     },
@@ -408,10 +476,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Singapore"
+          "Сингапур",
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Сингапур": "positive",
+          "ChatGPT": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -445,9 +519,15 @@
       "tags": {
         "entities": [
           "FTC",
-          "США"
+          "США",
+          "TAKE IT DOWN Act"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "FTC": "neutral",
+          "США": "neutral",
+          "TAKE IT DOWN Act": "neutral"
+        },
+        "sentiment": "positive",
         "event": "regulation"
       },
       "importance": 7
@@ -474,8 +554,14 @@
           "Blackstone",
           "Google",
           "TPU",
-          "Nvidia"
+          "NVIDIA"
         ],
+        "entity_sentiment": {
+          "Blackstone": "neutral",
+          "Google": "positive",
+          "TPU": "positive",
+          "NVIDIA": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -503,8 +589,12 @@
           "Mistral",
           "Emmi AI"
         ],
+        "entity_sentiment": {
+          "Mistral": "positive",
+          "Emmi AI": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 5
     },
@@ -529,18 +619,20 @@
           "entities": [
             "Meta"
           ],
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Standard Chartered",
-          "Meta"
+          "Standard Chartered"
         ],
+        "entity_sentiment": {
+          "Standard Chartered": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 5
     },
@@ -583,6 +675,10 @@
           "Armada",
           "Johnson Controls"
         ],
+        "entity_sentiment": {
+          "Armada": "positive",
+          "Johnson Controls": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -611,8 +707,13 @@
           "OpenAI",
           "Sam Altman"
         ],
+        "entity_sentiment": {
+          "Elon Musk": "neutral",
+          "OpenAI": "negative",
+          "Sam Altman": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -638,8 +739,12 @@
           "Demis Hassabis",
           "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "Demis Hassabis": "neutral",
+          "Google DeepMind": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -664,8 +769,11 @@
         "entities": [
           "MrBeast"
         ],
+        "entity_sentiment": {
+          "MrBeast": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -687,9 +795,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Nicco D’Ambrosio",
+          "Are We Dating The Same Guy"
+        ],
+        "entity_sentiment": {
+          "Nicco D’Ambrosio": "negative",
+          "Are We Dating The Same Guy": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -711,15 +826,20 @@
       "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "rumor",
-        "event": "leak"
+        "entities": [
+          "Commonwealth Short Story Prize"
+        ],
+        "entity_sentiment": {
+          "Commonwealth Short Story Prize": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 5
     },
     {
       "id": "hype-agora-goldeneye-2026-05-20",
-      "section": "hype",
+      "section": "content",
       "headline": "Agora-1 превратила GoldenEye для N64 в играбельную AI-симуляцию на четверых",
       "subheadline": "World-модель воспроизводит уровни классического шутера и поддерживает многопользовательскую игру",
       "body": "Исследователи представили Agora-1 — world-модель, которая полностью воссоздаёт уровни классического шутера GoldenEye для Nintendo 64 как интерактивную AI-симуляцию с поддержкой четырёх игроков. Проект продолжает линию демонстраций Genie и Oasis, но с акцентом на мультиплеер.",
@@ -736,12 +856,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Agora-1"
+          "Agora-1",
+          "GoldenEye"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Agora-1": "positive",
+          "GoldenEye": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Играбельная AI-симуляция GoldenEye · до четырёх игроков"
     }
   ]
 }

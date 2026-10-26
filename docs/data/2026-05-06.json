@@ -37,16 +37,22 @@
       "tags": {
         "entities": [
           "OpenAI",
+          "GPT-5.5",
           "ChatGPT"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.5": "positive",
+          "ChatGPT": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 9
     },
     {
       "id": "models-hailuo23-2026-05-06",
-      "section": "models",
+      "section": "content",
       "headline": "MiniMax выпустила видеомодель Hailuo 2.3 и Media Agent",
       "subheadline": "Обновлены физика, мимика и стилизация; параллельно стартовал API на fal.ai",
       "body": "MiniMax представила Hailuo 2.3 — новую версию text-to-video и image-to-video модели с улучшенной симуляцией физики, мимикой и расширенным контролем стилей. Вместе с моделью запущен Media Agent — мультимодальный агент для пайплайна создания видео. Hailuo 2.3 одновременно стала доступна через API на fal.ai в нескольких режимах качества.",
@@ -69,12 +75,21 @@
       "tags": {
         "entities": [
           "MiniMax",
-          "fal.ai"
+          "Hailuo 2.3",
+          "Media Agent",
+          "fal"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "MiniMax": "positive",
+          "Hailuo 2.3": "positive",
+          "Media Agent": "positive",
+          "fal": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Доступна через API fal · несколько режимов качества"
     },
     {
       "id": "models-subq12m-2026-05-06",
@@ -95,9 +110,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Subquadratic"
+          "Subquadratic",
+          "SubQ"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Subquadratic": "positive",
+          "SubQ": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -122,10 +142,16 @@
       "tags": {
         "entities": [
           "Apple",
-          "iOS"
+          "iOS",
+          "Siri"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Apple": "positive",
+          "iOS": "positive",
+          "Siri": "positive"
+        },
+        "sentiment": "positive",
+        "event": "leak"
       },
       "importance": 7
     },
@@ -154,9 +180,17 @@
       "tags": {
         "entities": [
           "Inworld AI",
-          "Mistral"
+          "Realtime TTS-2",
+          "Mistral",
+          "Voxtral"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Inworld AI": "positive",
+          "Realtime TTS-2": "positive",
+          "Mistral": "positive",
+          "Voxtral": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -183,7 +217,11 @@
           "Google",
           "Gemini"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -211,8 +249,13 @@
           "VS Code",
           "GitHub Copilot"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "VS Code": "positive",
+          "GitHub Copilot": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 7
     },
@@ -241,9 +284,13 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini API"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini API": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 7
@@ -268,10 +315,18 @@
       "tags": {
         "entities": [
           "Mistral",
-          "Le Chat"
+          "Le Chat",
+          "Remote Agents",
+          "Work Mode"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Mistral": "positive",
+          "Le Chat": "positive",
+          "Remote Agents": "positive",
+          "Work Mode": "positive"
+        },
+        "sentiment": "positive",
+        "event": "release"
       },
       "importance": 7
     },
@@ -300,9 +355,13 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon Bedrock"
+          "Bedrock"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Bedrock": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 7
@@ -327,9 +386,15 @@
       "tags": {
         "entities": [
           "Anthropic",
+          "Claude",
           "OpenAI"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "OpenAI": "neutral"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -354,10 +419,16 @@
       "tags": {
         "entities": [
           "NVIDIA",
-          "ServiceNow"
+          "ServiceNow",
+          "Now Platform"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "ServiceNow": "positive",
+          "Now Platform": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -384,8 +455,13 @@
           "OpenAI",
           "ChatGPT"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Etsy": "positive",
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -409,10 +485,18 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Google"
+          "Google",
+          "Google Cloud",
+          "TPU"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Google": "positive",
+          "Google Cloud": "positive",
+          "TPU": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -443,8 +527,12 @@
           "SAP",
           "Prior Labs"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "SAP": "positive",
+          "Prior Labs": "positive"
+        },
+        "sentiment": "positive",
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -468,10 +556,16 @@
       "tags": {
         "entities": [
           "Apple",
-          "Siri"
+          "Siri",
+          "Apple Intelligence"
         ],
+        "entity_sentiment": {
+          "Apple": "negative",
+          "Siri": "negative",
+          "Apple Intelligence": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -495,10 +589,14 @@
       "tags": {
         "entities": [
           "Character.AI",
-          "Pennsylvania"
+          "Пенсильвания"
         ],
+        "entity_sentiment": {
+          "Character.AI": "negative",
+          "Пенсильвания": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -523,8 +621,11 @@
         "entities": [
           "Meta"
         ],
+        "entity_sentiment": {
+          "Meta": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -552,14 +653,21 @@
       "duplicate_note": "Белый дом обсуждает обязательную госпроверку ИИ-моделей перед релизом",
       "tags": {
         "entities": [
-          "NIST",
           "CAISI",
-          "Google",
+          "NIST",
+          "Google DeepMind",
           "Microsoft",
           "xAI"
         ],
+        "entity_sentiment": {
+          "CAISI": "neutral",
+          "NIST": "neutral",
+          "Google DeepMind": "neutral",
+          "Microsoft": "neutral",
+          "xAI": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -582,9 +690,13 @@
       "duplicate_note": "ЕС: переговоры по реформе AI Act застопорились, дедлайн по high-risk близко",
       "tags": {
         "entities": [
-          "EU",
+          "ЕС",
           "AI Act"
         ],
+        "entity_sentiment": {
+          "ЕС": "neutral",
+          "AI Act": "neutral"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -618,8 +730,13 @@
           "Elon Musk",
           "Greg Brockman"
         ],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Elon Musk": "negative",
+          "Greg Brockman": "negative"
+        },
+        "sentiment": "negative",
+        "event": "legal"
       },
       "importance": 5
     },
@@ -642,8 +759,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "leak"
+        "event": "research"
       },
       "importance": 7
     },
@@ -666,10 +784,16 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Россия",
           "ФСБ",
           "ФСТЭК"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Россия": "neutral",
+          "ФСБ": "neutral",
+          "ФСТЭК": "neutral"
+        },
+        "sentiment": "negative",
         "event": "regulation"
       },
       "importance": 7
@@ -697,8 +821,13 @@
           "Instagram",
           "Facebook"
         ],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {
+          "Meta": "neutral",
+          "Instagram": "neutral",
+          "Facebook": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "release"
       },
       "importance": 7
     },
@@ -723,8 +852,11 @@
         "entities": [
           "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -751,7 +883,12 @@
           "GitHub Copilot",
           "VS Code"
         ],
-        "sentiment": "negative",
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "GitHub Copilot": "negative",
+          "VS Code": "negative"
+        },
+        "sentiment": "neutral",
         "event": "update"
       },
       "importance": 5
@@ -775,10 +912,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Richard Dawkins"
+          "Richard Dawkins",
+          "ChatGPT",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "Richard Dawkins": "neutral",
+          "ChatGPT": "neutral",
+          "Claude": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     }

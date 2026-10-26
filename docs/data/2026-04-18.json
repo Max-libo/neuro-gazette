@@ -36,6 +36,10 @@
           "OpenAI",
           "GPT-Rosalind"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-Rosalind": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -70,7 +74,9 @@
           "url": "https://officechai.com/ai/qwen3-6-35b-a3b-benchmarks/",
           "entities": [
             "Alibaba",
-            "Google"
+            "Qwen",
+            "Google",
+            "Gemma"
           ],
           "sentiment": "positive"
         }
@@ -82,6 +88,10 @@
           "Alibaba",
           "Qwen"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -107,10 +117,14 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "Gemini"
+          "Gemini Robotics-ER 1.6"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Gemini Robotics-ER 1.6": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -133,10 +147,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Nemotron"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -160,7 +179,8 @@
           "title": "Claude Opus 4.7 leads on SWE-bench and agentic reasoning",
           "url": "https://thenextweb.com/news/anthropic-claude-opus-4-7-coding-agentic-benchmarks-release",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Claude Opus 4.7"
           ],
           "sentiment": "positive"
         }
@@ -171,8 +191,12 @@
           "Anthropic",
           "Claude Opus 4.7"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Opus 4.7": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -198,8 +222,12 @@
           "Anthropic",
           "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Mythos": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -222,7 +250,8 @@
           "title": "Cloudflare Launches AI Gateway for Model Switching",
           "url": "https://www.aibusinessreview.org/2026/04/17/cloudflare-ai-gateway-multi-model-agent-orchestration/",
           "entities": [
-            "Cloudflare"
+            "Cloudflare",
+            "AI Gateway"
           ],
           "sentiment": "positive"
         }
@@ -231,8 +260,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cloudflare"
+          "Cloudflare",
+          "AI Gateway",
+          "Dynamic Workers",
+          "Sandboxes",
+          "Cloudflare Mesh"
         ],
+        "entity_sentiment": {
+          "Cloudflare": "positive",
+          "AI Gateway": "positive",
+          "Dynamic Workers": "positive",
+          "Sandboxes": "positive",
+          "Cloudflare Mesh": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -262,7 +302,8 @@
           "title": "Introducing granular cost attribution for Amazon Bedrock",
           "url": "https://aws.amazon.com/blogs/machine-learning/introducing-granular-cost-attribution-for-amazon-bedrock/",
           "entities": [
-            "AWS"
+            "AWS",
+            "Bedrock"
           ],
           "sentiment": "positive"
         }
@@ -272,10 +313,18 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon"
+          "DevOps Agent",
+          "Agent Registry",
+          "Bedrock"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "DevOps Agent": "positive",
+          "Agent Registry": "positive",
+          "Bedrock": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -301,8 +350,12 @@
           "Anthropic",
           "Claude Code"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
@@ -325,8 +378,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "Auto-Diagnose"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Auto-Diagnose": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -334,7 +392,7 @@
     },
     {
       "id": "platforms-claude-design-2026-04-18",
-      "section": "platforms",
+      "section": "content",
       "headline": "Продолжение: Anthropic запустила Claude Design для быстрого создания визуалов",
       "subheadline": null,
       "body": "Claude Design вышел как отдельное Mac-приложение для генерации UI-макетов, иллюстраций и визуальных концепций через текстовые промпты. Запуск приурочен к выходу Opus 4.7.",
@@ -352,7 +410,8 @@
           "title": "Anthropic launches Claude Design, a new product for creating quick visuals",
           "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Claude Design"
           ],
           "sentiment": "positive"
         }
@@ -363,10 +422,15 @@
           "Anthropic",
           "Claude Design"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Design": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Отдельное Mac-приложение · UI-макеты и иллюстрации"
     },
     {
       "id": "industry-meta-layoffs-2026-04-18",
@@ -390,8 +454,12 @@
           "Meta",
           "Mark Zuckerberg"
         ],
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Mark Zuckerberg": "neutral"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "leak"
       },
       "importance": 7
     },
@@ -417,6 +485,10 @@
           "Cursor",
           "Anysphere"
         ],
+        "entity_sentiment": {
+          "Cursor": "positive",
+          "Anysphere": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -443,6 +515,9 @@
         "entities": [
           "Recursive Superintelligence"
         ],
+        "entity_sentiment": {
+          "Recursive Superintelligence": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -470,6 +545,10 @@
           "DeepSeek",
           "High-Flyer Capital"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "positive",
+          "High-Flyer Capital": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -515,8 +594,13 @@
           "Kevin Weil",
           "Bill Peebles"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Kevin Weil": "neutral",
+          "Bill Peebles": "neutral"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "people"
       },
       "importance": 7
     },
@@ -541,8 +625,11 @@
         "entities": [
           "Cerebras"
         ],
+        "entity_sentiment": {
+          "Cerebras": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 5
     },
@@ -582,8 +669,15 @@
         "entities": [
           "Euclyd",
           "ASML",
-          "UK Government"
+          "Правительство Великобритании",
+          "Liz Kendall"
         ],
+        "entity_sentiment": {
+          "Euclyd": "positive",
+          "ASML": "neutral",
+          "Правительство Великобритании": "neutral",
+          "Liz Kendall": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -609,11 +703,14 @@
       "tags": {
         "entities": [
           "CISA",
-          "ChatGPT",
-          "OpenAI"
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "CISA": "negative",
+          "ChatGPT": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -636,10 +733,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NRSC"
+          "NRSC",
+          "James Talarico",
+          "США"
         ],
+        "entity_sentiment": {
+          "NRSC": "negative",
+          "James Talarico": "negative",
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -662,8 +766,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -686,8 +791,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -713,8 +819,12 @@
           "Anthropic",
           "Claude Opus 4.7"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Opus 4.7": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -737,10 +847,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nature"
+          "США",
+          "Китай"
         ],
+        "entity_sentiment": {
+          "США": "negative",
+          "Китай": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -766,8 +881,12 @@
           "Dairy Queen",
           "Presto"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Dairy Queen": "positive",
+          "Presto": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 5
     }
