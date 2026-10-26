@@ -81,7 +81,7 @@ sources:
   - name: "Alibaba Wan"
     type: scrape
     url: "https://wan.video/introduction/wan2.6"
-    section: models
+    section: content
     priority: 2
 
   - name: "Moonshot (Kimi)"
@@ -97,7 +97,8 @@ sources:
     priority: 2
 
   # ── НЕЙРОКОНТЕНТ: ИЗОБРАЖЕНИЯ ─────────────────────
-  # section: content — рубрика «Нейроконтент». Под неё зарезервировано
+  # section: content — рубрика «Нейроконтент»: нейросети нейрокреаторов
+  # (фото, видео, 3D, миры и игры). Вместе с art под неё зарезервировано
   # RAW_CONTENT_RESERVE мест в сыром списке (см. common.py).
 
   - name: "Black Forest Labs (Flux)"
@@ -134,31 +135,31 @@ sources:
   - name: "Higgsfield AI"
     type: scrape
     url: "https://higgsfield.ai/blog"
-    section: platforms
+    section: content
     priority: 1
 
   - name: "Runway"
     type: scrape
     url: "https://runwayml.com/blog"
-    section: platforms
+    section: content
     priority: 1
 
   - name: "Pika"
     type: scrape
     url: "https://pika.art/blog"
-    section: platforms
+    section: content
     priority: 1
 
   - name: "Luma AI"
     type: scrape
     url: "https://lumalabs.ai/news"
-    section: platforms
+    section: content
     priority: 1
 
   - name: "Kuaishou (Kling)"
     type: rss
     url: "https://ir.kuaishou.com/rss/news-releases.xml"
-    section: platforms
+    section: content
     priority: 1
 
   # ── АУДИО И ГОЛОС ────────────────────────────────
@@ -262,7 +263,7 @@ sources:
   - name: "SYNTX AI"
     type: scrape
     url: "https://syntx.ai/updates"
-    section: platforms
+    section: content
     priority: 2
 
   - name: "Phygital+"
@@ -405,7 +406,8 @@ sources:
     section: industry
     priority: 2
 
-  # ── НЕЙРОКОНТЕНТ: ВЫСТАВКИ, МУЗЕИ, АРТ-СОБЫТИЯ ───
+  # ── ИСКУССТВО: ВЫСТАВКИ, МУЗЕИ, АРТ-СОБЫТИЯ ───────
+  # section: art — рубрика «Искусство». Делит резерв RAW_CONTENT_RESERVE с content.
   # Общие арт-СМИ: про ИИ там малая доля, поэтому стоит фильтр keywords —
   # в сырой список попадают только материалы, где в заголовке/анонсе есть
   # одно из слов. «слово*» — префикс, без звёздочки — целое слово.
@@ -416,7 +418,7 @@ sources:
   - name: "Artnet News"
     type: rss
     url: "https://news.artnet.com/feed"
-    section: content
+    section: art
     priority: 2
     keywords: &ai_keywords ["AI", "A.I.", "artificial intelligence", "generative*", "machine learning",
                             "neural", "algorithm*", "Midjourney", "Stable Diffusion", "DALL-E", "Refik Anadol",
@@ -425,14 +427,14 @@ sources:
   - name: "Hyperallergic"
     type: rss
     url: "https://hyperallergic.com/feed/"
-    section: content
+    section: art
     priority: 3
     keywords: *ai_keywords
 
   - name: "The Art Newspaper"
     type: rss
     url: "https://www.theartnewspaper.com/rss.xml"
-    section: content
+    section: art
     priority: 2
     keywords: *ai_keywords
 
@@ -458,17 +460,28 @@ search_queries:
     # Генерация изображений: релизы и обновления
     - "Midjourney Flux Ideogram Recraft image model new version update"
     - "Nano Banana Imagen GPT-image Seedream Firefly image generation update"
-    - "Krea Leonardo Reve Ideogram Recraft Freepik AI image update"
+    - "Krea Leonardo Reve Freepik AI image generator update"
     - "нейросеть генерация изображений обновление новая версия"
-    - "Kandinsky Шедеврум GigaChat генерация изображений обновление"
+    - "Kandinsky Шедеврум GigaChat генерация изображений видео обновление"
+    # Генерация видео
+    - "Veo Sora Kling Runway Hailuo AI video generator new version"
+    - "Seedance Pika Luma Higgsfield Wan video generation model release"
+    - "нейросеть генерация видео новая модель обновление"
+    # 3D, миры, игры
+    - "AI 3D model generator Meshy Tripo Rodin Hunyuan3D text-to-3D release"
+    - "AI world model generation Genie World Labs interactive game generation release"
     # Бесплатное и скидки
-    - "AI image generator free plan new free tier launch"
+    - "AI image video generator free plan new free tier launch"
     - "AI image video generator subscription discount sale promo"
-    - "нейросеть бесплатно генерация картинок скидка подписка акция"
-    # Выставки, музеи, арт-события
+    - "нейросеть бесплатно генерация картинок видео скидка подписка акция"
+
+  art:
+    # Выставки, музеи, фестивали, конкурсы
     - "AI art exhibition museum generative art show opens"
+    - "AI art festival competition prize generative art award"
     - "выставка нейросети искусственный интеллект искусство музей"
     - "нейроарт выставка Москва Санкт-Петербург открытие ИИ-искусство"
+    - "фестиваль конкурс премия нейроискусство ИИ-арт приём работ"
 
   hype:
     - "AI news viral controversy scandal"

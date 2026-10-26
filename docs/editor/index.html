@@ -151,6 +151,7 @@
           <option value="platforms">Платформы</option>
           <option value="industry">Индустрия</option>
           <option value="content">Нейроконтент</option>
+          <option value="art">Искусство</option>
           <option value="hype">Желтуха</option>
         </select>
       </div>
@@ -308,7 +309,7 @@
     renderCards();
   }
 
-  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', content: 'Нейроконтент', hype: 'Желтуха' };
+  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', content: 'Нейроконтент', art: 'Искусство', hype: 'Желтуха' };
 
   function renderCards() {
     const el = document.getElementById('editor-cards');
@@ -348,6 +349,7 @@
                 <option value="platforms" ${item.section==='platforms'?'selected':''}>Платформы</option>
                 <option value="industry" ${item.section==='industry'?'selected':''}>Индустрия</option>
                 <option value="content" ${item.section==='content'?'selected':''}>Нейроконтент</option>
+                <option value="art" ${item.section==='art'?'selected':''}>Искусство</option>
                 <option value="hype" ${item.section==='hype'?'selected':''}>Желтуха</option>
               </select>
             </div>

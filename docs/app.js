@@ -5,6 +5,7 @@ const SECTION_LABELS = {
   platforms: 'Платформы',
   industry: 'Индустрия',
   content: 'Нейроконтент',
+  art: 'Искусство',
   hype: 'Желтуха',
 };
 
@@ -45,7 +46,7 @@ function sectionBadge(section) {
   return `<span class="section-badge section-badge--${esc(section)}">${esc(label)}</span>`;
 }
 
-/* Практическая строка для рубрики «Нейроконтент»: даты выставки, срок скидки, лимиты */
+/* Практическая строка для рубрик «Нейроконтент» и «Искусство»: даты выставки, срок скидки, лимиты */
 function buildDetailsHtml(item) {
   if (!item.details) return '';
   return `<p class="art-details">${esc(item.details)}</p>`;

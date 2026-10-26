@@ -9,7 +9,7 @@ name: Проверка источников
 # 🟡 даты не определяются, ✅ живой, плюс первые 3 статьи каждого источника.
 
 on:
-  # Автоматически — на PR, где меняются источники (проверяет рубрику content)
+  # Автоматически — на PR, где меняются источники (проверяет рубрики content и art)
   pull_request:
     paths:
       - 'sources.yaml'
@@ -17,9 +17,9 @@ on:
   workflow_dispatch:
     inputs:
       sections:
-        description: 'Рубрики через пробел (пусто — все): models platforms industry content hype'
+        description: 'Рубрики через пробел (пусто — все): models platforms industry content art hype'
         required: false
-        default: 'content'
+        default: 'content art'
 
 permissions:
   contents: read
@@ -42,7 +42,7 @@ jobs:
 
       - name: Проверить источники
         env:
-          SECTIONS: ${{ github.event_name == 'pull_request' && 'content' || github.event.inputs.sections }}
+          SECTIONS: ${{ github.event_name == 'pull_request' && 'content art' || github.event.inputs.sections }}
         run: python3 scripts/check_sources.py $SECTIONS | tee report.md
 
       - name: Отчёт комментарием в PR

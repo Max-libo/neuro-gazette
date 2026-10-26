@@ -135,9 +135,10 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .section-badge--platforms { color: #145a32; }
 .section-badge--industry  { color: #4a235a; }
 .section-badge--content   { color: #8a5a00; }
+.section-badge--art       { color: #7b2d26; }
 .section-badge--hype      { color: var(--accent); }
 
-/* Практическая строка рубрики «Нейроконтент»: даты, место, срок скидки */
+/* Практическая строка рубрик «Нейроконтент» и «Искусство»: даты, место, срок скидки */
 .art-details {
   font-family: var(--font-mono);
   font-size: 0.72rem;

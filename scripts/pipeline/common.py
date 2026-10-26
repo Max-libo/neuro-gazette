@@ -47,11 +47,16 @@ WINDOW_STR      = (
     f" — {_window_end.strftime('%Y-%m-%d %H:%M')} МСК"
 )
 
-SECTIONS  = ["models", "platforms", "industry", "content", "hype"]
+SECTIONS  = ["models", "platforms", "industry", "content", "art", "hype"]
+# Творческие рубрики: «Нейроконтент» (инструменты нейрокреаторов) и «Искусство» (выставки, музеи)
+CREATIVE_SECTIONS = ("content", "art")
 RAW_LIMIT = 200
-# Сколько мест в сыром списке гарантировано рубрике «Нейроконтент»,
-# чтобы её источники (часто priority 2–3) не вылетали при обрезке до RAW_LIMIT.
+# Сколько мест в сыром списке гарантировано творческим рубрикам (content + art),
+# чтобы их источники (часто priority 2–3) не вылетали при обрезке до RAW_LIMIT.
 RAW_CONTENT_RESERVE = 40
+# Из них гарантировано «Искусству»: его источники — общие арт-СМИ с priority 2–3,
+# и без своей квоты их вытесняет «Нейроконтент». Неиспользованное отходит content.
+RAW_ART_RESERVE = 10
 
 
 # ── Источники ─────────────────────────────────────────────────────────────────
@@ -235,8 +240,8 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
 
     # details — короткая служебная строка: даты и место выставки, срок скидки.
     details = item.get("details")
-    if (item["section"] == "content" and isinstance(details, str) and details.strip()
-            and not details.strip().lower().startswith("только для content")):
+    if (item["section"] in CREATIVE_SECTIONS and isinstance(details, str) and details.strip()
+            and not details.strip().lower().startswith("только для")):
         item["details"] = details.strip()[:140]
     else:
         item.pop("details", None)

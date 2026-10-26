@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
-    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT, RAW_CONTENT_RESERVE,
+    DATA_DIR, TODAY_STR, CUTOFF_24H, RAW_LIMIT, RAW_CONTENT_RESERVE, RAW_ART_RESERVE, CREATIVE_SECTIONS,
     is_vague_url, clean_text, parse_date, extract_date_from_url,
     load_sources, load_recent_issues, get_prev_urls, log,
 )
@@ -335,14 +335,20 @@ def deduplicate(articles: list[dict]) -> list[dict]:
 
 def trim_with_reserve(items: list[dict]) -> list[dict]:
     """Обрезка до RAW_LIMIT по приоритету, но с гарантированными местами
-    для рубрики «Нейроконтент»: её источники обычно priority 2–3 и иначе
+    для творческих рубрик («Нейроконтент», «Искусство»): их источники обычно priority 2–3 и иначе
     вытесняются официальными блогами и СМИ ещё до фильтра."""
     items = sorted(items, key=lambda a: a.get("priority", 2))
-    content = [a for a in items if a.get("section") == "content"][:RAW_CONTENT_RESERVE]
+    art_all     = [a for a in items if a.get("section") == "art"]
+    content_all = [a for a in items if a.get("section") in CREATIVE_SECTIONS and a.get("section") != "art"]
+    art_take     = art_all[:RAW_ART_RESERVE]
+    content_take = content_all[:RAW_CONTENT_RESERVE - len(art_take)]
+    spare        = RAW_CONTENT_RESERVE - len(art_take) - len(content_take)
+    art_take    += art_all[len(art_take):len(art_take) + spare]
+    content = content_take + art_take
     reserved = {id(a) for a in content}
     rest = [a for a in items if id(a) not in reserved][:max(RAW_LIMIT - len(content), 0)]
     result = sorted(content + rest, key=lambda a: a.get("priority", 2))
-    log.info("Обрезка: %d → %d (из них нейроконтент: %d)", len(items), len(result), len(content))
+    log.info("Обрезка: %d → %d (из них нейроконтент и искусство: %d)", len(items), len(result), len(content))
     return result
 
 
