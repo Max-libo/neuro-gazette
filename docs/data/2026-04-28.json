@@ -24,8 +24,12 @@
           "OpenAI",
           "Microsoft"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Microsoft": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 9
     },
@@ -48,9 +52,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google DeepMind",
-          "David Silver"
+          "David Silver",
+          "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "David Silver": "positive",
+          "Google DeepMind": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -77,8 +85,13 @@
         "entities": [
           "Meta",
           "Manus",
-          "China"
+          "Китай"
         ],
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Manus": "negative",
+          "Китай": "neutral"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -104,10 +117,18 @@
       "tags": {
         "entities": [
           "Google",
-          "Pentagon"
+          "Sundar Pichai",
+          "Gemini",
+          "Пентагон"
         ],
+        "entity_sentiment": {
+          "Google": "negative",
+          "Sundar Pichai": "negative",
+          "Gemini": "negative",
+          "Пентагон": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -130,10 +151,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft"
+          "Microsoft",
+          "Mark Russinovich",
+          "Scott Hanselman"
         ],
+        "entity_sentiment": {
+          "Microsoft": "neutral",
+          "Mark Russinovich": "neutral",
+          "Scott Hanselman": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -156,12 +184,17 @@
       "duplicate_note": "Маск против Альтмана: конфликт OpenAI и xAI выходит в открытую фазу",
       "tags": {
         "entities": [
-          "Elon Musk",
+          "OpenAI",
           "Sam Altman",
-          "OpenAI"
+          "Elon Musk"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Sam Altman": "negative",
+          "Elon Musk": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -185,9 +218,14 @@
       "tags": {
         "entities": [
           "Palantir",
-          "Scotland Yard",
+          "Столичная полиция Лондона",
           "Sadiq Khan"
         ],
+        "entity_sentiment": {
+          "Palantir": "negative",
+          "Столичная полиция Лондона": "neutral",
+          "Sadiq Khan": "neutral"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -212,10 +250,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "ChatGPT",
+          "Правительство США"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "Правительство США": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "regulation"
       },
       "importance": 7
     },
@@ -239,10 +284,14 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "South Korea"
+          "Южная Корея"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Южная Корея": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -268,8 +317,12 @@
           "Canonical",
           "Ubuntu"
         ],
+        "entity_sentiment": {
+          "Canonical": "positive",
+          "Ubuntu": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -293,8 +346,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "negative",
+          "GitHub Copilot": "negative"
+        },
         "sentiment": "negative",
         "event": "update"
       },
@@ -302,7 +359,7 @@
     },
     {
       "id": "platforms-midjourney-highres-2026-04-28",
-      "section": "platforms",
+      "section": "content",
       "headline": "Midjourney запустила оценку изображений в высоком разрешении",
       "subheadline": null,
       "body": "Midjourney добавила систему рейтинга, в которой пользователи оценивают изображения в полном разрешении вместо превью. Компания использует данные для тонкой настройки моделей под детализированные генерации.",
@@ -321,10 +378,14 @@
         "entities": [
           "Midjourney"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Midjourney": "positive"
+        },
+        "sentiment": "positive",
+        "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Оценка изображений в полном разрешении"
     },
     {
       "id": "platforms-google-youtube-chatbot-2026-04-28",
@@ -346,9 +407,15 @@
       "tags": {
         "entities": [
           "Google",
-          "YouTube"
+          "YouTube",
+          "Ask YouTube"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "YouTube": "positive",
+          "Ask YouTube": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -374,8 +441,11 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -398,8 +468,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Meta"
+          "Meta",
+          "Sapiens2"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Sapiens2": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -424,8 +499,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenMOSS"
+          "OpenMOSS",
+          "MOSS-Audio"
         ],
+        "entity_sentiment": {
+          "OpenMOSS": "positive",
+          "MOSS-Audio": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -449,8 +529,13 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "neutral",
+        "entities": [
+          "Talkie-1930"
+        ],
+        "entity_sentiment": {
+          "Talkie-1930": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -474,8 +559,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Raw2Insights-US"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Raw2Insights-US": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -509,7 +599,12 @@
           "MediaTek",
           "Qualcomm"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "MediaTek": "positive",
+          "Qualcomm": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 7
@@ -533,10 +628,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Canva"
+          "Canva",
+          "Magic Layers"
         ],
+        "entity_sentiment": {
+          "Canva": "negative",
+          "Magic Layers": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -561,8 +661,11 @@
         "entities": [
           "Taylor Swift"
         ],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entity_sentiment": {
+          "Taylor Swift": "positive"
+        },
+        "sentiment": "positive",
+        "event": "other"
       },
       "importance": 5
     },
@@ -585,10 +688,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Japan"
+          "Япония"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Япония": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -611,8 +717,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "neutral",
+        "event": "research"
       },
       "importance": 5
     },
@@ -637,8 +744,11 @@
         "entities": [
           "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -661,10 +771,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Arizona State University"
+          "Arizona State University",
+          "Atomic AI"
         ],
+        "entity_sentiment": {
+          "Arizona State University": "negative",
+          "Atomic AI": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     }

@@ -33,6 +33,9 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -58,8 +61,12 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "Gemini"
+          "Gemini 3.1 Flash TTS"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Gemini 3.1 Flash TTS": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -84,7 +91,8 @@
           "title": "Nvidia unveils Ising AI models for quantum error correction and calibration",
           "url": "https://siliconangle.com/2026/04/14/nvidia-unveils-ising-ai-models-quantum-error-correction-calibration/",
           "entities": [
-            "NVIDIA"
+            "NVIDIA",
+            "Ising"
           ],
           "sentiment": "positive"
         }
@@ -93,8 +101,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Ising"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Ising": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -102,7 +115,7 @@
     },
     {
       "id": "models-mjv81-2026-04-15",
-      "section": "models",
+      "section": "content",
       "headline": "Midjourney запустила V8.1 Alpha — новый этап генерации изображений",
       "subheadline": "Альфа-версия обновлённой модели доступна подписчикам",
       "body": "Midjourney выпустила альфа-версию модели V8.1 — обновление флагманского генератора изображений. Версия доступна для тестирования подписчикам через официальный интерфейс. Модель позиционируется как эволюция V8 с улучшениями качества и управляемости генерации.",
@@ -121,14 +134,18 @@
         "entities": [
           "Midjourney"
         ],
+        "entity_sentiment": {
+          "Midjourney": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "V8.1 Alpha · тестирование для подписчиков"
     },
     {
       "id": "models-maiimg-2026-04-15",
-      "section": "models",
+      "section": "content",
       "headline": "Microsoft выпустила MAI-Image-2-Efficient — генерация изображений на 41% дешевле",
       "subheadline": "Оптимизированная модель сразу доступна в Microsoft Foundry без очереди",
       "body": "Microsoft представила MAI-Image-2-Efficient — облегчённый вариант собственной модели генерации изображений. Модель на 41% дешевле и на 22% быстрее оригинала, доступна в Microsoft Foundry. Аналитики SiliconAngle отмечают, что выпуск собственных моделей сигнализирует о движении Microsoft к AI-стеку, независимому от OpenAI.",
@@ -155,12 +172,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft"
+          "Microsoft",
+          "MAI-Image-2-Efficient"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "MAI-Image-2-Efficient": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Microsoft Foundry · без очереди · на 41% дешевле оригинала"
     },
     {
       "id": "models-nvrobot-2026-04-15",
@@ -182,7 +205,8 @@
           "url": "https://spectrum.ieee.org/boston-dynamics-spot-google-deepmind",
           "entities": [
             "Boston Dynamics",
-            "Google DeepMind"
+            "Google DeepMind",
+            "Spot"
           ],
           "sentiment": "positive"
         }
@@ -191,8 +215,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Isaac GR00T",
+          "Newton",
+          "RoboLab"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Isaac GR00T": "positive",
+          "Newton": "positive",
+          "RoboLab": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -217,8 +250,13 @@
       "unconfirmed": false,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "GPT-5.4-Cyber"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.4-Cyber": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -243,8 +281,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Agents SDK"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Agents SDK": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -252,7 +295,7 @@
     },
     {
       "id": "platforms-adobe-2026-04-15",
-      "section": "platforms",
+      "section": "content",
       "headline": "Adobe запустила Firefly AI Assistant — агент управляет приложениями Creative Cloud",
       "subheadline": "Диалоговый AI-ассистент выполняет задачи в Photoshop, Illustrator и других продуктах Adobe",
       "body": "Adobe представила Firefly AI Assistant — диалоговый агент, способный управлять приложениями Creative Cloud для выполнения задач. По словам компании, это «фундаментальный сдвиг» в творческой работе: пользователь описывает задачу в чате, а ассистент применяет инструменты Photoshop, Illustrator и других программ автоматически. Функция доступна подписчикам Creative Cloud.",
@@ -278,12 +321,20 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Adobe"
+          "Adobe",
+          "Firefly AI Assistant",
+          "Creative Cloud"
         ],
+        "entity_sentiment": {
+          "Adobe": "positive",
+          "Firefly AI Assistant": "positive",
+          "Creative Cloud": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Доступен подписчикам Creative Cloud"
     },
     {
       "id": "platforms-dbricks-2026-04-15",
@@ -304,10 +355,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Databricks"
+          "Databricks",
+          "Agent Bricks"
         ],
+        "entity_sentiment": {
+          "Databricks": "positive",
+          "Agent Bricks": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -333,6 +389,10 @@
           "Google",
           "Chrome"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Chrome": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -360,6 +420,10 @@
           "Google",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -387,6 +451,10 @@
           "Anthropic",
           "Claude Code"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -424,8 +492,12 @@
           "Novo Nordisk",
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "Novo Nordisk": "positive",
+          "OpenAI": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -451,8 +523,12 @@
           "Meta",
           "Broadcom"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Broadcom": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -486,8 +562,11 @@
         "entities": [
           "Snap"
         ],
+        "entity_sentiment": {
+          "Snap": "negative"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "people"
       },
       "importance": 7
     },
@@ -524,6 +603,11 @@
           "Synera",
           "Gitar"
         ],
+        "entity_sentiment": {
+          "Bluefish": "positive",
+          "Synera": "positive",
+          "Gitar": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -548,10 +632,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Allbirds"
+          "Allbirds",
+          "Hyperscale"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Allbirds": "positive",
+          "Hyperscale": "positive"
+        },
+        "sentiment": "positive",
+        "event": "finance"
       },
       "importance": 5
     },
@@ -577,8 +666,12 @@
           "xAI",
           "NAACP"
         ],
+        "entity_sentiment": {
+          "xAI": "negative",
+          "NAACP": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -601,10 +694,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Украина"
+          "Украина",
+          "Россия"
         ],
+        "entity_sentiment": {
+          "Украина": "positive",
+          "Россия": "negative"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -630,8 +728,12 @@
           "Google",
           "SynthID"
         ],
+        "entity_sentiment": {
+          "Google": "negative",
+          "SynthID": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -654,10 +756,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -680,8 +787,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Минцифры"
+          "Минцифры",
+          "Россия"
         ],
+        "entity_sentiment": {
+          "Минцифры": "neutral",
+          "Россия": "neutral"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -705,7 +817,9 @@
         {
           "title": "Half of all US employees use AI at work now — and waste almost 8 hours a week doing it",
           "url": "https://www.zdnet.com/article/increasing-use-of-ai-is-causing-structural-workplace-changes-new-gallup-poll-finds/",
-          "entities": [],
+          "entities": [
+            "США"
+          ],
           "sentiment": "negative"
         }
       ],
@@ -713,8 +827,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -739,8 +854,11 @@
         "entities": [
           "Airbnb"
         ],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {
+          "Airbnb": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "research"
       },
       "importance": 5
     },
@@ -765,10 +883,19 @@
         "entities": [
           "xAI",
           "Grok",
-          "Apple"
+          "X",
+          "Apple",
+          "App Store"
         ],
+        "entity_sentiment": {
+          "xAI": "negative",
+          "Grok": "negative",
+          "X": "negative",
+          "Apple": "neutral",
+          "App Store": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     }

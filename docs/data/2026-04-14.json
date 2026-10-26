@@ -31,6 +31,8 @@
           "title": "SiliconAngle: Китай и США сравнялись в гонке за глобальное лидерство в AI",
           "url": "https://siliconangle.com/2026/04/13/stanford-hais-2026-ai-index-reveals-china-u-s-now-neck-neck-race-global-dominance/",
           "entities": [
+            "Китай",
+            "США",
             "Stanford HAI"
           ],
           "sentiment": "neutral"
@@ -42,16 +44,25 @@
         "entities": [
           "Stanford HAI",
           "Anthropic",
+          "Китай",
+          "США",
           "McKinsey"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Stanford HAI": "neutral",
+          "Anthropic": "positive",
+          "Китай": "positive",
+          "США": "positive",
+          "McKinsey": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 9
     },
     {
       "id": "models-b7e42d15-2026-04-14",
-      "section": "models",
+      "section": "content",
       "headline": "Google открыла генерацию видео Veo 3.1 Lite для Ultra-подписчиков без дополнительных кредитов",
       "subheadline": "Облегчённая версия модели видеогенерации доступна в рамках существующей подписки Gemini Ultra",
       "body": "Google включила модель видеогенерации Veo 3.1 Lite в базовый пакет подписки Ultra — ранее использование видеомоделей требовало отдельных кредитов. Облегчённая версия позволяет генерировать короткие видеоролики прямо из интерфейса Gemini. Шаг направлен на удержание подписчиков в конкуренции с бесплатными тарифами видеогенерации у других платформ.",
@@ -72,10 +83,16 @@
           "Veo 3.1",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Veo 3.1": "positive",
+          "Gemini": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "В подписке Ultra · без отдельных кредитов"
     },
     {
       "id": "models-c1d83a47-2026-04-14",
@@ -96,8 +113,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -132,10 +150,17 @@
         "entities": [
           "Anthropic",
           "AWS",
-          "Claude Mythos"
+          "Claude Mythos",
+          "Bedrock"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "AWS": "positive",
+          "Claude Mythos": "positive",
+          "Bedrock": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -165,10 +190,17 @@
         "entities": [
           "Anthropic",
           "Claude",
-          "Microsoft Office"
+          "Microsoft Office",
+          "Word"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "Microsoft Office": "positive",
+          "Word": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -193,6 +225,9 @@
         "entities": [
           "Cursor"
         ],
+        "entity_sentiment": {
+          "Cursor": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -218,10 +253,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Cloudflare"
+          "Cloudflare",
+          "Agent Cloud"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Cloudflare": "positive",
+          "Agent Cloud": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -245,8 +286,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -271,10 +316,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft"
+          "Microsoft",
+          "OpenClaw"
         ],
+        "entity_sentiment": {
+          "Microsoft": "neutral",
+          "OpenClaw": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "leak"
       },
       "importance": 5
     },
@@ -300,8 +350,12 @@
           "Linux",
           "Linus Torvalds"
         ],
+        "entity_sentiment": {
+          "Linux": "neutral",
+          "Linus Torvalds": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "other"
       },
       "importance": 5
     },
@@ -324,10 +378,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nvidia"
+          "NVIDIA"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -353,8 +410,12 @@
           "Anthropic",
           "Coefficient Bio"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Coefficient Bio": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -380,8 +441,12 @@
           "OpenAI",
           "Hiro"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Hiro": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -406,8 +471,11 @@
         "entities": [
           "Япония"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Япония": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -431,11 +499,18 @@
       "tags": {
         "entities": [
           "Goldman Sachs",
+          "Claude Mythos",
           "Anthropic",
-          "Claude Mythos"
+          "David Solomon"
         ],
+        "entity_sentiment": {
+          "Goldman Sachs": "neutral",
+          "Claude Mythos": "negative",
+          "Anthropic": "negative",
+          "David Solomon": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -458,10 +533,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Vercel"
+          "Vercel",
+          "Guillermo Rauch"
         ],
+        "entity_sentiment": {
+          "Vercel": "positive",
+          "Guillermo Rauch": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -485,8 +565,14 @@
       "tags": {
         "entities": [
           "ARPA-E",
-          "Министерство энергетики США"
+          "Минэнерго США",
+          "CATALCHEM-E"
         ],
+        "entity_sentiment": {
+          "ARPA-E": "neutral",
+          "Минэнерго США": "neutral",
+          "CATALCHEM-E": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -523,7 +609,7 @@
           "url": "https://fortune.com/2026/04/13/meet-the-man-accused-of-throwing-a-molotov-cocktail-at-sam-altman-a-20-year-old-ai-doomer/",
           "entities": [
             "Sam Altman",
-            "OpenAI"
+            "Daniel Moreno-Gama"
           ],
           "sentiment": "negative"
         },
@@ -531,8 +617,7 @@
           "title": "CNBC: подозреваемый составил список адресов AI-руководителей",
           "url": "https://www.cnbc.com/2026/04/13/sam-altman-openai-ai-arson.html",
           "entities": [
-            "Sam Altman",
-            "OpenAI"
+            "Sam Altman"
           ],
           "sentiment": "negative"
         }
@@ -541,11 +626,14 @@
       "tags": {
         "entities": [
           "Sam Altman",
-          "OpenAI",
           "Daniel Moreno-Gama"
         ],
+        "entity_sentiment": {
+          "Sam Altman": "negative",
+          "Daniel Moreno-Gama": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -569,7 +657,8 @@
           "url": "https://techbriefly.com/2026/04/13/meta-is-developing-an-ai-clone-of-ceo-mark-zuckerberg/",
           "entities": [
             "Meta",
-            "Mark Zuckerberg"
+            "Mark Zuckerberg",
+            "Llama"
           ],
           "sentiment": "neutral"
         }
@@ -582,6 +671,11 @@
           "Mark Zuckerberg",
           "Llama"
         ],
+        "entity_sentiment": {
+          "Meta": "neutral",
+          "Mark Zuckerberg": "neutral",
+          "Llama": "neutral"
+        },
         "sentiment": "neutral",
         "event": "leak"
       },
@@ -612,9 +706,15 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Anthropic"
+          "Anthropic",
+          "Spud"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Anthropic": "neutral",
+          "Spud": "neutral"
+        },
+        "sentiment": "negative",
         "event": "leak"
       },
       "importance": 7
@@ -638,11 +738,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google Gemini",
-          "AFPI"
+          "America First Policy Institute",
+          "Gemini"
         ],
+        "entity_sentiment": {
+          "America First Policy Institute": "neutral",
+          "Gemini": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "research"
       },
       "importance": 7
     },
@@ -665,11 +769,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "a16z",
           "Andreessen Horowitz"
         ],
+        "entity_sentiment": {
+          "Andreessen Horowitz": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -695,8 +801,12 @@
           "WebinarTV",
           "Zoom"
         ],
+        "entity_sentiment": {
+          "WebinarTV": "negative",
+          "Zoom": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     }

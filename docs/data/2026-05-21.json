@@ -23,8 +23,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "statement"
       },
       "importance": 9
     },
@@ -68,8 +71,12 @@
           "Anthropic",
           "xAI"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "xAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -92,7 +99,8 @@
           "title": "Jensen Huang says he's found a 'brand new' $200B market for Nvidia",
           "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
           "entities": [
-            "NVIDIA"
+            "NVIDIA",
+            "Jensen Huang"
           ],
           "sentiment": "positive"
         }
@@ -103,8 +111,11 @@
         "entities": [
           "NVIDIA"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -129,8 +140,11 @@
         "entities": [
           "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "finance"
       },
       "importance": 5
     },
@@ -153,7 +167,8 @@
           "title": "The biggest data center ever is becoming a huge problem in Utah",
           "url": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
           "entities": [
-            "Stratos"
+            "Stratos",
+            "Юта"
           ],
           "sentiment": "negative"
         }
@@ -164,8 +179,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "people"
       },
       "importance": 5
     },
@@ -188,7 +206,8 @@
           "title": "AI engineer says Google unfairly sacked him after he protested against work for Israel",
           "url": "https://www.theguardian.com/technology/2026/may/20/ai-engineer-says-google-unfairly-sacked-him-after-he-protested-against-work-for-israel",
           "entities": [
-            "Google"
+            "Google",
+            "Израиль"
           ],
           "sentiment": "negative"
         }
@@ -199,8 +218,11 @@
         "entities": [
           "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -225,8 +247,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -249,8 +274,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Nemotron"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -278,6 +308,10 @@
           "Alibaba",
           "Qwen"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -302,10 +336,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "DeepSeek"
+          "DeepSeek",
+          "DeepSeek Code"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "DeepSeek": "positive",
+          "DeepSeek Code": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -330,8 +369,11 @@
         "entities": [
           "Figma"
         ],
+        "entity_sentiment": {
+          "Figma": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
@@ -366,7 +408,11 @@
           "Google",
           "Beam"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Beam": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -401,7 +447,7 @@
             "Google",
             "YouTube"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -410,6 +456,9 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "positive"
+        },
         "sentiment": "neutral",
         "event": "update"
       },
@@ -437,8 +486,12 @@
           "Anthropic",
           "Jack Clark"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Jack Clark": "positive"
+        },
         "sentiment": "positive",
-        "event": "leak"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -462,10 +515,14 @@
       "tags": {
         "entities": [
           "Microsoft",
-          "Mustafa Suleiman"
+          "Mustafa Suleyman"
         ],
-        "sentiment": "neutral",
-        "event": "leak"
+        "entity_sentiment": {
+          "Microsoft": "neutral",
+          "Mustafa Suleyman": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -490,10 +547,19 @@
         "entities": [
           "ChatGPT",
           "Grok",
-          "Gemini"
+          "Gemini",
+          "Replika",
+          "Demos"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "negative",
+          "Grok": "negative",
+          "Gemini": "negative",
+          "Replika": "negative",
+          "Demos": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "research"
       },
       "importance": 5
     },
@@ -516,8 +582,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "neutral",
-        "event": "leak"
+        "event": "other"
       },
       "importance": 5
     },
@@ -547,10 +614,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Linus Torvalds",
           "Linux"
         ],
+        "entity_sentiment": {
+          "Linus Torvalds": "neutral",
+          "Linux": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "leak"
+        "event": "statement"
       },
       "importance": 5
     }

@@ -24,14 +24,18 @@
           "NVIDIA",
           "Nemotron"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
     {
       "id": "models-kandinsky-6-imagepro-2026-04-29",
-      "section": "models",
+      "section": "content",
       "headline": "Сбер обновил Kandinsky до версии 6.0 Image Pro с фокусом на редактировании",
       "subheadline": "Точечная замена объектов, фонов и деталей по текстовым инструкциям",
       "body": "Сбер представил Kandinsky 6.0 Image Pro — обновление генеративной модели, в котором ставка сделана на инструменты редактирования: замена объектов, перерисовка фрагментов и работа с фоном по промпту. По описанию команды, версия Pro выделена в отдельный платный тариф и ориентирована на дизайнеров, работающих в связке генерация-правка вместо однопроходной генерации.",
@@ -51,14 +55,19 @@
           "Сбер",
           "Kandinsky"
         ],
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "Kandinsky": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Версия Pro · отдельный платный тариф"
     },
     {
       "id": "platforms-claude-creative-connectors-2026-04-29",
-      "section": "platforms",
+      "section": "content",
       "headline": "Anthropic подключила Claude к Photoshop, Blender и Ableton",
       "subheadline": "Модель получает прямой доступ к слоям, 3D-сценам и MIDI-проектам",
       "body": "Anthropic запустила Creative Connectors — официальные интеграции Claude с Adobe Photoshop, Blender и Ableton Live. Через подключение модель работает не с экспортированным изображением или аудио, а с внутренними структурами проектов: слоями, объектами сцены, MIDI-нотами. Это первый набор интеграций Claude в специализированных креативных приложениях помимо кодинг-IDE.",
@@ -79,12 +88,20 @@
           "Claude",
           "Adobe",
           "Blender",
-          "Ableton"
+          "Ableton Live"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "Adobe": "positive",
+          "Blender": "positive",
+          "Ableton Live": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Интеграции с Photoshop, Blender и Ableton Live"
     },
     {
       "id": "platforms-mistral-workflows-2026-04-29",
@@ -105,17 +122,23 @@
           "title": "Google Cloud Introduces Agents CLI to Streamline AI Agent Development Lifecycle",
           "url": "https://www.infoq.com/news/2026/04/agents-cli-google-cloud/",
           "entities": [
-            "Google Cloud"
+            "Google Cloud",
+            "Agents CLI"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Mistral AI"
+          "Mistral",
+          "Workflows"
         ],
+        "entity_sentiment": {
+          "Mistral": "positive",
+          "Workflows": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -145,8 +168,14 @@
           "OpenAI",
           "Microsoft"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "AWS": "positive",
+          "OpenAI": "positive",
+          "Microsoft": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -169,8 +198,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Lovable"
+          "Lovable",
+          "iOS",
+          "Android"
         ],
+        "entity_sentiment": {
+          "Lovable": "positive",
+          "iOS": "neutral",
+          "Android": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -196,8 +232,12 @@
       "tags": {
         "entities": [
           "Google Cloud",
-          "Gemini"
+          "Agents CLI"
         ],
+        "entity_sentiment": {
+          "Google Cloud": "positive",
+          "Agents CLI": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -222,9 +262,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "IBM"
+          "IBM",
+          "Bob"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "IBM": "positive",
+          "Bob": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -251,7 +296,7 @@
             "Amazon",
             "Nova"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -260,7 +305,10 @@
         "entities": [
           "Amazon"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Amazon": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -288,8 +336,13 @@
           "Anthropic",
           "Google"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Anthropic": "positive",
+          "Google": "positive"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -314,8 +367,11 @@
         "entities": [
           "Lightelligence"
         ],
+        "entity_sentiment": {
+          "Lightelligence": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -341,8 +397,12 @@
           "Великобритания",
           "Liz Kendall"
         ],
+        "entity_sentiment": {
+          "Великобритания": "neutral",
+          "Liz Kendall": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -368,6 +428,10 @@
           "Австралия",
           "Meta"
         ],
+        "entity_sentiment": {
+          "Австралия": "neutral",
+          "Meta": "negative"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -393,10 +457,14 @@
       "tags": {
         "entities": [
           "Kakao Mobility",
-          "Корея"
+          "Южная Корея"
         ],
+        "entity_sentiment": {
+          "Kakao Mobility": "positive",
+          "Южная Корея": "neutral"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -428,8 +496,13 @@
           "Пентагон",
           "Anthropic"
         ],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {
+          "Google": "positive",
+          "Пентагон": "neutral",
+          "Anthropic": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -457,12 +530,17 @@
       "duplicate_note": "Маск против Альтмана: конфликт OpenAI и xAI выходит в открытую фазу",
       "tags": {
         "entities": [
-          "Elon Musk",
           "OpenAI",
-          "Sam Altman"
+          "Sam Altman",
+          "Elon Musk"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Sam Altman": "negative",
+          "Elon Musk": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "legal"
       },
       "importance": 5
     },
@@ -486,11 +564,14 @@
       "tags": {
         "entities": [
           "SXSW",
-          "Instagram",
-          "Meta"
+          "Instagram"
         ],
+        "entity_sentiment": {
+          "SXSW": "negative",
+          "Instagram": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -515,8 +596,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -539,8 +623,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 5
     },
@@ -564,10 +649,16 @@
       "tags": {
         "entities": [
           "Gemma",
-          "DeepSeek"
+          "DeepSeek",
+          "Transformers"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Gemma": "positive",
+          "DeepSeek": "positive",
+          "Transformers": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -590,11 +681,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ChatGPT",
-          "OpenAI"
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     }

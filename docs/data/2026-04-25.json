@@ -43,8 +43,11 @@
         "entities": [
           "DeepSeek"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
@@ -67,10 +70,15 @@
       "duplicate_note": "Продолжение: OpenAI официально выпустила GPT-5.5 и опубликовала system card",
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "GPT-5.5"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "GPT-5.5": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -93,10 +101,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Jakub Pachocki"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Jakub Pachocki": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -119,10 +132,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic"
+          "Anthropic",
+          "Claude Code"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Code": "negative"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -147,6 +165,9 @@
         "entities": [
           "ComfyUI"
         ],
+        "entity_sentiment": {
+          "ComfyUI": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -171,9 +192,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nothing"
+          "Nothing",
+          "Nothing OS"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Nothing": "positive",
+          "Nothing OS": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -196,9 +222,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "event": "update"
+        "entities": [
+          "Правительство США"
+        ],
+        "entity_sentiment": {
+          "Правительство США": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -224,6 +255,10 @@
           "Google",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Google": "neutral",
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -248,7 +283,9 @@
           "title": "Marked-up Mac minis flood eBay amid shortages driven by AI",
           "url": "https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/",
           "entities": [
-            "Apple"
+            "Apple",
+            "Mac mini",
+            "eBay"
           ],
           "sentiment": "negative"
         }
@@ -256,9 +293,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Apple",
+          "Mac mini"
+        ],
+        "entity_sentiment": {
+          "Apple": "negative",
+          "Mac mini": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -283,10 +327,15 @@
         "entities": [
           "Meta",
           "AWS",
-          "Amazon"
+          "Graviton 5"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "AWS": "positive",
+          "Graviton 5": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -312,8 +361,12 @@
           "Cohere",
           "Aleph Alpha"
         ],
+        "entity_sentiment": {
+          "Cohere": "positive",
+          "Aleph Alpha": "negative"
+        },
         "sentiment": "neutral",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -339,6 +392,10 @@
           "Китай",
           "США"
         ],
+        "entity_sentiment": {
+          "Китай": "neutral",
+          "США": "negative"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -366,8 +423,12 @@
           "Thinking Machines Lab",
           "Meta"
         ],
+        "entity_sentiment": {
+          "Thinking Machines Lab": "positive",
+          "Meta": "negative"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "people"
       },
       "importance": 7
     },
@@ -391,10 +452,16 @@
       "tags": {
         "entities": [
           "OpenAI",
+          "ChatGPT",
           "Флорида"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative",
+          "Флорида": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -426,8 +493,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Мэн"
+          "Мэн",
+          "Janet Mills"
         ],
+        "entity_sentiment": {
+          "Мэн": "neutral",
+          "Janet Mills": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -455,7 +527,7 @@
             "xAI",
             "Минюст США"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -463,10 +535,18 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "xAI"
+          "xAI",
+          "Elon Musk",
+          "Sam Altman"
         ],
-        "sentiment": "rumor",
-        "event": "leak"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "xAI": "negative",
+          "Elon Musk": "negative",
+          "Sam Altman": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -491,8 +571,11 @@
         "entities": [
           "Китай"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Китай": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -515,10 +598,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Apple"
+          "Apple",
+          "Mac mini",
+          "eBay"
         ],
+        "entity_sentiment": {
+          "Apple": "negative",
+          "Mac mini": "negative",
+          "eBay": "positive"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     }

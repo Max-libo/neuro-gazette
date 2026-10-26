@@ -31,7 +31,9 @@
           "title": "Anthropic frames AI competition with China as a now-or-never moment for Washington",
           "url": "https://the-decoder.com/anthropic-frames-ai-competition-with-china-as-a-now-or-never-moment-for-washington/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Китай",
+            "США"
           ],
           "sentiment": "neutral"
         }
@@ -41,11 +43,16 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "OpenAI",
           "Claude",
-          "PwC",
+          "OpenAI",
           "Ramp"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "OpenAI": "negative",
+          "Ramp": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -73,6 +80,10 @@
           "Zyphra",
           "ZAYA1"
         ],
+        "entity_sentiment": {
+          "Zyphra": "positive",
+          "ZAYA1": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -100,8 +111,12 @@
           "Supertone",
           "Supertonic"
         ],
+        "entity_sentiment": {
+          "Supertone": "positive",
+          "Supertonic": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -131,11 +146,17 @@
         "entities": [
           "NIST",
           "Белый дом",
-          "TRAINS",
           "Google",
           "Microsoft",
           "xAI"
         ],
+        "entity_sentiment": {
+          "NIST": "neutral",
+          "Белый дом": "neutral",
+          "Google": "negative",
+          "Microsoft": "negative",
+          "xAI": "negative"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -166,8 +187,15 @@
           "ChatGPT",
           "Ramp"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "OpenAI": "negative",
+          "ChatGPT": "negative",
+          "Ramp": "neutral"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -195,8 +223,14 @@
           "Claude Code",
           "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "Microsoft": "neutral",
+          "Anthropic": "negative",
+          "Claude Code": "negative",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "other"
       },
       "importance": 7
     },
@@ -220,10 +254,13 @@
       "tags": {
         "entities": [
           "xAI",
-          "Grok",
           "Grok Build"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "xAI": "positive",
+          "Grok Build": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -259,6 +296,10 @@
           "OpenAI",
           "Codex"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Codex": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -287,6 +328,11 @@
           "Claude Code",
           "Routines"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive",
+          "Routines": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -314,14 +360,18 @@
           "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "ChatGPT": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "release"
       },
       "importance": 5
     },
     {
       "id": "platforms-flux-outpainting-2026-05-16",
-      "section": "platforms",
+      "section": "content",
       "headline": "Black Forest Labs добавила outpainting во Flux",
       "subheadline": "Расширение изображения в любую сторону доступно в продукте Flux.",
       "body": "Black Forest Labs объявила о новой функции outpainting в продукте Flux: пользователь может достраивать произвольное изображение в любом направлении средствами модели. Расширение работает поверх существующего пайплайна Flux и нацелено на дизайнерские и редакционные задачи — изменение пропорций, дорисовка фона, заполнение кадра под нужный формат.",
@@ -341,10 +391,15 @@
           "Black Forest Labs",
           "Flux"
         ],
+        "entity_sentiment": {
+          "Black Forest Labs": "positive",
+          "Flux": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Достраивание изображения в любом направлении"
     },
     {
       "id": "industry-runway-strategy-2026-05-16",
@@ -368,8 +423,12 @@
           "Runway",
           "Google"
         ],
+        "entity_sentiment": {
+          "Runway": "positive",
+          "Google": "neutral"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -392,10 +451,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "New York Times"
+          "The New York Times"
         ],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entity_sentiment": {
+          "The New York Times": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "other"
       },
       "importance": 7
     },
@@ -425,8 +487,11 @@
         "entities": [
           "arXiv"
         ],
+        "entity_sentiment": {
+          "arXiv": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "update"
       },
       "importance": 7
     },
@@ -460,8 +525,11 @@
         "entities": [
           "Mayo Clinic"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Mayo Clinic": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -487,6 +555,10 @@
           "YouTube",
           "Google"
         ],
+        "entity_sentiment": {
+          "YouTube": "positive",
+          "Google": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -518,8 +590,11 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "update"
       },
       "importance": 5
     },
@@ -542,12 +617,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Илон Маск",
-          "Сэм Альтман",
+          "Elon Musk",
+          "Sam Altman",
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "Elon Musk": "negative",
+          "Sam Altman": "negative",
+          "OpenAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -572,8 +652,11 @@
         "entities": [
           "Andon Labs"
         ],
+        "entity_sentiment": {
+          "Andon Labs": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -598,8 +681,11 @@
         "entities": [
           "Китай"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Китай": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -621,9 +707,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "США"
+        ],
+        "entity_sentiment": {
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 5
     },
@@ -650,8 +741,13 @@
           "NVIDIA",
           "AMD"
         ],
+        "entity_sentiment": {
+          "Cerebras": "negative",
+          "NVIDIA": "neutral",
+          "AMD": "neutral"
+        },
         "sentiment": "negative",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 5
     }

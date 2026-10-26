@@ -25,6 +25,11 @@
           "Hermes 4",
           "Hugging Face"
         ],
+        "entity_sentiment": {
+          "Nous Research": "positive",
+          "Hermes 4": "positive",
+          "Hugging Face": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -48,12 +53,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "World Action Models",
-          "robotics"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -89,7 +92,7 @@
             "Google",
             "Gemini"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -100,8 +103,13 @@
           "Gemini Omni",
           "Gemini 3.2 Flash"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini Omni": "positive",
+          "Gemini 3.2 Flash": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "leak"
       },
       "importance": 7
     },
@@ -123,12 +131,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "LLM benchmark",
-          "math"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -152,9 +158,12 @@
       "tags": {
         "entities": [
           "Vercel",
-          "Zero",
-          "AI agents"
+          "Zero"
         ],
+        "entity_sentiment": {
+          "Vercel": "positive",
+          "Zero": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -182,6 +191,10 @@
           "OpenAI",
           "Symphony"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Symphony": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -210,6 +223,11 @@
           "X-OmniClaw",
           "Android"
         ],
+        "entity_sentiment": {
+          "Oppo": "positive",
+          "X-OmniClaw": "positive",
+          "Android": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -238,8 +256,13 @@
           "Siri",
           "Apple Intelligence"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Apple": "positive",
+          "Siri": "positive",
+          "Apple Intelligence": "positive"
+        },
+        "sentiment": "positive",
+        "event": "leak"
       },
       "importance": 5
     },
@@ -265,7 +288,11 @@
           "Bumble",
           "Bee"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Bumble": "positive",
+          "Bee": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -293,10 +320,17 @@
           "Arthur Mensch",
           "Anthropic",
           "Claude Mythos",
-          "France"
+          "Франция"
         ],
+        "entity_sentiment": {
+          "Mistral": "neutral",
+          "Arthur Mensch": "neutral",
+          "Anthropic": "negative",
+          "Claude Mythos": "negative",
+          "Франция": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -319,12 +353,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "a16z",
-          "SaaS",
-          "AI agents"
+          "Andreessen Horowitz"
         ],
+        "entity_sentiment": {
+          "Andreessen Horowitz": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -347,12 +382,17 @@
       "duplicate_note": "Третья неделя процесса Маск vs Альтман: присяжные готовятся выбирать сторону",
       "tags": {
         "entities": [
-          "Elon Musk",
           "OpenAI",
-          "Sam Altman"
+          "Sam Altman",
+          "Elon Musk"
         ],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Sam Altman": "negative",
+          "Elon Musk": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "legal"
       },
       "importance": 5
     },
@@ -379,8 +419,13 @@
           "Claude Mythos",
           "Project Glasswing"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Mythos": "negative",
+          "Project Glasswing": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     }

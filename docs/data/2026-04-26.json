@@ -21,11 +21,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Federal Reserve",
-          "ChatGPT"
+          "ФРС",
+          "ChatGPT",
+          "США"
         ],
+        "entity_sentiment": {
+          "ФРС": "neutral",
+          "ChatGPT": "neutral",
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "research"
       },
       "importance": 9
     },
@@ -48,8 +54,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "UAE"
+          "ОАЭ"
         ],
+        "entity_sentiment": {
+          "ОАЭ": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -74,11 +83,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Metropolitan Police",
+          "Столичная полиция Лондона",
           "Palantir"
         ],
+        "entity_sentiment": {
+          "Столичная полиция Лондона": "negative",
+          "Palantir": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -104,8 +117,12 @@
           "OpenAI",
           "Sam Altman"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Sam Altman": "negative"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -130,8 +147,11 @@
         "entities": [
           "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -156,8 +176,11 @@
         "entities": [
           "iQiyi"
         ],
+        "entity_sentiment": {
+          "iQiyi": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     }

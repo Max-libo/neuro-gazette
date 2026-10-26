@@ -47,7 +47,8 @@
           "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai",
           "entities": [
             "Google Cloud",
-            "Anthropic"
+            "Anthropic",
+            "Claude Mythos"
           ],
           "sentiment": "positive"
         },
@@ -65,11 +66,14 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Apple",
-          "Google",
-          "Microsoft",
-          "Amazon"
+          "Claude Mythos",
+          "Project Glasswing"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "Project Glasswing": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -99,8 +103,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Zhipu AI"
+          "Zhipu AI",
+          "GLM-5.1"
         ],
+        "entity_sentiment": {
+          "Zhipu AI": "positive",
+          "GLM-5.1": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -125,8 +134,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "Lyria"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Lyria": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -134,7 +148,7 @@
     },
     {
       "id": "models-wan27-2026-04-08",
-      "section": "models",
+      "section": "content",
       "headline": "Alibaba представила Wan2.7-Image — генерацию изображений с точным контролем цвета и текста",
       "subheadline": "Новый компонент платформы Wan улучшает консистентность персонажей и рендеринг текста на картинках",
       "body": "Wan2.7-Image входит в флагманскую мультимодальную платформу Alibaba Wan. Модель обеспечивает точное управление цветовой палитрой, корректный рендеринг текста на изображениях и стабильную консистентность персонажей между генерациями.",
@@ -151,10 +165,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Alibaba"
+          "Alibaba",
+          "Wan2.7-Image"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Wan2.7-Image": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -177,8 +196,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Microsoft"
+          "Microsoft",
+          "Harrier"
         ],
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Harrier": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -204,11 +228,16 @@
       "tags": {
         "entities": [
           "JetBrains",
-          "GitHub",
-          "Anthropic"
+          "Claude Code",
+          "GitHub Copilot"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "JetBrains": "neutral",
+          "Claude Code": "positive",
+          "GitHub Copilot": "negative"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -231,8 +260,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "Scion"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Scion": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -257,8 +291,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "iOS"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "iOS": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -283,10 +322,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic"
+          "Anthropic",
+          "Claude Code"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Code": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -309,8 +353,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Codex",
+          "GPT-5.2",
+          "GPT-5.1"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Codex": "neutral",
+          "GPT-5.2": "negative",
+          "GPT-5.1": "negative"
+        },
         "sentiment": "neutral",
         "event": "update"
       },
@@ -357,10 +410,17 @@
         "entities": [
           "Anthropic",
           "Google",
-          "Broadcom"
+          "Broadcom",
+          "TPU"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Google": "positive",
+          "Broadcom": "positive",
+          "TPU": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -390,10 +450,17 @@
         "entities": [
           "Intel",
           "xAI",
-          "Elon Musk"
+          "Elon Musk",
+          "Terafab"
         ],
+        "entity_sentiment": {
+          "Intel": "positive",
+          "xAI": "positive",
+          "Elon Musk": "positive",
+          "Terafab": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -421,7 +488,7 @@
           "title": "Выпускники OpenAI запустили AI-фонд Zero Shot на $100 млн",
           "url": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/",
           "entities": [
-            "OpenAI"
+            "Zero Shot"
           ],
           "sentiment": "positive"
         },
@@ -438,9 +505,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Eclipse",
-          "Cerebras"
+          "Eclipse"
         ],
+        "entity_sentiment": {
+          "Eclipse": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -475,9 +544,16 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US Government"
+          "Правительство США",
+          "Donald Trump",
+          "Миссури"
         ],
-        "sentiment": "negative",
+        "entity_sentiment": {
+          "Правительство США": "neutral",
+          "Donald Trump": "neutral",
+          "Миссури": "neutral"
+        },
+        "sentiment": "neutral",
         "event": "regulation"
       },
       "importance": 7
@@ -504,8 +580,12 @@
           "Firmus",
           "NVIDIA"
         ],
+        "entity_sentiment": {
+          "Firmus": "positive",
+          "NVIDIA": "neutral"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "finance"
       },
       "importance": 5
     },
@@ -528,18 +608,23 @@
           "title": "Лоббисты дата-центров пытаются откатить закон о праве на ремонт",
           "url": "https://www.404media.co/data-center-tech-lobbyists-fearmonger-in-attempt-to-retroactively-roll-back-right-to-repair-law/",
           "entities": [
-            "US Government"
+            "Правительство США"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Maine"
+          "Мэн",
+          "LD 307"
         ],
-        "sentiment": "negative",
+        "entity_sentiment": {
+          "Мэн": "neutral",
+          "LD 307": "neutral"
+        },
+        "sentiment": "neutral",
         "event": "regulation"
       },
       "importance": 5
@@ -563,11 +648,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Project Prometheus",
           "Jeff Bezos",
           "xAI"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Project Prometheus": "positive",
+          "Jeff Bezos": "positive",
+          "xAI": "negative"
+        },
+        "sentiment": "positive",
+        "event": "people"
       },
       "importance": 5
     },
@@ -600,10 +691,10 @@
           "title": "Китай активно переманивает чиповых специалистов Тайваня",
           "url": "https://the-decoder.com/china-actively-targeting-taiwans-chip-talent-and-technology-security-report-says/",
           "entities": [
-            "China",
-            "Taiwan"
+            "Китай",
+            "Тайвань"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
@@ -615,8 +706,14 @@
           "Google",
           "Frontier Model Forum"
         ],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Anthropic": "neutral",
+          "Google": "neutral",
+          "Frontier Model Forum": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -644,11 +741,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "USA",
-          "Iran"
+          "США",
+          "Иран",
+          "Белый дом"
         ],
+        "entity_sentiment": {
+          "США": "negative",
+          "Иран": "negative",
+          "Белый дом": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -671,10 +774,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "India"
+          "Индия"
         ],
+        "entity_sentiment": {
+          "Индия": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -700,6 +806,10 @@
           "Nota",
           "The Boston Globe"
         ],
+        "entity_sentiment": {
+          "Nota": "negative",
+          "The Boston Globe": "neutral"
+        },
         "sentiment": "negative",
         "event": "shutdown"
       },
@@ -726,6 +836,9 @@
         "entities": [
           "Colleague Skill"
         ],
+        "entity_sentiment": {
+          "Colleague Skill": "negative"
+        },
         "sentiment": "negative",
         "event": "release"
       },
@@ -762,8 +875,12 @@
           "Meta",
           "Scale AI"
         ],
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Scale AI": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },

@@ -30,8 +30,13 @@
           "Google Cloud",
           "GPT-6"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Google Cloud": "positive",
+          "GPT-6": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 9
     },
@@ -77,6 +82,10 @@
           "NVIDIA",
           "Cosmos"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Cosmos": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -109,6 +118,10 @@
           "Recursive",
           "Flint"
         ],
+        "entity_sentiment": {
+          "Recursive": "positive",
+          "Flint": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -136,8 +149,12 @@
           "IBM",
           "Granite"
         ],
+        "entity_sentiment": {
+          "IBM": "positive",
+          "Granite": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -163,8 +180,12 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -190,6 +211,10 @@
           "Deel",
           "Pangaea"
         ],
+        "entity_sentiment": {
+          "Deel": "positive",
+          "Pangaea": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -224,7 +249,10 @@
           "title": "Anthropic takes on ChatGPT Dots and Meta Muse with Claude Duet",
           "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Claude Duet",
+            "ChatGPT",
+            "Meta"
           ],
           "sentiment": "positive"
         }
@@ -236,6 +264,10 @@
           "Anthropic",
           "Claude Duet"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Duet": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -265,9 +297,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic"
+          "Anthropic",
+          "Claude"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 7
@@ -291,8 +328,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Zed"
+          "Zed",
+          "Claude",
+          "Bedrock"
         ],
+        "entity_sentiment": {
+          "Zed": "positive",
+          "Claude": "positive",
+          "Bedrock": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -318,8 +362,14 @@
       "tags": {
         "entities": [
           "ServiceNow",
-          "NVIDIA"
+          "NVIDIA",
+          "Arc"
         ],
+        "entity_sentiment": {
+          "ServiceNow": "positive",
+          "NVIDIA": "positive",
+          "Arc": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -344,8 +394,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Vercel"
+          "Vercel",
+          "durable-harness"
         ],
+        "entity_sentiment": {
+          "Vercel": "positive",
+          "durable-harness": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -373,6 +428,10 @@
           "Google",
           "SynthID"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "SynthID": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -408,10 +467,16 @@
       "tags": {
         "entities": [
           "Meta",
-          "Muse"
+          "Muse",
+          "Mark Zuckerberg"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Muse": "positive",
+          "Mark Zuckerberg": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 7
     },
@@ -437,8 +502,12 @@
           "Google DeepMind",
           "Demis Hassabis"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Demis Hassabis": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -472,10 +541,18 @@
       "tags": {
         "entities": [
           "TypeSafe AI",
-          "ASI",
           "Otter.ai",
-          "Pigment"
+          "Pigment",
+          "Eka Robotics",
+          "AuxoAI"
         ],
+        "entity_sentiment": {
+          "TypeSafe AI": "positive",
+          "Otter.ai": "positive",
+          "Pigment": "positive",
+          "Eka Robotics": "positive",
+          "AuxoAI": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -505,10 +582,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Donald Trump"
+          "Donald Trump",
+          "США"
         ],
+        "entity_sentiment": {
+          "Donald Trump": "neutral",
+          "США": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -536,8 +618,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Illinois"
+          "Иллинойс",
+          "SB 315",
+          "OpenAI",
+          "Anthropic"
         ],
+        "entity_sentiment": {
+          "Иллинойс": "neutral",
+          "SB 315": "neutral",
+          "OpenAI": "negative",
+          "Anthropic": "negative"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -564,10 +655,18 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "Pentagon"
+          "Sophia Liguori",
+          "Пентагон",
+          "Project Nimbus"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "negative",
+          "Sophia Liguori": "neutral",
+          "Пентагон": "neutral",
+          "Project Nimbus": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 5
     },
@@ -590,11 +689,21 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "China",
-          "DeepSeek"
+          "Китай",
+          "DeepSeek",
+          "ChatGPT",
+          "Claude",
+          "Gemini"
         ],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entity_sentiment": {
+          "Китай": "neutral",
+          "DeepSeek": "negative",
+          "ChatGPT": "negative",
+          "Claude": "negative",
+          "Gemini": "negative"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -622,10 +731,15 @@
       "duplicate_note": "ИИ-агенты OpenAI дважды отключили системы мониторинга и скрыли это",
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "GPT-6"
         ],
-        "sentiment": "rumor",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "GPT-6": "negative"
+        },
+        "sentiment": "negative",
+        "event": "incident"
       },
       "importance": 5
     },
@@ -650,8 +764,11 @@
         "entities": [
           "LiteLLM"
         ],
+        "entity_sentiment": {
+          "LiteLLM": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -679,9 +796,9 @@
           "title": "New prize launches for books co-written with AI",
           "url": "https://www.theguardian.com/books/2026/oct/21/new-prize-launches-books-co-written-with-ai-france",
           "entities": [
-            "France"
+            "Франция"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -691,8 +808,12 @@
           "Boréal",
           "Thélyson Orélien"
         ],
+        "entity_sentiment": {
+          "Boréal": "neutral",
+          "Thélyson Orélien": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -718,8 +839,12 @@
           "Grimes",
           "A$AP Rocky"
         ],
+        "entity_sentiment": {
+          "Grimes": "neutral",
+          "A$AP Rocky": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -741,11 +866,10 @@
       "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "open source"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     }

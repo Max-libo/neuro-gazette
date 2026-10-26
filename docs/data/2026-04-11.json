@@ -21,8 +21,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Google",
+          "Gemma 4"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemma 4": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -30,7 +35,7 @@
     },
     {
       "id": "models-patina-2026-04-11",
-      "section": "models",
+      "section": "content",
       "headline": "fal.ai представила PATINA — модель генерации изображений с сохранением стиля",
       "subheadline": "Новый подход к стилистически согласованной генерации изображений через API",
       "body": "Платформа fal.ai анонсировала PATINA — модель, способную генерировать изображения с устойчивым сохранением заданного визуального стиля. Модель доступна через API fal.ai.",
@@ -47,16 +52,22 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "fal.ai"
+          "fal",
+          "PATINA"
         ],
+        "entity_sentiment": {
+          "fal": "positive",
+          "PATINA": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Доступна через API fal"
     },
     {
       "id": "models-waypoint-2026-04-11",
-      "section": "models",
+      "section": "content",
       "headline": "Overworld выпустила Waypoint-1.5 — генерацию 3D-миров на обычном ПК",
       "subheadline": "AI-генерация интерактивных трёхмерных сцен теперь доступна на Mac и Windows без серверного GPU",
       "body": "Стартап Overworld представил Waypoint-1.5 — модель генерации 3D-окружений, работающую на потребительском железе. Предыдущая версия требовала облачных GPU; новая запускается локально на Mac и Windows.",
@@ -73,12 +84,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Overworld"
+          "Overworld",
+          "Waypoint-1.5"
         ],
+        "entity_sentiment": {
+          "Overworld": "positive",
+          "Waypoint-1.5": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Локально на Mac и Windows · без облачных GPU"
     },
     {
       "id": "models-happyhorse-cont-2026-04-11",
@@ -110,10 +127,16 @@
       "tags": {
         "entities": [
           "Alibaba",
-          "HappyHorse"
+          "HappyHorse",
+          "Alibaba Token Hub"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "HappyHorse": "positive",
+          "Alibaba Token Hub": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -142,9 +165,17 @@
       "tags": {
         "entities": [
           "Anthropic",
+          "Claude Mythos",
+          "Project Glasswing",
           "OpenAI"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "Project Glasswing": "positive",
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -169,8 +200,14 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude Code"
+          "Claude Code",
+          "Ultraplan"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive",
+          "Ultraplan": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -197,8 +234,11 @@
         "entities": [
           "Visa"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Visa": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -221,10 +261,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "LangChain"
+          "LangChain",
+          "Deep Agents"
         ],
+        "entity_sentiment": {
+          "LangChain": "positive",
+          "Deep Agents": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -248,8 +293,14 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "OpenClaw"
+          "OpenClaw",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "OpenClaw": "negative",
+          "Claude": "neutral"
+        },
         "sentiment": "negative",
         "event": "update"
       },
@@ -276,8 +327,11 @@
         "entities": [
           "Fawn Friends"
         ],
+        "entity_sentiment": {
+          "Fawn Friends": "negative"
+        },
         "sentiment": "negative",
-        "event": "release"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -301,10 +355,16 @@
       "tags": {
         "entities": [
           "CoreWeave",
-          "Anthropic"
+          "Anthropic",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "CoreWeave": "positive",
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -327,10 +387,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "CIA"
+          "ЦРУ"
         ],
+        "entity_sentiment": {
+          "ЦРУ": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -356,8 +419,12 @@
           "OpenAI",
           "Anthropic"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Anthropic": "negative"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -381,10 +448,16 @@
       "tags": {
         "entities": [
           "SK Telecom",
-          "Arm"
+          "Arm",
+          "Южная Корея"
         ],
+        "entity_sentiment": {
+          "SK Telecom": "positive",
+          "Arm": "positive",
+          "Южная Корея": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -410,8 +483,12 @@
           "Google DeepMind",
           "Demis Hassabis"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "neutral",
+          "Demis Hassabis": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -434,10 +511,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -465,11 +547,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Sam Altman",
-          "OpenAI"
+          "Sam Altman"
         ],
+        "entity_sentiment": {
+          "Sam Altman": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -492,8 +576,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -516,8 +601,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -542,8 +628,11 @@
         "entities": [
           "UC Berkeley"
         ],
+        "entity_sentiment": {
+          "UC Berkeley": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -568,8 +657,11 @@
         "entities": [
           "Spotify"
         ],
+        "entity_sentiment": {
+          "Spotify": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },

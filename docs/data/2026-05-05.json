@@ -31,11 +31,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "White House",
+          "Белый дом",
           "OpenAI",
           "Google",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Белый дом": "neutral",
+          "OpenAI": "neutral",
+          "Google": "neutral",
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -61,8 +67,16 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini API",
+          "Gemini",
+          "Veo 3.1"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini API": "positive",
+          "Gemini": "positive",
+          "Veo 3.1": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -88,8 +102,14 @@
       "tags": {
         "entities": [
           "HUMAIN",
+          "HUMAIN ONE",
           "AWS"
         ],
+        "entity_sentiment": {
+          "HUMAIN": "positive",
+          "HUMAIN ONE": "positive",
+          "AWS": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -119,9 +139,10 @@
           "title": "Google слил инструмент Gemini Omni для видеогенерации",
           "url": "https://www.roborhythms.com/google-gemini-omni-leak-may-2026/",
           "entities": [
-            "Google"
+            "Google",
+            "Gemini Omni"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": true,
@@ -129,10 +150,15 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini",
-          "Veo"
+          "Gemini Omni",
+          "Gemini"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini Omni": "positive",
+          "Gemini": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 7
@@ -156,8 +182,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic"
+          "Anthropic",
+          "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude Mythos": "neutral"
+        },
         "sentiment": "neutral",
         "event": "leak"
       },
@@ -183,10 +214,18 @@
       "tags": {
         "entities": [
           "OpenAI",
+          "The Deployment Company",
           "TPG",
           "Brookfield",
           "Bain Capital"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "The Deployment Company": "positive",
+          "TPG": "neutral",
+          "Brookfield": "neutral",
+          "Bain Capital": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -212,10 +251,14 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini API"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini API": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 7
     },
@@ -251,6 +294,10 @@
           "AWS",
           "Amazon Quick"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Amazon Quick": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -277,8 +324,11 @@
         "entities": [
           "Zyphra"
         ],
+        "entity_sentiment": {
+          "Zyphra": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -303,6 +353,9 @@
         "entities": [
           "DoorDash"
         ],
+        "entity_sentiment": {
+          "DoorDash": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -334,10 +387,19 @@
         "entities": [
           "AWS",
           "OpenAI",
-          "Bedrock"
+          "Bedrock",
+          "Codex",
+          "GPT-5.5"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "OpenAI": "positive",
+          "Bedrock": "positive",
+          "Codex": "positive",
+          "GPT-5.5": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -360,12 +422,20 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Сенат США",
           "OpenAI",
           "Google",
           "Microsoft",
-          "US Senate"
+          "Literacy in Future Technologies Artificial Intelligence Act"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Сенат США": "neutral",
+          "OpenAI": "neutral",
+          "Google": "neutral",
+          "Microsoft": "neutral",
+          "Literacy in Future Technologies Artificial Intelligence Act": "neutral"
+        },
+        "sentiment": "positive",
         "event": "regulation"
       },
       "importance": 7
@@ -389,10 +459,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Connecticut",
-          "Maryland",
-          "Colorado"
+          "Коннектикут",
+          "Мэриленд",
+          "Колорадо",
+          "Colorado AI Act"
         ],
+        "entity_sentiment": {
+          "Коннектикут": "neutral",
+          "Мэриленд": "neutral",
+          "Колорадо": "neutral",
+          "Colorado AI Act": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -417,11 +494,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nvidia",
+          "NVIDIA",
           "Jensen Huang"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Jensen Huang": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -444,10 +525,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Kenya"
+          "Кения"
         ],
+        "entity_sentiment": {
+          "Кения": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -473,8 +557,12 @@
           "Google",
           "Ashley MacIsaac"
         ],
+        "entity_sentiment": {
+          "Google": "negative",
+          "Ashley MacIsaac": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -500,8 +588,12 @@
           "Nigel Farage",
           "Reform UK"
         ],
+        "entity_sentiment": {
+          "Nigel Farage": "positive",
+          "Reform UK": "positive"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -527,8 +619,12 @@
           "Familiar Machines",
           "Colin Angle"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Familiar Machines": "positive",
+          "Colin Angle": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -551,12 +647,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
           "Sam Altman",
-          "GPT-5.5"
+          "GPT-5.5",
+          "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Sam Altman": "positive",
+          "GPT-5.5": "positive",
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -582,7 +683,11 @@
           "Vine",
           "Divine"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Vine": "positive",
+          "Divine": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5

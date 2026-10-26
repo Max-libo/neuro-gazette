@@ -22,16 +22,20 @@
       "tags": {
         "entities": [
           "Moonshot AI",
-          "Kimi"
+          "Kimi K3.1 Pro"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Moonshot AI": "positive",
+          "Kimi K3.1 Pro": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 9
     },
     {
       "id": "models-bytedance-seedance-25-2026-10-23",
-      "section": "models",
+      "section": "content",
       "headline": "ByteDance выпустила Seedance 2.5 4K для кино- и телепроизводства",
       "subheadline": "Модель генерирует видео до 30 секунд в разрешении 4K со встроенным аудио",
       "body": "Через облачное подразделение Volcano Engine ByteDance открыла доступ к Seedance 2.5 4K. Пока модель доступна только корпоративным пилотам в кино- и телеиндустрии; технических деталей архитектуры и данных обучения компания не раскрыла.",
@@ -52,10 +56,16 @@
           "Volcano Engine",
           "Seedance"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Volcano Engine": "positive",
+          "Seedance": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Только корпоративные пилоты · до 30 секунд · 4K · встроенное аудио"
     },
     {
       "id": "models-hf-carbonx-2026-10-23",
@@ -77,9 +87,15 @@
       "tags": {
         "entities": [
           "Hugging Face",
-          "Carbon-X"
+          "Carbon-X",
+          "Carbon-3B"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Hugging Face": "positive",
+          "Carbon-X": "positive",
+          "Carbon-3B": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -105,8 +121,11 @@
         "entities": [
           "SWE-bench"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "SWE-bench": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -130,9 +149,17 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Decisions API"
+          "Decisions API",
+          "TypeSafe",
+          "Jev"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Decisions API": "positive",
+          "TypeSafe": "neutral",
+          "Jev": "neutral"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -156,9 +183,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Sequoia Capital",
-          "Whop"
+          "Whop",
+          "Sequoia Capital"
         ],
+        "entity_sentiment": {
+          "Whop": "positive",
+          "Sequoia Capital": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -183,9 +214,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ASI",
-          "Microsoft"
+          "ASI"
         ],
+        "entity_sentiment": {
+          "ASI": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -210,8 +243,11 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US Congress"
+          "Конгресс США"
         ],
+        "entity_sentiment": {
+          "Конгресс США": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -238,8 +274,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "people"
       },
       "importance": 7
     },
@@ -263,10 +302,14 @@
       "tags": {
         "entities": [
           "Leire Díez",
-          "Partido Popular"
+          "PP"
         ],
+        "entity_sentiment": {
+          "Leire Díez": "neutral",
+          "PP": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -290,10 +333,20 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Anthropic"
+          "Anthropic",
+          "ChatGPT",
+          "Claude",
+          "Россия"
         ],
-        "sentiment": "rumor",
-        "event": "regulation"
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Anthropic": "neutral",
+          "ChatGPT": "negative",
+          "Claude": "negative",
+          "Россия": "negative"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 5
     }

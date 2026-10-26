@@ -22,9 +22,18 @@
       "tags": {
         "entities": [
           "Россия",
+          "Vladimir Putin",
           "Palantir",
-          "Maven"
+          "Maven",
+          "Donald Trump"
         ],
+        "entity_sentiment": {
+          "Россия": "neutral",
+          "Vladimir Putin": "neutral",
+          "Palantir": "neutral",
+          "Maven": "neutral",
+          "Donald Trump": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -55,8 +64,14 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemini"
+          "Gemini",
+          "Google Canvas"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "Google Canvas": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -89,6 +104,10 @@
           "США",
           "Белый дом"
         ],
+        "entity_sentiment": {
+          "США": "neutral",
+          "Белый дом": "negative"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -118,11 +137,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Линда Макмэхон",
-          "Google Gemini"
+          "Linda McMahon",
+          "Gemini"
         ],
+        "entity_sentiment": {
+          "Linda McMahon": "negative",
+          "Gemini": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -147,10 +170,17 @@
         "entities": [
           "Китай",
           "CCTV",
-          "Xinhua"
+          "Xinhua",
+          "США"
         ],
+        "entity_sentiment": {
+          "Китай": "neutral",
+          "CCTV": "neutral",
+          "Xinhua": "neutral",
+          "США": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -176,8 +206,12 @@
           "xAI",
           "Grok"
         ],
+        "entity_sentiment": {
+          "xAI": "negative",
+          "Grok": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -200,8 +234,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "GPT-5.2",
+          "GPT-5.4",
+          "GPT-5.3-Codex"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "GPT-5.2": "negative",
+          "GPT-5.4": "neutral",
+          "GPT-5.3-Codex": "neutral"
+        },
         "sentiment": "neutral",
         "event": "update"
       },
@@ -226,11 +269,17 @@
       "duplicate_note": "В дом Сэма Альтмана бросили коктейль Молотова",
       "tags": {
         "entities": [
-          "Сэм Альтман",
-          "OpenAI"
+          "Sam Altman",
+          "OpenAI",
+          "The New Yorker"
         ],
+        "entity_sentiment": {
+          "Sam Altman": "negative",
+          "OpenAI": "neutral",
+          "The New Yorker": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -262,8 +311,13 @@
           "HappyHorse",
           "Kuaishou"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "HappyHorse": "positive",
+          "Kuaishou": "negative"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "people"
       },
       "importance": 5
     },
@@ -289,8 +343,12 @@
           "Anthropic",
           "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude Mythos": "positive"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 5
     },
@@ -317,8 +375,13 @@
           "ChatGPT",
           "Флорида"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative",
+          "Флорида": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },

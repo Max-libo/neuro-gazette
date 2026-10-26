@@ -22,10 +22,14 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "AlphaProof"
+          "AlphaProof Nexus"
         ],
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "AlphaProof Nexus": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 9
     },
@@ -49,8 +53,12 @@
       "tags": {
         "entities": [
           "Google",
-          "Gemma"
+          "Gemma 4"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemma 4": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -78,6 +86,10 @@
           "Together AI",
           "OSCAR"
         ],
+        "entity_sentiment": {
+          "Together AI": "positive",
+          "OSCAR": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -102,8 +114,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {},
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 5
     },
@@ -134,6 +147,10 @@
           "xAI",
           "Grok Build"
         ],
+        "entity_sentiment": {
+          "xAI": "positive",
+          "Grok Build": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -158,8 +175,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "WorkOS"
+          "WorkOS",
+          "auth.md"
         ],
+        "entity_sentiment": {
+          "WorkOS": "positive",
+          "auth.md": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -187,8 +209,12 @@
           "Microsoft",
           "MDASH"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "MDASH": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 5
     },
@@ -214,7 +240,11 @@
           "Белый дом",
           "США"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Белый дом": "neutral",
+          "США": "positive"
+        },
+        "sentiment": "positive",
         "event": "investment"
       },
       "importance": 7
@@ -240,8 +270,11 @@
         "entities": [
           "ClickUp"
         ],
+        "entity_sentiment": {
+          "ClickUp": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "people"
       },
       "importance": 7
     },
@@ -267,8 +300,12 @@
           "Meta",
           "Луизиана"
         ],
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Луизиана": "neutral"
+        },
         "sentiment": "negative",
-        "event": "investment"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -290,9 +327,16 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entities": [
+          "404 Media",
+          "США"
+        ],
+        "entity_sentiment": {
+          "404 Media": "neutral",
+          "США": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -317,8 +361,11 @@
         "entities": [
           "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "people"
       },
       "importance": 5
     },
@@ -343,8 +390,11 @@
         "entities": [
           "George Hotz"
         ],
+        "entity_sentiment": {
+          "George Hotz": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -369,8 +419,11 @@
         "entities": [
           "GigaAI"
         ],
-        "sentiment": "rumor",
-        "event": "release"
+        "entity_sentiment": {
+          "GigaAI": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -399,10 +452,16 @@
       "tags": {
         "entities": [
           "Ватикан",
-          "Anthropic"
+          "Anthropic",
+          "Christopher Olah"
         ],
+        "entity_sentiment": {
+          "Ватикан": "neutral",
+          "Anthropic": "neutral",
+          "Christopher Olah": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 5
     }

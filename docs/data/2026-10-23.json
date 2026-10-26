@@ -32,10 +32,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "GPT-6 Luna"
+          "GPT-6",
+          "Decisions API"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-6": "positive",
+          "Decisions API": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
@@ -60,14 +66,17 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
     {
       "id": "models-canva-craft-2026-10-23",
-      "section": "models",
+      "section": "content",
       "headline": "Canva представила собственную модель генерации изображений Canva Craft",
       "subheadline": "Первая проприетарная модель компании поддерживает разрешение до 2K и 30 форматов соотношения сторон.",
       "body": "Canva выпустила Canva Craft — первую собственную модель генерации изображений. Модель поддерживает выход в разрешении до 2K и работу с 30 разными соотношениями сторон, что покрывает основные форматы дизайн-платформы: от постов в соцсетях до постеров и презентаций. Компания также анонсировала более быстрые варианты — Craftfast и Craft-ultrafast, которые появятся позже. До этого Canva использовала модели сторонних провайдеров для функций генерации изображений в своём редакторе.",
@@ -84,12 +93,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Canva"
+          "Canva",
+          "Canva Craft"
         ],
+        "entity_sentiment": {
+          "Canva": "positive",
+          "Canva Craft": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "До 2K · 30 соотношений сторон"
     },
     {
       "id": "platforms-claude-duet-update-2026-10-23",
@@ -118,6 +133,10 @@
           "Anthropic",
           "Claude Duet"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Duet": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -145,8 +164,12 @@
           "AWS",
           "SageMaker"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "SageMaker": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -172,8 +195,12 @@
           "MIT",
           "Claude Opus 4.7"
         ],
+        "entity_sentiment": {
+          "MIT": "neutral",
+          "Claude Opus 4.7": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -208,8 +235,14 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Coatue"
+          "Coatue",
+          "ОАЭ"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Coatue": "neutral",
+          "ОАЭ": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -238,6 +271,11 @@
           "CATL",
           "Tencent"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "positive",
+          "CATL": "neutral",
+          "Tencent": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -261,11 +299,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "Bloomberg"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "investment"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -296,7 +333,7 @@
           "title": "'The clock on AI regulation is ticking', warns UN rights chief",
           "url": "https://news.un.org/en/story/2026/10/1168529",
           "entities": [
-            "UN"
+            "ООН"
           ],
           "sentiment": "neutral"
         }
@@ -306,9 +343,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "California",
-          "SB 53"
+          "Калифорния",
+          "SB 53",
+          "Gavin Newsom"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Калифорния": "neutral",
+          "SB 53": "neutral",
+          "Gavin Newsom": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -336,8 +380,12 @@
           "302.ai",
           "Azure"
         ],
+        "entity_sentiment": {
+          "302.ai": "negative",
+          "Azure": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -360,7 +408,7 @@
           "title": "ИИ втянули в политическую борьбу в Южной Корее",
           "url": "https://rg.ru/2026/10/22/v-iuzhnoj-koree-predlozhili-sdelat-ii-prezidentom-strany.html",
           "entities": [
-            "South Korea",
+            "Южная Корея",
             "Gemini"
           ],
           "sentiment": "neutral"
@@ -372,10 +420,15 @@
         "entities": [
           "PP",
           "PSOE",
-          "Spain"
+          "Испания"
         ],
+        "entity_sentiment": {
+          "PP": "negative",
+          "PSOE": "negative",
+          "Испания": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -401,6 +454,10 @@
           "ФСБ",
           "PHP"
         ],
+        "entity_sentiment": {
+          "ФСБ": "neutral",
+          "PHP": "negative"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -427,8 +484,11 @@
         "entities": [
           "Россия"
         ],
+        "entity_sentiment": {
+          "Россия": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     }

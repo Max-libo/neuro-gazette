@@ -56,8 +56,14 @@
           "TPU",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "TPU": "positive",
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
@@ -83,8 +89,12 @@
           "Xiaomi",
           "MiMo"
         ],
+        "entity_sentiment": {
+          "Xiaomi": "positive",
+          "MiMo": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -110,6 +120,10 @@
           "Alibaba",
           "Qwen"
         ],
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -117,7 +131,7 @@
     },
     {
       "id": "models-chatgpt-images-rollout-2026-04-23",
-      "section": "models",
+      "section": "content",
       "headline": "Продолжение: ChatGPT Images 2.0 раскатан на всех пользователей, API откроется в начале мая",
       "subheadline": null,
       "body": "OpenAI официально развернула ChatGPT Images 2.0 для всех пользователей ChatGPT и Codex. API для разработчиков запланирован на начало мая.",
@@ -141,12 +155,20 @@
         "entities": [
           "OpenAI",
           "ChatGPT",
-          "GPT-Image-2"
+          "GPT-Image-2",
+          "Codex"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "GPT-Image-2": "positive",
+          "Codex": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Для всех пользователей ChatGPT и Codex · API запланирован на начало мая"
     },
     {
       "id": "models-google-research-agents-2026-04-23",
@@ -175,6 +197,10 @@
           "Google",
           "Gemini"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -211,10 +237,17 @@
         "entities": [
           "Google",
           "Gemini Enterprise",
-          "Anthropic"
+          "Anthropic",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini Enterprise": "positive",
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -260,6 +293,10 @@
           "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -287,8 +324,12 @@
           "NVIDIA",
           "Google Cloud"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Google Cloud": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -332,7 +373,14 @@
           "Google Maps",
           "Google Meet"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Chrome": "positive",
+          "Gmail": "positive",
+          "Google Maps": "positive",
+          "Google Meet": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 7
@@ -362,9 +410,14 @@
       "tags": {
         "entities": [
           "AWS",
-          "Amazon Bedrock",
+          "Bedrock",
           "SageMaker"
         ],
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Bedrock": "positive",
+          "SageMaker": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -390,8 +443,12 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -419,8 +476,12 @@
           "Cloudflare",
           "MCP"
         ],
+        "entity_sentiment": {
+          "Cloudflare": "neutral",
+          "MCP": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -445,10 +506,17 @@
         "entities": [
           "Anthropic",
           "Google",
-          "Broadcom"
+          "Broadcom",
+          "TPU"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Google": "positive",
+          "Broadcom": "positive",
+          "TPU": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -481,6 +549,12 @@
           "Deloitte",
           "TCS"
         ],
+        "entity_sentiment": {
+          "Google Cloud": "neutral",
+          "Accenture": "positive",
+          "Deloitte": "positive",
+          "TCS": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -505,11 +579,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Pentagon",
-          "Минобороны США"
+          "Пентагон"
         ],
+        "entity_sentiment": {
+          "Пентагон": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "investment"
+        "event": "regulation"
       },
       "importance": 7
     },
@@ -533,11 +609,16 @@
       "tags": {
         "entities": [
           "Core Automation",
-          "OpenAI",
-          "Jerry Tworek"
+          "Jerry Tworek",
+          "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Core Automation": "positive",
+          "Jerry Tworek": "positive",
+          "OpenAI": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "other"
       },
       "importance": 7
     },
@@ -563,8 +644,12 @@
           "Google",
           "Thinking Machines Lab"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Thinking Machines Lab": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -589,8 +674,11 @@
         "entities": [
           "Elizabeth Warren"
         ],
+        "entity_sentiment": {
+          "Elizabeth Warren": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -613,11 +701,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Metropolitan Police",
+          "Столичная полиция Лондона",
           "Palantir"
         ],
+        "entity_sentiment": {
+          "Столичная полиция Лондона": "neutral",
+          "Palantir": "positive"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -640,7 +732,8 @@
           "title": "H.R.5388 — American Artificial Intelligence Leadership and Uniformity Act",
           "url": "https://www.congress.gov/bill/119th-congress/house-bill/5388",
           "entities": [
-            "Congress"
+            "Конгресс США",
+            "H.R.5388"
           ],
           "sentiment": "neutral"
         }
@@ -649,9 +742,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Connecticut",
+          "Коннектикут",
           "SB 435"
         ],
+        "entity_sentiment": {
+          "Коннектикут": "neutral",
+          "SB 435": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -699,8 +796,12 @@
           "Anthropic",
           "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude Mythos": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -722,11 +823,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "robotics"
-        ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entities": [],
+        "entity_sentiment": {},
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -751,8 +851,11 @@
         "entities": [
           "RISC-V"
         ],
+        "entity_sentiment": {
+          "RISC-V": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -774,11 +877,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "Wall Street"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -800,11 +902,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "стартапы"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -832,6 +933,12 @@
           "Claude Mythos",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Mozilla": "positive",
+          "Firefox": "positive",
+          "Claude Mythos": "positive",
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -857,10 +964,16 @@
       "tags": {
         "entities": [
           "Instagram",
-          "MAGA"
+          "Emily Hart",
+          "Индия"
         ],
+        "entity_sentiment": {
+          "Instagram": "negative",
+          "Emily Hart": "negative",
+          "Индия": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     }

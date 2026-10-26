@@ -22,18 +22,20 @@
           "url": "https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/",
           "entities": [
             "Anthropic",
-            "NSA"
+            "АНБ",
+            "Claude Mythos"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         },
         {
           "title": "NSA использует Mythos Anthropic вопреки запрету Пентагона",
           "url": "https://itzine.ru/news/ai/nsa-ispolzuet-mythos-anthropic-vopreki-zapretu-pentagona.html",
           "entities": [
             "Anthropic",
-            "NSA"
+            "АНБ",
+            "Пентагон"
           ],
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
@@ -41,11 +43,18 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "NSA",
-          "Pentagon"
+          "Claude Mythos",
+          "АНБ",
+          "Пентагон"
         ],
-        "sentiment": "negative",
-        "event": "leak"
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "АНБ": "neutral",
+          "Пентагон": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 9
     },
@@ -68,13 +77,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "Google",
-          "Anthropic",
-          "Artificial Analysis"
+          "Artificial Analysis",
+          "GPT-5.4",
+          "Gemini",
+          "Claude Opus 4.7"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Artificial Analysis": "neutral",
+          "GPT-5.4": "positive",
+          "Gemini": "positive",
+          "Claude Opus 4.7": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -97,10 +112,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "ADeLe",
           "Nature"
         ],
+        "entity_sentiment": {
+          "ADeLe": "positive",
+          "Nature": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -123,9 +143,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "OpenMythos",
           "Anthropic",
-          "OpenMythos"
+          "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "OpenMythos": "positive",
+          "Anthropic": "positive",
+          "Claude Mythos": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -152,8 +178,11 @@
         "entities": [
           "Nature"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Nature": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -177,16 +206,22 @@
       "tags": {
         "entities": [
           "Moonshot AI",
-          "Tsinghua University"
+          "Tsinghua University",
+          "PrfaaS"
         ],
+        "entity_sentiment": {
+          "Moonshot AI": "positive",
+          "Tsinghua University": "positive",
+          "PrfaaS": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
     {
       "id": "models-seedance-2026-04-20",
-      "section": "models",
+      "section": "content",
       "headline": "Atlas Cloud открыл глобальный API-доступ к модели генерации видео Seedance 2.0",
       "subheadline": "Посекундная тарификация и отсутствие очереди для разработчиков по всему миру",
       "body": "Atlas Cloud запустил публичный API для Seedance 2.0 — модели генерации видео с прозрачным посекундным ценообразованием и без листа ожидания.",
@@ -206,10 +241,15 @@
           "Atlas Cloud",
           "Seedance"
         ],
+        "entity_sentiment": {
+          "Atlas Cloud": "positive",
+          "Seedance": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Публичный API Atlas Cloud · посекундная оплата · без листа ожидания"
     },
     {
       "id": "platforms-google-coding-team-2026-04-20",
@@ -248,16 +288,22 @@
       "tags": {
         "entities": [
           "Google",
-          "Anthropic"
+          "Anthropic",
+          "Claude Code"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Google": "positive",
+          "Anthropic": "neutral",
+          "Claude Code": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "people"
       },
       "importance": 7
     },
     {
       "id": "platforms-nvidia-adobe-wpp-2026-04-20",
-      "section": "platforms",
+      "section": "content",
       "headline": "NVIDIA, Adobe и WPP запустили платформу автономных AI-агентов для рекламной индустрии",
       "subheadline": "Агенты Adobe Firefly на инфраструктуре NVIDIA генерируют и оптимизируют креатив в масштабе",
       "body": "NVIDIA, Adobe и рекламный холдинг WPP представили совместную платформу, позволяющую автономным AI-агентам создавать рекламные материалы в масштабе. Агенты Adobe Firefly на инфраструктуре NVIDIA NIM генерируют, адаптируют и оптимизируют креатив под разные рынки и форматы. WPP уже внедряет систему для клиентов из Fortune 500.",
@@ -278,8 +324,13 @@
           "Adobe",
           "WPP"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Adobe": "positive",
+          "WPP": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -302,8 +353,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Salesforce"
+          "Salesforce",
+          "Agent Albert"
         ],
+        "entity_sentiment": {
+          "Salesforce": "positive",
+          "Agent Albert": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -330,6 +386,9 @@
         "entities": [
           "Notion"
         ],
+        "entity_sentiment": {
+          "Notion": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -354,10 +413,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "LinkedIn"
+          "LinkedIn",
+          "Cognitive Memory Agent"
         ],
+        "entity_sentiment": {
+          "LinkedIn": "positive",
+          "Cognitive Memory Agent": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -383,8 +447,12 @@
           "Google",
           "Gemini CLI"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini CLI": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 5
     },
@@ -408,10 +476,18 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "ChatGPT"
+          "ChatGPT",
+          "Codex",
+          "Workspace Analytics"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "Codex": "positive",
+          "Workspace Analytics": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
       "importance": 5
     },
@@ -434,8 +510,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "UK Government"
+          "Правительство Великобритании",
+          "Великобритания"
         ],
+        "entity_sentiment": {
+          "Правительство Великобритании": "neutral",
+          "Великобритания": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -462,8 +543,11 @@
         "entities": [
           "Fermi"
         ],
+        "entity_sentiment": {
+          "Fermi": "negative"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "people"
       },
       "importance": 7
     },
@@ -487,10 +571,16 @@
       "tags": {
         "entities": [
           "Google",
-          "Marvell"
+          "Marvell",
+          "NVIDIA"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Marvell": "positive",
+          "NVIDIA": "neutral"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "leak"
       },
       "importance": 7
     },
@@ -513,9 +603,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US Government",
-          "California"
+          "Правительство США",
+          "Калифорния"
         ],
+        "entity_sentiment": {
+          "Правительство США": "neutral",
+          "Калифорния": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -540,7 +634,7 @@
           "title": "Physical AI Edges Closer to Real-World Deployments",
           "url": "https://aibusiness.com/generative-ai/physical-ai-edges-closer-real-world-deployments",
           "entities": [],
-          "sentiment": "positive"
+          "sentiment": "neutral"
         },
         {
           "title": "NVIDIA and Partners Showcase AI-Driven Manufacturing at Hannover Messe 2026",
@@ -554,9 +648,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Китай"
+        ],
+        "entity_sentiment": {
+          "Китай": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "other"
       },
       "importance": 5
     },
@@ -579,8 +678,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Loop"
+          "Loop",
+          "Valor Equity Partners",
+          "JPMorgan"
         ],
+        "entity_sentiment": {
+          "Loop": "positive",
+          "Valor Equity Partners": "neutral",
+          "JPMorgan": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -604,9 +710,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Китай"
+        ],
+        "entity_sentiment": {
+          "Китай": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "other"
       },
       "importance": 5
     },
@@ -630,7 +741,8 @@
           "url": "https://www.nbcnews.com/tech/tech-news/musks-ai-chatbot-grok-xai-making-sexual-deepfakes-imagine-rcna265855",
           "entities": [
             "xAI",
-            "Grok"
+            "Grok",
+            "X"
           ],
           "sentiment": "negative"
         }
@@ -641,10 +753,19 @@
         "entities": [
           "Elon Musk",
           "xAI",
-          "Grok"
+          "Grok",
+          "X",
+          "Франция"
         ],
+        "entity_sentiment": {
+          "Elon Musk": "negative",
+          "xAI": "negative",
+          "Grok": "negative",
+          "X": "negative",
+          "Франция": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -667,8 +788,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Hachette"
+          "Hachette",
+          "Shy Girl",
+          "Mia Ballard"
         ],
+        "entity_sentiment": {
+          "Hachette": "negative",
+          "Shy Girl": "negative",
+          "Mia Ballard": "negative"
+        },
         "sentiment": "negative",
         "event": "shutdown"
       },
@@ -693,11 +821,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "Anthropic"
+          "ChatGPT",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "ChatGPT": "negative",
+          "Claude": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -719,9 +851,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Китай"
+        ],
+        "entity_sentiment": {
+          "Китай": "neutral"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -744,10 +881,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Хабр"
+          "Хабр",
+          "Хабр Карьера"
         ],
+        "entity_sentiment": {
+          "Хабр": "negative",
+          "Хабр Карьера": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -770,7 +912,8 @@
           "title": "ChatGPT 5.5 aka Spud may debut next week",
           "url": "https://www.digit.in/news/general/chatgpt-55-aka-spud-model-may-debut-next-week-here-is-what-to-expect.html",
           "entities": [
-            "OpenAI"
+            "OpenAI",
+            "GPT-5.5"
           ],
           "sentiment": "positive"
         }
@@ -779,9 +922,14 @@
       "duplicate_note": "Утечка: внутренний меморандум OpenAI описывает модель «Spud» и стратегию против Anthropic",
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "GPT-5.5"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-5.5": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 5

@@ -4,7 +4,7 @@
   "news": [
     {
       "id": "models-nvidia-sana-wm-2026-05-17",
-      "section": "models",
+      "section": "content",
       "headline": "NVIDIA выпустила SANA-WM — открытую world-модель на 2,6 млрд параметров",
       "subheadline": "Модель генерирует минутные ролики 720p на одной GPU и претендует на роль исследовательской основы для симуляторов мира",
       "body": "SANA-WM построена как лёгкая world-модель: 2,6 млрд параметров, генерация видео длиной около минуты в разрешении 720p на одном ускорителе. NVIDIA выкладывает веса и код в открытый доступ, позиционируя SANA-WM как базу для исследований видео-симуляции и пространственного рассуждения — в противовес проприетарным world-моделям Runway и Google. Авторы утверждают, что архитектура опирается на компактный диффузионный backbone, оптимизированный под длинные временные окна без каскадных стадий.",
@@ -24,10 +24,15 @@
           "NVIDIA",
           "SANA-WM"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "SANA-WM": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 9
+      "importance": 9,
+      "details": "Открытые веса и код · около минуты видео · 720p · одна GPU"
     },
     {
       "id": "models-nous-lighthouse-attention-2026-05-17",
@@ -48,10 +53,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Nous Research"
+          "Nous Research",
+          "Lighthouse Attention"
         ],
+        "entity_sentiment": {
+          "Nous Research": "positive",
+          "Lighthouse Attention": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -73,11 +83,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "MoE"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -99,11 +108,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "video generation"
-        ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entities": [],
+        "entity_sentiment": {},
+        "sentiment": "negative",
+        "event": "research"
       },
       "importance": 7
     },
@@ -129,8 +137,12 @@
           "Claude Mythos",
           "GPT-5.5"
         ],
+        "entity_sentiment": {
+          "Claude Mythos": "neutral",
+          "GPT-5.5": "neutral"
+        },
         "sentiment": "negative",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
@@ -155,8 +167,11 @@
         "entities": [
           "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -181,8 +196,11 @@
         "entities": [
           "Google"
         ],
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -205,8 +223,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "LiteLLM"
+          "LiteLLM",
+          "LiteLLM Agent Platform"
         ],
+        "entity_sentiment": {
+          "LiteLLM": "positive",
+          "LiteLLM Agent Platform": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -231,11 +254,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Ubuntu",
-          "Canonical"
+          "Canonical",
+          "Ubuntu"
         ],
+        "entity_sentiment": {
+          "Canonical": "positive",
+          "Ubuntu": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -259,9 +286,15 @@
       "tags": {
         "entities": [
           "Google",
+          "Cloud Fraud Defense",
           "reCAPTCHA"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Cloud Fraud Defense": "positive",
+          "reCAPTCHA": "negative"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -288,8 +321,12 @@
           "OpenAI",
           "Greg Brockman"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Greg Brockman": "positive"
+        },
+        "sentiment": "positive",
+        "event": "people"
       },
       "importance": 7
     },
@@ -316,8 +353,13 @@
           "Anthropic",
           "Marc Benioff"
         ],
+        "entity_sentiment": {
+          "Salesforce": "neutral",
+          "Anthropic": "positive",
+          "Marc Benioff": "neutral"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -343,8 +385,12 @@
           "NVIDIA",
           "SPAN"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "neutral",
+          "SPAN": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -371,11 +417,10 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [
-          "Silicon Valley"
-        ],
+        "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -401,8 +446,12 @@
           "OpenClaw",
           "Peter Steinberger"
         ],
+        "entity_sentiment": {
+          "OpenClaw": "neutral",
+          "Peter Steinberger": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "finance"
       },
       "importance": 5
     },
@@ -427,8 +476,11 @@
         "entities": [
           "Cerebras"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Cerebras": "positive"
+        },
+        "sentiment": "positive",
+        "event": "finance"
       },
       "importance": 5
     },
@@ -453,8 +505,11 @@
         "entities": [
           "arXiv"
         ],
-        "sentiment": "negative",
-        "event": "regulation"
+        "entity_sentiment": {
+          "arXiv": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "update"
       },
       "importance": 5
     },
@@ -480,8 +535,12 @@
           "Subquadratic",
           "SubQ"
         ],
-        "sentiment": "rumor",
-        "event": "release"
+        "entity_sentiment": {
+          "Subquadratic": "negative",
+          "SubQ": "negative"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -506,8 +565,11 @@
         "entities": [
           "IEEE Spectrum"
         ],
+        "entity_sentiment": {
+          "IEEE Spectrum": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     }

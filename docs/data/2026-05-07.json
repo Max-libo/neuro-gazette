@@ -47,7 +47,7 @@
             "Anthropic",
             "SpaceX"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -56,12 +56,19 @@
         "entities": [
           "Anthropic",
           "Claude Opus 4.7",
-          "SpaceX",
           "Claude Code",
-          "Managed Agents"
+          "Managed Agents",
+          "SpaceX"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Opus 4.7": "positive",
+          "Claude Code": "positive",
+          "Managed Agents": "positive",
+          "SpaceX": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 9
     },
@@ -88,11 +95,17 @@
           "AMD",
           "Broadcom",
           "Intel",
-          "Microsoft",
           "NVIDIA"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "AMD": "positive",
+          "Broadcom": "positive",
+          "Intel": "positive",
+          "NVIDIA": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -118,6 +131,10 @@
           "Google",
           "Gemma 4"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemma 4": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -150,7 +167,11 @@
           "Google",
           "Gemini 3.2 Flash"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini 3.2 Flash": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 5
@@ -182,8 +203,12 @@
           "Subquadratic",
           "SubQ"
         ],
-        "sentiment": "rumor",
-        "event": "release"
+        "entity_sentiment": {
+          "Subquadratic": "positive",
+          "SubQ": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -210,6 +235,11 @@
           "VS Code",
           "Microsoft"
         ],
+        "entity_sentiment": {
+          "GitHub Copilot": "positive",
+          "VS Code": "positive",
+          "Microsoft": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -237,6 +267,10 @@
           "Windsurf",
           "Devin"
         ],
+        "entity_sentiment": {
+          "Windsurf": "positive",
+          "Devin": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -264,7 +298,11 @@
           "Claude Code",
           "Anthropic"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Claude Code": "positive",
+          "Anthropic": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -291,8 +329,12 @@
           "OpenAI",
           "ChatGPT"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 7
     },
@@ -317,8 +359,13 @@
         "entities": [
           "Google",
           "Project Mariner",
-          "DeepMind"
+          "Google DeepMind"
         ],
+        "entity_sentiment": {
+          "Google": "negative",
+          "Project Mariner": "negative",
+          "Google DeepMind": "negative"
+        },
         "sentiment": "negative",
         "event": "shutdown"
       },
@@ -343,9 +390,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "CopilotKit"
+          "CopilotKit",
+          "Enterprise Intelligence Platform"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "CopilotKit": "positive",
+          "Enterprise Intelligence Platform": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -372,7 +424,7 @@
             "DeepSeek",
             "Big Fund"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -384,7 +436,13 @@
           "Tencent",
           "Alibaba"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "DeepSeek": "positive",
+          "Big Fund": "neutral",
+          "Tencent": "neutral",
+          "Alibaba": "neutral"
+        },
+        "sentiment": "positive",
         "event": "investment"
       },
       "importance": 7
@@ -422,8 +480,13 @@
           "Spectrum-X",
           "Corning"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Spectrum-X": "positive",
+          "Corning": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -448,10 +511,15 @@
         "entities": [
           "OpenAI",
           "ChatGPT",
-          "OPC"
+          "Канада"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative",
+          "Канада": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -477,6 +545,10 @@
           "Tessera Labs",
           "Andreessen Horowitz"
         ],
+        "entity_sentiment": {
+          "Tessera Labs": "positive",
+          "Andreessen Horowitz": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -504,8 +576,12 @@
           "Snap",
           "Perplexity"
         ],
+        "entity_sentiment": {
+          "Snap": "negative",
+          "Perplexity": "negative"
+        },
         "sentiment": "negative",
-        "event": "shutdown"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -533,8 +609,14 @@
           "Hellman & Friedman",
           "Goldman Sachs"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Blackstone": "positive",
+          "Hellman & Friedman": "positive",
+          "Goldman Sachs": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -563,9 +645,18 @@
       "tags": {
         "entities": [
           "Белый дом",
-          "NIST",
-          "CAISI"
+          "Kevin Hassett",
+          "FDA",
+          "Anthropic",
+          "Claude Mythos"
         ],
+        "entity_sentiment": {
+          "Белый дом": "neutral",
+          "Kevin Hassett": "neutral",
+          "FDA": "neutral",
+          "Anthropic": "neutral",
+          "Claude Mythos": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -605,13 +696,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Mira Murati",
           "Sam Altman",
           "OpenAI",
+          "Mira Murati",
           "Elon Musk"
         ],
+        "entity_sentiment": {
+          "Sam Altman": "negative",
+          "OpenAI": "negative",
+          "Mira Murati": "neutral",
+          "Elon Musk": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -638,7 +735,12 @@
           "Claude",
           "Orbit"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive",
+          "Orbit": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 7
@@ -672,10 +774,16 @@
       "tags": {
         "entities": [
           "Ubisoft",
-          "Assassin's Creed"
+          "Assassin’s Creed Invictus",
+          "j0nathan"
         ],
+        "entity_sentiment": {
+          "Ubisoft": "negative",
+          "Assassin’s Creed Invictus": "negative",
+          "j0nathan": "negative"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     },
@@ -701,8 +809,12 @@
           "Scale AI",
           "Jason Droege"
         ],
+        "entity_sentiment": {
+          "Scale AI": "neutral",
+          "Jason Droege": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -725,10 +837,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Joe Liza WWE",
           "YouTube"
         ],
+        "entity_sentiment": {
+          "Joe Liza WWE": "negative",
+          "YouTube": "neutral"
+        },
         "sentiment": "negative",
-        "event": "leak"
+        "event": "incident"
       },
       "importance": 5
     }

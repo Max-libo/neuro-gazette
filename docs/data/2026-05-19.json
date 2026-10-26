@@ -22,6 +22,7 @@
           "url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
           "entities": [
             "NVIDIA",
+            "Jensen Huang",
             "Dell"
           ],
           "sentiment": "positive"
@@ -35,6 +36,11 @@
           "Vera",
           "Rubin"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Vera": "positive",
+          "Rubin": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -62,8 +68,12 @@
           "Cursor",
           "Composer 2.5"
         ],
+        "entity_sentiment": {
+          "Cursor": "positive",
+          "Composer 2.5": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -90,14 +100,19 @@
           "NVFP4",
           "Mamba"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "NVFP4": "positive",
+          "Mamba": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
     {
       "id": "models-gemini-veo3-photo-to-video",
-      "section": "models",
+      "section": "content",
       "headline": "Gemini Veo 3 научился превращать фото в 8-секундные ролики со звуком",
       "subheadline": "Функция доступна подписчикам Google AI Pro и Ultra накануне Google I/O 2026.",
       "body": "Google добавила в Gemini генерацию видео из одной фотографии на базе модели Veo 3. На входе — статичный кадр и текстовый промпт, на выходе — ролик длительностью 8 секунд с синхронной звуковой дорожкой. Доступ открыт пользователям AI Pro и Ultra; ограничения по разрешению и числу генераций в день не раскрыты. Запуск состоялся за двое суток до Google I/O, где ожидаются анонсы Gemini Omni и единого мультимодального генератора видео и изображений.",
@@ -117,7 +132,7 @@
             "Google",
             "Gemini"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -128,10 +143,16 @@
           "Gemini",
           "Veo 3"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "Veo 3": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "release"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "AI Pro и Ultra · ролики 8 секунд со звуком"
     },
     {
       "id": "models-paddleocr-35",
@@ -154,10 +175,17 @@
         "entities": [
           "PaddlePaddle",
           "PaddleOCR",
-          "Hugging Face"
+          "Hugging Face",
+          "Transformers"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "PaddlePaddle": "positive",
+          "PaddleOCR": "positive",
+          "Hugging Face": "positive",
+          "Transformers": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 5
     },
@@ -183,8 +211,12 @@
           "NVIDIA",
           "Cosmos"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Cosmos": "positive"
+        },
+        "sentiment": "positive",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -211,8 +243,13 @@
           "Dell",
           "Codex"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Dell": "positive",
+          "Codex": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -238,8 +275,12 @@
           "Cloudflare",
           "Stripe"
         ],
+        "entity_sentiment": {
+          "Cloudflare": "positive",
+          "Stripe": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -262,7 +303,9 @@
           "title": "Anthropic's Code With Claude Announces Managed Agents, Proactive Workflows, Capability Curve",
           "url": "https://www.infoq.com/news/2026/05/code-with-claude/",
           "entities": [
-            "Anthropic"
+            "Anthropic",
+            "Managed Agents",
+            "Claude Code"
           ],
           "sentiment": "positive"
         }
@@ -273,8 +316,11 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -301,8 +347,13 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "SandboxAQ": "positive",
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "partnership"
       },
       "importance": 5
     },
@@ -329,7 +380,12 @@
           "ChatGPT",
           "Plaid"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "Plaid": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -356,8 +412,12 @@
           "Anthropic",
           "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "research"
       },
       "importance": 7
     },
@@ -380,11 +440,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Vatican",
+          "Ватикан",
+          "Pope Leo XIV",
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Ватикан": "neutral",
+          "Pope Leo XIV": "neutral",
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -409,10 +475,15 @@
         "entities": [
           "Anduril",
           "Meta",
-          "Pentagon"
+          "Пентагон"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Anduril": "positive",
+          "Meta": "positive",
+          "Пентагон": "neutral"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -438,7 +509,7 @@
             "Elon Musk",
             "OpenAI"
           ],
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ],
       "unconfirmed": false,
@@ -449,8 +520,13 @@
           "OpenAI",
           "Sam Altman"
         ],
-        "sentiment": "neutral",
-        "event": "regulation"
+        "entity_sentiment": {
+          "Elon Musk": "negative",
+          "OpenAI": "positive",
+          "Sam Altman": "positive"
+        },
+        "sentiment": "positive",
+        "event": "legal"
       },
       "importance": 5
     },
@@ -473,10 +549,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "UK"
+          "Великобритания"
         ],
+        "entity_sentiment": {
+          "Великобритания": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -503,8 +582,13 @@
           "Dell",
           "Jensen Huang"
         ],
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Dell": "positive",
+          "Jensen Huang": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -527,8 +611,9 @@
       "duplicate_note": null,
       "tags": {
         "entities": [],
+        "entity_sentiment": {},
         "sentiment": "negative",
-        "event": "leak"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -554,8 +639,12 @@
           "Stanford",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "Stanford": "negative",
+          "ChatGPT": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -577,9 +666,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Австралия"
+        ],
+        "entity_sentiment": {
+          "Австралия": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -602,10 +696,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Sensay"
+          "Sensay",
+          "Филиппины"
         ],
+        "entity_sentiment": {
+          "Sensay": "neutral",
+          "Филиппины": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "leak"
+        "event": "research"
       },
       "importance": 5
     },
@@ -627,9 +726,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "event": "leak"
+        "entities": [
+          "Claude Monet"
+        ],
+        "entity_sentiment": {
+          "Claude Monet": "negative"
+        },
+        "sentiment": "negative",
+        "event": "other"
       },
       "importance": 5
     }

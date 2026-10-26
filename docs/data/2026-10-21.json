@@ -22,7 +22,7 @@
           "url": "https://federalnewsnetwork.com/artificial-intelligence/2026/10/government-is-about-to-start-enforcing-a-new-set-of-rules-for-buying-ai",
           "entities": [
             "GSA",
-            "US Government"
+            "Правительство США"
           ],
           "sentiment": "neutral"
         },
@@ -42,6 +42,9 @@
         "entities": [
           "Anthropic"
         ],
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -66,10 +69,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "MiniMax"
+          "MiniMax",
+          "M3.1 Flash"
         ],
+        "entity_sentiment": {
+          "MiniMax": "positive",
+          "M3.1 Flash": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 7
     },
@@ -94,7 +102,7 @@
           "entities": [
             "ElevenLabs"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -102,8 +110,12 @@
       "tags": {
         "entities": [
           "Mistral",
-          "ElevenLabs"
+          "Voxtral 3"
         ],
+        "entity_sentiment": {
+          "Mistral": "positive",
+          "Voxtral 3": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -128,8 +140,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Inception Labs"
+          "Inception Labs",
+          "Mercury 3",
+          "GPT-6",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "Inception Labs": "positive",
+          "Mercury 3": "positive",
+          "GPT-6": "neutral",
+          "Claude": "neutral"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -161,7 +182,7 @@
           "entities": [
             "OpenAI"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
@@ -169,16 +190,22 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "GPT-6"
+          "GPT-6",
+          "Terminal X"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-6": "positive",
+          "Terminal X": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 7
     },
     {
       "id": "models-videogen-model1-2026-10-20",
-      "section": "models",
+      "section": "content",
       "headline": "Стартап VideoGen представил первую модель генерации видео длиной до 10 минут",
       "subheadline": "Model 1 поддерживает мультикадровую композицию из текста или до 16 изображений",
       "body": "Сан-францисский стартап VideoGen выпустил свою первую собственную модель генерации видео Model 1. Декларируемые возможности: длительность одного ролика до 10 минут, multi-shot композиция и ввод в виде текста или до 16 изображений. Компания обещает стоимость более чем вдвое ниже существующих коммерческих решений и выделила $1 млн на бесплатные кредиты для разработчиков. Независимых бенчмарков пока нет.",
@@ -195,12 +222,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "VideoGen"
+          "VideoGen",
+          "Model 1"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "VideoGen": "positive",
+          "Model 1": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Видео до 10 минут · текст или до 16 изображений на входе"
     },
     {
       "id": "models-nvidia-cosmos3-surgery-2026-10-20",
@@ -221,9 +254,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA"
+          "NVIDIA",
+          "Cosmos3-H-Dreams"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Cosmos3-H-Dreams": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -258,6 +296,9 @@
         "entities": [
           "DeepSeek"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -291,16 +332,26 @@
             "Amazon",
             "NVIDIA"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google",
+          "Google Cloud",
+          "llm-d",
+          "TorchTPU",
+          "TPU",
           "NVIDIA"
         ],
+        "entity_sentiment": {
+          "Google Cloud": "positive",
+          "llm-d": "positive",
+          "TorchTPU": "positive",
+          "TPU": "positive",
+          "NVIDIA": "negative"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -325,8 +376,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic"
+          "Anthropic",
+          "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -355,7 +411,12 @@
           "Visual Studio",
           "GitHub Copilot"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Visual Studio": "positive",
+          "GitHub Copilot": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -379,10 +440,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Exa"
+          "Exa",
+          "Perplexity",
+          "Brave",
+          "Parallel"
         ],
+        "entity_sentiment": {
+          "Exa": "positive",
+          "Perplexity": "neutral",
+          "Brave": "neutral",
+          "Parallel": "neutral"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
       "importance": 5
     },
@@ -405,8 +475,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cloudflare"
+          "Cloudflare",
+          "Clairic"
         ],
+        "entity_sentiment": {
+          "Cloudflare": "positive",
+          "Clairic": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -432,8 +507,12 @@
       "tags": {
         "entities": [
           "DeepSeek",
-          "US Government"
+          "Правительство США"
         ],
+        "entity_sentiment": {
+          "DeepSeek": "negative",
+          "Правительство США": "neutral"
+        },
         "sentiment": "negative",
         "event": "regulation"
       },
@@ -459,10 +538,16 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Orchestra Bio"
+          "Orchestra Bio",
+          "GPT-Rosalind"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Orchestra Bio": "positive",
+          "GPT-Rosalind": "positive"
+        },
         "sentiment": "positive",
-        "event": "investment"
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -500,7 +585,7 @@
           "title": "Otter AI raises $320M from General Catalyst for its meeting tool",
           "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
           "entities": [
-            "Otter AI",
+            "Otter.ai",
             "General Catalyst"
           ],
           "sentiment": "positive"
@@ -513,9 +598,16 @@
           "Daytona",
           "Town",
           "Arda",
-          "ASI",
-          "Otter AI"
+          "Otter.ai",
+          "General Catalyst"
         ],
+        "entity_sentiment": {
+          "Daytona": "positive",
+          "Town": "positive",
+          "Arda": "positive",
+          "Otter.ai": "positive",
+          "General Catalyst": "positive"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -551,8 +643,14 @@
       "tags": {
         "entities": [
           "GSA",
-          "US Government"
+          "Правительство США",
+          "GSAR 552.239-7001"
         ],
+        "entity_sentiment": {
+          "GSA": "neutral",
+          "Правительство США": "neutral",
+          "GSAR 552.239-7001": "neutral"
+        },
         "sentiment": "neutral",
         "event": "regulation"
       },
@@ -581,8 +679,13 @@
           "AWS",
           "Google Cloud"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "AWS": "neutral",
+          "Google Cloud": "neutral"
+        },
+        "sentiment": "negative",
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -617,8 +720,11 @@
         "entities": [
           "OpenAI"
         ],
-        "sentiment": "rumor",
-        "event": "leak"
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
+        "sentiment": "negative",
+        "event": "incident"
       },
       "importance": 7
     },
@@ -641,11 +747,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "Sam Altman"
+          "Sam Altman",
+          "OpenAI"
         ],
-        "sentiment": "rumor",
-        "event": "leak"
+        "entity_sentiment": {
+          "Sam Altman": "negative",
+          "OpenAI": "negative"
+        },
+        "sentiment": "negative",
+        "event": "statement"
       },
       "importance": 7
     },
@@ -678,11 +788,17 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Eric Schmidt",
           "Anthropic",
-          "Eric Schmidt"
+          "Dario Amodei"
         ],
-        "sentiment": "rumor",
-        "event": "leak"
+        "entity_sentiment": {
+          "Eric Schmidt": "neutral",
+          "Anthropic": "neutral",
+          "Dario Amodei": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "finance"
       },
       "importance": 7
     },
@@ -707,7 +823,10 @@
         "entities": [
           "Anthropic"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 5
@@ -734,8 +853,12 @@
           "Goodfire",
           "Nick Cammarata"
         ],
+        "entity_sentiment": {
+          "Goodfire": "neutral",
+          "Nick Cammarata": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },
@@ -758,9 +881,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "US Army"
+          "Армия США",
+          "ECHOTRIBBLE"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Армия США": "neutral",
+          "ECHOTRIBBLE": "negative"
+        },
+        "sentiment": "negative",
         "event": "leak"
       },
       "importance": 5

@@ -36,7 +36,8 @@
           "title": "Meta одновременно выпустила открытую Llama 5 с 600 млрд параметров",
           "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-4-8-meta-unleashes-llama-5-zuckerbergs-open-source-gambit-challenges-proprietary-ai-dominance",
           "entities": [
-            "Meta"
+            "Meta",
+            "Llama"
           ],
           "sentiment": "positive"
         }
@@ -46,9 +47,16 @@
       "tags": {
         "entities": [
           "Meta",
-          "Alexandr Wang",
-          "Superintelligence Labs"
+          "Muse Spark",
+          "Superintelligence Labs",
+          "Alexandr Wang"
         ],
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Muse Spark": "positive",
+          "Superintelligence Labs": "positive",
+          "Alexandr Wang": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -56,7 +64,7 @@
     },
     {
       "id": "models-happyhorse-2026-04-09",
-      "section": "models",
+      "section": "content",
       "headline": "HappyHorse-1.0 возглавила глобальный рейтинг открытых видеомоделей",
       "subheadline": "15-миллиардная модель объединяет генерацию видео и аудио с многоязычной lip-sync.",
       "body": "Открытая модель HappyHorse-1.0 (15 млрд параметров) заняла первое место на Artificial Analysis Video Arena, обойдя ByteDance Seedance 2.0 и другие закрытые решения. Ключевые особенности — совместная генерация видео и аудио в одном проходе, многоязычная синхронизация губ и поддержка референсных изображений для контроля стиля.",
@@ -73,16 +81,24 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "HappyHorse"
+          "HappyHorse",
+          "Artificial Analysis",
+          "Seedance"
         ],
+        "entity_sentiment": {
+          "HappyHorse": "positive",
+          "Artificial Analysis": "neutral",
+          "Seedance": "negative"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
-      "importance": 7
+      "importance": 7,
+      "details": "Открытая модель · 15 млрд параметров"
     },
     {
       "id": "models-seedance2-2026-04-09",
-      "section": "models",
+      "section": "content",
       "headline": "ByteDance Seedance 2.0 стал доступен через API Segmind",
       "subheadline": "Видеомодель поддерживает до 12 одновременных референсов и генерацию аудио в одном проходе.",
       "body": "Segmind открыла API-доступ к двум версиям Seedance 2.0 от ByteDance. Быстрая версия (Fast) позволяет управлять стилем через @image-теги с референсными изображениями. Полная версия предлагает omni-reference управление с поддержкой до 12 одновременных референсов и генерацию кинематографического видео с нативной аудиодорожкой.",
@@ -105,12 +121,19 @@
       "tags": {
         "entities": [
           "ByteDance",
+          "Seedance",
           "Segmind"
         ],
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Seedance": "positive",
+          "Segmind": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "update"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "API Segmind · до 12 референсов · нативное аудио"
     },
     {
       "id": "models-altkevolve-2026-04-09",
@@ -131,10 +154,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "IBM"
+          "IBM Research",
+          "ALTK-Evolve"
         ],
+        "entity_sentiment": {
+          "IBM Research": "positive",
+          "ALTK-Evolve": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -163,8 +191,14 @@
       "tags": {
         "entities": [
           "Anthropic",
+          "Managed Agents",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Managed Agents": "positive",
+          "Claude": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -195,8 +229,14 @@
       "tags": {
         "entities": [
           "GitHub",
-          "Copilot"
+          "GitHub Copilot",
+          "VS Code"
         ],
+        "entity_sentiment": {
+          "GitHub": "positive",
+          "GitHub Copilot": "positive",
+          "VS Code": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -228,8 +268,15 @@
         "entities": [
           "Google",
           "Gemini",
-          "Colab"
+          "Colab",
+          "MCP"
         ],
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "Colab": "positive",
+          "MCP": "neutral"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -273,14 +320,19 @@
           "Tubi",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Tubi": "positive",
+          "ChatGPT": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "partnership"
       },
       "importance": 7
     },
     {
       "id": "platforms-stability-brand-2026-04-09",
-      "section": "platforms",
+      "section": "content",
       "headline": "Stability AI запустила Brand Studio для генерации изображений в фирменном стиле",
       "subheadline": "Инструмент создаёт визуальный контент с соблюдением корпоративного брендбука.",
       "body": "Brand Studio позволяет загрузить гайдлайны бренда, после чего генерирует изображения с учётом фирменных цветов, шрифтов и стилистики. Продукт рассчитан на маркетинговые команды, которым нужно масштабное производство визуального контента без потери консистентности.",
@@ -297,12 +349,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Stability AI"
+          "Stability AI",
+          "Brand Studio"
         ],
+        "entity_sentiment": {
+          "Stability AI": "positive",
+          "Brand Studio": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
-      "importance": 5
+      "importance": 5,
+      "details": "Генерация с учётом загруженного брендбука"
     },
     {
       "id": "platforms-atlassian-ai-2026-04-09",
@@ -323,7 +381,8 @@
           "title": "Astropad Workbench — удалённый рабочий стол для AI-агентов",
           "url": "https://techcrunch.com/2026/04/08/astropads-workbench-reimagines-remote-desktop-for-ai-agents-not-it-support/",
           "entities": [
-            "Astropad"
+            "Astropad",
+            "Workbench"
           ],
           "sentiment": "positive"
         },
@@ -343,6 +402,10 @@
           "Atlassian",
           "Confluence"
         ],
+        "entity_sentiment": {
+          "Atlassian": "positive",
+          "Confluence": "positive"
+        },
         "sentiment": "positive",
         "event": "update"
       },
@@ -380,8 +443,12 @@
           "OpenAI",
           "Sam Altman"
         ],
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Sam Altman": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -418,8 +485,12 @@
           "Anthropic",
           "Microsoft"
         ],
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Microsoft": "negative"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "people"
       },
       "importance": 7
     },
@@ -449,8 +520,11 @@
         "entities": [
           "OpenAI"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
         "sentiment": "positive",
-        "event": "regulation"
+        "event": "statement"
       },
       "importance": 7
     },
@@ -472,9 +546,14 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "Огайо"
+        ],
+        "entity_sentiment": {
+          "Огайо": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 7
     },
@@ -503,8 +582,18 @@
       "tags": {
         "entities": [
           "Trent AI",
-          "Cyberhill Partners"
+          "Cyberhill Partners",
+          "LocalGlobe",
+          "Cambridge Innovation Capital",
+          "Baleon Capital"
         ],
+        "entity_sentiment": {
+          "Trent AI": "positive",
+          "Cyberhill Partners": "positive",
+          "LocalGlobe": "neutral",
+          "Cambridge Innovation Capital": "neutral",
+          "Baleon Capital": "neutral"
+        },
         "sentiment": "positive",
         "event": "investment"
       },
@@ -532,6 +621,10 @@
           "Kintsugi",
           "FDA"
         ],
+        "entity_sentiment": {
+          "Kintsugi": "negative",
+          "FDA": "neutral"
+        },
         "sentiment": "negative",
         "event": "shutdown"
       },
@@ -556,11 +649,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Databricks",
-          "Matei Zaharia"
+          "Matei Zaharia",
+          "Databricks"
         ],
+        "entity_sentiment": {
+          "Matei Zaharia": "positive",
+          "Databricks": "positive"
+        },
         "sentiment": "positive",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 5
     },
@@ -586,8 +683,12 @@
           "Anthropic",
           "Claude"
         ],
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -620,10 +721,15 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "OpenAI",
+          "Sam Altman"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Sam Altman": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -655,10 +761,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Muckrack"
+          "Muck Rack"
         ],
-        "sentiment": "negative",
-        "event": "update"
+        "entity_sentiment": {
+          "Muck Rack": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "research"
       },
       "importance": 7
     },
@@ -683,8 +792,11 @@
         "entities": [
           "Telegram"
         ],
+        "entity_sentiment": {
+          "Telegram": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "incident"
       },
       "importance": 7
     },
@@ -709,8 +821,11 @@
         "entities": [
           "Oxford University"
         ],
+        "entity_sentiment": {
+          "Oxford University": "positive"
+        },
         "sentiment": "positive",
-        "event": "release"
+        "event": "research"
       },
       "importance": 5
     },
@@ -736,8 +851,12 @@
           "OpenAI",
           "ChatGPT"
         ],
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "ChatGPT": "negative"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -763,8 +882,12 @@
           "Palantir",
           "NHS"
         ],
+        "entity_sentiment": {
+          "Palantir": "negative",
+          "NHS": "negative"
+        },
         "sentiment": "negative",
-        "event": "update"
+        "event": "criticism"
       },
       "importance": 5
     },

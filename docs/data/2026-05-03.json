@@ -15,10 +15,21 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Нейрогазета"
+          "Пентагон",
+          "Microsoft",
+          "KKR",
+          "OpenAI",
+          "Agent 365"
         ],
+        "entity_sentiment": {
+          "Пентагон": "neutral",
+          "Microsoft": "positive",
+          "KKR": "positive",
+          "OpenAI": "positive",
+          "Agent 365": "positive"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "statement"
       },
       "importance": 9
     },
@@ -46,15 +57,21 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Pentagon",
-          "Nvidia",
+          "Пентагон",
+          "NVIDIA",
           "Microsoft",
-          "AWS",
-          "OpenAI",
-          "Anthropic"
+          "Google",
+          "OpenAI"
         ],
-        "sentiment": "neutral",
-        "event": "update"
+        "entity_sentiment": {
+          "Пентагон": "neutral",
+          "NVIDIA": "positive",
+          "Microsoft": "positive",
+          "Google": "positive",
+          "OpenAI": "positive"
+        },
+        "sentiment": "positive",
+        "event": "partnership"
       },
       "importance": 7
     },
@@ -81,7 +98,12 @@
           "Helix Digital Infrastructure",
           "Adam Selipsky"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "KKR": "neutral",
+          "Helix Digital Infrastructure": "positive",
+          "Adam Selipsky": "positive"
+        },
+        "sentiment": "positive",
         "event": "investment"
       },
       "importance": 7
@@ -106,10 +128,16 @@
       "tags": {
         "entities": [
           "Meta",
-          "Assured Robot Intelligence"
+          "Assured Robot Intelligence",
+          "Superintelligence Labs"
         ],
-        "sentiment": "neutral",
-        "event": "investment"
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Assured Robot Intelligence": "positive",
+          "Superintelligence Labs": "positive"
+        },
+        "sentiment": "positive",
+        "event": "acquisition"
       },
       "importance": 7
     },
@@ -137,8 +165,14 @@
           "CNN",
           "NBCUniversal"
         ],
+        "entity_sentiment": {
+          "Common Crawl": "negative",
+          "News/Media Alliance": "neutral",
+          "CNN": "neutral",
+          "NBCUniversal": "neutral"
+        },
         "sentiment": "negative",
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 7
     },
@@ -161,10 +195,13 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "China"
+          "Китай"
         ],
+        "entity_sentiment": {
+          "Китай": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "regulation"
+        "event": "legal"
       },
       "importance": 5
     },
@@ -189,11 +226,17 @@
         "entities": [
           "Microsoft",
           "Agent 365",
-          "AWS Bedrock",
+          "Bedrock",
           "Google Cloud"
         ],
-        "sentiment": "neutral",
-        "event": "release"
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Agent 365": "positive",
+          "Bedrock": "positive",
+          "Google Cloud": "positive"
+        },
+        "sentiment": "positive",
+        "event": "update"
       },
       "importance": 7
     },
@@ -219,7 +262,11 @@
           "OpenAI",
           "Codex"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Codex": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 7
@@ -246,7 +293,11 @@
           "Anthropic",
           "Claude Security"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Security": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 7
@@ -274,7 +325,12 @@
           "Gemini CLI",
           "Gemma"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini CLI": "positive",
+          "Gemma": "positive"
+        },
+        "sentiment": "positive",
         "event": "update"
       },
       "importance": 5
@@ -298,9 +354,14 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Manus"
+          "Manus",
+          "Cloud Computer"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Manus": "positive",
+          "Cloud Computer": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -326,8 +387,11 @@
         "entities": [
           "Replit"
         ],
+        "entity_sentiment": {
+          "Replit": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "promo"
       },
       "importance": 5
     },
@@ -351,8 +415,14 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "ChatGPT"
+          "ChatGPT",
+          "HealthBench Professional"
         ],
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "HealthBench Professional": "positive"
+        },
         "sentiment": "positive",
         "event": "release"
       },
@@ -377,12 +447,19 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "АНБ",
           "Anthropic",
-          "NSA",
+          "Claude Mythos",
           "Microsoft"
         ],
+        "entity_sentiment": {
+          "АНБ": "neutral",
+          "Anthropic": "positive",
+          "Claude Mythos": "positive",
+          "Microsoft": "neutral"
+        },
         "sentiment": "neutral",
-        "event": "update"
+        "event": "research"
       },
       "importance": 7
     },
@@ -406,9 +483,15 @@
       "tags": {
         "entities": [
           "Alibaba",
-          "Qwen"
+          "Qwen",
+          "Qwen-Scope"
         ],
-        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive",
+          "Qwen-Scope": "positive"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
@@ -436,7 +519,12 @@
           "AFM Plus",
           "Siri"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Apple": "positive",
+          "AFM Plus": "positive",
+          "Siri": "positive"
+        },
+        "sentiment": "positive",
         "event": "leak"
       },
       "importance": 5
@@ -461,9 +549,13 @@
       "tags": {
         "entities": [
           "Anthropic",
-          "Claude"
+          "claude-jupiter-v1-p"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "claude-jupiter-v1-p": "neutral"
+        },
+        "sentiment": "neutral",
         "event": "leak"
       },
       "importance": 5
@@ -489,10 +581,15 @@
         "entities": [
           "David Sacks",
           "Anthropic",
-          "Mythos"
+          "Claude Mythos"
         ],
-        "sentiment": "rumor",
-        "event": "update"
+        "entity_sentiment": {
+          "David Sacks": "neutral",
+          "Anthropic": "neutral",
+          "Claude Mythos": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "statement"
       },
       "importance": 5
     },
@@ -517,8 +614,11 @@
         "entities": [
           "ClawBank"
         ],
-        "sentiment": "rumor",
-        "event": "update"
+        "entity_sentiment": {
+          "ClawBank": "neutral"
+        },
+        "sentiment": "neutral",
+        "event": "research"
       },
       "importance": 5
     },
@@ -543,9 +643,16 @@
         "entities": [
           "Oobit",
           "Tether",
+          "Agent Cards",
           "Visa"
         ],
-        "sentiment": "rumor",
+        "entity_sentiment": {
+          "Oobit": "positive",
+          "Tether": "positive",
+          "Agent Cards": "positive",
+          "Visa": "neutral"
+        },
+        "sentiment": "positive",
         "event": "release"
       },
       "importance": 5
