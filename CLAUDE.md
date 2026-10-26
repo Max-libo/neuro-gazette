@@ -47,7 +47,7 @@ Parallel HTTP fetch (ThreadPoolExecutor, 10 workers) from all `sources` in `sour
 - `rss` — parsed with feedparser
 - `scrape` — HTML parsed with BeautifulSoup; tries JSON-LD structured data first, falls back to `h1/h2/h3` scan
 
-Items filtered by 24h window, deduplicated by URL and title. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200`.
+Items filtered by 24h window, deduplicated by URL and title. **Защита от сборки без сети:** если не загрузилось больше половины источников (`NEUROGAZETTE_MAX_FAILED_SOURCES`, по умолчанию 0.5), этап 1 падает без записи `_raw.json` — `run.sh` шлёт алерт, self-heal-запуск повторяет. Так урезанная сеть (облачная сессия, сбой прокси) не превращается в тощий выпуск. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200`.
 
 ### Stage 2: web search
 

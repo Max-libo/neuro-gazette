@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -32,6 +33,15 @@ HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; NeuroGazeta/1.0)",
     "Accept": "text/html,application/rss+xml,application/xml,*/*",
 }
+
+
+# ── Защита от «тихой» сборки без сети ──────────────────────────────────────────
+# Ошибка загрузки и «нет новых статей» иначе неотличимы: оба дают пустой список.
+# Если недоступна большая часть источников, это не новостной штиль, а проблема
+# окружения (урезанная сеть, блокировка, падение прокси). Публиковать такой
+# выпуск нельзя — этап 1 падает, run.sh шлёт алерт, self-heal-запуск повторит.
+MAX_FAILED_SHARE = float(os.environ.get("NEUROGAZETTE_MAX_FAILED_SOURCES") or 0.5)
+_failed_sources: set[str] = set()   # set.add потокобезопасен в CPython
 
 
 # ── HTTP ──────────────────────────────────────────────────────────────────────
@@ -58,6 +68,7 @@ def fetch_rss(source: dict) -> list[dict]:
         feed = feedparser.parse(resp.content)
     except Exception as e:
         log.warning("RSS %s — ошибка: %s", name, e)
+        _failed_sources.add(name)
         return []
 
     result = []
@@ -133,6 +144,7 @@ def scrape_page(source: dict) -> list[dict]:
         resp = _http_get(url)
     except Exception as e:
         log.warning("Scrape %s — ошибка: %s", name, e)
+        _failed_sources.add(name)
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -317,6 +329,18 @@ def main() -> None:
     scrape_state = load_scrape_state()
 
     raw_items = collect_all(sources, scrape_state)
+
+    failed = len(_failed_sources)
+    share = failed / len(sources) if sources else 0
+    log.info("Недоступны: %d из %d источников (%.0f%%, порог %.0f%%)",
+             failed, len(sources), share * 100, MAX_FAILED_SHARE * 100)
+    if share > MAX_FAILED_SHARE:
+        log.error(
+            "Недоступна большая часть источников — похоже на проблему сети, а не на тихий день. "
+            "Выпуск не собираю. Недоступны: %s", ", ".join(sorted(_failed_sources))
+        )
+        sys.exit(1)
+
     raw_items = deduplicate(raw_items)
     log.info("После дедупликации: %d статей", len(raw_items))
 
