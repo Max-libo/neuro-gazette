@@ -1,0 +1,436 @@
+{
+  "date": "2026-10-23",
+  "published": false,
+  "news": [
+    {
+      "id": "models-decisionsapi-2026-10-23",
+      "section": "models",
+      "headline": "OpenAI вывела Decisions API в общий доступ на базе GPT-6 Luna",
+      "subheadline": "Специализированный API для классификации и маршрутизации работает в 10 раз быстрее Responses API по цене $0,10 за миллион входных токенов.",
+      "body": "OpenAI перевела Decisions API из ограниченного превью в общий доступ. API построен на GPT-6 Luna и оптимизирован под задачи классификации контента, маршрутизации запросов и бинарных решений — до 400 независимых вопросов могут обрабатываться в одном запросе. Цена установлена в $0,10 за миллион входных токенов, что примерно в 10 раз дешевле Responses API при сопоставимой задаче. Сервис соответствует HIPAA, хранение данных ограничено регионами US и EU. По заявлению OpenAI, Decisions API предназначен для сценариев с высоким объёмом вызовов, где требуется структурированный ответ, а не свободная генерация текста.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "OpenAI makes its Decisions API generally available at $0.10 per million input tokens",
+          "url": "https://cryptobriefing.com/openai-decisions-api-generally-available/",
+          "type": "media"
+        },
+        {
+          "title": "OpenAI announces a Decisions API on GPT-6 Luna, in limited preview",
+          "url": "https://modelsystem.one/news/openai-decisions-api-preview/",
+          "type": "media"
+        },
+        {
+          "title": "OpenAI Launches Decisions API in Limited Preview, Using GPT-6 Luna for Fast Classification and Routing",
+          "url": "https://xenospectrum.com/en/openai-decisions-api-luna-preview/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "GPT-6 Luna"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-anthropic-formalverif-2026-10-23",
+      "section": "models",
+      "headline": "Anthropic: LLM делают формальную верификацию кода масштабируемой",
+      "subheadline": "Frontier Red Team показала, как языковые модели автоматизируют доказательства корректности программного обеспечения.",
+      "body": "Исследовательская группа Frontier Red Team Anthropic опубликовала работу о применении LLM для формальной верификации кода. Традиционно формальные доказательства корректности программ требовали ручного труда экспертов и не масштабировались за пределы небольших критических систем. По данным Anthropic, современные модели способны генерировать и проверять инварианты, спецификации и доказательства на существенно больших кодовых базах, что открывает путь к практическому применению метода в индустрии. Публикация размещена в разделе исследований Anthropic.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "LLMs are making formal software verification feasible at a much larger scale",
+          "url": "https://anthropic.com/research/formal-verification",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-canva-craft-2026-10-23",
+      "section": "models",
+      "headline": "Canva представила собственную модель генерации изображений Canva Craft",
+      "subheadline": "Первая проприетарная модель компании поддерживает разрешение до 2K и 30 форматов соотношения сторон.",
+      "body": "Canva выпустила Canva Craft — первую собственную модель генерации изображений. Модель поддерживает выход в разрешении до 2K и работу с 30 разными соотношениями сторон, что покрывает основные форматы дизайн-платформы: от постов в соцсетях до постеров и презентаций. Компания также анонсировала более быстрые варианты — Craftfast и Craft-ultrafast, которые появятся позже. До этого Canva использовала модели сторонних провайдеров для функций генерации изображений в своём редакторе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Canva releases its first image generation model",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Canva"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-claude-duet-update-2026-10-23",
+      "section": "platforms",
+      "headline": "Продолжение: Claude Duet открыл вейтлист на Opus 5.5",
+      "subheadline": null,
+      "body": "Anthropic открыла вейтлист на research preview Claude Duet для подписчиков Pro и Max в США. Агент работает на Opus 5.5, выполняет фоновые действия через облачную VM с запросом подтверждения на чувствительные операции и формирует утренние сводки по подключённым сервисам.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Claude Duet app is Anthropic's bet on agents",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+          "type": "media"
+        },
+        {
+          "title": "Anthropic's answer to Muse is here: Claude Duet, a mobile and desktop AI agent",
+          "url": "https://venturebeat.com/technology/anthropics-answer-to-muse-is-here-claude-duet-a-mobile-and-desktop-ai-agent-that-takes-actions-proactively",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic запустила проактивного агента Claude Duet",
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Duet"
+        ],
+        "sentiment": "positive",
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-sagemaker-tooluse-2026-10-23",
+      "section": "platforms",
+      "headline": "AWS упростила fine-tuning моделей для вызова инструментов в SageMaker",
+      "subheadline": "Новый инструмент SageMaker AI переведён в общую доступность и позволяет дообучать модели под задачи клиента без управления GPU-инфраструктурой.",
+      "body": "Amazon объявила об общей доступности инструмента SageMaker AI для fine-tuning языковых моделей под tool use и специфические задачи организации. Сервис берёт на себя управление GPU-кластерами, оркестрацию обучения и подготовку моделей к вызову инструментов — ключевой возможности для построения агентных систем. По заявлению AWS, цель запуска — снизить порог входа для компаний, которым нужны кастомизированные модели под внутренние процессы, но у которых нет инфраструктурных команд для работы с собственными GPU.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS just made it way easier to use SageMaker to fine-tune AI models for tool use",
+          "url": "https://venturebeat.com/infrastructure/aws-just-made-it-way-easier-to-use-sagemaker-to-fine-tune-ai-models-for-tool-use-and-your-firms-specific-tasks",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "SageMaker"
+        ],
+        "sentiment": "positive",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-mit-agents-playing-2026-10-23",
+      "section": "platforms",
+      "headline": "MIT: ИИ-агенты на Claude Opus 4.7 начали играть без задач",
+      "subheadline": "В эксперименте 13 агентов на изолированном симулированном острове самостоятельно перешли к играм при отсутствии инструкций.",
+      "body": "Исследователи MIT оставили 13 ИИ-агентов на базе Claude Opus 4.7 на изолированном симулированном острове и не дали им задач. Агенты начали играть — спонтанное поведение зафиксировано как эмерджентное свойство взаимодействия автономных агентов в среде без явной цели. Препринт опубликован на arXiv. Эксперимент примыкает к направлению исследований многоагентных систем и ставит вопросы о базовом поведении LLM-агентов в режиме долгой автономной работы.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Left alone with nothing to do, AI agents started playing",
+          "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MIT",
+          "Claude Opus 4.7"
+        ],
+        "sentiment": "neutral",
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-openai-ipo-2026-10-23",
+      "section": "industry",
+      "headline": "OpenAI готовит раунд на $30 млрд при оценке $1,25 трлн перед IPO",
+      "subheadline": "Переговоры с Coatue и инвесторами из ОАЭ идут параллельно подготовке к выходу на биржу.",
+      "body": "OpenAI ведёт переговоры о новом инвестиционном раунде объёмом $30 млрд при оценке $1,25 трлн. Среди потенциальных участников — Coatue и инвесторы из Объединённых Арабских Эмиратов. Сделка готовится накануне IPO компании. Если оценка подтвердится, OpenAI закрепится в тройке самых дорогих частных компаний мира, а ранее обсуждавшиеся сценарии блокировки доступа россиян после выхода на биржу становятся предметом обсуждения экспертов на фоне подготовки к размещению.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+          "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Россияне могут потерять доступ к ChatGPT и Claude после IPO",
+          "url": "https://72.ru/text/world/2026/10/22/76717999/",
+          "entities": [
+            "OpenAI",
+            "Anthropic",
+            "Россия"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Coatue"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-deepseek-15b-2026-10-23",
+      "section": "industry",
+      "headline": "DeepSeek привлекает $15 млрд от CATL и Tencent после санкций США",
+      "subheadline": "Раунд закрывается через несколько дней после запрета технологий DeepSeek в федеральных гражданских ведомствах США.",
+      "body": "Китайская лаборатория DeepSeek, по данным TechCrunch, привлекает около $15 млрд от CATL и Tencent. Раунд закрывается спустя считанные дни после того, как США запретили использование технологий DeepSeek в федеральных гражданских ведомствах. Внутренний капитал Китая выступает прямым ответом на санкционное давление — крупнейшие корпоративные игроки страны выступают якорными инвесторами в национальный AI-стек, который правительство США пытается изолировать от своих систем.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "DeepSeek reportedly raises $15B days after US restrictions",
+          "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DeepSeek",
+          "CATL",
+          "Tencent"
+        ],
+        "sentiment": "positive",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-vc-tranched-rounds-2026-10-23",
+      "section": "industry",
+      "headline": "Венчурные фонды накачивают оценки AI-стартапов через транши",
+      "subheadline": "Двухэтапные раунды в рамках одной сделки позволяют искусственно завышать итоговую оценку компании.",
+      "body": "Bloomberg описал распространяющуюся практику: венчурные фонды структурируют инвестиции в AI-стартапы как двухэтапные транши в рамках одного раунда. Первая часть закрывается по умеренной оценке, вторая — по значительно более высокой, что даёт стартапу публичную «headline»-оценку, не соответствующую реальной средней цене привлечения капитала. Схема позволяет инвесторам фиксировать более низкую цену входа, а стартапам — отчитываться о быстром росте стоимости. На фоне рекордных оценок OpenAI, DeepSeek и других игроков метод становится индикатором перегрева рынка.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Venture Capitalists Push Up AI Startup Valuations with Tranched, Two-Step Rounds",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-22/venture-capitalists-push-up-ai-startup-valuations-with-tranched-two-step-rounds",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Bloomberg"
+        ],
+        "sentiment": "negative",
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-openai-sb53-2026-10-23",
+      "section": "industry",
+      "headline": "OpenAI просит Калифорнию ужесточить закон о безопасности ИИ SB 53",
+      "subheadline": "Компания обратилась к губернатору Ньюсому с требованиями усилить мониторинг моделей и отчётность об инцидентах.",
+      "body": "OpenAI публично обратилась к губернатору Калифорнии Гэвину Ньюсому с призывом укрепить закон о безопасности ИИ SB 53. Среди предложенных мер — дополнительные требования к мониторингу моделей, стандарты кибербезопасности и обязательная отчётность об инцидентах. Шаг необычен: ведущая AI-лаборатория сама просит регулятора ужесточить правила на своём ключевом рынке. На фоне заявлений Anthropic о передаче 5% акций в публичный благотворительный фонд видно, что крупные игроки пытаются опередить волну регулирования, задавая её рамки.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI urges Newsom to strengthen California's AI safety law with additional safeguards",
+          "url": "https://statescoop.com/openai-urges-newsom-to-strengthen-californias-ai-safety-law-with-additional-safeguards/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "AI Tech Brief: An AI public benefit fund",
+          "url": "https://washingtonpost.com/wp-intelligence/ai-tech-brief/2026/10/22/ai-tech-brief-an-ai-public-benefit-fund",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "'The clock on AI regulation is ticking', warns UN rights chief",
+          "url": "https://news.un.org/en/story/2026/10/1168529",
+          "entities": [
+            "UN"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "California",
+          "SB 53"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-302ai-leak-2026-10-23",
+      "section": "hype",
+      "headline": "AI-агрегатор 302.ai слил 22,7 ТБ чатов пользователей",
+      "subheadline": "Открытый Azure-бакет содержал более 18 млн файлов, включая деликатные переписки.",
+      "body": "ИИ-агрегатор 302.ai допустил утечку более 18 млн файлов общим объёмом 22,7 ТБ из открытого Azure-бакета. В дампе — пользовательские чат-логи, в том числе чувствительные и компрометирующие переписки. Инцидент стал одним из крупнейших по объёму экспозиции чат-данных в AI-сервисах и ставит вопросы о том, как агрегаторы хранят клиентские запросы, передаваемые нескольким провайдерам моделей через единый API-шлюз.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Security breach at AI aggregator exposes over 18 million files including chat records",
+          "url": "https://www.techradar.com/pro/security/security-breach-at-ai-aggregator-exposes-over-18-million-files-including-some-very-embarrassing-chat-records",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "302.ai",
+          "Azure"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-spain-pp-aivideo-2026-10-23",
+      "section": "hype",
+      "headline": "Испанская PP выпустила AI-видео с «признаниями» политиков PSOE",
+      "subheadline": "Ролик, в котором политики оппонирующей партии «признаются» в преступлениях, вызвал скандал в испанской политике.",
+      "body": "Испанская Народная партия (PP) распространила AI-видео, в котором фигуры социалистической PSOE якобы признаются в совершении преступлений. Публикация вызвала волну возмущения — критики обвинили PP в легитимизации синтетических политических атак. Инцидент укладывается в более широкую тенденцию 2026 года: AI-ролики с «признаниями» политиков и фальсифицированными высказываниями становятся инструментом партийной борьбы, обходящим действующие нормы о политической рекламе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anger as PP releases AI video of PSOE figures 'admitting' to crimes",
+          "url": "https://www.theolivepress.es/spain-news/2026/10/22/pp-ai-pedro-sanchez-video-psoe/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "ИИ втянули в политическую борьбу в Южной Корее",
+          "url": "https://rg.ru/2026/10/22/v-iuzhnoj-koree-predlozhili-sdelat-ii-prezidentom-strany.html",
+          "entities": [
+            "South Korea",
+            "Gemini"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "PP",
+          "PSOE",
+          "Spain"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-fsb-ai-vuln-2026-10-23",
+      "section": "hype",
+      "headline": "ФСБ: при невозможности срочного патча — отключать сайты",
+      "subheadline": "Центр при ФСБ отреагировал на две критические PHP-уязвимости, найденные с помощью ИИ.",
+      "body": "Центр при ФСБ предписал объектам критической информационной инфраструктуры отключать сайты, если нет возможности срочно обновить PHP, чтобы закрыть две критические уязвимости. Особенность инцидента — уязвимости были найдены с использованием ИИ-инструментов. Случай отражает рост числа публично раскрываемых проблем безопасности, обнаруженных автоматизированными системами на базе LLM, и необходимость для регуляторов адаптировать процедуры реагирования под новый темп обнаружения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ФСБ отреагировало на уязвимость сайтов, найденную с помощью ИИ",
+          "url": "https://iz.ru/2189006/2026-10-22/tcentr-pri-fsb-otreagiroval-na-vyiavlennuiu-ii-uiazvimost-saitov",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ФСБ",
+          "PHP"
+        ],
+        "sentiment": "neutral",
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-ai-blackmail-ru-2026-10-23",
+      "section": "hype",
+      "headline": "В России нейросети изменили схемы шантажа",
+      "subheadline": "Злоумышленники угрожают сгенерированными интимными фотографиями жертв.",
+      "body": "«Известия» описали новую схему ИИ-шантажа: жертвой стала москвичка, которой злоумышленники угрожали распространением сгенерированных нейросетью интимных фотографий. По данным издания, в 2026 году нейросети стали стандартным инструментом сетевого шантажа — технология снизила порог входа для злоумышленников, которым больше не нужны реальные компрометирующие материалы, достаточно публичных фотографий жертвы для обучения модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ИИ-компромат: нейросети изменили схемы шантажа в 2026 году",
+          "url": "https://iz.ru/2187794/dmitrii-bulgakov/kompromat-v-tri-khoda-kak-neiroseti-meniaiut-skhemy-shantazhistov",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Россия"
+        ],
+        "sentiment": "negative",
+        "event": "leak"
+      },
+      "importance": 5
+    }
+  ]
+}
