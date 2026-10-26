@@ -31,9 +31,11 @@ After either method, open `docs/index.html` in a browser to see the result.
 | Stage | Script | Input | Output | Model |
 |-------|--------|-------|--------|-------|
 | 1 | `stage1_collect.py` | `sources.yaml` | `{date}_raw.json` | — |
-| 2 | `stage2_search.py` | `sources.yaml` search_queries | `{date}_search.json` | Sonnet (WebSearch tool via CLI) |
-| 3 | `stage3_filter.py` | `_raw.json` + `_search.json` | `{date}_filtered.txt` | Sonnet (via CLI) |
-| 4 | `stage4_edit.py` | `_filtered.txt` + `_search.json` | `{date}.json`, `latest.json` | Opus (via CLI) |
+| 2 | `stage2_search.py` | `sources.yaml` search_queries | `{date}_search.json` | Sonnet 5.5 (WebSearch tool via CLI) |
+| 3 | `stage3_filter.py` | `_raw.json` + `_search.json` | `{date}_filtered.txt` | Sonnet 5.5 (via CLI) |
+| 4 | `stage4_edit.py` | `_filtered.txt` + `_search.json` | `{date}.json`, `latest.json` | Opus 5.5 (via CLI) |
+
+Модели заданы в одном месте — `MODEL_FAST` / `MODEL_EDIT` в `common.py`; переопределяются переменными `NEUROGAZETTE_MODEL_FAST` / `_EDIT` / `_PING` (в Actions — Settings → Variables, без правки кода). Healthcheck в `run.sh` — Haiku 5.5. Нужен Claude Code CLI ≥ 2.1.293 (в Actions ставится свежий; на маке — `claude update`).
 
 After stage 4, `generate_preview.py` builds OG-preview HTML in `docs/preview/`, then `run.sh` commits `docs/data/` and `docs/preview/` and optionally notifies Telegram.
 
@@ -47,7 +49,7 @@ Parallel HTTP fetch (ThreadPoolExecutor, 10 workers) from all `sources` in `sour
 - `rss` — parsed with feedparser
 - `scrape` — HTML parsed with BeautifulSoup; tries JSON-LD structured data first, falls back to `h1/h2/h3` scan
 
-Items filtered by 24h window, deduplicated by URL and title. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200` — but up to `RAW_CONTENT_RESERVE=40` places are guaranteed to `section: content` and `section: art` sources (`RAW_ART_RESERVE=10` of them to `art`) (they are usually priority 2–3 and would otherwise be cut before filtering).
+Items filtered by 24h window, deduplicated by URL and title. **Защита от сборки без сети:** если не загрузилось больше половины источников (`NEUROGAZETTE_MAX_FAILED_SOURCES`, по умолчанию 0.5), этап 1 падает без записи `_raw.json` — `run.sh` шлёт алерт, self-heal-запуск повторяет. Так урезанная сеть (облачная сессия, сбой прокси) не превращается в тощий выпуск. Results sorted by `priority` (1=highest), truncated to `RAW_LIMIT=200` — but up to `RAW_CONTENT_RESERVE=40` places are guaranteed to `section: content` and `section: art` sources (`RAW_ART_RESERVE=10` of them to `art`; they are usually priority 2–3 and would otherwise be cut before filtering).
 
 Optional per-source `keywords:` list — only items whose title/summary match are kept. Used for general art media where AI is a small share. `"нейросет*"` = prefix match, `"AI"` = whole word.
 

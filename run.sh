@@ -83,7 +83,7 @@ if command -v timeout &>/dev/null; then TIMEOUT_CMD=(timeout 30)
 elif command -v gtimeout &>/dev/null; then TIMEOUT_CMD=(gtimeout 30)
 else TIMEOUT_CMD=()
 fi
-HEALTH_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model claude-haiku-4-5-20251001 'ping' 2>&1) || HEALTH_RC=$?
+HEALTH_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model "${NEUROGAZETTE_MODEL_PING:-claude-haiku-5-5}" 'ping' 2>&1) || HEALTH_RC=$?
 HEALTH_RC=${HEALTH_RC:-0}
 if [ "$HEALTH_RC" -ne 0 ] || [[ "$HEALTH_OUT" == *"403"* ]] || [[ "$HEALTH_OUT" == *"Failed to authenticate"* ]]; then
   log "Healthcheck: claude CLI не авторизован. Ответ: ${HEALTH_OUT:0:200}"

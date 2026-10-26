@@ -12,6 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import (
+    MODEL_FAST,
     DATA_DIR, TODAY_STR, WINDOW_STR,
     load_recent_issues, get_prev_headlines,
     run_claude, log,
@@ -104,7 +105,7 @@ def main() -> None:
     prompt = build_filter_prompt(articles, search_texts, prev_headlines)
     text = run_claude(
         prompt,
-        model="claude-sonnet-4-6",
+        model=MODEL_FAST,
     )
 
     if not text.strip():
