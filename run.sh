@@ -91,7 +91,18 @@ if [ "$HEALTH_RC" -ne 0 ] || [[ "$HEALTH_OUT" == *"403"* ]] || [[ "$HEALTH_OUT" 
   trap - ERR
   exit 0
 fi
-log "Healthcheck: OK"
+# Ping на Haiku проходит и на старом CLI, а модели этапов 2–4 — нет
+# (27.10: «Claude Code 2.1.197 does not support this model»). Проверяем
+# модель редактуры сразу, а не через 30 минут работы на этапе 4.
+EDIT_MODEL=$(cd "$REPO/scripts/pipeline" && python3 -c "from common import MODEL_EDIT; print(MODEL_EDIT)")
+EDIT_OUT=$(${TIMEOUT_CMD[@]+"${TIMEOUT_CMD[@]}"} claude --print --model "$EDIT_MODEL" 'ping' 2>&1) || true
+if [[ "$EDIT_OUT" == *"does not support this model"* ]] || [[ "$EDIT_OUT" == *"API Error: 4"* ]]; then
+  log "Healthcheck: модель $EDIT_MODEL недоступна. Ответ: ${EDIT_OUT:0:300}"
+  tg_send_personal "🧩 Нейрогазета: модель $EDIT_MODEL недоступна в Claude CLI $(claude --version 2>/dev/null | head -1). Ответ: ${EDIT_OUT:0:200}"
+  trap - ERR
+  exit 1
+fi
+log "Healthcheck: OK ($(claude --version 2>/dev/null | head -1), модель $EDIT_MODEL отвечает)"
 
 # ── Этап 1: Сбор RSS/scrape ───────────────────────────────────────────────────
 if $FROM_RAW || $FROM_FILTER; then

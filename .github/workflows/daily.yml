@@ -94,8 +94,21 @@ jobs:
       - name: Установить Claude Code CLI
         if: steps.check.outputs.exists == 'false'
         run: |
-          npm install -g @anthropic-ai/claude-code
-          claude --version
+          # На раннере может стоять старый claude из образа, и он оказывается
+          # раньше в PATH, чем свежий из npm (27.10 так подхватился 2.1.197,
+          # который не знает моделей 5.5). Ставим явно latest и кладём его
+          # каталог первым в PATH для следующих шагов.
+          npm install -g @anthropic-ai/claude-code@latest
+          NPM_BIN="$(npm prefix -g)/bin"
+          echo "$NPM_BIN" >> "$GITHUB_PATH"
+          echo "Все claude в PATH:"; which -a claude || true
+          VER=$("$NPM_BIN/claude" --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+          MIN=2.1.293
+          echo "Claude Code $VER (нужно ≥ $MIN)"
+          if [ "$(printf '%s\n%s\n' "$MIN" "$VER" | sort -V | head -1)" != "$MIN" ]; then
+            echo "::error::Claude Code $VER старше $MIN — модели 5.5 не заработают"; exit 1
+          fi
+          echo "::notice::Claude Code $VER"
 
       - name: Собрать и опубликовать выпуск
         if: steps.check.outputs.exists == 'false'
