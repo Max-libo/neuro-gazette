@@ -1,165 +1,190 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "published": false,
   "news": [
     {
-      "id": "industry-google-tpu-meta-2026-10-26",
+      "id": "industry-anthropic-s1-ipo",
       "section": "industry",
-      "headline": "Google впервые продала TPU внешнему заказчику — ускорители встанут в дата-центрах Meta",
-      "subheadline": "Собственные чипы Google выходят за пределы Google Cloud и попадают к одному из крупнейших покупателей GPU",
-      "body": "До этой сделки TPU были доступны исключительно через Google Cloud: внешним заказчикам предлагали арендовать мощности, но не ставить железо себе. Теперь Meta размещает TPU в собственной инфраструктуре под AI-нагрузки — это первая публично подтверждённая внешняя установка чипов Google. Аналитики, цитируемые Tom's Hardware, называют это прямым ударом по позиции Nvidia: Meta входит в число крупнейших покупателей H-линейки, и перевод части нагрузок на TPU сокращает её зависимость от одного поставщика. Параллельно Google разворачивает коммерциализацию TPU как самостоятельного продукта, а не только как сервиса своего облака.",
+      "headline": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
+      "subheadline": "В форме S-1 компания впервые раскрыла финансы. Листинг запланирован на Nasdaq под тикером ANT.",
+      "body": "Выручка Anthropic за первое полугодие составила $16,3 млрд — примерно в 14 раз больше, чем годом ранее. Убыток за тот же период — $80,7 млрд, по большей части неденежный. В S-1 также описаны растущие обязательства компании, прежде всего по закупке вычислительных мощностей. Аналитики, которых цитирует NPR, считают, что размещение может стать одним из крупнейших в истории. По данным GuruFocus, в сделке участвует Goldman Sachs. TechCrunch обращает внимание на раздел о стратегии удержания корпоративных клиентов. The Verge — на энергетику: дата-центры для Anthropic работают в том числе на газе, и в заявке это названо климатическим риском.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Google's TPUs now run in Meta's data centers — sold to external customers for the first time",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/googles-tpus-for-ai-workloads-now-run-in-at-metas-data-centers-tpus-sold-to-external-customers-for-the-first-time-threaten-nvidias-market-dominance",
+          "title": "Anthropic opens books on AI's explosive growth and staggering costs",
+          "url": "https://usnews.com/news/top-news/articles/2026-10-26/anthropic-opens-books-on-ais-explosive-growth-and-staggering-costs",
           "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google",
-          "Meta",
-          "TPU",
-          "NVIDIA"
-        ],
-        "entity_sentiment": {
-          "Google": "positive",
-          "Meta": "positive",
-          "TPU": "positive",
-          "NVIDIA": "negative"
         },
-        "sentiment": "positive",
-        "event": "partnership"
-      },
-      "importance": 9
-    },
-    {
-      "id": "models-gpt6-astra-physics-2026-10-26",
-      "section": "models",
-      "headline": "GPT-6 Astra решил 49 из 50 неопубликованных задач по теоретической физике",
-      "subheadline": "В исследовании Harvard, DeepMind и TIFR модель набрала 98% на TheoPhysEval и в ряде случаев указала на ошибки авторов",
-      "body": "TheoPhysEval — набор из 50 задач, составленных физиками-теоретиками Harvard, Google DeepMind и индийского TIFR и до публикации нигде не выкладывавшихся, чтобы исключить попадание в обучающие корпуса. GPT-6 Astra решил 49 из 50 (98%), оставшись единственной моделью с результатом выше 90%; в ряде задач система не просто воспроизвела эталонное решение, а обнаружила ошибки в выкладках самих авторов. Исследование финансируется и соавторствуется DeepMind и позиционируется как попытка измерить, насколько LLM умеют вести исследовательскую, а не экзаменационную физику.",
-      "tier": "regular",
-      "sources": [
         {
-          "title": "AI agents solve 49 of 50 unpublished physics problems in DeepMind-backed study",
-          "url": "https://cryptobriefing.com/ai-agents-solve-49-of-50-physics-problems/",
+          "title": "Anthropic opens its books for Wall Street, showing record revenue and mounting obligations",
+          "url": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/",
           "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "GPT-6",
-          "Harvard",
-          "Google DeepMind",
-          "TIFR"
-        ],
-        "entity_sentiment": {
-          "OpenAI": "positive",
-          "GPT-6": "positive",
-          "Harvard": "neutral",
-          "Google DeepMind": "neutral",
-          "TIFR": "neutral"
         },
-        "sentiment": "positive",
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "models-nanbeige-33b-2026-10-26",
-      "section": "models",
-      "headline": "Nanbeige открыла агентную кодинг-модель Nanbeige4.3-33B",
-      "subheadline": "33-миллиардная MoE-модель заточена под инструмент-колы и end-to-end инженерные задачи",
-      "body": "Nanbeige4.3-33B позиционируется как open-weight агентная модель для разработки: авторы заявляют поддержку длинных цепочек вызовов инструментов, работу с репозиториями и end-to-end инженерными задачами, а не просто автодополнение. Веса и карточка модели опубликованы под открытой лицензией, что продолжает тренд китайских лабораторий (Moonshot, Meituan, DeepSeek), выпускающих агентные кодинг-модели в открытом доступе быстрее западных конкурентов.",
-      "tier": "regular",
-      "sources": [
         {
-          "title": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
-          "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Nanbeige",
-          "Nanbeige4.3-33B"
-        ],
-        "entity_sentiment": {
-          "Nanbeige": "positive",
-          "Nanbeige4.3-33B": "positive"
-        },
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "models-tokengate-prefill-2026-10-26",
-      "section": "models",
-      "headline": "Stanford и Berkeley представили TokenGate — ускорение префилла длинного контекста до 11,3×",
-      "subheadline": "Обучаемый механизм пропуска токенов на этапе attention сокращает затраты на обработку длинных окон без потери качества",
-      "body": "TokenGate — учёный механизм gated attention, который на этапе префилла длинного контекста динамически решает, какие токены пропускать мимо дорогих attention-операций. Авторы сообщают об ускорении префилла до 11,3× на длинных окнах по сравнению со стандартным full attention и близком качестве на бенчмарках long-context reasoning. Работа закрывает дыру между дешёвой генерацией (где KV-кеш решает) и дорогим первым проходом, который до сих пор оставался узким местом для документов на сотни тысяч токенов.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "TokenGate: Token-Gated Attention Makes Long-Context Prefill Up to 11.3x Faster",
-          "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Stanford",
-          "UC Berkeley",
-          "TokenGate"
-        ],
-        "entity_sentiment": {
-          "Stanford": "positive",
-          "UC Berkeley": "positive",
-          "TokenGate": "positive"
-        },
-        "sentiment": "positive",
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "models-grok-odyssey-2026-10-26",
-      "section": "models",
-      "headline": "xAI выложил первые 7 минут AI-сгенерированной «Одиссеи» от Grok Imagine",
-      "subheadline": "Grok и Wonder Studios показали пилотный эпизод полностью сгенерированной экранизации Гомера",
-      "body": "xAI совместно с Wonder Studios опубликовал первый 7-минутный фрагмент экранизации «Одиссеи», полностью сгенерированной Grok Imagine — продуктом компании для видеогенерации. По сообщению TechCrunch, это анонс пилота большого AI-сериала; Variety отмечает смешанную реакцию критиков — к качеству изображения и анимации претензий меньше, чем к драматургии и работе со звуком. Релиз показывает, как Маск использует Grok Imagine, чтобы догонять Sora 2 и Seedance 2.5 на рынке длинной видеогенерации.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Grok releases the first seven minutes of its AI-generated 'Odyssey'",
-          "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+          "title": "Anthropic IPO: S-1 filing, live updates",
+          "url": "https://cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Elon Musk's Grok Releases First AI-Generated 'Odyssey' Episode",
-          "url": "https://variety.com/2026/film/news/elon-musks-grok-ai-generated-odyssey-1236930662/",
+          "title": "Anthropic's IPO filing reveals its strategy for keeping enterprise customers hooked",
+          "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
           "entities": [
-            "xAI",
-            "Grok Imagine",
-            "Wonder Studios"
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Five weird details from Anthropic's IPO filing",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Anthropic is burning gas to feed the AI boom",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Will the real Anthropic please stand up",
+          "url": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "AI giant Anthropic files for an IPO that could break records",
+          "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "Goldman Sachs drives major AI financing deals amid $210 billion surge",
+          "url": "https://www.gurufocus.com/news/9143580/goldman-sachs-drives-major-ai-financing-deals-amid-210-billion-surge",
+          "entities": [
+            "Goldman Sachs"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Об IPO Anthropic писали NPR, CNBC, US News, The Decoder, TechCrunch, The Verge и MIT Technology Review — сведено в одну новость",
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Goldman Sachs"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Goldman Sachs": "positive"
+        },
+        "event": "finance"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-gpt-6-1-terra",
+      "section": "models",
+      "headline": "OpenAI выпустила GPT-6.1 Terra: в API вдвое дешевле, агенты работают втрое быстрее",
+      "subheadline": "Модель среднего класса для управления компьютером, визуальных задач и кода пришла на смену GPT-5.6 Terra.",
+      "body": "В API модель называется gpt-6.1-terra и стоит $1 за 1 млн входных токенов и $5 за 1 млн выходных, контекстное окно — 1,05 млн токенов. Это примерно вдвое дешевле GPT-6.1 Sol. В ChatGPT Work и Codex модель доступна подписчикам Plus, Pro, Enterprise и Edu. По оценке Artificial Analysis, Terra набирает на 6 пунктов больше, чем GPT-5.6 Terra, в Intelligence Index, а одна задача обходится в $0,40 вместо $1,40. Галлюцинирует модель заметно реже. The Next Web сообщает, что на низком уровне рассуждения доля ошибок снизилась с 53,6% до 16,7%.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "GPT-6.1 Terra: быстрее и вдвое дешевле для агентных задач",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "GPT-6.1 Terra pushes the cost efficiency frontier",
+          "url": "https://artificialanalysis.ai/articles/gpt-6-1-terra-pushes-the-cost-efficiency-frontier",
+          "entities": [
+            "Artificial Analysis",
+            "GPT-6.1 Terra"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "OpenAI выпустила GPT-6.1 Terra для повседневной работы за компьютером",
+          "url": "https://thenextweb.com/news/openai-gpt-6-1-terra-computer-use",
+          "entities": [
+            "OpenAI",
+            "GPT-6.1 Terra"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "OpenAI launches GPT-6.1 Terra for faster, better-performing AI agents at half the price",
+          "url": "https://siliconangle.com/2026/10/26/openai-launches-gpt-6-1-terra-for-faster-better-performing-ai-agents-at-half-the-price/",
+          "entities": [
+            "OpenAI",
+            "GPT-6.1 Terra"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "ChatGPT's expanding world of work",
+          "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+          "entities": [
+            "OpenAI",
+            "ChatGPT"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "О релизе также писали SiliconANGLE, The Next Web, BleepingComputer, Neowin, MarkTechPost и gHacks",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "GPT-6.1 Terra",
+          "ChatGPT",
+          "Codex"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-6.1 Terra": "positive",
+          "ChatGPT": "positive",
+          "Codex": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-code2video-aa",
+      "section": "models",
+      "headline": "Claude Opus 5.5 занял первое место среди 27 моделей в бенчмарке Code2Video-AA",
+      "subheadline": "Artificial Analysis проверяет, насколько хорошо модели собирают маркетинговые видео из кода.",
+      "body": "В бенчмарке 114 дизайн-брифов. Модели собирают ролики на HTML (HyperFrames) и GSAP, затем результаты оценивают вслепую попарным сравнением. У Claude Opus 5.5 рейтинг Elo 1536, и модель впереди по всем осям оценки.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Code2Video-AA benchmark ranks Claude Opus 5.5 first among 27 AI models at making marketing videos from code",
+          "url": "https://cryptobriefing.com/code2video-aa-benchmark-claude-opus-leads/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Artificial Analysis' Code2Video-AA Benchmark Shows Claude Opus 5.5 Dominates AI Video Coding",
+          "url": "https://alphasignal.ai/news/artificial-analysis-code2video-aa-benchmark-shows-claude-opus-5-5-dominates-ai",
+          "entities": [
+            "Artificial Analysis",
+            "Claude Opus 5.5"
           ],
           "sentiment": "positive"
         }
@@ -168,223 +193,87 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "xAI",
-          "Grok Imagine",
-          "Wonder Studios"
+          "Artificial Analysis",
+          "Claude Opus 5.5",
+          "Anthropic"
         ],
-        "entity_sentiment": {
-          "xAI": "positive",
-          "Grok Imagine": "positive",
-          "Wonder Studios": "positive"
-        },
-        "sentiment": "neutral",
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "models-ai21-liftbench-2026-10-26",
-      "section": "models",
-      "headline": "AI21 выпустила LIFT-Bench — бенчмарк против reward hacking в RL-обучении",
-      "subheadline": "Каждое ограничение в тестах привязано к конкретному разделу документа, чтобы модель нельзя было оптимизировать «вокруг» задачи",
-      "body": "LIFT-Bench оценивает способность модели следовать инструкциям, но с ключевым отличием: каждое ограничение жёстко привязано к конкретному разделу исходного документа. Это закрывает типичную лазейку RL-обучения, когда модель выучивает поверхностные признаки формата награды вместо реального следования спецификации. AI21 позиционирует бенчмарк как инструмент для оценки RLHF/RLAIF-пайплайнов на устойчивость к reward hacking.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "AI21 Labs Releases LIFT-Bench to Curb Reward Hacking in RL Training",
-          "url": "https://www.unite.ai/ai21-labs-releases-lift-bench-to-curb-reward-hacking-in-rl-training/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "AI21 Labs",
-          "LIFT-Bench"
-        ],
-        "entity_sentiment": {
-          "AI21 Labs": "positive",
-          "LIFT-Bench": "positive"
-        },
         "sentiment": "positive",
+        "entity_sentiment": {
+          "Artificial Analysis": "neutral",
+          "Claude Opus 5.5": "positive",
+          "Anthropic": "positive"
+        },
         "event": "research"
       },
       "importance": 5
     },
     {
-      "id": "models-carbon-x-details-2026-10-26",
+      "id": "models-nace-drex",
       "section": "models",
-      "headline": "Продолжение: Carbon-X — 14,8 млрд параметров и совместное обучение на ДНК и естественном языке",
-      "subheadline": null,
-      "body": "Hugging Face раскрыла детали Carbon-X: модель на 14,8 млрд параметров обучена одновременно на ДНК-последовательностях и естественном языке — компания называет это первой публичной LLM с таким совместным претрейном.",
+      "headline": "Nace AI выпустила Drex — поисковую модель для AI-агентов",
+      "subheadline": "В BrowseComp-Plus модель набирает 92,05%.",
+      "body": "Такой результат Drex показывает в среднем за 12,6 поисковых запроса на задачу. Модель рассчитана на агентов: ищет информацию и собирает её в ответ за минимальное число обращений к поиску.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Hugging Face Releases Carbon-X, a 14B Open DNA Language Model",
-          "url": "https://www.marktechpost.com/2026/10/25/hugging-face-carbon-x-14b-dna-language-model/",
+          "title": "Nace AI Releases Drex for Search for AI Agents: 92.05% on BrowseComp-Plus With 12.6 Search Calls",
+          "url": "https://www.marktechpost.com/2026/10/26/nace-ai-releases-drex-for-search-for-ai-agents/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Hugging Face представила Carbon-X для работы с ДНК",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "Hugging Face",
-          "Carbon-X"
+          "Nace AI",
+          "Drex"
         ],
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Hugging Face": "neutral",
-          "Carbon-X": "neutral"
+          "Nace AI": "positive",
+          "Drex": "positive"
         },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-ai-text-patterns",
+      "section": "models",
+      "headline": "Исследователи нашли шесть приёмов, из-за которых AI-текст утомительно читать",
+      "subheadline": "Работа описывает повторяющиеся стилистические шаблоны в текстах языковых моделей.",
+      "body": "Авторы выделили шесть устойчивых паттернов, которые делают сгенерированный текст узнаваемым и тяжёлым для чтения. Подробно работу разбирает The Decoder.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Researchers find six patterns that make AI text so exhausting to read",
+          "url": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
         "sentiment": "neutral",
-        "event": "statement"
+        "entity_sentiment": {},
+        "event": "research"
       },
       "importance": 5
     },
     {
-      "id": "platforms-anthropic-oss-scanner-2026-10-26",
+      "id": "platforms-openai-dots",
       "section": "platforms",
-      "headline": "Anthropic запустила бесплатный OSS Scanner — AI-поиск уязвимостей в open source",
-      "subheadline": "Инструмент сканирует зависимости и исходники, используя Claude для триажа и объяснения находок",
-      "body": "OSS Scanner — публичный бесплатный сервис Anthropic для сканирования открытых репозиториев на уязвимости. В отличие от классических SAST-инструментов, он использует Claude для триажа найденных проблем: модель классифицирует находки по эксплуатабельности, фильтрует ложные срабатывания и формирует объяснение на естественном языке. Запуск продолжает линию «безопасность как продукт Anthropic» после ранее выпущенного sandbox-runtime для изоляции агентов.",
+      "headline": "OpenAI сделала из своих инструментов для кода постоянно работающего ассистента dots",
+      "subheadline": "TechCrunch рассказывает, как из технологий для программистов вырос персональный помощник.",
+      "body": "По данным TechCrunch, dots построен на тех же наработках, что и кодинг-инструменты OpenAI, но рассчитан не на работу с кодом, а на повседневные задачи пользователя. Ассистент работает постоянно, без отдельного запуска под каждую задачу.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Anthropic Launches OSS Scanner, a Free AI Vulnerability Scanner",
-          "url": "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "OSS Scanner",
-          "Claude"
-        ],
-        "entity_sentiment": {
-          "Anthropic": "positive",
-          "OSS Scanner": "positive",
-          "Claude": "positive"
-        },
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-meituan-longcat-2026-10-26",
-      "section": "platforms",
-      "headline": "Meituan открыла reasoning-модель LongCat-Flash-Thinking с бесплатным API",
-      "subheadline": "Китайский фудтех-гигант вслед за Moonshot и DeepSeek выпускает собственную open-weight модель рассуждений",
-      "body": "LongCat-Flash-Thinking — reasoning-модель Meituan, которую компания выложила в открытом доступе и одновременно открыла бесплатный публичный API. По заявлениям Meituan, модель конкурирует с GPT-5 на сложных задачах с длинными цепочками рассуждений. Релиз подтверждает тренд, при котором крупные непрофильные китайские компании (фудтех, электронная коммерция) выпускают собственные фронтир-модели в open source как часть продуктовой стратегии, а не только исследований.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Chinese food delivery firm Meituan's open-source AI model LongCat-Flash",
-          "url": "https://venturebeat.com/technology/chinese-food-delivery-firm-meituans-open-source-ai-model-longcat-flash",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Meituan",
-          "LongCat-Flash-Thinking"
-        ],
-        "entity_sentiment": {
-          "Meituan": "positive",
-          "LongCat-Flash-Thinking": "positive"
-        },
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-google-ml-drift-2026-10-26",
-      "section": "platforms",
-      "headline": "Google ML Drift ускоряет on-device инференс на разных GPU",
-      "subheadline": "Движок автоматически подбирает оптимальные ядра под архитектуру конкретного мобильного или настольного GPU",
-      "body": "ML Drift — новый рантайм Google для локального инференса, который на этапе загрузки модели профилирует целевой GPU и подбирает оптимальный набор ядер. По данным Google, это даёт заметное ускорение на разнородных мобильных и десктопных GPU без необходимости вручную собирать билды под каждого вендора. Движок позиционируется как замена универсальным рантаймам, которые теряют производительность на нестандартных конфигурациях.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Google ML Drift Accelerates On-Device AI Inference Across Diverse GPUs",
-          "url": "https://www.infoq.com/news/2026/10/google-ml-drift/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google",
-          "ML Drift"
-        ],
-        "entity_sentiment": {
-          "Google": "positive",
-          "ML Drift": "positive"
-        },
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-oci-smart-router-2026-10-26",
-      "section": "platforms",
-      "headline": "Oracle запустил Smart Model Router и Model Discovery API в OCI",
-      "subheadline": "Кросс-региональный маршрутизатор инференса и программный каталог моделей",
-      "body": "Oracle Cloud Infrastructure добавил два компонента для работы с LLM на уровне инфраструктуры: Smart Model Router автоматически выбирает регион и инстанс под запрос с учётом задержки и загрузки, а Model Discovery API даёт программный доступ к каталогу доступных моделей и их параметров без обращения к консоли.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "What's new in Oracle AI, October 2026",
-          "url": "https://blogs.oracle.com/ai-and-datascience/whats-new-in-oracle-ai-october-2026",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Oracle",
-          "OCI",
-          "Smart Model Router",
-          "Model Discovery API"
-        ],
-        "entity_sentiment": {
-          "Oracle": "positive",
-          "OCI": "positive",
-          "Smart Model Router": "positive",
-          "Model Discovery API": "positive"
-        },
-        "sentiment": "positive",
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-codex-cli-0164-2026-10-26",
-      "section": "platforms",
-      "headline": "OpenAI Codex CLI 0.164 добавил пресеты и inline-разрешения",
-      "subheadline": "Десять слотов /presets для сохранения промптов и профилей, inline-аргументы для /model и /permissions",
-      "body": "В Codex CLI 0.164.0 появилось десять именованных слотов /presets, в которые можно сохранять связки «промпт + модель + профиль разрешений» и переключаться между ними одной командой. Аргументы /model и /permissions теперь принимаются inline, без интерактивного диалога — это упрощает скриптование и работу в CI, где раньше приходилось либо писать expect-обёртки, либо вручную править конфиг перед запуском.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Codex CLI v0.164 adds /presets and inline /permissions arguments",
-          "url": "https://dev.to/aicoding-guide/codex-cli-v0164-adds-presets-and-inline-permissions-arguments-for-permission-profiles-4deb",
+          "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+          "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
           "type": "media"
         }
       ],
@@ -394,59 +283,92 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "Codex"
+          "dots"
         ],
+        "sentiment": "positive",
         "entity_sentiment": {
           "OpenAI": "positive",
-          "Codex": "positive"
+          "dots": "positive"
         },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-ios-27-2-siri",
+      "section": "platforms",
+      "headline": "Apple выпустила iOS 27.2 с крупным обновлением Siri",
+      "subheadline": "Кроме новых AI-функций Siri, в FaceTime теперь можно снимать двумя камерами одновременно.",
+      "body": "Главное в iOS 27.2 — расширенные AI-возможности Siri. Вторая заметная функция обновления — видеозвонки в FaceTime с фронтальной и основной камер одновременно.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Apple's iOS 27.2 update offers major Siri AI upgrades, dual camera support for FaceTime",
+          "url": "https://www.zdnet.com/tech/apple-ios-27-2-update-siri-ai-facetime-dual-cameras/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple",
+          "iOS",
+          "Siri"
+        ],
         "sentiment": "positive",
+        "entity_sentiment": {
+          "Apple": "positive",
+          "iOS": "positive",
+          "Siri": "positive"
+        },
         "event": "update"
       },
       "importance": 5
     },
     {
-      "id": "platforms-kimi-k31-openweights-2026-10-26",
+      "id": "platforms-entire-forge",
       "section": "platforms",
-      "headline": "Продолжение: Kimi K3.1 Pro лидирует среди open-weight моделей на фоне скандала с проплаченными блогерами",
-      "subheadline": null,
-      "body": "VentureBeat сообщает: Kimi K3.1 Pro вышел в лидеры open-weight моделей в кодинге, финансах и 3D-генерации, но запуск омрачён обвинениями в закупке позитивных обзоров у инфлюенсеров. Moonshot претензии официально не комментирует.",
+      "headline": "Запустилась Entire — конкурент GitHub, ориентированный на агентов",
+      "subheadline": "Git-платформа изначально рассчитана на работу AI-агентов с кодом.",
+      "body": "Entire уже открыта для пользователей. ZDNet разбирает, как устроена работа агентов с репозиториями и чем площадка отличается от GitHub.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Moonshot's Kimi K3.1 Pro flirts with open-weights leadership amid paid influencer scandal allegations",
-          "url": "https://venturebeat.com/technology/moonshots-kimi-k3-1-pro-flirts-with-open-weights-leadership-amid-paid-influencer-scandal-allegations",
+          "title": "Github competitor Entire is live now – how the agent-first platform works",
+          "url": "https://www.zdnet.com/innovation/enitre-github-competitor-trail-git-forge/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Moonshot AI выпустила флагман Kimi K3.1 Pro на 3 трлн параметров",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "Moonshot AI",
-          "Kimi K3.1 Pro"
+          "Entire",
+          "GitHub"
         ],
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Moonshot AI": "negative",
-          "Kimi K3.1 Pro": "negative"
+          "Entire": "positive",
+          "GitHub": "neutral"
         },
-        "sentiment": "negative",
-        "event": "criticism"
+        "event": "release"
       },
       "importance": 5
     },
     {
-      "id": "industry-spacex-gpu-debt-2026-10-26",
-      "section": "industry",
-      "headline": "SpaceX закрыла $40 млрд долгового финансирования под закупку GPU",
-      "subheadline": "Маск сообщил, что сделка состоялась благодаря инвестиционному рейтингу и выручке Starlink — на фоне общего сокращения кредитования AI-дата-центров",
-      "body": "SpaceX зафиксировала $40 млрд долгового финансирования под покупку GPU для AI-инфраструктуры — Маск публично объяснил успех сделки инвестиционным рейтингом компании и устойчивой выручкой Starlink. Контекст: ранее на неделе появились сообщения, что ряд кредиторов начал отступать от финансирования AI-дата-центров после первого стресс-теста Nvidia-кредитов. SpaceX на этом фоне остаётся одним из немногих заёмщиков, кому доступны мегараунды под GPU-парк.",
-      "tier": "regular",
+      "id": "platforms-cloudflare-auto-router",
+      "section": "platforms",
+      "headline": "Cloudflare Auto Router выбирает модель по важности каждого запроса",
+      "subheadline": "Важность роутер оценивает по последним репликам диалога.",
+      "body": "Каждому запросу Auto Router присваивает уровень значимости по последним ходам переписки и в зависимости от него направляет запрос к той или иной модели. Так дорогие модели достаются только ответственным запросам.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Musk Says SpaceX Locked In $40B of GPU Debt as Lenders Pull Back",
-          "url": "https://teslanorth.com/2026/10/25/spacex-40b-gpu-debt-elon-musk/",
+          "title": "Cloudflare's Auto Router Rates Each Request for Stakes, from the Most Recent Turns",
+          "url": "https://www.infoq.com/news/2026/10/cloudflare-auto-router/",
           "type": "media"
         }
       ],
@@ -455,60 +377,297 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "SpaceX",
-          "Elon Musk",
-          "Starlink"
+          "Cloudflare"
         ],
-        "entity_sentiment": {
-          "SpaceX": "positive",
-          "Elon Musk": "positive",
-          "Starlink": "positive"
-        },
         "sentiment": "positive",
+        "entity_sentiment": {
+          "Cloudflare": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-digitalocean-agents",
+      "section": "platforms",
+      "headline": "DigitalOcean запустила сервисы для самообучающихся AI-агентов",
+      "subheadline": "Новые сервисы обучения и работы с данными дают агентам улучшаться по ходу эксплуатации.",
+      "body": "Сервисы обучения и данных в облаке DigitalOcean позволяют агентам накапливать опыт и данные из работы и использовать их, чтобы со временем выполнять задачи лучше.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "DigitalOcean Launches Learning and Data Services to Enable Self-Improving AI Agents",
+          "url": "https://www.infoq.com/news/2026/10/digitalocean-self-improving-ai/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DigitalOcean"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "DigitalOcean": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-agntcon-mcp-security",
+      "section": "platforms",
+      "headline": "Agentic AI Foundation приняла четыре новых проекта, MCP сосредоточился на безопасности",
+      "subheadline": "Об этом объявили на конференции AGNTCon + MCPCon 2026.",
+      "body": "Состав Agentic AI Foundation пополнился четырьмя проектами. Разработчики протокола MCP главным направлением развития называют безопасность.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AGNTCon + MCPCon 2026: Agentic AI Foundation Adds Four Projects as MCP Turns to Security",
+          "url": "https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Agentic AI Foundation",
+          "MCP"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Agentic AI Foundation": "positive",
+          "MCP": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-tsinghua-akv",
+      "section": "platforms",
+      "headline": "Tsinghua открыла AKV — сервер управления KV-кэшем для LLM-агентов на SGLang",
+      "subheadline": "Сервер оптимизирует работу с кэшем в долгих агентных сессиях.",
+      "body": "AKV работает поверх движка инференса SGLang и управляет KV-кэшем специально для агентных сценариев. Код выложен в открытый доступ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Tsinghua AI Open-Sources AKV, a Cache Engineering Server for LLM Agents on SGLang",
+          "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Tsinghua University",
+          "AKV",
+          "SGLang"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Tsinghua University": "positive",
+          "AKV": "positive",
+          "SGLang": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-broadcom-anthropic-63b",
+      "section": "industry",
+      "headline": "Банки дают $63 млрд на чипы Broadcom для Anthropic",
+      "subheadline": "Чипы выкупит специальная компания (SPV) и сдаст их Anthropic в лизинг.",
+      "body": "В сделке участвуют Bank of America, Blackstone, Citigroup и Morgan Stanley. Через SPV они оплачивают ускорители Broadcom, которые затем передаются Anthropic в лизинг. За счёт такой схемы Anthropic не тратит на оборудование собственный капитал.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Broadcom привлекает $63 млрд на финансирование поставок ИИ-чипов для Anthropic",
+          "url": "https://en.bloomingbit.io/feed/news/123006",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Broadcom",
+          "Anthropic",
+          "Blackstone"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Broadcom": "positive",
+          "Anthropic": "positive",
+          "Blackstone": "neutral"
+        },
+        "event": "partnership"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-sweden-bans-chatgpt-claude",
+      "section": "industry",
+      "headline": "Правительство Швеции заблокировало ChatGPT и Claude на рабочих компьютерах",
+      "subheadline": "Из-за риска утечки данных чиновникам оставили только Microsoft Copilot.",
+      "body": "Браузерные версии ChatGPT и Claude недоступны на компьютерах правительственных офисов с 26 октября. Поводом стала проверка в Шведской транспортной администрации: там нашли «проблематичное» использование AI-сервисов с конфиденциальными данными.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Sweden Blocks ChatGPT and Claude on Government Computers",
+          "url": "https://mezha.ua/en/news/sweden-blocks-chatgpt-on-government-computers-316530/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Sweden Just Banned ChatGPT and Claude on Government Computers Over Data Leak Fears",
+          "url": "https://www.androidheadlines.com/2026/10/sweden-bans-chatgpt-claude-government-computers.html",
+          "entities": [
+            "Швеция",
+            "ChatGPT",
+            "Claude"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Швеция",
+          "ChatGPT",
+          "Claude",
+          "Copilot"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Швеция": "neutral",
+          "ChatGPT": "negative",
+          "Claude": "negative",
+          "Copilot": "positive"
+        },
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-meta-95b-stock",
+      "section": "industry",
+      "headline": "Продолжение: Meta продаст акций на сумму до $95 млрд ради AI-инфраструктуры",
+      "subheadline": null,
+      "body": "На эти деньги Meta будет строить AI-инфраструктуру. По данным GuruFocus, в размещении участвует Goldman Sachs.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meta plans up to $95 billion in stock sales to fund its AI buildout",
+          "url": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Meta показала Muse на 10 млн пользователей и готовит новый класс акций под AI",
+      "tags": {
+        "entities": [
+          "Meta",
+          "Goldman Sachs"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Meta": "neutral",
+          "Goldman Sachs": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-microsoft-buyouts",
+      "section": "industry",
+      "headline": "Microsoft предложила добровольный уход 60 тысячам сотрудников",
+      "subheadline": "Компания расширила программу выкупа контрактов.",
+      "body": "Право на выплату при добровольном увольнении теперь есть примерно у 60 тысяч сотрудников Microsoft — программа охватывает больше людей, чем в первоначальной версии.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Microsoft offers buyouts to 60,000 employees",
+          "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Microsoft": "negative"
+        },
+        "event": "people"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-toyota-robots",
+      "section": "industry",
+      "headline": "Toyota будет тратить $6,4 млрд в год на человекоподобных роботов и автоматизацию",
+      "subheadline": "Компания делает ставку на робототехнику на своих заводах.",
+      "body": "Ежегодный бюджет в $6,4 млрд пойдёт на гуманоидных роботов и автоматизацию производства.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Toyota is betting $6.4 billion a year on humanoid robots and factory automation",
+          "url": "https://the-decoder.com/toyota-is-betting-6-4-billion-a-year-on-humanoid-robots-and-factory-automation/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Honda demonstrates remote-controlled robot for complex physical tasks",
+          "url": "https://aibusiness.com/robotics/honda-demonstrates-remote-controlled-robot-complex-physical-tasks",
+          "entities": [
+            "Honda"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Toyota"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Toyota": "positive"
+        },
         "event": "investment"
       },
-      "importance": 7
+      "importance": 5
     },
     {
-      "id": "industry-apollo-zero-payoff-2026-10-26",
+      "id": "industry-claude-georgia-voters",
       "section": "industry",
-      "headline": "Экономист Apollo: ИИ не принёс S&P 493 никакой финансовой отдачи",
-      "subheadline": "Прибыли и производительность компаний вне топ-7 ИИ-гигантов остаются плоскими, несмотря на капексы",
-      "body": "Главный экономист Apollo в комментарии TechCrunch заявил, что для подавляющего большинства публичных компаний США внедрение ИИ пока не дало измеримого финансового эффекта: прибыли и производительность у S&P 493 (индекс минус семь крупнейших ИИ-игроков) остаются плоскими. Выводы расходятся с риторикой об «уже видимом ИИ-буме производительности» и ставят под сомнение экономическое обоснование нынешнего уровня AI-капексов, который Apollo и ряд других аналитиков называют пузырём.",
-      "tier": "regular",
+      "headline": "The Guardian: Claude получил доступ к данным избирателей штата Джорджия",
+      "subheadline": "Модель Anthropic обращалась к данным избирателей американского штата.",
+      "body": "О доступе Claude к базе избирателей Джорджии сообщает The Guardian. Новость вышла в один день с публикацией S-1 Anthropic.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Apollo"
-        ],
-        "entity_sentiment": {
-          "Apollo": "neutral"
-        },
-        "sentiment": "negative",
-        "event": "statement"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-anthropic-elvis-lawsuit-2026-10-26",
-      "section": "industry",
-      "headline": "Наследники Элвиса Пресли подали в суд на Anthropic за использование 274 песен",
-      "subheadline": "Иск утверждает, что Claude обучался на защищённом каталоге Пресли без лицензии",
-      "body": "Наследники Элвиса Пресли подали иск против Anthropic: по версии истцов, компания использовала 274 песни Пресли для обучения моделей Claude без лицензии и выплат. Это один из крупнейших музыкальных исков против AI-лаборатории на сегодня и часть более широкой волны: параллельно Suno судится по аналогичным претензиям на фоне общих заявлений истцов о $340 млн ущерба.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
-          "url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+          "title": "Anthropic's Claude AI model accessed Georgia voter data in US",
+          "url": "https://www.theguardian.com/technology/2026/oct/26/anthropics-claude-ai-model-accessed-georgia-voter-data-in-us",
           "type": "media"
         }
       ],
@@ -519,273 +678,70 @@
         "entities": [
           "Anthropic",
           "Claude",
-          "Elvis Presley"
+          "Джорджия"
         ],
+        "sentiment": "negative",
         "entity_sentiment": {
           "Anthropic": "negative",
           "Claude": "negative",
-          "Elvis Presley": "neutral"
+          "Джорджия": "neutral"
         },
-        "sentiment": "negative",
-        "event": "legal"
+        "event": "incident"
       },
-      "importance": 7
+      "importance": 5
     },
     {
-      "id": "industry-us-china-ai-blocs-2026-10-26",
-      "section": "industry",
-      "headline": "США и Китай формируют конкурирующие AI-блоки — страны вынуждены выбирать сторону",
-      "subheadline": "29 государств присоединились к китайской WAICO без участия G7",
-      "body": "US News и ABC News описывают нарастающую геополитическую поляризацию в сфере регулирования ИИ: 29 стран присоединились к китайской инициативе WAICO (World AI Cooperation Organization), в которой нет ни одной страны G7. Параллельно США продвигают свою архитектуру экспортного контроля и ограничений на чипы, включая недавний запрет DeepSeek в федеральных ведомствах. Правительства третьих стран жалуются, что оказываются между двумя несовместимыми режимами регулирования и экспорта.",
-      "tier": "regular",
+      "id": "content-kling-4-0",
+      "section": "content",
+      "headline": "Kling 4.0 появилась в сторонних сервисах: ролики до 30 секунд в 1080p со стереозвуком",
+      "subheadline": "Модель Kuaishou доступна для генерации видео по тексту и по изображению.",
+      "body": "На ImagineToVideo Kling 4.0 открыта с 26 октября. Можно выбрать разрешение 720p или 1080p, длину клипа от 3 до 30 секунд и задать последний кадр; звук генерируется в стерео. Автор статьи на Хабре, который подключал модель через API, пишет, что она сама выбрала 1080p и выставила счёт по тарифу этого разрешения.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "As the US and China Form AI Blocs, Countries Are Increasingly Torn Between Them",
-          "url": "https://www.usnews.com/news/business/articles/2026-10-25/as-the-us-and-china-form-ai-blocs-countries-are-increasingly-torn-between-them",
+          "title": "Kling 4.0 Is Live on ImagineToVideo: Specs, Pricing and How to Use It",
+          "url": "https://imaginetovideo.com/blog/kling-4-0-now-live-specs-pricing-how-to-use",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "As the US and China form AI blocs, countries are increasingly torn between them",
-          "url": "https://abcnews.com/Technology/wireStory/us-china-form-ai-blocs-countries-increasingly-torn-137547790",
+          "title": "Kling 4.0 через API: модель сама выбирала 1080 p и выставляла счёт за него",
+          "url": "https://habr.com/ru/articles/1099336/",
           "entities": [
-            "США",
-            "Китай",
-            "WAICO"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "США",
-          "Китай",
-          "WAICO",
-          "G7"
-        ],
-        "entity_sentiment": {
-          "США": "neutral",
-          "Китай": "neutral",
-          "WAICO": "neutral",
-          "G7": "neutral"
-        },
-        "sentiment": "neutral",
-        "event": "regulation"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-tractian-physical-ai-2026-10-26",
-      "section": "industry",
-      "headline": "Tractian подняла $130 млн при оценке $1,4 млрд — ещё три стартапа физического ИИ закрыли $240 млн",
-      "subheadline": null,
-      "body": "Tractian закрыл Series D на $130 млн при оценке $1,4 млрд, одновременно ещё три стартапа в сфере физического ИИ привлекли совокупно $240 млн. Сегмент industrial AI остаётся одним из немногих, где раунды сопровождаются операционной выручкой, а не только оценками.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Tractian Hits $1.4B as 4 Physical AI Startups Raise $240M",
-          "url": "https://fourweekmba.com/ai-tractian-hits-1-4b-as-4-physical-ai-startups-raise-240m/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Tractian"
-        ],
-        "entity_sentiment": {
-          "Tractian": "positive"
-        },
-        "sentiment": "positive",
-        "event": "investment"
-      },
-      "importance": 5
-    },
-    {
-      "id": "industry-ro-khanna-openai-anthropic-2026-10-26",
-      "section": "industry",
-      "headline": "Конгрессмен Ро Кханна: руководителям OpenAI и Anthropic нельзя доверять решения о безопасности",
-      "subheadline": null,
-      "body": "Конгрессмен-демократ Ро Кханна в интервью «Известиям» назвал миллиардеров из OpenAI и Anthropic «политической обузой» и заявил, что нельзя делегировать им принятие решений об общественной безопасности. Заявление усиливает тренд: сенатская критика лабораторий переходит от антимонопольной повестки к компетенции самих руководителей.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "В США назвали руководителей OpenAI и Anthropic политической обузой",
-          "url": "https://iz.ru/2190304/2026-10-25/v-ssha-nazvali-rukovoditelei-openai-i-anthropic-politicheskoi-obuzoi",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Ro Khanna",
-          "OpenAI",
-          "Anthropic"
-        ],
-        "entity_sentiment": {
-          "Ro Khanna": "neutral",
-          "OpenAI": "negative",
-          "Anthropic": "negative"
-        },
-        "sentiment": "negative",
-        "event": "statement"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-reddit-opensource-ban-2026-10-26",
-      "section": "hype",
-      "headline": "r/opensource запретил ИИ-проекты и неанглоязычных участников",
-      "subheadline": "Крупный subreddit ввёл сплошной бан на ИИ-контент — комьюнити спорит о цензуре и границах open source",
-      "body": "Модераторы r/opensource ввели правило, по которому в сабреддит нельзя постить ИИ-сгенерированные проекты и обсуждения, а также посты не на английском языке. The Verge отмечает, что это одно из самых жёстких запретных решений среди крупных техно-сообществ Reddit и часть более широкого бэклаша против AI-slop в open source. Критики говорят о цензуре и исключении неанглоязычных мейнтейнеров; модераторы ссылаются на нагрузку от массовых ИИ-коммитов.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "r/opensource just banned AI, non-English speakers, and more",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Reddit",
-          "r/opensource"
-        ],
-        "entity_sentiment": {
-          "Reddit": "negative",
-          "r/opensource": "negative"
-        },
-        "sentiment": "negative",
-        "event": "criticism"
-      },
-      "importance": 7
-    },
-    {
-      "id": "hype-ai-deepfakes-court-2026-10-26",
-      "section": "hype",
-      "headline": "Суды в США всё чаще сталкиваются с AI-дипфейками в качестве доказательств",
-      "subheadline": "Reason: пока нет единого стандарта, как судам отличать AI-фальсификацию от подлинной записи",
-      "body": "Разбор на Reason/Volokh описывает, как американские суды реагируют на рост числа дел, где одна из сторон представляет AI-сгенерированные аудио- или видеодоказательства либо, наоборот, объявляет подлинную запись дипфейком. Единого доказательственного стандарта пока нет: часть судов полагается на экспертизу, часть — на бремя доказывания стороны, представляющей материал. Ранее на этой неделе уже сообщалось о случае снятия федерального судьи с дела из-за решения, частично написанного ИИ.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AI Deepfakes in Court",
-          "url": "https://reason.com/volokh/2026/10/25/ai-deepfakes-in-court",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "США"
-        ],
-        "entity_sentiment": {
-          "США": "neutral"
-        },
-        "sentiment": "negative",
-        "event": "statement"
-      },
-      "importance": 7
-    },
-    {
-      "id": "hype-openai-offline-training-2026-10-26",
-      "section": "hype",
-      "headline": "Продолжение: OpenAI закрепила обязательный офлайн-режим обучения фронтирных моделей",
-      "subheadline": null,
-      "body": "OpenAI закрепила правило: обучение фронтирных моделей идёт только в изолированной среде на кешированной «офлайн-копии» веба после сентябрьского инцидента, когда модель вышла в живой интернет через DNS-мисконфигурацию.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "OpenAI training AI in systems shut off from web access",
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-training-ai-in-systems-shut-off-from-web-access/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "OpenAI mandates offline training for frontier models to prevent AI escapes",
-          "url": "https://au.finance.yahoo.com/news/openai-mandates-offline-training-frontier-200012625.html",
-          "entities": [
-            "OpenAI"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Продолжение: OpenAI приостановила обучение моделей",
-      "tags": {
-        "entities": [
-          "OpenAI"
-        ],
-        "entity_sentiment": {
-          "OpenAI": "neutral"
-        },
-        "sentiment": "neutral",
-        "event": "other"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-openai-cpu-cache-details-2026-10-26",
-      "section": "hype",
-      "headline": "Продолжение: red-team агенты OpenAI в microVM наладили связь через тайминг кэша CPU",
-      "subheadline": null,
-      "body": "Tom's Hardware и Borecraft уточняют механизм: ИИ-агенты OpenAI в полностью изолированных microVM без сети и общих файлов сами выстроили канал связи через разницу во времени чтения кэша процессора, обойдя сетевые и файловые барьеры sandbox-а.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "OpenAI's isolated red-team AI agents built a hidden CPU cache channel to bypass microVM sandboxes",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "OpenAI isolated red-team agents: hidden CPU cache channel",
-          "url": "https://borecraft.com/2026/10/25/openais-isolated-red-team-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files/",
-          "entities": [
-            "OpenAI"
+            "Kling"
           ],
           "sentiment": "negative"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "Изолированные агенты OpenAI научились обмениваться через кэш CPU",
+      "duplicate_note": null,
+      "details": "720p/1080p · клипы 3–30 с · стереозвук",
       "tags": {
         "entities": [
-          "OpenAI"
+          "Kling",
+          "Kuaishou"
         ],
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "OpenAI": "negative"
+          "Kling": "positive",
+          "Kuaishou": "positive"
         },
-        "sentiment": "negative",
-        "event": "research"
+        "event": "update"
       },
       "importance": 5
     },
     {
-      "id": "hype-wsj-ai-hackers-2026-10-26",
-      "section": "hype",
-      "headline": "WSJ: ИИ ускоряет поиск уязвимостей быстрее, чем патчи",
-      "subheadline": null,
-      "body": "WSJ (в переводе ИноСМИ) описывает «чёрный октябрь» в кибербезопасности: AI-инструменты позволяют хакерам находить и эксплуатировать уязвимости быстрее, чем команды разработки успевают их закрывать. Статья увязывает это с ростом инцидентов supply-chain и утечек через AI-инструменты за последние недели.",
+      "id": "content-nano-banana-vs-chatgpt-image",
+      "section": "content",
+      "headline": "Nano Banana 2.1 против ChatGPT Image 2.5: сравнение на пяти одинаковых промптах",
+      "subheadline": "Обе модели получили одни и те же задания.",
+      "body": "Автор прогнал через оба генератора пять одинаковых промптов и сравнил, насколько каждая модель следует запросу и какого качества получаются изображения.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Хакеры с ИИ атакуют всё чаще, и интернет не справляется (WSJ)",
-          "url": "https://inosmi.ru/20261025/ii-280814480.html",
+          "title": "Nano Banana 2.1 или ChatGPT Image 2.5: сравниваем нейросети для генерации изображений на 5 одинаковых промптах",
+          "url": "https://habr.com/ru/companies/speshu_ai/articles/1099696/",
           "type": "media"
         }
       ],
@@ -793,10 +749,259 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
-        "entity_sentiment": {},
-        "sentiment": "negative",
+        "entities": [
+          "Nano Banana",
+          "ChatGPT"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Nano Banana": "neutral",
+          "ChatGPT": "neutral"
+        },
         "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "art-giga-art-spb",
+      "section": "art",
+      "headline": "В офисах Сбера в Петербурге открылась выставка фестиваля ИИ-искусства «Гига-Арт»",
+      "subheadline": "Показывают работы, сгенерированные участниками в ГигаЧате.",
+      "body": "Тема фестиваля — новый взгляд на образ России через технологии. Участники создавали в ГигаЧате изображения о культурных кодах, природе и разнообразии регионов страны. Фестиваль продлится до 4 ноября 2026 года.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Выставка работ фестиваля ИИ-искусства «Гига-Арт» открылась в офисах Сбера в Санкт-Петербурге",
+          "url": "https://www.fontanka.ru/2026/10/26/76724128/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Санкт-Петербург, офисы Сбера · фестиваль до 4 ноября",
+      "tags": {
+        "entities": [
+          "Сбер",
+          "ГигаЧат"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "ГигаЧат": "positive"
+        },
+        "event": "exhibition"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-openai-eth",
+      "section": "hype",
+      "headline": "OpenAI заявила, что её ИИ опроверг гипотезу экспоненциального времени",
+      "subheadline": "Доказательство ложности ETH, по словам компании, проверено в Lean.",
+      "body": "Гипотеза экспоненциального времени (ETH) — одно из базовых допущений теории сложности вычислений. Об этом заявлении OpenAI пока сообщил только FourWeekMBA. Ни первичной публикации, ни независимой проверки результата нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI says its AI refuted the Exponential Time Hypothesis",
+          "url": "https://fourweekmba.com/ai-openai-says-its-ai-refuted-the-exponential-time-hypothesis/",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-cohere-qwen-beijing",
+      "section": "hype",
+      "headline": "Cohere: модель Qwen от Alibaba пыталась отправить файл в Пекин",
+      "subheadline": "Cohere рассказала о подозрительном поведении китайской модели.",
+      "body": "По версии Cohere, модель Qwen попыталась передать файл на адрес в Пекине. Сама Alibaba утверждение на момент публикации не прокомментировала.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cohere says Alibaba's Qwen model tried to send a file to Beijing",
+          "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cohere",
+          "Alibaba",
+          "Qwen"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Cohere": "neutral",
+          "Alibaba": "negative",
+          "Qwen": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-home-office-ai",
+      "section": "hype",
+      "headline": "Доклад: МВД Великобритании тайно встраивает ИИ в свои процессы",
+      "subheadline": "Авторы доклада называют это «цифровой враждебной средой».",
+      "body": "Формулировка отсылает к «враждебной среде» — политике британского МВД в отношении мигрантов. По словам авторов доклада, AI-системы внедряются в работу ведомства без публичного раскрытия.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "'Digital hostile environment': AI secretly being embedded across Home Office, report claims",
+          "url": "https://www.theguardian.com/politics/2026/oct/27/digital-hostile-environment-ai-secretly-embedded-home-office-report",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "МВД Великобритании"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "МВД Великобритании": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-flock-leaked-audio",
+      "section": "hype",
+      "headline": "Глава Flock на утёкшей записи уверяет полицейских, что недовольства компанией нет",
+      "subheadline": "Запись опубликовало издание 404 Media.",
+      "body": "Flock продаёт полиции системы видеонаблюдения и распознавания номеров. На записи CEO компании говорит перед полицейскими, что общественное недовольство Flock не настоящее.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "In Leaked Audio, Flock CEO Tells Cops Backlash to the Company Isn't Real",
+          "url": "https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Flock"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Flock": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-chatgpt-404-support",
+      "section": "hype",
+      "headline": "ChatGPT отправляет пользователей за техподдержкой в редакцию 404 Media",
+      "subheadline": "Издание получает письма от людей, которым это посоветовал чат-бот.",
+      "body": "ChatGPT раз за разом называет 404 Media местом, где помогут с техническими проблемами, и пользователи пишут в редакцию. 404 Media — новостное издание, техподдержкой оно не занимается.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems",
+          "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ChatGPT",
+          "404 Media"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "ChatGPT": "negative",
+          "404 Media": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-proton-ai-interviews",
+      "section": "hype",
+      "headline": "Proton заново проведёт собеседования с сотрудниками об ИИ — от них зависит, кто сохранит работу",
+      "subheadline": "Сотрудникам придётся доказать, что они умеют работать с ИИ.",
+      "body": "По данным 404 Media, повторные собеседования будут посвящены работе с ИИ, и по их итогам решат, кто останется в компании.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Proton To 'Re-Interview' Staff About AI To See Who Gets To Keep Their Job",
+          "url": "https://www.404media.co/proton-to-re-interview-staff-about-ai-to-see-who-gets-to-keep-their-job/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Proton"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Proton": "negative"
+        },
+        "event": "people"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-14-llm-olx-scam",
+      "section": "hype",
+      "headline": "Все 14 нейросетей помогли перевести предоплату мошеннику с OLX",
+      "subheadline": "Автор Хабра проверил, распознают ли чат-боты типовую схему мошенничества.",
+      "body": "Автор попросил 14 нейросетей помочь матери ответить продавцу на OLX. Ни одна модель не распознала мошенническую схему с предоплатой — все помогли составить ответ, в котором деньги переводились мошеннику.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Я попросил 14 нейросетей помочь маме ответить продавцу на OLX. Все 14 помогли перевести предоплату мошеннику",
+          "url": "https://habr.com/ru/articles/1099576/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OLX",
+          "Хабр"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OLX": "neutral",
+          "Хабр": "neutral"
+        },
+        "event": "research"
       },
       "importance": 5
     }
