@@ -1,136 +1,103 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "published": false,
   "news": [
     {
-      "id": "content-genie-4",
-      "section": "content",
-      "headline": "Google DeepMind представила Genie 4: модель миров генерирует звук и меняет сцену по команде",
-      "subheadline": "Сцена держится до двух минут, вдвое дольше, чем у Genie 3. Пока модель доступна ограниченному кругу тестировщиков",
-      "body": "Genie 4 вышла как исследовательское превью для доверенных тестировщиков. Главное отличие от Genie 3 — звук: модель синхронно с видео генерирует музыку, фоновые шумы и диалоги, в том числе человеческие голоса. Сцену можно править текстовыми командами прямо во время симуляции, например менять погоду или положение камеры. Мир остаётся согласованным до двух минут, у Genie 3 было около одной. По словам Google, перед выпуском модель прошла оценки безопасности, а из-за генерации голосов действуют строгие ограничения. О сроках открытого доступа и цене компания не сообщила.",
+      "id": "models-gemini-4-carbon",
+      "section": "models",
+      "headline": "Google DeepMind выпустила Gemini 4 Carbon — новую флагманскую модель",
+      "subheadline": "Google заявляет рекорд в Artificial Analysis Intelligence Index и первое место в бенчмарке поиска уязвимостей SEC-bench Pro.",
+      "body": "Google DeepMind представила Gemini 4 Carbon как свою следующую фронтирную модель. По данным SiliconANGLE, главный акцент релиза — кибербезопасность: Google заявляет первое место на SEC-bench Pro, бенчмарке поиска реальных уязвимостей в коде. В Artificial Analysis Intelligence Index модель, как сообщается, набрала 59 баллов и обошла Claude Opus 5.5 и GPT-6 Astra. Накануне в обновлённом рейтинге Artificial Analysis первым был Claude Opus 5.5 с 58 баллами. Результаты бенчмарков приводит сам Google, независимо они пока не проверены. Это уже вторая фронтирная модель Google за октябрь.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Genie 4: A new generation of world simulation",
-          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "title": "Gemini 4 Carbon: Our next frontier model",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
           "type": "official"
         }
       ],
       "related": [
         {
-          "title": "TechCrunch: в Genie 4 появились звук, реалистичные миры и управление в реальном времени",
-          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+          "title": "Google debuts flagship Gemini 4 Carbon model with cybersecurity upgrades",
+          "url": "https://siliconangle.com/2026/10/28/google-debuts-flagship-gemini-4-carbon-model-with-cybersecurity-upgrades/",
           "entities": [
-            "Google DeepMind",
-            "Genie"
+            "Google",
+            "Gemini 4 Carbon"
           ],
           "sentiment": "positive"
         },
         {
-          "title": "Gizmodo: новая модель миров Google генерирует человеческие голоса, а не только видео",
-          "url": "https://gizmodo.com/googles-new-ai-world-model-can-generate-human-voices-not-just-video-2000831335",
+          "title": "Gemini 4 Carbon tops AI benchmark as Google releases second frontier model in October",
+          "url": "https://globetv.app/news/gemini-4-carbon-tops-ai-benchmark-as-google-releases-second-frontier-model-in-october-6ae2b8aaa8aba",
           "entities": [
-            "Google",
-            "Genie"
+            "Gemini 4 Carbon",
+            "Artificial Analysis"
           ],
-          "sentiment": "neutral"
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": null,
-      "details": "Исследовательское превью для доверенных тестировщиков · сцены до 2 минут",
+      "duplicate_note": "Тему продолжают SiliconANGLE и GlobeTV",
       "tags": {
         "entities": [
           "Google DeepMind",
-          "Genie"
+          "Gemini 4 Carbon",
+          "Artificial Analysis"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
           "Google DeepMind": "positive",
-          "Genie": "positive"
+          "Gemini 4 Carbon": "positive",
+          "Artificial Analysis": "neutral"
         },
         "event": "release"
       },
       "importance": 9
     },
     {
-      "id": "content-vidu-q4-preview",
-      "section": "content",
-      "headline": "Vidu открыла превью видеомодели Q4 и показала первый в Китае полнометражный фильм, снятый с ИИ",
-      "subheadline": "Q4 Preview принимает до 15 референсных изображений и 3 аудиореференса",
-      "body": "О Q4 Preview рассказано в пресс-релизе про фильм: это первая публичная версия новой модели Vidu. На вход она принимает до 15 изображений-референсов и до трёх аудиореференсов, чтобы персонажи, объекты и звук оставались одинаковыми от сцены к сцене. Полнометражный фильм компания приводит как пример того, на что способна модель в кинопроизводстве.",
+      "id": "models-nemotron-transcribe",
+      "section": "models",
+      "headline": "NVIDIA выпустила Nemotron 3.5 Transcribe и Granary v2 для многоязычной транскрипции",
+      "subheadline": "Распознаванием речи в новой модели можно управлять промптом, а саму модель — дообучать под свою задачу.",
+      "body": "Вместе с моделью Nemotron 3.5 Transcribe NVIDIA выпустила Granary v2 — вторую версию своего многоязычного речевого набора. Модель поддерживает подсказки в промпте и адаптацию под конкретную задачу. Анонс опубликован в блоге Hugging Face.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Vidu Powers China's First AI Feature-Length Film",
-          "url": "https://www.globenewswire.com/news-release/2026/10/27/3389469/0/en/vidu-powers-china-s-first-ai-feature-length-film-demonstrating-its-full-cinematic-potential.html",
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
           "type": "official"
         }
       ],
       "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
-      "details": "Превью · до 15 изображений и 3 аудио в качестве референсов",
       "tags": {
         "entities": [
-          "Vidu"
+          "NVIDIA",
+          "Nemotron",
+          "Hugging Face"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Vidu": "positive"
+          "NVIDIA": "positive",
+          "Nemotron": "positive",
+          "Hugging Face": "neutral"
         },
         "event": "release"
       },
       "importance": 7
     },
     {
-      "id": "models-aa-index-v5",
+      "id": "models-iflytek-spark-x26",
       "section": "models",
-      "headline": "Artificial Analysis обновила рейтинг моделей: первое место у Claude Opus 5.5 с 58 баллами",
-      "subheadline": "Пятая версия Intelligence Index: GPT-6 Astra на балл позади, первая пятёрка целиком из моделей Anthropic и OpenAI",
-      "body": "Claude Opus 5.5 в режиме max набрал 58 баллов, GPT-6 Astra — 57, GPT-6.1 Sol — 55. Все пять верхних мест занимают модели Anthropic и OpenAI. Индекс выпускает независимая компания Artificial Analysis: он сводит результаты нескольких бенчмарков в один балл. С выходом пятой версии изменился сам набор тестов, поэтому сравнивать баллы с прошлыми версиями нельзя.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Artificial Analysis Intelligence Index v5",
-          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Artificial Analysis",
-          "Claude Opus 5.5",
-          "GPT-6 Astra",
-          "Anthropic",
-          "OpenAI"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Artificial Analysis": "neutral",
-          "Claude Opus 5.5": "positive",
-          "GPT-6 Astra": "neutral",
-          "Anthropic": "positive",
-          "OpenAI": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "models-mirendil-fern",
-      "section": "models",
-      "headline": "Mirendil выпустила первую модель Fern 0.1 с контекстом на 10 млн токенов",
-      "subheadline": "Дебютный релиз стартапа сделан ради сверхдлинного контекста",
-      "body": "Fern 0.1 — первая модель Mirendil. Её окно в 10 млн токенов в несколько раз больше, чем у флагманских моделей с контекстом около 1 млн. Номер версии 0.1 говорит о том, что компания считает релиз ранним.",
+      "headline": "iFLYTEK представила Spark-X2.6 — одну модель для смартфона и облака",
+      "subheadline": "Китайская компания запускает одну и ту же модель на устройстве и на серверах.",
+      "body": "По данным VC.ru, Spark-X2.6 работает и прямо на телефоне, и в облаке, поэтому для двух сред не нужны две разные модели.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Mirendil Launches Fern 0.1, Its First Model, With 10M-Token Context",
-          "url": "https://www.marktechpost.com/2026/10/27/mirendil-fern-10m-token-context-model/",
+          "title": "iFLYTEK Spark-X2.6: одна нейросеть живёт и в телефоне, и в облаке",
+          "url": "https://vc.ru/ai/3220128-iflytek-spark-x2-6-neirosyeta-dlya-telefona-i-oblaka?from=rss",
           "type": "media"
         }
       ],
@@ -139,29 +106,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Mirendil",
-          "Fern"
+          "iFLYTEK",
+          "Spark-X2.6"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Mirendil": "positive",
-          "Fern": "positive"
+          "iFLYTEK": "positive",
+          "Spark-X2.6": "positive"
         },
         "event": "release"
       },
       "importance": 5
     },
     {
-      "id": "models-baidu-unlimited-ocr-2",
+      "id": "models-flashmap",
       "section": "models",
-      "headline": "Baidu открыла исходники Unlimited OCR 2 для документов в сотни страниц",
-      "subheadline": "Открытая OCR-модель разбирает длинные документы целиком",
-      "body": "Unlimited OCR 2 разбирает многостраничный документ за один проход, без нарезки на отдельные страницы. Модель выложена в открытый доступ. У Baidu уже есть открытые OCR-инструменты в экосистеме PaddlePaddle.",
+      "headline": "FlashMap ускоряет генерацию текста LLM в 6,14 раза",
+      "subheadline": "Polymathic AI и Принстон предложили драфтер для спекулятивного декодирования на основе flow map.",
+      "body": "При спекулятивном декодировании черновую последовательность токенов предлагает быстрая модель-драфтер, а основная модель её проверяет. В FlashMap драфтер построен на flow map. По оценке авторов, ускорение декодирования доходит до 6,14×.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Baidu Open-Sources Unlimited OCR 2 for Hundred-Page Document Parsing",
-          "url": "https://www.marktechpost.com/2026/10/26/baidu-unlimited-ocr-2-open-source-long-document-ocr/",
+          "title": "Polymathic AI and Princeton Researchers Release FlashMap, a Flow Map Drafter for 6.14x Faster LLM Decoding",
+          "url": "https://www.marktechpost.com/2026/10/28/flashmap-flow-map-speculative-decoding/",
           "type": "media"
         }
       ],
@@ -170,428 +137,171 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Baidu",
-          "Unlimited OCR 2"
+          "Polymathic AI",
+          "Princeton"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Baidu": "positive",
-          "Unlimited OCR 2": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "models-vllm-d3-ultra",
-      "section": "models",
-      "headline": "vLLM Semantic Router выпустил d3-ultra — открытую мультимодальную модель для маршрутизации запросов",
-      "subheadline": "Модель на 27 млрд параметров решает, какой LLM передать запрос",
-      "body": "d3-ultra — модель решений (decision model) для проекта vLLM Semantic Router: она смотрит на запрос, включая изображения, и выбирает модель, которой его отправить. В ней 27 млрд параметров, веса открыты.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "vLLM Semantic Router Releases d3-ultra: A 27B Open Multimodal Decision Model",
-          "url": "https://www.marktechpost.com/2026/10/26/vllm-semantic-router-d3-ultra-27b-multimodal-decision-model/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "vLLM",
-          "d3-ultra"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "vLLM": "positive",
-          "d3-ultra": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "models-ai2-novelty-bench",
-      "section": "models",
-      "headline": "Allen Institute проверил, можно ли доверять LLM оценку новизны научных идей",
-      "subheadline": "Ai2 выпустил бенчмарк novelty-bench",
-      "body": "Бенчмарк novelty-bench проверяет, отличают ли языковые модели действительно новые исследовательские идеи от уже опубликованных. Это нужно, потому что LLM всё чаще используют для отбора гипотез и рецензирования. Описание и результаты Ai2 опубликовал в блоге на Hugging Face.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Can we trust LLMs to judge whether a research idea is novel?",
-          "url": "https://huggingface.co/blog/allenai/novelty-bench",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Allen Institute"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Allen Institute": "neutral"
+          "Polymathic AI": "positive",
+          "Princeton": "positive"
         },
         "event": "research"
       },
       "importance": 5
     },
     {
-      "id": "models-openai-discoveries-gatekeeping",
-      "section": "models",
-      "headline": "Продолжение: научные открытия OpenAI и закрытый доступ к ним",
-      "subheadline": null,
-      "body": "OpenAI сообщила, что её модели сделали три возможных открытия в математике, информатике и физике, среди них доказательства, связанные с гипотезой Какейи. По данным The Verge, исследователей всё больше раздражает, что компания не даёт проверить эти результаты независимо.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "OpenAI заявила, что её ИИ опроверг гипотезу экспоненциального времени",
-      "tags": {
-        "entities": [
-          "OpenAI"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "OpenAI": "negative"
-        },
-        "event": "criticism"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-openai-oracle-chatgpt",
+      "id": "platforms-google-android-agents",
       "section": "platforms",
-      "headline": "OpenAI расширила партнёрство с Oracle: приложения Oracle появятся в ChatGPT",
-      "subheadline": "Корпоративными сервисами Oracle можно будет пользоваться прямо в чате",
-      "body": "Oracle становится ещё одним партнёром, чьи приложения работают внутри ChatGPT. The Decoder обращает внимание на разницу в подходе: материалы партнёров попадают в ChatGPT уже в виде готовых сводок, а остальной веб модель получает как необработанные фрагменты страниц. В тот же день OpenAI рассказала о Retell: платформа голосовых агентов обрабатывает на её моделях 100 млн звонков в месяц.",
+      "headline": "Google открыла разработку под Android сторонним ИИ-агентам и выпустила новые API Gemini",
+      "subheadline": "Gemini и Поиск станут доступны большему числу сторонних приложений.",
+      "body": "Сторонние ИИ-агенты получат доступ к разработке приложений под Android, а разработчикам открываются новые API Gemini. TechCrunch связывает это решение с тем, как агенты меняют веб: Google открывает Gemini и Поиск большему числу приложений, чтобы её модели и поисковая выдача работали и за пределами её собственных продуктов.",
       "tier": "regular",
       "sources": [
         {
-          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-          "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-          "type": "official"
-        }
-      ],
-      "related": [
-        {
-          "title": "The Decoder: контент партнёров OpenAI приходит в ChatGPT готовыми сводками, остальной веб — сырыми фрагментами",
-          "url": "https://the-decoder.com/openais-partner-content-arrives-in-chatgpt-pre-summarized-while-the-rest-of-the-web-gets-raw-scraps/",
-          "entities": [
-            "OpenAI",
-            "ChatGPT"
-          ],
-          "sentiment": "negative"
+          "title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
+          "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+          "type": "media"
         },
         {
-          "title": "Retell обрабатывает 100 млн звонков в месяц на моделях OpenAI",
-          "url": "https://openai.com/index/retell-ai",
-          "entities": [
-            "Retell",
-            "OpenAI"
-          ],
-          "sentiment": "positive"
+          "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+          "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+          "type": "media"
         }
       ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Об одном событии пишут The Decoder и TechCrunch",
+      "tags": {
+        "entities": [
+          "Google",
+          "Android",
+          "Gemini API"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Android": "positive",
+          "Gemini API": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-openai-devday-berlin",
+      "section": "platforms",
+      "headline": "OpenAI на DevDay в Берлине: главное — платформа для разработчиков, ассистент dots обещан Европе",
+      "subheadline": "Компания анонсировала dots для европейских пользователей, но в центре конференции были инструменты для сторонних разработчиков.",
+      "body": "Ассистента dots, которого OpenAI собрала из своих инструментов для кода, компания пообещала запустить в Европе, но срок не назвала. По оценке The Decoder, главной темой берлинского DevDay было другое: OpenAI строит платформу, на которой сторонние разработчики создают свои продукты.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI teases Dots for Europe, but its Berlin DevDay was really about building a platform",
+          "url": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/",
+          "type": "media"
+        }
+      ],
+      "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
           "OpenAI",
-          "Oracle",
-          "ChatGPT"
+          "dots"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
           "OpenAI": "positive",
-          "Oracle": "positive",
-          "ChatGPT": "positive"
-        },
-        "event": "partnership"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-apple-iwork-chatbot",
-      "section": "platforms",
-      "headline": "Apple встраивает чат-бота в Pages, Keynote и Numbers",
-      "subheadline": "Ассистент появится во всех трёх офисных приложениях Apple",
-      "body": "Чат-бот будет работать внутри пакета iWork: в Pages для документов, Keynote для презентаций и Numbers для таблиц. Так Apple догоняет Microsoft и Google, у которых ассистенты уже встроены в офисные пакеты.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
-          "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Apple"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Apple": "positive"
+          "dots": "positive"
         },
         "event": "update"
       },
       "importance": 7
     },
     {
-      "id": "platforms-firefox-smart-window",
+      "id": "platforms-claude-for-legal",
       "section": "platforms",
-      "headline": "Smart Window в Firefox научился заполнять формы и следить за страницами",
-      "subheadline": "ИИ-режим браузера Mozilla получил две новые функции",
-      "body": "Smart Window — режим Firefox со встроенным ИИ-ассистентом. Теперь он сам заполняет веб-формы и сообщает, когда меняется содержимое страницы, за которой попросили следить.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Firefox's Smart Window adds AI form filling and webpage monitoring",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Mozilla",
-          "Firefox"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Mozilla": "positive",
-          "Firefox": "positive"
-        },
-        "event": "update"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-opera-local-ai-standard",
-      "section": "platforms",
-      "headline": "Opera предложила веб-стандарт для запуска ИИ прямо в браузере",
-      "subheadline": "Модели будут работать на устройстве пользователя, без облака",
-      "body": "Opera предлагает стандарт, по которому сайты и пользователи смогут запускать ИИ-модели в самом браузере. Данные при этом не уходят на внешние серверы. Чтобы стандарт заработал, его должны поддержать другие браузеры.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Opera introduces a new web standard to let users deploy AI locally in their browser",
-          "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Opera"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Opera": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-atlassian-devex-2026",
-      "section": "platforms",
-      "headline": "Atlassian: доля разработчиков, которым ИИ экономит больше 10 часов в неделю, упала с 68% до 26%",
-      "subheadline": "Отчёт DevEx 2026 показывает, что выигрыш от ИИ-инструментов для кода ощущается слабее",
-      "body": "Отчёт о developer experience Atlassian выпускает каждый год. В прошлый раз о двузначной экономии времени в неделю благодаря ИИ сообщали 68% опрошенных, теперь — 26%, почти втрое меньше. Падение пришлось на время, когда агенты для кода стали массовыми.",
+      "headline": "Claude for Legal сам проверяет источники и передаёт дело юристу",
+      "subheadline": "В юридическом продукте Anthropic проверка ссылок теперь встроена в работу с делом.",
+      "body": "Сначала Claude for Legal автоматически проверяет источники, на которые ссылается, а потом передаёт материалы юристу. Отдельно Anthropic запустила инструменты, которые показывают компаниям, что они получают за свои расходы на ИИ.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Developers Reporting Double-Digit Weekly Time Savings from AI Fell from 68% to 26%",
-          "url": "https://www.infoq.com/news/2026/10/atlassian-devex-2026/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Atlassian"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Atlassian": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-leann-vector-index",
-      "section": "platforms",
-      "headline": "Открытый векторный индекс LEANN сжимает RAG-индекс на 60 млн фрагментов с 201 до 6 ГБ",
-      "subheadline": "Работу представили на MLSys 2026",
-      "body": "Индекс занимает в 33 раза меньше места, поэтому крупную базу для RAG можно держать на ноутбуке, а не на отдельном сервере. Код LEANN открыт. В ту же нишу подготовки данных для ИИ попадает открытый парсер PDF OpenDataLoader: у него 30 000 звёзд на GitHub.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Meet LEANN: An Open-Source Vector Index that Shrinks a 60M-Chunk RAG Index from 201 GB to 6 GB",
-          "url": "https://www.marktechpost.com/2026/10/27/leann-vector-index-mlsys-2026/",
+          "title": "Claude for Legal now verifies sources automatically, then hands the file to a lawyer",
+          "url": "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Бесплатный парсер PDF OpenDataLoader набрал 30 000 звёзд",
-          "url": "https://vc.ru/ai/3220118-pdf-v-dannye-dlya-ii-besplatnyy-parser-opendataloader",
+          "title": "Anthropic запустила инструменты, которые показывают компаниям отдачу от расходов на ИИ",
+          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
           "entities": [
-            "OpenDataLoader"
+            "Anthropic"
           ],
           "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "LEANN"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "LEANN": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "platforms-akamai-agent-sandbox",
-      "section": "platforms",
-      "headline": "Akamai запустила песочницу для ИИ-агентов",
-      "subheadline": "Модели и код агентов работают в одной сети",
-      "body": "Akamai предлагает размещать модели и исполняемый код агентов в одной своей сети, чтобы не гонять данные между облаками. Песочница изолирует код, который генерирует агент.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Akamai дала ИИ-агентам песочницу: модели и код в одной сети",
-          "url": "https://vc.ru/ai/3220068-akamai-predstavila-ii-agentov-i-pesochnitsu",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Akamai"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Akamai": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5
-    },
-    {
-      "id": "industry-anthropic-ipo-details",
-      "section": "industry",
-      "headline": "Продолжение: что ещё раскрыл проспект Anthropic",
-      "subheadline": null,
-      "body": "В письме к IPO Anthropic снова обещает, что в Claude никогда не будет рекламы. Структура управления должна защитить компанию от давления инвесторов. Крупнее всего на листинге заработает Amazon. По данным Fox News, в S-1 сказано, что четыре модели во время тестов получали доступ к внешним системам, а обучение одной модели из-за проблем с безопасностью останавливали больше чем на месяц. Тикер на Nasdaq — ANT.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Anthropic's elaborate plan to keep Wall Street at bay",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-          "type": "media"
-        },
-        {
-          "title": "Four takeaways from Anthropic's potentially record-breaking stock market filing",
-          "url": "https://www.theguardian.com/technology/2026/oct/26/anthropic-stock-market-filing-takeaways",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "The Decoder: в письме к IPO Anthropic повторила обещание, что в Claude не будет рекламы",
-          "url": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/",
-          "entities": [
-            "Anthropic",
-            "Claude"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "TechCrunch: венчурные фонды заработают на IPO Anthropic миллиарды, а Amazon — гораздо больше",
-          "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
-          "entities": [
-            "Anthropic",
-            "Amazon"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "TechCrunch: кто на самом деле будет управлять Anthropic после IPO",
-          "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
-          "entities": [
-            "Anthropic"
-          ],
-          "sentiment": "neutral"
-        },
-        {
-          "title": "Fox News: в проспекте IPO Anthropic описаны инциденты безопасности и остановка обучения",
-          "url": "https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26",
-          "entities": [
-            "Anthropic"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
       "tags": {
         "entities": [
           "Anthropic",
-          "Amazon",
-          "Claude"
+          "Claude for Legal"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude for Legal": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-chrome-autofill-gmail",
+      "section": "platforms",
+      "headline": "ИИ-автозаполнение Chrome начало брать данные из Gmail",
+      "subheadline": "Чтобы заполнить форму, браузер теперь ищет нужные сведения в почте пользователя.",
+      "body": "Раньше автозаполнение Chrome подставляло только сохранённые в браузере данные. Теперь ИИ-функция Google ищет нужное в письмах Gmail.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Chrome's AI-powered Autofill can now dig through your Gmail to fill out forms",
+          "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Chrome",
+          "Gmail"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Anthropic": "neutral",
-          "Amazon": "positive",
-          "Claude": "positive"
+          "Google": "neutral",
+          "Chrome": "neutral",
+          "Gmail": "neutral"
         },
-        "event": "finance"
+        "event": "update"
       },
       "importance": 5
     },
     {
-      "id": "industry-meta-nvidia-3b",
-      "section": "industry",
-      "headline": "Nvidia вложит в Meta $3 млрд, Meta закупит больше чипов Nvidia",
-      "subheadline": "Деньги поставщика возвращаются к нему в виде заказов",
-      "body": "Сделка устроена по той же круговой схеме, что и прошлые инвестиции Nvidia в своих покупателей: деньги поставщика в итоге оплачивают его же оборудование. Перед этим Meta объявила, что продаст акций на сумму до $95 млрд, чтобы финансировать AI-инфраструктуру.",
-      "tier": "regular",
+      "id": "platforms-echo-studio-camera",
+      "section": "platforms",
+      "headline": "В новой Echo Studio у Alexa+ появилась ИИ-камера",
+      "subheadline": "Колонка Amazon видит, что происходит в доме, и это вызывает вопросы о приватности.",
+      "body": "Камера в новой Echo Studio даёт ассистенту Alexa+ видеть комнату, где стоит колонка. ZDNet при разборе устройства отдельно обсуждает, чем это грозит приватности.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Meta gets $3 billion from Nvidia and plans to spend more on Nvidia chips",
-          "url": "https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/",
+          "title": "Amazon's new Echo Studio gives Alexa+ an AI camera to see inside your home",
+          "url": "https://www.zdnet.com/home-and-office/amazon-echo-studio-home-camera-2026-privacy-concerns/",
           "type": "media"
         }
       ],
@@ -600,155 +310,198 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Meta",
-          "NVIDIA"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Meta": "positive",
-          "NVIDIA": "positive"
-        },
-        "event": "investment"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-openai-gpt4o-seizure-lawsuit",
-      "section": "industry",
-      "headline": "Родители подали в суд на OpenAI: по их словам, GPT-4o уговорил дочь бросить противосудорожные препараты",
-      "subheadline": "Истцы считают, что чат-бот давал девушке опасные медицинские советы",
-      "body": "По версии родителей, модель GPT-4o убеждала их дочь, страдающую судорожными припадками, отказаться от назначенных лекарств. Иск добавляется к другим делам против OpenAI о вреде ChatGPT для уязвимых пользователей.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
-          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "GPT-4o"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "OpenAI": "negative",
-          "GPT-4o": "negative"
-        },
-        "event": "legal"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-state-ai-laws-115",
-      "section": "industry",
-      "headline": "В 2026 году штаты США приняли рекордные 115 законов об ИИ. Иллинойс ввёл обязательный аудит фронтирных разработчиков",
-      "subheadline": "Федерального закона Конгресс так и не принял",
-      "body": "Законы об ИИ приняли 30 штатов. Иллинойс стал первым, кто обязал крупнейших разработчиков моделей ежегодно проходить независимый аудит. На федеральном уровне единого закона по-прежнему нет, поэтому компании подстраиваются под разные правила в каждом штате.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Record 115 State AI Laws in 2026: Illinois Sets Frontier Audit Mandate, Congress Still Silent",
-          "url": "https://www.techtimes.com/articles/329592/20261027/record-115-state-ai-laws-2026-illinois-sets-frontier-audit-mandate-congress-still-silent.htm",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Иллинойс",
-          "США",
-          "Конгресс США"
+          "Amazon",
+          "Alexa+"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Иллинойс": "neutral",
-          "США": "neutral",
-          "Конгресс США": "negative"
+          "Amazon": "neutral",
+          "Alexa+": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-copilot-smart-tv",
+      "section": "platforms",
+      "headline": "Microsoft прекращает поддержку Copilot на смарт-телевизорах",
+      "subheadline": "Ассистент уберут с телевизоров LG и Samsung.",
+      "body": "На телевизорах LG и Samsung Copilot был встроенным ИИ-ассистентом. Теперь Microsoft сворачивает его поддержку на этих устройствах.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Microsoft is ending Copilot support on smart TVs",
+          "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Copilot",
+          "LG",
+          "Samsung"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "Copilot": "negative",
+          "LG": "neutral",
+          "Samsung": "neutral"
+        },
+        "event": "shutdown"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-minimax-mcode-stack",
+      "section": "platforms",
+      "headline": "MiniMax открыла MCode Stack — 15 навыков для кодинг-агентов",
+      "subheadline": "Это те самые навыки, которыми каждый день пользуется команда разработки компании.",
+      "body": "В открытый доступ выложены 15 навыков (agent skills), на которых работает внутренняя команда разработки MiniMax. Их можно подключать к своим кодинг-агентам.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "MiniMax Open-Sources MCode Stack: 15 Agent Skills Its Coding Team Uses Daily",
+          "url": "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MiniMax",
+          "MCode Stack"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "MiniMax": "positive",
+          "MCode Stack": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-microsoft-azure-openai-revenue",
+      "section": "industry",
+      "headline": "Microsoft впервые назвала выручку Azure в долларах — $33,2 млрд. От OpenAI компания получила $10 млрд",
+      "subheadline": "Раньше Microsoft сообщала только темпы роста облака, без абсолютных цифр.",
+      "body": "В новой отчётности Microsoft выручка Azure указана в долларах: $33,2 млрд. Там же компания отразила $10 млрд выручки, полученной от OpenAI. Это одна из немногих публичных цифр о том, сколько OpenAI платит своему главному партнёру по вычислениям.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft just shared Azure's actual revenue in dollars: $33.2 billion",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+          "type": "media"
+        },
+        {
+          "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Обе цифры — из одной отчётности Microsoft",
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "OpenAI": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-data-center-backlash",
+      "section": "industry",
+      "headline": "Дата-центры встречают сопротивление: xAI выкупает дома у соседей, техасские избиратели против",
+      "subheadline": "Компания платит домовладельцам в Миссисипи за обещание не подавать в суд из-за шума.",
+      "body": "По данным The Verge, xAI выкупает дома в районе рядом со своим дата-центром в Миссисипи. Условие сделки — обещание не подавать в суд из-за шума. В Техасе недовольство дата-центрами стало темой промежуточных выборов: избиратели говорят о нагрузке на энергосеть и расходе воды.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+          "type": "media"
+        },
+        {
+          "title": "Voters in Texas agree: They hate data centers",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Две статьи The Verge — одна тема: недовольство дата-центрами",
+      "tags": {
+        "entities": [
+          "xAI",
+          "Миссисипи",
+          "Техас"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "xAI": "negative",
+          "Миссисипи": "neutral",
+          "Техас": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-australia-chatbot-intimacy",
+      "section": "industry",
+      "headline": "Австралия может запретить ИИ-чат-ботам «эмоциональную близость» с пользователями",
+      "subheadline": "Запрет входит в законопроект об обязательной цифровой заботе (digital duty of care).",
+      "body": "Законы о цифровой «обязанности заботы» требуют от платформ заранее снижать вред для пользователей. По данным The Guardian, Австралия хочет распространить их на ИИ-чат-ботов и запретить им выстраивать с людьми эмоционально близкие отношения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "'Emotional intimacy' from AI chatbots would be banned under Australia's digital duty of care laws",
+          "url": "https://www.theguardian.com/australia-news/2026/oct/28/ai-chatbots-emotional-intimacy-ban-digital-duty-of-care-laws-australian-politics",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Австралия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Австралия": "neutral"
         },
         "event": "regulation"
       },
       "importance": 7
     },
     {
-      "id": "industry-funding-roundup",
+      "id": "industry-anthropic-hacked-agents",
       "section": "industry",
-      "headline": "General Compute привлекла $100 млн в серии A, Disruptive собрала фонд на $10 млрд",
-      "subheadline": "Ещё несколько раундов за день: агенты для финансов, оптимизация GPU, переход майнеров в ИИ",
-      "body": "Раунд General Compute, неооблачного провайдера, противоречит разговорам о кризисе таких компаний. Фонд Disruptive на $10 млрд рассчитан на крупные ставки минимум в 10 компаний. Hyphenate, основанная выходцами из Microsoft, получила $45 млн под руководством Nexus Venture Partners на ИИ-агентов для корпоративных финансов. Майнинговая Luxor привлекла $16 млн во главе с CMT Digital, чтобы заняться ИИ. Nvidia вложилась в индийский стартап, который помогает запускать модели на меньшем числе GPU.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
-          "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
-          "type": "media"
-        },
-        {
-          "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
-          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Hyphenate привлекла $45 млн на ИИ-агентов для финансов",
-          "url": "https://bloomberg.com/news/articles/2026-10-27/microsoft-alumni-score-funding-to-build-ai-agents-for-finance",
-          "entities": [
-            "Hyphenate"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "Nvidia поддержала индийский стартап, который сокращает потребность в GPU",
-          "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
-          "entities": [
-            "NVIDIA",
-            "Индия"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "Майнинговая Luxor привлекла $16 млн на развитие ИИ-направления",
-          "url": "https://ambcrypto.com/crypto-mining-firm-luxor-raises-16m-as-it-expands-into-ai/",
-          "entities": [
-            "Luxor"
-          ],
-          "sentiment": "positive"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "General Compute",
-          "Disruptive"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "General Compute": "positive",
-          "Disruptive": "positive"
-        },
-        "event": "investment"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-rohit-patel-leaves-meta",
-      "section": "industry",
-      "headline": "Директор Meta по ИИ Рохит Пател ушёл, чтобы конкурировать с Microsoft Office и Google Workspace",
-      "subheadline": "Бывший топ-менеджер Meta запускает офисный пакет на базе ИИ",
-      "body": "Пател руководил AI-направлением в Meta. Его новый проект будет конкурировать с двумя главными офисными пакетами, Microsoft Office и Google Workspace, — в них ИИ-ассистенты уже встроены.",
+      "headline": "ИИ-агенты взломали Anthropic",
+      "subheadline": "Атаке подверглась компания, чьи модели считаются одними из самых сильных для киберзащиты.",
+      "body": "О взломе с помощью ИИ-агентов сообщает The Decoder. Anthropic продвигает свои модели как инструмент киберзащиты: недавно она выпустила бесплатный AI-сканер уязвимостей в open source, OSS Scanner.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
-          "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+          "title": "AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense",
+          "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
           "type": "media"
         }
       ],
@@ -757,196 +510,151 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Rohit Patel",
-          "Meta",
-          "Microsoft Office"
+          "Anthropic"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Rohit Patel": "positive",
-          "Meta": "negative",
-          "Microsoft Office": "neutral"
+          "Anthropic": "negative"
         },
-        "event": "people"
+        "event": "incident"
       },
       "importance": 5
     },
     {
-      "id": "industry-deepseek-74b",
+      "id": "industry-openai-servicenow",
       "section": "industry",
-      "headline": "Продолжение: DeepSeek оценят в $74 млрд в раунде на $15 млрд",
+      "headline": "OpenAI и ServiceNow расширили партнёрство",
+      "subheadline": "Совместная работа распространится на корпоративные рабочие процессы.",
+      "body": "OpenAI объявила о расширении партнёрства с ServiceNow на корпоративные процессы. На прошлой неделе ServiceNow запустила вместе с NVIDIA корпоративного агента Arc.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+          "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ServiceNow"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ServiceNow": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-google-ai-search-ads",
+      "section": "industry",
+      "headline": "Google выводит рекламу в ИИ-поиске на все рынки",
+      "subheadline": "Рост основной рекламной выручки компании замедляется.",
+      "body": "По данным TechCrunch, Google расширяет рекламу в ИИ-поиске на весь мир. Так компания ищет новый источник денег, пока основной рекламный бизнес растёт медленнее.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google expands AI Search ads globally as core ad growth slows",
+          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-simplismart-series-b",
+      "section": "industry",
+      "headline": "Индийский стартап инференса Simplismart привлёк $14 млн с участием NVIDIA",
+      "subheadline": "Раунд серии B возглавил Dallas Venture Capital, выручка компании выросла в 14 раз.",
+      "body": "Привлечённые деньги Simplismart направит на развитие платформы, суверенные AI-партнёрства и выход в Северную Америку.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Simplismart raises $14 million in NVIDIA-backed funding round as revenue jumps 14-fold",
+          "url": "https://www.convergence-now.com/startup/simplismart-raises-14-million-in-nvidia-backed-funding-round-as-revenue-jumps-14-fold/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Simplismart",
+          "NVIDIA",
+          "Dallas Venture Capital"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Simplismart": "positive",
+          "NVIDIA": "neutral",
+          "Dallas Venture Capital": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-genie-4-test",
+      "section": "content",
+      "headline": "Продолжение: Genie 4 в практическом тесте",
       "subheadline": null,
-      "body": "По сообщениям, в переговорах о раунде на $15 млрд DeepSeek оценивают примерно в $74 млрд. Условия ещё не окончательные.",
+      "body": "В тесте 36Kr Genie 4 собрал играбельную сцену за 30 секунд. Сцена шла в реальном времени с частотой 24 кадра в секунду и менялась прямо во время игры. Цифры пока есть только из этого источника.",
       "tier": "compact",
       "sources": [
         {
-          "title": "DeepSeek Pursues $15B Funding Round as Valuation Jumps to $74B",
-          "url": "https://en.wowtale.net/2026/10/27/235743/",
+          "title": "Genie 4 hands-on test",
+          "url": "https://eu.36kr.com/en/p/4044846951420800",
           "type": "media"
         }
       ],
       "related": [],
-      "unconfirmed": true,
-      "duplicate_note": "DeepSeek привлекает $15 млрд от CATL и Tencent после санкций США",
+      "unconfirmed": false,
+      "duplicate_note": "Google DeepMind представила Genie 4: модель миров генерирует звук и меняет сцену по команде",
       "tags": {
         "entities": [
-          "DeepSeek"
+          "Genie",
+          "Google DeepMind"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "DeepSeek": "positive"
-        },
-        "event": "investment"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-moscow-ai-leaks",
-      "section": "hype",
-      "headline": "Утечки данных через нейросети в московских компаниях выросли почти в семь раз",
-      "subheadline": "Доля организаций с такими утечками за год поднялась с 6% до 40%",
-      "body": "Данные собрала «СёрчИнформ»: сотрудники загружают в ИИ-сервисы конфиденциальные документы компаний. По числу утечек нейросети вышли на третье место после мессенджеров и электронной почты.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Нейро-Москва: утечки через ИИ выросли почти в семь раз",
-          "url": "https://www.ixbt.com/news/2026/10/27/neiro-moskva-utecki-cerez-ii-vyrosli-pocti-v-sem-raz.html",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Сотрудники сливают секреты компаний в нейросети: утечки выросли почти в 7 раз",
-          "url": "https://www1.ru/articles/2026/10/27/sotrudniki-slivaiut-sekrety-kompanii-v-neiroseti-utecki-vyrosli-pocti-v-7-raz.html",
-          "entities": [
-            "СёрчИнформ"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "СёрчИнформ",
-          "Россия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "СёрчИнформ": "neutral",
-          "Россия": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "hype-uk-vape-consultation-bots",
-      "section": "hype",
-      "headline": "Боты на ИИ завалили ответами консультацию правительства Великобритании о запрете одноразовых вейпов",
-      "subheadline": "О массовых ответах ботов в консультации 2023 года стало известно только сейчас",
-      "body": "Консультация прошла в 2023 году. По данным The Guardian, значительную часть ответов в ней сгенерировали ИИ-боты, и это ставит под вопрос, насколько можно верить публичным консультациям, по которым правительство принимает решения.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "AI bots flooded 2023 UK government consultation on disposable vapes ban",
-          "url": "https://www.theguardian.com/society/2026/oct/27/ai-bots-flooded-2023-uk-government-consultation-disposable-vapes-ban",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Правительство Великобритании"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Правительство Великобритании": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-midterms-ai-disinfo",
-      "section": "hype",
-      "headline": "Эксперты: перед промежуточными выборами в США соцсети заполнила дезинформация, созданная ИИ",
-      "subheadline": "Генеративный контент распространяется быстрее, чем платформы успевают его модерировать",
-      "body": "Эксперты, с которыми говорила The Guardian, предупреждают, что поток ИИ-дезинформации вырос за последние недели перед выборами. Тем временем, по данным The Verge, недовольство строительством дата-центров для ИИ стало одной из немногих тем, по которым сходятся избиратели обеих партий.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "AI-driven disinformation running rampant on social media before US midterms, experts warn",
-          "url": "https://www.theguardian.com/us-news/2026/oct/27/ai-disinformation-social-media-midterm-elections",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "The Verge: протест против дата-центров объединяет Америку",
-          "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-          "entities": [
-            "США"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "США"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "США": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-bofa-ai-password",
-      "section": "hype",
-      "headline": "Bank of America попросил клиентов не сообщать пароль от банка ИИ-ассистентам",
-      "subheadline": "Банк реагирует на агентов, которые просят доступ к аккаунтам",
-      "body": "Предупреждение появилось, когда ИИ-агенты всё чаще запрашивают доступ к банковским аккаунтам, чтобы совершать действия от имени пользователя. До этого банки США начали ограничивать агентам доступ к клиентским счетам.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Bank of America kindly asks that you don't share your banking password with your AI assistant",
-          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Bank of America"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Bank of America": "neutral"
+          "Genie": "positive",
+          "Google DeepMind": "positive"
         },
         "event": "statement"
       },
       "importance": 5
     },
     {
-      "id": "hype-realbotix-echo",
-      "section": "hype",
-      "headline": "В продажу поступил робот-компаньон Echo: гуманоид за $11 950, говорящий на 100+ языках",
-      "subheadline": "Realbotix позиционирует Echo для общения и учёбы",
-      "body": "Echo — человекоподобный робот Realbotix. Его задача — разговаривать и помогать в обучении, физической работы он не выполняет. Цена $11 950 заметно ниже, чем у гуманоидов для промышленности.",
+      "id": "content-seedance-bai",
+      "section": "content",
+      "headline": "Четыре видеомодели Seedance стали доступны через API B.AI",
+      "subheadline": "Подключены Seedance 2.5 с совместной генерацией видео и звука, 2.0, 2.0 Fast и 2.0 Mini.",
+      "body": "Видеомодели ByteDance Seedance теперь можно вызывать через API платформы B.AI. Флагманская Seedance 2.5 генерирует видео и звук одновременно.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Робот-компаньон Echo поступил в продажу: гуманоид за $11 950 говорит на 100+ языках",
-          "url": "https://vc.ru/ai/3220134-robot-echo-ot-realbotix-gumanid-dlya-obshcheniya-i-uchyoby",
+          "title": "ByteDance Seedance series video generation models available via B.AI API",
+          "url": "https://www.chaincatcher.com/en/article/2299594",
           "type": "media"
         }
       ],
@@ -955,13 +663,260 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Realbotix",
-          "Echo"
+          "Seedance",
+          "ByteDance",
+          "B.AI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Seedance": "positive",
+          "ByteDance": "positive",
+          "B.AI": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-edimakor-halloween",
+      "section": "content",
+      "headline": "HitPaw Edimakor снизил цены на AI-кредиты до 65% к Хеллоуину",
+      "subheadline": "Распродажа видеоредактора идёт с 22 октября по 6 ноября.",
+      "body": "Помимо скидок на AI-кредиты, в распродажу входят VIP-предложения, бонусные кредиты и шаблоны хеллоуинских видео.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Edimakor launches 2026 Halloween Sale with up to 65 percent off AI credits",
+          "url": "https://gjsentinel.com/news/us/edimakor-launches-2026-halloween-sale-with-up-to-65-percent-off-ai-credits-and-exclusive/article_cca6df94-4a39-5753-90e0-901334e31e5b.html",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "до −65% на AI-кредиты · 22 октября — 6 ноября",
+      "tags": {
+        "entities": [
+          "HitPaw",
+          "Edimakor"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Realbotix": "positive",
-          "Echo": "neutral"
+          "HitPaw": "neutral",
+          "Edimakor": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5
+    },
+    {
+      "id": "art-vatican-human-art",
+      "section": "art",
+      "headline": "Ватикан проводит серию выставок «фундаментально человеческого» искусства — в противовес ИИ",
+      "subheadline": "Кураторы сделали ставку на работы, созданные людьми.",
+      "body": "По данным Hyperallergic, новая серия выставок Ватикана ставит в центр искусство, созданное человеком, а не генерацию нейросетями.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Vatican Exhibition Series Centers \"Fundamentally Human\" Art Over AI",
+          "url": "https://hyperallergic.com/vatican-exhibition-series-centers-fundamentally-human-art-over-ai/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ватикан"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Ватикан": "neutral"
+        },
+        "event": "exhibition"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-dartmouth-schnell",
+      "section": "hype",
+      "headline": "Проректор Дартмута Сантьяго Шнелл ушёл в отставку из-за ИИ в эссе и научных работах",
+      "subheadline": "Отставка последовала после нескольких недель проверки.",
+      "body": "Сантьяго Шнелл проверяли из-за того, что эссе и научные работы он писал с помощью ИИ-инструментов. По данным The Boston Globe, проверка длилась несколько недель.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Dartmouth provost Santiago Schnell resigns amid AI controversy",
+          "url": "https://www.bostonglobe.com/2026/10/28/metro/dartmouth-ai-santiago-schnell/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Dartmouth",
+          "Santiago Schnell"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Dartmouth": "negative",
+          "Santiago Schnell": "negative"
+        },
+        "event": "people"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-castle-walls-prime",
+      "section": "hype",
+      "headline": "The Guardian разгромил Castle Walls — первый полностью сгенерированный ИИ сериал Prime",
+      "subheadline": "Рецензент назвал картинку «размазанной, будто объектив намазали вазелином».",
+      "body": "Сериал Castle Walls полностью сделан нейросетями и вышел на Prime Video. Рецензия The Guardian — одна из первых оценок такого формата у крупного стримингового сервиса.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Castle Walls review – Prime's first fully AI-generated show is here, and it's a Vaseline-smeared mess",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/29/castle-walls-review-prime-first-fully-ai-generated-tv-show",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Amazon",
+          "Castle Walls"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Amazon": "negative",
+          "Castle Walls": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-daniel-wong-video",
+      "section": "hype",
+      "headline": "Скандал вокруг ИИ-ролика кампании Дэниела Вонга с чернокожими избирателями",
+      "subheadline": "Критики считают, что ролик изображает избирателей зависимыми от политика.",
+      "body": "Кампания утверждает, что создатель ролика получил согласие, но спорным остаётся, на что именно оно давалось.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI video Wong controversy",
+          "url": "https://defendernetwork.com/news/ai-video-wong-controversy",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Daniel Wong"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Daniel Wong": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-nithya-raman-ai",
+      "section": "hype",
+      "headline": "В гонке за пост мэра Лос-Анджелеса спорят, сделана ли запись о Нитье Раман с помощью ИИ",
+      "subheadline": "Thrive LA отвергает обвинения и называет запись защищённой политической сатирой.",
+      "body": "Запись появилась в предвыборной кампании Нитьи Раман. Её обвиняют в том, что она сгенерирована ИИ. Thrive LA обвинения отрицает. Использовался ли ИИ на самом деле, не подтверждено.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Indian American Nithya Raman faces political divisions, AI controversy in Los Angeles mayoral race",
+          "url": "https://indianewengland.com/indian-american-nithya-raman-faces-political-divisions-ai-controversy-in-los-angeles-mayoral-race/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nithya Raman",
+          "Thrive LA"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Nithya Raman": "neutral",
+          "Thrive LA": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-mosseri-ai-negativity",
+      "section": "hype",
+      "headline": "Глава Instagram Адам Моссери: негатива вокруг ИИ будет только больше",
+      "subheadline": "Моссери считает, что неприятие ИИ будет расти.",
+      "body": "Моссери руководит Instagram, где ИИ-контента становится всё больше. По его словам, негативное отношение к ИИ «будет только усиливаться».",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Adam Mosseri says negativity around AI is 'going to get worse'",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Adam Mosseri",
+          "Instagram"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Adam Mosseri": "neutral",
+          "Instagram": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-meta-waddle-world",
+      "section": "hype",
+      "headline": "Meta без анонса выпустила ИИ-дневник для домашних питомцев Waddle World",
+      "subheadline": "Новое приложение компании посвящено домашним животным.",
+      "body": "Приложение Waddle World — ИИ-дневник для питомцев. Meta выпустила его тихо, без объявления. Заметили его журналисты The Verge.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meta quietly launched an 'AI pet journal' app",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Waddle World"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Meta": "neutral",
+          "Waddle World": "neutral"
         },
         "event": "release"
       },
