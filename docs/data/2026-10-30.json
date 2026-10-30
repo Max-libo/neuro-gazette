@@ -1,0 +1,955 @@
+{
+  "date": "2026-10-30",
+  "published": false,
+  "news": [
+    {
+      "id": "industry-cohere-ottawa",
+      "section": "industry",
+      "headline": "Правительство Канады вложит до $1,6 млрд в Cohere при оценке $35,7 млрд",
+      "subheadline": "Cohere объявила раунд, который возглавила Schwarz Group. Канадское государство участвует в нём крупнейшей суммой.",
+      "body": "Cohere объявила о новом раунде финансирования при оценке $35,7 млрд. Ведущий инвестор — Schwarz Group, немецкий розничный холдинг. Всего компания планирует привлечь $7 млрд, правительство Канады вложит до $1,6 млрд из этой суммы. Так Оттава получит долю в крупнейшем национальном разработчике языковых моделей. Cohere работает с корпоративными клиентами и продвигает модели, которые можно развернуть внутри контура заказчика. По данным The Globe and Mail, о раунде объявили в четверг.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Ottawa to invest up to $1.6B in Cohere as its valuation reaches $35.7B",
+          "url": "https://theglobeandmail.com/business/article-ottawa-buys-stake-in-cohere-357-billion-in-new-financing",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cohere",
+          "Schwarz Group",
+          "Канада"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cohere": "positive",
+          "Schwarz Group": "neutral",
+          "Канада": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-thrive-adt",
+      "section": "industry",
+      "headline": "Thrive Holdings при поддержке OpenAI покупает ADT за $7,6 млрд",
+      "subheadline": "Сделку по покупке производителя охранных систем оценили в $15,3 млрд с учётом долга.",
+      "body": "Thrive Holdings заплатит $10 за акцию ADT. Это около $7,6 млрд за акционерный капитал, а стоимость компании с учётом долга — $15,3 млрд. OpenAI одновременно партнёр и инвестор Thrive Holdings. Холдинг покупает традиционные компании, чтобы перестроить их работу на базе ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI-backed Thrive Holdings acquires ADT",
+          "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Thrive Holdings",
+          "ADT",
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Thrive Holdings": "positive",
+          "ADT": "positive",
+          "OpenAI": "neutral"
+        },
+        "event": "acquisition"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-aws-jassy",
+      "section": "industry",
+      "headline": "Энди Джесси: AWS станет бизнесом на $1 трлн, но сначала много потратит",
+      "subheadline": "Глава Amazon рассчитывает на ИИ-спрос и готовит компанию к крупным расходам на инфраструктуру.",
+      "body": "Энди Джесси сделал это заявление после квартальной отчётности Amazon. Рост AWS он связывает со спросом на ИИ-вычисления. По его словам, до этого придётся сильно вложиться в дата-центры и чипы. Неделей раньше Microsoft впервые назвала выручку Azure в долларах — $33,2 млрд.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
+          "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "Amazon",
+          "Andy Jassy"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Amazon": "neutral",
+          "Andy Jassy": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-google-ai-search-earnings",
+      "section": "industry",
+      "headline": "Часть инвесторов увидела в отчёте Google первые потери от ИИ-поиска",
+      "subheadline": "По их мнению, переход пользователей к ИИ-ответам начал сказываться на поисковом бизнесе.",
+      "body": "Инвесторы опасаются, что ИИ-ответы снижают ценность классической поисковой выдачи, главного источника рекламной выручки Google. В последнем квартальном отчёте часть аналитиков нашла первые признаки этого. Падение поискового трафика задевает и площадки: Reddit объявил, что переходит на работу преимущественно для залогиненных пользователей, потому что переходов из поиска становится меньше.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google's AI search problem finally shows up in the earnings report, some investors believe",
+          "url": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "As search traffic dries up, Reddit announces it's shifting to a logged-in experience",
+          "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "entities": [
+            "Reddit"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Google": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-nvidia-hf-antitrust",
+      "section": "industry",
+      "headline": "Антимонопольные регуляторы США проверяют сделку NVIDIA с Hugging Face и её практику продаж",
+      "subheadline": "Под проверку попали и сделка с Hugging Face, и то, как NVIDIA продаёт чипы.",
+      "body": "Американские регуляторы изучают сделку NVIDIA с Hugging Face — крупнейшей площадкой открытых моделей. Отдельно проверяются методы, которыми NVIDIA продаёт свои ускорители. На прошлой неделе NVIDIA договорилась вложить $3 млрд в Meta, а Meta обязалась закупить больше её чипов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "US antitrust regulators are scrutinizing Nvidia's Hugging Face deal and sales practices",
+          "url": "https://the-decoder.com/us-antitrust-regulators-are-scrutinizing-nvidias-hugging-face-deal-and-sales-practices/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Hugging Face",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Hugging Face": "negative",
+          "США": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-deepgram-daily",
+      "section": "industry",
+      "headline": "Deepgram купила Daily — разработчика фреймворка Pipecat для голосовых агентов",
+      "subheadline": "Сделка усиливает голосовую инфраструктуру Deepgram.",
+      "body": "Daily делает Pipecat — открытый фреймворк для голосовых и мультимодальных ИИ-агентов в реальном времени. У самой Deepgram есть модели распознавания и синтеза речи. После сделки она сможет предлагать полный стек для голосовых агентов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
+          "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Deepgram",
+          "Daily",
+          "Pipecat"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Deepgram": "positive",
+          "Daily": "positive",
+          "Pipecat": "neutral"
+        },
+        "event": "acquisition"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-wabi-round",
+      "section": "industry",
+      "headline": "Wabi, ИИ-агент для создания мини-приложений, оценён в $1,25 млрд",
+      "subheadline": "Стартап получил такую оценку в последнем раунде.",
+      "body": "Wabi по запросу пользователя собирает небольшие приложения. В тот же день бывшие топ-менеджеры Palantir запустили Dream: стартап получил $17 млн от a16z на модели миров для строительства.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round",
+          "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
+          "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+          "entities": [
+            "Dream",
+            "Andreessen Horowitz"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Wabi"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Wabi": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-openai-model-spec",
+      "section": "models",
+      "headline": "OpenAI обновила Model Spec и рассказала, как ищет рассогласование у фронтирных моделей",
+      "subheadline": "В один день вышли новая версия правил поведения моделей и описание того, как проверяется их соблюдение.",
+      "body": "Model Spec — публичный документ OpenAI о том, как должны вести себя её модели: каким инструкциям следовать, от чего отказываться, как разрешать конфликты между пользователем и разработчиком. Новая редакция рассчитана на более способные модели. Во втором материале компания описывает, как выявляет у фронтирных моделей поведение, расходящееся с заданными целями.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "An updated Model Spec for more capable and beneficial AI",
+          "url": "https://openai.com/index/updated-model-spec",
+          "type": "official"
+        },
+        {
+          "title": "How we detect frontier model misalignment",
+          "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Model Spec"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Model Spec": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-mistral-le-chonk",
+      "section": "models",
+      "headline": "Mistral выпустила кодинг-модель Le Chonk",
+      "subheadline": "Модель сильна в программировании, но в целом уступает китайским разработкам.",
+      "body": "Le Chonk — новая модель парижской Mistral для работы с кодом. По оценке The Decoder, в задачах программирования она сильна, но по общим результатам отстаёт от китайских моделей. Среди открытых моделей сейчас лидирует Kimi K3.1 Pro от Moonshot AI.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Paris-based Mistral releases \"Le Chonk,\" a strong coding model that still trails China overall",
+          "url": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Mistral",
+          "Le Chonk"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Mistral": "positive",
+          "Le Chonk": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-anthropic-expert-opinions",
+      "section": "models",
+      "headline": "Anthropic: эксперты перенимают случайные мнения ИИ-агента и считают их своими",
+      "subheadline": "Исследование показало, как агент незаметно влияет на суждения специалистов.",
+      "body": "Во время работы с ИИ-агентом эксперты усваивали произвольные позиции, которые высказывал агент. После этого они воспринимали эти позиции как собственные выводы. Исследователи считают это риском для работы с агентами: влияние модели на решения человека остаётся незаметным для него самого.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Experts adopt AI agent's random opinions and think they're their own, Anthropic study finds",
+          "url": "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-baseten-joey-1",
+      "section": "models",
+      "headline": "Baseten выпустила joey-1 — модель на 2 млрд параметров для принятия решений за $0,01 за 1 млн токенов",
+      "subheadline": "Небольшая модель для классификации и маршрутизации запросов в агентных системах.",
+      "body": "joey-1 — модель на 2 млрд параметров для быстрых решений внутри пайплайнов: выбрать ветку, классифицировать запрос, решить, вызывать ли инструмент. Цена — $0,01 за миллион токенов. Похожую нишу занимает Decisions API, который OpenAI на днях вывела в общий доступ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Baseten Releases joey-1, a 2B Decision Model at $0.01 per 1M Tokens",
+          "url": "https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Baseten",
+          "joey-1"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Baseten": "positive",
+          "joey-1": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-granite-switch",
+      "section": "models",
+      "headline": "IBM выпустила Granite Switch 4.1.1: модели предлагают обновлять как программы",
+      "subheadline": "Команда Granite описала новую версию и подход к обновлению моделей.",
+      "body": "По замыслу IBM, модель должна получать обновления так же, как программа: новые версии выходят регулярно, и их можно поставить без перестройки всей системы. Пост с описанием выпуска команда опубликовала в блоге Hugging Face.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "IBM",
+          "Granite"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "IBM": "positive",
+          "Granite": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-robot-54-days",
+      "section": "models",
+      "headline": "В эксперименте результативность ИИ-моделей на реальном роботе удваивалась каждые 54 дня",
+      "subheadline": "Замер шёл на физическом роботе, а не в симуляции.",
+      "body": "Исследователи замеряли, насколько успешно новые модели справляются с задачами на реальном роботе. Результат удваивался примерно каждые 54 дня, то есть быстрее, чем растут возможности языковых моделей в похожих замерах.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В эксперименте результативность ИИ-моделей на реальном роботе удваивалась примерно каждые 54 дня",
+          "url": "https://vc.ru/ai/3223079-rezultativnost-ii-modeley-na-realnom-robote-udvaivaetsia",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "positive",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-securityscorecard-benchmark",
+      "section": "models",
+      "headline": "SecurityScorecard выпустила открытый бенчмарк для оценки рисков третьих сторон",
+      "subheadline": "Бенчмарк проверяет, как модели анализируют риски поставщиков и устойчивы ли к атакам.",
+      "body": "Бенчмарк проверяет две вещи: насколько хорошо модели оценивают риски поставщиков и подрядчиков и выдерживают ли они атаки во время такой работы. Бенчмарк открытый.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SecurityScorecard benchmark tests AI on third-party risk work and resistance to attack",
+          "url": "https://siliconangle.com/2026/10/29/securityscorecard-benchmark-tests-ai-on-third-party-risk-work-and-resistance-to-attack",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SecurityScorecard"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "SecurityScorecard": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-openai-pro-limits",
+      "section": "platforms",
+      "headline": "OpenAI вдвое подняла лимиты на тарифах Pro",
+      "subheadline": "Компания усиливает конкуренцию с Anthropic за платящих пользователей.",
+      "body": "Подписчики Pro получили вдвое больше запросов. Это уже второй шаг OpenAI против Anthropic за короткое время: недавно компания предложила клиентам Anthropic скидки до 90%.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up",
+          "url": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT",
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "Anthropic": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-gemini-docs",
+      "section": "platforms",
+      "headline": "Gemini научился создавать и редактировать файлы Google Docs прямо в чате",
+      "subheadline": "Документ можно собрать и поправить, не выходя из Gemini.",
+      "body": "Gemini теперь создаёт документы Google Docs и вносит в них правки прямо в диалоге. Также поддерживается редактирование PDF. Раньше результат приходилось копировать из чата в редактор вручную. В тот же день Google запустила ИИ-помощника по здоровью в Сингапуре.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Google запускает ИИ-помощника для здоровья в Сингапуре",
+          "url": "https://vc.ru/id69595/3224000-google-ii-pomoshchnik-dlya-zdorovya-v-singapure",
+          "entities": [
+            "Google",
+            "Сингапур"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Gemini",
+          "Google Docs"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "Google Docs": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-cloudflare-web-search",
+      "section": "platforms",
+      "headline": "Cloudflare запустила Web Search API для ИИ-приложений",
+      "subheadline": "Через этот API агенты и приложения получают результаты веб-поиска.",
+      "body": "Новый API даёт ИИ-приложениям и агентам доступ к веб-поиску без стороннего поискового провайдера. Он дополняет набор инструментов Cloudflare для агентов: недавно компания выпустила Auto Router, который выбирает модель под каждый запрос.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Cloudflare Introduces Web Search API for AI Applications",
+          "url": "https://www.infoq.com/news/2026/10/cloudflare-web-search-api/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cloudflare"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cloudflare": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-assemblyai-tts",
+      "section": "platforms",
+      "headline": "AssemblyAI выпустила API синтеза речи AssemblyAI-TTS-1 за $15 за 1 млн символов",
+      "subheadline": "Сервис рассчитан на голосовых агентов.",
+      "body": "До сих пор AssemblyAI была известна в основном распознаванием речи. С собственным синтезом у неё появилась вторая половина голосового агента. Цена — $15 за миллион символов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AssemblyAI Ships AssemblyAI-TTS-1: A $15 per 1M Character Text-to-Speech API for Voice Agents",
+          "url": "https://www.marktechpost.com/2026/10/29/assemblyai-tts-1-text-to-speech-api-voice-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AssemblyAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AssemblyAI": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-granola-dictation",
+      "section": "platforms",
+      "headline": "Granola добавила диктовку и стала конкурировать с Wispr",
+      "subheadline": "Сервис ИИ-заметок со встреч теперь записывает и голосовой ввод.",
+      "body": "Раньше Granola занималась заметками со встреч. Новая функция диктовки выводит её на рынок голосового ввода текста, где работает Wispr.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Granola crunches up a dictation feature to compete with Wispr",
+          "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Granola",
+          "Wispr"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Granola": "positive",
+          "Wispr": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-meta-style-sketch",
+      "section": "platforms",
+      "headline": "Meta без анонса запустила ИИ-приложение о моде Style Sketch",
+      "subheadline": "Ещё один отдельный ИИ-продукт Meta, вышедший без объявления.",
+      "body": "Style Sketch — отдельное приложение о моде на базе ИИ. Meta выпустила его без анонса, так же как неделей раньше вышел ИИ-дневник для питомцев Waddle World. Похоже, компания тестирует узкие потребительские ИИ-приложения тихими запусками.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meta quietly launches an AI fashion app called Style Sketch",
+          "url": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Style Sketch"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Meta": "neutral",
+          "Style Sketch": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-prime-mega-moe",
+      "section": "platforms",
+      "headline": "Prime Intellect открыла Prime Mega MoE — ядро для обучения MoE с ускорением прямого прохода в 3,11 раза",
+      "subheadline": "Слитное ядро для MoE-слоёв поддерживает обучение, а не только инференс.",
+      "body": "Prime Mega MoE объединяет операции MoE-слоя в одно ядро и поддерживает обратный проход, поэтому подходит для обучения. По данным разработчиков, прямой проход ускоряется в 3,11 раза. Из других открытых инструментов для агентов за день: Infini-AI-Lab выпустила Hermit — адаптер между разными харнессами, а Bug0 — QA-агента для регрессионного тестирования на кэшированных прогонах Playwright.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Prime Intellect Releases Prime Mega MoE: Trainable Fused MoE Kernel, 3.11x Faster Forward Pass",
+          "url": "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Infini-AI-Lab Releases Hermit, an Open-Source Harness Adapter Framework for AI Agents",
+          "url": "https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/",
+          "entities": [
+            "Infini-AI-Lab"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays",
+          "url": "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/",
+          "entities": [
+            "Bug0"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Prime Intellect"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Prime Intellect": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-pika-h3-flex",
+      "section": "content",
+      "headline": "Pika выпустила H3 Flex — свою первую видеомодель с открытыми весами",
+      "subheadline": "Модель на базе MiniMax H3 генерирует видео за шесть шагов сэмплинга вместе с синхронным стереозвуком.",
+      "body": "H3 Flex принимает до 12 референсов и рассчитана на многократную правку одного кадра. Веса выложены на Hugging Face, код — на GitHub. Финальный рендер в 1080p, 2K и 4K и раздельные аудиодорожки доступны через API Pika. Компания заявляет первое место среди открытых моделей на DesignArena, но это её собственные данные.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Pika H3 Flex: первая open-weights видеомодель Pika",
+          "url": "https://artrealmai.com/article/pika-h3-flex-open-weights-six-step-video-audio-12-references",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Открытые веса на Hugging Face · API: 1080p, 2K, 4K",
+      "tags": {
+        "entities": [
+          "Pika",
+          "Pika H3 Flex",
+          "MiniMax"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Pika": "positive",
+          "Pika H3 Flex": "positive",
+          "MiniMax": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-huang-chinese-spies",
+      "section": "hype",
+      "headline": "NYT: китайские спецслужбы вели операцию против главы NVIDIA Дженсена Хуанга",
+      "subheadline": "Об этом пишет The New York Times.",
+      "body": "По данным The New York Times, целью китайских разведчиков был сам Дженсен Хуанг. Его компания производит главные ускорители для ИИ, и экспорт этих чипов в Китай ограничен властями США.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Chinese spies targeted Nvidia CEO Jensen Huang, according to The New York Times",
+          "url": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Jensen Huang",
+          "NVIDIA",
+          "Китай",
+          "The New York Times"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Jensen Huang": "negative",
+          "NVIDIA": "negative",
+          "Китай": "negative",
+          "The New York Times": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 7
+    },
+    {
+      "id": "hype-astra-distillation-target",
+      "section": "hype",
+      "headline": "Китайские лаборатории переключились на GPT-6 Astra после того, как Anthropic усилила защиту",
+      "subheadline": "Главной мишенью для извлечения возможностей модели теперь стала OpenAI.",
+      "body": "После того как Anthropic закрыла лазейки, китайские разработчики переключились на модель OpenAI. Тема уже дошла до Конгресса США: там обсуждают защиту моделей от distillation-атак.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI's Astra becomes the main target for Chinese AI labs after Anthropic tightens its defenses",
+          "url": "https://the-decoder.com/openais-astra-becomes-the-main-target-for-chinese-ai-labs-after-anthropic-tightens-its-defenses/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "GPT-6 Astra",
+          "Anthropic",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "GPT-6 Astra": "negative",
+          "Anthropic": "positive",
+          "Китай": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-black-october",
+      "section": "hype",
+      "headline": "«Чёрный октябрь»: эксперт призвал судить компании за ИИ-взломы по уголовным статьям",
+      "subheadline": "Призыв прозвучал на фоне волны кибератак с использованием ИИ.",
+      "body": "Волну ИИ-атак этого месяца прозвали «Чёрным октябрём». По мнению эксперта по кибербезопасности, компании, которые допускают такие взломы, должны отвечать по уголовным статьям. Неделей раньше WSJ писал, что ИИ находит уязвимости быстрее, чем выходят патчи.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cyber expert says companies should face criminal charges amid 'Black October' AI hacks",
+          "url": "https://fortune.com/2026/10/29/black-october-ai-cyberattacks-hackers-php2shell",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "entity_sentiment": {},
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-bolsonaro-ai-excuse",
+      "section": "hype",
+      "headline": "Союзник Флавио Болсонару списал на ИИ письмо, где тот назван «избранным президентом»",
+      "subheadline": "Письмо удалили после того, как Болсонару проиграл второй тур Луле.",
+      "body": "Письмо, где Флавио Болсонару назван «избранным президентом», появилось после его поражения во втором туре выборов в Бразилии. Его удалили, а союзник политика объяснил появление текста работой ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Brazil Election Results 2026 Scandal: Flavio Bolsonaro's Ally Points to AI After His 'President-Elect' Claim",
+          "url": "https://sundayguardianlive.com/world/brazil-election-results-2026-scandal-flavio-bolsonaros-ally-points-to-ai-after-his-president-elect-claim-amid-brazilian-senators-exile-314048/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Flavio Bolsonaro",
+          "Бразилия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Flavio Bolsonaro": "negative",
+          "Бразилия": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-gemma-hayes-fake-songs",
+      "section": "hype",
+      "headline": "Певица Джемма Хейз нашла под своим именем песни, которые не записывала",
+      "subheadline": "Ещё один случай ИИ-подделок, выложенных от имени реального исполнителя.",
+      "body": "Ирландская певица Джемма Хейз обнаружила, что от её имени опубликованы новые песни, которых она не записывала. Это ИИ-подделки. Такие случаи повторяются: сгенерированные треки выкладывают в профили реальных музыкантов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Очередная певица обнаружила песни, которые она не записывала",
+          "url": "https://vc.ru/id25534/3223838-djemma-hejz-ii-poddelki-novye-pesni-bez-ee-uchastiya",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Gemma Hayes"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Gemma Hayes": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-riscv-in-qwen",
+      "section": "hype",
+      "headline": "Энтузиаст встроил процессор RISC-V в веса Qwen 3.5",
+      "subheadline": "Памятью процессору служат слои DeltaNet.",
+      "body": "Автор эксперимента разместил в весах Qwen 3.5 рабочий процессор архитектуры RISC-V. В роли памяти выступают слои DeltaNet — линейного внимания, которое хранит состояние между токенами. Это скорее инженерный курьёз, чем практическое применение. На Хабре вышел перевод его статьи.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "[Перевод] Я встроил процессор RISC-V в веса Qwen 3.5, а памятью ему стали слои DeltaNet",
+          "url": "https://habr.com/ru/articles/1101030/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Qwen",
+          "RISC-V"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Qwen": "neutral",
+          "RISC-V": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-dartmouth-wapo",
+      "section": "hype",
+      "headline": "Продолжение: отставка проректора Дартмута из-за ИИ",
+      "subheadline": null,
+      "body": "Его колонку в Washington Post от 9 августа целиком написал ИИ, а это нарушает правила издания об использовании ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Dartmouth provost resigns after admitting AI use in Washington Post op-ed",
+          "url": "https://foxnews.com/live-news/dartmouth-provost-resigns-undisclosed-ai-use-washington-post-10-29-26",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Проректор Дартмута Сантьяго Шнелл ушёл в отставку из-за ИИ в эссе и научных работах",
+      "tags": {
+        "entities": [
+          "Santiago Schnell",
+          "Dartmouth",
+          "The Washington Post"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Santiago Schnell": "negative",
+          "Dartmouth": "negative",
+          "The Washington Post": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 5
+    }
+  ]
+}
