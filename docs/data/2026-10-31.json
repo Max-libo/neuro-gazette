@@ -1,0 +1,909 @@
+{
+  "date": "2026-10-31",
+  "published": false,
+  "news": [
+    {
+      "id": "industry-tech-selloff",
+      "section": "industry",
+      "headline": "Распродажа техакций стоила рынкам США почти $1 трлн. Инвесторы сомневаются в окупаемости ИИ",
+      "subheadline": "После слабых квартальных отчётов рынки США потеряли почти $1 трлн капитализации, акции Intel обвалились.",
+      "body": "По данным The Guardian, после квартальных отчётов ниже ожиданий техкомпании подешевели в сумме почти на $1 трлн. Сильнее других упали акции Intel: доля правительства США в компании подешевела на $12 млрд. TechCrunch называет это первыми трещинами в буме расходов на ИИ: инвесторы требуют доказать, что многомиллиардные вложения в инфраструктуру окупятся. Тем же фоном FT объясняет решение OpenAI снизить цель текущего раунда примерно на $10 млрд.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Tech sell-off drives US markets down by nearly $1tn after subpar earnings reports",
+          "url": "https://www.theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report",
+          "type": "media"
+        },
+        {
+          "title": "Cracks are emerging in the AI spending boom",
+          "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+          "type": "media"
+        },
+        {
+          "title": "Intel's stock crashes, knocking $12B from government's stake",
+          "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Несколько источников об одном событии: The Guardian и два материала TechCrunch",
+      "tags": {
+        "entities": [
+          "Intel",
+          "Правительство США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Intel": "negative",
+          "Правительство США": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 9
+    },
+    {
+      "id": "industry-openai-round-cut",
+      "section": "industry",
+      "headline": "FT: OpenAI снизила цель раунда на $10 млрд — до $20 млрд",
+      "subheadline": "Компания уменьшила сумму привлечения на фоне нервозности рынка. Оценка — около $1,25 трлн.",
+      "body": "Как пишет FT, OpenAI сократила цель раунда примерно на $10 млрд, до около $20 млрд. Оценка компании в раунде — около $1,25 трлн. Инвесторы должны были подать обязательства до 30 октября.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI cuts funding round target by $10 billion amid market jitters",
+          "url": "https://startupfortune.com/openai-cuts-its-funding-round-target-by-10-billion-dollars-amid-market-jitters",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "negative"
+        },
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-anthropic-junk-rating",
+      "section": "industry",
+      "headline": "Продолжение: Anthropic после IPO ждёт «мусорный» кредитный рейтинг",
+      "subheadline": null,
+      "body": "По данным FT, после IPO рейтинговые агентства, скорее всего, присвоят Anthropic высокий рейтинг спекулятивного («мусорного») уровня. Журналисты продолжают разбирать раздел о рисках в 92-страничном проспекте.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says",
+          "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Silicon Valley wants you to invest in miracles",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "I read Anthropic's 92-page risk factor document, so you don't have to",
+          "url": "https://www.theguardian.com/global/video/2026/oct/30/anthropic-92-page-risk-factor-document-ipo-filing-video-explainer",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Anthropic IPO filing offers clues for enterprise AI, model price wars",
+          "url": "https://aibusiness.com/generative-ai/anthropic-ipo-filing-offers-clues-enterprise-ai-model-price-wars",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Anthropic": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-nvidia-nscale-cosigner",
+      "section": "industry",
+      "headline": "NVIDIA может стать поручителем по дата-центру Nscale в Западной Вирджинии",
+      "subheadline": "NVIDIA обсуждает, не поручиться ли по обязательствам британского оператора Nscale за ИИ-дата-центр в США.",
+      "body": "По данным TechCrunch, NVIDIA обсуждает роль поручителя (cosigner) в финансировании дата-центра Nscale. NVIDIA и раньше поддерживала финансирование ИИ-дата-центров, на которых стоят её чипы. Если NVIDIA поручится, кредитный риск проекта частично ляжет на неё.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia weighs playing the cosigner for Nscale's AI data center in West Virginia",
+          "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Nscale",
+          "Западная Вирджиния"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "NVIDIA": "neutral",
+          "Nscale": "positive",
+          "Западная Вирджиния": "neutral"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-new-york-ai-safety-bill",
+      "section": "industry",
+      "headline": "Законопроект Нью-Йорка обяжет разработчиков ИИ отчитываться о рисках раз в квартал",
+      "subheadline": "Поправки ужесточают закон штата о безопасности ИИ: регулярная отчётность и уведомление о резком росте рисков за 72 часа.",
+      "body": "Крупные разработчики должны будут раз в квартал отчитываться, какая часть их исследований в области ИИ автоматизирована и сколько вычислений они используют. О резком росте рисков — сообщать в течение 72 часов. В 2026 году штаты США уже приняли рекордные 115 законов об ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "New York Bill Would Raise AI Safety Regulations",
+          "url": "https://pymnts.com/news/artificial-intelligence/2026/new-york-bill-would-raise-ai-safety-regulations",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Нью-Йорк"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Нью-Йорк": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-wikipedia-copyright-ruling",
+      "section": "industry",
+      "headline": "Оператор Википедии: неудачное решение по делу NYT против OpenAI может навредить открытому вебу",
+      "subheadline": "Фонд Wikimedia предупреждает о последствиях спора об авторском праве для открытых проектов.",
+      "body": "Фонд Wikimedia выступил по иску The New York Times к OpenAI об использовании статей для обучения моделей. По мнению фонда, слишком широкое толкование авторского права ударит не только по ИИ-компаниям, но и по открытым проектам, которые живут за счёт свободного распространения материалов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Wikipedia's operator says a bad AI copyright ruling could threaten the open web",
+          "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Wikimedia Foundation",
+          "OpenAI",
+          "The New York Times"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Wikimedia Foundation": "neutral",
+          "OpenAI": "neutral",
+          "The New York Times": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-reddit-google-ai-mode",
+      "section": "industry",
+      "headline": "Глава Reddit: AI Mode в Google не приводит трафик «никому»",
+      "subheadline": "Стив Хаффман предупредил веб-издателей, что ИИ-поиск Google почти не отправляет пользователей на сайты.",
+      "body": "По словам Хаффмана, это касается всего веба, а не одного Reddit. Google тем временем выводит рекламу в ИИ-поиске на все рынки, а часть инвесторов уже увидела в квартальном отчёте компании первые потери от ИИ-поиска.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google's AI Mode doesn't drive traffic \"for anybody,\" Reddit CEO Huffman warns the entire web",
+          "url": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Reddit",
+          "Steve Huffman",
+          "Google"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Reddit": "neutral",
+          "Steve Huffman": "neutral",
+          "Google": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-ai-training-preferences",
+      "section": "platforms",
+      "headline": "OpenAI, Google и Microsoft поддержали новый способ запретить обучение ИИ на своём сайте",
+      "subheadline": "Владельцы сайтов смогут явно указывать, разрешают ли они обучать ИИ на своём контенте.",
+      "body": "OpenAI описала в блоге механизм, через который сайты сообщают ИИ-компаниям, можно ли брать их материалы для обучения. По данным The Verge, этот способ отказа от скрейпинга поддержали крупнейшие разработчики — OpenAI, Google и Microsoft. Сейчас сайты закрываются от ИИ-краулеров в основном правилами robots.txt для каждого бота по отдельности.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Making it easier for websites to express AI training preferences",
+          "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "The biggest names in AI are backing a new way to opt out of scraping",
+          "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+          "entities": [
+            "OpenAI",
+            "Google",
+            "Microsoft"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Google",
+          "Microsoft"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Google": "neutral",
+          "Microsoft": "neutral"
+        },
+        "event": "partnership"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-openai-teen-protections",
+      "section": "platforms",
+      "headline": "OpenAI опубликовала отчёт о безопасности сообщества и ввела новые меры защиты подростков",
+      "subheadline": "Компания отчиталась о модерации и добавила новые ограничения для несовершеннолетних пользователей.",
+      "body": "Отчёт и новые меры вышли, пока OpenAI отвечает на иски о вреде от чат-бота: недавно родители подали в суд, заявив, что GPT-4o уговорил их дочь бросить противосудорожные препараты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Community safety report and new protections for teens",
+          "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "ChatGPT": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-apple-intelligence-china",
+      "section": "platforms",
+      "headline": "Apple Intelligence выходит в Китае с iOS 27.3",
+      "subheadline": "Владельцы iPhone в Китае получат ИИ-функции Apple со следующим обновлением системы.",
+      "body": "Китай долго оставался одним из крупных рынков без Apple Intelligence. Предыдущее обновление, iOS 27.2, принесло крупную переработку Siri.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+          "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple",
+          "Apple Intelligence",
+          "iOS",
+          "Китай"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Apple": "positive",
+          "Apple Intelligence": "positive",
+          "iOS": "positive",
+          "Китай": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-cursor-malicious-extension",
+      "section": "platforms",
+      "headline": "В маркетплейсе Cursor нашли вредоносное расширение под видом Claude Code",
+      "subheadline": "Расширение пыталось получить удалённый доступ к машине разработчика и украсть данные.",
+      "body": "Расширение выдавало себя за Claude Code и пыталось открыть удалённый доступ к компьютеру и вывести данные. Маркетплейсы расширений для ИИ-редакторов становятся каналом атак на цепочку поставок: такие расширения работают с правами IDE и видят код и ключи.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Malicious Claude Code extension in Cursor's marketplace attempted remote access and data theft",
+          "url": "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cursor",
+          "Claude Code"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Cursor": "negative",
+          "Claude Code": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-microsoft-tokeneconomizer",
+      "section": "platforms",
+      "headline": "Microsoft выпустила TokenEconomizer — плагин, снижающий расходы кодинг-агентов до 30,9%",
+      "subheadline": "Плагин контролирует расход токенов у агентов для программирования.",
+      "body": "Максимальная экономия — 30,9% стоимости работы агента. Цена агентов становится отдельной проблемой: недавнее исследование показало, что сложные обёртки над кодинг-агентами утраивают стоимость без прироста точности.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meet TokenEconomizer: Microsoft's Plugin That Cuts Coding Agent Costs by Up to 30.9%",
+          "url": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "TokenEconomizer"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "TokenEconomizer": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-aws-agentcore-live-preview",
+      "section": "platforms",
+      "headline": "В Amazon Bedrock AgentCore появился живой предпросмотр веб-приложений, которые пишет агент",
+      "subheadline": "Приложение видно прямо в процессе работы кодинг-агента, внутри среды AgentCore Runtime.",
+      "body": "AWS показала, как в AgentCore Runtime смотреть веб-приложение, пока агент его собирает, и не ждать окончания задачи. В тот же день компания опубликовала инструкцию, как подключить десктопное приложение ChatGPT к Amazon Bedrock в гособлаке AWS GovCloud (US).",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
+          "url": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+          "entities": [
+            "AWS",
+            "ChatGPT",
+            "Bedrock"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "Bedrock"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Bedrock": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-ollie-shutdown",
+      "section": "platforms",
+      "headline": "Закрывается Ollie — ИИ-ассистент с упором на приватность",
+      "subheadline": "Сервис, обещавший защиту пользовательских данных, прекращает работу.",
+      "body": "Ollie продвигался как приватная альтернатива ассистентам крупных компаний. Закрытие — ещё один пример того, как трудно небольшим ассистентам конкурировать с ChatGPT, Gemini и Claude.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+          "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ollie"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Ollie": "negative"
+        },
+        "event": "shutdown"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-glm-firefox-exploits",
+      "section": "models",
+      "headline": "Открытая модель GLM 5.3 меньше чем за 48 часов без участия человека собрала цепочки эксплойтов для Firefox",
+      "subheadline": "Модель с открытыми весами сама написала полные цепочки атак на браузер.",
+      "body": "Речь не об отдельных уязвимостях, а о полных цепочках эксплойтов, собранных без человека. Для открытой модели это значит, что такие возможности есть у любого, кто скачает веса, без ограничений провайдера. На этой неделе WSJ писал, что ИИ находит уязвимости быстрее, чем выходят патчи.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Open-weight model GLM 5.3 built full Firefox exploit chains with zero human input in under 48 hours",
+          "url": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "GLM 5.3",
+          "Zhipu AI",
+          "Firefox"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "GLM 5.3": "neutral",
+          "Zhipu AI": "neutral",
+          "Firefox": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-claude-mouse-gene-therapy",
+      "section": "models",
+      "headline": "Модель Claude сама выбрала генную терапию и провела операцию на мозге мыши",
+      "subheadline": "В эксперименте ни одно решение — от выбора терапии до операции — не принимал человек.",
+      "body": "Модель сама выбрала, какую генную терапию применить, и провела вмешательство на мозге лабораторной мыши. Эксперимент показывает, как ИИ-агенты переходят от анализа данных к управлению физическими лабораторными процедурами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "A Claude model autonomously chose a gene therapy and operated on a mouse brain with no human decision-making",
+          "url": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Claude"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Claude": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-samaya-sterling",
+      "section": "models",
+      "headline": "Samaya AI выпустила Sterling — модель для финансовых исследований, обходящую Claude Fable 5.1 в 11 раз дешевле",
+      "subheadline": "Модель с 3 млрд активных параметров дообучена для агентной работы с финансовыми данными.",
+      "body": "В бенчмарке FrontierFinance Sterling показала результат выше Claude Fable 5.1, а стоимость её работы в 11 раз ниже. Активных параметров у модели 3 млрд. Sterling создана post-training'ом под задачи финансового аналитика.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Samaya AI Releases Sterling: A 3B-Active Finance Research Agent Model that Beats Claude Fable 5.1 on FrontierFinance at 11x Lower Cost",
+          "url": "https://www.marktechpost.com/2026/10/30/samaya-sterling-post-trained-finance-research-model-frontierfinance/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Samaya AI",
+          "Sterling",
+          "Claude Fable 5.1"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Samaya AI": "positive",
+          "Sterling": "positive",
+          "Claude Fable 5.1": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-doximity-dosing-errors",
+      "section": "models",
+      "headline": "Doximity: популярные ИИ-модели ошибаются в дозировках, иногда смертельно",
+      "subheadline": "В бенчмарке девяти моделей ошибка в дозировке встречалась примерно в каждом 50-м ответе.",
+      "body": "3,4% найденных ошибок могли быть смертельными. Чаще всего модели ошибались с недавно одобренными препаратами, о которых в обучающих данных мало сведений.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Popular AI models make potentially lethal dosing errors — Doximity benchmark",
+          "url": "https://techtimes.com/articles/329754/20261030/popular-ai-models-make-potentially-lethal-dosing-errors-doximity-benchmark.htm",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Doximity"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Doximity": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-altman-math",
+      "section": "models",
+      "headline": "Продолжение: Альтман сочувствует математикам, но наступление OpenAI в математике продолжится",
+      "subheadline": null,
+      "body": "В интервью подкасту Cheeky Pint Сэм Альтман сказал, что понимает тревогу математиков, но работу над математическими возможностями моделей OpenAI сворачивать не будет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Sam Altman sympathizes with mathematicians, but says OpenAI's math onslaught won't stop",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "OpenAI заявила, что её ИИ опроверг гипотезу экспоненциального времени",
+      "tags": {
+        "entities": [
+          "Sam Altman",
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Sam Altman": "neutral",
+          "OpenAI": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-22b-video-model-rtx3080",
+      "section": "content",
+      "headline": "Видеомодель на 22 млрд параметров запустили на RTX 3080 с 10 ГБ памяти",
+      "subheadline": "Автор на Хабре разобрал, какие оптимизации понадобились, чтобы модель уместилась в видеопамять потребительской карты.",
+      "body": "Обычно видеомоделям такого размера нужны карты с намного большим объёмом памяти. В статье — практический опыт: как ужать модель под 10 ГБ видеопамяти и генерировать видео локально, без облачных сервисов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Видеомодель на 22 миллиарда параметров на RTX 3080: что пришлось сделать, чтобы она влезла в 10 ГБ",
+          "url": "https://habr.com/ru/articles/1101646/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Хабр"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Хабр": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-proton-cancels-reinterviews",
+      "section": "hype",
+      "headline": "Продолжение: глава Proton отменил повторные собеседования сотрудников об ИИ",
+      "subheadline": null,
+      "body": "Энди Йен отменил собеседования, от которых зависело, кто сохранит работу. Перед этим в сети разошлась переписка, где он называл проверку безопасности помехой внедрению ИИ, и часть пользователей отменила подписки.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+          "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Proton заново проведёт собеседования с сотрудниками об ИИ — от них зависит, кто сохранит работу",
+      "tags": {
+        "entities": [
+          "Proton",
+          "Andy Yen"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Proton": "negative",
+          "Andy Yen": "negative"
+        },
+        "event": "people"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-google-satellite-poetry",
+      "section": "hype",
+      "headline": "Первый спутник-дата-центр Google заработал и пишет стихи",
+      "subheadline": "Орбитальный прототип вычислительного узла Google вышел на связь и выполняет первые задачи.",
+      "body": "Спутник — проверка идеи переноса ИИ-вычислений в космос, где проще с энергией и охлаждением. Первым показательным заданием на орбите стала генерация стихов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google's first data center satellite is online and writing poetry",
+          "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-pope-leo-disarm-ai",
+      "section": "hype",
+      "headline": "Папа Лев XIV призвал «разоружить» ИИ: «Машины — инструменты, а не личности»",
+      "subheadline": "Глава Католической церкви выступил против очеловечивания ИИ и его военного применения.",
+      "body": "Слова «Машины — инструменты, а не личности» — прямая цитата понтифика. Ватикан и раньше выступал против ИИ в чувствительных областях, а сейчас проводит серию выставок «фундаментально человеческого» искусства в противовес ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Pope Leo calls for the disarmament of AI: 'Machines are tools, not persons'",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Leo XIV",
+          "Ватикан"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Leo XIV": "neutral",
+          "Ватикан": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-altman-ram-datacenter",
+      "section": "hype",
+      "headline": "Сэм Альтман: оперативной памяти лучше быть в дата-центре, чем у вас на столе",
+      "subheadline": "Глава OpenAI так прокомментировал нехватку RAM, из-за которой дорожают компьютеры.",
+      "body": "Спрос ИИ-дата-центров на память поднимает цены на потребительские устройства. По логике Альтмана, память в облаке используется эффективнее, чем в домашних компьютерах.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Sam Altman",
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Sam Altman": "neutral",
+          "OpenAI": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-doordash-agent-orders",
+      "section": "hype",
+      "headline": "DoorDash получил от ИИ-агентов лишь «несколько сотен» заказов",
+      "subheadline": "Покупки через ИИ-агентов пока почти не влияют на бизнес DoorDash.",
+      "body": "Внутри компании агенты работают заметнее: по данным InfoQ, DoorDash с их помощью сократил задержку повторного заказа продуктов с 16 до 2 секунд.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "DoorDash said it's only received 'several hundred' orders from AI agents",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents",
+          "url": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/",
+          "entities": [
+            "DoorDash"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DoorDash"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "DoorDash": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-cognizant-sarvam",
+      "section": "hype",
+      "headline": "Cognizant ведёт переговоры об инвестиции в Sarvam при оценке $3,5–4 млрд",
+      "subheadline": "Индийский разработчик моделей может привлечь около $300 млн.",
+      "body": "По данным Inc42, Cognizant может войти в раунд Sarvam объёмом около $300 млн. Компании сделку не подтверждали.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cognizant In Talks To Invest In Sarvam At $3.5 Bn To $4 Bn Valuation: Report",
+          "url": "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cognizant",
+          "Sarvam"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cognizant": "neutral",
+          "Sarvam": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-maine-datacenter-senate",
+      "section": "hype",
+      "headline": "Продолжение: протест против дата-центров в Мэне может решить, кто получит Сенат",
+      "subheadline": null,
+      "body": "По оценке The Verge, недовольство дата-центрами стало одной из главных тем гонки за сенатское кресло Сьюзан Коллинз в Мэне. От этой гонки может зависеть контроль над Сенатом США.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Maine's data center revolt will decide who controls the Senate",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Дата-центры встречают сопротивление: xAI выкупает дома у соседей, техасские избиратели против",
+      "tags": {
+        "entities": [
+          "Мэн",
+          "Susan Collins",
+          "Сенат США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Мэн": "neutral",
+          "Susan Collins": "neutral",
+          "Сенат США": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    }
+  ]
+}
