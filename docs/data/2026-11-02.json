@@ -1,0 +1,402 @@
+{
+  "date": "2026-11-02",
+  "published": false,
+  "news": [
+    {
+      "id": "models-semianalysis-gdpx",
+      "section": "models",
+      "headline": "SemiAnalysis запустила бенчмарк GDPx: лучшая модель решила 12% задач",
+      "subheadline": "Новый тест проверяет, как модели справляются с многошаговыми агентными задачами, и пока все фронтирные модели проваливают почти все из них",
+      "body": "GDPx — бенчмарк агентных способностей на длинных многошаговых задачах. В первом рейтинге лидирует Claude Opus 5.5 с результатом 12,0%. Второе место у Gemini 4 Carbon (10,9%), третье у GPT-6 Astra (9,6%). Отрыв лидера от третьего места — 2,4 процентного пункта. При этом даже лучшая модель решает лишь примерно одну задачу из восьми. Для сравнения: в недавнем обновлении индекса Artificial Analysis Claude Opus 5.5 тоже занял первое место, с 58 баллами. Значит, на привычных агрегированных тестах фронтирные модели почти упёрлись в потолок, а на агентных задачах запас для роста ещё большой.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "SemiAnalysis GDPx AI benchmark: frontier models",
+          "url": "https://cryptobriefing.com/semianalysis-gdpx-ai-benchmark-frontier-models/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SemiAnalysis",
+          "Claude Opus 5.5",
+          "Gemini 4 Carbon",
+          "GPT-6 Astra"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "SemiAnalysis": "neutral",
+          "Claude Opus 5.5": "positive",
+          "Gemini 4 Carbon": "neutral",
+          "GPT-6 Astra": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-google-proactive-video-assistant",
+      "section": "models",
+      "headline": "Google учит видеоассистента понимать, когда человеку за работой нужна помощь",
+      "subheadline": "Исследователи Google хотят, чтобы видео-ИИ сам решал, в какой момент предложить подсказку",
+      "body": "Сейчас ассистенты отвечают только на запрос. Google проверяет другой подход: модель следит за видеопотоком, пока человек выполняет задачу, и сама определяет момент, когда стоит вмешаться. Пока это исследование, а не продукт, доступа к модели нет.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google wants video AI to understand what people need as they work",
+          "url": "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-chinese-models-politics-study",
+      "section": "models",
+      "headline": "Исследование: китайские модели политически сложнее, чем рупор правительства",
+      "subheadline": "Ответы китайских LLM на политические вопросы не сводятся к повторению официальной позиции",
+      "body": "Авторы проверили, как китайские языковые модели отвечают на политически чувствительные вопросы. Вывод: поведение моделей неоднородно, и представление о них как о простом инструменте государственной пропаганды упрощает картину.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Chinese AI models are politically complex, not just government mouthpieces, study finds",
+          "url": "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Китай"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Китай": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-empathetic-prompts-trauma",
+      "section": "models",
+      "headline": "После эмпатичных промптов чат-боты ведут себя как травмированные собеседники",
+      "subheadline": "Исследователи обнаружили, что сочувственные запросы меняют манеру ответов моделей",
+      "body": "Если вести разговор с чат-ботом в терапевтическом тоне, модель начинает описывать себя как пережившую травму. Авторы считают это артефактом промптинга, а не признаком внутренних переживаний. Для разработчиков это риск: такие ответы легко принять за «чувства» модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Empathetic prompts can turn AI chatbots into seemingly traumatized conversational partners",
+          "url": "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-openai-chatgpt-paid-usage",
+      "section": "platforms",
+      "headline": "OpenAI объединит в ChatGPT чат и рабочие инструменты и подталкивает пользователей к платному использованию",
+      "subheadline": "По оценке The Decoder, эпоха безлимитных промптов за фиксированную подписку заканчивается",
+      "body": "OpenAI готовит объединение разговорного режима ChatGPT с рабочими функциями. The Decoder считает, что вместе с этим изменится модель оплаты: вместо безлимита за фиксированную подписку — оплата по объёму использования. Во втором материале издание пишет, что OpenAI уже направляет пользователей ChatGPT к платным сценариям. Ранее компания вдвое подняла лимиты на тарифах Pro.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI's upcoming chat-and-work merger in ChatGPT signals the end of all-you-can-prompt pricing",
+          "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/",
+          "type": "media"
+        },
+        {
+          "title": "OpenAI is steering ChatGPT users toward more paid usage",
+          "url": "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Два материала The Decoder об одном изменении ChatGPT объединены",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "ChatGPT": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-deepseek-dsh-superagent",
+      "section": "platforms",
+      "headline": "DeepSeek открыла исходный код кодинг-агента dsh-superagent",
+      "subheadline": "Агент устроен по схеме «маршрутизатор — исполнители»",
+      "body": "В dsh-superagent модель-маршрутизатор разбивает задачу и раздаёт части моделям-исполнителям, а те пишут и правят код. Код агента опубликован в открытом доступе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent",
+          "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DeepSeek"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "DeepSeek": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-settle-api-mcp",
+      "section": "platforms",
+      "headline": "Settle открыла публичный API и MCP-сервер для своей платформы платежей",
+      "subheadline": "ИИ-ассистенты смогут подключаться к данным о денежных потоках производителей потребительских товаров",
+      "body": "Settle делает платформу управления кредиторской задолженностью и денежными потоками для производителей потребительских товаров. Через MCP-сервер ассистенты вроде Claude получают доступ к данным о платежах.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI-Ready Payables Platforms: Settle Opens a Public API and MCP Server",
+          "url": "https://trendhunter.com/trends/ai-ready-payables-platforms",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Settle",
+          "MCP"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Settle": "positive",
+          "MCP": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-aws-capacity-sold-out",
+      "section": "industry",
+      "headline": "Мощности AWS почти полностью распроданы до 2027 года",
+      "subheadline": "Свободный запас AWS оставляет только под запросы по требованию",
+      "body": "По данным InfoQ, основная часть вычислительных мощностей AWS законтрактована до 2027 года. Резерв держат для клиентов с оплатой по требованию. Ранее Энди Джесси говорил, что AWS станет бизнесом на $1 трлн, но сначала потребует больших затрат.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
+          "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "Amazon"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Amazon": "positive"
+        },
+        "event": "finance"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-national-grid-teesside",
+      "section": "industry",
+      "headline": "National Grid построит крупнейшую в Великобритании подстанцию рядом с будущим ИИ-дата-центром в Тиссайде",
+      "subheadline": "Энергетическую инфраструктуру размещают под нагрузку планируемого дата-центра",
+      "body": "Подстанция будет крупнейшей в стране. Её строят возле площадки, где планируют ИИ-дата-центр. Это ещё один пример того, как энергосети перестраивают под потребление вычислительных кластеров.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "National Grid to site biggest substation in UK near planned Teesside datacentre",
+          "url": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "National Grid",
+          "Великобритания"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "National Grid": "positive",
+          "Великобритания": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-wa-police-facial-recognition",
+      "section": "industry",
+      "headline": "Полиция Западной Австралии проверила миллион лиц системой распознавания: 122 ареста",
+      "subheadline": "Итоги пилотного запуска распознавания лиц в штате",
+      "body": "За время пилота система распознавания лиц просканировала около миллиона человек. По её срабатываниям задержали 122 человека. Результаты опубликованы на фоне споров о том, как в Австралии регулировать ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Police use facial recognition to scan one million faces in WA trial leading to 122 arrests",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/02/wa-police-facial-recognition-technology-trial",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Полиция Западной Австралии",
+          "Австралия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Полиция Западной Австралии": "neutral",
+          "Австралия": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-adobe-agents-photoshop",
+      "section": "content",
+      "headline": "Adobe проверяет, умеют ли ИИ-агенты работать в редакторах как профессионал Photoshop",
+      "subheadline": "Исследование оценивает агентов на реальных задачах редактирования изображений",
+      "body": "Агентам дают задачи, которые дизайнер решает вручную в профессиональном редакторе, и оценивают, насколько близко они подходят к результату специалиста. Для Adobe это заготовка под агентное управление Photoshop и другими её инструментами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Adobe is testing how well AI agents can use editing tools like a Photoshop professional would",
+          "url": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Adobe",
+          "Photoshop"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Adobe": "neutral",
+          "Photoshop": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7
+    },
+    {
+      "id": "content-habr-sde-flow-matching",
+      "section": "content",
+      "headline": "Шум в SDE-сэмплерах flow-matching моделей: важно, куда его добавлять, а не сколько",
+      "subheadline": "Автор на Хабре разобрал, как стохастический шум влияет на генерацию изображений",
+      "body": "Flow-matching лежит в основе современных генераторов изображений, включая Flux. Автор экспериментировал со стохастическими сэмплерами. По его выводам, на результат сильнее влияет то, на каких шагах генерации добавляется шум, чем его величина.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Не сколько, а куда: что я выяснил про шум в SDE-сэмплерах flow-matching моделей",
+          "url": "https://habr.com/ru/articles/1102234/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Хабр"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Хабр": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-openai-compute-campuses",
+      "section": "hype",
+      "headline": "OpenAI может переименовать дата-центры в «кампусы ИИ-вычислений»",
+      "subheadline": "Компания обдумывает ребрендинг объектов, вокруг которых растёт местное сопротивление",
+      "body": "TechCrunch пишет, что OpenAI рассматривает термин «AI compute campuses» вместо «дата-центров». Решение не объявлено. Идея появилась на фоне протестов против дата-центров в США: в Мэне и Техасе против них выступают жители и избиратели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI might rebrand its data centers as 'AI compute campuses'",
+          "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 5
+    }
+  ]
+}
