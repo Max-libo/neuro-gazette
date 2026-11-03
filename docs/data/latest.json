@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "published": false,
   "news": [
     {
-      "id": "models-semianalysis-gdpx",
+      "id": "models-anthropic-rsi-warning",
       "section": "models",
-      "headline": "SemiAnalysis запустила бенчмарк GDPx: лучшая модель решила 12% задач",
-      "subheadline": "Новый тест проверяет, как модели справляются с многошаговыми агентными задачами, и пока все фронтирные модели проваливают почти все из них",
-      "body": "GDPx — бенчмарк агентных способностей на длинных многошаговых задачах. В первом рейтинге лидирует Claude Opus 5.5 с результатом 12,0%. Второе место у Gemini 4 Carbon (10,9%), третье у GPT-6 Astra (9,6%). Отрыв лидера от третьего места — 2,4 процентного пункта. При этом даже лучшая модель решает лишь примерно одну задачу из восьми. Для сравнения: в недавнем обновлении индекса Artificial Analysis Claude Opus 5.5 тоже занял первое место, с 58 баллами. Значит, на привычных агрегированных тестах фронтирные модели почти упёрлись в потолок, а на агентных задачах запас для роста ещё большой.",
+      "headline": "Anthropic предупредила, что очень близка к рекурсивному самоулучшению ИИ",
+      "subheadline": "Компания говорит, что модели скоро смогут сами вести разработку следующих версий ИИ",
+      "body": "По данным TechCrunch, Anthropic заявила, что подходит к порогу RSI (recursive self-improvement). Так называют уровень, на котором ИИ-системы сами ускоряют создание более сильных моделей и человеку остаётся всё меньше работы в цикле разработки. Заявление вышло на фоне подготовки Anthropic к IPO: компания подала заявку на размещение, в проспекте указан убыток $80,7 млрд за полугодие. Незадолго до этого Anthropic сообщала, что Claude самостоятельно провёл биологический эксперимент на мыши. Сколько времени осталось до порога, в заголовке публикации не сказано. Первичный документ Anthropic в материалах выпуска не найден, поэтому источник здесь — пересказ TechCrunch.",
       "tier": "hero",
       "sources": [
         {
-          "title": "SemiAnalysis GDPx AI benchmark: frontier models",
-          "url": "https://cryptobriefing.com/semianalysis-gdpx-ai-benchmark-frontier-models/",
+          "title": "Anthropic warns that it's very close to RSI capability, aka self-building AI",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
           "type": "media"
         }
       ],
@@ -21,33 +21,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "SemiAnalysis",
-          "Claude Opus 5.5",
-          "Gemini 4 Carbon",
-          "GPT-6 Astra"
+          "Anthropic"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "SemiAnalysis": "neutral",
-          "Claude Opus 5.5": "positive",
-          "Gemini 4 Carbon": "neutral",
-          "GPT-6 Astra": "neutral"
+          "Anthropic": "neutral"
         },
-        "event": "research"
+        "event": "statement"
       },
       "importance": 9
     },
     {
-      "id": "models-google-proactive-video-assistant",
+      "id": "models-deep-principle-hydrogen",
       "section": "models",
-      "headline": "Google учит видеоассистента понимать, когда человеку за работой нужна помощь",
-      "subheadline": "Исследователи Google хотят, чтобы видео-ИИ сам решал, в какой момент предложить подсказку",
-      "body": "Сейчас ассистенты отвечают только на запрос. Google проверяет другой подход: модель следит за видеопотоком, пока человек выполняет задачу, и сама определяет момент, когда стоит вмешаться. Пока это исследование, а не продукт, доступа к модели нет.",
+      "headline": "Deep Principle выпустила Hydrogen-1.0 — открытую модель на 753 млрд параметров для научных открытий",
+      "subheadline": "Веса модели для научных задач выложены в открытый доступ",
+      "body": "Hydrogen-1.0 — одна из крупнейших открытых моделей, рассчитанных именно на науку, а не на общие задачи. Модель с 753 млрд параметров выпущена с открытыми весами, поэтому исследователи могут запускать и дообучать её у себя.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Google wants video AI to understand what people need as they work",
-          "url": "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/",
+          "title": "Deep Principle Releases Hydrogen-1.0: A 753B Open-Weight Model for Scientific Discovery",
+          "url": "https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/",
           "type": "media"
         }
       ],
@@ -56,27 +50,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Google"
+          "Deep Principle",
+          "Hydrogen-1.0"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Google": "neutral"
+          "Deep Principle": "positive",
+          "Hydrogen-1.0": "positive"
         },
-        "event": "research"
+        "event": "release"
       },
       "importance": 7
     },
     {
-      "id": "models-chinese-models-politics-study",
+      "id": "models-zyphra-zha",
       "section": "models",
-      "headline": "Исследование: китайские модели политически сложнее, чем рупор правительства",
-      "subheadline": "Ответы китайских LLM на политические вопросы не сводятся к повторению официальной позиции",
-      "body": "Авторы проверили, как китайские языковые модели отвечают на политически чувствительные вопросы. Вывод: поведение моделей неоднородно, и представление о них как о простом инструменте государственной пропаганды упрощает картину.",
+      "headline": "Zyphra предложила иерархическое внимание ZHA со сложностью ниже квадратичной",
+      "subheadline": "Механизм разреженного внимания должен удешевить работу с длинным контекстом",
+      "body": "В обычном механизме внимания трансформера затраты растут квадратично от длины контекста. Zyphra Hierarchical Attention обрабатывает контекст иерархически и выбирает разреженное подмножество позиций, поэтому затраты растут медленнее квадрата. Это описание метода, а не выпуск модели.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Chinese AI models are politically complex, not just government mouthpieces, study finds",
-          "url": "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/",
+          "title": "Zyphra AI Introduces Zyphra Hierarchical Attention (ZHA): A Path to True Subquadratic Attention",
+          "url": "https://www.marktechpost.com/2026/11/02/zyphra-hierarchical-attention-zha-sparse-attention/",
           "type": "media"
         }
       ],
@@ -85,117 +81,215 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Китай"
+          "Zyphra"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Китай": "neutral"
+          "Zyphra": "positive"
         },
         "event": "research"
       },
       "importance": 5
     },
     {
-      "id": "models-empathetic-prompts-trauma",
+      "id": "models-qwengpu",
       "section": "models",
-      "headline": "После эмпатичных промптов чат-боты ведут себя как травмированные собеседники",
-      "subheadline": "Исследователи обнаружили, что сочувственные запросы меняют манеру ответов моделей",
-      "body": "Если вести разговор с чат-ботом в терапевтическом тоне, модель начинает описывать себя как пережившую травму. Авторы считают это артефактом промптинга, а не признаком внутренних переживаний. Для разработчиков это риск: такие ответы легко принять за «чувства» модели.",
+      "headline": "Продолжение: в веса Qwen встроили уже GPU, который исполняет CUDA",
+      "subheadline": null,
+      "body": "В проекте qwenGPU в веса Qwen3.5-2B скомпилировали 45 слоёв, которые работают как SIMT-процессор, то есть как GPU, и выполняют CUDA-код.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Empathetic prompts can turn AI chatbots into seemingly traumatized conversational partners",
-          "url": "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/",
+          "title": "Meet qwenGPU: Qwen3.5-2B With 45 Compiled GPU Layers That Run CUDA",
+          "url": "https://www.marktechpost.com/2026/11/01/qwengpu-simt-gpu-compiled-into-qwen3-5-2b-weights-runs-cuda/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": null,
+      "duplicate_note": "Энтузиаст встроил процессор RISC-V в веса Qwen 3.5",
       "tags": {
-        "entities": [],
+        "entities": [
+          "Qwen"
+        ],
         "sentiment": "neutral",
-        "entity_sentiment": {},
+        "entity_sentiment": {
+          "Qwen": "neutral"
+        },
         "event": "research"
       },
       "importance": 5
     },
     {
-      "id": "platforms-openai-chatgpt-paid-usage",
+      "id": "platforms-torchtpu",
       "section": "platforms",
-      "headline": "OpenAI объединит в ChatGPT чат и рабочие инструменты и подталкивает пользователей к платному использованию",
-      "subheadline": "По оценке The Decoder, эпоха безлимитных промптов за фиксированную подписку заканчивается",
-      "body": "OpenAI готовит объединение разговорного режима ChatGPT с рабочими функциями. The Decoder считает, что вместе с этим изменится модель оплаты: вместо безлимита за фиксированную подписку — оплата по объёму использования. Во втором материале издание пишет, что OpenAI уже направляет пользователей ChatGPT к платным сценариям. Ранее компания вдвое подняла лимиты на тарифах Pro.",
+      "headline": "Google и Meta открыли TorchTPU — нативную поддержку PyTorch на TPU",
+      "subheadline": "Модели на PyTorch смогут работать на чипах Google без отдельного стека",
+      "body": "До сих пор основным фреймворком для TPU был JAX, а PyTorch работал на них через промежуточные прослойки. TorchTPU даёт PyTorch прямую поддержку TPU. Проект выпущен с открытым кодом и сделан вместе с Meta, которая разрабатывает PyTorch.",
       "tier": "regular",
       "sources": [
         {
-          "title": "OpenAI's upcoming chat-and-work merger in ChatGPT signals the end of all-you-can-prompt pricing",
-          "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/",
-          "type": "media"
-        },
-        {
-          "title": "OpenAI is steering ChatGPT users toward more paid usage",
-          "url": "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/",
+          "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
+          "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Два материала The Decoder об одном изменении ChatGPT объединены",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI",
-          "ChatGPT"
+          "Google",
+          "Meta",
+          "TorchTPU",
+          "TPU"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Meta": "positive",
+          "TorchTPU": "positive",
+          "TPU": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-uber-mcp-gateway",
+      "section": "platforms",
+      "headline": "Uber построила MCP-шлюз для контроля доступа к 800 с лишним серверам",
+      "subheadline": "Через единую точку проходит доступ ИИ-агентов к более чем 5000 инструментов",
+      "body": "Внутри Uber работает больше 800 MCP-серверов, через которые агентам доступно более 5000 инструментов. Компания пустила все обращения через собственный шлюз. Он централизованно решает, какой агент может вызывать какой инструмент.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
+          "url": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Uber",
+          "MCP"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "OpenAI": "neutral",
-          "ChatGPT": "neutral"
+          "Uber": "neutral",
+          "MCP": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-nvidia-auto-ontology",
+      "section": "platforms",
+      "headline": "NVIDIA открыла Auto Ontology — семантический слой для SQL-запросов ИИ-агентов",
+      "subheadline": "Слой описывает смысл данных, чтобы агенты точнее составляли SQL",
+      "body": "Агенты часто ошибаются в SQL, потому что не знают, что значат таблицы и поля в конкретной базе. Auto Ontology строит над данными слой с описанием сущностей и связей, и агент опирается на него при составлении запросов. Код открыт.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "NVIDIA Releases Auto Ontology: An Open Semantic Layer That Grounds AI Agent SQL",
+          "url": "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-athenahealth-claude",
+      "section": "platforms",
+      "headline": "Пациенты athenahealth смогут спрашивать Claude о своих медкартах",
+      "subheadline": "Разработчик медицинского ПО подключил данные пациентов к Claude",
+      "body": "Athenahealth — американский поставщик облачных систем для клиник. Благодаря партнёрству с Anthropic пациенты смогут задавать Claude вопросы о собственных медицинских записях.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Athenahealth patients can ask Claude about their medical records now",
+          "url": "https://www.zdnet.com/health/athenahealth-claude-ai-medical-partnership/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Athenahealth",
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Athenahealth": "positive",
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-claude-game-clones",
+      "section": "platforms",
+      "headline": "Anthropic ограничила создание в Claude клонов чужих видеоигр",
+      "subheadline": "Компания стала строже к запросам на копии существующих игр",
+      "body": "По данным The Verge, Anthropic начала ограничивать использование Claude для создания копий существующих видеоигр.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic clamps down on Claude's AI video game clones",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude": "neutral"
         },
         "event": "update"
       },
-      "importance": 7
+      "importance": 5
     },
     {
-      "id": "platforms-deepseek-dsh-superagent",
+      "id": "platforms-letterpress-1",
       "section": "platforms",
-      "headline": "DeepSeek открыла исходный код кодинг-агента dsh-superagent",
-      "subheadline": "Агент устроен по схеме «маршрутизатор — исполнители»",
-      "body": "В dsh-superagent модель-маршрутизатор разбивает задачу и раздаёт части моделям-исполнителям, а те пишут и правят код. Код агента опубликован в открытом доступе.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent",
-          "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "DeepSeek"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "DeepSeek": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 7
-    },
-    {
-      "id": "platforms-settle-api-mcp",
-      "section": "platforms",
-      "headline": "Settle открыла публичный API и MCP-сервер для своей платформы платежей",
-      "subheadline": "ИИ-ассистенты смогут подключаться к данным о денежных потоках производителей потребительских товаров",
-      "body": "Settle делает платформу управления кредиторской задолженностью и денежными потоками для производителей потребительских товаров. Через MCP-сервер ассистенты вроде Claude получают доступ к данным о платежах.",
+      "headline": "The Letter Company выпустила Letterpress-1 — кодинг-агента для growth-инженерии",
+      "subheadline": "Агент рассчитан на задачи роста продукта, а не на общую разработку",
+      "body": "Growth-инженеры строят и проверяют функции, которые влияют на привлечение и удержание пользователей: эксперименты, воронки, аналитику. Letterpress-1 сделан именно под эту работу, в отличие от универсальных кодинг-агентов.",
       "tier": "compact",
       "sources": [
         {
-          "title": "AI-Ready Payables Platforms: Settle Opens a Public API and MCP Server",
-          "url": "https://trendhunter.com/trends/ai-ready-payables-platforms",
+          "title": "The Letter Company Releases Letterpress-1: A Coding Agent Built for Growth Engineering",
+          "url": "https://www.marktechpost.com/2026/11/02/letter-letterpress-1-growth-engineering-coding-agent/",
           "type": "media"
         }
       ],
@@ -204,29 +298,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Settle",
-          "MCP"
+          "The Letter Company",
+          "Letterpress-1"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Settle": "positive",
-          "MCP": "neutral"
+          "The Letter Company": "positive",
+          "Letterpress-1": "positive"
         },
         "event": "release"
       },
       "importance": 5
     },
     {
-      "id": "industry-aws-capacity-sold-out",
-      "section": "industry",
-      "headline": "Мощности AWS почти полностью распроданы до 2027 года",
-      "subheadline": "Свободный запас AWS оставляет только под запросы по требованию",
-      "body": "По данным InfoQ, основная часть вычислительных мощностей AWS законтрактована до 2027 года. Резерв держат для клиентов с оплатой по требованию. Ранее Энди Джесси говорил, что AWS станет бизнесом на $1 трлн, но сначала потребует больших затрат.",
-      "tier": "regular",
+      "id": "platforms-google-dreambeans-india",
+      "section": "platforms",
+      "headline": "Google вывела в Индию Dreambeans — сервис ИИ-историй о пользователях",
+      "subheadline": "Индия стала рынком для массового продвижения генератора персональных историй",
+      "body": "Dreambeans генерирует с помощью ИИ персональные истории. Запуск в Индии TechCrunch описывает как попытку Google сделать продукт массовым.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
-          "url": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/",
+          "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
+          "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
           "type": "media"
         }
       ],
@@ -235,156 +329,36 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "AWS",
-          "Amazon"
+          "Google",
+          "Dreambeans",
+          "Индия"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "AWS": "positive",
-          "Amazon": "positive"
+          "Google": "positive",
+          "Dreambeans": "positive",
+          "Индия": "neutral"
         },
-        "event": "finance"
-      },
-      "importance": 7
-    },
-    {
-      "id": "industry-national-grid-teesside",
-      "section": "industry",
-      "headline": "National Grid построит крупнейшую в Великобритании подстанцию рядом с будущим ИИ-дата-центром в Тиссайде",
-      "subheadline": "Энергетическую инфраструктуру размещают под нагрузку планируемого дата-центра",
-      "body": "Подстанция будет крупнейшей в стране. Её строят возле площадки, где планируют ИИ-дата-центр. Это ещё один пример того, как энергосети перестраивают под потребление вычислительных кластеров.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "National Grid to site biggest substation in UK near planned Teesside datacentre",
-          "url": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "National Grid",
-          "Великобритания"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "National Grid": "positive",
-          "Великобритания": "neutral"
-        },
-        "event": "other"
+        "event": "update"
       },
       "importance": 5
     },
     {
-      "id": "industry-wa-police-facial-recognition",
-      "section": "industry",
-      "headline": "Полиция Западной Австралии проверила миллион лиц системой распознавания: 122 ареста",
-      "subheadline": "Итоги пилотного запуска распознавания лиц в штате",
-      "body": "За время пилота система распознавания лиц просканировала около миллиона человек. По её срабатываниям задержали 122 человека. Результаты опубликованы на фоне споров о том, как в Австралии регулировать ИИ.",
+      "id": "platforms-openai-scaling-git",
+      "section": "platforms",
+      "headline": "OpenAI рассказала, как масштабирует Git внутри компании",
+      "subheadline": "Инженерный разбор работы с репозиториями в OpenAI",
+      "body": "OpenAI опубликовала в своём блоге технический материал о том, как поддерживает работу Git при внутренних масштабах разработки.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Police use facial recognition to scan one million faces in WA trial leading to 122 arrests",
-          "url": "https://www.theguardian.com/australia-news/2026/nov/02/wa-police-facial-recognition-technology-trial",
-          "type": "media"
+          "title": "Scaling Git at OpenAI",
+          "url": "https://openai.com/index/scaling-git-at-openai",
+          "type": "official"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Полиция Западной Австралии",
-          "Австралия"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Полиция Западной Австралии": "neutral",
-          "Австралия": "neutral"
-        },
-        "event": "other"
-      },
-      "importance": 5
-    },
-    {
-      "id": "content-adobe-agents-photoshop",
-      "section": "content",
-      "headline": "Adobe проверяет, умеют ли ИИ-агенты работать в редакторах как профессионал Photoshop",
-      "subheadline": "Исследование оценивает агентов на реальных задачах редактирования изображений",
-      "body": "Агентам дают задачи, которые дизайнер решает вручную в профессиональном редакторе, и оценивают, насколько близко они подходят к результату специалиста. Для Adobe это заготовка под агентное управление Photoshop и другими её инструментами.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Adobe is testing how well AI agents can use editing tools like a Photoshop professional would",
-          "url": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Adobe",
-          "Photoshop"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Adobe": "neutral",
-          "Photoshop": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7
-    },
-    {
-      "id": "content-habr-sde-flow-matching",
-      "section": "content",
-      "headline": "Шум в SDE-сэмплерах flow-matching моделей: важно, куда его добавлять, а не сколько",
-      "subheadline": "Автор на Хабре разобрал, как стохастический шум влияет на генерацию изображений",
-      "body": "Flow-matching лежит в основе современных генераторов изображений, включая Flux. Автор экспериментировал со стохастическими сэмплерами. По его выводам, на результат сильнее влияет то, на каких шагах генерации добавляется шум, чем его величина.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Не сколько, а куда: что я выяснил про шум в SDE-сэмплерах flow-matching моделей",
-          "url": "https://habr.com/ru/articles/1102234/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Хабр"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Хабр": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5
-    },
-    {
-      "id": "hype-openai-compute-campuses",
-      "section": "hype",
-      "headline": "OpenAI может переименовать дата-центры в «кампусы ИИ-вычислений»",
-      "subheadline": "Компания обдумывает ребрендинг объектов, вокруг которых растёт местное сопротивление",
-      "body": "TechCrunch пишет, что OpenAI рассматривает термин «AI compute campuses» вместо «дата-центров». Решение не объявлено. Идея появилась на фоне протестов против дата-центров в США: в Мэне и Техасе против них выступают жители и избиратели.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "OpenAI might rebrand its data centers as 'AI compute campuses'",
-          "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": true,
       "duplicate_note": null,
       "tags": {
         "entities": [
@@ -394,7 +368,378 @@
         "entity_sentiment": {
           "OpenAI": "neutral"
         },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-aramco-humain",
+      "section": "industry",
+      "headline": "Saudi Aramco получит 49% в ИИ-компании Humain за $2,6 млрд",
+      "subheadline": "Нефтяной гигант стал почти равным совладельцем саудовского ИИ-чемпиона",
+      "body": "Humain — саудовская ИИ-компания, которая занимается дата-центрами и моделями для региона. С долей 49% Aramco становится крупным совладельцем, хотя контрольного пакета не получает.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Saudi Aramco takes 49 percent stake in AI firm Humain with $2.6 billion deal",
+          "url": "https://the-decoder.com/saudi-aramco-takes-49-percent-stake-in-ai-firm-humain-with-2-6-billion-deal/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Saudi Aramco",
+          "Humain"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Saudi Aramco": "positive",
+          "Humain": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-goldman-coding-tools",
+      "section": "industry",
+      "headline": "Goldman Sachs отозвала ИИ-инструменты для кода у трейдеров и банкиров",
+      "subheadline": "Доступ к кодинг-ассистентам ограничили для сотрудников, не являющихся разработчиками",
+      "body": "Под ограничение попали трейдеры и инвестбанкиры, а не программисты. Банк сворачивает доступ к кодинг-инструментам для сотрудников, которым писать код не нужно по работе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Goldman Sachs"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Goldman Sachs": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-nyt-sues-brave",
+      "section": "industry",
+      "headline": "The New York Times и другие издания подали в суд на браузер Brave за сбор контента",
+      "subheadline": "Издатели обвиняют Brave в скрейпинге их материалов",
+      "body": "Это продолжение судебной кампании издателей против компаний, которые собирают их тексты для ИИ. The New York Times уже судится с OpenAI. Теперь ответчиком стал разработчик браузера: на этот раз иск подан вместе с другими изданиями.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+          "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "The New York Times",
+          "Brave"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "The New York Times": "neutral",
+          "Brave": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-openai-lobbying",
+      "section": "industry",
+      "headline": "OpenAI готовит масштабное лоббирование в Вашингтоне после промежуточных выборов",
+      "subheadline": "Компания рассчитывает на новый состав Конгресса",
+      "body": "Промежуточные выборы в США пройдут в ноябре 2026 года. По данным The Decoder, OpenAI заранее готовит лоббистскую кампанию на период после них, когда в Вашингтоне сменится расклад сил.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI prepares lobbying blitz for a post-midterm Washington",
+          "url": "https://the-decoder.com/openai-prepares-lobbying-blitz-for-a-post-midterm-washington/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Конгресс США"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Конгресс США": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-42ai-trajectory",
+      "section": "industry",
+      "headline": "42AI вышла из тени с $62,5 млн, Trajectory привлекла $45 млн",
+      "subheadline": "Два раунда: модель мира для прогноза поведения людей и обучение моделей без программистов",
+      "body": "42AI строит модель мира, которая, по заявлению компании, умеет «предсказывать поведение человека». Trajectory делает платформу, на которой специалисты без технического образования могут сами обучать ИИ-модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "42AI comes out of stealth with $62.5M and a world model that can 'predict human behavior'",
+          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+          "type": "media"
+        },
+        {
+          "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+          "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Два отдельных раунда объединены в одну заметку",
+      "tags": {
+        "entities": [
+          "42AI",
+          "Trajectory"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "42AI": "positive",
+          "Trajectory": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-palantir-nhs",
+      "section": "industry",
+      "headline": "29 больниц NHS, которые якобы выигрывают от ИИ Palantir, почти им не пользуются",
+      "subheadline": "The Guardian: технологию указывают как полезную трастам, где её не используют или используют мало",
+      "body": "По данным The Guardian, 29 трастов NHS числятся среди тех, кому помогает платформа Palantir. На деле они не пользуются ей вовсе или используют минимально.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Palantir",
+          "NHS"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Palantir": "negative",
+          "NHS": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-anthropic-revenue-loss",
+      "section": "industry",
+      "headline": "Продолжение: выручка Anthropic выросла в 12 раз, убыток — $23 млрд",
+      "subheadline": null,
+      "body": "The Decoder разобрал финансовые показатели Anthropic: выручка выросла в двенадцать раз, убыток составил $23 млрд.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic grows revenue twelvefold but posts $23 billion loss",
+          "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-grok-quotas",
+      "section": "hype",
+      "headline": "SpaceXSI, судя по всему, урезала лимиты Grok Bot",
+      "subheadline": "Через несколько недель после того, как Маск назвал бот самым быстрорастущим продуктом",
+      "body": "Квоты на Grok Bot сократили вскоре после того, как Илон Маск хвалил его рост. Официального объявления нет, изменения замечены по факту.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SpaceXSI apparently cuts Grok Bot quotas weeks after Musk called it his fastest-growing product",
+          "url": "https://the-decoder.com/spacexsi-apparently-cuts-grok-bot-quotas-weeks-after-musk-called-it-his-fastest-growing-product/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SpaceXSI",
+          "Grok",
+          "Elon Musk"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "SpaceXSI": "negative",
+          "Grok": "negative",
+          "Elon Musk": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-apple-third-party-ai",
+      "section": "hype",
+      "headline": "Apple может попытаться заработать на сторонних ИИ-приложениях",
+      "subheadline": "Как именно — пока неясно",
+      "body": "По данным TechCrunch, Apple ищет способ увеличить выручку за счёт сторонних ИИ-приложений. Конкретная схема не раскрыта.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
+          "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Apple": "neutral"
+        },
         "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-garry-tan-tokens",
+      "section": "hype",
+      "headline": "Гарри Тан из Y Combinator тратит на токены ИИ-агентов до $200 тыс. в год",
+      "subheadline": "Глава акселератора так активно пользуется агентами, что счёт дошёл до шестизначной суммы",
+      "body": "Гарри Тан руководит Y Combinator. До $200 тыс. в год он тратит на собственную работу с ИИ-агентами, а не на корпоративные расходы акселератора.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Y Combinator's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Garry Tan",
+          "Y Combinator"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Garry Tan": "neutral",
+          "Y Combinator": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-minecraft-agents",
+      "section": "hype",
+      "headline": "После страшной ночи в Minecraft 50 ИИ-агентов придумали «офицера по удобрениям» и рыболовные смены",
+      "subheadline": "Агенты сами организовали протоколы передачи кур и распределение обязанностей",
+      "body": "В эксперименте 50 ИИ-агентов жили в одном мире Minecraft. Тяжёлая ночь подтолкнула их к самоорганизации: они ввели правила передачи кур, должность «офицера по удобрениям» и посменную рыбалку.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
+          "url": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Minecraft"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Minecraft": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-ai-slop-sticker",
+      "section": "hype",
+      "headline": "На выборах 2026 года появилась наклейка «Я проголосовал», сгенерированная ИИ",
+      "subheadline": "404 Media нашла ИИ-слоп на одном из символов голосования",
+      "body": "404 Media обнаружила, что одну из наклеек «I Voted», которые избиратели получают на участках перед промежуточными выборами 2026 года в США, сделали с помощью ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Voting in 2026 Is Getting an AI Slop 'I Voted' Sticker",
+          "url": "https://www.404media.co/voting-in-2026-is-getting-an-ai-slop-i-voted-sticker/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "404 Media",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "404 Media": "neutral",
+          "США": "neutral"
+        },
+        "event": "criticism"
       },
       "importance": 5
     }

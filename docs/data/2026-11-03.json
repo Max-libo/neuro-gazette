@@ -1,0 +1,747 @@
+{
+  "date": "2026-11-03",
+  "published": false,
+  "news": [
+    {
+      "id": "models-anthropic-rsi-warning",
+      "section": "models",
+      "headline": "Anthropic предупредила, что очень близка к рекурсивному самоулучшению ИИ",
+      "subheadline": "Компания говорит, что модели скоро смогут сами вести разработку следующих версий ИИ",
+      "body": "По данным TechCrunch, Anthropic заявила, что подходит к порогу RSI (recursive self-improvement). Так называют уровень, на котором ИИ-системы сами ускоряют создание более сильных моделей и человеку остаётся всё меньше работы в цикле разработки. Заявление вышло на фоне подготовки Anthropic к IPO: компания подала заявку на размещение, в проспекте указан убыток $80,7 млрд за полугодие. Незадолго до этого Anthropic сообщала, что Claude самостоятельно провёл биологический эксперимент на мыши. Сколько времени осталось до порога, в заголовке публикации не сказано. Первичный документ Anthropic в материалах выпуска не найден, поэтому источник здесь — пересказ TechCrunch.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Anthropic warns that it's very close to RSI capability, aka self-building AI",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-deep-principle-hydrogen",
+      "section": "models",
+      "headline": "Deep Principle выпустила Hydrogen-1.0 — открытую модель на 753 млрд параметров для научных открытий",
+      "subheadline": "Веса модели для научных задач выложены в открытый доступ",
+      "body": "Hydrogen-1.0 — одна из крупнейших открытых моделей, рассчитанных именно на науку, а не на общие задачи. Модель с 753 млрд параметров выпущена с открытыми весами, поэтому исследователи могут запускать и дообучать её у себя.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Deep Principle Releases Hydrogen-1.0: A 753B Open-Weight Model for Scientific Discovery",
+          "url": "https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Deep Principle",
+          "Hydrogen-1.0"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Deep Principle": "positive",
+          "Hydrogen-1.0": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-zyphra-zha",
+      "section": "models",
+      "headline": "Zyphra предложила иерархическое внимание ZHA со сложностью ниже квадратичной",
+      "subheadline": "Механизм разреженного внимания должен удешевить работу с длинным контекстом",
+      "body": "В обычном механизме внимания трансформера затраты растут квадратично от длины контекста. Zyphra Hierarchical Attention обрабатывает контекст иерархически и выбирает разреженное подмножество позиций, поэтому затраты растут медленнее квадрата. Это описание метода, а не выпуск модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Zyphra AI Introduces Zyphra Hierarchical Attention (ZHA): A Path to True Subquadratic Attention",
+          "url": "https://www.marktechpost.com/2026/11/02/zyphra-hierarchical-attention-zha-sparse-attention/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Zyphra"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Zyphra": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-qwengpu",
+      "section": "models",
+      "headline": "Продолжение: в веса Qwen встроили уже GPU, который исполняет CUDA",
+      "subheadline": null,
+      "body": "В проекте qwenGPU в веса Qwen3.5-2B скомпилировали 45 слоёв, которые работают как SIMT-процессор, то есть как GPU, и выполняют CUDA-код.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meet qwenGPU: Qwen3.5-2B With 45 Compiled GPU Layers That Run CUDA",
+          "url": "https://www.marktechpost.com/2026/11/01/qwengpu-simt-gpu-compiled-into-qwen3-5-2b-weights-runs-cuda/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Энтузиаст встроил процессор RISC-V в веса Qwen 3.5",
+      "tags": {
+        "entities": [
+          "Qwen"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Qwen": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-torchtpu",
+      "section": "platforms",
+      "headline": "Google и Meta открыли TorchTPU — нативную поддержку PyTorch на TPU",
+      "subheadline": "Модели на PyTorch смогут работать на чипах Google без отдельного стека",
+      "body": "До сих пор основным фреймворком для TPU был JAX, а PyTorch работал на них через промежуточные прослойки. TorchTPU даёт PyTorch прямую поддержку TPU. Проект выпущен с открытым кодом и сделан вместе с Meta, которая разрабатывает PyTorch.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
+          "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Meta",
+          "TorchTPU",
+          "TPU"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Meta": "positive",
+          "TorchTPU": "positive",
+          "TPU": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-uber-mcp-gateway",
+      "section": "platforms",
+      "headline": "Uber построила MCP-шлюз для контроля доступа к 800 с лишним серверам",
+      "subheadline": "Через единую точку проходит доступ ИИ-агентов к более чем 5000 инструментов",
+      "body": "Внутри Uber работает больше 800 MCP-серверов, через которые агентам доступно более 5000 инструментов. Компания пустила все обращения через собственный шлюз. Он централизованно решает, какой агент может вызывать какой инструмент.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
+          "url": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Uber",
+          "MCP"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Uber": "neutral",
+          "MCP": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-nvidia-auto-ontology",
+      "section": "platforms",
+      "headline": "NVIDIA открыла Auto Ontology — семантический слой для SQL-запросов ИИ-агентов",
+      "subheadline": "Слой описывает смысл данных, чтобы агенты точнее составляли SQL",
+      "body": "Агенты часто ошибаются в SQL, потому что не знают, что значат таблицы и поля в конкретной базе. Auto Ontology строит над данными слой с описанием сущностей и связей, и агент опирается на него при составлении запросов. Код открыт.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "NVIDIA Releases Auto Ontology: An Open Semantic Layer That Grounds AI Agent SQL",
+          "url": "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-athenahealth-claude",
+      "section": "platforms",
+      "headline": "Пациенты athenahealth смогут спрашивать Claude о своих медкартах",
+      "subheadline": "Разработчик медицинского ПО подключил данные пациентов к Claude",
+      "body": "Athenahealth — американский поставщик облачных систем для клиник. Благодаря партнёрству с Anthropic пациенты смогут задавать Claude вопросы о собственных медицинских записях.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Athenahealth patients can ask Claude about their medical records now",
+          "url": "https://www.zdnet.com/health/athenahealth-claude-ai-medical-partnership/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Athenahealth",
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Athenahealth": "positive",
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-claude-game-clones",
+      "section": "platforms",
+      "headline": "Anthropic ограничила создание в Claude клонов чужих видеоигр",
+      "subheadline": "Компания стала строже к запросам на копии существующих игр",
+      "body": "По данным The Verge, Anthropic начала ограничивать использование Claude для создания копий существующих видеоигр.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic clamps down on Claude's AI video game clones",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-letterpress-1",
+      "section": "platforms",
+      "headline": "The Letter Company выпустила Letterpress-1 — кодинг-агента для growth-инженерии",
+      "subheadline": "Агент рассчитан на задачи роста продукта, а не на общую разработку",
+      "body": "Growth-инженеры строят и проверяют функции, которые влияют на привлечение и удержание пользователей: эксперименты, воронки, аналитику. Letterpress-1 сделан именно под эту работу, в отличие от универсальных кодинг-агентов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "The Letter Company Releases Letterpress-1: A Coding Agent Built for Growth Engineering",
+          "url": "https://www.marktechpost.com/2026/11/02/letter-letterpress-1-growth-engineering-coding-agent/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "The Letter Company",
+          "Letterpress-1"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "The Letter Company": "positive",
+          "Letterpress-1": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-google-dreambeans-india",
+      "section": "platforms",
+      "headline": "Google вывела в Индию Dreambeans — сервис ИИ-историй о пользователях",
+      "subheadline": "Индия стала рынком для массового продвижения генератора персональных историй",
+      "body": "Dreambeans генерирует с помощью ИИ персональные истории. Запуск в Индии TechCrunch описывает как попытку Google сделать продукт массовым.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
+          "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Dreambeans",
+          "Индия"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Dreambeans": "positive",
+          "Индия": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-openai-scaling-git",
+      "section": "platforms",
+      "headline": "OpenAI рассказала, как масштабирует Git внутри компании",
+      "subheadline": "Инженерный разбор работы с репозиториями в OpenAI",
+      "body": "OpenAI опубликовала в своём блоге технический материал о том, как поддерживает работу Git при внутренних масштабах разработки.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Scaling Git at OpenAI",
+          "url": "https://openai.com/index/scaling-git-at-openai",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-aramco-humain",
+      "section": "industry",
+      "headline": "Saudi Aramco получит 49% в ИИ-компании Humain за $2,6 млрд",
+      "subheadline": "Нефтяной гигант стал почти равным совладельцем саудовского ИИ-чемпиона",
+      "body": "Humain — саудовская ИИ-компания, которая занимается дата-центрами и моделями для региона. С долей 49% Aramco становится крупным совладельцем, хотя контрольного пакета не получает.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Saudi Aramco takes 49 percent stake in AI firm Humain with $2.6 billion deal",
+          "url": "https://the-decoder.com/saudi-aramco-takes-49-percent-stake-in-ai-firm-humain-with-2-6-billion-deal/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Saudi Aramco",
+          "Humain"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Saudi Aramco": "positive",
+          "Humain": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-goldman-coding-tools",
+      "section": "industry",
+      "headline": "Goldman Sachs отозвала ИИ-инструменты для кода у трейдеров и банкиров",
+      "subheadline": "Доступ к кодинг-ассистентам ограничили для сотрудников, не являющихся разработчиками",
+      "body": "Под ограничение попали трейдеры и инвестбанкиры, а не программисты. Банк сворачивает доступ к кодинг-инструментам для сотрудников, которым писать код не нужно по работе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Goldman Sachs"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Goldman Sachs": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-nyt-sues-brave",
+      "section": "industry",
+      "headline": "The New York Times и другие издания подали в суд на браузер Brave за сбор контента",
+      "subheadline": "Издатели обвиняют Brave в скрейпинге их материалов",
+      "body": "Это продолжение судебной кампании издателей против компаний, которые собирают их тексты для ИИ. The New York Times уже судится с OpenAI. Теперь ответчиком стал разработчик браузера: на этот раз иск подан вместе с другими изданиями.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+          "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "The New York Times",
+          "Brave"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "The New York Times": "neutral",
+          "Brave": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-openai-lobbying",
+      "section": "industry",
+      "headline": "OpenAI готовит масштабное лоббирование в Вашингтоне после промежуточных выборов",
+      "subheadline": "Компания рассчитывает на новый состав Конгресса",
+      "body": "Промежуточные выборы в США пройдут в ноябре 2026 года. По данным The Decoder, OpenAI заранее готовит лоббистскую кампанию на период после них, когда в Вашингтоне сменится расклад сил.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI prepares lobbying blitz for a post-midterm Washington",
+          "url": "https://the-decoder.com/openai-prepares-lobbying-blitz-for-a-post-midterm-washington/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Конгресс США"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Конгресс США": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-42ai-trajectory",
+      "section": "industry",
+      "headline": "42AI вышла из тени с $62,5 млн, Trajectory привлекла $45 млн",
+      "subheadline": "Два раунда: модель мира для прогноза поведения людей и обучение моделей без программистов",
+      "body": "42AI строит модель мира, которая, по заявлению компании, умеет «предсказывать поведение человека». Trajectory делает платформу, на которой специалисты без технического образования могут сами обучать ИИ-модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "42AI comes out of stealth with $62.5M and a world model that can 'predict human behavior'",
+          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+          "type": "media"
+        },
+        {
+          "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+          "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Два отдельных раунда объединены в одну заметку",
+      "tags": {
+        "entities": [
+          "42AI",
+          "Trajectory"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "42AI": "positive",
+          "Trajectory": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-palantir-nhs",
+      "section": "industry",
+      "headline": "29 больниц NHS, которые якобы выигрывают от ИИ Palantir, почти им не пользуются",
+      "subheadline": "The Guardian: технологию указывают как полезную трастам, где её не используют или используют мало",
+      "body": "По данным The Guardian, 29 трастов NHS числятся среди тех, кому помогает платформа Palantir. На деле они не пользуются ей вовсе или используют минимально.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Palantir",
+          "NHS"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Palantir": "negative",
+          "NHS": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-anthropic-revenue-loss",
+      "section": "industry",
+      "headline": "Продолжение: выручка Anthropic выросла в 12 раз, убыток — $23 млрд",
+      "subheadline": null,
+      "body": "The Decoder разобрал финансовые показатели Anthropic: выручка выросла в двенадцать раз, убыток составил $23 млрд.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic grows revenue twelvefold but posts $23 billion loss",
+          "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-grok-quotas",
+      "section": "hype",
+      "headline": "SpaceXSI, судя по всему, урезала лимиты Grok Bot",
+      "subheadline": "Через несколько недель после того, как Маск назвал бот самым быстрорастущим продуктом",
+      "body": "Квоты на Grok Bot сократили вскоре после того, как Илон Маск хвалил его рост. Официального объявления нет, изменения замечены по факту.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SpaceXSI apparently cuts Grok Bot quotas weeks after Musk called it his fastest-growing product",
+          "url": "https://the-decoder.com/spacexsi-apparently-cuts-grok-bot-quotas-weeks-after-musk-called-it-his-fastest-growing-product/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SpaceXSI",
+          "Grok",
+          "Elon Musk"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "SpaceXSI": "negative",
+          "Grok": "negative",
+          "Elon Musk": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-apple-third-party-ai",
+      "section": "hype",
+      "headline": "Apple может попытаться заработать на сторонних ИИ-приложениях",
+      "subheadline": "Как именно — пока неясно",
+      "body": "По данным TechCrunch, Apple ищет способ увеличить выручку за счёт сторонних ИИ-приложений. Конкретная схема не раскрыта.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
+          "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Apple": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-garry-tan-tokens",
+      "section": "hype",
+      "headline": "Гарри Тан из Y Combinator тратит на токены ИИ-агентов до $200 тыс. в год",
+      "subheadline": "Глава акселератора так активно пользуется агентами, что счёт дошёл до шестизначной суммы",
+      "body": "Гарри Тан руководит Y Combinator. До $200 тыс. в год он тратит на собственную работу с ИИ-агентами, а не на корпоративные расходы акселератора.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Y Combinator's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Garry Tan",
+          "Y Combinator"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Garry Tan": "neutral",
+          "Y Combinator": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-minecraft-agents",
+      "section": "hype",
+      "headline": "После страшной ночи в Minecraft 50 ИИ-агентов придумали «офицера по удобрениям» и рыболовные смены",
+      "subheadline": "Агенты сами организовали протоколы передачи кур и распределение обязанностей",
+      "body": "В эксперименте 50 ИИ-агентов жили в одном мире Minecraft. Тяжёлая ночь подтолкнула их к самоорганизации: они ввели правила передачи кур, должность «офицера по удобрениям» и посменную рыбалку.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
+          "url": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Minecraft"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Minecraft": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-ai-slop-sticker",
+      "section": "hype",
+      "headline": "На выборах 2026 года появилась наклейка «Я проголосовал», сгенерированная ИИ",
+      "subheadline": "404 Media нашла ИИ-слоп на одном из символов голосования",
+      "body": "404 Media обнаружила, что одну из наклеек «I Voted», которые избиратели получают на участках перед промежуточными выборами 2026 года в США, сделали с помощью ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Voting in 2026 Is Getting an AI Slop 'I Voted' Sticker",
+          "url": "https://www.404media.co/voting-in-2026-is-getting-an-ai-slop-i-voted-sticker/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "404 Media",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "404 Media": "neutral",
+          "США": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    }
+  ]
+}
