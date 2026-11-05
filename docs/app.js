@@ -404,9 +404,24 @@ function toggleExpand(el) {
   el.classList.toggle('expanded');
 }
 
+/* Логика фильтра:
+   - включены все → клик оставляет только эту рубрику;
+   - выключают единственную включённую → снова включаются все;
+   - в остальных случаях клик просто включает/выключает рубрику.
+   «Все» — это рубрики, в которых в этом выпуске есть новости. */
 function toggleSection(sec) {
-  if (state.hidden.has(sec)) state.hidden.delete(sec);
-  else state.hidden.add(sec);
+  const present = SECTION_ORDER.filter(s => state.news.some(n => sectionOf(n) === s));
+  const active = present.filter(s => !state.hidden.has(s));
+
+  if (active.length === present.length) {
+    present.forEach(s => { if (s !== sec) state.hidden.add(s); });
+  } else if (active.length === 1 && active[0] === sec) {
+    state.hidden.clear();
+  } else if (state.hidden.has(sec)) {
+    state.hidden.delete(sec);
+  } else {
+    state.hidden.add(sec);
+  }
   renderNav();
   renderBody();
 }
