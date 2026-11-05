@@ -1,0 +1,856 @@
+{
+  "date": "2026-11-05",
+  "published": false,
+  "news": [
+    {
+      "id": "models-gpt6-astra-weights",
+      "section": "models",
+      "headline": "GPT-6 Astra «видит матрицу»: модель перепрограммирует другие нейросети через их веса",
+      "subheadline": "По данным The Decoder, GPT-6 Astra анализирует веса чужих моделей и меняет их поведение прямой правкой весов.",
+      "body": "The Decoder описывает новую способность GPT-6 Astra: модель разбирает веса других нейросетей и меняет их поведение, правя параметры напрямую. Обучение и промпты для этого не нужны. Это уже второй за неделю случай, когда Astra берётся за инженерную задачу целиком: раньше OpenAI сообщала, что модель меньше чем за неделю с нуля спроектировала аппаратное устройство. Есть и предыстория: китайские лаборатории переходили на GPT-6 Astra после того, как Anthropic усилила защиту своих моделей. Если правка весов одной моделью другой воспроизводится, это касается и интерпретируемости, и безопасности открытых весов: менять поведение модели можно в обход дообучения.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "GPT-6 Astra sees the matrix and reprograms other AI models directly through their weights",
+          "url": "https://the-decoder.com/gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-directly-through-their-weights/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "GPT-6"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "GPT-6": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 9
+    },
+    {
+      "id": "models-webai-twil-8b",
+      "section": "models",
+      "headline": "webAI выпустила TwIL-8B — рассуждающую модель на 8,8 млрд параметров",
+      "subheadline": "На бенчмарке MATH-500 модель набрала 98,2 балла.",
+      "body": "В TwIL-8B 8,8 млрд параметров, так что по размеру она относится к компактным моделям, которые можно запускать локально. Результат 98,2 на MATH-500 ставит её рядом с крупными рассуждающими моделями на школьной и олимпиадной математике.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "webAI Releases TwIL-8B, an 8.8B Reasoning Model Scoring 98.2 on MATH-500",
+          "url": "https://www.marktechpost.com/2026/11/04/webai-twil-8b-reasoning-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "webAI",
+          "TwIL-8B"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "webAI": "positive",
+          "TwIL-8B": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-ricursive-ripple-65b",
+      "section": "models",
+      "headline": "Ricursive AI открыла веса Ripple-65B Preview",
+      "subheadline": "Плотная модель на 65 млрд параметров набрала 80,5 на Terminal-Bench 2.1.",
+      "body": "Ripple-65B — плотная модель, без архитектуры MoE, и сейчас доступна в статусе preview. Terminal-Bench 2.1 проверяет, как модель решает задачи в терминале в роли агента. Результат 80,5 заявлен для модели с открытыми весами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Ricursive AI Releases Ripple-65B Preview: A 65B Dense Open-Weight Model Scoring 80.5 on Terminal-Bench 2.1",
+          "url": "https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ricursive AI",
+          "Ripple-65B"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Ricursive AI": "positive",
+          "Ripple-65B": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "models-tencent-wevisone-vl",
+      "section": "models",
+      "headline": "Tencent объединила детекцию, OCR, сегментацию и маттинг в одной модели WeVisOne-VL",
+      "subheadline": "Визуально-языковая модель заменяет четыре отдельных инструмента компьютерного зрения.",
+      "body": "Поиск объектов, распознавание текста, сегментация и маттинг (точное отделение объекта от фона) обычно требуют разных моделей. WeVisOne-VL делает всё это одной визуально-языковой моделью.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Tencent WeVisOne-VL Unifies Detection, OCR, Segmentation and Matting",
+          "url": "https://www.marktechpost.com/2026/11/03/tencent-wevisone-vl-vision-language-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Tencent",
+          "WeVisOne-VL"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Tencent": "positive",
+          "WeVisOne-VL": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-baidu-world-model",
+      "section": "models",
+      "headline": "Baidu представила модель мира для физического ИИ",
+      "subheadline": "AI Business разбирает, что новая модель даёт роботам и в чём остаются сложности.",
+      "body": "Модели мира симулируют физическую среду: на них обучают и проверяют роботов и автономные системы без дорогих испытаний в реальности. По оценке AI Business, разработка Baidu показывает и ценность этого подхода, и нерешённые проблемы физического ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Baidu's new world model highlights value, challenge of physical AI",
+          "url": "https://aibusiness.com/automation/baidu-s-new-world-model-highlights-value-of-physical-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Baidu"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Baidu": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-cloudops-benchmark",
+      "section": "models",
+      "headline": "Открытый бенчмарк по облачной эксплуатации: главное слабое место ИИ — рассуждения",
+      "subheadline": "Моделям не хватает не знаний об инфраструктуре, а умения рассуждать над инцидентами.",
+      "body": "Новый открытый бенчмарк проверяет ИИ на задачах эксплуатации облаков. По его результатам, модели чаще всего проваливаются не на знании инструментов, а на рассуждениях: им трудно вести логическую цепочку от симптомов сбоя к причине.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "New open-source benchmark reveals reasoning as the biggest bottleneck for AI in cloud operations",
+          "url": "https://the-decoder.com/new-open-source-benchmark-reveals-reasoning-as-the-biggest-bottleneck-for-ai-in-cloud-operations/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "models-stanford-brain-model",
+      "section": "models",
+      "headline": "Стэнфорд строит открытую «цифровую модель мозга»",
+      "subheadline": "Университет запускает проект открытой вычислительной модели мозга.",
+      "body": "Модель будет открытой, то есть доступной другим исследователям. Цифровые модели мозга нужны, чтобы проверять гипотезы о работе нейронных сетей мозга в симуляции, а не в эксперименте.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Стэнфорд собирается построить открытую «цифровую модель мозга»",
+          "url": "https://vc.ru/ai/3234783-stanford-zapuskayet-proyekt-tsifrovoy-modeli-mozga?from=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Stanford"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Stanford": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-daybreak-red-govcloud",
+      "section": "platforms",
+      "headline": "OpenAI вывела Daybreak Red в AWS GovCloud",
+      "subheadline": "Сервис стал доступен в регионе GovCloud (US-East) для госзаказчиков США.",
+      "body": "AWS GovCloud — изолированные регионы Amazon для госструктур США и их подрядчиков с повышенными требованиями к хранению и обработке данных. Daybreak Red теперь работает в регионе US-East. В тот же день OpenAI выпустила публикацию «A thousand fewer paths to root» на тему безопасности.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "OpenAI: A thousand fewer paths to root",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+          "entities": [
+            "OpenAI"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "AWS"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "AWS": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-amazon-quick-smart-approvals",
+      "section": "platforms",
+      "headline": "В Amazon Quick появились Smart Approvals — подтверждение человеком там, где это важно",
+      "subheadline": "Агенты Amazon Quick запрашивают согласие человека только на значимые действия.",
+      "body": "Smart Approvals встраивает в работу агентов Amazon Quick проверку человеком. Подтверждение требуется не на каждом шаге, а только там, где действие агента критично. Так сохраняется контроль, а оператора не заваливают рутинными запросами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Smart Approvals in Amazon Quick: Human oversight where it matters",
+          "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "Amazon Quick"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Amazon Quick": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7
+    },
+    {
+      "id": "platforms-gemini-home-att",
+      "section": "platforms",
+      "headline": "Gemini for Home подключили к системе безопасности AT&T",
+      "subheadline": "Ассистент Google работает с системой Connected Life от AT&T.",
+      "body": "Пользователи домашней системы безопасности AT&T Connected Life теперь могут управлять ею через Gemini for Home.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Gemini for Home now plugs into AT&T's smart security system",
+          "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Gemini",
+          "AT&T"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive",
+          "AT&T": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-dharma-field-extractor",
+      "section": "platforms",
+      "headline": "Dharma AI выпустила Field Extractor: документ на входе, поля в JSON на выходе",
+      "subheadline": "Инструмент извлекает структурированные поля из документов любого типа.",
+      "body": "Dharma AI представила Field Extractor в блоге Hugging Face. Инструмент принимает документ любого формата и возвращает нужные поля в виде структурированного JSON. Это типовая задача при автоматизации работы со счетами, договорами и анкетами.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Dharma AI",
+          "Hugging Face"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Dharma AI": "positive",
+          "Hugging Face": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5
+    },
+    {
+      "id": "platforms-nothing-ai-device",
+      "section": "platforms",
+      "headline": "Nothing выпустит своё ИИ-устройство в следующем месяце",
+      "subheadline": "Глава Nothing назвал срок выхода гаджета, построенного вокруг ИИ.",
+      "body": "Компания до сих пор не раскрывает, что это за устройство. По словам главы Nothing, оно задумано как AI-first, то есть ИИ в нём — основа, а не дополнительная функция, и выйдет в декабре.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nothing CEO says company's mysterious AI-first device is dropping next month",
+          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nothing"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Nothing": "positive"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-openai-pierre",
+      "section": "industry",
+      "headline": "OpenAI покупает Pierre Computer Company",
+      "subheadline": "OpenAI объявила о намерении приобрести компанию Pierre Computer Company, Inc.",
+      "body": "Сделку OpenAI анонсировала в своём блоге. На этой неделе компания уже писала, как масштабирует Git под внутреннюю разработку. Pierre Computer Company делает инструменты для разработчиков.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "url": "https://openai.com/index/openai-to-acquire-pierre",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Pierre Computer Company"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Pierre Computer Company": "positive"
+        },
+        "event": "acquisition"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-meta-conductor",
+      "section": "industry",
+      "headline": "Meta купила стартап Conductor, разработчика инструментов для ИИ-кодинга",
+      "subheadline": "Сделка усиливает Meta в инструментах для разработки с ИИ-агентами.",
+      "body": "Conductor — стартап в сегменте ИИ-кодинга, где Meta пока уступает OpenAI, Anthropic и Google. Покупка продолжает волну сделок вокруг инструментов для кодинг-агентов: в тот же день OpenAI объявила о покупке Pierre Computer Company.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta acquires AI coding startup Conductor",
+          "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Conductor"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Conductor": "positive"
+        },
+        "event": "acquisition"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-ai-pacs-midterms",
+      "section": "industry",
+      "headline": "ИИ-PAC потратили миллионы на выборы в Конгресс: подведены итоги",
+      "subheadline": "TechCrunch разобрал, чего добились политические комитеты ИИ-индустрии на промежуточных выборах.",
+      "body": "Политические комитеты, связанные с ИИ-индустрией, потратили миллионы долларов на кампании кандидатов в Конгресс США 2026 года. При этом, по экзит-поллам, ИИ оказался на последнем месте среди приоритетов избирателей. OpenAI, по данным TechCrunch, уже готовится влиять на выборы 2028 года. Исследователи Йеля тем временем проверили, как люди ищут информацию о выборах через чат-боты, и получили неоднозначные результаты.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI PACs spent millions trying to shape Congress — here's how they fared",
+          "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "OpenAI is already trying to shape the 2028 election",
+          "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+          "entities": [
+            "OpenAI"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Exit polls show AI ranked last among voter priorities in the 2026 U.S. midterms",
+          "url": "https://the-decoder.com/exit-polls-show-ai-ranked-last-among-voter-priorities-in-the-2026-u-s-midterms/",
+          "entities": [
+            "США"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Researchers asked people to use AI chatbots for election info – results were mixed",
+          "url": "https://www.zdnet.com/innovation/ai-users-ask-chatbots-voting-advice-elections-yale-research/",
+          "entities": [
+            "Yale"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Конгресс США",
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Конгресс США": "neutral",
+          "OpenAI": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-qualcomm-datacenters",
+      "section": "industry",
+      "headline": "Qualcomm делает ставку на дата-центры на фоне падения продаж смартфонов",
+      "subheadline": "В отчёте компания сделала упор на серверное направление.",
+      "body": "Основной бизнес Qualcomm — чипы для смартфонов, и продажи там падают. Поэтому компания всё больше рассчитывает на процессоры для ИИ-дата-центров, где спрос растёт за счёт строительства вычислительных мощностей.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Qualcomm is betting big on data centers as smartphone sales sink",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Qualcomm"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Qualcomm": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-pentagon-cto-ai-labs",
+      "section": "industry",
+      "headline": "Технический директор Пентагона: власти США в этом месяце опишут законы, которые действуют для ИИ-лабораторий",
+      "subheadline": "Рабочая группа с участием Эмиля Майкла обещает опубликовать регуляторный ландшафт в ближайшие одну-две недели.",
+      "body": "По данным Reuters, Эмиль Майкл — заместитель председателя рабочей группы, которая готовит перечень законов и правил для американских ИИ-лабораторий. Он предупредил, что без этого Конгресс может принять регулирование, способное «убить» отрасль.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Pentagon chief tech officer says government will detail laws that apply to AI labs this month",
+          "url": "https://srnnews.com/pentagon-chief-tech-officer-says-government-will-detail-laws-that-apply-to-ai-labs-this-month",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Пентагон",
+          "Emil Michael",
+          "Конгресс США"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Пентагон": "neutral",
+          "Emil Michael": "neutral",
+          "Конгресс США": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7
+    },
+    {
+      "id": "industry-albanese-robodebt",
+      "section": "industry",
+      "headline": "Правительство Австралии предупредили о риске повторить Robodebt из-за алгоритмов и ИИ",
+      "subheadline": "Критики считают, что власти «во сне идут» к новому скандалу с автоматизированными решениями.",
+      "body": "Robodebt — автоматизированная схема взыскания долгов по соцвыплатам 2016–2019 годов, которую позже признали незаконной. Теперь правительство Энтони Албанезе предупреждают, что госслужбы внедряют алгоритмы и ИИ без достаточного контроля.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Albanese government warned it's 'sleepwalking into another robodebt scenario' over use of algorithms and AI",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/05/albanese-government-warned-its-sleepwalking-into-another-robodebt-scenario-over-use-of-algorithms-and-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Австралия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Австралия": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "industry-datacenters-midterms",
+      "section": "industry",
+      "headline": "Продолжение: дата-центры проиграли промежуточные выборы",
+      "subheadline": null,
+      "body": "По итогам голосования американские избиратели в основном выступили против ИИ-дата-центров. MIT Technology Review пишет, что Техас может перестать быть центром их строительства, а TechCrunch ждёт после выборов ещё более жёсткого противостояния.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Data centers lost the midterms",
+          "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "American Voters Overwhelmingly Reject AI Data Centers",
+          "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
+          "entities": [
+            "США"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+          "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+          "entities": [
+            "Техас"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "After the midterms, a bigger clash over data centers could be coming",
+          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+          "entities": [
+            "США"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Дата-центры встречают сопротивление: xAI выкупает дома у соседей, техасские избиратели против",
+      "tags": {
+        "entities": [
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "США": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5
+    },
+    {
+      "id": "content-chatgpt-gif-images-26",
+      "section": "content",
+      "headline": "ChatGPT научился делать анимированные GIF из текста и фото на модели Images 2.6",
+      "subheadline": "Новая версия генератора изображений OpenAI оживляет картинку по промпту или загруженному снимку.",
+      "body": "Новая модель Images 2.6 делает в ChatGPT не только статичные изображения, но и анимированные GIF. Исходником может быть текстовый промпт или загруженная фотография.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ChatGPT can now turn text prompts and photos into animated GIFs with OpenAI's Images 2.6 model",
+          "url": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7
+    },
+    {
+      "id": "content-image-models-price-test",
+      "section": "content",
+      "headline": "Nano Banana 2.1, GPT Image 2.5 и Seedream 5.0 сравнили на одном промпте с первой попытки",
+      "subheadline": "Разработчик прогнал три генератора через четыре теста и сравнил цену изображения.",
+      "body": "Каждая модель получила один и тот же промпт без повторных попыток. Самой дешёвой оказалась GPT Image 2.5 — около $0,031 за изображение, Seedream 5.0 стоит $0,036, Nano Banana 2.1 — $0,048. Это частный тест в блоге разработчика, а не официальное сравнение.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nano Banana 2.1 vs GPT Image 2.5 vs Seedream 5.0: one prompt, first try, four tests",
+          "url": "https://dev.to/popnow/nano-banana-21-vs-gpt-image-25-vs-seedream-50-one-prompt-first-try-four-tests-3j9g",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Цена за изображение: GPT Image 2.5 — $0,031 · Seedream 5.0 — $0,036 · Nano Banana 2.1 — $0,048",
+      "tags": {
+        "entities": [
+          "Nano Banana",
+          "GPT-Image-2.5",
+          "Seedream"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Nano Banana": "neutral",
+          "GPT-Image-2.5": "neutral",
+          "Seedream": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "art-museum-visitors-ai-survey",
+      "section": "art",
+      "headline": "91% посетителей музеев США обеспокоены использованием ИИ в экспозициях",
+      "subheadline": "Опрос Американского альянса музеев выявил недоверие к ИИ в выставках и музейном маркетинге.",
+      "body": "По данным опроса Американского альянса музеев, большинство посетителей беспокоит ИИ и в самих экспозициях, и в продвижении музеев. На этом фоне Национальный музей азиатского искусства Смитсоновского института планирует использовать ИИ в VR-реконструкции Павлиньей комнаты Уистлера для ретроспективы, которую организует Tate.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "US Museum Visitors Concerned About AI Use in Exhibitions, Survey Shows",
+          "url": "https://usaartnews.com/news/us-museum-visitors-concerned-about-ai-use-in-exhibitions-survey-shows/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "American Alliance of Museums",
+          "Smithsonian",
+          "Tate"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "American Alliance of Museums": "neutral",
+          "Smithsonian": "neutral",
+          "Tate": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-apple-ai-budget-cuts",
+      "section": "hype",
+      "headline": "Apple, по данным СМИ, урезает бюджеты на внутреннее использование ИИ",
+      "subheadline": "Компания якобы сокращает расходы сотрудников на ИИ-инструменты.",
+      "body": "Официально Apple сведения не подтверждала. Неделей ранее Goldman Sachs отозвала ИИ-инструменты для кода у трейдеров и банкиров, а глава Y Combinator Гарри Тан рассказывал, что тратит на токены ИИ-агентов до $200 тыс. в год: компании начинают считать, во что обходится ИИ внутри.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Apple is reportedly cutting budgets for its internal AI usage",
+          "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Apple": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-victoria-ai-election-ads",
+      "section": "hype",
+      "headline": "Главные партии Виктории обмениваются ударами из-за ИИ-роликов с лидерами в предвыборной рекламе",
+      "subheadline": "В кампании перед выборами в австралийском штате используют сгенерированные видео с политиками.",
+      "body": "Крупнейшие партии штата Виктория обвиняют друг друга в запугивании избирателей. В предвыборной рекламе 2026 года они показывают лидеров соперников в видео, созданных ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Scare campaigns: Victoria's major parties trade blows over AI-generated videos of leaders in election ads",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/05/victoria-election-2026-ai-generated-video-ads-ntwnfb",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Австралия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Австралия": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-torvalds-assembler",
+      "section": "hype",
+      "headline": "Торвальдс: «Не доверяете ИИ — пишите на ассемблере»",
+      "subheadline": "Создатель Linux ответил скептикам ИИ-инструментов в разработке.",
+      "body": "Линус Торвальдс сравнил недоверие к ИИ-помощникам с недоверием к компиляторам. Кто не хочет полагаться на автоматизацию, может отказаться и от неё, и от языков высокого уровня.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Торвальдс: «Не доверяете ИИ — пишите на ассемблере»",
+          "url": "https://habr.com/ru/companies/hexlet/articles/1103584/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Linus Torvalds",
+          "Linux"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Linus Torvalds": "neutral",
+          "Linux": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    },
+    {
+      "id": "hype-uber-ai-agents-bookings",
+      "section": "hype",
+      "headline": "Uber: такси через ИИ-агентов почти никто не заказывает",
+      "subheadline": "Компания признала, что агентные заказы пока остаются редкостью.",
+      "body": "Это второй подобный сигнал за неделю: DoorDash говорил лишь о «нескольких сотнях» заказов от ИИ-агентов. Обещания агентной коммерции пока расходятся с поведением пользователей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Almost no one uses AI agents to book their Uber, company says",
+          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Uber"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Uber": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5
+    }
+  ]
+}
