@@ -12,6 +12,14 @@
   --accent-dark: #922b21;
   --rule: #c8c2b0;
 
+  /* Цвета рубрик — те же значения продублированы в SECTION_COLORS (app.js) для canvas-карточки */
+  --sec-models: #1a5276;
+  --sec-platforms: #145a32;
+  --sec-industry: #4a235a;
+  --sec-content: #8a5a00;
+  --sec-art: #7b2d26;
+  --sec-hype: #c0392b;
+
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
   --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
@@ -88,30 +96,121 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   margin: 0.75rem 0 0;
 }
 
-/* Section nav */
-.section-nav {
+/* ===== ПОЛОСКА НАВИГАЦИИ (после hero) ===== */
+.issue-nav {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-areas: "prev sections total next";
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  min-height: 3.2rem;
+}
+.issue-nav:empty { display: none; }
+/* Линейка над полоской — такая же, как под ней (border-top у .col-wrap / .filter-empty) */
+.heroes-zone + .issue-nav { border-top: 2px solid var(--ink); }
+.heroes-zone .art-hero:last-child { border-bottom: none; }
+
+.issue-nav-arrow--prev, .issue-nav .is-placeholder:first-child { grid-area: prev; }
+.issue-nav-sections { grid-area: sections; }
+.issue-nav-total    { grid-area: total; }
+.issue-nav-arrow--next, .issue-nav .is-placeholder:last-child { grid-area: next; }
+
+.issue-nav-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.3rem 0.6rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
+}
+.issue-nav-arrow:hover { background: var(--ink); color: var(--paper); text-decoration: none; }
+.issue-nav-arrow.is-disabled {
+  color: var(--ink-faint);
+  border-color: var(--rule);
+  cursor: default;
+}
+.issue-nav-arrow.is-disabled:hover { background: transparent; color: var(--ink-faint); }
+.issue-nav-arrow.is-placeholder { visibility: hidden; border-color: transparent; min-width: 2rem; }
+
+.issue-nav-sections {
   display: flex;
-  gap: 0;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 0;
+  gap: 0.4rem;
   overflow-x: auto;
   scrollbar-width: none;
+  padding: 2px 0;
 }
-.section-nav::-webkit-scrollbar { display: none; }
+.issue-nav-sections::-webkit-scrollbar { display: none; }
 
-.section-tag {
+.sec-chip {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-light);
-  padding: 0.5rem 1rem;
-  border-right: 1px solid var(--rule);
-  white-space: nowrap;
-  transition: color 0.15s, background 0.15s;
+  line-height: 1.3;
+  color: var(--c, var(--ink));
+  background: color-mix(in srgb, var(--c, var(--ink)) 9%, transparent);
+  border: 1px solid var(--c, var(--ink));
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
 }
-.section-tag:first-child { padding-left: 0; }
-.section-tag:hover { color: var(--ink); text-decoration: none; background: var(--paper-dark); }
+button.sec-chip:hover { background: color-mix(in srgb, var(--c, var(--ink)) 18%, transparent); }
+.sec-chip-count {
+  margin-left: 0.45rem;
+  font-weight: 500;
+}
+.sec-chip.is-off {
+  color: var(--ink-faint);
+  background: transparent;
+  border-color: var(--rule);
+}
+.sec-chip.is-off .sec-chip-count { text-decoration: line-through; }
+.sec-chip.is-off:hover { color: var(--ink-light); background: transparent; border-color: var(--ink-faint); }
+.sec-chip.is-empty {
+  color: var(--ink-faint);
+  background: transparent;
+  border: 1px dashed var(--rule);
+  cursor: default;
+}
+
+.issue-nav-total {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-light);
+  white-space: nowrap;
+}
+.issue-nav-total-num { color: var(--ink); font-weight: 500; }
+.issue-nav-reset {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.filter-empty {
+  border-top: 2px solid var(--ink);
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-light);
+}
 
 /* ===== NEWSPAPER LAYOUT ===== */
 .newspaper {
@@ -131,12 +230,20 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   padding: 0.1rem 0.4rem;
   border: 1px solid currentColor;
 }
-.section-badge--models   { color: #1a5276; }
-.section-badge--platforms { color: #145a32; }
-.section-badge--industry  { color: #4a235a; }
-.section-badge--content   { color: #8a5a00; }
-.section-badge--art       { color: #7b2d26; }
-.section-badge--hype      { color: var(--accent); }
+.section-badge--models    { color: var(--sec-models); }
+.section-badge--platforms { color: var(--sec-platforms); }
+.section-badge--industry  { color: var(--sec-industry); }
+.section-badge--content   { color: var(--sec-content); }
+.section-badge--art       { color: var(--sec-art); }
+.section-badge--hype      { color: var(--sec-hype); }
+
+/* Цвет рубрики в переменной --c — для плашек фильтра и строк «Коротко» */
+.sec-chip--models,    .brief--models    { --c: var(--sec-models); }
+.sec-chip--platforms, .brief--platforms { --c: var(--sec-platforms); }
+.sec-chip--industry,  .brief--industry  { --c: var(--sec-industry); }
+.sec-chip--content,   .brief--content   { --c: var(--sec-content); }
+.sec-chip--art,       .brief--art       { --c: var(--sec-art); }
+.sec-chip--hype,      .brief--hype      { --c: var(--sec-hype); }
 
 /* Практическая строка рубрик «Нейроконтент» и «Искусство»: даты, место, срок скидки */
 .art-details {
@@ -349,6 +456,200 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 }
 .related-list a { color: var(--ink-mid); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .related-list a:hover { color: var(--ink); }
+
+/* ===== КОРОТКО (compact и продолжения) ===== */
+.briefs {
+  margin-top: 1.75rem;
+  border-top: 3px double var(--ink);
+}
+.col-wrap + .briefs { margin-top: 1.5rem; }
+.briefs-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.briefs-count { color: var(--ink-light); font-weight: 400; letter-spacing: 0.04em; }
+
+.briefs-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.briefs-col { border-right: 1px solid var(--rule); }
+.briefs-col:last-child { border-right: none; }
+
+.brief {
+  position: relative;
+  padding: 0.75rem 1.25rem 0.8rem 1.4rem;
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.brief:hover { background: var(--paper-dark); }
+.brief::before {
+  content: '';
+  position: absolute;
+  left: 0.55rem;
+  top: 0.85rem;
+  bottom: 0.85rem;
+  width: 3px;
+  background: var(--c, var(--ink-faint));
+}
+.brief-section {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c, var(--ink-light));
+  margin-bottom: 0.2rem;
+}
+.brief-headline {
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.brief--continuation .brief-headline { font-weight: 400; color: var(--ink-mid); }
+.brief .art-details { margin: 0.35rem 0 0; }
+.brief .art-body--collapse .art-sub { margin-bottom: 0.4rem; }
+
+/* ===== ШЕРИНГ ===== */
+.share-btn {
+  margin-left: auto;
+  margin-top: 0.4rem;   /* как у .sources-list — чтобы стоять на одной линии с источниками */
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--ink);
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
+}
+.share-btn:hover { background: var(--ink); color: var(--paper); }
+/* В главной новости — как плашка источника рядом */
+.art-hero .share-btn { color: var(--ink-light); border-color: var(--rule); padding: 0.15rem 0.45rem; }
+.art-hero .share-btn:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+body.has-modal { overflow: hidden; }
+
+.share-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 24, 0.78);
+}
+.share-modal-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 2.6rem 1rem 1rem;
+  max-height: 100vh;
+  max-height: 100dvh;
+}
+.share-modal-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+  font-family: var(--font-sans);
+  font-size: 1.7rem;
+  line-height: 1;
+  color: var(--paper);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.share-card-frame {
+  height: min(calc(100vh - 8.5rem), calc((100vw - 2rem) * 16 / 9));
+  height: min(calc(100dvh - 8.5rem), calc((100vw - 2rem) * 16 / 9));
+  aspect-ratio: 9 / 16;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+.share-card-img { display: block; width: 100%; height: 100%; }
+.share-card-loading {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-light);
+  text-align: center;
+  padding: 1rem;
+}
+.share-actions { display: flex; gap: 0.75rem; }
+.share-actions .btn {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink);
+  min-width: 8.5rem;
+}
+.share-actions .btn:hover { background: var(--paper-dark); color: var(--ink); }
+.share-actions .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.share-actions .btn-primary:hover { background: var(--accent-dark); color: var(--paper); }
+.share-actions .btn:disabled { opacity: 0.5; cursor: default; }
+.share-fallback {
+  display: flex;
+  gap: 0.9rem;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--paper);
+}
+.share-fallback[hidden] { display: none; }
+.share-fallback a { color: var(--paper); text-decoration: underline; text-underline-offset: 2px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.75rem;
+  z-index: 2100;
+  transform: translate(-50%, 0.75rem);
+  opacity: 0;
+  pointer-events: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+/* Пока открыт попап, тост сверху — чтобы не закрывать кнопки */
+body.has-modal .toast { top: 0.75rem; bottom: auto; transform: translate(-50%, -0.75rem); }
+body.has-modal .toast.is-visible { transform: translate(-50%, 0); }
+
+/* Подсветка новости, открытой по ссылке #id */
+@keyframes ng-target-flash {
+  0%, 35% { background: color-mix(in srgb, var(--accent) 14%, var(--paper)); }
+  100%    { background: transparent; }
+}
+.is-target { animation: ng-target-flash 1.8s ease-out; }
 
 /* ===== CHANGELOG (закреплённая карточка внизу выпуска) ===== */
 .changelog-zone {
@@ -617,10 +918,32 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   :root { --page-pad: 1rem; }
   .col-wrap { grid-template-columns: 1fr; }
   .col { border-right: none; }
+  .briefs-col { border-right: none; }
   .form-row { grid-template-columns: 1fr; }
   .masthead-title h1 { font-size: 2.6rem; }
+
+  .issue-nav {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "prev sections next"
+      "total total total";
+    row-gap: 0.45rem;
+  }
+  .issue-nav-total { text-align: center; }
+  /* Затухание справа — намёк, что рубрики листаются; отступ даёт докрутить последнюю плашку */
+  .issue-nav-sections {
+    padding-right: 1.5rem;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+  }
+  .col-article, .brief { padding-left: 1.1rem; padding-right: 0.25rem; }
+  .brief::before { left: 0.3rem; }
 }
 
 @media (max-width: 480px) {
   .masthead-title h1 { font-size: 2rem; }
+  .issue-nav-date { display: none; }
+  .issue-nav-arrow { padding: 0.3rem 0.55rem; font-size: 0.8rem; }
+  .share-actions .btn { min-width: 0; flex: 1; }
+  .share-actions { width: 100%; }
 }

@@ -14,8 +14,6 @@
       align-items: center;
       gap: 1rem;
       padding: 0.5rem 0;
-      border-bottom: 1px solid var(--rule);
-      margin-bottom: 1rem;
       font-family: var(--font-mono);
       font-size: 0.72rem;
       color: var(--ink-light);
@@ -28,6 +26,59 @@
     }
     .status-dot.published { background: #27ae60; }
     .status-dot.draft { background: #e67e22; }
+
+    /* Выбор выпуска */
+    .issue-picker {
+      display: flex;
+      align-items: stretch;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+    }
+    .issue-picker .btn { padding: 0.4rem 0.75rem; }
+    .issue-picker .btn:disabled { opacity: 0.35; cursor: default; }
+    .issue-picker .btn:disabled:hover { background: transparent; color: var(--ink); }
+    .issue-picker .form-select {
+      flex: 1;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+    .issue-picker .editor-status-bar { margin-left: 0.5rem; white-space: nowrap; }
+
+    .editor-toolbar { padding-bottom: 1rem; border-bottom: 1px solid var(--rule); }
+
+    /* Плашка черновика */
+    .draft-banner {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: #7a4a00;
+      background: #fbecd2;
+      border: 1px solid #e0b46a;
+      padding: 0.55rem 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .draft-banner[hidden] { display: none; }
+    .draft-banner .btn { padding: 0.2rem 0.6rem; font-size: 0.62rem; border-color: #7a4a00; color: #7a4a00; }
+    .draft-banner .btn:hover { background: #7a4a00; color: #fbecd2; }
+
+    /* Поиск */
+    .search-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .search-row .form-input { flex: 1; }
+    .search-count {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
 
     .editor-card-headline {
       font-family: var(--font-serif);
@@ -42,6 +93,7 @@
       color: var(--ink-faint);
       white-space: nowrap;
     }
+    .editor-card.is-hidden { display: none; }
 
     .add-news-panel {
       border: 2px dashed var(--rule);
@@ -50,22 +102,6 @@
       display: none;
     }
     .add-news-panel.visible { display: block; }
-
-    .toast {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      background: var(--ink);
-      color: var(--paper);
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      padding: 0.6rem 1.2rem;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s;
-      z-index: 999;
-    }
-    .toast.visible { opacity: 1; }
 
     .section-select-badge {
       font-family: var(--font-mono);
@@ -91,6 +127,12 @@
     }
 
     .preview-toggle { cursor: pointer; }
+
+    @media (max-width: 600px) {
+      .issue-picker { flex-wrap: wrap; }
+      .issue-picker .form-select { flex-basis: 50%; }
+      .issue-picker .editor-status-bar { width: 100%; margin: 0; }
+    }
   </style>
 </head>
 <body>
@@ -126,18 +168,30 @@
 
 <main class="editor-page" id="editor-page" style="display:none">
 
-  <!-- Toolbar -->
-  <div class="editor-toolbar">
-    <div class="editor-status-bar" style="flex:1;border:none;margin:0;padding:0">
+  <!-- Выбор выпуска -->
+  <div class="issue-picker">
+    <button class="btn" id="issue-prev" onclick="stepIssue(-1)" title="Предыдущий выпуск" aria-label="Предыдущий выпуск">‹</button>
+    <select class="form-select" id="issue-select" onchange="switchIssue(this.value)" aria-label="Выпуск"></select>
+    <button class="btn" id="issue-next" onclick="stepIssue(1)" title="Следующий выпуск" aria-label="Следующий выпуск">›</button>
+    <div class="editor-status-bar">
       <span class="status-dot" id="status-dot"></span>
       <span id="status-label">—</span>
-      <span id="issue-date-label" style="margin-left:auto"></span>
     </div>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="editor-toolbar">
     <button class="btn" onclick="toggleAddPanel()">+ Добавить новость</button>
     <button class="btn btn-primary" id="publish-btn" onclick="publishIssue()">Опубликовать</button>
     <button class="btn" onclick="saveIssue()">Сохранить в GitHub</button>
     <button class="btn preview-toggle" onclick="openPreview()">Предпросмотр ↗</button>
     <button class="btn" onclick="toggleTokenPanel()" title="Настройки GitHub токена">⚙</button>
+  </div>
+
+  <!-- Плашка несохранённых правок -->
+  <div class="draft-banner" id="draft-banner" hidden>
+    <span id="draft-banner-text"></span>
+    <button class="btn" onclick="discardDraft()">Отбросить и загрузить с сервера</button>
   </div>
 
   <!-- Add news panel -->
@@ -193,6 +247,12 @@
     </div>
   </div>
 
+  <!-- Поиск по выпуску -->
+  <div class="search-row">
+    <input type="search" class="form-input" id="news-search" placeholder="Найти в выпуске: заголовок, текст, id" oninput="applySearch()" />
+    <span class="search-count" id="search-count"></span>
+  </div>
+
   <!-- News cards -->
   <div id="editor-cards"></div>
 
@@ -209,13 +269,14 @@
       <button class="btn" onclick="toggleTokenPanel()">Закрыть</button>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;color:var(--ink-faint);margin-top:.75rem">
-      Нужен токен с правом <code>contents: write</code> — создай на github.com/settings/tokens
+      Нужен токен с правом <code>contents: write</code> — создай на github.com/settings/tokens.
+      С токеном выпуски читаются прямо из GitHub — так правки не затрут свежие данные, даже если локальная копия отстала.
     </div>
   </div>
 
 </main>
 
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -231,7 +292,8 @@
   // To change: replace with SHA-256 hash of your password.
   const PASSWORD_HASH = '04cdf1da994d913dde4d76b1bdc24a13cf74c3df05178df1122e16e58fee26c5';
 
-  const STORAGE_KEY = 'neurognewspaper_draft';
+  const LEGACY_DRAFT_KEY = 'neurognewspaper_draft';   // старый общий черновик — переносится по датам
+  const DRAFT_PREFIX = 'ng_draft_';                    // черновик выпуска: ng_draft_YYYY-MM-DD
   const GITHUB_REPO = 'Max-libo/neuro-gazette';
   const GITHUB_TOKEN_KEY = 'ng_github_token';
 
@@ -272,67 +334,228 @@
   });
 
   // ===== DATA =====
-  let issue = null;
+  let issue = null;          // открытый выпуск
+  let issueDate = null;      // его дата
+  let issues = [];           // [{date, published, count}] из index.json, по возрастанию даты
+  let dirty = false;         // есть правки, не записанные в черновик
 
+  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', content: 'Нейроконтент', art: 'Искусство', hype: 'Желтуха' };
+
+  /* ── Чтение: из GitHub (если есть токен) или из локальной копии ── */
+  async function githubRead(filePath) {
+    const token = localStorage.getItem(GITHUB_TOKEN_KEY);
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.raw+json' },
+      cache: 'no-store',
+    });
+    if (!res.ok) throw new Error(`GitHub: HTTP ${res.status}`);
+    return JSON.parse(await res.text());
+  }
+
+  async function loadData(name) {
+    if (localStorage.getItem(GITHUB_TOKEN_KEY)) {
+      try { return await githubRead(`docs/data/${name}`); }
+      catch (err) { showToast(`Не удалось прочитать из GitHub (${err.message}) — беру локальную копию`); }
+    }
+    const res = await fetch(`../data/${name}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  }
+
+  /* ── Черновики по датам ── */
+  function draftKey(date) { return DRAFT_PREFIX + date; }
+
+  function readDraft(date) {
+    try {
+      const raw = localStorage.getItem(draftKey(date));
+      return raw ? JSON.parse(raw) : null;
+    } catch { return null; }
+  }
+
+  function hasDraft(date) { return localStorage.getItem(draftKey(date)) !== null; }
+
+  function migrateLegacyDraft() {
+    const raw = localStorage.getItem(LEGACY_DRAFT_KEY);
+    if (!raw) return;
+    try {
+      const old = JSON.parse(raw);
+      if (old && old.date && !hasDraft(old.date)) {
+        localStorage.setItem(draftKey(old.date), JSON.stringify({ saved_at: null, issue: old }));
+      }
+    } catch { /* битый черновик — просто убираем */ }
+    localStorage.removeItem(LEGACY_DRAFT_KEY);
+  }
+
+  let _saveDraftTimer;
+  function saveDraft() {
+    dirty = true;
+    clearTimeout(_saveDraftTimer);
+    _saveDraftTimer = setTimeout(flushDraft, 500);
+  }
+
+  function flushDraft() {
+    clearTimeout(_saveDraftTimer);
+    if (!dirty || !issue || !issueDate) return;
+    localStorage.setItem(draftKey(issueDate), JSON.stringify({ saved_at: new Date().toISOString(), issue }));
+    dirty = false;
+    renderDraftBanner(true);
+    renderPicker();
+  }
+
+  function clearDraft(date) {
+    clearTimeout(_saveDraftTimer);
+    dirty = false;
+    localStorage.removeItem(draftKey(date));
+  }
+
+  window.addEventListener('beforeunload', flushDraft);
+
+  /* ── Старт ── */
   async function initEditor() {
-    // Try to load from localStorage first (unsaved edits)
-    const draft = localStorage.getItem(STORAGE_KEY);
-    if (draft) {
-      try { issue = JSON.parse(draft); } catch {}
+    migrateLegacyDraft();
+
+    try {
+      const index = await loadData('index.json');
+      issues = (index.issues || []).filter(i => i.date).sort((a, b) => a.date.localeCompare(b.date));
+    } catch (err) {
+      issues = [];
+      showToast('Не удалось загрузить список выпусков: ' + err.message);
     }
 
-    if (!issue) {
-      // Load latest.json
-      try {
-        const res = await fetch('../data/latest.json');
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        issue = await res.json();
-      } catch (err) {
-        showToast('Ошибка загрузки выпуска: ' + err.message);
+    const params = new URLSearchParams(location.search);
+    const wanted = params.get('date');
+    const date = wanted || (issues.length ? issues[issues.length - 1].date : null);
+    await openIssue(date, decodeURIComponent((location.hash || '').slice(1)));
+  }
+
+  async function openIssue(date, focusId) {
+    flushDraft();
+    document.getElementById('editor-cards').innerHTML = '<div class="loading-state">Загрузка выпуска…</div>';
+
+    let remote = null;
+    try {
+      remote = await loadData(date ? `${date}.json` : 'latest.json');
+    } catch (err) {
+      if (!readDraft(date)) {
+        issue = null;
+        document.getElementById('editor-cards').innerHTML =
+          `<div class="error-state">Не удалось загрузить выпуск ${date || ''}.<br><small>${escHtml(err.message)}</small></div>`;
+        renderPicker();
         return;
       }
     }
 
+    issueDate = date || (remote && remote.date);
+    const draft = readDraft(issueDate);
+    if (draft && remote && JSON.stringify(draft.issue) === JSON.stringify(remote)) {
+      clearDraft(issueDate);   // черновик совпадает с сервером — он не нужен
+    }
+
+    const actualDraft = readDraft(issueDate);
+    issue = actualDraft ? actualDraft.issue : remote;
+    dirty = false;
+
+    // Адрес отражает открытый выпуск — его можно добавить в закладки или переслать
+    const url = new URL(location.href);
+    url.searchParams.set('date', issueDate);
+    url.hash = focusId ? encodeURIComponent(focusId) : '';
+    history.replaceState(null, '', url);
+
+    document.getElementById('news-search').value = '';
     renderEditor();
+    renderDraftBanner(!!actualDraft, actualDraft && actualDraft.saved_at);
+    if (focusId) focusCard(focusId);
+  }
+
+  function switchIssue(date) {
+    if (date && date !== issueDate) openIssue(date);
+  }
+
+  function stepIssue(dir) {
+    const i = issues.findIndex(x => x.date === issueDate);
+    const next = issues[i + dir];
+    if (next) openIssue(next.date);
+  }
+
+  function discardDraft() {
+    if (!confirm('Отбросить несохранённые правки этого выпуска?')) return;
+    clearDraft(issueDate);
+    openIssue(issueDate);
+  }
+
+  /* ── Рендер ── */
+  function formatShort(date) {
+    const d = new Date(date + 'T00:00:00');
+    return d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short', year: 'numeric' }).replace(/\s*г\.?$/, '');
+  }
+
+  function renderPicker() {
+    const sel = document.getElementById('issue-select');
+    const list = [...issues];
+    if (issueDate && !list.some(i => i.date === issueDate)) {
+      list.push({ date: issueDate, published: issue && issue.published, count: issue && issue.news ? issue.news.length : 0 });
+      list.sort((a, b) => a.date.localeCompare(b.date));
+    }
+    const latest = list.length ? list[list.length - 1].date : null;
+    sel.innerHTML = [...list].reverse().map(i => {
+      const marks = [
+        i.date === latest ? 'свежий' : '',
+        i.published ? 'опубликован' : '',
+        hasDraft(i.date) ? '✎ есть правки' : '',
+      ].filter(Boolean).join(' · ');
+      return `<option value="${i.date}" ${i.date === issueDate ? 'selected' : ''}>${formatShort(i.date)} — ${i.count ?? '?'} нов.${marks ? ' · ' + marks : ''}</option>`;
+    }).join('');
+
+    const idx = list.findIndex(i => i.date === issueDate);
+    document.getElementById('issue-prev').disabled = idx <= 0;
+    document.getElementById('issue-next').disabled = idx < 0 || idx >= list.length - 1;
+  }
+
+  function renderDraftBanner(show, savedAt) {
+    const banner = document.getElementById('draft-banner');
+    if (!show) { banner.hidden = true; return; }
+    let when = '';
+    const stored = readDraft(issueDate);
+    const ts = savedAt || (stored && stored.saved_at);
+    if (ts) {
+      const d = new Date(ts);
+      when = ' от ' + d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' }).replace('.', '') +
+             ' ' + d.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+    }
+    document.getElementById('draft-banner-text').textContent =
+      `Открыты несохранённые правки${when} — в GitHub их ещё нет.`;
+    banner.hidden = false;
   }
 
   function renderEditor() {
+    renderPicker();
     if (!issue) return;
 
-    // Status bar
     const dot = document.getElementById('status-dot');
     dot.className = 'status-dot ' + (issue.published ? 'published' : 'draft');
-    document.getElementById('status-label').textContent = issue.published ? 'Опубликован' : 'Черновик';
-    document.getElementById('issue-date-label').textContent = issue.date || '';
+    document.getElementById('status-label').textContent = issue.published ? 'Опубликован' : 'Не опубликован';
     document.getElementById('publish-btn').textContent = issue.published ? 'Снять с публикации' : 'Опубликовать';
 
     renderCards();
   }
 
-  const SECTION_LABELS = { models: 'Модели', platforms: 'Платформы', industry: 'Индустрия', content: 'Нейроконтент', art: 'Искусство', hype: 'Желтуха' };
-
   function renderCards() {
     const el = document.getElementById('editor-cards');
     if (!issue || !issue.news || issue.news.length === 0) {
       el.innerHTML = '<div class="loading-state">Новостей нет. Добавьте первую.</div>';
+      applySearch();
       return;
     }
 
-    const sorted = [...issue.news].sort((a, b) => b.importance - a.importance);
-    let html = '';
-
-    sorted.forEach((item, idx) => {
-      const realIdx = issue.news.indexOf(item);
-      html += buildEditorCard(item, realIdx);
-    });
-
-    el.innerHTML = html;
+    const sorted = [...issue.news].sort((a, b) => (b.importance || 0) - (a.importance || 0));
+    el.innerHTML = sorted.map(item => buildEditorCard(item, issue.news.indexOf(item))).join('');
+    applySearch();
   }
 
   function buildEditorCard(item, idx) {
     const sectionLabel = SECTION_LABELS[item.section] || item.section;
     return `
-      <div class="editor-card" id="card-${idx}">
+      <div class="editor-card" id="card-${idx}" data-news-id="${escAttr(item.id)}">
         <div class="editor-card-header" onclick="toggleCard(${idx})">
           <span class="section-select-badge">${escHtml(sectionLabel)}</span>
           <span class="editor-card-headline">${escHtml(item.headline)}</span>
@@ -414,6 +637,9 @@
                 Не подтверждено
               </label>
             </div>
+            <div class="form-group">
+              <span class="form-label">id: ${escHtml(item.id)}</span>
+            </div>
           </div>
         </div>
       </div>`;
@@ -433,14 +659,33 @@
     card.classList.toggle('open');
   }
 
-  let _saveDraftTimer;
-  function saveDraft() {
-    clearTimeout(_saveDraftTimer);
-    _saveDraftTimer = setTimeout(() => {
-      if (issue) localStorage.setItem(STORAGE_KEY, JSON.stringify(issue));
-    }, 500);
+  /* Открыть карточку по id новости (из ссылки editor/?date=…#id) */
+  function focusCard(newsId) {
+    const card = [...document.querySelectorAll('.editor-card')].find(c => c.dataset.newsId === newsId);
+    if (!card) { showToast('Новость не найдена в этом выпуске'); return; }
+    card.classList.add('open');
+    card.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    card.classList.remove('is-target');
+    void card.offsetWidth;
+    card.classList.add('is-target');
   }
 
+  /* ── Поиск ── */
+  function applySearch() {
+    const q = document.getElementById('news-search').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.editor-card');
+    let shown = 0;
+    cards.forEach(card => {
+      const item = issue && issue.news[+card.id.replace('card-', '')];
+      const hay = item ? [item.headline, item.subheadline, item.body, item.id, item.details].join(' ').toLowerCase() : '';
+      const ok = !q || hay.includes(q);
+      card.classList.toggle('is-hidden', !ok);
+      if (ok) shown++;
+    });
+    document.getElementById('search-count').textContent = q ? `найдено ${shown} из ${cards.length}` : '';
+  }
+
+  /* ── Правки ── */
   function updateField(idx, field, value) {
     if (!issue || !issue.news[idx]) return;
     issue.news[idx][field] = value;
@@ -491,6 +736,7 @@
     const sourceUrl = document.getElementById('add-source-url').value.trim();
 
     if (!headline) { showToast('Введите заголовок'); return; }
+    if (!issue) { showToast('Сначала выберите выпуск'); return; }
 
     const item = {
       id: 'manual-' + Date.now(),
@@ -505,9 +751,9 @@
       tags: { entities: [], sentiment: 'neutral', entity_sentiment: {}, event: 'other' },
     };
 
-    if (!issue) issue = { date: new Date().toISOString().slice(0, 10), published: false, news: [] };
     if (!issue.news) issue.news = [];
     issue.news.push(item);
+    saveDraft();
 
     // Reset form
     ['add-headline', 'add-subheadline', 'add-body', 'add-source-url'].forEach(id => {
@@ -533,7 +779,7 @@
     };
 
     // Get current SHA
-    const getRes = await fetch(apiUrl, { headers });
+    const getRes = await fetch(apiUrl, { headers, cache: 'no-store' });
     let sha;
     if (getRes.ok) { sha = (await getRes.json()).sha; }
 
@@ -547,16 +793,53 @@
     }
   }
 
+  /* Запись выпуска: <date>.json всегда, latest.json — только если это самый свежий выпуск,
+     index.json — count и published для этой даты (count считается как в пайплайне: len(news)). */
+  async function pushIssue(message) {
+    const date = issue.date || issueDate;
+    await githubPush(`docs/data/${date}.json`, issue, message);
+
+    let latestDate = issues.length ? issues[issues.length - 1].date : null;
+    try { latestDate = (await githubRead('docs/data/latest.json')).date || latestDate; } catch { /* берём из индекса */ }
+    const wroteLatest = !latestDate || date >= latestDate;
+    if (wroteLatest) {
+      await githubPush('docs/data/latest.json', issue, `edit: latest.json → ${date}`);
+    }
+
+    let index;
+    try { index = await githubRead('docs/data/index.json'); }
+    catch { index = { issues: issues.map(i => ({ ...i })) }; }
+    if (!index.issues) index.issues = [];
+    let entry = index.issues.find(i => i.date === date);
+    if (!entry) {
+      entry = { date, published: false, count: 0 };
+      index.issues.push(entry);
+      index.issues.sort((a, b) => a.date.localeCompare(b.date));
+    }
+    const count = (issue.news || []).length;
+    const published = !!issue.published;
+    if (entry.count !== count || entry.published !== published) {
+      entry.count = count;
+      entry.published = published;
+      await githubPush('docs/data/index.json', index, `edit: index.json → ${date}`);
+    }
+    issues = index.issues.filter(i => i.date).sort((a, b) => a.date.localeCompare(b.date));
+
+    clearDraft(date);
+    renderDraftBanner(false);
+    renderPicker();
+    return wroteLatest;
+  }
+
   // ===== SAVE / PUBLISH =====
   async function saveIssue() {
     if (!issue) return;
-    showToast('Сохраняю в GitHub…');
+    flushDraft();
+    showToast('Сохраняю в GitHub…', 60000);
     try {
-      const date = issue.date;
-      await githubPush(`docs/data/${date}.json`, issue, `edit: обновлён выпуск ${date}`);
-      await githubPush('docs/data/latest.json', issue, `edit: latest.json → ${date}`);
-      localStorage.removeItem(STORAGE_KEY);
-      showToast('Сохранено в GitHub ✓');
+      const date = issue.date || issueDate;
+      const wroteLatest = await pushIssue(`edit: обновлён выпуск ${date}`);
+      showToast(wroteLatest ? 'Сохранено в GitHub ✓' : 'Сохранено в GitHub ✓ (главная не тронута — выпуск не свежий)');
     } catch (e) {
       showToast('Ошибка: ' + e.message);
     }
@@ -566,12 +849,10 @@
     if (!issue) return;
     issue.published = !issue.published;
     renderEditor();
-    showToast('Публикую в GitHub…');
+    showToast('Публикую в GitHub…', 60000);
     try {
-      const date = issue.date;
-      await githubPush(`docs/data/${date}.json`, issue, `edit: выпуск ${date} ${issue.published ? 'опубликован' : 'снят с публикации'}`);
-      await githubPush('docs/data/latest.json', issue, `edit: latest.json → ${date}`);
-      localStorage.removeItem(STORAGE_KEY);
+      const date = issue.date || issueDate;
+      await pushIssue(`edit: выпуск ${date} ${issue.published ? 'опубликован' : 'снят с публикации'}`);
       showToast(issue.published ? 'Опубликовано ✓' : 'Снято с публикации ✓');
     } catch (e) {
       issue.published = !issue.published;
@@ -600,19 +881,19 @@
   }
 
   function openPreview() {
-    const date = issue && issue.date;
+    const date = issueDate || (issue && issue.date);
     const url = date ? `../?date=${date}` : '../';
     window.open(url, '_blank');
   }
 
   // ===== TOAST =====
   let toastTimer;
-  function showToast(msg) {
+  function showToast(msg, ms = 2500) {
     const t = document.getElementById('toast');
     t.textContent = msg;
-    t.classList.add('visible');
+    t.classList.add('is-visible');
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => t.classList.remove('visible'), 2500);
+    toastTimer = setTimeout(() => t.classList.remove('is-visible'), ms);
   }
 </script>
 </body>
