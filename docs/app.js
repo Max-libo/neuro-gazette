@@ -307,8 +307,14 @@ function renderBody() {
   state.cols = columnCount();
 
   const visible = state.news.filter(n => n !== state.hero && !state.hidden.has(sectionOf(n)));
-  const important = visible.filter(n => n.tier !== 'compact' && !n.duplicate_note).sort(bySectionThenImportance);
-  const briefs    = visible.filter(n => n.tier === 'compact' || n.duplicate_note).sort(bySectionThenImportance);
+
+  // Выбраны одна-две рубрики — новостей мало, «Коротко» не выделяем: всё идёт в «Важное»
+  const { present, active } = sectionsState();
+  const narrow = active.length < present.length && active.length <= 2;
+
+  const isBrief = n => !narrow && (n.tier === 'compact' || n.duplicate_note);
+  const important = visible.filter(n => !isBrief(n)).sort(bySectionThenImportance);
+  const briefs    = visible.filter(isBrief).sort(bySectionThenImportance);
 
   if (!important.length && !briefs.length) {
     const allOff = state.hidden.size > 0;
@@ -404,14 +410,20 @@ function toggleExpand(el) {
   el.classList.toggle('expanded');
 }
 
+/* Рубрики, в которых в этом выпуске есть новости, и какие из них сейчас включены */
+function sectionsState() {
+  const present = SECTION_ORDER.filter(s => state.news.some(n => sectionOf(n) === s));
+  const active = present.filter(s => !state.hidden.has(s));
+  return { present, active };
+}
+
 /* Логика фильтра:
    - включены все → клик оставляет только эту рубрику;
    - выключают единственную включённую → снова включаются все;
    - в остальных случаях клик просто включает/выключает рубрику.
    «Все» — это рубрики, в которых в этом выпуске есть новости. */
 function toggleSection(sec) {
-  const present = SECTION_ORDER.filter(s => state.news.some(n => sectionOf(n) === s));
-  const active = present.filter(s => !state.hidden.has(s));
+  const { present, active } = sectionsState();
 
   if (active.length === present.length) {
     present.forEach(s => { if (s !== sec) state.hidden.add(s); });
