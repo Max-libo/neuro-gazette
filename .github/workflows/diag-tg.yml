@@ -1,0 +1,21 @@
+name: diag-tg
+on:
+  push:
+    branches: [diag-tg]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe
+        run: |
+          H=xn--80aahhcll4alt1a.xn--p1ai
+          ID=content-kling-4-0
+          echo "=== DNS"; getent hosts $H || true
+          echo "=== TLS chain"; echo | openssl s_client -connect $H:443 -servername $H -showcerts 2>&1 | grep -E "s:|i:|Verify return|Protocol|Cipher" | head -20
+          for P in "/" "/n/$ID.html" "/og-news.png" "/preview/2026-11-05.html"; do
+            echo "=== GET $P (TelegramBot UA)"
+            curl -sS -m 30 -o /tmp/body -D - -A "TelegramBot (like TwitterBot)" "https://$H$P" | head -20
+            echo "--- size: $(wc -c </tmp/body)"; head -c 1500 /tmp/body | grep -iE "og:|refresh|<title" || true
+          done
+          echo "=== http (no TLS)"; curl -sS -m 30 -o /dev/null -D - "http://$H/n/$ID.html" | head -8
+          echo "=== curl verify only"; curl -sS -m 30 -o /dev/null -w "%{http_code} ssl_verify=%{ssl_verify_result}\n" "https://$H/n/$ID.html"
