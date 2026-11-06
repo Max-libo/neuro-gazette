@@ -8,13 +8,9 @@ jobs:
     steps:
       - name: Probe
         run: |
-          H=xn--80aahhcll4alt1a.xn--p1ai
-          sudo apt-get install -y -qq dnsutils >/dev/null 2>&1 || true
-          for T in A AAAA NS CAA; do echo "=== $T"; dig +short $T $H; dig +short $T www.$H; done
-          echo "=== ip -6 route (есть ли IPv6 у раннера)"; ip -6 route | head -3
-          echo "=== IPv4 explicit"; curl -4 -sS -m 20 -o /dev/null -w "%{http_code} %{remote_ip}\n" -A "TelegramBot (like TwitterBot)" https://$H/
-          echo "=== IPv6 explicit"; curl -6 -sS -m 20 -o /dev/null -w "%{http_code} %{remote_ip}\n" -A "TelegramBot (like TwitterBot)" https://$H/ || true
-          echo "=== check-host.net (HTTP из разных стран)"
-          R=$(curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-http?host=https://$H/&max_nodes=8"); echo "$R" | head -c 600; echo
-          ID=$(echo "$R" | python3 -c "import sys,json;print(json.load(sys.stdin)['request_id'])" 2>/dev/null)
-          sleep 15; [ -n "$ID" ] && curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-result/$ID"; echo
+          for H in "[2a00:f940:2:2:1:1:0:193]:443" "31.31.196.172:443"; do
+            echo "=== TCP $H"
+            R=$(curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-tcp?host=$H&max_nodes=10")
+            ID=$(echo "$R" | python3 -c "import sys,json;print(json.load(sys.stdin)['request_id'])" 2>/dev/null)
+            sleep 20; [ -n "$ID" ] && curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-result/$ID"; echo
+          done
