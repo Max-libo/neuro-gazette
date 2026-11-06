@@ -6,7 +6,8 @@
 до сервера не доходит — Telegram, VK и другие мессенджеры видят только общую
 главную. Здесь у каждой новости своя статичная страница с OG-тегами
 (заголовок и подзаголовок новости), которая сразу перекидывает читателя
-на новость в выпуске.
+на новость в выпуске — только через JS, без meta refresh (иначе бот Telegram
+уходит по нему на главную и берёт её общий сниппет).
 
 Генерируется при деплое (.github/workflows/deploy.yml) из всех docs/data/<дата>.json,
 в git не хранится (docs/n/ в .gitignore) — поэтому правки из редактора
@@ -74,6 +75,9 @@ def build_page(item: dict, date: str) -> str:
         kicker += " · не подтверждено"
 
     page_url = f"{SITE_URL}/n/{nid}.html"
+    # Переадресация в выпуск — только скриптом. Мета-редирект не ставим (даже
+    # в комментарии в самой странице): бот Telegram идёт по нему на главную
+    # и показывает её общий сниппет. Скрипты боты не выполняют.
     target = f"/?date={date}#{nid}"
 
     e = lambda s: escape(s, quote=True)  # noqa: E731
@@ -100,7 +104,6 @@ def build_page(item: dict, date: str) -> str:
   <meta name="twitter:title" content="{e(headline)}"/>
   <meta name="twitter:description" content="{e(description)}"/>
   <meta name="twitter:image" content="{IMAGE_URL}"/>
-  <meta http-equiv="refresh" content="0; url={e(target)}"/>
   <script>location.replace({json.dumps(target)});</script>
   <style>
     body {{ margin: 0; padding: 3rem 1.25rem; background: #f5f0e8; color: #1a1a18;
