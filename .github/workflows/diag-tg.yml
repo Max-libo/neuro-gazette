@@ -9,13 +9,12 @@ jobs:
       - name: Probe
         run: |
           H=xn--80aahhcll4alt1a.xn--p1ai
-          ID=content-kling-4-0
-          echo "=== DNS"; getent hosts $H || true
-          echo "=== TLS chain"; echo | openssl s_client -connect $H:443 -servername $H -showcerts 2>&1 | grep -E "s:|i:|Verify return|Protocol|Cipher" | head -20
-          for P in "/" "/n/$ID.html" "/og-news.png" "/preview/2026-11-05.html"; do
-            echo "=== GET $P (TelegramBot UA)"
-            curl -sS -m 30 -o /tmp/body -D - -A "TelegramBot (like TwitterBot)" "https://$H$P" | head -20
-            echo "--- size: $(wc -c </tmp/body)"; head -c 1500 /tmp/body | grep -iE "og:|refresh|<title" || true
-          done
-          echo "=== http (no TLS)"; curl -sS -m 30 -o /dev/null -D - "http://$H/n/$ID.html" | head -8
-          echo "=== curl verify only"; curl -sS -m 30 -o /dev/null -w "%{http_code} ssl_verify=%{ssl_verify_result}\n" "https://$H/n/$ID.html"
+          sudo apt-get install -y -qq dnsutils >/dev/null 2>&1 || true
+          for T in A AAAA NS CAA; do echo "=== $T"; dig +short $T $H; dig +short $T www.$H; done
+          echo "=== ip -6 route (есть ли IPv6 у раннера)"; ip -6 route | head -3
+          echo "=== IPv4 explicit"; curl -4 -sS -m 20 -o /dev/null -w "%{http_code} %{remote_ip}\n" -A "TelegramBot (like TwitterBot)" https://$H/
+          echo "=== IPv6 explicit"; curl -6 -sS -m 20 -o /dev/null -w "%{http_code} %{remote_ip}\n" -A "TelegramBot (like TwitterBot)" https://$H/ || true
+          echo "=== check-host.net (HTTP из разных стран)"
+          R=$(curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-http?host=https://$H/&max_nodes=8"); echo "$R" | head -c 600; echo
+          ID=$(echo "$R" | python3 -c "import sys,json;print(json.load(sys.stdin)['request_id'])" 2>/dev/null)
+          sleep 15; [ -n "$ID" ] && curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-result/$ID"; echo
