@@ -25,6 +25,12 @@ jobs:
           # закоммиченным выпуском, а не коммит, с которого стартовал запуск
           ref: main
 
+      # Страницы-превью отдельных новостей (docs/n/<id>.html) — для сниппетов
+      # в Telegram и других мессенджерах. В git не хранятся, собираются здесь
+      # из docs/data/*.json, поэтому правки из редактора попадают сразу.
+      - name: Build news preview pages
+        run: python3 scripts/news_pages.py
+
       - name: Deploy docs folder via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:

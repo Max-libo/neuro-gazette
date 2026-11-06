@@ -121,7 +121,11 @@ function domainName(url) {
   } catch { return 'источник'; }
 }
 
+/* Ссылка на новость — её страница-превью /n/<id>.html (собирается при деплое,
+   scripts/news_pages.py): в мессенджерах подтягивается заголовок новости,
+   а читателя страница сразу перекидывает на новость в выпуске. */
 function newsLink(id) {
+  if (/^[A-Za-z0-9_-]{1,120}$/.test(id)) return `${SITE_URL}n/${id}.html`;
   const date = state.issue && state.issue.date;
   return `${SITE_URL}${date ? `?date=${date}` : ''}#${encodeURIComponent(id)}`;
 }
