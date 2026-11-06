@@ -512,11 +512,13 @@ button.sec-chip:hover { background: color-mix(in srgb, var(--c, var(--ink)) 18%,
   color: var(--c, var(--ink-light));
   margin-bottom: 0.2rem;
 }
+/* Playfair в мелком кегле рассыпается (контрастные тонкие штрихи) —
+   короткие заголовки набираем текстовым IBM Plex Serif */
 .brief-headline {
-  font-family: var(--font-serif);
-  font-size: 0.98rem;
-  font-weight: 700;
-  line-height: 1.3;
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.38;
   color: var(--ink);
 }
 .brief--continuation .brief-headline { font-weight: 400; color: var(--ink-mid); }
