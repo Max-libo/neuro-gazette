@@ -8,11 +8,7 @@ jobs:
     steps:
       - name: Probe
         run: |
-          set +e
-          for H in "%5B2a00:f940:2:2:1:1:0:193%5D:443" "31.31.196.172:443"; do
-            echo "=== TCP $H"
-            R=$(curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-tcp?host=$H&max_nodes=10")
-            echo "$R" | head -c 300; echo
-            ID=$(echo "$R" | python3 -c "import sys,json;print(json.load(sys.stdin)['request_id'])")
-            sleep 20; [ -n "$ID" ] && curl -sS -m 20 -H "Accept: application/json" "https://check-host.net/check-result/$ID"; echo
+          H=xn--80aahhcll4alt1a.xn--p1ai
+          for NS in ns1.hosting.reg.ru ns2.hosting.reg.ru 1.1.1.1 8.8.8.8; do
+            echo "=== @$NS  A: $(dig +short A $H @$NS | tr '\n' ' ') | AAAA: $(dig +short AAAA $H @$NS | tr '\n' ' ') | www AAAA: $(dig +short AAAA www.$H @$NS | tr '\n' ' ')"
           done
