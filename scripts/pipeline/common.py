@@ -1,7 +1,6 @@
 """Общие константы, пути и утилиты для пайплайна Нейрогазеты."""
 from __future__ import annotations
 
-import hashlib
 import json
 import logging
 import os
@@ -210,9 +209,18 @@ def update_index(date_str: str, count: int) -> None:
 
 
 # ── Валидация выпуска ─────────────────────────────────────────────────────────
-def _make_id(headline: str, section: str) -> str:
-    h = hashlib.md5(headline.encode()).hexdigest()[:6]
-    return f"{section}-{h}-{TODAY_STR}"
+def news_id(date_str: str, number: int) -> str:
+    """id новости = дата выпуска + её номер: 2026-11-06-3.
+    Из id собирается адрес страницы-превью /n/<id>.html, поэтому он короткий
+    и уникален навсегда. Назначает код (finalize_news), а не модель."""
+    return f"{date_str}-{number}"
+
+
+def assign_ids(news: list[dict], date_str: str) -> None:
+    """Нумерует новости выпуска: hero — №1, остальные по порядку."""
+    ordered = sorted(news, key=lambda n: n.get("tier") != "hero")  # sort стабильный
+    for i, n in enumerate(ordered, 1):
+        n["id"] = news_id(date_str, i)
 
 
 SENTIMENTS = ("positive", "negative", "neutral")
@@ -338,13 +346,8 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
     if item.get("section") not in valid_sections:
         item["section"] = "industry"
 
-    raw_id = item.get("id") or _make_id(item["headline"], item["section"])
-    uid, suffix = raw_id, 2
-    while uid in seen_ids:
-        uid = f"{raw_id}-{suffix}"
-        suffix += 1
-    item["id"] = uid
-    seen_ids.add(uid)
+    # id назначает assign_ids() в finalize_news — то, что прислала модель, не берём
+    item.pop("id", None)
 
     TIER_MAP = {"hero": 9, "regular": 7, "compact": 5}
     tier = item.get("tier", "regular")
@@ -395,7 +398,7 @@ def validate_and_fix(item: dict, seen_ids: set) -> dict | None:
 
 
 def finalize_news(news_list: list[dict]) -> list[dict]:
-    """Валидация, дедупликация ID, правила tier (ровно один hero)."""
+    """Валидация, правила tier (ровно один hero), нумерация id."""
     seen_ids: set[str] = set()
     all_news = [n for item in news_list if (n := validate_and_fix(item, seen_ids))]
 
@@ -416,6 +419,8 @@ def finalize_news(news_list: list[dict]) -> list[dict]:
         log.info("Повышен tier %s→hero (нет hero): %s", top["tier"], top["headline"][:60])
         top["tier"] = "hero"
         top["importance"] = 9
+
+    assign_ids(all_news, TODAY_STR)
 
     global _entity_sentiment_filled
     if _entity_sentiment_filled:

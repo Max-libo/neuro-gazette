@@ -154,7 +154,7 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
   "date": "2026-04-04",
   "items": [
     {{
-      "id": "industry-1a2b3c-2026-04-04",
+      "id": "2026-04-04-3",
       "entities": ["OpenAI", "xAI"],
       "entity_sentiment": {{"OpenAI": "neutral", "xAI": "negative"}},
       "sentiment": "negative",
@@ -185,8 +185,8 @@ def _task_md(n_files: int, n_items: int, n_related: int) -> str:
 
 ```json
 [
-  {{"id": "models-1a2b3c-2026-04-22", "section": "content"}},
-  {{"id": "hype-4d5e6f-2026-05-25", "section": "art", "details": "Канны · 13–24 мая"}}
+  {{"id": "2026-04-22-5", "section": "content"}},
+  {{"id": "2026-05-25-12", "section": "art", "details": "Канны · 13–24 мая"}}
 ]
 ```
 

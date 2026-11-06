@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-nvidia-nemotron3nano-2026-04-29",
+      "id": "2026-04-29-1",
       "section": "models",
       "headline": "NVIDIA выпустила Nemotron 3 Nano Omni — мультимодальную модель в 9 раз эффективнее предыдущей",
       "subheadline": "Объединяет обработку зрения, аудио и языка в одной архитектуре для AI-агентов",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "models-kandinsky-6-imagepro-2026-04-29",
+      "id": "2026-04-29-2",
       "section": "content",
       "headline": "Сбер обновил Kandinsky до версии 6.0 Image Pro с фокусом на редактировании",
       "subheadline": "Точечная замена объектов, фонов и деталей по текстовым инструкциям",
@@ -66,7 +66,7 @@
       "details": "Версия Pro · отдельный платный тариф"
     },
     {
-      "id": "platforms-claude-creative-connectors-2026-04-29",
+      "id": "2026-04-29-3",
       "section": "content",
       "headline": "Anthropic подключила Claude к Photoshop, Blender и Ableton",
       "subheadline": "Модель получает прямой доступ к слоям, 3D-сценам и MIDI-проектам",
@@ -104,7 +104,7 @@
       "details": "Интеграции с Photoshop, Blender и Ableton Live"
     },
     {
-      "id": "platforms-mistral-workflows-2026-04-29",
+      "id": "2026-04-29-4",
       "section": "platforms",
       "headline": "Mistral AI представила Workflows для оркестрации корпоративных AI-агентов",
       "subheadline": "Описание многошаговых сценариев в виде графа с моделями Mistral и внешними инструментами",
@@ -145,7 +145,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-amazon-openai-aws-2026-04-29",
+      "id": "2026-04-29-5",
       "section": "platforms",
       "headline": "Amazon уже предлагает новые продукты OpenAI на AWS",
       "subheadline": "Релиз OpenAI стал доступен на инфраструктуре конкурента Microsoft почти без задержки",
@@ -180,7 +180,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-lovable-mobile-2026-04-29",
+      "id": "2026-04-29-6",
       "section": "platforms",
       "headline": "Lovable запустила vibe-coding приложение для iOS и Android",
       "subheadline": "Создание приложений по описанию с телефона",
@@ -213,7 +213,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-agents-cli-2026-04-29",
+      "id": "2026-04-29-7",
       "section": "platforms",
       "headline": "Google Cloud выпустила Agents CLI для полного цикла разработки AI-агентов",
       "subheadline": "Командная утилита для прототипирования, отладки и развёртывания агентов",
@@ -244,7 +244,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-ibm-bob-sdlc-2026-04-29",
+      "id": "2026-04-29-8",
       "section": "platforms",
       "headline": "IBM запустила платформу Bob для контроля стоимости разработки софта",
       "subheadline": "AI-агент анализирует SDLC и предлагает оптимизации затрат",
@@ -275,7 +275,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-amazon-audio-qa-2026-04-29",
+      "id": "2026-04-29-9",
       "section": "platforms",
       "headline": "Amazon добавила AI-аудио Q&A на страницы товаров",
       "subheadline": "Покупатели могут задавать вопросы о товарах голосом и слушать ответы",
@@ -314,7 +314,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-revenue-miss-2026-04-29",
+      "id": "2026-04-29-10",
       "section": "industry",
       "headline": "OpenAI промахнулась мимо плана по выручке — Anthropic и Google сокращают разрыв",
       "subheadline": "Конкуренты теснят OpenAI в enterprise-сегменте",
@@ -347,7 +347,7 @@
       "importance": 7
     },
     {
-      "id": "industry-lightelligence-ipo-2026-04-29",
+      "id": "2026-04-29-11",
       "section": "industry",
       "headline": "Lightelligence дебютировала на бирже с ростом 400% — рынок ставит на оптические interconnects",
       "subheadline": "Инвесторы видят оптику как следующее узкое место AI-инфраструктуры",
@@ -376,7 +376,7 @@
       "importance": 7
     },
     {
-      "id": "industry-uk-liz-kendall-ai-2026-04-29",
+      "id": "2026-04-29-12",
       "section": "industry",
       "headline": "Лиз Кендалл: Британия должна перехватить инициативу в AI или окажется в её власти",
       "subheadline": "Глава DSIT призвала к жёсткой национальной стратегии",
@@ -407,7 +407,7 @@
       "importance": 7
     },
     {
-      "id": "industry-australia-tech-levy-2026-04-29",
+      "id": "2026-04-29-13",
       "section": "industry",
       "headline": "Австралия введёт сбор с техгигантов в пользу местных СМИ",
       "subheadline": "Meta назвала позицию правительства «попросту неверной»",
@@ -438,7 +438,7 @@
       "importance": 7
     },
     {
-      "id": "industry-kakao-mobility-l4-2026-04-29",
+      "id": "2026-04-29-14",
       "section": "industry",
       "headline": "Kakao Mobility представила дорожную карту автономного вождения уровня 4",
       "subheadline": "Корейский оператор такси выходит в физический AI",
@@ -469,7 +469,7 @@
       "importance": 5
     },
     {
-      "id": "industry-google-pentagon-deal-2026-04-29",
+      "id": "2026-04-29-15",
       "section": "industry",
       "headline": "Продолжение: Google подписал AI-сделку с Пентагоном вопреки протесту 600 сотрудников",
       "subheadline": null,
@@ -507,7 +507,7 @@
       "importance": 5
     },
     {
-      "id": "industry-musk-openai-trial-2026-04-29",
+      "id": "2026-04-29-16",
       "section": "industry",
       "headline": "Продолжение: Маск дал показания в суде против OpenAI",
       "subheadline": null,
@@ -545,7 +545,7 @@
       "importance": 5
     },
     {
-      "id": "hype-sxsw-trademark-censorship-2026-04-29",
+      "id": "2026-04-29-17",
       "section": "hype",
       "headline": "SXSW использовала AI-инструмент торговых марок для удаления критики из Instagram",
       "subheadline": "404 Media: фестиваль массово отправлял жалобы против критиков через автоматизированный сервис",
@@ -576,7 +576,7 @@
       "importance": 7
     },
     {
-      "id": "hype-anthropic-agent-marketplace-2026-04-29",
+      "id": "2026-04-29-18",
       "section": "hype",
       "headline": "Anthropic протестировала рынок, где AI-агенты покупали и продавали реальные товары от имени людей",
       "subheadline": "Эксперимент стресс-тестирует агентную коммерцию",
@@ -605,7 +605,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ai-text-uniformity-2026-04-29",
+      "id": "2026-04-29-19",
       "section": "hype",
       "headline": "Исследователи: AI делает интернет более однородным и неестественно жизнерадостным",
       "subheadline": "Массовое распространение LLM-текста стирает стилистические различия",
@@ -630,7 +630,7 @@
       "importance": 5
     },
     {
-      "id": "hype-frankenstein-gemma-deepseek-2026-04-29",
+      "id": "2026-04-29-20",
       "section": "hype",
       "headline": "Энтузиасты пересадили Gemma в архитектуру DeepSeek и запустили гибрид на 30 ГБ RAM",
       "subheadline": "Эксперимент потребовал серии патчей в Transformers",
@@ -663,7 +663,7 @@
       "importance": 5
     },
     {
-      "id": "hype-chatgpt-math-conjecture-2026-04-29",
+      "id": "2026-04-29-21",
       "section": "hype",
       "headline": "23-летний программист решил математическую гипотезу 60-летней давности с помощью ChatGPT",
       "subheadline": "Без специального математического образования",

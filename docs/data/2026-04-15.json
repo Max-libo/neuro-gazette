@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-a8b0c1-2026-04-15",
+      "id": "2026-04-15-1",
       "section": "industry",
       "headline": "Оценка Anthropic достигла $800 млрд — вдвое выше февральской",
       "subheadline": "Венчурные инвесторы предложили удвоенную оценку, компания параллельно готовит IPO на октябрь",
@@ -42,7 +42,7 @@
       "importance": 9
     },
     {
-      "id": "models-gem31tts-2026-04-15",
+      "id": "2026-04-15-2",
       "section": "models",
       "headline": "Google DeepMind выпустила Gemini 3.1 Flash TTS — экспрессивный речевой синтез нового поколения",
       "subheadline": "Модель генерирует естественную речь с контролем интонации и эмоций",
@@ -73,7 +73,7 @@
       "importance": 7
     },
     {
-      "id": "models-nvising-2026-04-15",
+      "id": "2026-04-15-3",
       "section": "models",
       "headline": "NVIDIA выпустила Ising — первые открытые AI-модели для квантовых вычислений",
       "subheadline": "35-миллиардная визуально-языковая модель ускоряет калибровку квантовых процессоров с дней до часов",
@@ -114,7 +114,7 @@
       "importance": 7
     },
     {
-      "id": "models-mjv81-2026-04-15",
+      "id": "2026-04-15-4",
       "section": "content",
       "headline": "Midjourney запустила V8.1 Alpha — новый этап генерации изображений",
       "subheadline": "Альфа-версия обновлённой модели доступна подписчикам",
@@ -144,7 +144,7 @@
       "details": "V8.1 Alpha · тестирование для подписчиков"
     },
     {
-      "id": "models-maiimg-2026-04-15",
+      "id": "2026-04-15-5",
       "section": "content",
       "headline": "Microsoft выпустила MAI-Image-2-Efficient — генерация изображений на 41% дешевле",
       "subheadline": "Оптимизированная модель сразу доступна в Microsoft Foundry без очереди",
@@ -186,7 +186,7 @@
       "details": "Microsoft Foundry · без очереди · на 41% дешевле оригинала"
     },
     {
-      "id": "models-nvrobot-2026-04-15",
+      "id": "2026-04-15-6",
       "section": "models",
       "headline": "NVIDIA представила Isaac GR00T и физический движок Newton 1.0 для обучения роботов",
       "subheadline": "Пакет открытых инструментов для physical AI вышел к Национальной неделе робототехники",
@@ -232,7 +232,7 @@
       "importance": 5
     },
     {
-      "id": "models-cyber54-2026-04-15",
+      "id": "2026-04-15-7",
       "section": "models",
       "headline": "Продолжение: OpenAI выпустила GPT-5.4-Cyber для специалистов по кибербезопасности",
       "subheadline": null,
@@ -263,7 +263,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-oaisdk-2026-04-15",
+      "id": "2026-04-15-8",
       "section": "platforms",
       "headline": "OpenAI представила следующее поколение Agents SDK",
       "subheadline": "Обновлённый фреймворк для создания AI-агентов с расширенными возможностями оркестрации",
@@ -294,7 +294,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-adobe-2026-04-15",
+      "id": "2026-04-15-9",
       "section": "content",
       "headline": "Adobe запустила Firefly AI Assistant — агент управляет приложениями Creative Cloud",
       "subheadline": "Диалоговый AI-ассистент выполняет задачи в Photoshop, Illustrator и других продуктах Adobe",
@@ -337,7 +337,7 @@
       "details": "Доступен подписчикам Creative Cloud"
     },
     {
-      "id": "platforms-dbricks-2026-04-15",
+      "id": "2026-04-15-10",
       "section": "platforms",
       "headline": "Databricks запустила Agent Bricks — управляемую платформу для корпоративных AI-агентов",
       "subheadline": "GA-релиз включает Document Intelligence, Custom Agents и сквозной контроль доступа через Unity Catalog",
@@ -368,7 +368,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-chrome-2026-04-15",
+      "id": "2026-04-15-11",
       "section": "platforms",
       "headline": "Google добавила AI-скиллы в Chrome: пользовательские промпты превращаются в инструменты",
       "subheadline": "Функция Chrome Skills позволяет сохранять AI-промпты как кнопки быстрого вызова",
@@ -399,7 +399,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-gemimac-2026-04-15",
+      "id": "2026-04-15-12",
       "section": "platforms",
       "headline": "Google выпустила нативное приложение Gemini для macOS",
       "subheadline": "Десктопный клиент Gemini стал доступен пользователям Mac",
@@ -430,7 +430,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-ccderout-2026-04-15",
+      "id": "2026-04-15-13",
       "section": "platforms",
       "headline": "Продолжение: Claude Code получил автоматические «рутины» и обновлённый десктоп",
       "subheadline": null,
@@ -461,7 +461,7 @@
       "importance": 5
     },
     {
-      "id": "industry-novo-2026-04-15",
+      "id": "2026-04-15-14",
       "section": "industry",
       "headline": "Novo Nordisk заключила стратегическое партнёрство с OpenAI по разработке лекарств",
       "subheadline": "AI будет применяться в R&D, производстве и корпоративных функциях фармгиганта",
@@ -502,7 +502,7 @@
       "importance": 7
     },
     {
-      "id": "industry-metabcom-2026-04-15",
+      "id": "2026-04-15-15",
       "section": "industry",
       "headline": "Meta и Broadcom заключили мегасделку по совместной разработке AI-чипов",
       "subheadline": "Партнёрство направлено на создание кастомных чипов для инфраструктуры Meta",
@@ -533,7 +533,7 @@
       "importance": 7
     },
     {
-      "id": "industry-snap-2026-04-15",
+      "id": "2026-04-15-16",
       "section": "industry",
       "headline": "Snap уволила 1 000 сотрудников, объяснив сокращения внедрением AI",
       "subheadline": "Компания-владелец Snapchat списывает увольнения на автоматизацию процессов",
@@ -571,7 +571,7 @@
       "importance": 7
     },
     {
-      "id": "industry-funding-2026-04-15",
+      "id": "2026-04-15-17",
       "section": "industry",
       "headline": "Три AI-стартапа привлекли суммарно $92 млн: Bluefish, Synera и Gitar",
       "subheadline": "Агентный маркетинг, промышленный инжиниринг и безопасность кода",
@@ -614,7 +614,7 @@
       "importance": 5
     },
     {
-      "id": "industry-allbirds-2026-04-15",
+      "id": "2026-04-15-18",
       "section": "industry",
       "headline": "Allbirds объявила о переходе от обуви к AI — акции выросли на 600%",
       "subheadline": "Бывший обувной бренд переименовывается в AI-компанию Hyperscale",
@@ -645,7 +645,7 @@
       "importance": 5
     },
     {
-      "id": "industry-naacp-2026-04-15",
+      "id": "2026-04-15-19",
       "section": "industry",
       "headline": "NAACP подала в суд на xAI Маска за загрязнение чернокожих районов Мемфиса",
       "subheadline": "Иск утверждает, что дата-центр xAI вредит здоровью местных жителей",
@@ -676,7 +676,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ukraine-2026-04-15",
+      "id": "2026-04-15-20",
       "section": "hype",
       "headline": "Украина заявила, что российские солдаты сдаются в плен роботам",
       "subheadline": "Беспилотные наземные системы принимают капитуляцию на линии фронта",
@@ -707,7 +707,7 @@
       "importance": 7
     },
     {
-      "id": "hype-synthid-2026-04-15",
+      "id": "2026-04-15-21",
       "section": "hype",
       "headline": "Систему водяных знаков Google SynthID могли обратно разработать",
       "subheadline": "Исследователи заявляют о возможности извлечения и подделки AI-водяных знаков",
@@ -738,7 +738,7 @@
       "importance": 7
     },
     {
-      "id": "hype-oaileak-2026-04-15",
+      "id": "2026-04-15-22",
       "section": "hype",
       "headline": "Утечка разговоров пользователей ChatGPT: скандал вокруг приватности OpenAI",
       "subheadline": "Стали доступны диалоги пользователей — масштаб и причина утечки уточняются",
@@ -769,7 +769,7 @@
       "importance": 7
     },
     {
-      "id": "hype-mincifry-2026-04-15",
+      "id": "2026-04-15-23",
       "section": "hype",
       "headline": "Минцифры предложило обязательную фильтрацию запросов и ответов нейросетей в России",
       "subheadline": "Законопроект предусматривает «цензуру» для AI-сервисов на территории РФ",
@@ -800,7 +800,7 @@
       "importance": 5
     },
     {
-      "id": "hype-workslop-2026-04-15",
+      "id": "2026-04-15-24",
       "section": "hype",
       "headline": "Руководители хвалят AI за продуктивность, сотрудники тонут в «workslop»",
       "subheadline": "Исследование выявило разрыв восприятия AI между менеджментом и рядовыми работниками",
@@ -834,7 +834,7 @@
       "importance": 5
     },
     {
-      "id": "hype-airbnb-2026-04-15",
+      "id": "2026-04-15-25",
       "section": "hype",
       "headline": "Хозяева Airbnb массово передают общение с гостями AI-ботам",
       "subheadline": "Арендодатели используют AI для автоматизации переписки с постояльцами",
@@ -863,7 +863,7 @@
       "importance": 5
     },
     {
-      "id": "hype-grokapp-2026-04-15",
+      "id": "2026-04-15-26",
       "section": "hype",
       "headline": "Продолжение: сексуальные дипфейки Grok едва не привели к удалению из App Store",
       "subheadline": null,

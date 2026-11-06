@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-meta-ai-layoffs",
+      "id": "2026-05-22-1",
       "section": "industry",
       "headline": "Meta увольняет тысячи сотрудников, чтобы покрыть расходы на AI",
       "subheadline": "Компания сокращает штат, перенаправляя бюджет на инфраструктуру искусственного интеллекта",
@@ -32,7 +32,7 @@
       "importance": 9
     },
     {
-      "id": "industry-spotify-umg-ai-covers",
+      "id": "2026-05-22-2",
       "section": "industry",
       "headline": "Spotify и Universal Music разрешат фанатские AI-каверы и ремиксы",
       "subheadline": "Сделка легализует пользовательскую генерацию музыки на основе каталога UMG с отчислениями правообладателям",
@@ -63,7 +63,7 @@
       "importance": 7
     },
     {
-      "id": "industry-trump-ai-eo-delay",
+      "id": "2026-05-22-3",
       "section": "industry",
       "headline": "Трамп отложил указ о безопасности AI",
       "subheadline": "Президент заявил, что формулировки документа «могли стать препятствием» для отрасли",
@@ -94,7 +94,7 @@
       "importance": 7
     },
     {
-      "id": "industry-khan-palantir-met",
+      "id": "2026-05-22-4",
       "section": "industry",
       "headline": "Садик Хан заблокировал сделку лондонской полиции с Palantir на £50 млн",
       "subheadline": "Мэр Лондона остановил контракт Met с Palantir, вызвав конфликт с руководством полиции",
@@ -127,7 +127,7 @@
       "importance": 7
     },
     {
-      "id": "industry-spacex-ipo-ai-losses",
+      "id": "2026-05-22-5",
       "section": "industry",
       "headline": "Заявка SpaceX на IPO раскрыла миллиардные убытки от AI и цель оценки в $2 трлн",
       "subheadline": "Документ показывает расходы на турбины и сигнализирует о новых конфликтах вокруг дата-центров",
@@ -156,7 +156,7 @@
       "importance": 7
     },
     {
-      "id": "industry-bt-chip-shortage-prices",
+      "id": "2026-05-22-6",
       "section": "industry",
       "headline": "BT предупредила о росте цен на смартфоны из-за дефицита чипов на фоне AI-бума",
       "subheadline": "Британский оператор связывает удорожание устройств с нехваткой полупроводников, поглощаемых AI",
@@ -185,7 +185,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-antigravity-cli",
+      "id": "2026-05-22-7",
       "section": "platforms",
       "headline": "Google сворачивает Gemini CLI и переводит разработчиков на Antigravity",
       "subheadline": "На I/O 2026 представлен Antigravity CLI 2.0 с сабагентами и сандбоксингом; Gemini Code Assist закроется 18 июня",
@@ -229,7 +229,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gpt55-codex-nvidia",
+      "id": "2026-05-22-8",
       "section": "platforms",
       "headline": "GPT-5.5 запущен в Codex на инфраструктуре NVIDIA",
       "subheadline": "OpenAI перевела Codex на новую модель, работающую на стойках GB200 NVL72",
@@ -264,7 +264,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-copilot-model-updates",
+      "id": "2026-05-22-9",
       "section": "platforms",
       "headline": "GitHub Copilot убрал модели Gemini и сделал GPT-5.3-Codex базовой LTS",
       "subheadline": "В веб-версии Copilot Chat обновлён список моделей для Business и Enterprise",
@@ -299,7 +299,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-spotify-notebooklm-rival",
+      "id": "2026-05-22-10",
       "section": "platforms",
       "headline": "Spotify бросил вызов NotebookLM и запустил инструмент аудиокниг на ElevenLabs",
       "subheadline": "Новое десктоп-приложение создаёт персональные подкасты, а отдельный инструмент озвучивает аудиокниги",
@@ -340,7 +340,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cerebras-kimi-inference",
+      "id": "2026-05-22-11",
       "section": "platforms",
       "headline": "Cerebras запустила инференс Kimi K2.6 в 6,7 раза быстрее GPU-облаков",
       "subheadline": "Чипы компании выдают около 1000 токенов в секунду на модели с триллионом параметров",
@@ -371,7 +371,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-nova-act-hipaa",
+      "id": "2026-05-22-12",
       "section": "platforms",
       "headline": "Amazon Nova Act получил статус HIPAA-eligible",
       "subheadline": "Агентский сервис Amazon теперь можно применять в обработке защищённых медицинских данных",
@@ -402,7 +402,7 @@
       "importance": 5
     },
     {
-      "id": "models-cohere-open-source",
+      "id": "2026-05-22-13",
       "section": "models",
       "headline": "Cohere открыла исходники своей самой мощной модели",
       "subheadline": "Компания впервые выложила в открытый доступ веса флагманской модели",
@@ -431,7 +431,7 @@
       "importance": 7
     },
     {
-      "id": "models-qwen37-max",
+      "id": "2026-05-22-14",
       "section": "models",
       "headline": "Qwen представила Qwen3.7-Max с контекстом в 1 млн токенов",
       "subheadline": "Reasoning-агент с расширенным окном контекста ориентирован на длинные агентские задачи",
@@ -462,7 +462,7 @@
       "importance": 7
     },
     {
-      "id": "models-bytedance-lance",
+      "id": "2026-05-22-15",
       "section": "models",
       "headline": "ByteDance выпустила Lance — одну модель для трёх модальностей",
       "subheadline": "Lance понимает, генерирует и редактирует изображения и видео в единой модели",
@@ -493,7 +493,7 @@
       "importance": 5
     },
     {
-      "id": "models-veo31-gemini-api",
+      "id": "2026-05-22-16",
       "section": "content",
       "headline": "Продолжение: Veo 3.1 в Gemini API",
       "subheadline": null,
@@ -527,7 +527,7 @@
       "details": "Платный preview Gemini API · Veo 3.1 и Veo 3.1 Fast"
     },
     {
-      "id": "hype-radnor-deepfakes",
+      "id": "2026-05-22-17",
       "section": "hype",
       "headline": "Дипфейки расколол американскую старшую школу",
       "subheadline": "Сгенерированные изображения учеников привели к скандалу с материалами о насилии над детьми",
@@ -556,7 +556,7 @@
       "importance": 7
     },
     {
-      "id": "hype-graduates-boo-ceos",
+      "id": "2026-05-22-18",
       "section": "hype",
       "headline": "Выпускники освистывают глав AI-компаний на церемониях",
       "subheadline": "На фоне тяжёлого рынка труда студенты находят отдушину в публичном унижении техноруководителей",
@@ -581,7 +581,7 @@
       "importance": 5
     },
     {
-      "id": "hype-maori-tts",
+      "id": "2026-05-22-19",
       "section": "hype",
       "headline": "Модель синтеза речи на маори отвергает ценности бигтеха",
       "subheadline": "Коренная разработка ставит контроль сообщества выше принципов крупных AI-компаний",
@@ -606,7 +606,7 @@
       "importance": 5
     },
     {
-      "id": "hype-google-llms-txt-audit",
+      "id": "2026-05-22-20",
       "section": "hype",
       "headline": "Google начал проверять сайты на наличие llms.txt",
       "subheadline": "В новом аудите агентского браузинга Google оценивает совместимость сайтов с AI-агентами",

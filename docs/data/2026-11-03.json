@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-anthropic-rsi-warning",
+      "id": "2026-11-03-1",
       "section": "models",
       "headline": "Anthropic предупредила, что очень близка к рекурсивному самоулучшению ИИ",
       "subheadline": "Компания говорит, что модели скоро смогут сами вести разработку следующих версий ИИ",
@@ -32,7 +32,7 @@
       "importance": 9
     },
     {
-      "id": "models-deep-principle-hydrogen",
+      "id": "2026-11-03-2",
       "section": "models",
       "headline": "Deep Principle выпустила Hydrogen-1.0 — открытую модель на 753 млрд параметров для научных открытий",
       "subheadline": "Веса модели для научных задач выложены в открытый доступ",
@@ -63,7 +63,7 @@
       "importance": 7
     },
     {
-      "id": "models-zyphra-zha",
+      "id": "2026-11-03-3",
       "section": "models",
       "headline": "Zyphra предложила иерархическое внимание ZHA со сложностью ниже квадратичной",
       "subheadline": "Механизм разреженного внимания должен удешевить работу с длинным контекстом",
@@ -92,7 +92,7 @@
       "importance": 5
     },
     {
-      "id": "models-qwengpu",
+      "id": "2026-11-03-4",
       "section": "models",
       "headline": "Продолжение: в веса Qwen встроили уже GPU, который исполняет CUDA",
       "subheadline": null,
@@ -121,7 +121,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-torchtpu",
+      "id": "2026-11-03-5",
       "section": "platforms",
       "headline": "Google и Meta открыли TorchTPU — нативную поддержку PyTorch на TPU",
       "subheadline": "Модели на PyTorch смогут работать на чипах Google без отдельного стека",
@@ -156,7 +156,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-uber-mcp-gateway",
+      "id": "2026-11-03-6",
       "section": "platforms",
       "headline": "Uber построила MCP-шлюз для контроля доступа к 800 с лишним серверам",
       "subheadline": "Через единую точку проходит доступ ИИ-агентов к более чем 5000 инструментов",
@@ -187,7 +187,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-nvidia-auto-ontology",
+      "id": "2026-11-03-7",
       "section": "platforms",
       "headline": "NVIDIA открыла Auto Ontology — семантический слой для SQL-запросов ИИ-агентов",
       "subheadline": "Слой описывает смысл данных, чтобы агенты точнее составляли SQL",
@@ -216,7 +216,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-athenahealth-claude",
+      "id": "2026-11-03-8",
       "section": "platforms",
       "headline": "Пациенты athenahealth смогут спрашивать Claude о своих медкартах",
       "subheadline": "Разработчик медицинского ПО подключил данные пациентов к Claude",
@@ -249,7 +249,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-claude-game-clones",
+      "id": "2026-11-03-9",
       "section": "platforms",
       "headline": "Anthropic ограничила создание в Claude клонов чужих видеоигр",
       "subheadline": "Компания стала строже к запросам на копии существующих игр",
@@ -280,7 +280,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-letterpress-1",
+      "id": "2026-11-03-10",
       "section": "platforms",
       "headline": "The Letter Company выпустила Letterpress-1 — кодинг-агента для growth-инженерии",
       "subheadline": "Агент рассчитан на задачи роста продукта, а не на общую разработку",
@@ -311,7 +311,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-dreambeans-india",
+      "id": "2026-11-03-11",
       "section": "platforms",
       "headline": "Google вывела в Индию Dreambeans — сервис ИИ-историй о пользователях",
       "subheadline": "Индия стала рынком для массового продвижения генератора персональных историй",
@@ -344,7 +344,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-scaling-git",
+      "id": "2026-11-03-12",
       "section": "platforms",
       "headline": "OpenAI рассказала, как масштабирует Git внутри компании",
       "subheadline": "Инженерный разбор работы с репозиториями в OpenAI",
@@ -373,7 +373,7 @@
       "importance": 5
     },
     {
-      "id": "industry-aramco-humain",
+      "id": "2026-11-03-13",
       "section": "industry",
       "headline": "Saudi Aramco получит 49% в ИИ-компании Humain за $2,6 млрд",
       "subheadline": "Нефтяной гигант стал почти равным совладельцем саудовского ИИ-чемпиона",
@@ -404,7 +404,7 @@
       "importance": 7
     },
     {
-      "id": "industry-goldman-coding-tools",
+      "id": "2026-11-03-14",
       "section": "industry",
       "headline": "Goldman Sachs отозвала ИИ-инструменты для кода у трейдеров и банкиров",
       "subheadline": "Доступ к кодинг-ассистентам ограничили для сотрудников, не являющихся разработчиками",
@@ -433,7 +433,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nyt-sues-brave",
+      "id": "2026-11-03-15",
       "section": "industry",
       "headline": "The New York Times и другие издания подали в суд на браузер Brave за сбор контента",
       "subheadline": "Издатели обвиняют Brave в скрейпинге их материалов",
@@ -464,7 +464,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-lobbying",
+      "id": "2026-11-03-16",
       "section": "industry",
       "headline": "OpenAI готовит масштабное лоббирование в Вашингтоне после промежуточных выборов",
       "subheadline": "Компания рассчитывает на новый состав Конгресса",
@@ -495,7 +495,7 @@
       "importance": 5
     },
     {
-      "id": "industry-42ai-trajectory",
+      "id": "2026-11-03-17",
       "section": "industry",
       "headline": "42AI вышла из тени с $62,5 млн, Trajectory привлекла $45 млн",
       "subheadline": "Два раунда: модель мира для прогноза поведения людей и обучение моделей без программистов",
@@ -531,7 +531,7 @@
       "importance": 5
     },
     {
-      "id": "industry-palantir-nhs",
+      "id": "2026-11-03-18",
       "section": "industry",
       "headline": "29 больниц NHS, которые якобы выигрывают от ИИ Palantir, почти им не пользуются",
       "subheadline": "The Guardian: технологию указывают как полезную трастам, где её не используют или используют мало",
@@ -562,7 +562,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropic-revenue-loss",
+      "id": "2026-11-03-19",
       "section": "industry",
       "headline": "Продолжение: выручка Anthropic выросла в 12 раз, убыток — $23 млрд",
       "subheadline": null,
@@ -591,7 +591,7 @@
       "importance": 5
     },
     {
-      "id": "hype-grok-quotas",
+      "id": "2026-11-03-20",
       "section": "hype",
       "headline": "SpaceXSI, судя по всему, урезала лимиты Grok Bot",
       "subheadline": "Через несколько недель после того, как Маск назвал бот самым быстрорастущим продуктом",
@@ -624,7 +624,7 @@
       "importance": 5
     },
     {
-      "id": "hype-apple-third-party-ai",
+      "id": "2026-11-03-21",
       "section": "hype",
       "headline": "Apple может попытаться заработать на сторонних ИИ-приложениях",
       "subheadline": "Как именно — пока неясно",
@@ -653,7 +653,7 @@
       "importance": 5
     },
     {
-      "id": "hype-garry-tan-tokens",
+      "id": "2026-11-03-22",
       "section": "hype",
       "headline": "Гарри Тан из Y Combinator тратит на токены ИИ-агентов до $200 тыс. в год",
       "subheadline": "Глава акселератора так активно пользуется агентами, что счёт дошёл до шестизначной суммы",
@@ -684,7 +684,7 @@
       "importance": 5
     },
     {
-      "id": "hype-minecraft-agents",
+      "id": "2026-11-03-23",
       "section": "hype",
       "headline": "После страшной ночи в Minecraft 50 ИИ-агентов придумали «офицера по удобрениям» и рыболовные смены",
       "subheadline": "Агенты сами организовали протоколы передачи кур и распределение обязанностей",
@@ -713,7 +713,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ai-slop-sticker",
+      "id": "2026-11-03-24",
       "section": "hype",
       "headline": "На выборах 2026 года появилась наклейка «Я проголосовал», сгенерированная ИИ",
       "subheadline": "404 Media нашла ИИ-слоп на одном из символов голосования",

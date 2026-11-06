@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-semianalysis-gdpx",
+      "id": "2026-11-02-1",
       "section": "models",
       "headline": "SemiAnalysis запустила бенчмарк GDPx: лучшая модель решила 12% задач",
       "subheadline": "Новый тест проверяет, как модели справляются с многошаговыми агентными задачами, и пока все фронтирные модели проваливают почти все из них",
@@ -38,7 +38,7 @@
       "importance": 9
     },
     {
-      "id": "models-google-proactive-video-assistant",
+      "id": "2026-11-02-2",
       "section": "models",
       "headline": "Google учит видеоассистента понимать, когда человеку за работой нужна помощь",
       "subheadline": "Исследователи Google хотят, чтобы видео-ИИ сам решал, в какой момент предложить подсказку",
@@ -67,7 +67,7 @@
       "importance": 7
     },
     {
-      "id": "models-chinese-models-politics-study",
+      "id": "2026-11-02-3",
       "section": "models",
       "headline": "Исследование: китайские модели политически сложнее, чем рупор правительства",
       "subheadline": "Ответы китайских LLM на политические вопросы не сводятся к повторению официальной позиции",
@@ -96,7 +96,7 @@
       "importance": 5
     },
     {
-      "id": "models-empathetic-prompts-trauma",
+      "id": "2026-11-02-4",
       "section": "models",
       "headline": "После эмпатичных промптов чат-боты ведут себя как травмированные собеседники",
       "subheadline": "Исследователи обнаружили, что сочувственные запросы меняют манеру ответов моделей",
@@ -121,7 +121,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-chatgpt-paid-usage",
+      "id": "2026-11-02-5",
       "section": "platforms",
       "headline": "OpenAI объединит в ChatGPT чат и рабочие инструменты и подталкивает пользователей к платному использованию",
       "subheadline": "По оценке The Decoder, эпоха безлимитных промптов за фиксированную подписку заканчивается",
@@ -157,7 +157,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-deepseek-dsh-superagent",
+      "id": "2026-11-02-6",
       "section": "platforms",
       "headline": "DeepSeek открыла исходный код кодинг-агента dsh-superagent",
       "subheadline": "Агент устроен по схеме «маршрутизатор — исполнители»",
@@ -186,7 +186,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-settle-api-mcp",
+      "id": "2026-11-02-7",
       "section": "platforms",
       "headline": "Settle открыла публичный API и MCP-сервер для своей платформы платежей",
       "subheadline": "ИИ-ассистенты смогут подключаться к данным о денежных потоках производителей потребительских товаров",
@@ -217,7 +217,7 @@
       "importance": 5
     },
     {
-      "id": "industry-aws-capacity-sold-out",
+      "id": "2026-11-02-8",
       "section": "industry",
       "headline": "Мощности AWS почти полностью распроданы до 2027 года",
       "subheadline": "Свободный запас AWS оставляет только под запросы по требованию",
@@ -248,7 +248,7 @@
       "importance": 7
     },
     {
-      "id": "industry-national-grid-teesside",
+      "id": "2026-11-02-9",
       "section": "industry",
       "headline": "National Grid построит крупнейшую в Великобритании подстанцию рядом с будущим ИИ-дата-центром в Тиссайде",
       "subheadline": "Энергетическую инфраструктуру размещают под нагрузку планируемого дата-центра",
@@ -279,7 +279,7 @@
       "importance": 5
     },
     {
-      "id": "industry-wa-police-facial-recognition",
+      "id": "2026-11-02-10",
       "section": "industry",
       "headline": "Полиция Западной Австралии проверила миллион лиц системой распознавания: 122 ареста",
       "subheadline": "Итоги пилотного запуска распознавания лиц в штате",
@@ -310,7 +310,7 @@
       "importance": 5
     },
     {
-      "id": "content-adobe-agents-photoshop",
+      "id": "2026-11-02-11",
       "section": "content",
       "headline": "Adobe проверяет, умеют ли ИИ-агенты работать в редакторах как профессионал Photoshop",
       "subheadline": "Исследование оценивает агентов на реальных задачах редактирования изображений",
@@ -341,7 +341,7 @@
       "importance": 7
     },
     {
-      "id": "content-habr-sde-flow-matching",
+      "id": "2026-11-02-12",
       "section": "content",
       "headline": "Шум в SDE-сэмплерах flow-matching моделей: важно, куда его добавлять, а не сколько",
       "subheadline": "Автор на Хабре разобрал, как стохастический шум влияет на генерацию изображений",
@@ -370,7 +370,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-compute-campuses",
+      "id": "2026-11-02-13",
       "section": "hype",
       "headline": "OpenAI может переименовать дата-центры в «кампусы ИИ-вычислений»",
       "subheadline": "Компания обдумывает ребрендинг объектов, вокруг которых растёт местное сопротивление",

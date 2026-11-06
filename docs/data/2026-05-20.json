@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gemini35flash-2026-05-20",
+      "id": "2026-05-20-1",
       "section": "models",
       "headline": "Google выпустила Gemini 3.5 Flash — модель, обогнавшую GPT-5.5 и Opus 4.7 на агентских бенчмарках",
       "subheadline": "На I/O 2026 представлена модель, которая в 4 раза быстрее и на 40% дешевле конкурентов, при этом лидирует в Terminal-Bench и MCP Atlas",
@@ -67,7 +67,7 @@
       "importance": 9
     },
     {
-      "id": "models-gemini-omni-flash-2026-05-20",
+      "id": "2026-05-20-2",
       "section": "models",
       "headline": "Gemini Omni Flash — первая «омни»-модель Google генерирует видео из любого входа",
       "subheadline": "Модель принимает текст, фото, аудио и видео и выдаёт видеоряд; доступна в Gemini, Google Flow и YouTube Shorts",
@@ -109,7 +109,7 @@
       "importance": 7
     },
     {
-      "id": "models-lyria3-2026-05-20",
+      "id": "2026-05-20-3",
       "section": "models",
       "headline": "Lyria 3 принесла генерацию музыки прямо в приложение Gemini",
       "subheadline": "Треки до 30 секунд по тексту или изображению — для совершеннолетних в восьми языках",
@@ -147,7 +147,7 @@
       "importance": 7
     },
     {
-      "id": "models-genie-streetview-2026-05-20",
+      "id": "2026-05-20-4",
       "section": "models",
       "headline": "World-модель Genie научилась симулировать реальные улицы по Street View",
       "subheadline": "Google показала, как Genie генерирует интерактивную трёхмерную сцену по статичному снимку Street View",
@@ -180,7 +180,7 @@
       "importance": 5
     },
     {
-      "id": "models-olmoearth-v11-2026-05-20",
+      "id": "2026-05-20-5",
       "section": "models",
       "headline": "Allen AI выпустила OlmoEarth v1.1 — более экономичное семейство моделей для наблюдения за Землёй",
       "subheadline": "Обновлённая линейка нацелена на снижение стоимости инференса на спутниковых снимках",
@@ -213,7 +213,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-managed-agents-gemini-2026-05-20",
+      "id": "2026-05-20-6",
       "section": "platforms",
       "headline": "Google добавила Managed Agents в Gemini API — агент с sandbox-средой за один вызов",
       "subheadline": "Один запрос к API разворачивает агента с инструментами и изолированной Linux-средой, без настройки инфраструктуры",
@@ -258,7 +258,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-android-cli-aistudio-2026-05-20",
+      "id": "2026-05-20-7",
       "section": "platforms",
       "headline": "Google выпустила Android CLI v1.0 и научила AI Studio собирать Android-приложения",
       "subheadline": "Командная строка для агентов и вайб-кодинг в браузере — Google заходит на поляну Cursor и Replit",
@@ -303,7 +303,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-mcp-tunnels-2026-05-20",
+      "id": "2026-05-20-8",
       "section": "platforms",
       "headline": "Anthropic добавила self-hosted-песочницы и MCP-туннели в Claude Managed Agents",
       "subheadline": "Агенты получают доступ к внутренним системам клиента через защищённый туннель, не выходя из инфраструктуры Anthropic",
@@ -341,7 +341,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gemini-spark-2026-05-20",
+      "id": "2026-05-20-9",
       "section": "platforms",
       "headline": "Google запустила Gemini Spark — персонального агента 24/7 с интеграцией Gmail и Docs",
       "subheadline": "Помощник работает в фоне и берёт на себя задачи в почте, документах и таблицах; доступен подписчикам AI Ultra",
@@ -391,7 +391,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cloudflare-mythos-exploit-chains-2026-05-20",
+      "id": "2026-05-20-10",
       "section": "platforms",
       "headline": "Cloudflare: превью Anthropic Mythos находит цепочки эксплойтов, незаметные прежним фронтирным моделям",
       "subheadline": "Команда безопасности Cloudflare сообщает о новых уязвимостях, обнаруженных Mythos Preview в собственной кодовой базе",
@@ -424,7 +424,7 @@
       "importance": 5
     },
     {
-      "id": "industry-karpathy-anthropic-2026-05-20",
+      "id": "2026-05-20-11",
       "section": "industry",
       "headline": "Андрей Карпатый вернулся к фронтирным LLM — в Anthropic, а не в OpenAI",
       "subheadline": "Один из самых известных AI-исследователей предпочёл бывшего конкурента родной OpenAI",
@@ -457,7 +457,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-singapore-2026-05-20",
+      "id": "2026-05-20-12",
       "section": "industry",
       "headline": "OpenAI запустила «OpenAI for Singapore» — программу для государства и бизнеса города-государства",
       "subheadline": "Локальный офис, обучение специалистов и кастомные инструменты для сингапурских ведомств и компаний",
@@ -490,7 +490,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ftc-take-it-down-2026-05-20",
+      "id": "2026-05-20-13",
       "section": "industry",
       "headline": "FTC начала применять Take It Down Act — платформы обязаны удалять дипфейки за 48 часов",
       "subheadline": "Максимальный штраф за нарушение — $53 088",
@@ -533,7 +533,7 @@
       "importance": 7
     },
     {
-      "id": "industry-blackstone-tpu-cloud-2026-05-20",
+      "id": "2026-05-20-14",
       "section": "industry",
       "headline": "Blackstone инвестирует $5 млрд в AI-облако на чипах Google TPU",
       "subheadline": "Сделка усиливает позиции TPU как альтернативы Nvidia в обучении и инференсе",
@@ -568,7 +568,7 @@
       "importance": 7
     },
     {
-      "id": "industry-mistral-emmi-2026-05-20",
+      "id": "2026-05-20-15",
       "section": "industry",
       "headline": "Mistral купила венский стартап Emmi AI, специализирующийся на физическом ИИ",
       "subheadline": "Французская компания усиливает направление world-моделей и симуляций",
@@ -599,7 +599,7 @@
       "importance": 5
     },
     {
-      "id": "industry-standard-chartered-cuts-2026-05-20",
+      "id": "2026-05-20-16",
       "section": "industry",
       "headline": "Standard Chartered сокращает более 7 000 рабочих мест на фоне расширения AI",
       "subheadline": "Банк прямо связывает реструктуризацию с внедрением AI-инструментов",
@@ -637,7 +637,7 @@
       "importance": 5
     },
     {
-      "id": "industry-armada-modular-dc-2026-05-20",
+      "id": "2026-05-20-17",
       "section": "industry",
       "headline": "Armada привлекла $230 млн на модульные AI-дата-центры для военных и энергетики",
       "subheadline": "Оценка $2 млрд и соглашение с Johnson Controls о строительстве завода в Аризоне",
@@ -685,7 +685,7 @@
       "importance": 5
     },
     {
-      "id": "industry-musk-appeal-2026-05-20",
+      "id": "2026-05-20-18",
       "section": "industry",
       "headline": "Продолжение: Маск подал апелляцию на $134 млрд проигрыша OpenAI",
       "subheadline": null,
@@ -718,7 +718,7 @@
       "importance": 5
     },
     {
-      "id": "hype-hassabis-singularity-2026-05-20",
+      "id": "2026-05-20-19",
       "section": "hype",
       "headline": "Хассабис назвал нынешний момент «предгорьями сингулярности»",
       "subheadline": "Глава Google DeepMind использовал формулировку на I/O 2026 — её немедленно начали разбирать как маркетинг",
@@ -749,7 +749,7 @@
       "importance": 7
     },
     {
-      "id": "hype-mrbeast-deepfake-stream-2026-05-20",
+      "id": "2026-05-20-20",
       "section": "hype",
       "headline": "Стример в прямом эфире сделал из себя дипфейк Мистера Биста, заявив о любви «трогать маленьких мальчиков»",
       "subheadline": "404 Media зафиксировала первый громкий случай real-time дипфейка известной личности в стриминге",
@@ -778,7 +778,7 @@
       "importance": 7
     },
     {
-      "id": "hype-lawyer-ai-2026-05-20",
+      "id": "2026-05-20-21",
       "section": "hype",
       "headline": "Адвокат истца, подавшего в суд на женщин за «психо», попался на использовании ИИ",
       "subheadline": "404 Media нашла в его документах характерные признаки галлюцинаций LLM",
@@ -809,7 +809,7 @@
       "importance": 5
     },
     {
-      "id": "hype-commonwealth-prize-2026-05-20",
+      "id": "2026-05-20-22",
       "section": "hype",
       "headline": "В победителе Commonwealth Short Story Prize заподозрили использование ИИ",
       "subheadline": "Жюри получило вопросы о «явных маркерах AI» в тексте лауреата",
@@ -838,7 +838,7 @@
       "importance": 5
     },
     {
-      "id": "hype-agora-goldeneye-2026-05-20",
+      "id": "2026-05-20-23",
       "section": "content",
       "headline": "Agora-1 превратила GoldenEye для N64 в играбельную AI-симуляцию на четверых",
       "subheadline": "World-модель воспроизводит уровни классического шутера и поддерживает многопользовательскую игру",

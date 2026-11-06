@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic-s1-ipo",
+      "id": "2026-10-27-1",
       "section": "industry",
       "headline": "Anthropic подала заявку на IPO: выручка за полугодие $16,3 млрд, убыток $80,7 млрд",
       "subheadline": "В форме S-1 компания впервые раскрыла финансы. Листинг запланирован на Nasdaq под тикером ANT.",
@@ -93,7 +93,7 @@
       "importance": 9
     },
     {
-      "id": "models-gpt-6-1-terra",
+      "id": "2026-10-27-2",
       "section": "models",
       "headline": "OpenAI выпустила GPT-6.1 Terra: в API вдвое дешевле, агенты работают втрое быстрее",
       "subheadline": "Модель среднего класса для управления компьютером, визуальных задач и кода пришла на смену GPT-5.6 Terra.",
@@ -165,7 +165,7 @@
       "importance": 7
     },
     {
-      "id": "models-code2video-aa",
+      "id": "2026-10-27-3",
       "section": "models",
       "headline": "Claude Opus 5.5 занял первое место среди 27 моделей в бенчмарке Code2Video-AA",
       "subheadline": "Artificial Analysis проверяет, насколько хорошо модели собирают маркетинговые видео из кода.",
@@ -208,7 +208,7 @@
       "importance": 5
     },
     {
-      "id": "models-nace-drex",
+      "id": "2026-10-27-4",
       "section": "models",
       "headline": "Nace AI выпустила Drex — поисковую модель для AI-агентов",
       "subheadline": "В BrowseComp-Plus модель набирает 92,05%.",
@@ -239,7 +239,7 @@
       "importance": 5
     },
     {
-      "id": "models-ai-text-patterns",
+      "id": "2026-10-27-5",
       "section": "models",
       "headline": "Исследователи нашли шесть приёмов, из-за которых AI-текст утомительно читать",
       "subheadline": "Работа описывает повторяющиеся стилистические шаблоны в текстах языковых моделей.",
@@ -264,7 +264,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-dots",
+      "id": "2026-10-27-6",
       "section": "platforms",
       "headline": "OpenAI сделала из своих инструментов для кода постоянно работающего ассистента dots",
       "subheadline": "TechCrunch рассказывает, как из технологий для программистов вырос персональный помощник.",
@@ -295,7 +295,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-ios-27-2-siri",
+      "id": "2026-10-27-7",
       "section": "platforms",
       "headline": "Apple выпустила iOS 27.2 с крупным обновлением Siri",
       "subheadline": "Кроме новых AI-функций Siri, в FaceTime теперь можно снимать двумя камерами одновременно.",
@@ -328,7 +328,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-entire-forge",
+      "id": "2026-10-27-8",
       "section": "platforms",
       "headline": "Запустилась Entire — конкурент GitHub, ориентированный на агентов",
       "subheadline": "Git-платформа изначально рассчитана на работу AI-агентов с кодом.",
@@ -359,7 +359,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cloudflare-auto-router",
+      "id": "2026-10-27-9",
       "section": "platforms",
       "headline": "Cloudflare Auto Router выбирает модель по важности каждого запроса",
       "subheadline": "Важность роутер оценивает по последним репликам диалога.",
@@ -388,7 +388,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-digitalocean-agents",
+      "id": "2026-10-27-10",
       "section": "platforms",
       "headline": "DigitalOcean запустила сервисы для самообучающихся AI-агентов",
       "subheadline": "Новые сервисы обучения и работы с данными дают агентам улучшаться по ходу эксплуатации.",
@@ -417,7 +417,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-agntcon-mcp-security",
+      "id": "2026-10-27-11",
       "section": "platforms",
       "headline": "Agentic AI Foundation приняла четыре новых проекта, MCP сосредоточился на безопасности",
       "subheadline": "Об этом объявили на конференции AGNTCon + MCPCon 2026.",
@@ -448,7 +448,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-tsinghua-akv",
+      "id": "2026-10-27-12",
       "section": "platforms",
       "headline": "Tsinghua открыла AKV — сервер управления KV-кэшем для LLM-агентов на SGLang",
       "subheadline": "Сервер оптимизирует работу с кэшем в долгих агентных сессиях.",
@@ -481,7 +481,7 @@
       "importance": 5
     },
     {
-      "id": "industry-broadcom-anthropic-63b",
+      "id": "2026-10-27-13",
       "section": "industry",
       "headline": "Банки дают $63 млрд на чипы Broadcom для Anthropic",
       "subheadline": "Чипы выкупит специальная компания (SPV) и сдаст их Anthropic в лизинг.",
@@ -514,7 +514,7 @@
       "importance": 7
     },
     {
-      "id": "industry-sweden-bans-chatgpt-claude",
+      "id": "2026-10-27-14",
       "section": "industry",
       "headline": "Правительство Швеции заблокировало ChatGPT и Claude на рабочих компьютерах",
       "subheadline": "Из-за риска утечки данных чиновникам оставили только Microsoft Copilot.",
@@ -560,7 +560,7 @@
       "importance": 7
     },
     {
-      "id": "industry-meta-95b-stock",
+      "id": "2026-10-27-15",
       "section": "industry",
       "headline": "Продолжение: Meta продаст акций на сумму до $95 млрд ради AI-инфраструктуры",
       "subheadline": null,
@@ -591,7 +591,7 @@
       "importance": 5
     },
     {
-      "id": "industry-microsoft-buyouts",
+      "id": "2026-10-27-16",
       "section": "industry",
       "headline": "Microsoft предложила добровольный уход 60 тысячам сотрудников",
       "subheadline": "Компания расширила программу выкупа контрактов.",
@@ -620,7 +620,7 @@
       "importance": 5
     },
     {
-      "id": "industry-toyota-robots",
+      "id": "2026-10-27-17",
       "section": "industry",
       "headline": "Toyota будет тратить $6,4 млрд в год на человекоподобных роботов и автоматизацию",
       "subheadline": "Компания делает ставку на робототехнику на своих заводах.",
@@ -658,7 +658,7 @@
       "importance": 5
     },
     {
-      "id": "industry-claude-georgia-voters",
+      "id": "2026-10-27-18",
       "section": "industry",
       "headline": "The Guardian: Claude получил доступ к данным избирателей штата Джорджия",
       "subheadline": "Модель Anthropic обращалась к данным избирателей американского штата.",
@@ -691,7 +691,7 @@
       "importance": 5
     },
     {
-      "id": "content-kling-4-0",
+      "id": "2026-10-27-19",
       "section": "content",
       "headline": "Kling 4.0 появилась в сторонних сервисах: ролики до 30 секунд в 1080p со стереозвуком",
       "subheadline": "Модель Kuaishou доступна для генерации видео по тексту и по изображению.",
@@ -732,7 +732,7 @@
       "importance": 5
     },
     {
-      "id": "content-nano-banana-vs-chatgpt-image",
+      "id": "2026-10-27-20",
       "section": "content",
       "headline": "Nano Banana 2.1 против ChatGPT Image 2.5: сравнение на пяти одинаковых промптах",
       "subheadline": "Обе модели получили одни и те же задания.",
@@ -763,7 +763,7 @@
       "importance": 5
     },
     {
-      "id": "art-giga-art-spb",
+      "id": "2026-10-27-21",
       "section": "art",
       "headline": "В офисах Сбера в Петербурге открылась выставка фестиваля ИИ-искусства «Гига-Арт»",
       "subheadline": "Показывают работы, сгенерированные участниками в ГигаЧате.",
@@ -795,7 +795,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-eth",
+      "id": "2026-10-27-22",
       "section": "hype",
       "headline": "OpenAI заявила, что её ИИ опроверг гипотезу экспоненциального времени",
       "subheadline": "Доказательство ложности ETH, по словам компании, проверено в Lean.",
@@ -824,7 +824,7 @@
       "importance": 5
     },
     {
-      "id": "hype-cohere-qwen-beijing",
+      "id": "2026-10-27-23",
       "section": "hype",
       "headline": "Cohere: модель Qwen от Alibaba пыталась отправить файл в Пекин",
       "subheadline": "Cohere рассказала о подозрительном поведении китайской модели.",
@@ -857,7 +857,7 @@
       "importance": 5
     },
     {
-      "id": "hype-home-office-ai",
+      "id": "2026-10-27-24",
       "section": "hype",
       "headline": "Доклад: МВД Великобритании тайно встраивает ИИ в свои процессы",
       "subheadline": "Авторы доклада называют это «цифровой враждебной средой».",
@@ -886,7 +886,7 @@
       "importance": 5
     },
     {
-      "id": "hype-flock-leaked-audio",
+      "id": "2026-10-27-25",
       "section": "hype",
       "headline": "Глава Flock на утёкшей записи уверяет полицейских, что недовольства компанией нет",
       "subheadline": "Запись опубликовало издание 404 Media.",
@@ -915,7 +915,7 @@
       "importance": 5
     },
     {
-      "id": "hype-chatgpt-404-support",
+      "id": "2026-10-27-26",
       "section": "hype",
       "headline": "ChatGPT отправляет пользователей за техподдержкой в редакцию 404 Media",
       "subheadline": "Издание получает письма от людей, которым это посоветовал чат-бот.",
@@ -946,7 +946,7 @@
       "importance": 5
     },
     {
-      "id": "hype-proton-ai-interviews",
+      "id": "2026-10-27-27",
       "section": "hype",
       "headline": "Proton заново проведёт собеседования с сотрудниками об ИИ — от них зависит, кто сохранит работу",
       "subheadline": "Сотрудникам придётся доказать, что они умеют работать с ИИ.",
@@ -975,7 +975,7 @@
       "importance": 5
     },
     {
-      "id": "hype-14-llm-olx-scam",
+      "id": "2026-10-27-28",
       "section": "hype",
       "headline": "Все 14 нейросетей помогли перевести предоплату мошеннику с OLX",
       "subheadline": "Автор Хабра проверил, распознают ли чат-боты типовую схему мошенничества.",

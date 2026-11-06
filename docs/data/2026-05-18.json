@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-hermes4-2026-05-18",
+      "id": "2026-05-18-1",
       "section": "models",
       "headline": "Nous Research выпустила Hermes 4 — открытое семейство моделей до 405B параметров",
       "subheadline": "Hybrid-reasoning LLM с минимальными контент-ограничениями, веса опубликованы на Hugging Face",
@@ -36,7 +36,7 @@
       "importance": 9
     },
     {
-      "id": "models-wam-robots-2026-05-18",
+      "id": "2026-05-18-2",
       "section": "models",
       "headline": "World Action Models учат роботов просчитывать последствия движений до их выполнения",
       "subheadline": "Новый класс моделей соединяет world model и policy в одном контуре планирования",
@@ -61,7 +61,7 @@
       "importance": 7
     },
     {
-      "id": "models-gemini-io-preview-2026-05-18",
+      "id": "2026-05-18-3",
       "section": "models",
       "headline": "Google готовит к I/O 2026 связку Gemini 3.2 Flash и Gemini Omni",
       "subheadline": "Накануне конференции в приложении Gemini засветилась видео-модель Omni с нативным аудио и поддержкой аватаров",
@@ -114,7 +114,7 @@
       "importance": 7
     },
     {
-      "id": "models-math-unsolvable-bench-2026-05-18",
+      "id": "2026-05-18-4",
       "section": "models",
       "headline": "Новый математический бенчмарк: модели уверенно решают задачи, у которых нет решения",
       "subheadline": "Тест на «невозможные» задачи показал хроническую неспособность LLM сказать «решения не существует»",
@@ -139,7 +139,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-vercel-zero-2026-05-18",
+      "id": "2026-05-18-5",
       "section": "platforms",
       "headline": "Vercel Labs представила Zero — системный язык, оптимизированный под AI-агентов",
       "subheadline": "Zero спроектирован так, чтобы агент мог читать, чинить и поставлять нативные программы без человека",
@@ -170,7 +170,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-symphony-2026-05-18",
+      "id": "2026-05-18-6",
       "section": "platforms",
       "headline": "OpenAI открыла Symphony — SPEC.md для оркестрации автономных coding-агентов",
       "subheadline": "Спецификация описывает, как несколько агентов договариваются о ролях, артефактах и проверках в общем репозитории",
@@ -201,7 +201,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-oppo-xomniclaw-2026-05-18",
+      "id": "2026-05-18-7",
       "section": "platforms",
       "headline": "Oppo открыла исходники Android-агента X-OmniClaw",
       "subheadline": "Агент использует камеру, экран и голос смартфона, не выгружая данные в облако",
@@ -234,7 +234,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-siri-auto-delete-2026-05-18",
+      "id": "2026-05-18-8",
       "section": "platforms",
       "headline": "Обновлённая Siri получит автоудаляющиеся чаты",
       "subheadline": "В переработанной Apple Intelligence история диалогов с ассистентом будет стираться по таймеру",
@@ -267,7 +267,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-bumble-bee-2026-05-18",
+      "id": "2026-05-18-9",
       "section": "platforms",
       "headline": "Bumble отказывается от свайпов и добавляет AI-помощника Bee",
       "subheadline": "Сервис знакомств перепроектируется под молодую аудиторию вокруг диалога с агентом",
@@ -298,7 +298,7 @@
       "importance": 5
     },
     {
-      "id": "industry-mistral-mythos-warning-2026-05-18",
+      "id": "2026-05-18-10",
       "section": "industry",
       "headline": "CEO Mistral предостерёг Францию от допуска Claude Mythos к военному коду",
       "subheadline": "Артур Менш считает рискованным разрешать модели Anthropic сканировать оборонные кодовые базы",
@@ -335,7 +335,7 @@
       "importance": 7
     },
     {
-      "id": "industry-a16z-headless-software-2026-05-18",
+      "id": "2026-05-18-11",
       "section": "industry",
       "headline": "a16z: софт теряет интерфейс — будущее за «обезглавленными» приложениями под агентов",
       "subheadline": "Тезис инвестфонда: основной потребитель функций софта — не пользователь, а AI-агент",
@@ -364,7 +364,7 @@
       "importance": 7
     },
     {
-      "id": "industry-musk-openai-trust-2026-05-18",
+      "id": "2026-05-18-12",
       "section": "industry",
       "headline": "Продолжение: главным вопросом процесса Маск vs OpenAI стало доверие к Сэму Альтману",
       "subheadline": null,
@@ -397,7 +397,7 @@
       "importance": 5
     },
     {
-      "id": "hype-mythos-unauthorized-2026-05-18",
+      "id": "2026-05-18-13",
       "section": "hype",
       "headline": "Самая опасная модель Anthropic была вскрыта без авторизации в первый же день",
       "subheadline": "Claude Mythos (Project Glasswing) скомпрометировали в день старта ограниченного доступа — в публичный релиз модель до сих пор не выпустили",

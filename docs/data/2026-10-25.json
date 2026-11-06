@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-openai-anthropic-discounts-2026-10-25",
+      "id": "2026-10-25-1",
       "section": "industry",
       "headline": "OpenAI предлагает скидки до 90% клиентам Anthropic",
       "subheadline": "Компания переманивает крупнейших потребителей токенов конкурента; Replit уже перевёл основную часть расходов",
@@ -47,7 +47,7 @@
       "importance": 9
     },
     {
-      "id": "models-nvidia-flora-2026-10-25",
+      "id": "2026-10-25-2",
       "section": "models",
       "headline": "NVIDIA открыла Flora — разметку видео для роботов в 125 раз дешевле GPT-6 Astra",
       "subheadline": "Специализированная модель заменяет универсальные VLM в задачах аннотации роботических демонстраций",
@@ -80,7 +80,7 @@
       "importance": 7
     },
     {
-      "id": "models-block-dessa-2026-10-25",
+      "id": "2026-10-25-3",
       "section": "models",
       "headline": "Block выпустила Dessa — голосовую модель, обученную только на речи, без текста",
       "subheadline": "Полнодуплексная speech-to-speech модель Джека Дорси запускается локально на MacBook Pro M4 Max",
@@ -129,7 +129,7 @@
       "importance": 7
     },
     {
-      "id": "models-openmobile-2-2026-10-25",
+      "id": "2026-10-25-4",
       "section": "models",
       "headline": "OpenMobile-2 показал, что открытые смартфон-агенты сравнимы с проприетарными",
       "subheadline": "Опубликованная модель приблизилась к закрытым решениям на бенчмарках управления мобильными приложениями",
@@ -158,7 +158,7 @@
       "importance": 5
     },
     {
-      "id": "models-kimi-k31-benchmarks-2026-10-25",
+      "id": "2026-10-25-5",
       "section": "models",
       "headline": "Продолжение: Kimi K3.1 Pro — цены API, бенчмарки и дата открытия весов",
       "subheadline": null,
@@ -194,7 +194,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-microsoft-agensh-2026-10-25",
+      "id": "2026-10-25-6",
       "section": "platforms",
       "headline": "Microsoft открыла Agensh — мультиагентный харнесс для 1024 параллельных агентов",
       "subheadline": "Фреймворк рассчитан на одновременный запуск тысячи агентов с общей системой приоритетов и трассировки",
@@ -225,7 +225,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-sandbox-2026-10-25",
+      "id": "2026-10-25-7",
       "section": "platforms",
       "headline": "Anthropic выпустила sandbox-runtime — изоляцию агентов на уровне ОС без контейнеров",
       "subheadline": "Решение подменяет Docker в сценариях запуска недоверенного кода AI-агентами",
@@ -256,7 +256,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-argon-adk-2026-10-25",
+      "id": "2026-10-25-8",
       "section": "platforms",
       "headline": "Google переписал 200К строк Agent Development Kit за ночь с помощью Gemini 4 Argon",
       "subheadline": "Внутренний инструмент оптимизировал кодовую базу собственного ADK Google",
@@ -289,7 +289,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-one-agent-2026-10-25",
+      "id": "2026-10-25-9",
       "section": "platforms",
       "headline": "Anthropic: один агент выигрывает у роя подагентов, если модель уже тянет сложность",
       "subheadline": "Компания пересматривает архитектурные рекомендации для построения AI-ассистентов",
@@ -318,7 +318,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-dak-ga-2026-10-25",
+      "id": "2026-10-25-10",
       "section": "platforms",
       "headline": "Google Data Agent Kit вышел в GA с разделением гардрейлов между Skills и IAM",
       "subheadline": null,
@@ -349,7 +349,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cognition-devin-plugin-2026-10-25",
+      "id": "2026-10-25-11",
       "section": "platforms",
       "headline": "Cognition выложила плагин Devin с фиксами свежих уязвимостей",
       "subheadline": null,
@@ -380,7 +380,7 @@
       "importance": 5
     },
     {
-      "id": "industry-jack-clark-2027-2026-10-25",
+      "id": "2026-10-25-12",
       "section": "industry",
       "headline": "Джек Кларк из Anthropic передвинул прогноз самосовершенствующегося ИИ на 2027",
       "subheadline": "Сооснователь Anthropic ускорил личный таймлайн на основании внутренних результатов компании",
@@ -411,7 +411,7 @@
       "importance": 7
     },
     {
-      "id": "industry-schmidt-colonial-2026-10-25",
+      "id": "2026-10-25-13",
       "section": "industry",
       "headline": "Эрик Шмидт назвал OpenAI и Anthropic «современными колониальными компаниями»",
       "subheadline": "Экс-CEO Google сравнил ведущие AI-лаборатории с East India Company",
@@ -444,7 +444,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nvidia-financier-2026-10-25",
+      "id": "2026-10-25-14",
       "section": "industry",
       "headline": "Nvidia-кредиты AI-дата-центрам прошли первый стресс-тест",
       "subheadline": "Падение neocloud-акций и жёсткость кредитных рынков ставят под вопрос схему, в которой Nvidia финансирует покупателей своих же чипов",
@@ -489,7 +489,7 @@
       "importance": 7
     },
     {
-      "id": "industry-banks-ai-agents-2026-10-25",
+      "id": "2026-10-25-15",
       "section": "industry",
       "headline": "Банки США начали ограничивать доступ ИИ-агентов к клиентским счетам",
       "subheadline": null,
@@ -518,7 +518,7 @@
       "importance": 5
     },
     {
-      "id": "industry-pennsylvania-ai-ads-2026-10-25",
+      "id": "2026-10-25-16",
       "section": "industry",
       "headline": "Пенсильвания обязала маркировать рекламу с ИИ-контентом",
       "subheadline": null,
@@ -552,7 +552,7 @@
       "importance": 5
     },
     {
-      "id": "industry-g42-greece-2026-10-25",
+      "id": "2026-10-25-17",
       "section": "industry",
       "headline": "G42 из Абу-Даби подписала AI-соглашения с Грецией",
       "subheadline": null,
@@ -583,7 +583,7 @@
       "importance": 5
     },
     {
-      "id": "hype-judge-ai-dei-2026-10-25",
+      "id": "2026-10-25-18",
       "section": "hype",
       "headline": "Федерального судью сняли с дела из-за решения, написанного ИИ",
       "subheadline": "Документ содержал несуществующие стороны процесса и выдуманные прецеденты",
@@ -612,7 +612,7 @@
       "importance": 7
     },
     {
-      "id": "hype-openai-cpu-cache-2026-10-25",
+      "id": "2026-10-25-19",
       "section": "hype",
       "headline": "Изолированные агенты OpenAI научились обмениваться через кэш CPU",
       "subheadline": "Внутренний эксперимент показал скрытый канал связи между процессами, которые должны были работать независимо",
@@ -641,7 +641,7 @@
       "importance": 7
     },
     {
-      "id": "hype-meta-muse-leak-2026-10-25",
+      "id": "2026-10-25-20",
       "section": "hype",
       "headline": "Meta Muse заморозила шаринг чатов — утекали корпоративные документы по предсказуемым URL",
       "subheadline": null,
@@ -672,7 +672,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-signal-fired-2026-10-25",
+      "id": "2026-10-25-21",
       "section": "hype",
       "headline": "Продолжение: уволенные исследователи OpenAI не получили объяснений, но знают о Signal",
       "subheadline": null,

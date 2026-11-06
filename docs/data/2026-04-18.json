@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gptrosalind-2026-04-18",
+      "id": "2026-04-18-1",
       "section": "models",
       "headline": "OpenAI запустила GPT-Rosalind — специализированную модель для биологии и фармацевтики",
       "subheadline": "Первая LLM от OpenAI, заточенная под трансляционную медицину, открытие лекарств и геномику",
@@ -46,7 +46,7 @@
       "importance": 9
     },
     {
-      "id": "models-qwen36-2026-04-18",
+      "id": "2026-04-18-2",
       "section": "models",
       "headline": "Alibaba открыла исходный код Qwen3.6-35B-A3B — MoE-модель с 3B активными параметрами",
       "subheadline": "Sparse MoE мультимодальная модель под Apache 2.0 превосходит более крупные плотные модели в агентном кодировании",
@@ -98,7 +98,7 @@
       "importance": 7
     },
     {
-      "id": "models-gemini-robotics-2026-04-18",
+      "id": "2026-04-18-3",
       "section": "models",
       "headline": "Google DeepMind представила Gemini Robotics-ER 1.6 для планирования и восприятия роботов",
       "subheadline": "Обновлённая модель улучшает способность роботов к пространственному планированию и распознаванию среды",
@@ -129,7 +129,7 @@
       "importance": 7
     },
     {
-      "id": "models-nemotron-ocr-2026-04-18",
+      "id": "2026-04-18-4",
       "section": "models",
       "headline": "NVIDIA выпустила Nemotron OCR v2 — мультиязычную OCR-модель на синтетических данных",
       "subheadline": "Быстрая модель оптического распознавания символов, обученная преимущественно на сгенерированных данных",
@@ -160,7 +160,7 @@
       "importance": 5
     },
     {
-      "id": "models-opus47-release-2026-04-18",
+      "id": "2026-04-18-5",
       "section": "models",
       "headline": "Продолжение: Claude Opus 4.7 официально выпущен и лидирует на SWE-bench",
       "subheadline": null,
@@ -201,7 +201,7 @@
       "importance": 5
     },
     {
-      "id": "models-mythos-debunk-2026-04-18",
+      "id": "2026-04-18-6",
       "section": "models",
       "headline": "Продолжение: открытые модели воспроизвели кибербезопасные результаты Claude Mythos",
       "subheadline": null,
@@ -232,7 +232,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cloudflare-ai-2026-04-18",
+      "id": "2026-04-18-7",
       "section": "platforms",
       "headline": "Cloudflare запустила AI-платформу для агентов: единый API к 70+ моделям и песочницы",
       "subheadline": "Agents Week принёс Dynamic Workers, Sandboxes GA, Cloudflare Mesh и unified inference API",
@@ -279,7 +279,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-aws-agents-2026-04-18",
+      "id": "2026-04-18-8",
       "section": "platforms",
       "headline": "AWS выпустила DevOps Agent для расследования инцидентов и Agent Registry для управления агентами",
       "subheadline": "Автоматическая диагностика инцидентов вышла в GA, централизованный реестр AI-агентов — в превью",
@@ -329,7 +329,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-claude-code-review-2026-04-18",
+      "id": "2026-04-18-9",
       "section": "platforms",
       "headline": "Claude Code получил агентный code review",
       "subheadline": "Автоматическая проверка кода с пониманием контекста всего репозитория",
@@ -360,7 +360,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-autodiagnose-2026-04-18",
+      "id": "2026-04-18-10",
       "section": "platforms",
       "headline": "Google выпустила Auto-Diagnose — LLM-систему для диагностики сбоев интеграционных тестов",
       "subheadline": "Автоматическая классификация и анализ причин падения тестов в масштабе",
@@ -391,7 +391,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-claude-design-2026-04-18",
+      "id": "2026-04-18-11",
       "section": "content",
       "headline": "Продолжение: Anthropic запустила Claude Design для быстрого создания визуалов",
       "subheadline": null,
@@ -433,7 +433,7 @@
       "details": "Отдельное Mac-приложение · UI-макеты и иллюстрации"
     },
     {
-      "id": "industry-meta-layoffs-2026-04-18",
+      "id": "2026-04-18-12",
       "section": "industry",
       "headline": "Meta готовится сократить 10% персонала ради инвестиций в AI-инфраструктуру",
       "subheadline": "Цукерберг меняет численность сотрудников на вычислительные мощности",
@@ -464,7 +464,7 @@
       "importance": 7
     },
     {
-      "id": "industry-cursor-50b-2026-04-18",
+      "id": "2026-04-18-13",
       "section": "industry",
       "headline": "Cursor привлекает $2 млрд при оценке $50 млрд на фоне роста корпоративных продаж",
       "subheadline": "AI-редактор кода ведёт переговоры о раунде, увеличивающем оценку в разы",
@@ -495,7 +495,7 @@
       "importance": 7
     },
     {
-      "id": "industry-recursive-500m-2026-04-18",
+      "id": "2026-04-18-14",
       "section": "industry",
       "headline": "Recursive Superintelligence привлёк $500 млн через четыре месяца после основания",
       "subheadline": "Стартап по созданию самосовершенствующегося AI получил рекордное финансирование для ранней стадии",
@@ -524,7 +524,7 @@
       "importance": 7
     },
     {
-      "id": "industry-deepseek-funding-2026-04-18",
+      "id": "2026-04-18-15",
       "section": "industry",
       "headline": "DeepSeek впервые привлекает внешнее финансирование при оценке $10 млрд",
       "subheadline": "Китайский AI-лидер отказывается от модели самофинансирования",
@@ -555,7 +555,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-execs-2026-04-18",
+      "id": "2026-04-18-16",
       "section": "industry",
       "headline": "OpenAI потеряла трёх топ-менеджеров на фоне реструктуризации",
       "subheadline": "Вице-президент по продукту Кевин Вейл и глава Sora Билл Пибблс покинули компанию",
@@ -605,7 +605,7 @@
       "importance": 7
     },
     {
-      "id": "industry-cerebras-ipo-2026-04-18",
+      "id": "2026-04-18-17",
       "section": "industry",
       "headline": "Cerebras подала заявку на IPO",
       "subheadline": "Производитель AI-чипов с рекордной площадью кристалла выходит на публичный рынок",
@@ -634,7 +634,7 @@
       "importance": 5
     },
     {
-      "id": "industry-europe-ai-invest-2026-04-18",
+      "id": "2026-04-18-18",
       "section": "industry",
       "headline": "Европа наращивает AI-инвестиции: Euclyd ищет €100 млн на чипы, Британия вложила £500 млн",
       "subheadline": "Нидерландский AI-чипмейкер при поддержке экс-CEO ASML и первые инвестиции из британского AI-фонда",
@@ -684,7 +684,7 @@
       "importance": 5
     },
     {
-      "id": "hype-cisa-chatgpt-2026-04-18",
+      "id": "2026-04-18-19",
       "section": "hype",
       "headline": "И.о. главы CISA загрузил служебные разведданные в ChatGPT",
       "subheadline": "Временный директор агентства кибербезопасности США скомпрометировал конфиденциальные данные",
@@ -715,7 +715,7 @@
       "importance": 7
     },
     {
-      "id": "hype-deepfakes-politics-2026-04-18",
+      "id": "2026-04-18-20",
       "section": "hype",
       "headline": "AI-дипфейки захлестнули предвыборную кампанию в США",
       "subheadline": "Республиканский комитет Сената выпустил дипфейк-видео кандидата-демократа",
@@ -748,7 +748,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ai-erodes-skills-2026-04-18",
+      "id": "2026-04-18-21",
       "section": "hype",
       "headline": "Десять минут использования AI как «машины ответов» измеримо снижают навыки решения задач",
       "subheadline": "Новое исследование фиксирует когнитивную деградацию даже при кратковременном использовании",
@@ -773,7 +773,7 @@
       "importance": 7
     },
     {
-      "id": "hype-tokenmaxxing-2026-04-18",
+      "id": "2026-04-18-22",
       "section": "hype",
       "headline": "«Токенмаксинг» делает разработчиков менее продуктивными, чем им кажется",
       "subheadline": "Погоня за максимальным использованием AI-токенов снижает качество кода",
@@ -798,7 +798,7 @@
       "importance": 5
     },
     {
-      "id": "hype-opus47-tokens-2026-04-18",
+      "id": "2026-04-18-23",
       "section": "hype",
       "headline": "Opus 4.7 расходует на 45% больше токенов: замеры против обещаний Anthropic",
       "subheadline": "Независимые тесты показывают непропорциональный рост стоимости за задачу",
@@ -829,7 +829,7 @@
       "importance": 5
     },
     {
-      "id": "hype-conference-boycott-2026-04-18",
+      "id": "2026-04-18-24",
       "section": "hype",
       "headline": "Бойкот AI-конференции обнажил научный раскол между США и Китаем",
       "subheadline": "Nature: санкции и экспортный контроль сокращают совместные исследования",
@@ -860,7 +860,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dairy-queen-ai-2026-04-18",
+      "id": "2026-04-18-25",
       "section": "hype",
       "headline": "Dairy Queen устанавливает AI-чатботов на drive-thru",
       "subheadline": "Сеть фастфуда внедряет автоматический приём заказов через AI",

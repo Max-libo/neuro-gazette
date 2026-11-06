@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-claude-vuln-2026-04-16",
+      "id": "2026-04-16-1",
       "section": "models",
       "headline": "Claude Code обнаружил удалённо эксплуатируемую уязвимость в ядре Linux, скрытую 23 года",
       "subheadline": "AI-инструмент нашёл критический баг в сетевом стеке, пропущенный тысячами ревьюеров",
@@ -36,7 +36,7 @@
       "importance": 9
     },
     {
-      "id": "models-gpt54-erdos-2026-04-16",
+      "id": "2026-04-16-2",
       "section": "models",
       "headline": "GPT-5.4 Pro предположительно решил открытую задачу Эрдёша менее чем за два часа",
       "subheadline": "OpenAI заявляет о решении давней комбинаторной проблемы, верификация продолжается",
@@ -67,7 +67,7 @@
       "importance": 7
     },
     {
-      "id": "models-claude-alignment-2026-04-16",
+      "id": "2026-04-16-3",
       "section": "models",
       "headline": "Claude превзошёл людей в задаче alignment — но результат не воспроизвёлся в продакшене",
       "subheadline": "Исследование зафиксировало разрыв между лабораторными и рабочими условиями",
@@ -98,7 +98,7 @@
       "importance": 7
     },
     {
-      "id": "models-vakra-2026-04-16",
+      "id": "2026-04-16-4",
       "section": "models",
       "headline": "IBM Research опубликовала анализ VAKRA — бенчмарк провалов AI-агентов",
       "subheadline": "Исследование выявило системные слабости агентов в рассуждениях и использовании инструментов",
@@ -129,7 +129,7 @@
       "importance": 5
     },
     {
-      "id": "models-turboquant-2026-04-16",
+      "id": "2026-04-16-5",
       "section": "models",
       "headline": "Google TurboQuant: сжатие KV-кеша для ускорения инференса на слабом оборудовании",
       "subheadline": "Метод сохраняет точность при значительном снижении требований к памяти",
@@ -160,7 +160,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-windsurf-2026-04-16",
+      "id": "2026-04-16-6",
       "section": "platforms",
       "headline": "Windsurf Wave 12: встроенный Devin и бесплатная модель SWE-1.5",
       "subheadline": "AI-IDE интегрировал облачного агента и собственную модель для разработки",
@@ -193,7 +193,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-jetbrains-survey-2026-04-16",
+      "id": "2026-04-16-7",
       "section": "platforms",
       "headline": "JetBrains: Claude Code лидирует по удовлетворённости среди AI-инструментов разработки",
       "subheadline": "Опрос 10 000 разработчиков показал CSAT 91% у Claude Code при 18% проникновении на рабочих местах",
@@ -235,7 +235,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-copilot-word-2026-04-16",
+      "id": "2026-04-16-8",
       "section": "platforms",
       "headline": "Microsoft Copilot в Word научился отслеживать правки и управлять комментариями",
       "subheadline": "AI-ассистент получил интеграцию с системой рецензирования документов",
@@ -268,7 +268,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gemini-prepay-2026-04-16",
+      "id": "2026-04-16-9",
       "section": "platforms",
       "headline": "Google запустила предоплатный биллинг для Gemini API в AI Studio",
       "subheadline": "Разработчики могут пополнять баланс заранее без риска непредвиденных списаний",
@@ -301,7 +301,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-holotab-2026-04-16",
+      "id": "2026-04-16-10",
       "section": "platforms",
       "headline": "HCompany представила HoloTab — AI-компаньон для браузера",
       "subheadline": "Расширение интегрирует AI-ассистента в повседневную работу с вебом",
@@ -332,7 +332,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-shutterstock-video-2026-04-16",
+      "id": "2026-04-16-11",
       "section": "content",
       "headline": "Shutterstock запустил AI Video Generator для коммерческого видеопроизводства",
       "subheadline": "Платформа объединила модели Google и Runway с лицензионной библиотекой",
@@ -368,7 +368,7 @@
       "details": "Text-to-video и image-to-video · коммерческая лицензия Shutterstock"
     },
     {
-      "id": "platforms-copilot-cli-2026-04-16",
+      "id": "2026-04-16-12",
       "section": "platforms",
       "headline": "Продолжение: GitHub Copilot CLI обновился до v1.0.27",
       "subheadline": null,
@@ -399,7 +399,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ai-hiring-lawsuit-2026-04-16",
+      "id": "2026-04-16-13",
       "section": "industry",
       "headline": "Федеральный суд США допустил первый массовый иск о дискриминации AI в найме",
       "subheadline": "Иск против Workday создал прецедент для регулирования AI в HR",
@@ -428,7 +428,7 @@
       "importance": 7
     },
     {
-      "id": "industry-parasail-2026-04-16",
+      "id": "2026-04-16-14",
       "section": "industry",
       "headline": "Parasail привлёк $32 млн на инференс-облако с оплатой за токен",
       "subheadline": "Стартап строит суперклауд для AI-агентов без долгосрочных контрактов",
@@ -470,7 +470,7 @@
       "importance": 7
     },
     {
-      "id": "industry-boston-dynamics-deepmind-2026-04-16",
+      "id": "2026-04-16-15",
       "section": "industry",
       "headline": "Boston Dynamics и Google DeepMind заключили партнёрство по промышленному AI",
       "subheadline": "Роботы Boston Dynamics получат AI-модели DeepMind для работы на предприятиях",
@@ -501,7 +501,7 @@
       "importance": 7
     },
     {
-      "id": "industry-hightouch-2026-04-16",
+      "id": "2026-04-16-16",
       "section": "industry",
       "headline": "Hightouch достиг $100 млн ARR на AI-маркетинговых инструментах",
       "subheadline": "Платформа данных для маркетинга удвоила выручку за год",
@@ -530,7 +530,7 @@
       "importance": 5
     },
     {
-      "id": "industry-gizmo-2026-04-16",
+      "id": "2026-04-16-17",
       "section": "industry",
       "headline": "AI-платформа обучения Gizmo привлекла $22 млн при 13 млн пользователей",
       "subheadline": "Стартап масштабирует персонализированное обучение с помощью AI",
@@ -559,7 +559,7 @@
       "importance": 5
     },
     {
-      "id": "industry-nvidia-tco-2026-04-16",
+      "id": "2026-04-16-18",
       "section": "industry",
       "headline": "NVIDIA: стоимость за токен — единственная метрика, которая имеет значение",
       "subheadline": "Компания призывает пересмотреть подход к оценке совокупной стоимости AI-инфраструктуры",
@@ -588,7 +588,7 @@
       "importance": 5
     },
     {
-      "id": "industry-australia-court-2026-04-16",
+      "id": "2026-04-16-19",
       "section": "industry",
       "headline": "Австралийский федеральный суд предупредил юристов о «неприемлемом» использовании AI",
       "subheadline": "Суд угрожает санкциями за подачу документов с AI-галлюцинациями",
@@ -619,7 +619,7 @@
       "importance": 5
     },
     {
-      "id": "hype-opus47-2026-04-16",
+      "id": "2026-04-16-20",
       "section": "hype",
       "headline": "Anthropic готовит Claude Opus 4.7 и AI-инструмент для визуального дизайна",
       "subheadline": "Утечка через The Information: новая модель и генератор сайтов могут выйти на этой неделе",
@@ -669,7 +669,7 @@
       "importance": 7
     },
     {
-      "id": "hype-nsfw-leak-2026-04-16",
+      "id": "2026-04-16-21",
       "section": "hype",
       "headline": "NSFW-приложение слило 70 000 промптов с привязкой к личностям пользователей",
       "subheadline": "База MyLovely.AI объёмом 2,1 ГБ с имейлами и изображениями появилась на даркнете",
@@ -698,7 +698,7 @@
       "importance": 7
     },
     {
-      "id": "hype-conference-chatgpt-2026-04-16",
+      "id": "2026-04-16-22",
       "section": "hype",
       "headline": "Научная конференция отклонила сотни статей за скрытое использование ChatGPT",
       "subheadline": "Nature сообщает о массовом нарушении правил на крупнейшей AI-конференции",
@@ -727,7 +727,7 @@
       "importance": 7
     },
     {
-      "id": "hype-opensource-abandon-2026-04-16",
+      "id": "2026-04-16-23",
       "section": "hype",
       "headline": "Компания отказалась от open source из-за угроз AI-реверс-инжиниринга",
       "subheadline": "Руководство сравнило открытый код с «чертежом банковского хранилища»",
@@ -752,7 +752,7 @@
       "importance": 5
     },
     {
-      "id": "hype-sexist-ad-2026-04-16",
+      "id": "2026-04-16-24",
       "section": "hype",
       "headline": "Британскую AI-компанию обвинили в сексистской рекламе",
       "subheadline": "The Guardian назвал кампанию Narwhal Labs «мизогинией с маркетинговым бюджетом»",
@@ -781,7 +781,7 @@
       "importance": 5
     },
     {
-      "id": "hype-thiel-journalism-2026-04-16",
+      "id": "2026-04-16-25",
       "section": "hype",
       "headline": "Стартап при поддержке Тиля предлагает AI для оценки журналистики",
       "subheadline": "Критики предупреждают о рисках подавления расследовательной работы",
@@ -810,7 +810,7 @@
       "importance": 5
     },
     {
-      "id": "hype-stargate-europe-2026-04-16",
+      "id": "2026-04-16-26",
       "section": "hype",
       "headline": "Продолжение: европейские планы OpenAI Stargate сокращаются",
       "subheadline": null,

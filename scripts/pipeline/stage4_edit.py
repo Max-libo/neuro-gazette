@@ -118,7 +118,6 @@ EDIT_SYSTEM = (
 {
   "news": [
     {
-      "id": "section-uniqueid",
       "section": "models|platforms|industry|content|art|hype",
       "headline": "Заголовок на русском",
       "subheadline": "Одно предложение — суть новости",

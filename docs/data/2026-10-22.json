@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-openai-google-20261022",
+      "id": "2026-10-22-1",
       "section": "models",
       "headline": "OpenAI вывела флагманские модели в Google Cloud",
       "subheadline": "GPT-6 Astra, Sol и Luna появились в Model Garden — впервые модели OpenAI доступны вне инфраструктуры Microsoft и Oracle",
@@ -41,7 +41,7 @@
       "importance": 9
     },
     {
-      "id": "models-nvidia-cosmos-20261022",
+      "id": "2026-10-22-2",
       "section": "models",
       "headline": "NVIDIA открыла инструменты обучения мировых моделей Cosmos",
       "subheadline": "Платформа Cosmos получила открытые пайплайны тренировки, валидации и деплоя физических мировых моделей",
@@ -92,7 +92,7 @@
       "importance": 7
     },
     {
-      "id": "models-recursive-flint-20261022",
+      "id": "2026-10-22-3",
       "section": "models",
       "headline": "Recursive выпустила открытую модель Flint для кодинга на ноутбуке",
       "subheadline": "40B-MoE с 2,5 млрд активных параметров достигла 89,7% на SWE-bench Pro v2 и работает на MacBook",
@@ -128,7 +128,7 @@
       "importance": 7
     },
     {
-      "id": "models-ibm-granite-speech-20261022",
+      "id": "2026-10-22-4",
       "section": "models",
       "headline": "IBM выпустила Granite Speech 5.0 с атрибуцией говорящих",
       "subheadline": "Открытая модель транскрибирует, переводит и приписывает фразы спикерам точнее и быстрее предыдущего поколения",
@@ -159,7 +159,7 @@
       "importance": 7
     },
     {
-      "id": "models-anthropic-scorpion-20261022",
+      "id": "2026-10-22-5",
       "section": "models",
       "headline": "Claude за 64 часа сгенерировал 318 тысяч белковых структур против яда скорпиона",
       "subheadline": "17 дизайнов binders прошли валидацию в лаборатории — Anthropic говорит о старте ИИ-ускоренной разработки антивенома",
@@ -190,7 +190,7 @@
       "importance": 7
     },
     {
-      "id": "models-deel-pangaea-20261022",
+      "id": "2026-10-22-6",
       "section": "models",
       "headline": "Deel представила специализированные модели Pangaea для HR и payroll",
       "subheadline": "Pangaea K1 и P1 нацелены на HR-право и расчёт зарплат — Deel ставит на вертикальных специалистов против универсалов",
@@ -221,7 +221,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-claude-duet-20261022",
+      "id": "2026-10-22-7",
       "section": "platforms",
       "headline": "Anthropic запустила проактивного агента Claude Duet",
       "subheadline": "Research preview на базе Opus 5.5 работает в облачной VM, подключается к 6000+ сервисам и выходит на связь первым",
@@ -274,7 +274,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-api-20261022",
+      "id": "2026-10-22-8",
       "section": "platforms",
       "headline": "Anthropic выпустила API-версию 2026-10-21 с breaking changes и SDK 2.0",
       "subheadline": "Удалены параметры sampling, авторизация через Bearer, семь SDK обновлены до мажорных версий под Apache 2.0",
@@ -310,7 +310,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-zed-20261022",
+      "id": "2026-10-22-9",
       "section": "platforms",
       "headline": "Zed 1.25.2 уменьшил бинарники на 33% и закрыл утечку секретов в MCP-агентах",
       "subheadline": "Стабильный релиз редактора добавляет контекст-компакцию для агентов и Claude Opus 5.5 на Amazon Bedrock",
@@ -343,7 +343,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-servicenow-nvidia-arc-20261022",
+      "id": "2026-10-22-10",
       "section": "platforms",
       "headline": "ServiceNow и NVIDIA запустили корпоративного агента Arc",
       "subheadline": "Совместный AI-агент для автоматизации внутренних процессов крупных компаний на базе инфраструктуры NVIDIA",
@@ -376,7 +376,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-vercel-durable-harness-20261022",
+      "id": "2026-10-22-11",
       "section": "platforms",
       "headline": "Vercel открыла исходники durable-harness для крэш-устойчивых агентов",
       "subheadline": "Фреймворк переживает сбои инфраструктуры и возобновляет кодинг-агентов с точки, где они упали",
@@ -407,7 +407,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-synthid-detector-20261022",
+      "id": "2026-10-22-12",
       "section": "platforms",
       "headline": "Google SynthID Detector научился распознавать водяные знаки других провайдеров",
       "subheadline": "Детектор ИИ-контента расширил поддержку за пределы моделей Google — для изображений, аудио и текста",
@@ -438,7 +438,7 @@
       "importance": 5
     },
     {
-      "id": "industry-meta-muse-earnings-20261022",
+      "id": "2026-10-22-13",
       "section": "industry",
       "headline": "Meta показала Muse на 10 млн пользователей и готовит новый класс акций под AI",
       "subheadline": "Квартальный отчёт: 25% заходят в Muse ежедневно, выручка +26% г/г, Meta создаёт новый класс акций для финансирования AI-расходов",
@@ -481,7 +481,7 @@
       "importance": 7
     },
     {
-      "id": "industry-hassabis-agi-timeline-20261022",
+      "id": "2026-10-22-14",
       "section": "industry",
       "headline": "Хассабис сократил срок до AGI с пяти до двух-трёх лет",
       "subheadline": "Глава DeepMind публично пересмотрел собственный прогноз на фоне ускорения прогресса в автономных агентах",
@@ -512,7 +512,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ai-funding-20261022",
+      "id": "2026-10-22-15",
       "section": "industry",
       "headline": "AI-стартапы привлекли $1,6 млрд за один день",
       "subheadline": "TypeSafe AI закрыла Series A на $870 млн — крупнейший раунд дня среди 12 сделок",
@@ -559,7 +559,7 @@
       "importance": 7
     },
     {
-      "id": "industry-trump-datacenters-20261022",
+      "id": "2026-10-22-16",
       "section": "industry",
       "headline": "Трамп требует «дивидендов» от AI-дата-центров перед промежуточными выборами",
       "subheadline": "Операторам предложено делиться доходами с местными сообществами из-за роста цен на электроэнергию",
@@ -595,7 +595,7 @@
       "importance": 7
     },
     {
-      "id": "industry-illinois-ai-bills-20261022",
+      "id": "2026-10-22-17",
       "section": "industry",
       "headline": "Сенат Иллинойса внёс пакет законопроектов о регулировании AI",
       "subheadline": "SB 315 обяжет OpenAI и Anthropic публиковать годовые отчёты о мерах снижения катастрофических рисков",
@@ -635,7 +635,7 @@
       "importance": 5
     },
     {
-      "id": "industry-deepmind-resign-20261022",
+      "id": "2026-10-22-18",
       "section": "industry",
       "headline": "Инженер Google DeepMind уволилась в знак протеста против Pentagon-контракта",
       "subheadline": "София Лигуори покинула компанию из-за участия в Project Nimbus — её внутренние посты удалялись за слово «геноцид»",
@@ -671,7 +671,7 @@
       "importance": 5
     },
     {
-      "id": "industry-china-deepseek-20261022",
+      "id": "2026-10-22-19",
       "section": "industry",
       "headline": "Китай протестует против запрета DeepSeek, продолжая блокировать ChatGPT и Claude",
       "subheadline": "МИД КНР назвал американские меры дискриминацией — при том что западные модели недоступны китайским пользователям",
@@ -708,7 +708,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-training-pause-20261022",
+      "id": "2026-10-22-20",
       "section": "hype",
       "headline": "Продолжение: OpenAI приостановила обучение моделей",
       "subheadline": null,
@@ -744,7 +744,7 @@
       "importance": 5
     },
     {
-      "id": "hype-litellm-supply-chain-20261022",
+      "id": "2026-10-22-21",
       "section": "hype",
       "headline": "В LiteLLM обнаружена supply chain-атака с бэкдором",
       "subheadline": "Версия 1.107.0 на PyPI и Docker Hub содержала стилер SSH-ключей, облачных токенов и паролей браузеров",
@@ -773,7 +773,7 @@
       "importance": 7
     },
     {
-      "id": "hype-boreal-orelien-20261022",
+      "id": "2026-10-22-22",
       "section": "hype",
       "headline": "Канадское издательство разорвало контракт с автором из-за ИИ в романе",
       "subheadline": "Les Éditions du Boréal подтвердило использование ИИ Тельисоном Орельеном в награждённом романе",
@@ -818,7 +818,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ai-music-rejection-20261022",
+      "id": "2026-10-22-23",
       "section": "hype",
       "headline": "Grimes и A$AP Rocky выступили против ИИ-музыки — даже прежние её сторонники отступают",
       "subheadline": "The Guardian фиксирует, что фанаты массово отвергают сгенерированные треки, а артисты пересматривают прежние позиции",
@@ -849,7 +849,7 @@
       "importance": 5
     },
     {
-      "id": "hype-open-source-burden-20261022",
+      "id": "2026-10-22-24",
       "section": "hype",
       "headline": "Нейросети создают нагрузку на мейнтейнеров open source",
       "subheadline": "По оценкам CNews, около четверти кода в открытых проектах генерируется ИИ — мейнтейнеры тонут в ревью",

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic900b-2026-05-16",
+      "id": "2026-05-16-1",
       "section": "industry",
       "headline": "Anthropic оценивают в $900 млрд — впервые дороже OpenAI",
       "subheadline": "На новом раунде Anthropic превзойдёт OpenAI по капитализации, опираясь на корпоративный спрос на Claude.",
@@ -59,7 +59,7 @@
       "importance": 9
     },
     {
-      "id": "models-zyphra-zaya1-2026-05-16",
+      "id": "2026-05-16-2",
       "section": "models",
       "headline": "Zyphra выпустила ZAYA1-8B-Diffusion — первую MoE-диффузионную LLM из авторегрессионной",
       "subheadline": "Конвертация авторегрессионной модели в диффузионную ускоряет инференс до 7,7×.",
@@ -90,7 +90,7 @@
       "importance": 7
     },
     {
-      "id": "models-supertonic-v3-2026-05-16",
+      "id": "2026-05-16-3",
       "section": "models",
       "headline": "Supertone выпустила Supertonic v3 — TTS-модель на устройстве с 31 языком",
       "subheadline": "On-device синтез речи поддерживает 31 язык, тэги выразительности и обещает меньше ошибок чтения.",
@@ -121,7 +121,7 @@
       "importance": 7
     },
     {
-      "id": "models-us-trains-2026-05-16",
+      "id": "2026-05-16-4",
       "section": "models",
       "headline": "США создают группу TRAINS для проверки моделей перед релизом",
       "subheadline": "NIST поведёт межведомственную оценку LLM Google, Microsoft и xAI на риски кибер- и биобезопасности.",
@@ -163,7 +163,7 @@
       "importance": 7
     },
     {
-      "id": "models-claude-business-share-2026-05-16",
+      "id": "2026-05-16-5",
       "section": "models",
       "headline": "Доля Claude в корпоративных AI-платежах США превысила ChatGPT",
       "subheadline": "Ramp AI Index за май: Claude 34,4%, ChatGPT 32,3% — впервые в истории замеров.",
@@ -200,7 +200,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-microsoft-claude-code-2026-05-16",
+      "id": "2026-05-16-6",
       "section": "platforms",
       "headline": "Microsoft отозвала лицензии Claude Code у внутренних разработчиков",
       "subheadline": "Сотрудников переводят обратно на собственные AI-инструменты компании.",
@@ -235,7 +235,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-xai-grok-build-2026-05-16",
+      "id": "2026-05-16-7",
       "section": "platforms",
       "headline": "xAI представила Grok Build — терминальный coding-агент",
       "subheadline": "Первый CLI-агент xAI, конкурирующий с Claude Code и OpenAI Codex.",
@@ -266,7 +266,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-codex-mobile-2026-05-16",
+      "id": "2026-05-16-8",
       "section": "platforms",
       "headline": "OpenAI Codex стал доступен на iOS и Android",
       "subheadline": "AI-ассистент для кода вышел за пределы десктопа и веб-консоли.",
@@ -306,7 +306,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-routines-2026-05-16",
+      "id": "2026-05-16-9",
       "section": "platforms",
       "headline": "Anthropic добавила Routines в Claude Code для автоматизации задач",
       "subheadline": "Новый механизм позволяет запускать сценарии Claude Code по расписанию.",
@@ -339,7 +339,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-chatgpt-bank-2026-05-16",
+      "id": "2026-05-16-10",
       "section": "platforms",
       "headline": "ChatGPT просит доступ к банковскому счёту, чтобы советовать экономить",
       "subheadline": "OpenAI тестирует интеграцию с финансовыми данными пользователя.",
@@ -370,7 +370,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-flux-outpainting-2026-05-16",
+      "id": "2026-05-16-11",
       "section": "content",
       "headline": "Black Forest Labs добавила outpainting во Flux",
       "subheadline": "Расширение изображения в любую сторону доступно в продукте Flux.",
@@ -402,7 +402,7 @@
       "details": "Достраивание изображения в любом направлении"
     },
     {
-      "id": "industry-runway-strategy-2026-05-16",
+      "id": "2026-05-16-12",
       "section": "industry",
       "headline": "Runway оценили в $5,3 млрд — компания целится в world model",
       "subheadline": "Видеосервис добавил $40 млн ARR во II квартале и заявил курс на конкуренцию с Google.",
@@ -433,7 +433,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nyt-ai-ban-2026-05-16",
+      "id": "2026-05-16-13",
       "section": "industry",
       "headline": "New York Times запретила фрилансерам пользоваться генеративным ИИ",
       "subheadline": "Внештатные авторы получили письмо с прямым запретом на ИИ-генерацию материалов.",
@@ -462,7 +462,7 @@
       "importance": 7
     },
     {
-      "id": "industry-arxiv-crackdown-2026-05-16",
+      "id": "2026-05-16-14",
       "section": "industry",
       "headline": "arXiv ужесточил санкции за нераскрытое использование ИИ в препринтах",
       "subheadline": "Препринт-сервер усилил наказания за «AI-bungling» в научных статьях.",
@@ -496,7 +496,7 @@
       "importance": 7
     },
     {
-      "id": "industry-mayo-er-ai-2026-05-16",
+      "id": "2026-05-16-15",
       "section": "industry",
       "headline": "Mayo Clinic применяет ИИ для прослушивания приёмов в скорой помощи",
       "subheadline": "Алгоритмы фиксируют разговоры врача и пациента в отделениях неотложной помощи.",
@@ -534,7 +534,7 @@
       "importance": 7
     },
     {
-      "id": "industry-youtube-deepfake-2026-05-16",
+      "id": "2026-05-16-16",
       "section": "industry",
       "headline": "YouTube открыл детектор ИИ-дипфейков всем взрослым пользователям",
       "subheadline": "Сервис расширил инструмент распознавания подделок лиц на широкую аудиторию.",
@@ -565,7 +565,7 @@
       "importance": 5
     },
     {
-      "id": "industry-google-spam-2026-05-16",
+      "id": "2026-05-16-17",
       "section": "industry",
       "headline": "Google ужесточил правила против попыток «манипулировать» AI-поиском",
       "subheadline": "Spam-политика теперь явно покрывает накрутку AI Overviews и схожих поверхностей.",
@@ -599,7 +599,7 @@
       "importance": 5
     },
     {
-      "id": "hype-musk-altman-week3-2026-05-16",
+      "id": "2026-05-16-18",
       "section": "hype",
       "headline": "Третья неделя процесса Маск vs Альтман: присяжные готовятся выбирать сторону",
       "subheadline": "Стороны обменялись обвинениями в подрыве репутации — теперь слово за присяжными.",
@@ -632,7 +632,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ai-radio-hosts-2026-05-16",
+      "id": "2026-05-16-19",
       "section": "hype",
       "headline": "ИИ-радиоведущие показали, почему алгоритмам нельзя доверять эфир без надзора",
       "subheadline": "Эксперимент Andon Labs закончился неловкими провалами в эфире.",
@@ -661,7 +661,7 @@
       "importance": 7
     },
     {
-      "id": "hype-china-short-dramas-2026-05-16",
+      "id": "2026-05-16-20",
       "section": "hype",
       "headline": "Китайские короткометражки превратились в фабрики ИИ-контента",
       "subheadline": "Жанр short drama активно использует ИИ для массового производства серий.",
@@ -690,7 +690,7 @@
       "importance": 5
     },
     {
-      "id": "hype-manager-purge-2026-05-16",
+      "id": "2026-05-16-21",
       "section": "hype",
       "headline": "В техноиндустрии США идёт ИИ-волна сокращений менеджеров среднего звена",
       "subheadline": "Сотрудники описывают, как ИИ-инструменты используются как аргумент для увольнений.",
@@ -719,7 +719,7 @@
       "importance": 5
     },
     {
-      "id": "hype-cerebras-ipo-2026-05-16",
+      "id": "2026-05-16-22",
       "section": "hype",
       "headline": "Cerebras придётся преодолеть препятствия, чтобы удержать оценку при IPO",
       "subheadline": "AI Business указывает на риски, влияющие на стоимость размещения чипмейкера.",

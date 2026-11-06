@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gpt55instant-2026-05-06",
+      "id": "2026-05-06-1",
       "section": "models",
       "headline": "GPT-5.5 Instant стал моделью по умолчанию в ChatGPT",
       "subheadline": "OpenAI заменила GPT-5.3 Instant на новую быструю модель и опубликовала system card",
@@ -51,7 +51,7 @@
       "importance": 9
     },
     {
-      "id": "models-hailuo23-2026-05-06",
+      "id": "2026-05-06-2",
       "section": "content",
       "headline": "MiniMax выпустила видеомодель Hailuo 2.3 и Media Agent",
       "subheadline": "Обновлены физика, мимика и стилизация; параллельно стартовал API на fal.ai",
@@ -92,7 +92,7 @@
       "details": "Доступна через API fal · несколько режимов качества"
     },
     {
-      "id": "models-subq12m-2026-05-06",
+      "id": "2026-05-06-3",
       "section": "models",
       "headline": "Subquadratic запустила SubQ — LLM с контекстом 12 млн токенов",
       "subheadline": "Стартап привлёк $29 млн на архитектуру субквадратичного разреженного внимания",
@@ -123,7 +123,7 @@
       "importance": 7
     },
     {
-      "id": "models-iosllmpicker-2026-05-06",
+      "id": "2026-05-06-4",
       "section": "models",
       "headline": "Apple откроет iOS 27 для сторонних LLM как «выбор приключений»",
       "subheadline": "Пользователи iPhone смогут переключать системные ИИ-функции на чужие модели",
@@ -156,7 +156,7 @@
       "importance": 7
     },
     {
-      "id": "models-ttsrace-2026-05-06",
+      "id": "2026-05-06-5",
       "section": "models",
       "headline": "Inworld и Mistral одновременно подняли планку TTS",
       "subheadline": "Realtime TTS-2 с замкнутой петлёй и Voxtral с гибридной авторегрессией и flow matching",
@@ -196,7 +196,7 @@
       "importance": 7
     },
     {
-      "id": "models-geminiappredesign-2026-05-06",
+      "id": "2026-05-06-6",
       "section": "models",
       "headline": "Google переделывает приложение Gemini под генеративный контент",
       "subheadline": "На Android и iOS появится новый интерфейс генерации изображений и видео",
@@ -227,7 +227,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-vscode115-2026-05-06",
+      "id": "2026-05-06-7",
       "section": "platforms",
       "headline": "VS Code 1.115 уходит глубже в agent-native разработку",
       "subheadline": "Companion-приложение Agents для параллельных сессий и BYOK для Copilot Business",
@@ -260,7 +260,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-geminiapi-2026-05-06",
+      "id": "2026-05-06-8",
       "section": "platforms",
       "headline": "Gemini API получил event-driven webhooks и мультимодальный File Search",
       "subheadline": "Push-уведомления заменяют поллинг; File Search теперь работает с изображениями",
@@ -296,7 +296,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-mistrallechat-2026-05-06",
+      "id": "2026-05-06-9",
       "section": "platforms",
       "headline": "Mistral добавила Remote Agents и Work Mode в Le Chat",
       "subheadline": "Корпоративные агенты выполняют долгие задачи в фоне через Le Chat",
@@ -331,7 +331,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-bedrockagentcore-2026-05-06",
+      "id": "2026-05-06-10",
       "section": "platforms",
       "headline": "AWS дал AgentCore Browser действия на уровне ОС и Identity на ECS",
       "subheadline": "Агенты в Bedrock могут вызывать клавиатуру и буфер обмена и выходят на ECS-кластеры",
@@ -367,7 +367,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropicfin10-2026-05-06",
+      "id": "2026-05-06-11",
       "section": "platforms",
       "headline": "Anthropic выпустила десять Claude-агентов для финансовых задач",
       "subheadline": "Релиз — часть гонки с OpenAI за корпоративную выручку перед IPO",
@@ -400,7 +400,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-nvidiaservicenow-2026-05-06",
+      "id": "2026-05-06-12",
       "section": "platforms",
       "headline": "NVIDIA и ServiceNow выпустили автономных агентов для предприятий",
       "subheadline": null,
@@ -433,7 +433,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-etsychatgpt-2026-05-06",
+      "id": "2026-05-06-13",
       "section": "platforms",
       "headline": "Etsy запустил приложение внутри ChatGPT",
       "subheadline": null,
@@ -466,7 +466,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropicgoogle200b-2026-05-06",
+      "id": "2026-05-06-14",
       "section": "industry",
       "headline": "Anthropic подписалась на $200 млрд облака и чипов Google",
       "subheadline": "Пятилетнее соглашение становится одним из крупнейших корпоративных AI-контрактов в истории",
@@ -501,7 +501,7 @@
       "importance": 7
     },
     {
-      "id": "industry-sapprior-2026-05-06",
+      "id": "2026-05-06-15",
       "section": "industry",
       "headline": "SAP вложит €1 млрд в немецкую AI-лабораторию Prior Labs",
       "subheadline": "Поглощение 18-месячного стартапа стало частью M&A-серии SAP",
@@ -537,7 +537,7 @@
       "importance": 7
     },
     {
-      "id": "industry-applesiri250m-2026-05-06",
+      "id": "2026-05-06-16",
       "section": "industry",
       "headline": "Apple заплатит $250 млн владельцам iPhone за непоставленную AI-Siri",
       "subheadline": "Коллективный иск получил предварительное одобрение суда",
@@ -570,7 +570,7 @@
       "importance": 7
     },
     {
-      "id": "industry-pacharacterai-2026-05-06",
+      "id": "2026-05-06-17",
       "section": "industry",
       "headline": "Пенсильвания подала в суд на Character.AI из-за чат-бота, изображавшего врача",
       "subheadline": "Прокуратура штата заявила, что бот давал медицинские рекомендации без лицензии",
@@ -601,7 +601,7 @@
       "importance": 7
     },
     {
-      "id": "industry-metabookpub-2026-05-06",
+      "id": "2026-05-06-18",
       "section": "industry",
       "headline": "Издатели книг подали в суд на Meta из-за «дословного копирования»",
       "subheadline": "Иск утверждает, что модели Meta воспроизводят защищённые тексты без лицензий",
@@ -630,7 +630,7 @@
       "importance": 7
     },
     {
-      "id": "industry-caisigooglemsxai-2026-05-06",
+      "id": "2026-05-06-19",
       "section": "industry",
       "headline": "Продолжение: Google, Microsoft и xAI отдают модели CAISI до релиза",
       "subheadline": null,
@@ -672,7 +672,7 @@
       "importance": 5
     },
     {
-      "id": "industry-aiactomnibus-2026-05-06",
+      "id": "2026-05-06-20",
       "section": "industry",
       "headline": "Продолжение: переговоры по AI Act Omnibus пробуксовывают",
       "subheadline": null,
@@ -703,7 +703,7 @@
       "importance": 5
     },
     {
-      "id": "hype-musktrialbrockman-2026-05-06",
+      "id": "2026-05-06-21",
       "section": "hype",
       "headline": "Продолжение: Брокман на суде опроверг версию Маска о ранней OpenAI",
       "subheadline": null,
@@ -741,7 +741,7 @@
       "importance": 5
     },
     {
-      "id": "hype-1mexposedai-2026-05-06",
+      "id": "2026-05-06-22",
       "section": "hype",
       "headline": "Из 2 млн просканированных хостов 1 млн AI-сервисов оказались открытыми",
       "subheadline": "Исследование показало, что AI-инфраструктура защищена хуже любого другого класса ПО",
@@ -766,7 +766,7 @@
       "importance": 7
     },
     {
-      "id": "hype-rugosdataai-2026-05-06",
+      "id": "2026-05-06-23",
       "section": "hype",
       "headline": "Российские госданные откроют для нейросетей только с разрешения ФСБ",
       "subheadline": "Законопроект разрешает суверенным ИИ обучаться на госмассивах с одобрения ФСБ и ФСТЭК",
@@ -799,7 +799,7 @@
       "importance": 7
     },
     {
-      "id": "hype-metabonescan-2026-05-06",
+      "id": "2026-05-06-24",
       "section": "hype",
       "headline": "Meta сканирует фото на структуру костей, чтобы вычислять несовершеннолетних",
       "subheadline": "Соцсеть оценивает костную геометрию и комплекцию для пометки аккаунтов детей",
@@ -832,7 +832,7 @@
       "importance": 7
     },
     {
-      "id": "hype-anthropicrecursive-2026-05-06",
+      "id": "2026-05-06-25",
       "section": "hype",
       "headline": "Сооснователь Anthropic описал, как рекурсивное самоулучшение AI обгонит надзор",
       "subheadline": "В новой публикации Anthropic объясняет, почему контроль над AI становится математически тяжелее",
@@ -861,7 +861,7 @@
       "importance": 7
     },
     {
-      "id": "hype-vscodecopilotcoauthor-2026-05-06",
+      "id": "2026-05-06-26",
       "section": "hype",
       "headline": "Продолжение: VS Code приписывал авторство Copilot в чужих коммитах",
       "subheadline": null,
@@ -894,7 +894,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dawkinsai-2026-05-06",
+      "id": "2026-05-06-27",
       "section": "hype",
       "headline": "Ричард Докинз: ИИ сознателен, даже если сам этого не знает",
       "subheadline": null,

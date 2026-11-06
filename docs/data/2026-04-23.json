@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gemini31-cloudnext-2026-04-23",
+      "id": "2026-04-23-1",
       "section": "models",
       "headline": "Google выпустила Gemini 3.1 Pro и Gemini 3.1 Flash на Cloud Next 2026",
       "subheadline": "Обновление флагманских моделей совмещено с анонсом TPU восьмого поколения и ребрендингом Vertex AI в Gemini Enterprise Agent Platform",
@@ -68,7 +68,7 @@
       "importance": 9
     },
     {
-      "id": "models-xiaomi-mimo-25-2026-04-23",
+      "id": "2026-04-23-2",
       "section": "models",
       "headline": "Xiaomi представила MiMo-V2.5-Pro и MiMo-V2.5 с показателями frontier-моделей при низкой стоимости токена",
       "subheadline": "Обе модели воспроизводят качество ведущих LLM на основных бенчмарках при значительно меньших затратах на инференс",
@@ -99,7 +99,7 @@
       "importance": 7
     },
     {
-      "id": "models-qwen36-27b-dense-2026-04-23",
+      "id": "2026-04-23-3",
       "section": "models",
       "headline": "Alibaba выпустила Qwen3.6-27B — плотная open-weight модель обходит 397B MoE на agentic coding",
       "subheadline": "Dense-модель с 27 млрд параметров показывает более высокие результаты на бенчмарках агентной разработки, чем MoE-конкурент на 397 млрд",
@@ -130,7 +130,7 @@
       "importance": 7
     },
     {
-      "id": "models-chatgpt-images-rollout-2026-04-23",
+      "id": "2026-04-23-4",
       "section": "content",
       "headline": "Продолжение: ChatGPT Images 2.0 раскатан на всех пользователей, API откроется в начале мая",
       "subheadline": null,
@@ -171,7 +171,7 @@
       "details": "Для всех пользователей ChatGPT и Codex · API запланирован на начало мая"
     },
     {
-      "id": "models-google-research-agents-2026-04-23",
+      "id": "2026-04-23-5",
       "section": "models",
       "headline": "Google запустила исследовательских AI-агентов на Gemini 3.1 Pro",
       "subheadline": null,
@@ -207,7 +207,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-gemini-enterprise-agent-2026-04-23",
+      "id": "2026-04-23-6",
       "section": "platforms",
       "headline": "Google запустила Gemini Enterprise Agent Platform — преемник Vertex AI",
       "subheadline": "Единая платформа для разработки, оркестрации, мониторинга и оптимизации AI-агентов с поддержкой Anthropic Claude и долгосрочных сессий",
@@ -252,7 +252,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-workspace-agents-2026-04-23",
+      "id": "2026-04-23-7",
       "section": "platforms",
       "headline": "OpenAI добавила в ChatGPT workspace-агентов и ускорила Responses API через WebSockets",
       "subheadline": "Корпоративные агенты получили доступ к рабочему пространству компании, а агентные сценарии теперь работают без задержек долгих HTTP-запросов",
@@ -303,7 +303,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-nvidia-google-agentic-2026-04-23",
+      "id": "2026-04-23-8",
       "section": "platforms",
       "headline": "NVIDIA и Google Cloud объявили партнёрство по агентному и физическому AI",
       "subheadline": "Совместные фабрики AI-данных и оптимизация инференса для роботов и автономных систем",
@@ -334,7 +334,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-workspace-ai-2026-04-23",
+      "id": "2026-04-23-9",
       "section": "platforms",
       "headline": "Google встроила Gemini в Chrome, Gmail, Google Maps и Meet для корпоративных пользователей",
       "subheadline": "Chrome становится AI-напарником сотрудника, Gmail получает AI Overviews, Maps — AI-планирование маршрутов, Meet — AI-заметки для очных встреч",
@@ -386,7 +386,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-aws-bedrock-agentcore-2026-04-23",
+      "id": "2026-04-23-10",
       "section": "platforms",
       "headline": "AWS обновила Bedrock AgentCore — первый работающий агент за минуты",
       "subheadline": null,
@@ -424,7 +424,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-copilot-cli-cpp-2026-04-23",
+      "id": "2026-04-23-11",
       "section": "platforms",
       "headline": "GitHub Copilot CLI получил C++-интеллект в публичном превью",
       "subheadline": null,
@@ -455,7 +455,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cloudflare-mcp-2026-04-23",
+      "id": "2026-04-23-12",
       "section": "platforms",
       "headline": "Cloudflare опубликовала архитектуру MCP для корпоративной безопасности агентов",
       "subheadline": null,
@@ -486,7 +486,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropic-google-broadcom-2026-04-23",
+      "id": "2026-04-23-13",
       "section": "industry",
       "headline": "Anthropic расширяет сотрудничество с Google и Broadcom на гигаватты TPU с 2027 года",
       "subheadline": "Выручка Anthropic превысила $30 млрд; новая сделка выводит компанию за пределы одного облачного провайдера",
@@ -521,7 +521,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-750m-partners-2026-04-23",
+      "id": "2026-04-23-14",
       "section": "industry",
       "headline": "Google Cloud выделил $750 млн партнёрской экосистеме на развитие агентного AI",
       "subheadline": "Крупнейшая партнёрская инвестиция среди гиперскейлеров охватит Accenture, Deloitte, TCS и 120 000 других компаний",
@@ -561,7 +561,7 @@
       "importance": 7
     },
     {
-      "id": "industry-pentagon-54b-ai-war-2026-04-23",
+      "id": "2026-04-23-15",
       "section": "industry",
       "headline": "Пентагон запросил $54 млрд на AI-войну в оборонном бюджете",
       "subheadline": "Минобороны США делает ставку на AI-оружие, автономные системы и ускоренное принятие решений",
@@ -590,7 +590,7 @@
       "importance": 7
     },
     {
-      "id": "industry-tworek-core-automation-2026-04-23",
+      "id": "2026-04-23-16",
       "section": "industry",
       "headline": "Ex-OpenAI Джерри Творек запустил Core Automation — «самую автоматизированную AI-лабораторию»",
       "subheadline": null,
@@ -623,7 +623,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-thinking-machines-2026-04-23",
+      "id": "2026-04-23-17",
       "section": "industry",
       "headline": "Google углубил сотрудничество с Thinking Machines Lab через многомиллиардную сделку",
       "subheadline": null,
@@ -654,7 +654,7 @@
       "importance": 7
     },
     {
-      "id": "industry-warren-ai-crisis-2026-04-23",
+      "id": "2026-04-23-18",
       "section": "industry",
       "headline": "Элизабет Уоррен: сбой AI может запустить следующий финансовый кризис",
       "subheadline": null,
@@ -683,7 +683,7 @@
       "importance": 7
     },
     {
-      "id": "industry-met-police-palantir-2026-04-23",
+      "id": "2026-04-23-19",
       "section": "industry",
       "headline": "Полиция Лондона обсуждает закупку AI-системы Palantir для уголовных расследований",
       "subheadline": null,
@@ -714,7 +714,7 @@
       "importance": 5
     },
     {
-      "id": "industry-connecticut-sb435-2026-04-23",
+      "id": "2026-04-23-20",
       "section": "industry",
       "headline": "В Коннектикуте представлен законопроект SB 435 — AI в найме становится предметом профсоюзных переговоров",
       "subheadline": null,
@@ -755,7 +755,7 @@
       "importance": 5
     },
     {
-      "id": "hype-mythos-breach-2026-04-23",
+      "id": "2026-04-23-21",
       "section": "hype",
       "headline": "Неавторизованные пользователи получили доступ к Claude Mythos через подрядчика Anthropic",
       "subheadline": "Модель, способная взламывать ОС и браузеры по запросу, оказалась в руках посторонних через стороннюю инфраструктуру",
@@ -806,7 +806,7 @@
       "importance": 7
     },
     {
-      "id": "hype-robot-table-tennis-2026-04-23",
+      "id": "2026-04-23-22",
       "section": "hype",
       "headline": "AI-робот побеждает элитных игроков в настольный теннис",
       "subheadline": null,
@@ -831,7 +831,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ai-riscv-cpu-2026-04-23",
+      "id": "2026-04-23-23",
       "section": "hype",
       "headline": "AI-агент спроектировал ядро процессора RISC-V с нуля",
       "subheadline": null,
@@ -860,7 +860,7 @@
       "importance": 7
     },
     {
-      "id": "hype-wallstreet-hallucinations-2026-04-23",
+      "id": "2026-04-23-24",
       "section": "hype",
       "headline": "AI-галлюцинации обнаружены в судебном филинге крупной юрфирмы Wall Street",
       "subheadline": null,
@@ -885,7 +885,7 @@
       "importance": 7
     },
     {
-      "id": "hype-startups-ai-over-humans-2026-04-23",
+      "id": "2026-04-23-25",
       "section": "hype",
       "headline": "Стартапы хвастаются: на AI тратят больше, чем на людей",
       "subheadline": null,
@@ -910,7 +910,7 @@
       "importance": 7
     },
     {
-      "id": "hype-firefox-mythos-patches-2026-04-23",
+      "id": "2026-04-23-26",
       "section": "hype",
       "headline": "Firefox закрыл 271 уязвимость при участии Claude Mythos",
       "subheadline": null,
@@ -945,7 +945,7 @@
       "importance": 5
     },
     {
-      "id": "hype-maga-influencer-2026-04-23",
+      "id": "2026-04-23-27",
       "section": "hype",
       "headline": "Продолжение: AI-инфлюенсер «Эмили Харт» заработал тысячи долларов до блокировки",
       "subheadline": null,

@@ -738,8 +738,17 @@
     if (!headline) { showToast('Введите заголовок'); return; }
     if (!issue) { showToast('Сначала выберите выпуск'); return; }
 
+    // id = дата выпуска + следующий номер (как в пайплайне): 2026-11-06-27
+    const prefix = issue.date + '-';
+    const used = (issue.news || [])
+      .map(n => String(n.id || ''))
+      .filter(id => id.startsWith(prefix))
+      .map(id => parseInt(id.slice(prefix.length), 10))
+      .filter(Number.isFinite);
+    const nextNum = (used.length ? Math.max(...used) : 0) + 1;
+
     const item = {
-      id: 'manual-' + Date.now(),
+      id: prefix + nextNum,
       section,
       headline,
       subheadline,

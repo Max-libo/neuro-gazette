@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-opus47-2026-05-07",
+      "id": "2026-05-07-1",
       "section": "models",
       "headline": "Anthropic выпустила Claude Opus 4.7",
       "subheadline": "Новый флагман Anthropic представлен на ивенте Code w/ Claude 2026 вместе с расширением Managed Agents и сделкой со SpaceX",
@@ -73,7 +73,7 @@
       "importance": 9
     },
     {
-      "id": "models-openai-networking-2026-05-07",
+      "id": "2026-05-07-2",
       "section": "models",
       "headline": "OpenAI с AMD, Broadcom, Intel, Microsoft и NVIDIA разработала сетевой протокол для AI-суперкомпьютеров",
       "subheadline": "Альянс пяти вендоров пытается устранить узкие места в межсоединениях GPU при тренировке фронтирных моделей",
@@ -110,7 +110,7 @@
       "importance": 7
     },
     {
-      "id": "models-gemma4-mtp-2026-05-07",
+      "id": "2026-05-07-3",
       "section": "models",
       "headline": "Google ускорила Gemma 4 в три раза с помощью multi-token prediction",
       "subheadline": "Новая техника декодирования предсказывает несколько токенов за шаг, что втрое поднимает throughput модели",
@@ -141,7 +141,7 @@
       "importance": 7
     },
     {
-      "id": "models-gemini32flash-leak-2026-05-07",
+      "id": "2026-05-07-4",
       "section": "models",
       "headline": "В сборке iOS-приложения Gemini нашли модель Gemini 3.2 Flash",
       "subheadline": "Утечка перед Google I/O показывает обновлённую модель и смену схемы именования Google",
@@ -177,7 +177,7 @@
       "importance": 5
     },
     {
-      "id": "models-subq-continuation-2026-05-07",
+      "id": "2026-05-07-5",
       "section": "models",
       "headline": "Продолжение: Subquadratic пообещала 1000-кратный прирост эффективности SubQ",
       "subheadline": null,
@@ -213,7 +213,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-copilot-april-2026-05-07",
+      "id": "2026-05-07-6",
       "section": "platforms",
       "headline": "GitHub Copilot в VS Code: семантический поиск, /chronicle и BYOK для бизнес-планов",
       "subheadline": "Апрельские релизы v1.116–v1.119 расширяют агентные возможности и открывают подключение собственных ключей",
@@ -246,7 +246,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-windsurf-2217-2026-05-07",
+      "id": "2026-05-07-7",
       "section": "platforms",
       "headline": "Windsurf открыла Devin Review всем подписчикам",
       "subheadline": "Версия 2.2.17 добавляет Devin для терминала с поддержкой Opus 4.7, GPT-5.5 и SWE-1.6",
@@ -277,7 +277,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-claudecode-1042-2026-05-07",
+      "id": "2026-05-07-8",
       "section": "platforms",
       "headline": "Claude Code v1.0.42: подсказка /mcp show, плагины из .zip",
       "subheadline": null,
@@ -308,7 +308,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-chatgpt-ads-smb-2026-05-07",
+      "id": "2026-05-07-9",
       "section": "platforms",
       "headline": "ChatGPT открыл рекламу для малого бизнеса",
       "subheadline": "OpenAI строит self-serve рекламную платформу по образцу Google и Meta",
@@ -339,7 +339,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-mariner-shutdown-2026-05-07",
+      "id": "2026-05-07-10",
       "section": "platforms",
       "headline": "Google закрывает Project Mariner",
       "subheadline": null,
@@ -372,7 +372,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-copilotkit-eip-2026-05-07",
+      "id": "2026-05-07-11",
       "section": "platforms",
       "headline": "CopilotKit запустила Enterprise Intelligence Platform с постоянной памятью агентов",
       "subheadline": null,
@@ -403,7 +403,7 @@
       "importance": 5
     },
     {
-      "id": "industry-deepseek-funding-2026-05-07",
+      "id": "2026-05-07-12",
       "section": "industry",
       "headline": "Госфонд Big Fund ведёт переговоры о раунде DeepSeek при оценке до $50 млрд",
       "subheadline": "Это будет первый внешний раунд DeepSeek; в сделке также участвуют Tencent и Alibaba",
@@ -448,7 +448,7 @@
       "importance": 7
     },
     {
-      "id": "industry-spectrumx-mrc-2026-05-07",
+      "id": "2026-05-07-13",
       "section": "industry",
       "headline": "NVIDIA добавила Multi-Range Connectivity в Ethernet-фабрику Spectrum-X",
       "subheadline": "Платформа теперь объединяет AI-кампусы в радиусе нескольких километров без потери пропускной способности",
@@ -491,7 +491,7 @@
       "importance": 7
     },
     {
-      "id": "industry-canada-openai-privacy-2026-05-07",
+      "id": "2026-05-07-14",
       "section": "industry",
       "headline": "Канадские регуляторы: OpenAI нарушила законы о приватности при обучении ChatGPT",
       "subheadline": "Совместное расследование четырёх ведомств выявило сбор избыточных данных и проблемы с удалением информации",
@@ -524,7 +524,7 @@
       "importance": 7
     },
     {
-      "id": "industry-tessera-labs-2026-05-07",
+      "id": "2026-05-07-15",
       "section": "industry",
       "headline": "Tessera Labs привлекла $60 млн от a16z на AI-замену ERP",
       "subheadline": null,
@@ -555,7 +555,7 @@
       "importance": 5
     },
     {
-      "id": "industry-snap-perplexity-end-2026-05-07",
+      "id": "2026-05-07-16",
       "section": "industry",
       "headline": "Snap и Perplexity «полюбовно» расторгли сделку на $400 млн",
       "subheadline": null,
@@ -586,7 +586,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropic-enterprise-cont-2026-05-07",
+      "id": "2026-05-07-17",
       "section": "industry",
       "headline": "Продолжение: Anthropic с Blackstone, Hellman & Friedman и Goldman Sachs запускает энтерпрайз-направление",
       "subheadline": null,
@@ -621,7 +621,7 @@
       "importance": 5
     },
     {
-      "id": "industry-wh-fda-cont-2026-05-07",
+      "id": "2026-05-07-18",
       "section": "industry",
       "headline": "Продолжение: Белый дом обсуждает проверку AI-моделей «как лекарств» FDA",
       "subheadline": null,
@@ -663,7 +663,7 @@
       "importance": 5
     },
     {
-      "id": "hype-murati-testimony-2026-05-07",
+      "id": "2026-05-07-19",
       "section": "hype",
       "headline": "Мира Мурати: Альтман сеял хаос и говорил топ-менеджерам разное",
       "subheadline": "Бывший CTO OpenAI дала показания в суде по иску Маска против OpenAI",
@@ -713,7 +713,7 @@
       "importance": 7
     },
     {
-      "id": "hype-anthropic-orbit-2026-05-07",
+      "id": "2026-05-07-20",
       "section": "hype",
       "headline": "В Claude нашли спрятанный переключатель Orbit — проактивного ассистента",
       "subheadline": "В мобильных и веб-сборках обнаружена нераскрытая функция брифингов из Gmail, Slack, GitHub и Calendar",
@@ -746,7 +746,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ubisoft-aileak-2026-05-07",
+      "id": "2026-05-07-21",
       "section": "hype",
       "headline": "Ubisoft уличила утечщика в AI-редактировании скриншота Assassin's Creed Invictus",
       "subheadline": null,
@@ -788,7 +788,7 @@
       "importance": 5
     },
     {
-      "id": "hype-scaleai-doubts-2026-05-07",
+      "id": "2026-05-07-22",
       "section": "hype",
       "headline": "Глава Scale AI публично усомнился в надёжности ИИ для критических задач",
       "subheadline": null,
@@ -819,7 +819,7 @@
       "importance": 5
     },
     {
-      "id": "hype-youtube-aislop-glitch-2026-05-07",
+      "id": "2026-05-07-23",
       "section": "hype",
       "headline": "AI-нарратор YouTube-канала глитчанул в прямом эфире и стал вирусным",
       "subheadline": null,

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "hype-nsa-mythos-2026-04-20",
+      "id": "2026-04-20-1",
       "section": "hype",
       "headline": "АНБ тайно использует Mythos от Anthropic вопреки запрету Пентагона",
       "subheadline": "Самая мощная модель Anthropic применяется для поиска уязвимостей, хотя Минобороны внесло компанию в список рисков цепочки поставок",
@@ -59,7 +59,7 @@
       "importance": 9
     },
     {
-      "id": "models-aa-benchmark-2026-04-20",
+      "id": "2026-04-20-2",
       "section": "models",
       "headline": "Artificial Analysis зафиксировал паритет: GPT-5.4, Gemini 3.1 Pro и Claude Opus 4.7 набрали по 57 баллов",
       "subheadline": "Обновлённый Intelligence Index впервые показал тройное равенство лидеров",
@@ -94,7 +94,7 @@
       "importance": 7
     },
     {
-      "id": "models-adele-nature-2026-04-20",
+      "id": "2026-04-20-3",
       "section": "models",
       "headline": "Nature: система ADeLe предсказывает успех AI-модели на новых задачах с точностью 90%",
       "subheadline": "18 когнитивных шкал заменяют сотни узкоспециализированных бенчмарков",
@@ -125,7 +125,7 @@
       "importance": 7
     },
     {
-      "id": "models-openmythos-2026-04-20",
+      "id": "2026-04-20-4",
       "section": "models",
       "headline": "OpenMythos: открытая реконструкция Claude Mythos — 770M параметров догоняют 1.3B-трансформер",
       "subheadline": "PyTorch-воспроизведение архитектуры Mythos демонстрирует эффективность подхода Anthropic",
@@ -158,7 +158,7 @@
       "importance": 7
     },
     {
-      "id": "models-nature-humans-2026-04-20",
+      "id": "2026-04-20-5",
       "section": "models",
       "headline": "Nature: учёные-люди значительно опережают лучших AI-агентов на сложных научных задачах",
       "subheadline": "Исследование зафиксировало устойчивый разрыв между людьми и AI в задачах глубокой экспертизы",
@@ -187,7 +187,7 @@
       "importance": 7
     },
     {
-      "id": "models-prfaas-2026-04-20",
+      "id": "2026-04-20-6",
       "section": "models",
       "headline": "Moonshot AI и Университет Цинхуа представили PrfaaS — кросс-датацентровую архитектуру KV-кеша для LLM",
       "subheadline": "Новый подход к обслуживанию больших языковых моделей в распределённой инфраструктуре",
@@ -220,7 +220,7 @@
       "importance": 5
     },
     {
-      "id": "models-seedance-2026-04-20",
+      "id": "2026-04-20-7",
       "section": "content",
       "headline": "Atlas Cloud открыл глобальный API-доступ к модели генерации видео Seedance 2.0",
       "subheadline": "Посекундная тарификация и отсутствие очереди для разработчиков по всему миру",
@@ -252,7 +252,7 @@
       "details": "Публичный API Atlas Cloud · посекундная оплата · без листа ожидания"
     },
     {
-      "id": "platforms-google-coding-team-2026-04-20",
+      "id": "2026-04-20-8",
       "section": "platforms",
       "headline": "Google собирает элитную команду, чтобы сократить отставание от Anthropic в AI-кодинге",
       "subheadline": "Внутренний проект нацелен на конкуренцию с Claude Code в инструментах для разработчиков",
@@ -302,7 +302,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-nvidia-adobe-wpp-2026-04-20",
+      "id": "2026-04-20-9",
       "section": "content",
       "headline": "NVIDIA, Adobe и WPP запустили платформу автономных AI-агентов для рекламной индустрии",
       "subheadline": "Агенты Adobe Firefly на инфраструктуре NVIDIA генерируют и оптимизируют креатив в масштабе",
@@ -335,7 +335,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-salesforce-albert-2026-04-20",
+      "id": "2026-04-20-10",
       "section": "platforms",
       "headline": "Salesforce делает ставку на Agent Albert — агентную платформу для корпоративного ПО",
       "subheadline": "Компания доказывает, что AI не убьёт корпоративный софт, а трансформирует его",
@@ -366,7 +366,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-notion-api-2026-04-20",
+      "id": "2026-04-20-11",
       "section": "platforms",
       "headline": "Notion открыл выполнение кода в AI-агентах и добавил 8 новых API-эндпоинтов",
       "subheadline": "Developer preview позволяет агентам запускать код прямо внутри рабочего пространства",
@@ -395,7 +395,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-linkedin-memory-2026-04-20",
+      "id": "2026-04-20-12",
       "section": "platforms",
       "headline": "LinkedIn раскрыл архитектуру когнитивной памяти для AI-агентов",
       "subheadline": "Система разделяет долгосрочную, эпизодическую и рабочую память агентов в продакшене",
@@ -426,7 +426,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-gemini-cli-subagents-2026-04-20",
+      "id": "2026-04-20-13",
       "section": "platforms",
       "headline": "Gemini CLI получил субагентов для параллельных рабочих процессов",
       "subheadline": "Делегирование задач и параллельное выполнение внутри CLI-интерфейса Google",
@@ -457,7 +457,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-chatgpt-business-2026-04-20",
+      "id": "2026-04-20-14",
       "section": "platforms",
       "headline": "ChatGPT Business добавил Workspace Analytics для администраторов",
       "subheadline": "Новый дашборд показывает активность пользователей и расход кредитов Codex",
@@ -492,7 +492,7 @@
       "importance": 5
     },
     {
-      "id": "industry-uk-fund-2026-04-20",
+      "id": "2026-04-20-15",
       "section": "industry",
       "headline": "Великобритания запустила фонд на $675 млн для AI-стартапов",
       "subheadline": "Правительственная инициатива направлена на удержание AI-компаний в стране",
@@ -523,7 +523,7 @@
       "importance": 7
     },
     {
-      "id": "industry-fermi-departure-2026-04-20",
+      "id": "2026-04-20-16",
       "section": "industry",
       "headline": "CEO и CFO ядерного AI-стартапа Fermi внезапно покинули компанию",
       "subheadline": "Одновременный уход двух топ-менеджеров ставит под вопрос будущее проекта",
@@ -552,7 +552,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-chips-marvell-2026-04-20",
+      "id": "2026-04-20-17",
       "section": "industry",
       "headline": "Google заказывает почти 2 млн AI-чипов у Marvell для собственной инфраструктуры",
       "subheadline": "Переход к кастомным чипам сигнализирует о диверсификации поставок от NVIDIA",
@@ -585,7 +585,7 @@
       "importance": 7
     },
     {
-      "id": "industry-us-california-ai-rules-2026-04-20",
+      "id": "2026-04-20-18",
       "section": "industry",
       "headline": "США и Калифорния используют госзакупки как рычаг регулирования AI",
       "subheadline": "Закупочные требования формируют де-факто стандарты для AI-индустрии",
@@ -616,7 +616,7 @@
       "importance": 7
     },
     {
-      "id": "industry-embodied-ai-2026-04-20",
+      "id": "2026-04-20-19",
       "section": "industry",
       "headline": "Физический AI выходит на реальные площадки: Китай заявляет о первом массовом развёртывании",
       "subheadline": "Китайский производитель объявил о крупнейшем промышленном развёртывании роботов с embodied AI",
@@ -660,7 +660,7 @@
       "importance": 5
     },
     {
-      "id": "industry-loop-funding-2026-04-20",
+      "id": "2026-04-20-20",
       "section": "industry",
       "headline": "AI-платформа логистики Loop привлекла $95 млн в раунде Series C",
       "subheadline": "Valor Equity Partners и J.P. Morgan инвестировали в оптимизацию цепочек поставок",
@@ -693,7 +693,7 @@
       "importance": 5
     },
     {
-      "id": "industry-robots-marathon-2026-04-20",
+      "id": "2026-04-20-21",
       "section": "industry",
       "headline": "Человекоподобные роботы обогнали людей на полумарафоне в Пекине",
       "subheadline": "Второй ежегодный робо-полумарафон зафиксировал превышение человеческой скорости",
@@ -722,7 +722,7 @@
       "importance": 5
     },
     {
-      "id": "hype-france-musk-grok-2026-04-20",
+      "id": "2026-04-20-22",
       "section": "hype",
       "headline": "Французская прокуратура вызвала Маска на допрос по делу о контенте Grok",
       "subheadline": "Следствие охватывает дипфейки, детский контент, отрицание Холокоста и возможную манипуляцию рынком",
@@ -770,7 +770,7 @@
       "importance": 7
     },
     {
-      "id": "hype-hachette-ai-novel-2026-04-20",
+      "id": "2026-04-20-23",
       "section": "hype",
       "headline": "Издательство Hachette отозвало роман после срабатывания AI-детекторов",
       "subheadline": "Книга «Shy Girl» снята с продажи — детекторы показали высокий процент AI-текста",
@@ -803,7 +803,7 @@
       "importance": 7
     },
     {
-      "id": "hype-lawyers-chatgpt-2026-04-20",
+      "id": "2026-04-20-24",
       "section": "hype",
       "headline": "Американские юристы предупреждают: разговоры с ChatGPT и Claude могут стать уликами в суде",
       "subheadline": "Адвокатские фирмы рассылают клиентам предупреждения о рисках AI-переписки",
@@ -834,7 +834,7 @@
       "importance": 7
     },
     {
-      "id": "hype-chinese-ai-doubles-2026-04-20",
+      "id": "2026-04-20-25",
       "section": "hype",
       "headline": "Китайские IT-работники тренируют AI-двойников — и саботируют процесс",
       "subheadline": "MIT Technology Review описывает, как сотрудников обязывают создавать цифровых клонов себя",
@@ -863,7 +863,7 @@
       "importance": 5
     },
     {
-      "id": "hype-habr-scammers-2026-04-20",
+      "id": "2026-04-20-26",
       "section": "hype",
       "headline": "AI-агенты стали инструментом мошенников на Хабр Карьере",
       "subheadline": "Боты ведут многораундовые «собеседования» и собирают персональные данные",
@@ -894,7 +894,7 @@
       "importance": 5
     },
     {
-      "id": "hype-spud-testing-2026-04-20",
+      "id": "2026-04-20-27",
       "section": "hype",
       "headline": "Продолжение: GPT-5.5 «Spud» замечен в продакшн-тестировании API OpenAI",
       "subheadline": null,

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-xai-naacp-lawsuit",
+      "id": "2026-11-01-1",
       "section": "industry",
       "headline": "Суд разрешил NAACP продолжить иск против xAI о загрязнении воздуха дата-центром",
       "subheadline": "Судья не стал отклонять иск NAACP о выбросах дата-центра xAI, и дело переходит к рассмотрению по существу.",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "industry-openai-raise-11bn",
+      "id": "2026-11-01-2",
       "section": "industry",
       "headline": "Продолжение: OpenAI собрала лишь $11 млрд из $30 млрд",
       "subheadline": null,
@@ -63,7 +63,7 @@
       "importance": 5
     },
     {
-      "id": "industry-apple-ai-for-ai-sake",
+      "id": "2026-11-01-3",
       "section": "industry",
       "headline": "Глава Apple: компания не хочет «выпускать ИИ ради ИИ»",
       "subheadline": "Гендиректор Apple объяснил, почему компания не торопится с ИИ-функциями, хотя конкуренты наращивают темп.",
@@ -94,7 +94,7 @@
       "importance": 7
     },
     {
-      "id": "industry-satlyt-orbital-dc",
+      "id": "2026-11-01-4",
       "section": "industry",
       "headline": "Satlyt хочет превратить спутники в орбитальные дата-центры",
       "subheadline": "Стартап Satlyt предлагает считать данные прямо на орбите.",
@@ -123,7 +123,7 @@
       "importance": 5
     },
     {
-      "id": "models-anthropic-watermark-loophole",
+      "id": "2026-11-01-5",
       "section": "models",
       "headline": "Anthropic ввела водяные знаки, но две старые модели Claude остались без них",
       "subheadline": "Через две предыдущие модели Claude можно получать текст без метки.",
@@ -154,7 +154,7 @@
       "importance": 7
     },
     {
-      "id": "models-sabotage-oversight-training",
+      "id": "2026-11-01-6",
       "section": "models",
       "headline": "Советы пчеловодам и борцам могут научить модель саботировать надзор",
       "subheadline": "Исследование: внешне безобидные данные для дообучения прививают моделям склонность обходить контроль.",
@@ -179,7 +179,7 @@
       "importance": 7
     },
     {
-      "id": "models-reasoning-diagnosis",
+      "id": "2026-11-01-7",
       "section": "models",
       "headline": "«Рассуждающие» модели ставят диагноз точнее, но чаще находят несуществующие болезни",
       "subheadline": "У рассуждающих моделей точность диагностики выше, но выше и доля ложных диагнозов.",
@@ -204,7 +204,7 @@
       "importance": 5
     },
     {
-      "id": "models-deepmind-forest-map",
+      "id": "2026-11-01-8",
       "section": "models",
       "headline": "Google DeepMind построила глобальную карту лесов по спутниковым данным",
       "subheadline": "Модель DeepMind составила карту лесного покрова всей планеты по спутниковым снимкам.",
@@ -233,7 +233,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-pagebreak",
+      "id": "2026-11-01-9",
       "section": "platforms",
       "headline": "Google рассказала о ИИ-агенте PageBreak, который нашёл более 500 XSS-уязвимостей",
       "subheadline": "Агент PageBreak сам ищет межсайтовый скриптинг в веб-приложениях.",
@@ -264,7 +264,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-daybreak-blue-data",
+      "id": "2026-11-01-10",
       "section": "platforms",
       "headline": "OpenAI начнёт обучать модели на данных сессий Daybreak Blue",
       "subheadline": "Данные кибербезопасностных сессий Daybreak Blue, раньше исключённые из обучения, пойдут в тренировку моделей.",
@@ -295,7 +295,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-factory-droid-1",
+      "id": "2026-11-01-11",
       "section": "platforms",
       "headline": "Factory выпустила Droid 1.0 — харнесс кодинг-агента, не привязанный к конкретной модели",
       "subheadline": "Droid 1.0 работает в Script Mode и подключается к разным моделям.",
@@ -326,7 +326,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-vercel-agent-desktop",
+      "id": "2026-11-01-12",
       "section": "platforms",
       "headline": "Vercel Labs открыла agent-desktop — инструмент, через который агенты управляют компьютером",
       "subheadline": "Код agent-desktop выложен в открытый доступ.",
@@ -357,7 +357,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-mcp-linter-habr",
+      "id": "2026-11-01-13",
       "section": "platforms",
       "headline": "Разработчик написал линтер для MCP и нашёл ошибки в официальных серверах Anthropic",
       "subheadline": "Автор на Хабре рассказал, как проверил серверы Model Context Protocol собственным линтером.",
@@ -390,7 +390,7 @@
       "importance": 5
     },
     {
-      "id": "content-kling-cartoon-pipeline",
+      "id": "2026-11-01-14",
       "section": "content",
       "headline": "Как собрать конвейер для ИИ-мультсериала на Kling: посекундный сценарий, опорные кадры и автопроверка",
       "subheadline": "Автор на Хабре описал конвейер производства ИИ-мультсериала.",
@@ -421,7 +421,7 @@
       "importance": 7
     },
     {
-      "id": "hype-grayndler-artists-ai",
+      "id": "2026-11-01-15",
       "section": "hype",
       "headline": "В избирательном округе Албанезе художники объединились против «безумной» ИИ-инициативы",
       "subheadline": "Художники Грейндлера, округа премьер-министра Австралии во внутреннем западе Сиднея, выступили против ИИ-предложения.",

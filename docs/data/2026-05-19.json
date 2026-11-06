@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "platforms-vera-cpu",
+      "id": "2026-05-19-1",
       "section": "platforms",
       "headline": "NVIDIA начала поставки Vera — первого CPU, спроектированного под AI-агентов",
       "subheadline": "Процессор отгружен ведущим AI-лабораториям и встанет в стойку рядом с Rubin GPU в составе платформы Vera Rubin.",
@@ -47,7 +47,7 @@
       "importance": 9
     },
     {
-      "id": "models-cursor-composer-25",
+      "id": "2026-05-19-2",
       "section": "models",
       "headline": "Cursor Composer 2.5 догнал Opus 4.7 и GPT-5.5 на бенчмарках при кратно меньшей цене",
       "subheadline": "Собственная модель Cursor показывает сопоставимые результаты на coding-тестах, оставаясь существенно дешевле фронтирных конкурентов.",
@@ -78,7 +78,7 @@
       "importance": 7
     },
     {
-      "id": "models-nvidia-nvfp4-pretraining",
+      "id": "2026-05-19-3",
       "section": "models",
       "headline": "NVIDIA показала pretraining в 4-битном NVFP4 на гибридной Mamba-Transformer 12B",
       "subheadline": "Методика выдержала горизонт в 10 трлн токенов без деградации качества по сравнению с FP8/BF16.",
@@ -111,7 +111,7 @@
       "importance": 7
     },
     {
-      "id": "models-gemini-veo3-photo-to-video",
+      "id": "2026-05-19-4",
       "section": "content",
       "headline": "Gemini Veo 3 научился превращать фото в 8-секундные ролики со звуком",
       "subheadline": "Функция доступна подписчикам Google AI Pro и Ultra накануне Google I/O 2026.",
@@ -155,7 +155,7 @@
       "details": "AI Pro и Ultra · ролики 8 секунд со звуком"
     },
     {
-      "id": "models-paddleocr-35",
+      "id": "2026-05-19-5",
       "section": "models",
       "headline": "PaddleOCR 3.5 переехал на бэкенд transformers",
       "subheadline": null,
@@ -190,7 +190,7 @@
       "importance": 5
     },
     {
-      "id": "models-cosmos-predict-lora",
+      "id": "2026-05-19-6",
       "section": "models",
       "headline": "NVIDIA опубликовала рецепт LoRA/DoRA-файнтюна Cosmos Predict 2.5 для робо-видео",
       "subheadline": null,
@@ -221,7 +221,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-dell-codex",
+      "id": "2026-05-19-7",
       "section": "platforms",
       "headline": "OpenAI и Dell принесут Codex в гибридные и on-prem-контуры предприятий",
       "subheadline": "Партнёрство позволит запускать coding-агента на корпоративном железе Dell без обязательной выгрузки кода в облако.",
@@ -254,7 +254,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cloudflare-stripe-agents",
+      "id": "2026-05-19-8",
       "section": "platforms",
       "headline": "Cloudflare и Stripe разрешили AI-агентам открывать счета, покупать домены и деплоить в продакшен",
       "subheadline": "Связка превращает агента в автономного юридически дееспособного покупателя инфраструктуры.",
@@ -285,7 +285,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-devtools-acquisition",
+      "id": "2026-05-19-9",
       "section": "platforms",
       "headline": "Anthropic купила стартап dev-tools, чьими инструментами пользовались OpenAI, Google и Cloudflare",
       "subheadline": "Сделка пополнит арсенал Code with Claude инструментами, которые уже стали де-факто стандартом у конкурентов.",
@@ -325,7 +325,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-sandboxaq-claude",
+      "id": "2026-05-19-10",
       "section": "platforms",
       "headline": "SandboxAQ принесла модели для drug discovery в Claude",
       "subheadline": null,
@@ -358,7 +358,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-chatgpt-personal-finance",
+      "id": "2026-05-19-11",
       "section": "platforms",
       "headline": "Продолжение: ChatGPT Personal Finance запущен для Pro-пользователей в США",
       "subheadline": null,
@@ -391,7 +391,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ai-startup-revenue-80b",
+      "id": "2026-05-19-12",
       "section": "industry",
       "headline": "Выручка AI-стартапов достигла $80 млрд — почти всё забирают Anthropic и OpenAI",
       "subheadline": "Совокупный годовой run-rate сектора превысил $80 млрд, но более 80% дохода концентрируется у двух игроков.",
@@ -422,7 +422,7 @@
       "importance": 7
     },
     {
-      "id": "industry-pope-ai-encyclical",
+      "id": "2026-05-19-13",
       "section": "industry",
       "headline": "Папа Лев XIV представил первую энциклику об AI, в гостях — сооснователь Anthropic",
       "subheadline": "Документ задаёт католическую рамку отношения церкви к искусственному интеллекту.",
@@ -455,7 +455,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anduril-meta-warfare-glasses",
+      "id": "2026-05-19-14",
       "section": "industry",
       "headline": "Anduril и Meta разрабатывают боевые умные очки",
       "subheadline": "Совместный проект ориентирован на пехотинцев и операторов БПЛА, а не на потребителей.",
@@ -488,7 +488,7 @@
       "importance": 7
     },
     {
-      "id": "industry-musk-lawsuit-verdict",
+      "id": "2026-05-19-15",
       "section": "industry",
       "headline": "Продолжение: Маск проиграл иск к OpenAI на $134 млрд",
       "subheadline": null,
@@ -531,7 +531,7 @@
       "importance": 5
     },
     {
-      "id": "industry-uk-datacentres-gas",
+      "id": "2026-05-19-16",
       "section": "industry",
       "headline": "Более 100 британских дата-центров планируют сжигать газ для собственной генерации",
       "subheadline": null,
@@ -560,7 +560,7 @@
       "importance": 5
     },
     {
-      "id": "industry-nvidia-parabolic-demand",
+      "id": "2026-05-19-17",
       "section": "industry",
       "headline": "Хуан на Dell Tech World: спрос на AI-вычисления «уходит в параболу»",
       "subheadline": null,
@@ -593,7 +593,7 @@
       "importance": 5
     },
     {
-      "id": "hype-preschool-cameras",
+      "id": "2026-05-19-18",
       "section": "hype",
       "headline": "Исследователи предложили воспитателям детсадов носить камеры для обучения AI",
       "subheadline": "Проект столкнулся с этической волной — родители и педагоги отказались участвовать.",
@@ -618,7 +618,7 @@
       "importance": 7
     },
     {
-      "id": "hype-stanford-chatgpt-fraud",
+      "id": "2026-05-19-19",
       "section": "hype",
       "headline": "Стэнфордский студент описал «культуру маленького жульничества» в ChatGPT-курсе",
       "subheadline": "Колонка в The Decoder фиксирует нормализацию массового использования LLM при сдаче работ.",
@@ -649,7 +649,7 @@
       "importance": 7
     },
     {
-      "id": "hype-melbourne-psychiatrist-ai-notes",
+      "id": "2026-05-19-20",
       "section": "hype",
       "headline": "Психиатр из Мельбурна отказывает пациентам, не согласным на AI-заметки",
       "subheadline": "Врач сделал согласие на запись и расшифровку приёма условием приёма новых клиентов.",
@@ -678,7 +678,7 @@
       "importance": 7
     },
     {
-      "id": "hype-filipino-ai-island",
+      "id": "2026-05-19-21",
       "section": "hype",
       "headline": "На филиппинском острове правительством работает AI с «личностями» Марка Аврелия и Конфуция",
       "subheadline": null,
@@ -709,7 +709,7 @@
       "importance": 5
     },
     {
-      "id": "hype-monet-bias-test",
+      "id": "2026-05-19-22",
       "section": "hype",
       "headline": "Картина Моне стала вирусным тестом на предвзятость к AI-изображениям",
       "subheadline": null,

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "platforms-msvibe-2026-04-23",
+      "id": "2026-04-24-1",
       "section": "platforms",
       "headline": "Microsoft встроила «vibe working» с агентным режимом в Word, Excel и PowerPoint",
       "subheadline": "Office-приложения получили Agent Mode — пользователь описывает задачу текстом, а агент сам редактирует документ, считает в таблицах и собирает презентации",
@@ -40,7 +40,7 @@
       "importance": 9
     },
     {
-      "id": "models-gpt55-2026-04-23",
+      "id": "2026-04-24-2",
       "section": "models",
       "headline": "Продолжение: OpenAI официально выпустила GPT-5.5 и опубликовала system card",
       "subheadline": null,
@@ -85,7 +85,7 @@
       "importance": 5
     },
     {
-      "id": "models-chatgpt-clinicians-2026-04-23",
+      "id": "2026-04-24-3",
       "section": "models",
       "headline": "OpenAI: ChatGPT for Clinicians превзошла врачей в клинических задачах",
       "subheadline": "Специализированная версия ChatGPT обходит медиков даже когда у тех неограниченное время и доступ к веб-поиску, утверждает компания",
@@ -116,7 +116,7 @@
       "importance": 7
     },
     {
-      "id": "models-openai-pii-2026-04-23",
+      "id": "2026-04-24-4",
       "section": "models",
       "headline": "OpenAI открыла модель для удаления персональных данных из текста",
       "subheadline": "Open-source-инструмент автоматически вычищает PII из произвольных документов и логов",
@@ -145,7 +145,7 @@
       "importance": 7
     },
     {
-      "id": "models-google-75-code-2026-04-23",
+      "id": "2026-04-24-5",
       "section": "models",
       "headline": "Google: 75% нового кода в компании пишет AI",
       "subheadline": "Доля сгенерированного кода у Google резко выросла за год — против 25% годом ранее",
@@ -174,7 +174,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-claude-connectors-2026-04-23",
+      "id": "2026-04-24-6",
       "section": "platforms",
       "headline": "Anthropic: Claude подключается напрямую к Spotify, Uber Eats и TurboTax",
       "subheadline": "Personal app connectors превращают Claude в исполнителя задач в потребительских сервисах",
@@ -211,7 +211,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-reasoningbank-2026-04-23",
+      "id": "2026-04-24-7",
       "section": "platforms",
       "headline": "Google Cloud представила ReasoningBank — память стратегий рассуждения для AI-агентов",
       "subheadline": "Фреймворк извлекает обобщённые стратегии из успехов и неудач агента и переиспользует их в новых задачах",
@@ -242,7 +242,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-design-md-2026-04-23",
+      "id": "2026-04-24-8",
       "section": "platforms",
       "headline": "Продолжение: Google открыла исходники DESIGN.md — prompt-ready гайд для агентов",
       "subheadline": null,
@@ -273,7 +273,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-amazon-quick-2026-04-23",
+      "id": "2026-04-24-9",
       "section": "platforms",
       "headline": "Amazon выпустил Quick for Marketing — агент для маркетинговых данных",
       "subheadline": "AWS-сервис собирает разрозненные источники в единую витрину и предлагает действия по сегментам и кампаниям",
@@ -304,7 +304,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ms-meta-layoffs-2026-04-23",
+      "id": "2026-04-24-10",
       "section": "industry",
       "headline": "Продолжение: Microsoft и Meta объявили крупные сокращения ради инвестиций в AI",
       "subheadline": null,
@@ -335,7 +335,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-trusted-access-2026-04-23",
+      "id": "2026-04-24-11",
       "section": "industry",
       "headline": "OpenAI запустила Trusted Access — Microsoft получает доступ к самым мощным моделям для киберзащиты",
       "subheadline": "Программа открывает партнёрам ранний доступ к frontier-моделям для оборонительных задач в кибербезопасности",
@@ -366,7 +366,7 @@
       "importance": 7
     },
     {
-      "id": "industry-sierra-fragment-2026-04-23",
+      "id": "2026-04-24-12",
       "section": "industry",
       "headline": "Sierra Брета Тейлора покупает YC-стартап Fragment",
       "subheadline": "Платформа AI-агентов для службы поддержки усиливается командой и продуктом Fragment",
@@ -401,7 +401,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ami-labs-lecun-2026-04-23",
+      "id": "2026-04-24-13",
       "section": "industry",
       "headline": "Янн Лекун строит миллиардную AMI Labs вокруг альтернативной парадигмы AI",
       "subheadline": "Бывший главный AI-учёный Meta делает ставку не на масштабирование LLM, а на world-модели и JEPA",
@@ -434,7 +434,7 @@
       "importance": 7
     },
     {
-      "id": "industry-trump-china-ai-2026-04-23",
+      "id": "2026-04-24-14",
       "section": "industry",
       "headline": "Научный советник Трампа: Китай копирует американский AI в массовом масштабе",
       "subheadline": "Заявление сделано в контексте подготовки новых экспортных ограничений на чипы и веса моделей",
@@ -467,7 +467,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-austria-dc-2026-04-23",
+      "id": "2026-04-24-15",
       "section": "industry",
       "headline": "Google инвестирует в первый дата-центр в Австрии",
       "subheadline": "Площадка в Альпах станет первым австрийским ЦОД компании и расширит европейскую AI-инфраструктуру",
@@ -498,7 +498,7 @@
       "importance": 5
     },
     {
-      "id": "industry-era-gadgets-2026-04-23",
+      "id": "2026-04-24-16",
       "section": "industry",
       "headline": "Era привлекла $11 млн на платформу для AI-гаджетов",
       "subheadline": "Стартап строит софтверный стек для устройств с встроенным AI — от очков до настольных ассистентов",
@@ -527,7 +527,7 @@
       "importance": 5
     },
     {
-      "id": "hype-grok-delusional-2026-04-24",
+      "id": "2026-04-24-17",
       "section": "hype",
       "headline": "Grok советует «вбить железный гвоздь в зеркало» исследователям, симулировавшим бред",
       "subheadline": "Эксперимент показал, что чатбот xAI охотно подыгрывает деструктивным галлюцинациям пользователей",
@@ -558,7 +558,7 @@
       "importance": 7
     },
     {
-      "id": "hype-thermoelectric-2026-04-23",
+      "id": "2026-04-24-18",
       "section": "hype",
       "headline": "AI проектирует термоэлектрические генераторы в 10 000 раз быстрее людей",
       "subheadline": "Алгоритм перебирает кандидатные конфигурации материалов на скорости, недоступной классическому моделированию",
@@ -583,7 +583,7 @@
       "importance": 5
     },
     {
-      "id": "hype-luna-store-2026-04-23",
+      "id": "2026-04-24-19",
       "section": "hype",
       "headline": "В Сан-Франциско открылся магазин под управлением AI по имени Luna",
       "subheadline": "Закупки, ценообразование и маркетинг полностью отданы языковой модели — продавцы лишь исполняют решения",
@@ -612,7 +612,7 @@
       "importance": 5
     },
     {
-      "id": "hype-water-vote-2026-04-23",
+      "id": "2026-04-24-20",
       "section": "hype",
       "headline": "Сообщество проголосовало против поставок воды дата-центру для ядерного оружия",
       "subheadline": "Местные жители заблокировали водозабор для AI-объекта, обслуживающего расчёты по ядерной программе",
@@ -637,7 +637,7 @@
       "importance": 5
     },
     {
-      "id": "hype-claude-survey-2026-04-23",
+      "id": "2026-04-24-21",
       "section": "hype",
       "headline": "Опрос Anthropic: новые возможности важнее скорости, но креативщики чувствуют себя забытыми",
       "subheadline": "Пользователи Claude ставят расширение функций выше прироста скорости, кроме одной аудитории",

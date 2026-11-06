@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gpt6-astra-hardware",
+      "id": "2026-11-04-1",
       "section": "models",
       "headline": "OpenAI: GPT-6 Astra меньше чем за неделю спроектировала аппаратное устройство с нуля",
       "subheadline": "OpenAI показывает модель как инструмент для инженерии физических устройств, а не только для кода и текста.",
@@ -44,7 +44,7 @@
       "importance": 9
     },
     {
-      "id": "models-anthropic-flashprove",
+      "id": "2026-11-04-2",
       "section": "models",
       "headline": "Anthropic представила FlashProve — криптографическое доказательство, что ответ дала конкретная модель",
       "subheadline": "Система подтверждает, что ответ сгенерирован зафиксированными заранее весами модели.",
@@ -80,7 +80,7 @@
       "importance": 7
     },
     {
-      "id": "models-allenai-statebench",
+      "id": "2026-11-04-3",
       "section": "models",
       "headline": "Allen Institute выпустил StateBench — бенчмарк на отслеживание изменений в длинных документах",
       "subheadline": "Бенчмарк проверяет, помнит ли модель, как менялось состояние объектов по ходу длинного текста.",
@@ -111,7 +111,7 @@
       "importance": 5
     },
     {
-      "id": "models-vk-kazrush",
+      "id": "2026-11-04-4",
       "section": "models",
       "headline": "VK открыла kazRush — модель перевода с русского на казахский",
       "subheadline": "Команда рассказала, как выбирала между объёмом обучающих данных и размером модели.",
@@ -142,7 +142,7 @@
       "importance": 5
     },
     {
-      "id": "models-ibm-palette",
+      "id": "2026-11-04-5",
       "section": "models",
       "headline": "IBM Research научила небольшую модель Palette собирать презентации в фирменном стиле",
       "subheadline": "Модель строит слайды по правилам дизайн-системы конкретной компании.",
@@ -173,7 +173,7 @@
       "importance": 5
     },
     {
-      "id": "models-llm-research-lag",
+      "id": "2026-11-04-6",
       "section": "models",
       "headline": "Исследование: LLM развиваются быстрее, чем наука успевает их объяснить",
       "subheadline": "Работы по интерпретации и анализу моделей не поспевают за выходом новых версий.",
@@ -198,7 +198,7 @@
       "importance": 5
     },
     {
-      "id": "models-nvidia-dgx-spark-moe",
+      "id": "2026-11-04-7",
       "section": "models",
       "headline": "NVIDIA показала три способа ускорить MoE-модели на DGX Spark: Ling-3.0-flash быстрее на 42,5%",
       "subheadline": "Оптимизации инференса подняли пропускную способность MoE-модели на настольной системе NVIDIA.",
@@ -231,7 +231,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-anthropic-message-threads",
+      "id": "2026-11-04-8",
       "section": "platforms",
       "headline": "Message Threads от Anthropic на 35% сокращают время до первого токена в длинных диалогах",
       "subheadline": "Механизм ускоряет ответы в долгих сессиях, в том числе в Claude Code.",
@@ -273,7 +273,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-siri-third-party-apps",
+      "id": "2026-11-04-9",
       "section": "platforms",
       "headline": "Apple начала открывать ИИ-функциям Siri доступ к сторонним приложениям",
       "subheadline": "Siri сможет выполнять действия не только в приложениях Apple.",
@@ -315,7 +315,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-schools-ai",
+      "id": "2026-11-04-10",
       "section": "platforms",
       "headline": "Школы смогут отключить ИИ-инструменты Google, но вместе с ними потеряют поиск",
       "subheadline": "В школьных аккаунтах ИИ-функции отключаются только вместе с Google Search.",
@@ -344,7 +344,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-apple-18-plus",
+      "id": "2026-11-04-11",
       "section": "platforms",
       "headline": "Apple ограничила дейтинг-приложения и ИИ-компаньонов пользователями старше 18 лет",
       "subheadline": "Новое возрастное ограничение в App Store распространяется на приложения знакомств и ИИ-компаньонов.",
@@ -375,7 +375,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-netflix-ai-discover",
+      "id": "2026-11-04-12",
       "section": "platforms",
       "headline": "Netflix запустил ИИ-вкладку Discover: фильм подбирают по настроению",
       "subheadline": "Пользователь описывает настроение, и сервис предлагает, что посмотреть.",
@@ -404,7 +404,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-antigravity-cheminformatics",
+      "id": "2026-11-04-13",
       "section": "platforms",
       "headline": "Google DeepMind показала агентную хемоинформатику в Antigravity",
       "subheadline": "Агенты в IDE Antigravity ведут вычислительные задачи химиков.",
@@ -435,7 +435,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-kodacode-1-3",
+      "id": "2026-11-04-14",
       "section": "platforms",
       "headline": "Kodacode 1.3: агент научился работать с приложениями и получил свой браузер",
       "subheadline": "Российский кодинг-агент вышел за пределы редактора кода.",
@@ -464,7 +464,7 @@
       "importance": 5
     },
     {
-      "id": "industry-fal-16b",
+      "id": "2026-11-04-15",
       "section": "industry",
       "headline": "Оценка инференс-стартапа fal удвоилась — до $16 млрд",
       "subheadline": "Платформа для генеративных медиа растёт на фоне спроса на инференс.",
@@ -493,7 +493,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nvidia-china-cloud",
+      "id": "2026-11-04-16",
       "section": "industry",
       "headline": "NVIDIA давит на облачных клиентов, чтобы те сократили бизнес в Китае",
       "subheadline": "Компания добивается от облачных партнёров меньшей работы с китайскими заказчиками.",
@@ -533,7 +533,7 @@
       "importance": 7
     },
     {
-      "id": "industry-canva-suse-layoffs",
+      "id": "2026-11-04-17",
       "section": "industry",
       "headline": "Canva сократит или переведёт более 1200 сотрудников, SUSE увольняет каждого десятого",
       "subheadline": "SUSE прямо объясняет сокращения ИИ и автоматизацией.",
@@ -569,7 +569,7 @@
       "importance": 7
     },
     {
-      "id": "industry-datacenter-power",
+      "id": "2026-11-04-18",
       "section": "industry",
       "headline": "Дата-центры ставят старые реактивные двигатели, в Великобритании ИИ запитают от Drax",
       "subheadline": "Пока подключения к сети приходится ждать, операторы ищут любые источники энергии.",
@@ -605,7 +605,7 @@
       "importance": 5
     },
     {
-      "id": "industry-chatgpt-search-google",
+      "id": "2026-11-04-19",
       "section": "industry",
       "headline": "OpenAI: ChatGPT догоняет Google в поиске",
       "subheadline": "Компания заявила, что по поисковым запросам сокращает отставание от Google.",
@@ -638,7 +638,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-bug-bounty",
+      "id": "2026-11-04-20",
       "section": "industry",
       "headline": "OpenAI подняла вознаграждения за найденные уязвимости до $172 тыс.",
       "subheadline": "Компания усиливает программу bug bounty.",
@@ -677,7 +677,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-army-secretary",
+      "id": "2026-11-04-21",
       "section": "industry",
       "headline": "Продолжение: OpenAI наняла бывшего министра армии США",
       "subheadline": null,
@@ -708,7 +708,7 @@
       "importance": 5
     },
     {
-      "id": "content-ai-video-cost-per-second",
+      "id": "2026-11-04-22",
       "section": "content",
       "headline": "Как посчитать реальную цену секунды ИИ-видео: оплаченные и принятые секунды",
       "subheadline": "Автор предлагает вести лог дублей на Python и считать стоимость только использованных секунд.",
@@ -737,7 +737,7 @@
       "importance": 5
     },
     {
-      "id": "content-nexus-mods-ai",
+      "id": "2026-11-04-23",
       "section": "content",
       "headline": "Nexus Mods, крупнейший сайт модов для PC-игр, ввёл правила об ИИ-контенте",
       "subheadline": "Авторы модов должны будут раскрывать использование генеративного ИИ.",
@@ -766,7 +766,7 @@
       "importance": 5
     },
     {
-      "id": "hype-positive-technologies-ai-attack",
+      "id": "2026-11-04-24",
       "section": "hype",
       "headline": "Positive Technologies: ИИ-агенты впервые полностью провели атаку на российскую компанию",
       "subheadline": "От проникновения до утечки данных прошло около трёх часов.",
@@ -797,7 +797,7 @@
       "importance": 7
     },
     {
-      "id": "hype-cps-prosecutor-fake-case",
+      "id": "2026-11-04-25",
       "section": "hype",
       "headline": "Британский прокурор сослался в Высоком суде на несуществующее дело, найденное через ИИ",
       "subheadline": "Королевская прокурорская служба назвала это «серьёзным провалом».",
@@ -828,7 +828,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ao3-clone-takedowns",
+      "id": "2026-11-04-26",
       "section": "hype",
       "headline": "Навайбкоженный клон AO3 упал после 2000 жалоб от авторов фанфиков за день",
       "subheadline": "Авторы завалили сайт уведомлениями о нарушении авторских прав.",
@@ -857,7 +857,7 @@
       "importance": 5
     },
     {
-      "id": "hype-wow-forever-ai-slop",
+      "id": "2026-11-04-27",
       "section": "hype",
       "headline": "World of Warcraft: Forever уже заполонил ИИ-мусор",
       "subheadline": "Вокруг игры размножается сгенерированный ИИ контент низкого качества.",
@@ -886,7 +886,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dagestan-fake-license",
+      "id": "2026-11-04-28",
       "section": "hype",
       "headline": "Житель Дагестана подделал водительские права с помощью ИИ, плёнки и зажигалки",
       "subheadline": "Суд назначил ему год и два месяца ограничения свободы.",
@@ -917,7 +917,7 @@
       "importance": 5
     },
     {
-      "id": "hype-learjet-ai-image",
+      "id": "2026-11-04-29",
       "section": "hype",
       "headline": "Вирусное фото «крушения Learjet во Флориде» оказалось обработано ИИ",
       "subheadline": "На снимке нет деталей самолёта, которые видны на настоящих кадрах.",
@@ -946,7 +946,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ai-backlash-polls",
+      "id": "2026-11-04-30",
       "section": "hype",
       "headline": "Продолжение: недовольство ИИ дошло до избирательных участков",
       "subheadline": null,

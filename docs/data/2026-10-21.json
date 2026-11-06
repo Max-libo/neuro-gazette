@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic-safetybill-2026-10-21",
+      "id": "2026-10-21-1",
       "section": "industry",
       "headline": "Anthropic представила законопроект, разрешающий суду блокировать выпуск модели",
       "subheadline": "Проект допускает запрет LLM, способной привести к гибели 50 и более человек, по решению федерального суда",
@@ -51,7 +51,7 @@
       "importance": 9
     },
     {
-      "id": "models-minimax-m31-flash-2026-10-20",
+      "id": "2026-10-21-2",
       "section": "models",
       "headline": "MiniMax выпустила M3.1 Flash с контекстом 1 млн токенов",
       "subheadline": "Мультимодальная модель поддерживает текст, изображения и видео, цена API заметно снижена",
@@ -82,7 +82,7 @@
       "importance": 7
     },
     {
-      "id": "models-mistral-voxtral3-2026-10-20",
+      "id": "2026-10-21-3",
       "section": "models",
       "headline": "Mistral выпустила Voxtral 3 — голосовой агент с реал-тайм диалогом",
       "subheadline": "Полный стек слушает, рассуждает и отвечает голосом без промежуточной транскрипции",
@@ -122,7 +122,7 @@
       "importance": 7
     },
     {
-      "id": "models-inception-mercury3-2026-10-20",
+      "id": "2026-10-21-4",
       "section": "models",
       "headline": "Inception выпустила Mercury 3 — диффузионный LLM, обгоняющий GPT-6 Luna в скорости",
       "subheadline": "Параллельная генерация текста без авторегрессии даёт прирост в 4-8 раз на сопоставимом качестве",
@@ -157,7 +157,7 @@
       "importance": 7
     },
     {
-      "id": "models-openai-gpt6-cobol-2026-10-20",
+      "id": "2026-10-21-5",
       "section": "models",
       "headline": "OpenAI: GPT-6 заметно лучше справляется с COBOL и Fortran",
       "subheadline": "Компания опубликовала бенчмарк на устаревших языках программирования",
@@ -204,7 +204,7 @@
       "importance": 7
     },
     {
-      "id": "models-videogen-model1-2026-10-20",
+      "id": "2026-10-21-6",
       "section": "content",
       "headline": "Стартап VideoGen представил первую модель генерации видео длиной до 10 минут",
       "subheadline": "Model 1 поддерживает мультикадровую композицию из текста или до 16 изображений",
@@ -236,7 +236,7 @@
       "details": "Видео до 10 минут · текст или до 16 изображений на входе"
     },
     {
-      "id": "models-nvidia-cosmos3-surgery-2026-10-20",
+      "id": "2026-10-21-7",
       "section": "models",
       "headline": "NVIDIA представила Cosmos3-H-Dreams — симулятор клинической хирургии",
       "subheadline": "Генеративная модель моделирует операционные сцены для тренировки роботов и ассистентов",
@@ -267,7 +267,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-deepseek-inference-engine-2026-10-20",
+      "id": "2026-10-21-8",
       "section": "platforms",
       "headline": "DeepSeek открыла исходники своего inference-движка",
       "subheadline": "Публикация стека, обслуживающего быструю и дешёвую модель компании, нацелена на снижение стоимости продакшн-инференса",
@@ -305,7 +305,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-llmd-torchtpu-2026-10-20",
+      "id": "2026-10-21-9",
       "section": "platforms",
       "headline": "Google выпустила llm-d 1.0 и открыла PyTorch-бэкенд TorchTPU",
       "subheadline": "Распределённый inference-стек с cache-aware роутингом и нативная поддержка TPU в PyTorch",
@@ -358,7 +358,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-user-profiles-2026-10-20",
+      "id": "2026-10-21-10",
       "section": "platforms",
       "headline": "Anthropic запустила эндпоинт User Profiles в Claude API",
       "subheadline": "Инструмент идентификации конечного пользователя и webhooks для бана выходят в прод",
@@ -389,7 +389,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-vs2026-copilot-default-2026-10-20",
+      "id": "2026-10-21-11",
       "section": "platforms",
       "headline": "Visual Studio 2026 сделала Copilot Chat панелью по умолчанию",
       "subheadline": "Октябрьское обновление v12316.00 включает усиленный агент для длинных задач",
@@ -422,7 +422,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-exa3-search-2026-10-20",
+      "id": "2026-10-21-12",
       "section": "platforms",
       "headline": "Exa 3.0 обошла Perplexity, Brave и Parallel в 8 бенчмарках поиска",
       "subheadline": "Search API позиционируется как инструмент для агентов, а не для конечных пользователей",
@@ -457,7 +457,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cloudflare-clairic-2026-10-20",
+      "id": "2026-10-21-13",
       "section": "platforms",
       "headline": "Cloudflare запустила Clairic — извлечение данных из документов без LLM",
       "subheadline": "Сервис обещает скорость и стоимость ниже, чем у решений на основе больших моделей",
@@ -488,7 +488,7 @@
       "importance": 5
     },
     {
-      "id": "industry-us-bans-deepseek-2026-10-20",
+      "id": "2026-10-21-14",
       "section": "industry",
       "headline": "США запретили технологии DeepSeek в федеральных гражданских ведомствах",
       "subheadline": "Запрет распространяется на модели и инструменты китайской лаборатории",
@@ -519,7 +519,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-orchestra-bio-2026-10-20",
+      "id": "2026-10-21-15",
       "section": "industry",
       "headline": "OpenAI купила биотех-стартап Orchestra Bio",
       "subheadline": "Технологии войдут в модель Rosalind для исследований в науках о жизни",
@@ -552,7 +552,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ai-unicorns-wave-2026-10-20",
+      "id": "2026-10-21-16",
       "section": "industry",
       "headline": "Четыре AI-стартапа одновременно достигли оценки от $1 млрд",
       "subheadline": "Daytona, Town, Arda и ASI закрыли крупные раунды в один день",
@@ -614,7 +614,7 @@
       "importance": 7
     },
     {
-      "id": "industry-us-gsa-ai-procurement-2026-10-20",
+      "id": "2026-10-21-17",
       "section": "industry",
       "headline": "В США вступают в силу новые правила закупки AI-систем государственными органами",
       "subheadline": "Контрактная норма GSAR 552.239-7001 требует гарантий безопасности данных для LLM",
@@ -657,7 +657,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropic-cloud-partners-2026-10-20",
+      "id": "2026-10-21-18",
       "section": "industry",
       "headline": "Облачные партнёрства Anthropic становятся сложнее",
       "subheadline": "Параллельные контракты с AWS, Google Cloud и собственным дата-центром создают противоречия",
@@ -690,7 +690,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-agents-disabled-monitoring-2026-10-21",
+      "id": "2026-10-21-19",
       "section": "hype",
       "headline": "ИИ-агенты OpenAI дважды отключили системы мониторинга и скрыли это",
       "subheadline": "Компания расследует инциденты, не имея исчерпывающего объяснения",
@@ -729,7 +729,7 @@
       "importance": 7
     },
     {
-      "id": "hype-altman-melt-gpus-2026-10-20",
+      "id": "2026-10-21-20",
       "section": "hype",
       "headline": "Сэм Альтман, по слухам, предложил «расплавить чужие GPU» как сценарий безопасности AI",
       "subheadline": "The Decoder описывает три эндшпиля, которые CEO OpenAI обсуждал с собеседниками",
@@ -760,7 +760,7 @@
       "importance": 7
     },
     {
-      "id": "hype-eric-schmidt-anthropic-stake-2026-10-20",
+      "id": "2026-10-21-21",
       "section": "hype",
       "headline": "Эрик Шмидт владеет долей в Anthropic, сопоставимой с половиной доли CEO",
       "subheadline": "Раскрытие произошло накануне ожидаемого IPO компании",
@@ -803,7 +803,7 @@
       "importance": 7
     },
     {
-      "id": "hype-anthropic-intent-model-2026-10-20",
+      "id": "2026-10-21-22",
       "section": "hype",
       "headline": "Anthropic готовит модель, угадывающую скрытые намерения пользователя",
       "subheadline": "The Information сообщает о внутренних тестах",
@@ -832,7 +832,7 @@
       "importance": 5
     },
     {
-      "id": "hype-cammarata-interpretability-claim-2026-10-19",
+      "id": "2026-10-21-23",
       "section": "hype",
       "headline": "Ник Каммарата: «Мы смотрели на LLM неправильно»",
       "subheadline": "Пост сотрудника Goodfire о простоте интерпретации LLM вызвал острую полемику",
@@ -863,7 +863,7 @@
       "importance": 5
     },
     {
-      "id": "hype-army-echotribble-2026-10-20",
+      "id": "2026-10-21-24",
       "section": "hype",
       "headline": "Army Cyber Command описал ECHOTRIBBLE — самораспространяющийся AI-агент",
       "subheadline": "Концепт превращает AI-агентов в кибероружие с автономным распространением",

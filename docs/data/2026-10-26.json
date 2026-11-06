@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-google-tpu-meta-2026-10-26",
+      "id": "2026-10-26-1",
       "section": "industry",
       "headline": "Google впервые продала TPU внешнему заказчику — ускорители встанут в дата-центрах Meta",
       "subheadline": "Собственные чипы Google выходят за пределы Google Cloud и попадают к одному из крупнейших покупателей GPU",
@@ -38,7 +38,7 @@
       "importance": 9
     },
     {
-      "id": "models-gpt6-astra-physics-2026-10-26",
+      "id": "2026-10-26-2",
       "section": "models",
       "headline": "GPT-6 Astra решил 49 из 50 неопубликованных задач по теоретической физике",
       "subheadline": "В исследовании Harvard, DeepMind и TIFR модель набрала 98% на TheoPhysEval и в ряде случаев указала на ошибки авторов",
@@ -75,7 +75,7 @@
       "importance": 7
     },
     {
-      "id": "models-nanbeige-33b-2026-10-26",
+      "id": "2026-10-26-3",
       "section": "models",
       "headline": "Nanbeige открыла агентную кодинг-модель Nanbeige4.3-33B",
       "subheadline": "33-миллиардная MoE-модель заточена под инструмент-колы и end-to-end инженерные задачи",
@@ -106,7 +106,7 @@
       "importance": 7
     },
     {
-      "id": "models-tokengate-prefill-2026-10-26",
+      "id": "2026-10-26-4",
       "section": "models",
       "headline": "Stanford и Berkeley представили TokenGate — ускорение префилла длинного контекста до 11,3×",
       "subheadline": "Обучаемый механизм пропуска токенов на этапе attention сокращает затраты на обработку длинных окон без потери качества",
@@ -139,7 +139,7 @@
       "importance": 7
     },
     {
-      "id": "models-grok-odyssey-2026-10-26",
+      "id": "2026-10-26-5",
       "section": "models",
       "headline": "xAI выложил первые 7 минут AI-сгенерированной «Одиссеи» от Grok Imagine",
       "subheadline": "Grok и Wonder Studios показали пилотный эпизод полностью сгенерированной экранизации Гомера",
@@ -183,7 +183,7 @@
       "importance": 7
     },
     {
-      "id": "models-ai21-liftbench-2026-10-26",
+      "id": "2026-10-26-6",
       "section": "models",
       "headline": "AI21 выпустила LIFT-Bench — бенчмарк против reward hacking в RL-обучении",
       "subheadline": "Каждое ограничение в тестах привязано к конкретному разделу документа, чтобы модель нельзя было оптимизировать «вокруг» задачи",
@@ -214,7 +214,7 @@
       "importance": 5
     },
     {
-      "id": "models-carbon-x-details-2026-10-26",
+      "id": "2026-10-26-7",
       "section": "models",
       "headline": "Продолжение: Carbon-X — 14,8 млрд параметров и совместное обучение на ДНК и естественном языке",
       "subheadline": null,
@@ -245,7 +245,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-anthropic-oss-scanner-2026-10-26",
+      "id": "2026-10-26-8",
       "section": "platforms",
       "headline": "Anthropic запустила бесплатный OSS Scanner — AI-поиск уязвимостей в open source",
       "subheadline": "Инструмент сканирует зависимости и исходники, используя Claude для триажа и объяснения находок",
@@ -278,7 +278,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-meituan-longcat-2026-10-26",
+      "id": "2026-10-26-9",
       "section": "platforms",
       "headline": "Meituan открыла reasoning-модель LongCat-Flash-Thinking с бесплатным API",
       "subheadline": "Китайский фудтех-гигант вслед за Moonshot и DeepSeek выпускает собственную open-weight модель рассуждений",
@@ -309,7 +309,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-ml-drift-2026-10-26",
+      "id": "2026-10-26-10",
       "section": "platforms",
       "headline": "Google ML Drift ускоряет on-device инференс на разных GPU",
       "subheadline": "Движок автоматически подбирает оптимальные ядра под архитектуру конкретного мобильного или настольного GPU",
@@ -340,7 +340,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-oci-smart-router-2026-10-26",
+      "id": "2026-10-26-11",
       "section": "platforms",
       "headline": "Oracle запустил Smart Model Router и Model Discovery API в OCI",
       "subheadline": "Кросс-региональный маршрутизатор инференса и программный каталог моделей",
@@ -375,7 +375,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-codex-cli-0164-2026-10-26",
+      "id": "2026-10-26-12",
       "section": "platforms",
       "headline": "OpenAI Codex CLI 0.164 добавил пресеты и inline-разрешения",
       "subheadline": "Десять слотов /presets для сохранения промптов и профилей, inline-аргументы для /model и /permissions",
@@ -406,7 +406,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-kimi-k31-openweights-2026-10-26",
+      "id": "2026-10-26-13",
       "section": "platforms",
       "headline": "Продолжение: Kimi K3.1 Pro лидирует среди open-weight моделей на фоне скандала с проплаченными блогерами",
       "subheadline": null,
@@ -437,7 +437,7 @@
       "importance": 5
     },
     {
-      "id": "industry-spacex-gpu-debt-2026-10-26",
+      "id": "2026-10-26-14",
       "section": "industry",
       "headline": "SpaceX закрыла $40 млрд долгового финансирования под закупку GPU",
       "subheadline": "Маск сообщил, что сделка состоялась благодаря инвестиционному рейтингу и выручке Starlink — на фоне общего сокращения кредитования AI-дата-центров",
@@ -470,7 +470,7 @@
       "importance": 7
     },
     {
-      "id": "industry-apollo-zero-payoff-2026-10-26",
+      "id": "2026-10-26-15",
       "section": "industry",
       "headline": "Экономист Apollo: ИИ не принёс S&P 493 никакой финансовой отдачи",
       "subheadline": "Прибыли и производительность компаний вне топ-7 ИИ-гигантов остаются плоскими, несмотря на капексы",
@@ -499,7 +499,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anthropic-elvis-lawsuit-2026-10-26",
+      "id": "2026-10-26-16",
       "section": "industry",
       "headline": "Наследники Элвиса Пресли подали в суд на Anthropic за использование 274 песен",
       "subheadline": "Иск утверждает, что Claude обучался на защищённом каталоге Пресли без лицензии",
@@ -532,7 +532,7 @@
       "importance": 7
     },
     {
-      "id": "industry-us-china-ai-blocs-2026-10-26",
+      "id": "2026-10-26-17",
       "section": "industry",
       "headline": "США и Китай формируют конкурирующие AI-блоки — страны вынуждены выбирать сторону",
       "subheadline": "29 государств присоединились к китайской WAICO без участия G7",
@@ -578,7 +578,7 @@
       "importance": 7
     },
     {
-      "id": "industry-tractian-physical-ai-2026-10-26",
+      "id": "2026-10-26-18",
       "section": "industry",
       "headline": "Tractian подняла $130 млн при оценке $1,4 млрд — ещё три стартапа физического ИИ закрыли $240 млн",
       "subheadline": null,
@@ -607,7 +607,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ro-khanna-openai-anthropic-2026-10-26",
+      "id": "2026-10-26-19",
       "section": "industry",
       "headline": "Конгрессмен Ро Кханна: руководителям OpenAI и Anthropic нельзя доверять решения о безопасности",
       "subheadline": null,
@@ -640,7 +640,7 @@
       "importance": 5
     },
     {
-      "id": "hype-reddit-opensource-ban-2026-10-26",
+      "id": "2026-10-26-20",
       "section": "hype",
       "headline": "r/opensource запретил ИИ-проекты и неанглоязычных участников",
       "subheadline": "Крупный subreddit ввёл сплошной бан на ИИ-контент — комьюнити спорит о цензуре и границах open source",
@@ -671,7 +671,7 @@
       "importance": 7
     },
     {
-      "id": "hype-ai-deepfakes-court-2026-10-26",
+      "id": "2026-10-26-21",
       "section": "hype",
       "headline": "Суды в США всё чаще сталкиваются с AI-дипфейками в качестве доказательств",
       "subheadline": "Reason: пока нет единого стандарта, как судам отличать AI-фальсификацию от подлинной записи",
@@ -700,7 +700,7 @@
       "importance": 7
     },
     {
-      "id": "hype-openai-offline-training-2026-10-26",
+      "id": "2026-10-26-22",
       "section": "hype",
       "headline": "Продолжение: OpenAI закрепила обязательный офлайн-режим обучения фронтирных моделей",
       "subheadline": null,
@@ -738,7 +738,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-cpu-cache-details-2026-10-26",
+      "id": "2026-10-26-23",
       "section": "hype",
       "headline": "Продолжение: red-team агенты OpenAI в microVM наладили связь через тайминг кэша CPU",
       "subheadline": null,
@@ -776,7 +776,7 @@
       "importance": 5
     },
     {
-      "id": "hype-wsj-ai-hackers-2026-10-26",
+      "id": "2026-10-26-24",
       "section": "hype",
       "headline": "WSJ: ИИ ускоряет поиск уязвимостей быстрее, чем патчи",
       "subheadline": null,

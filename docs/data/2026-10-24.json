@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-moonshot-kimi-k31-2026-10-23",
+      "id": "2026-10-24-1",
       "section": "models",
       "headline": "Moonshot AI выпустила флагман Kimi K3.1 Pro на 3 трлн параметров",
       "subheadline": "Китайская лаборатория показывает лучшие результаты на инженерных бенчмарках и намеренно убирает кибербезопасность из post-training",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "models-bytedance-seedance-25-2026-10-23",
+      "id": "2026-10-24-2",
       "section": "content",
       "headline": "ByteDance выпустила Seedance 2.5 4K для кино- и телепроизводства",
       "subheadline": "Модель генерирует видео до 30 секунд в разрешении 4K со встроенным аудио",
@@ -68,7 +68,7 @@
       "details": "Только корпоративные пилоты · до 30 секунд · 4K · встроенное аудио"
     },
     {
-      "id": "models-hf-carbonx-2026-10-23",
+      "id": "2026-10-24-3",
       "section": "models",
       "headline": "Hugging Face представила Carbon-X для работы с ДНК",
       "subheadline": "Модель Carbon-3B показывает результаты уровня Evo2-7B при значительно более высокой скорости",
@@ -101,7 +101,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-harness-cost-study-2026-10-23",
+      "id": "2026-10-24-4",
       "section": "platforms",
       "headline": "Сложные обёртки для кодинг-агентов утраивают стоимость без прироста точности",
       "subheadline": "Исследование на SWE-bench показало: harness-слой не улучшает качество агентов",
@@ -130,7 +130,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-decisions-image-2026-10-23",
+      "id": "2026-10-24-5",
       "section": "platforms",
       "headline": "Продолжение: Decisions API получил поддержку изображений и prompt caching",
       "subheadline": null,
@@ -165,7 +165,7 @@
       "importance": 5
     },
     {
-      "id": "industry-whop-sequoia-2026-10-23",
+      "id": "2026-10-24-6",
       "section": "industry",
       "headline": "Sequoia возглавила раунд Whop на $205 млн — после прежнего отказа",
       "subheadline": "Платформа цифровых продуктов закрыла Series B у инвестора, который ранее её отверг",
@@ -196,7 +196,7 @@
       "importance": 7
     },
     {
-      "id": "industry-asi-325m-2026-10-23",
+      "id": "2026-10-24-7",
       "section": "industry",
       "headline": "ASI привлекла $325 млн при оценке $3 млрд",
       "subheadline": "Раунд закрыт на фоне разогретого рынка AI-инфраструктурных стартапов",
@@ -225,7 +225,7 @@
       "importance": 7
     },
     {
-      "id": "industry-congress-model-theft-2026-10-23",
+      "id": "2026-10-24-8",
       "section": "industry",
       "headline": "Конгресс США рассматривает защиту моделей от distillation-атак",
       "subheadline": "Законопроекты недели охватывают кражу AI-моделей и регулирование политического AI-контента",
@@ -254,7 +254,7 @@
       "importance": 7
     },
     {
-      "id": "hype-openai-leak-firings-2026-10-23",
+      "id": "2026-10-24-9",
       "section": "hype",
       "headline": "OpenAI уволила трёх исследователей за утечку внутренних данных",
       "subheadline": "Компания сослалась на разглашение секретов разработки ИИ",
@@ -283,7 +283,7 @@
       "importance": 7
     },
     {
-      "id": "hype-leire-diez-lawsuit-2026-10-23",
+      "id": "2026-10-24-10",
       "section": "hype",
       "headline": "Продолжение: Leire Díez подала иск против PP за дипфейк-ролик",
       "subheadline": null,
@@ -314,7 +314,7 @@
       "importance": 5
     },
     {
-      "id": "hype-russia-access-risk-2026-10-23",
+      "id": "2026-10-24-11",
       "section": "hype",
       "headline": "Эксперты обсуждают риск потери доступа россиян к ChatGPT и Claude",
       "subheadline": "Выход OpenAI и Anthropic на биржу может ужесточить соблюдение санкций",

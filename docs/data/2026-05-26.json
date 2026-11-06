@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-alphaproof-nexus",
+      "id": "2026-05-26-1",
       "section": "models",
       "headline": "AlphaProof Nexus от Google DeepMind решает многолетние математические задачи за несколько сотен долларов",
       "subheadline": "Система автоматического доказательства закрыла ряд давно открытых проблем при минимальных вычислительных затратах.",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "models-gemma4-mtp",
+      "id": "2026-05-26-2",
       "section": "models",
       "headline": "Gemma 4 получила предсказание нескольких токенов и ускорила генерацию почти втрое",
       "subheadline": "Multi-Token Prediction в Gemma 4 даёт до ~3x прироста скорости вывода.",
@@ -65,7 +65,7 @@
       "importance": 7
     },
     {
-      "id": "models-together-oscar",
+      "id": "2026-05-26-3",
       "section": "models",
       "headline": "Together AI открыла OSCAR — 2-битное квантование KV-кэша с учётом внимания",
       "subheadline": "Система рассчитана на обслуживание моделей с длинным контекстом.",
@@ -96,7 +96,7 @@
       "importance": 7
     },
     {
-      "id": "models-right-answers-wrong-sources",
+      "id": "2026-05-26-4",
       "section": "models",
       "headline": "Модели часто дают верный ответ, но ссылаются не на тот источник",
       "subheadline": "Совпадение ответа с истиной не гарантирует корректной атрибуции.",
@@ -121,7 +121,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-grok-build",
+      "id": "2026-05-26-5",
       "section": "platforms",
       "headline": "xAI выпустила Grok Build — агентский кодер в CLI",
       "subheadline": "Инструмент построен на модели grok-build-0.1 с контекстом 256k токенов.",
@@ -157,7 +157,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-workos-authmd",
+      "id": "2026-05-26-6",
       "section": "platforms",
       "headline": "WorkOS представила auth.md — открытый протокол регистрации агентов поверх OAuth",
       "subheadline": "Стандарт описывает, как ИИ-агенты регистрируются и аутентифицируются.",
@@ -188,7 +188,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-microsoft-mdash",
+      "id": "2026-05-26-7",
       "section": "platforms",
       "headline": "Microsoft представила MDASH для масштабного поиска уязвимостей с помощью ИИ",
       "subheadline": "Система нацелена на крупномасштабное исследование уязвимостей.",
@@ -219,7 +219,7 @@
       "importance": 5
     },
     {
-      "id": "industry-whitehouse-9b-intel",
+      "id": "2026-05-26-8",
       "section": "industry",
       "headline": "Белый дом одобрил запрос на $9 млрд для ИИ-инфраструктуры разведслужб",
       "subheadline": "Деньги пойдут на ИИ-инфраструктуру американского разведывательного сообщества.",
@@ -250,7 +250,7 @@
       "importance": 7
     },
     {
-      "id": "industry-clickup-layoff",
+      "id": "2026-05-26-9",
       "section": "industry",
       "headline": "ClickUp уволил 22% штата, заменив сотрудников примерно 3000 ИИ-агентами",
       "subheadline": "Случай рассматривают как прецедент массового замещения персонала корпоративными агентами.",
@@ -279,7 +279,7 @@
       "importance": 7
     },
     {
-      "id": "industry-louisiana-meta-land",
+      "id": "2026-05-26-10",
       "section": "industry",
       "headline": "Сенатор Луизианы помог Meta с крупнейшим дата-центром, а затем продал землю рядом",
       "subheadline": "The Guardian описывает конфликт интересов вокруг сделки по дата-центру Meta.",
@@ -310,7 +310,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anti-datacenter-laws",
+      "id": "2026-05-26-11",
       "section": "industry",
       "headline": "404 Media собрала список успешных законов против дата-центров",
       "subheadline": "Подборка случаев, когда местные сообщества блокировали стройку ЦОД.",
@@ -341,7 +341,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-rsi-researcher",
+      "id": "2026-05-26-12",
       "section": "industry",
       "headline": "OpenAI ищет исследователя рисков рекурсивного самосовершенствования ИИ с зарплатой до $445 000",
       "subheadline": "Вакансия открыта в команде Preparedness.",
@@ -370,7 +370,7 @@
       "importance": 5
     },
     {
-      "id": "hype-george-hotz-coding-agents",
+      "id": "2026-05-26-13",
       "section": "hype",
       "headline": "Джордж Хотц назвал агентов-кодеров «одной из самых дорогих ошибок» в разработке ПО",
       "subheadline": "Известный хакер выступил против ставки индустрии на автономных агентов.",
@@ -399,7 +399,7 @@
       "importance": 7
     },
     {
-      "id": "hype-gigaai-robot",
+      "id": "2026-05-26-14",
       "section": "hype",
       "headline": "Китайский стартап GigaAI обещает робота-домработника за 1 млн рублей к 2027 году",
       "subheadline": "Заявленный срок и цена вызывают вопросы о реалистичности.",
@@ -428,7 +428,7 @@
       "importance": 7
     },
     {
-      "id": "hype-pope-encyclical-followup",
+      "id": "2026-05-26-15",
       "section": "hype",
       "headline": "Продолжение: энциклика об ИИ «Magnifica Humanitas» вышла объёмом 42 000 слов",
       "subheadline": null,

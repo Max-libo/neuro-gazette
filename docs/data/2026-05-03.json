@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-summary-2026-05-03",
+      "id": "2026-05-03-1",
       "section": "industry",
       "headline": "Сводный выпуск 30 апреля — 3 мая",
       "subheadline": "Четыре дня в одном выпуске: пайплайн не работал из-за технического сбоя",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "industry-pentagon-il6-il7-2026-05-03",
+      "id": "2026-05-03-2",
       "section": "industry",
       "headline": "Пентагон развернёт AI Nvidia, Microsoft, AWS, Google и OpenAI в засекреченных сетях",
       "subheadline": "Контракты охватывают уровни IL6 и IL7; Anthropic в список не попала из-за ограничений на слежку и автономное оружие",
@@ -76,7 +76,7 @@
       "importance": 7
     },
     {
-      "id": "industry-kkr-helix-10b-2026-05-03",
+      "id": "2026-05-03-3",
       "section": "industry",
       "headline": "KKR поднял свыше $10 млрд под новую AI-инфраструктурную компанию Helix",
       "subheadline": "Helix Digital Infrastructure возглавит экс-глава AWS Адам Селипски",
@@ -109,7 +109,7 @@
       "importance": 7
     },
     {
-      "id": "industry-meta-ari-robotics-2026-05-03",
+      "id": "2026-05-03-4",
       "section": "industry",
       "headline": "Meta купила робототехнический стартап ARI и забрала команду в Superintelligence Labs",
       "subheadline": "Сделка усиливает направление гуманоидных роботов и «физического AGI»",
@@ -142,7 +142,7 @@
       "importance": 7
     },
     {
-      "id": "industry-common-crawl-publishers-2026-05-03",
+      "id": "2026-05-03-5",
       "section": "industry",
       "headline": "CNN, NBC, USA Today и другие требуют удалить их контент из Common Crawl",
       "subheadline": "News/Media Alliance подал формальное письмо с запретом на использование архивов для обучения AI",
@@ -177,7 +177,7 @@
       "importance": 7
     },
     {
-      "id": "industry-china-court-ai-firing-2026-05-03",
+      "id": "2026-05-03-6",
       "section": "industry",
       "headline": "Суд в Китае запретил увольнять сотрудников ради замены ИИ",
       "subheadline": "Прецедент по делу технического работника, чью роль автоматизировали LLM",
@@ -206,7 +206,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-microsoft-agent-365-ga-2026-05-03",
+      "id": "2026-05-03-7",
       "section": "platforms",
       "headline": "Microsoft Agent 365 вышел в общую доступность по $15 за пользователя в месяц",
       "subheadline": "Control plane для AI-агентов в корпоративной среде с интеграциями AWS Bedrock и Google Cloud",
@@ -241,7 +241,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-codex-upgrade-2026-05-03",
+      "id": "2026-05-03-8",
       "section": "platforms",
       "headline": "OpenAI расширила Codex до фонового агента на macOS с 90+ интеграциями",
       "subheadline": "Альтман назвал апдейт «ChatGPT-моментом» Codex; недельная аудитория — 3+ млн разработчиков",
@@ -272,7 +272,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-anthropic-claude-security-beta-2026-05-03",
+      "id": "2026-05-03-9",
       "section": "platforms",
       "headline": "Anthropic открыла Claude Security в публичной бете для Enterprise",
       "subheadline": "Сканирование уязвимостей, валидация ложных срабатываний и предложения патчей без API-интеграции",
@@ -303,7 +303,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gemini-cli-v040-2026-05-03",
+      "id": "2026-05-03-10",
       "section": "platforms",
       "headline": "Gemini CLI v0.40.0 получил многоуровневую память и локальный роутинг в Gemma",
       "subheadline": "Автогенерация skills и переработанный UI",
@@ -336,7 +336,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-manus-cloud-computer-2026-05-03",
+      "id": "2026-05-03-11",
       "section": "platforms",
       "headline": "Manus запустила Cloud Computer для постоянно работающих агентов",
       "subheadline": "24/7 боты, постоянные базы и плановые скрейперы без необходимости писать код",
@@ -367,7 +367,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-replit-agent-free-day-2026-05-03",
+      "id": "2026-05-03-12",
       "section": "platforms",
       "headline": "Replit на 10-летие открыл бесплатный доступ к Agent на сутки",
       "subheadline": "Кампания «Agent on us» — 2 мая",
@@ -396,7 +396,7 @@
       "importance": 5
     },
     {
-      "id": "models-openai-chatgpt-clinicians-2026-05-03",
+      "id": "2026-05-03-13",
       "section": "models",
       "headline": "OpenAI запустила бесплатный ChatGPT для клиницистов в США",
       "subheadline": "Поиск с цитатами, deep research по медлитературе и поддержка CME для верифицированных пользователей",
@@ -429,7 +429,7 @@
       "importance": 7
     },
     {
-      "id": "models-nsa-anthropic-mythos-2026-05-03",
+      "id": "2026-05-03-14",
       "section": "models",
       "headline": "АНБ тестирует Claude Mythos для поиска уязвимостей в массовом ПО",
       "subheadline": "По данным Bloomberg, в фокусе — продукты Microsoft",
@@ -464,7 +464,7 @@
       "importance": 7
     },
     {
-      "id": "models-qwen-scope-sae-2026-05-03",
+      "id": "2026-05-03-15",
       "section": "models",
       "headline": "Alibaba открыла Qwen-Scope — sparse-автоэнкодеры для интерпретации Qwen3",
       "subheadline": "14 SAE-весов под 7 вариантов моделей Qwen3 и Qwen3.5",
@@ -497,7 +497,7 @@
       "importance": 5
     },
     {
-      "id": "hype-apple-afm-plus-150b-2026-05-03",
+      "id": "2026-05-03-16",
       "section": "hype",
       "headline": "В тестовых сборках Apple всплыла модель AFM Plus на 150B параметров",
       "subheadline": "За месяц до WWDC 2026, где ожидается крупный апгрейд Siri",
@@ -530,7 +530,7 @@
       "importance": 5
     },
     {
-      "id": "hype-anthropic-claude-jupiter-2026-05-03",
+      "id": "2026-05-03-17",
       "section": "hype",
       "headline": "Anthropic запустила red-team тест модели claude-jupiter-v1-p",
       "subheadline": "Внутреннее кодовое имя замечено TestingCatalog",
@@ -561,7 +561,7 @@
       "importance": 5
     },
     {
-      "id": "hype-sacks-mythos-cyber-2026-05-03",
+      "id": "2026-05-03-18",
       "section": "hype",
       "headline": "Дэвид Сакс назвал Anthropic Mythos первой моделью, автоматизирующей кибератаки",
       "subheadline": "Цифровой царь Белого дома: остальные frontier-модели догонят за полгода",
@@ -594,7 +594,7 @@
       "importance": 5
     },
     {
-      "id": "hype-clawbank-agent-incorporation-2026-05-03",
+      "id": "2026-05-03-19",
       "section": "hype",
       "headline": "ClawBank показал AI-агента, который сам зарегистрировал юрлицо и открыл счёт",
       "subheadline": "Демо вызвало дискуссию о границах KYC/AML для автономных агентов",
@@ -623,7 +623,7 @@
       "importance": 5
     },
     {
-      "id": "hype-oobit-tether-agent-cards-2026-05-03",
+      "id": "2026-05-03-20",
       "section": "hype",
       "headline": "Oobit от Tether запустил Visa-совместимые «Agent Cards» для покупок ботами",
       "subheadline": "Виртуальные карты с лимитами в USDT и без человеческого подтверждения",

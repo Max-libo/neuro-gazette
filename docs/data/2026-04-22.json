@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gptimage2-2026-04-22",
+      "id": "2026-04-22-1",
       "section": "content",
       "headline": "OpenAI выпустила GPT-Image-2 — генератор изображений с нативным reasoning",
       "subheadline": "Модель рассуждает перед генерацией, рендерит мультиязычный текст и за 12 часов заняла первое место на Image Arena",
@@ -77,7 +77,7 @@
       "details": "До 4K · до 8 связных изображений за запрос · ChatGPT и API"
     },
     {
-      "id": "models-mlintern-2026-04-22",
+      "id": "2026-04-22-2",
       "section": "models",
       "headline": "Hugging Face выпустила ml-intern — AI-агент автоматизирует полный цикл пост-тренировки LLM",
       "subheadline": "Открытый агент ищет статьи на arXiv, обучает и оценивает модели — и обходит Claude Code на PostTrainBench",
@@ -110,7 +110,7 @@
       "importance": 7
     },
     {
-      "id": "models-mifi-2026-04-22",
+      "id": "2026-04-22-3",
       "section": "models",
       "headline": "В НИЯУ МИФИ создали нейросеть, устойчивую к отравлению данных",
       "subheadline": "Модель сохраняет точность свыше 97% при подмешивании вредоносных образцов в обучающую выборку",
@@ -139,7 +139,7 @@
       "importance": 5
     },
     {
-      "id": "models-opus47bug-2026-04-22",
+      "id": "2026-04-22-4",
       "section": "models",
       "headline": "Продолжение: Claude Opus 4.7 демонстрирует тот же баг в агентном режиме, что и бюджетная Gemma 4",
       "subheadline": null,
@@ -172,7 +172,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-copilot-2026-04-22",
+      "id": "2026-04-22-5",
       "section": "platforms",
       "headline": "GitHub приостановил регистрацию в Copilot Pro и ужесточил лимиты из-за взрывного роста нагрузки",
       "subheadline": "Еженедельные операционные затраты почти удвоились с января — агентские сессии потребляют кратно больше ресурсов",
@@ -227,7 +227,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-fal-2026-04-22",
+      "id": "2026-04-22-6",
       "section": "content",
       "headline": "fal открыла корпоративный API-доступ к GPT Image 2 без листа ожидания",
       "subheadline": "Платформа предлагает генерацию, редактирование, апскейл и конвертацию в видео через единый API",
@@ -261,7 +261,7 @@
       "details": "Корпоративный API · коммерческое использование с первого дня"
     },
     {
-      "id": "platforms-geminiapi-2026-04-22",
+      "id": "2026-04-22-7",
       "section": "platforms",
       "headline": "Продолжение: Google добавила в Gemini API модели Gemma 4 и инференс-тиры Flex и Priority",
       "subheadline": null,
@@ -294,7 +294,7 @@
       "importance": 5
     },
     {
-      "id": "industry-amazon-anthropic-2026-04-22",
+      "id": "2026-04-22-8",
       "section": "industry",
       "headline": "Amazon вложит ещё $25 млрд в Anthropic в обмен на обязательства по $100 млрд в AWS",
       "subheadline": "Anthropic получает до 5 ГВт мощностей на чипах Trainium — ответ в «вычислительных войнах» с OpenAI",
@@ -353,7 +353,7 @@
       "importance": 7
     },
     {
-      "id": "industry-prometheus-2026-04-22",
+      "id": "2026-04-22-9",
       "section": "industry",
       "headline": "Джефф Безос близок к закрытию раунда на $10 млрд для AI-лаборатории Project Prometheus",
       "subheadline": "Оценка стартапа составляет $38 млрд; среди инвесторов — JPMorgan и BlackRock",
@@ -388,7 +388,7 @@
       "importance": 7
     },
     {
-      "id": "industry-spacex-cursor-2026-04-22",
+      "id": "2026-04-22-10",
       "section": "industry",
       "headline": "Продолжение: SpaceX разрабатывает AI-инструмент совместно с Cursor и может купить стартап за $60 млрд",
       "subheadline": null,
@@ -419,7 +419,7 @@
       "importance": 5
     },
     {
-      "id": "industry-soundhound-2026-04-22",
+      "id": "2026-04-22-11",
       "section": "industry",
       "headline": "SoundHound AI объявила о поглощении LivePerson через обмен акциями",
       "subheadline": "Котировки SoundHound упали после анонса сделки",
@@ -450,7 +450,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ct-senate-2026-04-22",
+      "id": "2026-04-22-12",
       "section": "industry",
       "headline": "Сенат Коннектикута принял законопроект о регулировании frontier-моделей AI",
       "subheadline": "SB 5 создаёт AI-песочницу и ограничивает использование чатботов несовершеннолетними",
@@ -481,7 +481,7 @@
       "importance": 5
     },
     {
-      "id": "industry-eu-health-2026-04-22",
+      "id": "2026-04-22-13",
       "section": "industry",
       "headline": "Еврокомиссия выделила €63,2 млн на AI в здравоохранении и онлайн-безопасности",
       "subheadline": "Семь грантовых конкурсов по программе Digital Europe — включая €9 млн на AI-скрининг онкологии",
@@ -521,7 +521,7 @@
       "importance": 5
     },
     {
-      "id": "industry-neocognition-2026-04-22",
+      "id": "2026-04-22-14",
       "section": "industry",
       "headline": "NeoCognition привлёк $40 млн на разработку агентов с непрерывным обучением",
       "subheadline": "Стартап вышел из стелс-режима при поддержке Cambium Capital и Walden Catalyst",
@@ -554,7 +554,7 @@
       "importance": 5
     },
     {
-      "id": "hype-meta-keystrokes-2026-04-22",
+      "id": "2026-04-22-15",
       "section": "hype",
       "headline": "Meta устанавливает шпионское ПО на компьютеры сотрудников для обучения AI",
       "subheadline": "Система записывает нажатия клавиш, движения мыши и делает скриншоты рабочего процесса",
@@ -583,7 +583,7 @@
       "importance": 7
     },
     {
-      "id": "hype-mcclatchy-2026-04-22",
+      "id": "2026-04-22-16",
       "section": "hype",
       "headline": "Журналисты McClatchy восстали против публикации AI-статей под их именами",
       "subheadline": "Три профсоюза подали жалобы — более 30 авторов Sacramento Bee отказались ставить подписи",
@@ -632,7 +632,7 @@
       "importance": 7
     },
     {
-      "id": "hype-wikipedia-bot-2026-04-22",
+      "id": "2026-04-22-17",
       "section": "hype",
       "headline": "Wikipedia заблокировала AI-агента, редактировавшего статьи без разрешения",
       "subheadline": "Бот TomWikiAssist самостоятельно писал и редактировал статьи, не пройдя процедуру регистрации",
@@ -663,7 +663,7 @@
       "importance": 7
     },
     {
-      "id": "hype-gosduma-ai-2026-04-22",
+      "id": "2026-04-22-18",
       "section": "hype",
       "headline": "Госдума запретила использование AI-образов людей в предвыборной агитации",
       "subheadline": "Закон требует согласия граждан на использование их нейросетевых изображений и голосов",
@@ -694,7 +694,7 @@
       "importance": 5
     },
     {
-      "id": "hype-vs-russia-ai-2026-04-22",
+      "id": "2026-04-22-19",
       "section": "hype",
       "headline": "Верховный суд России использовал AI при подготовке судебных разъяснений",
       "subheadline": "Судья Горшков сообщил, что нейросеть помогала в работе над проектом постановления пленума",
@@ -725,7 +725,7 @@
       "importance": 5
     },
     {
-      "id": "hype-voiceactors-2026-04-22",
+      "id": "2026-04-22-20",
       "section": "hype",
       "headline": "Актёры озвучки Бразилии, Индии и Мексики начали кампанию против AI-дубляжа",
       "subheadline": "Профессионалы требуют запрета на обучение моделей на их голосах без согласия",

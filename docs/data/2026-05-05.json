@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-wh-vetting-2026-05-05",
+      "id": "2026-05-05-1",
       "section": "industry",
       "headline": "Белый дом обсуждает обязательную госпроверку ИИ-моделей перед релизом",
       "subheadline": "Администрация Трампа консультируется с OpenAI, Google и Anthropic о формате предварительной валидации",
@@ -48,7 +48,7 @@
       "importance": 9
     },
     {
-      "id": "models-gemini-api-2026-05-05",
+      "id": "2026-05-05-2",
       "section": "models",
       "headline": "Google открыла Computer Use в Gemini API и выпустила Veo 3.1 Lite",
       "subheadline": "Обновление API добавляет управление браузером и десктопом, облегчённую видеомодель и live-режим для голосовых агентов",
@@ -83,7 +83,7 @@
       "importance": 7
     },
     {
-      "id": "models-humain-one-2026-05-05",
+      "id": "2026-05-05-3",
       "section": "models",
       "headline": "HUMAIN запустила корпоративную ОС для автономных AI-агентов на инфраструктуре AWS",
       "subheadline": "Саудовская компания позиционирует HUMAIN ONE как первый enterprise-grade слой для развёртывания и управления агентами в масштабе",
@@ -116,7 +116,7 @@
       "importance": 7
     },
     {
-      "id": "models-omni-leak-2026-05-05",
+      "id": "2026-05-05-4",
       "section": "models",
       "headline": "В интерфейсе Gemini нашли упоминание модели Omni для генерации видео",
       "subheadline": "За дни до Google I/O 2026 в UI видеогенерации появилась надпись «Powered by Omni»",
@@ -164,7 +164,7 @@
       "importance": 7
     },
     {
-      "id": "models-mythos-withhold-2026-05-05",
+      "id": "2026-05-05-5",
       "section": "models",
       "headline": "Anthropic отказалась от публичного релиза модели Mythos из-за рисков безопасности",
       "subheadline": null,
@@ -195,7 +195,7 @@
       "importance": 5
     },
     {
-      "id": "models-deployment-co-2026-05-05",
+      "id": "2026-05-05-6",
       "section": "models",
       "headline": "Продолжение: OpenAI закрыла Deployment Company при оценке $10 млрд",
       "subheadline": null,
@@ -232,7 +232,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-bedrock-webhooks-2026-05-05",
+      "id": "2026-05-05-7",
       "section": "platforms",
       "headline": "В Gemini API появились webhooks для длительных задач",
       "subheadline": "Push-уведомления заменяют polling при batch-инференсе и fine-tuning",
@@ -263,7 +263,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-amazon-quick-2026-05-05",
+      "id": "2026-05-05-8",
       "section": "platforms",
       "headline": "AWS обновила Amazon Quick: текстовые промпты для дашбордов и Q&A по датасетам",
       "subheadline": "Сервис учится строить визуализации по запросам на естественном языке и подключаться к S3 Tables",
@@ -304,7 +304,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-zyphra-tsp-2026-05-05",
+      "id": "2026-05-05-9",
       "section": "platforms",
       "headline": "Zyphra представила Tensor and Sequence Parallelism — ускорение тренировки в 2,6 раза",
       "subheadline": null,
@@ -333,7 +333,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-doordash-ai-2026-05-05",
+      "id": "2026-05-05-10",
       "section": "platforms",
       "headline": "DoorDash запустил AI для онбординга ресторанов и ретуши фото блюд",
       "subheadline": null,
@@ -362,7 +362,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-bedrock-codex-2026-05-05",
+      "id": "2026-05-05-11",
       "section": "platforms",
       "headline": "Продолжение: Codex CLI и Managed Agents OpenAI вышли в Amazon Bedrock",
       "subheadline": null,
@@ -404,7 +404,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ai-literacy-bill-2026-05-05",
+      "id": "2026-05-05-12",
       "section": "industry",
       "headline": "OpenAI, Google и Microsoft поддержали законопроект о финансировании AI-грамотности в школах",
       "subheadline": "Билл сенаторов Шиффа и Раундса предусматривает гранты на обучение учителей и закупку ИИ-инструментов",
@@ -441,7 +441,7 @@
       "importance": 7
     },
     {
-      "id": "industry-state-ai-laws-2026-05-05",
+      "id": "2026-05-05-13",
       "section": "industry",
       "headline": "США: Коннектикут принял AI-закон, в Колорадо предложен новый билль взамен Colorado AI Act",
       "subheadline": "Еженедельный обзор фиксирует движение в трёх штатах сразу",
@@ -476,7 +476,7 @@
       "importance": 7
     },
     {
-      "id": "industry-huang-jobs-2026-05-05",
+      "id": "2026-05-05-14",
       "section": "industry",
       "headline": "Дженсен Хуанг: AI создаёт «огромное число рабочих мест»",
       "subheadline": null,
@@ -507,7 +507,7 @@
       "importance": 5
     },
     {
-      "id": "industry-kenya-health-ai-2026-05-05",
+      "id": "2026-05-05-15",
       "section": "industry",
       "headline": "В Кении AI-реформа здравоохранения увеличила расходы для бедных",
       "subheadline": null,
@@ -536,7 +536,7 @@
       "importance": 5
     },
     {
-      "id": "hype-google-fiddler-2026-05-05",
+      "id": "2026-05-05-16",
       "section": "hype",
       "headline": "Канадский скрипач судится с Google: AI Overview ложно назвал его сексуальным преступником",
       "subheadline": "Эшли Макайзак требует возмещения ущерба за ответы поисковика, которые видели тысячи пользователей",
@@ -567,7 +567,7 @@
       "importance": 7
     },
     {
-      "id": "hype-farage-llm-2026-05-05",
+      "id": "2026-05-05-17",
       "section": "hype",
       "headline": "AI-чат-боты непропорционально часто упоминают Найджела Фараджа в ответах о британской политике",
       "subheadline": "Исследование зафиксировало смещение выдачи в сторону лидера Reform UK",
@@ -598,7 +598,7 @@
       "importance": 7
     },
     {
-      "id": "hype-roomba-creator-2026-05-05",
+      "id": "2026-05-05-18",
       "section": "hype",
       "headline": "Создатель Roomba возвращается с пушистым AI-компаньоном",
       "subheadline": null,
@@ -629,7 +629,7 @@
       "importance": 5
     },
     {
-      "id": "hype-altman-gpt55-party-2026-05-05",
+      "id": "2026-05-05-19",
       "section": "hype",
       "headline": "Альтман попросил GPT-5.5 спланировать собственную launch-вечеринку",
       "subheadline": null,
@@ -662,7 +662,7 @@
       "importance": 5
     },
     {
-      "id": "hype-vine-divine-2026-05-05",
+      "id": "2026-05-05-20",
       "section": "hype",
       "headline": "Vine возвращается под брендом Divine и обещает площадку без AI-шлака",
       "subheadline": null,

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-msoai-next-phase-2026-04-28",
+      "id": "2026-04-28-1",
       "section": "industry",
       "headline": "Microsoft и OpenAI объявили следующую фазу партнёрства",
       "subheadline": "OpenAI получает право на самостоятельные сделки и независимый запуск AGI, Microsoft — продлённый коммерческий доступ и долю в реструктурированной компании",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "industry-deepmind-silver-1b-2026-04-28",
+      "id": "2026-04-28-2",
       "section": "industry",
       "headline": "Дэвид Сильвер из DeepMind привлёк $1,1 млрд на AI, обучающийся без человеческих данных",
       "subheadline": "Соавтор AlphaGo собрал крупнейший раунд для лаборатории, делающей ставку на reinforcement learning без размеченных данных",
@@ -65,7 +65,7 @@
       "importance": 7
     },
     {
-      "id": "industry-china-blocks-meta-manus-2026-04-28",
+      "id": "2026-04-28-3",
       "section": "industry",
       "headline": "Китай заблокировал сделку Meta по покупке AI-стартапа Manus за $2 млрд",
       "subheadline": "Регуляторы остановили поглощение разработчика автономных AI-агентов из Уханя, ссылаясь на национальные интересы",
@@ -98,7 +98,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-employees-pentagon-2026-04-28",
+      "id": "2026-04-28-4",
       "section": "industry",
       "headline": "Сотрудники Google потребовали от Пичаи отказаться от секретных военных контрактов",
       "subheadline": "Открытое письмо подписали тысячи работников после новостей о возможном использовании Gemini в оборонных проектах",
@@ -133,7 +133,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ms-junior-devs-2026-04-28",
+      "id": "2026-04-28-5",
       "section": "industry",
       "headline": "Microsoft предупредила: AI выкашивает стартовый уровень разработчиков",
       "subheadline": "Марк Руссинович и Скотт Хансельман заявили, что компании перестают нанимать джуниоров — и через 5 лет некому будет занимать сеньорские позиции",
@@ -166,7 +166,7 @@
       "importance": 7
     },
     {
-      "id": "industry-musk-altman-court-2026-04-28",
+      "id": "2026-04-28-6",
       "section": "industry",
       "headline": "Продолжение: Маск и Альтман встретятся в суде из-за будущего OpenAI",
       "subheadline": null,
@@ -199,7 +199,7 @@
       "importance": 5
     },
     {
-      "id": "industry-palantir-khan-2026-04-28",
+      "id": "2026-04-28-7",
       "section": "industry",
       "headline": "Продолжение: Мэр Лондона может заблокировать контракт Скотленд-Ярда с Palantir",
       "subheadline": null,
@@ -232,7 +232,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-fedramp-2026-04-28",
+      "id": "2026-04-28-8",
       "section": "platforms",
       "headline": "OpenAI получила сертификацию FedRAMP Moderate",
       "subheadline": "ChatGPT Enterprise и API теперь доступны федеральным агентствам США для работы с чувствительными неклассифицированными данными",
@@ -265,7 +265,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-deepmind-korea-2026-04-28",
+      "id": "2026-04-28-9",
       "section": "platforms",
       "headline": "Google DeepMind заключил партнёрство с Республикой Корея",
       "subheadline": "Совместные программы по исследованиям, госсервисам и подготовке кадров с правительственным AI-офисом",
@@ -296,7 +296,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-canonical-ubuntu-ai-2026-04-28",
+      "id": "2026-04-28-10",
       "section": "platforms",
       "headline": "Canonical представила план интеграции AI в Ubuntu Linux",
       "subheadline": "Дистрибутив получит локальные модели, ассистента в терминале и инструменты для запуска LLM на устройстве",
@@ -327,7 +327,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-copilot-usage-pricing-2026-04-28",
+      "id": "2026-04-28-11",
       "section": "platforms",
       "headline": "GitHub Copilot переходит на оплату по использованию с 1 июня",
       "subheadline": "Фиксированная подписка $10/мес заменяется тарифом по токенам после взрывного роста нагрузки",
@@ -358,7 +358,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-midjourney-highres-2026-04-28",
+      "id": "2026-04-28-12",
       "section": "content",
       "headline": "Midjourney запустила оценку изображений в высоком разрешении",
       "subheadline": null,
@@ -388,7 +388,7 @@
       "details": "Оценка изображений в полном разрешении"
     },
     {
-      "id": "platforms-google-youtube-chatbot-2026-04-28",
+      "id": "2026-04-28-13",
       "section": "platforms",
       "headline": "Google тестирует AI-чат-поиск внутри YouTube",
       "subheadline": null,
@@ -421,7 +421,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-poisoning-agents-2026-04-28",
+      "id": "2026-04-28-14",
       "section": "platforms",
       "headline": "Google: вредоносные веб-страницы массово отравляют AI-агентов",
       "subheadline": null,
@@ -450,7 +450,7 @@
       "importance": 5
     },
     {
-      "id": "models-meta-sapiens2-2026-04-28",
+      "id": "2026-04-28-15",
       "section": "models",
       "headline": "Meta выпустила Sapiens2 — мультизадачную модель для анализа человеческой фигуры",
       "subheadline": "Открытая модель решает позирование, сегментацию, нормали, pointmap и albedo в высоком разрешении",
@@ -481,7 +481,7 @@
       "importance": 7
     },
     {
-      "id": "models-moss-audio-2026-04-28",
+      "id": "2026-04-28-16",
       "section": "models",
       "headline": "OpenMOSS выпустила MOSS-Audio — открытую foundation-модель для звука",
       "subheadline": "Единая модель работает с речью, музыкой, звуковыми эффектами и temporal-reasoning по аудио",
@@ -512,7 +512,7 @@
       "importance": 7
     },
     {
-      "id": "models-talkie-1930-2026-04-28",
+      "id": "2026-04-28-17",
       "section": "models",
       "headline": "Talkie-1930: 13B-модель, обученная только на текстах до 1931 года",
       "subheadline": null,
@@ -541,7 +541,7 @@
       "importance": 5
     },
     {
-      "id": "models-nvidia-raw2insights-2026-04-28",
+      "id": "2026-04-28-18",
       "section": "models",
       "headline": "NVIDIA выпустила Raw2Insights-US для адаптивной ультразвуковой визуализации",
       "subheadline": null,
@@ -572,7 +572,7 @@
       "importance": 5
     },
     {
-      "id": "hype-openai-phone-chips-2026-04-28",
+      "id": "2026-04-28-19",
       "section": "hype",
       "headline": "OpenAI разрабатывает собственный смартфон с AI-агентами вместо приложений",
       "subheadline": "По данным источников, чипы делают MediaTek и Qualcomm, интерфейс заменит традиционные иконки агентами",
@@ -610,7 +610,7 @@
       "importance": 7
     },
     {
-      "id": "hype-canva-palestine-2026-04-28",
+      "id": "2026-04-28-20",
       "section": "hype",
       "headline": "Canva извинилась за AI-инструмент, заменявший слово «Palestine» в дизайнах",
       "subheadline": "Magic Layers удалял или подменял палестинский флаг и название страны в пользовательских макетах",
@@ -641,7 +641,7 @@
       "importance": 7
     },
     {
-      "id": "hype-taylor-swift-trademark-2026-04-28",
+      "id": "2026-04-28-21",
       "section": "hype",
       "headline": "Тейлор Свифт зарегистрировала торговые марки на голос и образ",
       "subheadline": null,
@@ -670,7 +670,7 @@
       "importance": 5
     },
     {
-      "id": "hype-japan-baggage-robots-2026-04-28",
+      "id": "2026-04-28-22",
       "section": "hype",
       "headline": "Японский аэропорт начал тесты гуманоидных роботов-грузчиков",
       "subheadline": null,
@@ -699,7 +699,7 @@
       "importance": 5
     },
     {
-      "id": "hype-third-websites-ai-2026-04-28",
+      "id": "2026-04-28-23",
       "section": "hype",
       "headline": "Треть новых сайтов в интернете создаётся AI",
       "subheadline": null,
@@ -724,7 +724,7 @@
       "importance": 5
     },
     {
-      "id": "hype-deepmind-llm-conscious-2026-04-28",
+      "id": "2026-04-28-24",
       "section": "hype",
       "headline": "Google DeepMind: LLM никогда не станут сознательными",
       "subheadline": null,
@@ -753,7 +753,7 @@
       "importance": 5
     },
     {
-      "id": "hype-asu-ai-slop-lectures-2026-04-28",
+      "id": "2026-04-28-25",
       "section": "hype",
       "headline": "Профессоры ASU обнаружили, что их лекции переработаны в AI-курс без согласия",
       "subheadline": null,

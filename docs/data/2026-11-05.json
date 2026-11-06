@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gpt6-astra-weights",
+      "id": "2026-11-05-1",
       "section": "models",
       "headline": "GPT-6 Astra «видит матрицу»: модель перепрограммирует другие нейросети через их веса",
       "subheadline": "По данным The Decoder, GPT-6 Astra анализирует веса чужих моделей и меняет их поведение прямой правкой весов.",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "models-webai-twil-8b",
+      "id": "2026-11-05-2",
       "section": "models",
       "headline": "webAI выпустила TwIL-8B — рассуждающую модель на 8,8 млрд параметров",
       "subheadline": "На бенчмарке MATH-500 модель набрала 98,2 балла.",
@@ -65,7 +65,7 @@
       "importance": 7
     },
     {
-      "id": "models-ricursive-ripple-65b",
+      "id": "2026-11-05-3",
       "section": "models",
       "headline": "Ricursive AI открыла веса Ripple-65B Preview",
       "subheadline": "Плотная модель на 65 млрд параметров набрала 80,5 на Terminal-Bench 2.1.",
@@ -96,7 +96,7 @@
       "importance": 7
     },
     {
-      "id": "models-tencent-wevisone-vl",
+      "id": "2026-11-05-4",
       "section": "models",
       "headline": "Tencent объединила детекцию, OCR, сегментацию и маттинг в одной модели WeVisOne-VL",
       "subheadline": "Визуально-языковая модель заменяет четыре отдельных инструмента компьютерного зрения.",
@@ -127,7 +127,7 @@
       "importance": 5
     },
     {
-      "id": "models-baidu-world-model",
+      "id": "2026-11-05-5",
       "section": "models",
       "headline": "Baidu представила модель мира для физического ИИ",
       "subheadline": "AI Business разбирает, что новая модель даёт роботам и в чём остаются сложности.",
@@ -156,7 +156,7 @@
       "importance": 5
     },
     {
-      "id": "models-cloudops-benchmark",
+      "id": "2026-11-05-6",
       "section": "models",
       "headline": "Открытый бенчмарк по облачной эксплуатации: главное слабое место ИИ — рассуждения",
       "subheadline": "Моделям не хватает не знаний об инфраструктуре, а умения рассуждать над инцидентами.",
@@ -181,7 +181,7 @@
       "importance": 5
     },
     {
-      "id": "models-stanford-brain-model",
+      "id": "2026-11-05-7",
       "section": "models",
       "headline": "Стэнфорд строит открытую «цифровую модель мозга»",
       "subheadline": "Университет запускает проект открытой вычислительной модели мозга.",
@@ -210,7 +210,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-daybreak-red-govcloud",
+      "id": "2026-11-05-8",
       "section": "platforms",
       "headline": "OpenAI вывела Daybreak Red в AWS GovCloud",
       "subheadline": "Сервис стал доступен в регионе GovCloud (US-East) для госзаказчиков США.",
@@ -250,7 +250,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-amazon-quick-smart-approvals",
+      "id": "2026-11-05-9",
       "section": "platforms",
       "headline": "В Amazon Quick появились Smart Approvals — подтверждение человеком там, где это важно",
       "subheadline": "Агенты Amazon Quick запрашивают согласие человека только на значимые действия.",
@@ -281,7 +281,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gemini-home-att",
+      "id": "2026-11-05-10",
       "section": "platforms",
       "headline": "Gemini for Home подключили к системе безопасности AT&T",
       "subheadline": "Ассистент Google работает с системой Connected Life от AT&T.",
@@ -314,7 +314,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-dharma-field-extractor",
+      "id": "2026-11-05-11",
       "section": "platforms",
       "headline": "Dharma AI выпустила Field Extractor: документ на входе, поля в JSON на выходе",
       "subheadline": "Инструмент извлекает структурированные поля из документов любого типа.",
@@ -345,7 +345,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-nothing-ai-device",
+      "id": "2026-11-05-12",
       "section": "platforms",
       "headline": "Nothing выпустит своё ИИ-устройство в следующем месяце",
       "subheadline": "Глава Nothing назвал срок выхода гаджета, построенного вокруг ИИ.",
@@ -374,7 +374,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-pierre",
+      "id": "2026-11-05-13",
       "section": "industry",
       "headline": "OpenAI покупает Pierre Computer Company",
       "subheadline": "OpenAI объявила о намерении приобрести компанию Pierre Computer Company, Inc.",
@@ -405,7 +405,7 @@
       "importance": 7
     },
     {
-      "id": "industry-meta-conductor",
+      "id": "2026-11-05-14",
       "section": "industry",
       "headline": "Meta купила стартап Conductor, разработчика инструментов для ИИ-кодинга",
       "subheadline": "Сделка усиливает Meta в инструментах для разработки с ИИ-агентами.",
@@ -436,7 +436,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ai-pacs-midterms",
+      "id": "2026-11-05-15",
       "section": "industry",
       "headline": "ИИ-PAC потратили миллионы на выборы в Конгресс: подведены итоги",
       "subheadline": "TechCrunch разобрал, чего добились политические комитеты ИИ-индустрии на промежуточных выборах.",
@@ -492,7 +492,7 @@
       "importance": 7
     },
     {
-      "id": "industry-qualcomm-datacenters",
+      "id": "2026-11-05-16",
       "section": "industry",
       "headline": "Qualcomm делает ставку на дата-центры на фоне падения продаж смартфонов",
       "subheadline": "В отчёте компания сделала упор на серверное направление.",
@@ -521,7 +521,7 @@
       "importance": 7
     },
     {
-      "id": "industry-pentagon-cto-ai-labs",
+      "id": "2026-11-05-17",
       "section": "industry",
       "headline": "Технический директор Пентагона: власти США в этом месяце опишут законы, которые действуют для ИИ-лабораторий",
       "subheadline": "Рабочая группа с участием Эмиля Майкла обещает опубликовать регуляторный ландшафт в ближайшие одну-две недели.",
@@ -554,7 +554,7 @@
       "importance": 7
     },
     {
-      "id": "industry-albanese-robodebt",
+      "id": "2026-11-05-18",
       "section": "industry",
       "headline": "Правительство Австралии предупредили о риске повторить Robodebt из-за алгоритмов и ИИ",
       "subheadline": "Критики считают, что власти «во сне идут» к новому скандалу с автоматизированными решениями.",
@@ -583,7 +583,7 @@
       "importance": 5
     },
     {
-      "id": "industry-datacenters-midterms",
+      "id": "2026-11-05-19",
       "section": "industry",
       "headline": "Продолжение: дата-центры проиграли промежуточные выборы",
       "subheadline": null,
@@ -637,7 +637,7 @@
       "importance": 5
     },
     {
-      "id": "content-chatgpt-gif-images-26",
+      "id": "2026-11-05-20",
       "section": "content",
       "headline": "ChatGPT научился делать анимированные GIF из текста и фото на модели Images 2.6",
       "subheadline": "Новая версия генератора изображений OpenAI оживляет картинку по промпту или загруженному снимку.",
@@ -668,7 +668,7 @@
       "importance": 7
     },
     {
-      "id": "content-image-models-price-test",
+      "id": "2026-11-05-21",
       "section": "content",
       "headline": "Nano Banana 2.1, GPT Image 2.5 и Seedream 5.0 сравнили на одном промпте с первой попытки",
       "subheadline": "Разработчик прогнал три генератора через четыре теста и сравнил цену изображения.",
@@ -702,7 +702,7 @@
       "importance": 5
     },
     {
-      "id": "art-museum-visitors-ai-survey",
+      "id": "2026-11-05-22",
       "section": "art",
       "headline": "91% посетителей музеев США обеспокоены использованием ИИ в экспозициях",
       "subheadline": "Опрос Американского альянса музеев выявил недоверие к ИИ в выставках и музейном маркетинге.",
@@ -735,7 +735,7 @@
       "importance": 5
     },
     {
-      "id": "hype-apple-ai-budget-cuts",
+      "id": "2026-11-05-23",
       "section": "hype",
       "headline": "Apple, по данным СМИ, урезает бюджеты на внутреннее использование ИИ",
       "subheadline": "Компания якобы сокращает расходы сотрудников на ИИ-инструменты.",
@@ -764,7 +764,7 @@
       "importance": 5
     },
     {
-      "id": "hype-victoria-ai-election-ads",
+      "id": "2026-11-05-24",
       "section": "hype",
       "headline": "Главные партии Виктории обмениваются ударами из-за ИИ-роликов с лидерами в предвыборной рекламе",
       "subheadline": "В кампании перед выборами в австралийском штате используют сгенерированные видео с политиками.",
@@ -793,7 +793,7 @@
       "importance": 5
     },
     {
-      "id": "hype-torvalds-assembler",
+      "id": "2026-11-05-25",
       "section": "hype",
       "headline": "Торвальдс: «Не доверяете ИИ — пишите на ассемблере»",
       "subheadline": "Создатель Linux ответил скептикам ИИ-инструментов в разработке.",
@@ -824,7 +824,7 @@
       "importance": 5
     },
     {
-      "id": "hype-uber-ai-agents-bookings",
+      "id": "2026-11-05-26",
       "section": "hype",
       "headline": "Uber: такси через ИИ-агентов почти никто не заказывает",
       "subheadline": "Компания признала, что агентные заказы пока остаются редкостью.",

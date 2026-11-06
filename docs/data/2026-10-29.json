@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-gemini-4-carbon",
+      "id": "2026-10-29-1",
       "section": "models",
       "headline": "Google DeepMind выпустила Gemini 4 Carbon — новую флагманскую модель",
       "subheadline": "Google заявляет рекорд в Artificial Analysis Intelligence Index и первое место в бенчмарке поиска уязвимостей SEC-bench Pro.",
@@ -55,7 +55,7 @@
       "importance": 9
     },
     {
-      "id": "models-nemotron-transcribe",
+      "id": "2026-10-29-2",
       "section": "models",
       "headline": "NVIDIA выпустила Nemotron 3.5 Transcribe и Granary v2 для многоязычной транскрипции",
       "subheadline": "Распознаванием речи в новой модели можно управлять промптом, а саму модель — дообучать под свою задачу.",
@@ -88,7 +88,7 @@
       "importance": 7
     },
     {
-      "id": "models-iflytek-spark-x26",
+      "id": "2026-10-29-3",
       "section": "models",
       "headline": "iFLYTEK представила Spark-X2.6 — одну модель для смартфона и облака",
       "subheadline": "Китайская компания запускает одну и ту же модель на устройстве и на серверах.",
@@ -119,7 +119,7 @@
       "importance": 5
     },
     {
-      "id": "models-flashmap",
+      "id": "2026-10-29-4",
       "section": "models",
       "headline": "FlashMap ускоряет генерацию текста LLM в 6,14 раза",
       "subheadline": "Polymathic AI и Принстон предложили драфтер для спекулятивного декодирования на основе flow map.",
@@ -150,7 +150,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-android-agents",
+      "id": "2026-10-29-5",
       "section": "platforms",
       "headline": "Google открыла разработку под Android сторонним ИИ-агентам и выпустила новые API Gemini",
       "subheadline": "Gemini и Поиск станут доступны большему числу сторонних приложений.",
@@ -188,7 +188,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-devday-berlin",
+      "id": "2026-10-29-6",
       "section": "platforms",
       "headline": "OpenAI на DevDay в Берлине: главное — платформа для разработчиков, ассистент dots обещан Европе",
       "subheadline": "Компания анонсировала dots для европейских пользователей, но в центре конференции были инструменты для сторонних разработчиков.",
@@ -219,7 +219,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-claude-for-legal",
+      "id": "2026-10-29-7",
       "section": "platforms",
       "headline": "Claude for Legal сам проверяет источники и передаёт дело юристу",
       "subheadline": "В юридическом продукте Anthropic проверка ссылок теперь встроена в работу с делом.",
@@ -259,7 +259,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-chrome-autofill-gmail",
+      "id": "2026-10-29-8",
       "section": "platforms",
       "headline": "ИИ-автозаполнение Chrome начало брать данные из Gmail",
       "subheadline": "Чтобы заполнить форму, браузер теперь ищет нужные сведения в почте пользователя.",
@@ -292,7 +292,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-echo-studio-camera",
+      "id": "2026-10-29-9",
       "section": "platforms",
       "headline": "В новой Echo Studio у Alexa+ появилась ИИ-камера",
       "subheadline": "Колонка Amazon видит, что происходит в доме, и это вызывает вопросы о приватности.",
@@ -323,7 +323,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-copilot-smart-tv",
+      "id": "2026-10-29-10",
       "section": "platforms",
       "headline": "Microsoft прекращает поддержку Copilot на смарт-телевизорах",
       "subheadline": "Ассистент уберут с телевизоров LG и Samsung.",
@@ -358,7 +358,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-minimax-mcode-stack",
+      "id": "2026-10-29-11",
       "section": "platforms",
       "headline": "MiniMax открыла MCode Stack — 15 навыков для кодинг-агентов",
       "subheadline": "Это те самые навыки, которыми каждый день пользуется команда разработки компании.",
@@ -389,7 +389,7 @@
       "importance": 5
     },
     {
-      "id": "industry-microsoft-azure-openai-revenue",
+      "id": "2026-10-29-12",
       "section": "industry",
       "headline": "Microsoft впервые назвала выручку Azure в долларах — $33,2 млрд. От OpenAI компания получила $10 млрд",
       "subheadline": "Раньше Microsoft сообщала только темпы роста облака, без абсолютных цифр.",
@@ -425,7 +425,7 @@
       "importance": 7
     },
     {
-      "id": "industry-data-center-backlash",
+      "id": "2026-10-29-13",
       "section": "industry",
       "headline": "Дата-центры встречают сопротивление: xAI выкупает дома у соседей, техасские избиратели против",
       "subheadline": "Компания платит домовладельцам в Миссисипи за обещание не подавать в суд из-за шума.",
@@ -463,7 +463,7 @@
       "importance": 7
     },
     {
-      "id": "industry-australia-chatbot-intimacy",
+      "id": "2026-10-29-14",
       "section": "industry",
       "headline": "Австралия может запретить ИИ-чат-ботам «эмоциональную близость» с пользователями",
       "subheadline": "Запрет входит в законопроект об обязательной цифровой заботе (digital duty of care).",
@@ -492,7 +492,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anthropic-hacked-agents",
+      "id": "2026-10-29-15",
       "section": "industry",
       "headline": "ИИ-агенты взломали Anthropic",
       "subheadline": "Атаке подверглась компания, чьи модели считаются одними из самых сильных для киберзащиты.",
@@ -521,7 +521,7 @@
       "importance": 5
     },
     {
-      "id": "industry-openai-servicenow",
+      "id": "2026-10-29-16",
       "section": "industry",
       "headline": "OpenAI и ServiceNow расширили партнёрство",
       "subheadline": "Совместная работа распространится на корпоративные рабочие процессы.",
@@ -552,7 +552,7 @@
       "importance": 5
     },
     {
-      "id": "industry-google-ai-search-ads",
+      "id": "2026-10-29-17",
       "section": "industry",
       "headline": "Google выводит рекламу в ИИ-поиске на все рынки",
       "subheadline": "Рост основной рекламной выручки компании замедляется.",
@@ -581,7 +581,7 @@
       "importance": 5
     },
     {
-      "id": "industry-simplismart-series-b",
+      "id": "2026-10-29-18",
       "section": "industry",
       "headline": "Индийский стартап инференса Simplismart привлёк $14 млн с участием NVIDIA",
       "subheadline": "Раунд серии B возглавил Dallas Venture Capital, выручка компании выросла в 14 раз.",
@@ -614,7 +614,7 @@
       "importance": 5
     },
     {
-      "id": "content-genie-4-test",
+      "id": "2026-10-29-19",
       "section": "content",
       "headline": "Продолжение: Genie 4 в практическом тесте",
       "subheadline": null,
@@ -645,7 +645,7 @@
       "importance": 5
     },
     {
-      "id": "content-seedance-bai",
+      "id": "2026-10-29-20",
       "section": "content",
       "headline": "Четыре видеомодели Seedance стали доступны через API B.AI",
       "subheadline": "Подключены Seedance 2.5 с совместной генерацией видео и звука, 2.0, 2.0 Fast и 2.0 Mini.",
@@ -678,7 +678,7 @@
       "importance": 5
     },
     {
-      "id": "content-edimakor-halloween",
+      "id": "2026-10-29-21",
       "section": "content",
       "headline": "HitPaw Edimakor снизил цены на AI-кредиты до 65% к Хеллоуину",
       "subheadline": "Распродажа видеоредактора идёт с 22 октября по 6 ноября.",
@@ -710,7 +710,7 @@
       "importance": 5
     },
     {
-      "id": "art-vatican-human-art",
+      "id": "2026-10-29-22",
       "section": "art",
       "headline": "Ватикан проводит серию выставок «фундаментально человеческого» искусства — в противовес ИИ",
       "subheadline": "Кураторы сделали ставку на работы, созданные людьми.",
@@ -739,7 +739,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dartmouth-schnell",
+      "id": "2026-10-29-23",
       "section": "hype",
       "headline": "Проректор Дартмута Сантьяго Шнелл ушёл в отставку из-за ИИ в эссе и научных работах",
       "subheadline": "Отставка последовала после нескольких недель проверки.",
@@ -770,7 +770,7 @@
       "importance": 7
     },
     {
-      "id": "hype-castle-walls-prime",
+      "id": "2026-10-29-24",
       "section": "hype",
       "headline": "The Guardian разгромил Castle Walls — первый полностью сгенерированный ИИ сериал Prime",
       "subheadline": "Рецензент назвал картинку «размазанной, будто объектив намазали вазелином».",
@@ -801,7 +801,7 @@
       "importance": 7
     },
     {
-      "id": "hype-daniel-wong-video",
+      "id": "2026-10-29-25",
       "section": "hype",
       "headline": "Скандал вокруг ИИ-ролика кампании Дэниела Вонга с чернокожими избирателями",
       "subheadline": "Критики считают, что ролик изображает избирателей зависимыми от политика.",
@@ -830,7 +830,7 @@
       "importance": 5
     },
     {
-      "id": "hype-nithya-raman-ai",
+      "id": "2026-10-29-26",
       "section": "hype",
       "headline": "В гонке за пост мэра Лос-Анджелеса спорят, сделана ли запись о Нитье Раман с помощью ИИ",
       "subheadline": "Thrive LA отвергает обвинения и называет запись защищённой политической сатирой.",
@@ -861,7 +861,7 @@
       "importance": 5
     },
     {
-      "id": "hype-mosseri-ai-negativity",
+      "id": "2026-10-29-27",
       "section": "hype",
       "headline": "Глава Instagram Адам Моссери: негатива вокруг ИИ будет только больше",
       "subheadline": "Моссери считает, что неприятие ИИ будет расти.",
@@ -892,7 +892,7 @@
       "importance": 5
     },
     {
-      "id": "hype-meta-waddle-world",
+      "id": "2026-10-29-28",
       "section": "hype",
       "headline": "Meta без анонса выпустила ИИ-дневник для домашних питомцев Waddle World",
       "subheadline": "Новое приложение компании посвящено домашним животным.",

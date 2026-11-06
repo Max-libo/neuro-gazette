@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-cohere-ottawa",
+      "id": "2026-10-30-1",
       "section": "industry",
       "headline": "Правительство Канады вложит до $1,6 млрд в Cohere при оценке $35,7 млрд",
       "subheadline": "Cohere объявила раунд, который возглавила Schwarz Group. Канадское государство участвует в нём крупнейшей суммой.",
@@ -36,7 +36,7 @@
       "importance": 9
     },
     {
-      "id": "industry-thrive-adt",
+      "id": "2026-10-30-2",
       "section": "industry",
       "headline": "Thrive Holdings при поддержке OpenAI покупает ADT за $7,6 млрд",
       "subheadline": "Сделку по покупке производителя охранных систем оценили в $15,3 млрд с учётом долга.",
@@ -69,7 +69,7 @@
       "importance": 7
     },
     {
-      "id": "industry-aws-jassy",
+      "id": "2026-10-30-3",
       "section": "industry",
       "headline": "Энди Джесси: AWS станет бизнесом на $1 трлн, но сначала много потратит",
       "subheadline": "Глава Amazon рассчитывает на ИИ-спрос и готовит компанию к крупным расходам на инфраструктуру.",
@@ -102,7 +102,7 @@
       "importance": 7
     },
     {
-      "id": "industry-google-ai-search-earnings",
+      "id": "2026-10-30-4",
       "section": "industry",
       "headline": "Часть инвесторов увидела в отчёте Google первые потери от ИИ-поиска",
       "subheadline": "По их мнению, переход пользователей к ИИ-ответам начал сказываться на поисковом бизнесе.",
@@ -140,7 +140,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nvidia-hf-antitrust",
+      "id": "2026-10-30-5",
       "section": "industry",
       "headline": "Антимонопольные регуляторы США проверяют сделку NVIDIA с Hugging Face и её практику продаж",
       "subheadline": "Под проверку попали и сделка с Hugging Face, и то, как NVIDIA продаёт чипы.",
@@ -173,7 +173,7 @@
       "importance": 7
     },
     {
-      "id": "industry-deepgram-daily",
+      "id": "2026-10-30-6",
       "section": "industry",
       "headline": "Deepgram купила Daily — разработчика фреймворка Pipecat для голосовых агентов",
       "subheadline": "Сделка усиливает голосовую инфраструктуру Deepgram.",
@@ -206,7 +206,7 @@
       "importance": 5
     },
     {
-      "id": "industry-wabi-round",
+      "id": "2026-10-30-7",
       "section": "industry",
       "headline": "Wabi, ИИ-агент для создания мини-приложений, оценён в $1,25 млрд",
       "subheadline": "Стартап получил такую оценку в последнем раунде.",
@@ -245,7 +245,7 @@
       "importance": 5
     },
     {
-      "id": "models-openai-model-spec",
+      "id": "2026-10-30-8",
       "section": "models",
       "headline": "OpenAI обновила Model Spec и рассказала, как ищет рассогласование у фронтирных моделей",
       "subheadline": "В один день вышли новая версия правил поведения моделей и описание того, как проверяется их соблюдение.",
@@ -281,7 +281,7 @@
       "importance": 7
     },
     {
-      "id": "models-mistral-le-chonk",
+      "id": "2026-10-30-9",
       "section": "models",
       "headline": "Mistral выпустила кодинг-модель Le Chonk",
       "subheadline": "Модель сильна в программировании, но в целом уступает китайским разработкам.",
@@ -312,7 +312,7 @@
       "importance": 7
     },
     {
-      "id": "models-anthropic-expert-opinions",
+      "id": "2026-10-30-10",
       "section": "models",
       "headline": "Anthropic: эксперты перенимают случайные мнения ИИ-агента и считают их своими",
       "subheadline": "Исследование показало, как агент незаметно влияет на суждения специалистов.",
@@ -341,7 +341,7 @@
       "importance": 7
     },
     {
-      "id": "models-baseten-joey-1",
+      "id": "2026-10-30-11",
       "section": "models",
       "headline": "Baseten выпустила joey-1 — модель на 2 млрд параметров для принятия решений за $0,01 за 1 млн токенов",
       "subheadline": "Небольшая модель для классификации и маршрутизации запросов в агентных системах.",
@@ -372,7 +372,7 @@
       "importance": 5
     },
     {
-      "id": "models-granite-switch",
+      "id": "2026-10-30-12",
       "section": "models",
       "headline": "IBM выпустила Granite Switch 4.1.1: модели предлагают обновлять как программы",
       "subheadline": "Команда Granite описала новую версию и подход к обновлению моделей.",
@@ -403,7 +403,7 @@
       "importance": 5
     },
     {
-      "id": "models-robot-54-days",
+      "id": "2026-10-30-13",
       "section": "models",
       "headline": "В эксперименте результативность ИИ-моделей на реальном роботе удваивалась каждые 54 дня",
       "subheadline": "Замер шёл на физическом роботе, а не в симуляции.",
@@ -428,7 +428,7 @@
       "importance": 5
     },
     {
-      "id": "models-securityscorecard-benchmark",
+      "id": "2026-10-30-14",
       "section": "models",
       "headline": "SecurityScorecard выпустила открытый бенчмарк для оценки рисков третьих сторон",
       "subheadline": "Бенчмарк проверяет, как модели анализируют риски поставщиков и устойчивы ли к атакам.",
@@ -457,7 +457,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-pro-limits",
+      "id": "2026-10-30-15",
       "section": "platforms",
       "headline": "OpenAI вдвое подняла лимиты на тарифах Pro",
       "subheadline": "Компания усиливает конкуренцию с Anthropic за платящих пользователей.",
@@ -490,7 +490,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-gemini-docs",
+      "id": "2026-10-30-16",
       "section": "platforms",
       "headline": "Gemini научился создавать и редактировать файлы Google Docs прямо в чате",
       "subheadline": "Документ можно собрать и поправить, не выходя из Gemini.",
@@ -533,7 +533,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cloudflare-web-search",
+      "id": "2026-10-30-17",
       "section": "platforms",
       "headline": "Cloudflare запустила Web Search API для ИИ-приложений",
       "subheadline": "Через этот API агенты и приложения получают результаты веб-поиска.",
@@ -562,7 +562,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-assemblyai-tts",
+      "id": "2026-10-30-18",
       "section": "platforms",
       "headline": "AssemblyAI выпустила API синтеза речи AssemblyAI-TTS-1 за $15 за 1 млн символов",
       "subheadline": "Сервис рассчитан на голосовых агентов.",
@@ -591,7 +591,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-granola-dictation",
+      "id": "2026-10-30-19",
       "section": "platforms",
       "headline": "Granola добавила диктовку и стала конкурировать с Wispr",
       "subheadline": "Сервис ИИ-заметок со встреч теперь записывает и голосовой ввод.",
@@ -622,7 +622,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-meta-style-sketch",
+      "id": "2026-10-30-20",
       "section": "platforms",
       "headline": "Meta без анонса запустила ИИ-приложение о моде Style Sketch",
       "subheadline": "Ещё один отдельный ИИ-продукт Meta, вышедший без объявления.",
@@ -653,7 +653,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-prime-mega-moe",
+      "id": "2026-10-30-21",
       "section": "platforms",
       "headline": "Prime Intellect открыла Prime Mega MoE — ядро для обучения MoE с ускорением прямого прохода в 3,11 раза",
       "subheadline": "Слитное ядро для MoE-слоёв поддерживает обучение, а не только инференс.",
@@ -699,7 +699,7 @@
       "importance": 5
     },
     {
-      "id": "content-pika-h3-flex",
+      "id": "2026-10-30-22",
       "section": "content",
       "headline": "Pika выпустила H3 Flex — свою первую видеомодель с открытыми весами",
       "subheadline": "Модель на базе MiniMax H3 генерирует видео за шесть шагов сэмплинга вместе с синхронным стереозвуком.",
@@ -733,7 +733,7 @@
       "importance": 7
     },
     {
-      "id": "hype-huang-chinese-spies",
+      "id": "2026-10-30-23",
       "section": "hype",
       "headline": "NYT: китайские спецслужбы вели операцию против главы NVIDIA Дженсена Хуанга",
       "subheadline": "Об этом пишет The New York Times.",
@@ -768,7 +768,7 @@
       "importance": 7
     },
     {
-      "id": "hype-astra-distillation-target",
+      "id": "2026-10-30-24",
       "section": "hype",
       "headline": "Китайские лаборатории переключились на GPT-6 Astra после того, как Anthropic усилила защиту",
       "subheadline": "Главной мишенью для извлечения возможностей модели теперь стала OpenAI.",
@@ -803,7 +803,7 @@
       "importance": 5
     },
     {
-      "id": "hype-black-october",
+      "id": "2026-10-30-25",
       "section": "hype",
       "headline": "«Чёрный октябрь»: эксперт призвал судить компании за ИИ-взломы по уголовным статьям",
       "subheadline": "Призыв прозвучал на фоне волны кибератак с использованием ИИ.",
@@ -828,7 +828,7 @@
       "importance": 5
     },
     {
-      "id": "hype-bolsonaro-ai-excuse",
+      "id": "2026-10-30-26",
       "section": "hype",
       "headline": "Союзник Флавио Болсонару списал на ИИ письмо, где тот назван «избранным президентом»",
       "subheadline": "Письмо удалили после того, как Болсонару проиграл второй тур Луле.",
@@ -859,7 +859,7 @@
       "importance": 5
     },
     {
-      "id": "hype-gemma-hayes-fake-songs",
+      "id": "2026-10-30-27",
       "section": "hype",
       "headline": "Певица Джемма Хейз нашла под своим именем песни, которые не записывала",
       "subheadline": "Ещё один случай ИИ-подделок, выложенных от имени реального исполнителя.",
@@ -888,7 +888,7 @@
       "importance": 5
     },
     {
-      "id": "hype-riscv-in-qwen",
+      "id": "2026-10-30-28",
       "section": "hype",
       "headline": "Энтузиаст встроил процессор RISC-V в веса Qwen 3.5",
       "subheadline": "Памятью процессору служат слои DeltaNet.",
@@ -919,7 +919,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dartmouth-wapo",
+      "id": "2026-10-30-29",
       "section": "hype",
       "headline": "Продолжение: отставка проректора Дартмута из-за ИИ",
       "subheadline": null,

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-putin-llm-2026-04-12",
+      "id": "2026-04-12-1",
       "section": "industry",
       "headline": "Путин поручил срочно создать суверенную LLM для обороны после заявлений Трампа об ИИ в войне",
       "subheadline": "Спецкомиссия должна разработать отечественную большую языковую модель военного назначения",
@@ -40,7 +40,7 @@
       "importance": 9
     },
     {
-      "id": "platforms-gemini-presentations-2026-04-12",
+      "id": "2026-04-12-2",
       "section": "platforms",
       "headline": "Google Gemini научился создавать слайдовые презентации по запросу",
       "subheadline": "В Google Canvas добавлена генерация полноценных презентаций из текста или загруженных материалов",
@@ -78,7 +78,7 @@
       "importance": 7
     },
     {
-      "id": "industry-us-ai-regulation-2026-04-12",
+      "id": "2026-04-12-3",
       "section": "industry",
       "headline": "Республиканцы штатов восстали против Белого дома: 50+ законодателей требуют не блокировать региональные законы об ИИ",
       "subheadline": "С начала 2026 года в США принято 25 законов об ИИ на уровне штатов, ещё 27 ждут подписания",
@@ -114,7 +114,7 @@
       "importance": 7
     },
     {
-      "id": "hype-mcmahon-ai-photo-2026-04-12",
+      "id": "2026-04-12-4",
       "section": "hype",
       "headline": "Министр образования США опубликовала ИИ-фейк портрета Иды Б. Уэллс",
       "subheadline": "Сгенерированное Google Gemini изображение содержит исторические ошибки и вызвало скандал",
@@ -150,7 +150,7 @@
       "importance": 7
     },
     {
-      "id": "hype-china-ai-propaganda-2026-04-12",
+      "id": "2026-04-12-5",
       "section": "hype",
       "headline": "Китайские госСМИ массово используют ИИ для вирусной антиамериканской пропаганды",
       "subheadline": "CCTV и Xinhua создают ИИ-анимации, высмеивающие США в контексте торговой войны",
@@ -185,7 +185,7 @@
       "importance": 7
     },
     {
-      "id": "hype-grok-harassment-2026-04-12",
+      "id": "2026-04-12-6",
       "section": "hype",
       "headline": "PBS: скандал с Grok и сексуализированными дипфейками — «кризис безнаказанности»",
       "subheadline": "Телеканал PBS обсуждает системную проблему AI-харассмента на примере xAI",
@@ -216,7 +216,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-changelog-2026-04-12",
+      "id": "2026-04-12-7",
       "section": "platforms",
       "headline": "OpenAI обновила доступность моделей в API: GPT-5.2 Codex окончательно убран",
       "subheadline": "В актуальном каталоге остались GPT-5.4, GPT-5.4-mini и GPT-5.3 Codex",
@@ -251,7 +251,7 @@
       "importance": 5
     },
     {
-      "id": "industry-altman-response-2026-04-12",
+      "id": "2026-04-12-8",
       "section": "industry",
       "headline": "Продолжение: Альтман ответил на статью New Yorker после нападения на его дом",
       "subheadline": null,
@@ -284,7 +284,7 @@
       "importance": 5
     },
     {
-      "id": "models-happyhorse-talent-2026-04-12",
+      "id": "2026-04-12-9",
       "section": "models",
       "headline": "Продолжение: SCMP раскрыл детали кадровой гонки за командой HappyHorse",
       "subheadline": null,
@@ -322,7 +322,7 @@
       "importance": 5
     },
     {
-      "id": "models-mythos-cyber-2026-04-12",
+      "id": "2026-04-12-10",
       "section": "models",
       "headline": "Продолжение: Claude Mythos показал 100% на Cybench — эксперты оценивают риски",
       "subheadline": null,
@@ -353,7 +353,7 @@
       "importance": 5
     },
     {
-      "id": "hype-florida-chatgpt-2026-04-12",
+      "id": "2026-04-12-11",
       "section": "hype",
       "headline": "Продолжение: Флорида расследует 200+ сообщений стрелка из FSU с ChatGPT",
       "subheadline": null,

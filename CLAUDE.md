@@ -74,12 +74,13 @@ Single Claude call with the raw article list and search results. Returns filtere
 Calls Opus with `EDIT_SYSTEM` prompt (defined in `stage4_edit.py`). Retries up to 3 times on JSON parse errors. Output validated by `finalize_news()`:
 - `validate_and_fix()` normalises each item, deduplicates IDs, maps `tier` → `importance` (hero=9, regular=7, compact=5)
 - `finalize_news()` enforces exactly one `"tier": "hero"` per issue
+- `assign_ids()` нумерует новости: `id` = `<дата>-<номер>` (hero — №1). Модель id не пишет; из id собирается адрес `/n/<id>.html`. Редактор даёт новой новости следующий номер
 - Appends a `changelog` card (auto-version-bumped when code files change)
 
 ### JSON schema for a news item
 ```json
 {
-  "id": "section-md5hash-YYYY-MM-DD",
+  "id": "YYYY-MM-DD-N",
   "section": "models|platforms|industry|content|art|hype",
   "headline": "...",
   "subheadline": "...",

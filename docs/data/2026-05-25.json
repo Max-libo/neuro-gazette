@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic-nsa-supplychain",
+      "id": "2026-05-25-1",
       "section": "industry",
       "headline": "Пентагон пометил Anthropic как риск цепочки поставок, но Claude может остаться у АНБ",
       "subheadline": "Несмотря на формальное предупреждение Минобороны США, поставки Claude в Агентство национальной безопасности, по данным издания, могут продолжиться.",
@@ -38,7 +38,7 @@
       "importance": 9
     },
     {
-      "id": "models-bytedance-lmm-questions",
+      "id": "2026-05-25-2",
       "section": "models",
       "headline": "ByteDance: для обучения на длинных документах вопросы к модели работают лучше транскрипции",
       "subheadline": "Исследование показало, что просьба ответить на вопросы по документу даёт лучший результат, чем требование переписать его текст.",
@@ -67,7 +67,7 @@
       "importance": 7
     },
     {
-      "id": "models-stepfun-stepaudio-25",
+      "id": "2026-05-25-3",
       "section": "models",
       "headline": "StepFun выпустила StepAudio 2.5 Realtime — голосовую модель с RLHF под ролевое общение",
       "subheadline": "End-to-end модель синтеза речи обучена понимать паралингвистику и заточена под ролевые сценарии.",
@@ -98,7 +98,7 @@
       "importance": 7
     },
     {
-      "id": "models-nvidia-gated-deltanet2",
+      "id": "2026-05-25-4",
       "section": "models",
       "headline": "NVIDIA представила Gated DeltaNet-2 — слой линейного внимания с раздельными стиранием и записью",
       "subheadline": "Новый слой разделяет операции erase и write в дельта-правиле.",
@@ -129,7 +129,7 @@
       "importance": 5
     },
     {
-      "id": "models-claudecode-scaling-algorithms",
+      "id": "2026-05-25-5",
       "section": "models",
       "headline": "Исследователи поручили Claude Code искать алгоритмы масштабирования ИИ",
       "subheadline": "Модель предложила решения, которые люди, по словам авторов, вряд ли бы спроектировали.",
@@ -160,7 +160,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-microsoft-webwright",
+      "id": "2026-05-25-6",
       "section": "platforms",
       "headline": "Microsoft Research выпустила Webwright — терминальный веб-агент с 60,1% на Odysseys",
       "subheadline": "Фреймворк работает в терминале и почти вдвое обходит базовый GPT-5.4 на бенчмарке Odysseys.",
@@ -193,7 +193,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-aws-mcp-ga",
+      "id": "2026-05-25-7",
       "section": "platforms",
       "headline": "AWS MCP Server вышел в GA с полным покрытием API и управлением через IAM",
       "subheadline": "Сервер Model Context Protocol от AWS получил статус общедоступности.",
@@ -226,7 +226,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-genkit-middleware",
+      "id": "2026-05-25-8",
       "section": "platforms",
       "headline": "Google добавила архитектуру middleware в Genkit",
       "subheadline": "Фреймворк для AI-приложений Genkit получил слой промежуточного ПО.",
@@ -257,7 +257,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-amazon-bee-wearable",
+      "id": "2026-05-25-9",
       "section": "platforms",
       "headline": "TechCrunch протестировал AI-носимое устройство Amazon Bee",
       "subheadline": "Обозреватель назвал гаджет одновременно интересным и слегка пугающим.",
@@ -288,7 +288,7 @@
       "importance": 5
     },
     {
-      "id": "industry-ai-washing-pr",
+      "id": "2026-05-25-10",
       "section": "industry",
       "headline": "«AI washing»: компании спешно ребрендятся под технологические",
       "subheadline": "По данным The Guardian, фирмы переписывают позиционирование, чтобы выглядеть AI-ориентированными.",
@@ -313,7 +313,7 @@
       "importance": 7
     },
     {
-      "id": "industry-scotland-green-datacentres",
+      "id": "2026-05-25-11",
       "section": "industry",
       "headline": "Анализ: «зелёная» политика дата-центров Шотландии игнорирует выбросы от ИИ",
       "subheadline": "Политика властей по «зелёным дата-центрам» не учитывает эмиссионный эффект роста AI-нагрузок.",
@@ -342,7 +342,7 @@
       "importance": 7
     },
     {
-      "id": "industry-deepseek-russia-access",
+      "id": "2026-05-25-12",
       "section": "industry",
       "headline": "Пользователи из России массово потеряли доступ к DeepSeek",
       "subheadline": "VC.ru сообщает о массовых проблемах с доступом к нейросети DeepSeek в России.",
@@ -373,7 +373,7 @@
       "importance": 5
     },
     {
-      "id": "industry-hassabis-lecun-continuation",
+      "id": "2026-05-25-13",
       "section": "industry",
       "headline": "Продолжение: ЛеКун возражает Хассабису о «предгорьях сингулярности»",
       "subheadline": null,
@@ -404,7 +404,7 @@
       "importance": 5
     },
     {
-      "id": "hype-chatbot-personalities-hack",
+      "id": "2026-05-25-14",
       "section": "hype",
       "headline": "Хакеры учатся эксплуатировать «личности» чат-ботов",
       "subheadline": "The Verge описывает атаки, использующие настроенные персоны AI-ассистентов.",
@@ -429,7 +429,7 @@
       "importance": 7
     },
     {
-      "id": "hype-cannes-ai-faultlines",
+      "id": "2026-05-25-15",
       "section": "art",
       "headline": "Линии разлома вокруг ИИ обозначились в Каннах",
       "subheadline": "The Guardian: на фестивале спорят, расширяет ли ИИ «кинематографический инструментарий».",
@@ -469,7 +469,7 @@
       "importance": 7
     },
     {
-      "id": "hype-higgsfield-hell-grind",
+      "id": "2026-05-25-16",
       "section": "art",
       "headline": "Higgsfield AI показала в Каннах 95-минутный фильм, снятый ИИ за две недели",
       "subheadline": "Полнометражный Hell Grind создан с помощью ИИ примерно за две недели.",
@@ -502,7 +502,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ai-bots-tls-logs",
+      "id": "2026-05-25-17",
       "section": "hype",
       "headline": "ИИ-боты сканируют даже логи TLS-сертификатов ради данных для обучения",
       "subheadline": "По материалу Хабра, краулеры собирают любую доступную информацию, включая Certificate Transparency.",
@@ -527,7 +527,7 @@
       "importance": 5
     },
     {
-      "id": "hype-agentsmd-detect-agents",
+      "id": "2026-05-25-18",
       "section": "hype",
       "headline": "AGENTS.md задумывался как помощь агентам — автор использует его, чтобы их вычислять",
       "subheadline": "Файл инструкций для AI-агентов превратили в ловушку для их обнаружения.",

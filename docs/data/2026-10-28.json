@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "content-genie-4",
+      "id": "2026-10-28-1",
       "section": "content",
       "headline": "Google DeepMind представила Genie 4: модель миров генерирует звук и меняет сцену по команде",
       "subheadline": "Сцена держится до двух минут, вдвое дольше, чем у Genie 3. Пока модель доступна ограниченному кругу тестировщиков",
@@ -54,7 +54,7 @@
       "importance": 9
     },
     {
-      "id": "content-vidu-q4-preview",
+      "id": "2026-10-28-2",
       "section": "content",
       "headline": "Vidu открыла превью видеомодели Q4 и показала первый в Китае полнометражный фильм, снятый с ИИ",
       "subheadline": "Q4 Preview принимает до 15 референсных изображений и 3 аудиореференса",
@@ -84,7 +84,7 @@
       "importance": 7
     },
     {
-      "id": "models-aa-index-v5",
+      "id": "2026-10-28-3",
       "section": "models",
       "headline": "Artificial Analysis обновила рейтинг моделей: первое место у Claude Opus 5.5 с 58 баллами",
       "subheadline": "Пятая версия Intelligence Index: GPT-6 Astra на балл позади, первая пятёрка целиком из моделей Anthropic и OpenAI",
@@ -121,7 +121,7 @@
       "importance": 7
     },
     {
-      "id": "models-mirendil-fern",
+      "id": "2026-10-28-4",
       "section": "models",
       "headline": "Mirendil выпустила первую модель Fern 0.1 с контекстом на 10 млн токенов",
       "subheadline": "Дебютный релиз стартапа сделан ради сверхдлинного контекста",
@@ -152,7 +152,7 @@
       "importance": 5
     },
     {
-      "id": "models-baidu-unlimited-ocr-2",
+      "id": "2026-10-28-5",
       "section": "models",
       "headline": "Baidu открыла исходники Unlimited OCR 2 для документов в сотни страниц",
       "subheadline": "Открытая OCR-модель разбирает длинные документы целиком",
@@ -183,7 +183,7 @@
       "importance": 5
     },
     {
-      "id": "models-vllm-d3-ultra",
+      "id": "2026-10-28-6",
       "section": "models",
       "headline": "vLLM Semantic Router выпустил d3-ultra — открытую мультимодальную модель для маршрутизации запросов",
       "subheadline": "Модель на 27 млрд параметров решает, какой LLM передать запрос",
@@ -214,7 +214,7 @@
       "importance": 5
     },
     {
-      "id": "models-ai2-novelty-bench",
+      "id": "2026-10-28-7",
       "section": "models",
       "headline": "Allen Institute проверил, можно ли доверять LLM оценку новизны научных идей",
       "subheadline": "Ai2 выпустил бенчмарк novelty-bench",
@@ -243,7 +243,7 @@
       "importance": 5
     },
     {
-      "id": "models-openai-discoveries-gatekeeping",
+      "id": "2026-10-28-8",
       "section": "models",
       "headline": "Продолжение: научные открытия OpenAI и закрытый доступ к ним",
       "subheadline": null,
@@ -272,7 +272,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-openai-oracle-chatgpt",
+      "id": "2026-10-28-9",
       "section": "platforms",
       "headline": "OpenAI расширила партнёрство с Oracle: приложения Oracle появятся в ChatGPT",
       "subheadline": "Корпоративными сервисами Oracle можно будет пользоваться прямо в чате",
@@ -324,7 +324,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-apple-iwork-chatbot",
+      "id": "2026-10-28-10",
       "section": "platforms",
       "headline": "Apple встраивает чат-бота в Pages, Keynote и Numbers",
       "subheadline": "Ассистент появится во всех трёх офисных приложениях Apple",
@@ -353,7 +353,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-firefox-smart-window",
+      "id": "2026-10-28-11",
       "section": "platforms",
       "headline": "Smart Window в Firefox научился заполнять формы и следить за страницами",
       "subheadline": "ИИ-режим браузера Mozilla получил две новые функции",
@@ -384,7 +384,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-opera-local-ai-standard",
+      "id": "2026-10-28-12",
       "section": "platforms",
       "headline": "Opera предложила веб-стандарт для запуска ИИ прямо в браузере",
       "subheadline": "Модели будут работать на устройстве пользователя, без облака",
@@ -413,7 +413,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-atlassian-devex-2026",
+      "id": "2026-10-28-13",
       "section": "platforms",
       "headline": "Atlassian: доля разработчиков, которым ИИ экономит больше 10 часов в неделю, упала с 68% до 26%",
       "subheadline": "Отчёт DevEx 2026 показывает, что выигрыш от ИИ-инструментов для кода ощущается слабее",
@@ -442,7 +442,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-leann-vector-index",
+      "id": "2026-10-28-14",
       "section": "platforms",
       "headline": "Открытый векторный индекс LEANN сжимает RAG-индекс на 60 млн фрагментов с 201 до 6 ГБ",
       "subheadline": "Работу представили на MLSys 2026",
@@ -480,7 +480,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-akamai-agent-sandbox",
+      "id": "2026-10-28-15",
       "section": "platforms",
       "headline": "Akamai запустила песочницу для ИИ-агентов",
       "subheadline": "Модели и код агентов работают в одной сети",
@@ -509,7 +509,7 @@
       "importance": 5
     },
     {
-      "id": "industry-anthropic-ipo-details",
+      "id": "2026-10-28-16",
       "section": "industry",
       "headline": "Продолжение: что ещё раскрыл проспект Anthropic",
       "subheadline": null,
@@ -582,7 +582,7 @@
       "importance": 5
     },
     {
-      "id": "industry-meta-nvidia-3b",
+      "id": "2026-10-28-17",
       "section": "industry",
       "headline": "Nvidia вложит в Meta $3 млрд, Meta закупит больше чипов Nvidia",
       "subheadline": "Деньги поставщика возвращаются к нему в виде заказов",
@@ -613,7 +613,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-gpt4o-seizure-lawsuit",
+      "id": "2026-10-28-18",
       "section": "industry",
       "headline": "Родители подали в суд на OpenAI: по их словам, GPT-4o уговорил дочь бросить противосудорожные препараты",
       "subheadline": "Истцы считают, что чат-бот давал девушке опасные медицинские советы",
@@ -644,7 +644,7 @@
       "importance": 7
     },
     {
-      "id": "industry-state-ai-laws-115",
+      "id": "2026-10-28-19",
       "section": "industry",
       "headline": "В 2026 году штаты США приняли рекордные 115 законов об ИИ. Иллинойс ввёл обязательный аудит фронтирных разработчиков",
       "subheadline": "Федерального закона Конгресс так и не принял",
@@ -677,7 +677,7 @@
       "importance": 7
     },
     {
-      "id": "industry-funding-roundup",
+      "id": "2026-10-28-20",
       "section": "industry",
       "headline": "General Compute привлекла $100 млн в серии A, Disruptive собрала фонд на $10 млрд",
       "subheadline": "Ещё несколько раундов за день: агенты для финансов, оптимизация GPU, переход майнеров в ИИ",
@@ -739,7 +739,7 @@
       "importance": 7
     },
     {
-      "id": "industry-rohit-patel-leaves-meta",
+      "id": "2026-10-28-21",
       "section": "industry",
       "headline": "Директор Meta по ИИ Рохит Пател ушёл, чтобы конкурировать с Microsoft Office и Google Workspace",
       "subheadline": "Бывший топ-менеджер Meta запускает офисный пакет на базе ИИ",
@@ -772,7 +772,7 @@
       "importance": 5
     },
     {
-      "id": "industry-deepseek-74b",
+      "id": "2026-10-28-22",
       "section": "industry",
       "headline": "Продолжение: DeepSeek оценят в $74 млрд в раунде на $15 млрд",
       "subheadline": null,
@@ -801,7 +801,7 @@
       "importance": 5
     },
     {
-      "id": "hype-moscow-ai-leaks",
+      "id": "2026-10-28-23",
       "section": "hype",
       "headline": "Утечки данных через нейросети в московских компаниях выросли почти в семь раз",
       "subheadline": "Доля организаций с такими утечками за год поднялась с 6% до 40%",
@@ -841,7 +841,7 @@
       "importance": 7
     },
     {
-      "id": "hype-uk-vape-consultation-bots",
+      "id": "2026-10-28-24",
       "section": "hype",
       "headline": "Боты на ИИ завалили ответами консультацию правительства Великобритании о запрете одноразовых вейпов",
       "subheadline": "О массовых ответах ботов в консультации 2023 года стало известно только сейчас",
@@ -870,7 +870,7 @@
       "importance": 5
     },
     {
-      "id": "hype-midterms-ai-disinfo",
+      "id": "2026-10-28-25",
       "section": "hype",
       "headline": "Эксперты: перед промежуточными выборами в США соцсети заполнила дезинформация, созданная ИИ",
       "subheadline": "Генеративный контент распространяется быстрее, чем платформы успевают его модерировать",
@@ -908,7 +908,7 @@
       "importance": 5
     },
     {
-      "id": "hype-bofa-ai-password",
+      "id": "2026-10-28-26",
       "section": "hype",
       "headline": "Bank of America попросил клиентов не сообщать пароль от банка ИИ-ассистентам",
       "subheadline": "Банк реагирует на агентов, которые просят доступ к аккаунтам",
@@ -937,7 +937,7 @@
       "importance": 5
     },
     {
-      "id": "hype-realbotix-echo",
+      "id": "2026-10-28-27",
       "section": "hype",
       "headline": "В продажу поступил робот-компаньон Echo: гуманоид за $11 950, говорящий на 100+ языках",
       "subheadline": "Realbotix позиционирует Echo для общения и учёбы",

@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-deepseek-discount-2026-05-24",
+      "id": "2026-05-24-1",
       "section": "models",
       "headline": "DeepSeek сделала скидку 75% постоянной — выходные токены минимум в 34 раза дешевле GPT-5.5",
       "subheadline": "Временная акция превратилась в базовый прайс, закрепив за DeepSeek позицию самой дешёвой фронтирной модели.",
@@ -34,7 +34,7 @@
       "importance": 9
     },
     {
-      "id": "models-nous-cna-2026-05-24",
+      "id": "2026-05-24-2",
       "section": "models",
       "headline": "Nous Research выпустила Contrastive Neuron Attribution — управление цепями MLP без SAE и правки весов",
       "subheadline": "Метод позволяет направлять поведение разреженных MLP-цепей без обучения sparse autoencoder и без модификации весов модели.",
@@ -63,7 +63,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-tencent-agent-memory-2026-05-24",
+      "id": "2026-05-24-3",
       "section": "platforms",
       "headline": "Tencent открыла исходники TencentDB Agent Memory — четырёхуровневой локальной памяти для агентов",
       "subheadline": "Компания выложила в открытый доступ конвейер памяти из четырёх уровней для AI-агентов.",
@@ -94,7 +94,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-perplexity-bumblebee-2026-05-24",
+      "id": "2026-05-24-4",
       "section": "platforms",
       "headline": "Perplexity открыла Bumblebee — read-only сканер цепочки поставок для рабочих окружений разработчиков",
       "subheadline": "Инструмент проверяет эндпоинты разработчиков на угрозы supply-chain в режиме только чтения.",
@@ -125,7 +125,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-codegraph-claude-code-2026-05-24",
+      "id": "2026-05-24-5",
       "section": "platforms",
       "headline": "CodeGraph предлагает Claude Code граф кода вместо grep по файлам",
       "subheadline": "Разбор архитектуры инструмента, который заменяет поиск по файлам структурным графом кодовой базы.",
@@ -156,7 +156,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-mythos-bugs-2026-05-24",
+      "id": "2026-05-24-6",
       "section": "platforms",
       "headline": "Продолжение: Anthropic предупредила, что Claude Mythos находит баги быстрее, чем их успевают чинить",
       "subheadline": null,
@@ -187,7 +187,7 @@
       "importance": 5
     },
     {
-      "id": "industry-singapore-ai-labeling-2026-05-24",
+      "id": "2026-05-24-7",
       "section": "industry",
       "headline": "Сингапур обсуждает обязательную маркировку ИI-продуктов",
       "subheadline": "Маркировка должна указывать назначение продукта, его ограничения и правила применения.",
@@ -216,7 +216,7 @@
       "importance": 7
     },
     {
-      "id": "industry-law-school-ai-2026-05-24",
+      "id": "2026-05-24-8",
       "section": "industry",
       "headline": "Один из ведущих юрфаков мира провёл жёсткую черту против ИИ в юридическом образовании",
       "subheadline": "Школа ограничила использование ИИ-инструментов студентами в учебном процессе.",
@@ -241,7 +241,7 @@
       "importance": 7
     },
     {
-      "id": "industry-pichai-links-search-2026-05-24",
+      "id": "2026-05-24-9",
       "section": "industry",
       "headline": "Пичаи теперь называет ссылки лишь «частью» поиска, переопределяя роль веба в продукте Google",
       "subheadline": "Глава Google пересматривает место традиционных ссылок в эпоху AI-поиска.",
@@ -272,7 +272,7 @@
       "importance": 7
     },
     {
-      "id": "industry-trump-ai-order-2026-05-24",
+      "id": "2026-05-24-10",
       "section": "industry",
       "headline": "Продолжение: как бигтех добился своего в указе Трампа об ИИ",
       "subheadline": null,
@@ -301,7 +301,7 @@
       "importance": 5
     },
     {
-      "id": "hype-ai-face-surgery-2026-05-24",
+      "id": "2026-05-24-11",
       "section": "hype",
       "headline": "Пластические хирурги всё чаще получают запросы на «лицо как у ИИ»",
       "subheadline": "Пациенты приносят сгенерированные нейросетями изображения как образец желаемой внешности.",
@@ -326,7 +326,7 @@
       "importance": 7
     },
     {
-      "id": "hype-gemini-flash-benchmarks-2026-05-24",
+      "id": "2026-05-24-12",
       "section": "hype",
       "headline": "Продолжение: Gemini 3.5 Flash обходит 3.1 Pro «только на бумаге»",
       "subheadline": null,

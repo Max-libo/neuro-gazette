@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-anthropic-profit-q",
+      "id": "2026-05-21-1",
       "section": "industry",
       "headline": "Anthropic заявила о приближении первого прибыльного квартала",
       "subheadline": "Компания впервые рассчитывает выйти в плюс на фоне взрывного роста корпоративной выручки",
@@ -32,7 +32,7 @@
       "importance": 9
     },
     {
-      "id": "industry-anthropic-xai-compute",
+      "id": "2026-05-21-2",
       "section": "industry",
       "headline": "Anthropic будет платить xAI $1,25 млрд в месяц за вычисления",
       "subheadline": "Конкурирующие лаборатории заключили крупную сделку по аренде вычислительных мощностей",
@@ -81,7 +81,7 @@
       "importance": 7
     },
     {
-      "id": "industry-nvidia-record-q",
+      "id": "2026-05-21-3",
       "section": "industry",
       "headline": "NVIDIA отчиталась о рекордном квартале и раскрыла $43 млрд вложений в стартапы",
       "subheadline": "Чипмейкер показал очередной максимум выручки и портфель долей в AI-компаниях",
@@ -120,7 +120,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-ipo-sept",
+      "id": "2026-05-21-4",
       "section": "industry",
       "headline": "OpenAI движется к IPO, которое может состояться в сентябре",
       "subheadline": "Компания ускоряет подготовку к выходу на биржу",
@@ -149,7 +149,7 @@
       "importance": 5
     },
     {
-      "id": "industry-datacenter-threats",
+      "id": "2026-05-21-5",
       "section": "industry",
       "headline": "Глава township ушла в отставку из-за угроз убийством вокруг дата-центра OpenAI",
       "subheadline": "Конфликт вокруг строительства AI-инфраструктуры перешёл в прямые угрозы чиновнику",
@@ -188,7 +188,7 @@
       "importance": 5
     },
     {
-      "id": "industry-deepmind-unions",
+      "id": "2026-05-21-6",
       "section": "industry",
       "headline": "Google DeepMind ведёт переговоры с британскими профсоюзами из-за тревог сотрудников",
       "subheadline": "Персонал обеспокоен применением AI компании в США и Израиле",
@@ -227,7 +227,7 @@
       "importance": 5
     },
     {
-      "id": "models-openai-math-problem",
+      "id": "2026-05-21-7",
       "section": "models",
       "headline": "OpenAI заявила о решении 80-летней математической задачи",
       "subheadline": "Компания утверждает, что на этот раз результат подтверждён",
@@ -256,7 +256,7 @@
       "importance": 7
     },
     {
-      "id": "models-nemotron-diffusion",
+      "id": "2026-05-21-8",
       "section": "models",
       "headline": "NVIDIA выпустила Nemotron-Labs-Diffusion — диффузионную языковую модель с тремя режимами",
       "subheadline": "Модель выдаёт в 6 раз больше токенов за прямой проход, чем Qwen3-8B",
@@ -287,7 +287,7 @@
       "importance": 7
     },
     {
-      "id": "models-qwen-livetranslate",
+      "id": "2026-05-21-9",
       "section": "models",
       "headline": "Alibaba представила Qwen3.5-LiveTranslate-Flash для синхронного перевода в реальном времени",
       "subheadline": "Мультимодальная модель переводит на 60 языков с задержкой 2,8 секунды",
@@ -318,7 +318,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-deepseek-code",
+      "id": "2026-05-21-10",
       "section": "platforms",
       "headline": "DeepSeek готовит «DeepSeek Code» для конкуренции с Claude Code и OpenAI Codex",
       "subheadline": "Китайская лаборатория выходит на рынок терминальных coding-агентов",
@@ -349,7 +349,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-figma-ai-assistant",
+      "id": "2026-05-21-11",
       "section": "platforms",
       "headline": "Figma добавила AI-ассистента на совместный холст",
       "subheadline": "Помощник встроен прямо в коллаборативное рабочее пространство",
@@ -378,7 +378,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-google-beam-meetings",
+      "id": "2026-05-21-12",
       "section": "platforms",
       "headline": "Google Beam получил эксперимент для групповых встреч",
       "subheadline": "Платформа 3D-видеосвязи расширяется на совещания нескольких участников",
@@ -418,7 +418,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-search-ads",
+      "id": "2026-05-21-13",
       "section": "platforms",
       "headline": "AI-эволюция поиска Google приносит больше рекламы и агентский шопинг",
       "subheadline": "Компания встраивает рекламу в AI-выдачу и продвигает покупки через агентов",
@@ -465,7 +465,7 @@
       "importance": 5
     },
     {
-      "id": "hype-anthropic-nobel-year",
+      "id": "2026-05-21-14",
       "section": "hype",
       "headline": "Сооснователь Anthropic: ИИ поможет совершить нобелевское открытие в течение года",
       "subheadline": "Джек Кларк прогнозирует прорыв в науке уже в ближайшие 12 месяцев",
@@ -496,7 +496,7 @@
       "importance": 7
     },
     {
-      "id": "hype-suleiman-office-work",
+      "id": "2026-05-21-15",
       "section": "hype",
       "headline": "Мустафа Сулейман: офисной работе осталось около полутора лет до радикальной автоматизации",
       "subheadline": "Глава Microsoft AI дал жёсткий прогноз по срокам автоматизации",
@@ -527,7 +527,7 @@
       "importance": 7
     },
     {
-      "id": "hype-scottish-election-errors",
+      "id": "2026-05-21-16",
       "section": "hype",
       "headline": "Чат-боты допустили грубые ошибки перед выборами в Шотландии",
       "subheadline": "Исследование зафиксировало дезинформацию у ChatGPT, Grok, Gemini и Replika",
@@ -564,7 +564,7 @@
       "importance": 5
     },
     {
-      "id": "hype-crawler-traps",
+      "id": "2026-05-21-17",
       "section": "hype",
       "headline": "Владельцы сайтов начали ставить ловушки для AI-краулеров",
       "subheadline": "Веб-мастера отвечают на бесконтрольный сбор данных скрытыми приманками",
@@ -589,7 +589,7 @@
       "importance": 5
     },
     {
-      "id": "hype-torvalds-ai",
+      "id": "2026-05-21-18",
       "section": "hype",
       "headline": "Линус Торвальдс признался в «любви-ненависти» к ИИ",
       "subheadline": "Создатель Linux высказался о противоречивом отношении к технологии",

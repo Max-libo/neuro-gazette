@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-tech-selloff",
+      "id": "2026-10-31-1",
       "section": "industry",
       "headline": "Распродажа техакций стоила рынкам США почти $1 трлн. Инвесторы сомневаются в окупаемости ИИ",
       "subheadline": "После слабых квартальных отчётов рынки США потеряли почти $1 трлн капитализации, акции Intel обвалились.",
@@ -44,7 +44,7 @@
       "importance": 9
     },
     {
-      "id": "industry-openai-round-cut",
+      "id": "2026-10-31-2",
       "section": "industry",
       "headline": "FT: OpenAI снизила цель раунда на $10 млрд — до $20 млрд",
       "subheadline": "Компания уменьшила сумму привлечения на фоне нервозности рынка. Оценка — около $1,25 трлн.",
@@ -73,7 +73,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anthropic-junk-rating",
+      "id": "2026-10-31-3",
       "section": "industry",
       "headline": "Продолжение: Anthropic после IPO ждёт «мусорный» кредитный рейтинг",
       "subheadline": null,
@@ -127,7 +127,7 @@
       "importance": 5
     },
     {
-      "id": "industry-nvidia-nscale-cosigner",
+      "id": "2026-10-31-4",
       "section": "industry",
       "headline": "NVIDIA может стать поручителем по дата-центру Nscale в Западной Вирджинии",
       "subheadline": "NVIDIA обсуждает, не поручиться ли по обязательствам британского оператора Nscale за ИИ-дата-центр в США.",
@@ -160,7 +160,7 @@
       "importance": 5
     },
     {
-      "id": "industry-new-york-ai-safety-bill",
+      "id": "2026-10-31-5",
       "section": "industry",
       "headline": "Законопроект Нью-Йорка обяжет разработчиков ИИ отчитываться о рисках раз в квартал",
       "subheadline": "Поправки ужесточают закон штата о безопасности ИИ: регулярная отчётность и уведомление о резком росте рисков за 72 часа.",
@@ -189,7 +189,7 @@
       "importance": 7
     },
     {
-      "id": "industry-wikipedia-copyright-ruling",
+      "id": "2026-10-31-6",
       "section": "industry",
       "headline": "Оператор Википедии: неудачное решение по делу NYT против OpenAI может навредить открытому вебу",
       "subheadline": "Фонд Wikimedia предупреждает о последствиях спора об авторском праве для открытых проектов.",
@@ -222,7 +222,7 @@
       "importance": 5
     },
     {
-      "id": "industry-reddit-google-ai-mode",
+      "id": "2026-10-31-7",
       "section": "industry",
       "headline": "Глава Reddit: AI Mode в Google не приводит трафик «никому»",
       "subheadline": "Стив Хаффман предупредил веб-издателей, что ИИ-поиск Google почти не отправляет пользователей на сайты.",
@@ -255,7 +255,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-ai-training-preferences",
+      "id": "2026-10-31-8",
       "section": "platforms",
       "headline": "OpenAI, Google и Microsoft поддержали новый способ запретить обучение ИИ на своём сайте",
       "subheadline": "Владельцы сайтов смогут явно указывать, разрешают ли они обучать ИИ на своём контенте.",
@@ -299,7 +299,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-teen-protections",
+      "id": "2026-10-31-9",
       "section": "platforms",
       "headline": "OpenAI опубликовала отчёт о безопасности сообщества и ввела новые меры защиты подростков",
       "subheadline": "Компания отчиталась о модерации и добавила новые ограничения для несовершеннолетних пользователей.",
@@ -330,7 +330,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-apple-intelligence-china",
+      "id": "2026-10-31-10",
       "section": "platforms",
       "headline": "Apple Intelligence выходит в Китае с iOS 27.3",
       "subheadline": "Владельцы iPhone в Китае получат ИИ-функции Apple со следующим обновлением системы.",
@@ -365,7 +365,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cursor-malicious-extension",
+      "id": "2026-10-31-11",
       "section": "platforms",
       "headline": "В маркетплейсе Cursor нашли вредоносное расширение под видом Claude Code",
       "subheadline": "Расширение пыталось получить удалённый доступ к машине разработчика и украсть данные.",
@@ -396,7 +396,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-microsoft-tokeneconomizer",
+      "id": "2026-10-31-12",
       "section": "platforms",
       "headline": "Microsoft выпустила TokenEconomizer — плагин, снижающий расходы кодинг-агентов до 30,9%",
       "subheadline": "Плагин контролирует расход токенов у агентов для программирования.",
@@ -427,7 +427,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-aws-agentcore-live-preview",
+      "id": "2026-10-31-13",
       "section": "platforms",
       "headline": "В Amazon Bedrock AgentCore появился живой предпросмотр веб-приложений, которые пишет агент",
       "subheadline": "Приложение видно прямо в процессе работы кодинг-агента, внутри среды AgentCore Runtime.",
@@ -469,7 +469,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-ollie-shutdown",
+      "id": "2026-10-31-14",
       "section": "platforms",
       "headline": "Закрывается Ollie — ИИ-ассистент с упором на приватность",
       "subheadline": "Сервис, обещавший защиту пользовательских данных, прекращает работу.",
@@ -498,7 +498,7 @@
       "importance": 5
     },
     {
-      "id": "models-glm-firefox-exploits",
+      "id": "2026-10-31-15",
       "section": "models",
       "headline": "Открытая модель GLM 5.3 меньше чем за 48 часов без участия человека собрала цепочки эксплойтов для Firefox",
       "subheadline": "Модель с открытыми весами сама написала полные цепочки атак на браузер.",
@@ -531,7 +531,7 @@
       "importance": 7
     },
     {
-      "id": "models-claude-mouse-gene-therapy",
+      "id": "2026-10-31-16",
       "section": "models",
       "headline": "Модель Claude сама выбрала генную терапию и провела операцию на мозге мыши",
       "subheadline": "В эксперименте ни одно решение — от выбора терапии до операции — не принимал человек.",
@@ -560,7 +560,7 @@
       "importance": 7
     },
     {
-      "id": "models-samaya-sterling",
+      "id": "2026-10-31-17",
       "section": "models",
       "headline": "Samaya AI выпустила Sterling — модель для финансовых исследований, обходящую Claude Fable 5.1 в 11 раз дешевле",
       "subheadline": "Модель с 3 млрд активных параметров дообучена для агентной работы с финансовыми данными.",
@@ -593,7 +593,7 @@
       "importance": 7
     },
     {
-      "id": "models-doximity-dosing-errors",
+      "id": "2026-10-31-18",
       "section": "models",
       "headline": "Doximity: популярные ИИ-модели ошибаются в дозировках, иногда смертельно",
       "subheadline": "В бенчмарке девяти моделей ошибка в дозировке встречалась примерно в каждом 50-м ответе.",
@@ -622,7 +622,7 @@
       "importance": 5
     },
     {
-      "id": "models-altman-math",
+      "id": "2026-10-31-19",
       "section": "models",
       "headline": "Продолжение: Альтман сочувствует математикам, но наступление OpenAI в математике продолжится",
       "subheadline": null,
@@ -653,7 +653,7 @@
       "importance": 5
     },
     {
-      "id": "content-22b-video-model-rtx3080",
+      "id": "2026-10-31-20",
       "section": "content",
       "headline": "Видеомодель на 22 млрд параметров запустили на RTX 3080 с 10 ГБ памяти",
       "subheadline": "Автор на Хабре разобрал, какие оптимизации понадобились, чтобы модель уместилась в видеопамять потребительской карты.",
@@ -682,7 +682,7 @@
       "importance": 5
     },
     {
-      "id": "hype-proton-cancels-reinterviews",
+      "id": "2026-10-31-21",
       "section": "hype",
       "headline": "Продолжение: глава Proton отменил повторные собеседования сотрудников об ИИ",
       "subheadline": null,
@@ -713,7 +713,7 @@
       "importance": 5
     },
     {
-      "id": "hype-google-satellite-poetry",
+      "id": "2026-10-31-22",
       "section": "hype",
       "headline": "Первый спутник-дата-центр Google заработал и пишет стихи",
       "subheadline": "Орбитальный прототип вычислительного узла Google вышел на связь и выполняет первые задачи.",
@@ -742,7 +742,7 @@
       "importance": 5
     },
     {
-      "id": "hype-pope-leo-disarm-ai",
+      "id": "2026-10-31-23",
       "section": "hype",
       "headline": "Папа Лев XIV призвал «разоружить» ИИ: «Машины — инструменты, а не личности»",
       "subheadline": "Глава Католической церкви выступил против очеловечивания ИИ и его военного применения.",
@@ -773,7 +773,7 @@
       "importance": 5
     },
     {
-      "id": "hype-altman-ram-datacenter",
+      "id": "2026-10-31-24",
       "section": "hype",
       "headline": "Сэм Альтман: оперативной памяти лучше быть в дата-центре, чем у вас на столе",
       "subheadline": "Глава OpenAI так прокомментировал нехватку RAM, из-за которой дорожают компьютеры.",
@@ -804,7 +804,7 @@
       "importance": 5
     },
     {
-      "id": "hype-doordash-agent-orders",
+      "id": "2026-10-31-25",
       "section": "hype",
       "headline": "DoorDash получил от ИИ-агентов лишь «несколько сотен» заказов",
       "subheadline": "Покупки через ИИ-агентов пока почти не влияют на бизнес DoorDash.",
@@ -842,7 +842,7 @@
       "importance": 5
     },
     {
-      "id": "hype-cognizant-sarvam",
+      "id": "2026-10-31-26",
       "section": "hype",
       "headline": "Cognizant ведёт переговоры об инвестиции в Sarvam при оценке $3,5–4 млрд",
       "subheadline": "Индийский разработчик моделей может привлечь около $300 млн.",
@@ -873,7 +873,7 @@
       "importance": 5
     },
     {
-      "id": "hype-maine-datacenter-senate",
+      "id": "2026-10-31-27",
       "section": "hype",
       "headline": "Продолжение: протест против дата-центров в Мэне может решить, кто получит Сенат",
       "subheadline": null,

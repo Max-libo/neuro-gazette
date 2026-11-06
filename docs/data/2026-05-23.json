@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "models-fara15-2026-05-23",
+      "id": "2026-05-23-2",
       "section": "models",
       "headline": "Microsoft выпустила Fara1.5 — браузерных агентов, обошедших Operator и Gemini Computer Use",
       "subheadline": "Семейство моделей на 4B, 9B и 27B параметров превзошло OpenAI Operator и Gemini 2.5 Computer Use на бенчмарке Online-Mind2Web",
@@ -38,7 +38,7 @@
       "importance": 7
     },
     {
-      "id": "models-stateofai-2026-05-23",
+      "id": "2026-05-23-3",
       "section": "models",
       "headline": "Air Street Capital: открытые модели сравнялись с GPT-4 на ключевых бенчмарках",
       "subheadline": "В отчёте State of AI за май отмечают, что DeepSeek V4, Qwen и Llama закрыли разрыв с проприетарными моделями",
@@ -75,7 +75,7 @@
       "importance": 7
     },
     {
-      "id": "models-lyria3pro-2026-05-23",
+      "id": "2026-05-23-4",
       "section": "models",
       "headline": "Продолжение: Lyria 3 Pro генерирует треки до 3 минут в продуктах Google",
       "subheadline": null,
@@ -108,7 +108,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-cloudflare-agents-2026-05-23",
+      "id": "2026-05-23-5",
       "section": "platforms",
       "headline": "Cloudflare достроила инфраструктуру для AI-агентов и переписала Browser Run",
       "subheadline": "Компания завершила шестислойную платформу для production-агентов, перестроив сервис управления браузером",
@@ -149,7 +149,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-openai-codex-2026-05-23",
+      "id": "2026-05-23-6",
       "section": "platforms",
       "headline": "OpenAI обновила Codex: Appshots и тариф за $100 в месяц",
       "subheadline": "Appshots превращают любое окно Mac в контекст для Codex, а новый тариф нацелен на разработчиков, упирающихся в лимиты",
@@ -198,7 +198,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-cursor3-2026-05-23",
+      "id": "2026-05-23-7",
       "section": "platforms",
       "headline": "Cursor 3 представил Agents Window как прямой ответ агентному режиму Claude Code",
       "subheadline": "Новое окно агентов поддерживает параллельный запуск, изолированные worktree и удалённые SSH-среды",
@@ -229,7 +229,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-grok-skills-2026-05-23",
+      "id": "2026-05-23-8",
       "section": "platforms",
       "headline": "xAI выпустила Grok Skills и добавила генерацию изображений и видео в Batch API",
       "subheadline": "Обновлён tool calling в Responses API, а пакетная обработка получила медиагенерацию со скидкой 50%",
@@ -267,7 +267,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-runway-aleph2-2026-05-23",
+      "id": "2026-05-23-9",
       "section": "content",
       "headline": "Runway выпустила Aleph 2.0 — «фотошоп для видео»",
       "subheadline": "Обновление позиционируется как инструмент покадрового редактирования видео по образцу графических редакторов",
@@ -298,7 +298,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-copilot-cli-2026-05-23",
+      "id": "2026-05-23-10",
       "section": "platforms",
       "headline": "GitHub Copilot CLI получил возобновление сессий",
       "subheadline": null,
@@ -329,7 +329,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-google-aimode-2026-05-23",
+      "id": "2026-05-23-11",
       "section": "platforms",
       "headline": "Продолжение: Google запустила AI Mode для всех на базе Gemini 3.5 Flash",
       "subheadline": null,
@@ -362,7 +362,7 @@
       "importance": 5
     },
     {
-      "id": "industry-california-eo-2026-05-23",
+      "id": "2026-05-23-1",
       "section": "industry",
       "headline": "Калифорния подписала первый в США указ о защите работников от увольнений из-за AI",
       "subheadline": "Губернатор штата подписал первое в стране распоряжение исполнительной власти, направленное на снижение потерь рабочих мест из-за искусственного интеллекта",
@@ -391,7 +391,7 @@
       "importance": 9
     },
     {
-      "id": "industry-openai-burn-2026-05-23",
+      "id": "2026-05-23-12",
       "section": "industry",
       "headline": "OpenAI тратила $1,22 на каждый заработанный доллар даже без учёта акций",
       "subheadline": "Расходы компании превышали выручку и после исключения компенсаций в виде акций",
@@ -420,7 +420,7 @@
       "importance": 7
     },
     {
-      "id": "industry-arr-inflation-2026-05-23",
+      "id": "2026-05-23-13",
       "section": "industry",
       "headline": "Расследование: венчуры и основатели раздувают ARR, чтобы «короновать» AI-стартапы",
       "subheadline": "TechCrunch описал практику завышения метрики годовой выручки в индустрии",
@@ -451,7 +451,7 @@
       "importance": 7
     },
     {
-      "id": "industry-ai-market-grip-2026-05-23",
+      "id": "2026-05-23-14",
       "section": "industry",
       "headline": "Доминирование AI-акций лишает активных управляющих шанса обыграть рынок",
       "subheadline": "Концентрация в AI-бумагах достигла рекордов, и активные фонды не успевают за индексами",
@@ -476,7 +476,7 @@
       "importance": 7
     },
     {
-      "id": "industry-deepseek-agi-2026-05-23",
+      "id": "2026-05-23-15",
       "section": "industry",
       "headline": "DeepSeek ставит исследования AGI выше быстрой прибыли несмотря на миллиарды финансирования",
       "subheadline": "По сообщениям, компания приоритизирует фундаментальные исследования над коммерциализацией",
@@ -505,7 +505,7 @@
       "importance": 7
     },
     {
-      "id": "industry-openai-ipo-filing-2026-05-23",
+      "id": "2026-05-23-16",
       "section": "industry",
       "headline": "Продолжение: OpenAI подала конфиденциальную заявку на IPO с оценкой до $1 трлн",
       "subheadline": null,
@@ -538,7 +538,7 @@
       "importance": 5
     },
     {
-      "id": "industry-standard-chartered-2026-05-23",
+      "id": "2026-05-23-17",
       "section": "industry",
       "headline": "Продолжение: глава Standard Chartered извинился за слова о «менее ценном человеческом капитале»",
       "subheadline": null,
@@ -567,7 +567,7 @@
       "importance": 5
     },
     {
-      "id": "hype-dead-pilots-voices-2026-05-23",
+      "id": "2026-05-23-18",
       "section": "hype",
       "headline": "ИИ воскрешает голоса погибших пилотов — NTSB закрыла свою базу данных",
       "subheadline": "Регулятор ограничил доступ после того, как в сети начали циркулировать AI-синтезированные голоса погибших",
@@ -596,7 +596,7 @@
       "importance": 7
     },
     {
-      "id": "hype-google-search-disregard-2026-05-23",
+      "id": "2026-05-23-19",
       "section": "hype",
       "headline": "AI-поиск Google может «проигнорировать» то, что вы ищете",
       "subheadline": null,
@@ -625,7 +625,7 @@
       "importance": 5
     },
     {
-      "id": "hype-mit-body-control-2026-05-23",
+      "id": "2026-05-23-20",
       "section": "hype",
       "headline": "Исследователи создали ИИ, способный управлять движениями человеческого тела",
       "subheadline": null,
@@ -654,7 +654,7 @@
       "importance": 5
     },
     {
-      "id": "hype-china-energy-grid-2026-05-23",
+      "id": "2026-05-23-21",
       "section": "hype",
       "headline": "ИИ в Китае составил карту всей сети возобновляемой энергетики страны",
       "subheadline": null,
@@ -683,7 +683,7 @@
       "importance": 5
     },
     {
-      "id": "hype-fly-brain-map-2026-05-23",
+      "id": "2026-05-23-22",
       "section": "hype",
       "headline": "ИИ помог собрать карту мозга мухи",
       "subheadline": null,

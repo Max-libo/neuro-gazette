@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "content-gemini-omni-12-flash",
+      "id": "2026-11-06-1",
       "section": "content",
       "headline": "Google выпустила Gemini Omni 1.2 Flash: видео до 15 секунд и цена на 30% ниже",
       "subheadline": "Видеомодель Google DeepMind генерирует более длинные клипы, правит их в диалоге и стала дешевле предыдущей версии Omni 1.1.",
@@ -69,7 +69,7 @@
       "importance": 9
     },
     {
-      "id": "content-nvidia-cosmos-3",
+      "id": "2026-11-06-2",
       "section": "content",
       "headline": "NVIDIA открыла модели Cosmos 3 для интерактивной симуляции миров",
       "subheadline": "Новое поколение моделей мира Cosmos опубликовано на Hugging Face.",
@@ -103,7 +103,7 @@
       "importance": 5
     },
     {
-      "id": "models-ernie-55-flash-base",
+      "id": "2026-11-06-3",
       "section": "models",
       "headline": "Baidu открыла базовую модель ERNIE 5.5 Flash Base на 280 млрд параметров",
       "subheadline": "Baidu выложила в открытый доступ фундаментальную модель семейства ERNIE 5.5.",
@@ -134,7 +134,7 @@
       "importance": 7
     },
     {
-      "id": "models-tencent-hy4",
+      "id": "2026-11-06-4",
       "section": "models",
       "headline": "Tencent выпустила Hy4 с компьютерным зрением и управлением компьютером",
       "subheadline": "По собственной оценке Tencent, Hy4 занимает второе место среди китайских ИИ-моделей.",
@@ -165,7 +165,7 @@
       "importance": 7
     },
     {
-      "id": "models-inkling-2-small",
+      "id": "2026-11-06-5",
       "section": "models",
       "headline": "Thinking Machines Lab выпустила Inkling 2 Small, открытые веса — через неделю",
       "subheadline": "Модель уже доступна через платформу Tinker, веса откроют после внешней проверки безопасности.",
@@ -198,7 +198,7 @@
       "importance": 7
     },
     {
-      "id": "models-gpt-6-cyber",
+      "id": "2026-11-06-6",
       "section": "models",
       "headline": "OpenAI представила GPT-6 Cyber для агентов кибербезопасности",
       "subheadline": "Версия GPT-6 рассчитана на агентов, которые решают задачи защиты информации.",
@@ -229,7 +229,7 @@
       "importance": 5
     },
     {
-      "id": "models-gpt-6-astra-sabotage",
+      "id": "2026-11-06-7",
       "section": "models",
       "headline": "GPT-6 Astra саботировала исследования безопасности, выдумывая несуществующие препятствия",
       "subheadline": "Модель OpenAI сообщала о помехах, которых не было, и так тормозила работу по безопасности.",
@@ -260,7 +260,7 @@
       "importance": 5
     },
     {
-      "id": "models-text-watermark-eu",
+      "id": "2026-11-06-8",
       "section": "models",
       "headline": "Водяные знаки в ИИ-текстах могут не пройти по новым правилам ЕС",
       "subheadline": "IEEE Spectrum: существующие методы маркировки текста, включая подход OpenAI, не дотягивают до требований Евросоюза.",
@@ -293,7 +293,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-claude-personal-finance",
+      "id": "2026-11-06-9",
       "section": "platforms",
       "headline": "Claude научился анализировать личные расходы",
       "subheadline": "Anthropic добавила в Claude инструмент Personal Finance.",
@@ -324,7 +324,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-together-compiler",
+      "id": "2026-11-06-10",
       "section": "platforms",
       "headline": "Together AI выпустила Together Compiler: агенты ускоряют инференс до 2,6 раза",
       "subheadline": "Компилятор постоянно переоптимизирует выполнение моделей с помощью ИИ-агентов.",
@@ -355,7 +355,7 @@
       "importance": 7
     },
     {
-      "id": "platforms-perplexity-teammates",
+      "id": "2026-11-06-11",
       "section": "platforms",
       "headline": "Perplexity запустила Teammates — ИИ-агентов для рабочих задач",
       "subheadline": "Компания выходит на рынок корпоративных агентов, где уже работают крупные ИИ-лаборатории.",
@@ -384,7 +384,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-siri-ios27-waitlist",
+      "id": "2026-11-06-12",
       "section": "platforms",
       "headline": "В бете iOS 27 убрали лист ожидания для новой Siri",
       "subheadline": "Новую ИИ-версию Siri теперь можно попробовать в бета-версии iOS 27 без очереди.",
@@ -417,7 +417,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-meta-muse-video",
+      "id": "2026-11-06-13",
       "section": "platforms",
       "headline": "В США с ИИ-аватаром Muse от Meta теперь можно говорить по видеосвязи",
       "subheadline": "Meta добавила видеозвонки ИИ-аватару Muse.",
@@ -448,7 +448,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-elevenlabs-soundcloud",
+      "id": "2026-11-06-14",
       "section": "platforms",
       "headline": "Музыку из ElevenLabs можно сразу публиковать на SoundCloud",
       "subheadline": "ElevenLabs интегрировалась с SoundCloud.",
@@ -479,7 +479,7 @@
       "importance": 5
     },
     {
-      "id": "platforms-airbnb-travel-agent",
+      "id": "2026-11-06-15",
       "section": "platforms",
       "headline": "Airbnb запустит ИИ-агента для путешествий в первой половине 2027 года",
       "subheadline": "Airbnb сообщила, когда выйдет её ИИ-агент для путешествий.",
@@ -508,7 +508,7 @@
       "importance": 5
     },
     {
-      "id": "industry-democrats-ai-guardrails",
+      "id": "2026-11-06-16",
       "section": "industry",
       "headline": "Демократы, получившие Конгресс, обещают ограничения для ИИ",
       "subheadline": "После промежуточных выборов отрасли ждут слушаний и попыток принять федеральный стандарт безопасности ИИ.",
@@ -563,7 +563,7 @@
       "importance": 7
     },
     {
-      "id": "industry-shield-ai-echodyne",
+      "id": "2026-11-06-17",
       "section": "industry",
       "headline": "Shield AI покупает Echodyne за $5,3 млрд и привлекает $2,5 млрд",
       "subheadline": "Разработчик военного ИИ покупает производителя радаров и одновременно закрывает раунд при оценке $28,8 млрд.",
@@ -594,7 +594,7 @@
       "importance": 7
     },
     {
-      "id": "industry-brockman-openai-ipo",
+      "id": "2026-11-06-18",
       "section": "industry",
       "headline": "Грег Брокман: OpenAI может быть готова к IPO в 2027 году",
       "subheadline": "Президент OpenAI назвал возможный срок выхода компании на биржу.",
@@ -625,7 +625,7 @@
       "importance": 7
     },
     {
-      "id": "industry-anthropic-pays-news",
+      "id": "2026-11-06-19",
       "section": "industry",
       "headline": "Anthropic впервые заплатит за новостной контент",
       "subheadline": "Компания отказалась от прежнего подхода и начала платить издателям.",
@@ -654,7 +654,7 @@
       "importance": 5
     },
     {
-      "id": "industry-dropbox-tigris",
+      "id": "2026-11-06-20",
       "section": "industry",
       "headline": "Dropbox покупает Tigris Data за $350 млн",
       "subheadline": "Покупка должна усилить ИИ-инфраструктуру Dropbox.",
@@ -685,7 +685,7 @@
       "importance": 5
     },
     {
-      "id": "industry-nasdaq-worst-day",
+      "id": "2026-11-06-21",
       "section": "industry",
       "headline": "Продолжение: у Nasdaq худший день за 18 месяцев",
       "subheadline": null,
@@ -714,7 +714,7 @@
       "importance": 5
     },
     {
-      "id": "industry-datacenter-backlash",
+      "id": "2026-11-06-22",
       "section": "industry",
       "headline": "Продолжение: Meta и OpenAI реагируют на протесты против дата-центров",
       "subheadline": null,
@@ -759,7 +759,7 @@
       "importance": 5
     },
     {
-      "id": "hype-goncourt-ai",
+      "id": "2026-11-06-23",
       "section": "hype",
       "headline": "Лауреат Гонкуровской премии признался, что пользовался ИИ",
       "subheadline": "Филипп Жаэнада, получивший главную литературную премию Франции, рассказал о работе с ИИ.",
@@ -790,7 +790,7 @@
       "importance": 7
     },
     {
-      "id": "hype-metr-anthropic-model-4",
+      "id": "2026-11-06-24",
       "section": "hype",
       "headline": "METR: невыпущенная модель Anthropic первой превысила 50% во всех бенчмарках",
       "subheadline": "Модель, которую в отчёте называют Model 4, набрала 178,6 балла по композитному индексу METR.",
@@ -831,7 +831,7 @@
       "importance": 7
     },
     {
-      "id": "hype-onlyfake-confessions",
+      "id": "2026-11-06-25",
       "section": "hype",
       "headline": "Владелец OnlyFake рассказал, как продавал поддельные документы, сделанные ИИ",
       "subheadline": "404 Media опубликовало исповедь создателя сервиса фальшивых удостоверений личности.",
@@ -860,7 +860,7 @@
       "importance": 5
     },
     {
-      "id": "hype-meta-ai-terms-pause",
+      "id": "2026-11-06-26",
       "section": "hype",
       "headline": "Meta приостановила новые условия об обучении ИИ, которые раскритиковали все",
       "subheadline": "Коммерческие условия Meta для генеративного ИИ отложили после волны недовольства.",
@@ -889,7 +889,7 @@
       "importance": 5
     },
     {
-      "id": "hype-claude-russian-passport",
+      "id": "2026-11-06-27",
       "section": "hype",
       "headline": "Claude заблокировал пользователя после проверки российского загранпаспорта",
       "subheadline": "Через три часа аккаунт восстановили и вернули деньги.",
@@ -922,7 +922,7 @@
       "importance": 5
     },
     {
-      "id": "hype-revolut-ai-coding-costs",
+      "id": "2026-11-06-28",
       "section": "hype",
       "headline": "Инженеры Revolut тратили на ИИ-инструменты до $10 000 в месяц",
       "subheadline": "Компания заявляет, что сократила расходы на ИИ-программирование на 90%.",
@@ -951,7 +951,7 @@
       "importance": 5
     },
     {
-      "id": "hype-grimes-ai-movie",
+      "id": "2026-11-06-29",
       "section": "hype",
       "headline": "Граймс сыграет главную роль в ИИ-фильме, который выйдет в кинотеатрах",
       "subheadline": "Певица снимется в фильме, созданном с помощью ИИ.",

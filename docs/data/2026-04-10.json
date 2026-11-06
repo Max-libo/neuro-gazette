@@ -3,7 +3,7 @@
   "published": false,
   "news": [
     {
-      "id": "industry-amazon-openai-50b-2026-04-10",
+      "id": "2026-04-10-1",
       "section": "industry",
       "headline": "Amazon вложил $50 млрд в OpenAI — крупнейшая AI-сделка в истории",
       "subheadline": "AWS станет эксклюзивным облачным провайдером OpenAI, компания перейдёт на чипы Trainium и Inferentia",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "models-gpt54-rollout-2026-04-10",
+      "id": "2026-04-10-2",
       "section": "models",
       "headline": "OpenAI развернула GPT-5.4 в ChatGPT, Codex и API",
       "subheadline": "Модель объединяет кодинг-возможности GPT-5.3-codex с продвинутым рассуждением",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "id": "models-heygen-avatar-v-2026-04-10",
+      "id": "2026-04-10-3",
       "section": "content",
       "headline": "HeyGen запустила Avatar V — фотореалистичные аватары из 15-секундного видео",
       "subheadline": "Модель генерирует цифровых двойников на 175 языках с автоматической синхронизацией губ",
@@ -113,7 +113,7 @@
       "details": "Аватар из 15-секундной записи · 175 языков"
     },
     {
-      "id": "models-llm-casual-fail-2026-04-10",
+      "id": "2026-04-10-4",
       "section": "models",
       "headline": "Исследование: LLM отлично справляются с кодом и математикой, но проваливают бытовые вопросы",
       "subheadline": "Разрыв между техническими и повседневными задачами — следствие архитектуры обучения",
@@ -138,7 +138,7 @@
       }
     },
     {
-      "id": "models-stanford-multiagent-2026-04-10",
+      "id": "2026-04-10-5",
       "section": "models",
       "headline": "Стэнфорд выяснил, когда мультиагентные системы оправдывают затраты на compute",
       "subheadline": "Командная работа AI-агентов эффективна лишь при высокой неопределённости задачи",
@@ -167,7 +167,7 @@
       }
     },
     {
-      "id": "platforms-openai-pro-100-2026-04-10",
+      "id": "2026-04-10-6",
       "section": "platforms",
       "headline": "OpenAI снизила цену Pro-подписки вдвое — до $100 в месяц",
       "subheadline": "Скидка нацелена на активных пользователей Codex и подрезает тарифы Anthropic и Google",
@@ -209,7 +209,7 @@
       }
     },
     {
-      "id": "platforms-claude-cowork-ga-2026-04-10",
+      "id": "2026-04-10-7",
       "section": "platforms",
       "headline": "Claude Cowork вышел из беты: доступен на всех платных планах для macOS и Windows",
       "subheadline": "Anthropic добавила корпоративные элементы управления и поддержку Windows",
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": "platforms-gemini-3d-viz-2026-04-10",
+      "id": "2026-04-10-8",
       "section": "platforms",
       "headline": "Google Gemini научился генерировать интерактивные 3D-модели прямо в чате",
       "subheadline": "Пользователи могут вращать, масштабировать и редактировать визуализации без сторонних инструментов",
@@ -281,7 +281,7 @@
       }
     },
     {
-      "id": "platforms-openai-cybersecurity-2026-04-10",
+      "id": "2026-04-10-9",
       "section": "platforms",
       "headline": "OpenAI разрабатывает продукт для кибербезопасности",
       "subheadline": "Компания создаёт специализированный инструмент защиты для ограниченного круга клиентов",
@@ -310,7 +310,7 @@
       }
     },
     {
-      "id": "platforms-microsoft-copilot-removal-2026-04-10",
+      "id": "2026-04-10-10",
       "section": "platforms",
       "headline": "Microsoft убирает кнопки Copilot из приложений Windows 11",
       "subheadline": "Компания отступает от агрессивного продвижения AI-ассистента в интерфейсе ОС",
@@ -341,7 +341,7 @@
       }
     },
     {
-      "id": "platforms-aws-agent-registry-mcp-2026-04-10",
+      "id": "2026-04-10-11",
       "section": "platforms",
       "headline": "AWS запустила Agent Registry и stateful MCP-клиент для Bedrock AgentCore",
       "subheadline": "Amazon расширяет инфраструктуру для управления AI-агентами в корпоративном масштабе",
@@ -381,7 +381,7 @@
       }
     },
     {
-      "id": "industry-meta-coreweave-21b-2026-04-10",
+      "id": "2026-04-10-12",
       "section": "industry",
       "headline": "Meta и CoreWeave заключили сделку на $21 млрд по расширению AI-инфраструктуры",
       "subheadline": "CoreWeave предоставит Meta выделенные GPU-кластеры для обучения и инференса",
@@ -412,7 +412,7 @@
       }
     },
     {
-      "id": "industry-openai-stargate-uk-cancel-2026-04-10",
+      "id": "2026-04-10-13",
       "section": "industry",
       "headline": "OpenAI отменила проект Stargate UK стоимостью £31 млрд",
       "subheadline": "Удар по AI-амбициям Великобритании на фоне переориентации OpenAI на AWS",
@@ -445,7 +445,7 @@
       }
     },
     {
-      "id": "industry-anthropic-pentagon-banks-2026-04-10",
+      "id": "2026-04-10-14",
       "section": "industry",
       "headline": "Anthropic под давлением: суд подтвердил чёрный список Пентагона, регуляторы вызвали банкиров",
       "subheadline": "Компания оказалась между военным и финансовым секторами",
@@ -481,7 +481,7 @@
       }
     },
     {
-      "id": "industry-xai-colorado-lawsuit-2026-04-10",
+      "id": "2026-04-10-15",
       "section": "industry",
       "headline": "xAI Маска подала в суд на Колорадо из-за закона о регулировании AI",
       "subheadline": "Компания оспаривает правила штата как неконституционные",
@@ -522,7 +522,7 @@
       }
     },
     {
-      "id": "industry-florida-ag-openai-2026-04-10",
+      "id": "2026-04-10-16",
       "section": "industry",
       "headline": "Генпрокурор Флориды начал расследование в отношении OpenAI",
       "subheadline": "Расследование связано со стрельбой в университете и ролью ChatGPT",
@@ -555,7 +555,7 @@
       }
     },
     {
-      "id": "industry-google-intel-2026-04-10",
+      "id": "2026-04-10-17",
       "section": "industry",
       "headline": "Google и Intel углубляют партнёрство по AI-инфраструктуре",
       "subheadline": "Компании расширяют сотрудничество в области чипов для AI-нагрузок",
@@ -586,7 +586,7 @@
       }
     },
     {
-      "id": "hype-iran-lego-propaganda-2026-04-10",
+      "id": "2026-04-10-18",
       "section": "hype",
       "headline": "Проиранские группы троллят Трампа AI-мемами в стиле LEGO",
       "subheadline": "Вирусные анимации набрали миллионы просмотров и стали инструментом информационной войны",
@@ -629,7 +629,7 @@
       }
     },
     {
-      "id": "hype-youtube-ai-avatar-deepfake-2026-04-10",
+      "id": "2026-04-10-19",
       "section": "content",
       "headline": "Google упростила создание дипфейков: AI-аватары в YouTube Shorts",
       "subheadline": "Новая функция позволяет создать цифровую копию себя для коротких видео",
@@ -661,7 +661,7 @@
       "details": "AI-аватары в YouTube Shorts"
     },
     {
-      "id": "hype-gen-z-ai-paradox-2026-04-10",
+      "id": "2026-04-10-20",
       "section": "hype",
       "headline": "Поколение Z не любит AI — но активно им пользуется",
       "subheadline": "Опрос Gallup выявил противоречивое отношение молодёжи к AI",
@@ -690,7 +690,7 @@
       }
     },
     {
-      "id": "hype-employee-distillation-2026-04-10",
+      "id": "2026-04-10-21",
       "section": "hype",
       "headline": "«Дистилляция» сотрудников: китайские компании превращают работу людей в датасеты для AI",
       "subheadline": "Тренд на «клонирование» рабочих навыков набирает обороты в Китае",
@@ -729,7 +729,7 @@
       }
     },
     {
-      "id": "hype-openai-18-months-bankruptcy-2026-04-10",
+      "id": "2026-04-10-22",
       "section": "hype",
       "headline": "NYT: до банкротства OpenAI может остаться 18 месяцев",
       "subheadline": "Прогноз звучит правдоподобнее на фоне растущих расходов компании на compute",
