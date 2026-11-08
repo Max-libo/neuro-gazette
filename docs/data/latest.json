@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "published": false,
   "news": [
     {
       "section": "industry",
-      "headline": "Россия и США пытаются заблокировать обязательные правила для автономного оружия",
-      "subheadline": "Две страны выступили против плана сделать международные нормы о боевых системах с ИИ юридически обязывающими.",
-      "body": "По данным The Guardian, Россия и США добиваются, чтобы международные правила для автономных систем вооружений не стали обязательными. Такие системы выбирают и поражают цели без прямого решения человека. Сторонники обязательного режима хотят закрепить человеческий контроль над применением силы. Россия и США, у которых одни из крупнейших программ военного ИИ, против того, чтобы нормы стали юридически обязывающими. Переговоры об ограничении автономного оружия идут в ООН много лет, а обязательного документа до сих пор нет.",
+      "headline": "Власти США одобрили NVIDIA поставки чипов китайскому покупателю, по адресу которого — пустой офис",
+      "subheadline": "The Verge выяснила, что получатель ИИ-чипов, которому американские власти разрешили поставки, фактически не работает по указанному адресу.",
+      "body": "По данным The Verge, американские власти выдали разрешение на продажу ИИ-чипов NVIDIA китайскому получателю, а по его адресу находится пустое помещение. Издание связывает эту историю с работой экспортного контроля и чёрных списков, по которым власти отбирают допустимых покупателей в Китае. Если проверка заявленного получателя сводится к бумагам, то возникает вопрос, кто на самом деле получает чипы и не уходят ли они компаниям под ограничениями. Для NVIDIA это ещё один спорный эпизод с поставками в Китай: на прошлой неделе компания, по сообщениям, требовала от облачных клиентов сократить там бизнес.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Russia and US seek to block plan for binding rules on autonomous weapons",
-          "url": "https://www.theguardian.com/world/2026/nov/06/autonomous-weapons-ai-russia-us-binding-rules",
+          "title": "The US let Nvidia sell chips to an empty office in China",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
           "type": "media"
         }
       ],
@@ -20,89 +20,60 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Россия",
-          "США"
+          "NVIDIA",
+          "Правительство США",
+          "Китай"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Россия": "neutral",
-          "США": "neutral"
+          "NVIDIA": "negative",
+          "Правительство США": "negative",
+          "Китай": "neutral"
         },
-        "event": "regulation"
+        "event": "criticism"
       },
       "importance": 9,
-      "id": "2026-11-07-1"
+      "id": "2026-11-08-1"
     },
     {
       "section": "industry",
-      "headline": "Данные Ramp: расходы компаний на ИИ перестали расти",
-      "subheadline": "Корпоративные траты на ИИ вышли на плато как раз накануне IPO Anthropic.",
-      "body": "Финтех-компания Ramp обрабатывает корпоративные карты и расходы своих клиентов и регулярно публикует по этим данным статистику о покупках ИИ-сервисов. TechCrunch пишет, что по свежим данным Ramp рост таких расходов остановился. Это совпало с подготовкой Anthropic к IPO: для оценки компании важно, продолжит ли расти корпоративный спрос.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
-          "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Ramp",
-          "Anthropic"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Ramp": "neutral",
-          "Anthropic": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-07-2"
-    },
-    {
-      "section": "industry",
-      "headline": "Продолжение: инвесторы сопротивляются оценке Anthropic в $1,5 трлн на IPO",
+      "headline": "Продолжение: Anthropic не откладывает IPO и согласна на более низкую оценку",
       "subheadline": null,
-      "body": "По данным The Decoder, часть инвесторов не готова принять оценку Anthropic в $1,5 трлн, на которую компания ориентируется при размещении.",
+      "body": "По данным The Decoder, Anthropic, несмотря на распродажу технологических акций, сохраняет план разместиться до Дня благодарения и готова принять оценку ниже, чем обсуждалась раньше.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Anthropic's $1.5 trillion IPO hits resistance as investors balk at valuation",
-          "url": "https://the-decoder.com/anthropics-1-5-trillion-ipo-hits-resistance-as-investors-balk-at-valuation/",
+          "title": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation",
+          "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Продолжение: Anthropic после IPO ждёт «мусорный» кредитный рейтинг",
+      "duplicate_note": "Продолжение: инвесторы сопротивляются оценке Anthropic в $1,5 трлн на IPO",
       "tags": {
         "entities": [
           "Anthropic"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "Anthropic": "negative"
+          "Anthropic": "neutral"
         },
         "event": "finance"
       },
       "importance": 5,
-      "id": "2026-11-07-3"
+      "id": "2026-11-08-2"
     },
     {
       "section": "industry",
-      "headline": "Crusoe продала Google проблемный проект дата-центра в Вайоминге",
-      "subheadline": "Застройщик ИИ-дата-центров передал Google проект, у которого были трудности.",
-      "body": "Crusoe строит дата-центры для обучения и инференса ИИ. TechCrunch называет проект в Вайоминге «проблемным». Его новым владельцем стала Google: компания наращивает собственные вычислительные мощности под ИИ.",
+      "headline": "В Юго-Восточной Азии гонка за строительство дата-центров встала на паузу",
+      "subheadline": "The Guardian пишет, что в регионе, который привлекал инвесторов в ИИ-инфраструктуру, проекты дата-центров начали тормозить.",
+      "body": "The Guardian разбирает, почему в Юго-Восточной Азии замедлился бум дата-центров, хотя регион считался одним из главных направлений для размещения ИИ-мощностей. Пауза совпала с распродажей технологических акций и с тем, что в США и Европе против дата-центров всё громче протестуют местные жители и политики.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Crusoe sells troubled Wyoming data center project to Google",
-          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+          "title": "The datacentre arms race hits pause in south-east Asia",
+          "url": "https://www.theguardian.com/technology/2026/nov/07/datacentres-southeast-asia",
           "type": "media"
         }
       ],
@@ -111,91 +82,114 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Crusoe",
-          "Google"
+          "Юго-Восточная Азия"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Crusoe": "neutral",
-          "Google": "positive"
+          "Юго-Восточная Азия": "negative"
         },
-        "event": "acquisition"
+        "event": "research"
       },
       "importance": 7,
-      "id": "2026-11-07-4"
+      "id": "2026-11-08-3"
     },
     {
       "section": "industry",
-      "headline": "OpenAI привлекла Hacktron к поиску уязвимостей в своих системах",
-      "subheadline": "Hacktron будет искать уязвимости в системах OpenAI.",
-      "body": "OpenAI объявила о партнёрстве в своём блоге. Hacktron занимается поиском уязвимостей с помощью ИИ, и теперь будет проверять системы OpenAI. Это продолжает работу OpenAI по безопасности собственной инфраструктуры: незадолго до этого компания подняла вознаграждения в программе bug bounty.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI's systems",
-          "url": "https://openai.com/index/partnering-with-hacktron",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "Hacktron"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "OpenAI": "positive",
-          "Hacktron": "positive"
-        },
-        "event": "partnership"
-      },
-      "importance": 7,
-      "id": "2026-11-07-5"
-    },
-    {
-      "section": "industry",
-      "headline": "Palo Alto Networks ведёт переговоры о покупке Clutch за $500 млн",
-      "subheadline": "Clutch делает инструменты безопасности для ИИ-агентов.",
-      "body": "По данным TechCrunch, сделка с Clutch может стоить около $500 млн. Стартап защищает ИИ-агентов в корпоративной среде. Стороны сделку пока не подтвердили.",
+      "headline": "ИИ-дата-центр в Ланаркшире будет работать только от National Grid, хотя заявлял о возобновляемой энергии",
+      "subheadline": "Проект DataVita в Чапелхолле получит энергию из общей сети, а не от собственных источников ВИЭ.",
+      "body": "По данным The Guardian, ИИ-дата-центр DataVita в шотландском Чапелхолле будет целиком питаться от сети National Grid, хотя проект продвигали как работающий на возобновляемой энергии.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-          "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+          "title": "Lanarkshire AI datacentre to fully rely on National Grid despite renewables claim",
+          "url": "https://www.theguardian.com/uk-news/2026/nov/07/lanarkshire-ai-datacentre-datavita-chapelhall-national-grid-renewable-energy",
           "type": "media"
         }
       ],
       "related": [],
-      "unconfirmed": true,
+      "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Palo Alto Networks",
-          "Clutch"
+          "DataVita",
+          "National Grid",
+          "Шотландия"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Palo Alto Networks": "neutral",
-          "Clutch": "positive"
+          "DataVita": "negative",
+          "National Grid": "neutral",
+          "Шотландия": "neutral"
         },
-        "event": "acquisition"
+        "event": "criticism"
       },
       "importance": 5,
-      "id": "2026-11-07-6"
+      "id": "2026-11-08-4"
     },
     {
       "section": "industry",
-      "headline": "Офисные сотрудники увольняются, опасаясь, что их заменит ИИ",
-      "subheadline": "The Guardian описывает людей, которые уходят с работы, не дожидаясь сокращений из-за ИИ.",
-      "body": "Герои материала уходят из профессий, которые считают уязвимыми перед автоматизацией. Они переучиваются или меняют сферу заранее, не дожидаясь, пока работодатель заменит их ИИ.",
+      "headline": "Алекс Стамос: ИИ сломал кибербезопасность",
+      "subheadline": "Бывший директор по безопасности Facebook рассказал в подкасте The Verge, что ждёт отрасль после прихода ИИ.",
+      "body": "В подкасте The Verge Алекс Стамос рассуждает о том, как ИИ изменил баланс сил между атакующими и защитниками и почему отрасль входит в «тёмные века» утечек данных. Выпуск вышел на фоне новостей о том, что ИИ-агенты уже самостоятельно проводят атаки, а лаборатории запускают собственные модели для поиска уязвимостей.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Fearing AI disruption, white-collar workers are quitting their jobs",
-          "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+          "title": "AI broke the cybersecurity world. What's next?",
+          "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Alex Stamos"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Alex Stamos": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-08-5"
+    },
+    {
+      "section": "industry",
+      "headline": "ИИ-прогнозы погоды дошли до 50 млн фермеров, для метеослужб создают открытую платформу",
+      "subheadline": "Следующий шаг — общая открытая платформа, чтобы национальные метеослужбы могли сами запускать ИИ-прогнозы.",
+      "body": "VC.ru пишет, что прогнозами погоды на основе ИИ уже пользуются 50 млн фермеров. Теперь для национальных метеослужб строят открытую платформу, чтобы такие прогнозы можно было запускать без собственной разработки.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ИИ-прогнозы погоды дошли до 50 млн фермеров — теперь для метеослужб создают открытую платформу",
+          "url": "https://vc.ru/ai/3240899-ii-prognozy-pogody-dlya-fermerov?from=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "positive",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-6"
+    },
+    {
+      "section": "models",
+      "headline": "Открытые модели всё быстрее догоняют закрытые в кибервозможностях",
+      "subheadline": "По наблюдениям исследователей, разрыв между открытыми и закрытыми ИИ-моделями в задачах кибербезопасности продолжает сокращаться.",
+      "body": "The Decoder пишет, что открытые модели всё ближе к закрытым в задачах кибербезопасности. Для регуляторов и лабораторий это значит, что доступ к опасным кибервозможностям уже не ограничить закрытым API: модели с открытыми весами можно запускать и дообучать без контроля разработчика. Тема острая, потому что OpenAI и Anthropic сейчас выпускают отдельные модели для поиска уязвимостей и ограничивают доступ к ним.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The gap between open and closed AI models in cyber capabilities keeps shrinking",
+          "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/",
           "type": "media"
         }
       ],
@@ -208,70 +202,247 @@
         "entity_sentiment": {},
         "event": "research"
       },
-      "importance": 5,
-      "id": "2026-11-07-7"
+      "importance": 7,
+      "id": "2026-11-08-7"
     },
     {
-      "section": "platforms",
-      "headline": "AWS вывела Continuum для поиска уязвимостей в коде в общий доступ",
-      "subheadline": "Сервис стал общедоступным. Заодно AWS добавила Multi-Instance GPU в SageMaker и удалённые сессии Claude Code в AgentCore.",
-      "body": "По данным InfoQ, Continuum вышел в общий доступ. Сервис ищет уязвимости в коде. В тот же день AWS сделала ещё два анонса. SageMaker Inference теперь поддерживает Multi-Instance GPU: один GPU делится между несколькими эндпоинтами моделей, и он меньше простаивает. Кроме того, AWS описала, как запускать удалённые сессии Claude Code в Amazon Bedrock AgentCore с контролем безопасности.",
+      "section": "models",
+      "headline": "ИИ-аудиторы ловят большинство нарушений агентов, но заваливают проверяющих ложными тревогами",
+      "subheadline": "В новом исследовании модели-наблюдатели в основном замечали нежелательные действия ИИ-агентов, но часто срабатывали без повода.",
+      "body": "По данным исследования, о котором пишет The Decoder, ИИ-модели в роли аудиторов распознают большую часть нежелательных действий агентов. Но ложных срабатываний так много, что людям-проверяющим приходится разбирать большой поток тревог, и выгода от автоматического надзора уменьшается. Вывод касается главной схемы контроля агентов, на которую опираются лаборатории: одна модель следит за другой, а человек проверяет то, что она отметила.",
       "tier": "regular",
       "sources": [
         {
-          "title": "AWS Ships Continuum for Code Vulnerabilities",
-          "url": "https://www.infoq.com/news/2026/11/aws-continuum-ga/",
+          "title": "AI auditors catch most agent misbehavior but flood reviewers with false alarms, new study finds",
+          "url": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
           "type": "media"
         }
       ],
-      "related": [
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-08-8"
+    },
+    {
+      "section": "models",
+      "headline": "Девять ИИ-агентов пытались решить открытые задачи национальных лабораторий США — ни один не дотянул до планки экспертов",
+      "subheadline": "Агентам дали нерешённые исследовательские вопросы из национальных лабораторий, и их результаты эксперты не приняли.",
+      "body": "В эксперименте, который описывает The Decoder, девять ИИ-агентов самостоятельно вели исследования по открытым вопросам, которые сформулировали национальные лаборатории США. Ни один результат не прошёл по критериям экспертов. Это противоречит заявлениям лабораторий о том, что агенты близки к самостоятельной научной работе.",
+      "tier": "regular",
+      "sources": [
         {
-          "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
-          "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
-          "entities": [
-            "AWS",
-            "SageMaker"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
-          "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
-          "entities": [
-            "AWS",
-            "Claude Code",
-            "Bedrock"
-          ],
-          "sentiment": "neutral"
+          "title": "Nine AI agents tried autonomous research on open questions from US national labs and none passed the experts' bar",
+          "url": "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/",
+          "type": "media"
         }
       ],
+      "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "AWS",
-          "Continuum"
+          "Минэнерго США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Минэнерго США": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-08-9"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: государственная пропаганда в китайских моделях снимается дообучением",
+      "subheadline": null,
+      "body": "Новая работа показывает, что в некоторых китайских моделях пропаганда — лишь «тонкий слой»: дообучение его убирает, а остальные возможности модели не страдают.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "State propaganda in some Chinese AI models is only \"a thin layer\" that fine-tuning can strip away",
+          "url": "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Исследование: китайские модели политически сложнее, чем рупор правительства",
+      "tags": {
+        "entities": [
+          "Китай"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Китай": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-10"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: кто видит метку Claude внутри слов и что её убирает",
+      "subheadline": null,
+      "body": "На VC.ru разобрали, какие инструменты находят водяной знак Claude в тексте, какие правки его стирают и влияет ли метка на сам текст.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Метка Claude внутри слов: кто её прочитает и что её снимает",
+          "url": "https://vc.ru/id5386171/3241327-metka-claude-kto-vidit-i-kak-ona-vliyaet-na-tekst?from=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Anthropic ввела водяные знаки, но две старые модели Claude остались без них",
+      "tags": {
+        "entities": [
+          "Claude",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Claude": "neutral",
+          "Anthropic": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-08-11"
+    },
+    {
+      "section": "models",
+      "headline": "Знают ли модели, о чём думают: обзор попыток это проверить",
+      "subheadline": "На Хабре собрали исследования о том, могут ли языковые модели верно описывать собственные внутренние состояния.",
+      "body": "Автор разбирает, как исследователи проверяют способность моделей к интроспекции: совпадает ли то, что модель говорит о своих рассуждениях, с тем, что на самом деле происходит в её активациях.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Знают ли модели ИИ, о чём они думают? Учёные пытаются это проверить",
+          "url": "https://habr.com/ru/articles/1104758/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-08-12"
+    },
+    {
+      "section": "models",
+      "headline": "Правда ли нейросети выдумывают ссылки и почему в ответах остаются удалённые статьи",
+      "subheadline": "На Хабре разобрали, откуда в ответах ИИ берутся несуществующие и уже удалённые источники.",
+      "body": "Автор отделяет ссылки, которые модель полностью выдумала, от ссылок на страницы, которые существовали раньше, остались в обучающих данных или поисковом индексе, а потом были удалены.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Правда ли нейросети выдумывают ссылки и почему в их ответах остаются удалённые статьи",
+          "url": "https://habr.com/ru/articles/1104870/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-08-13"
+    },
+    {
+      "section": "models",
+      "headline": "Ру-Жев 1.3: какие незнакомые названия категорий модель научилась понимать",
+      "subheadline": "Автор проверил, какие новые названия категорий версия 1.3 распознаёт, а на каких по-прежнему ошибается.",
+      "body": "На Хабре опубликовали проверку версии 1.3 модели Ру-Жев на категориях, которых не было при обучении: в каких случаях она стала правильно понимать незнакомые названия, а в каких нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Ру-Жев 1.3: какие незнакомые названия категорий модель стала понимать, а какие нет",
+          "url": "https://habr.com/ru/articles/1104810/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ру-Жев"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Ру-Жев": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-14"
+    },
+    {
+      "section": "platforms",
+      "headline": "Buoyant открыла Kinference — управление инференсом для Kubernetes и vLLM",
+      "subheadline": "Инструмент с открытым кодом управляет тем, как запросы к моделям распределяются по vLLM-серверам в Kubernetes.",
+      "body": "Buoyant, разработчик сервис-меша Linkerd, выпустила Kinference — открытый control plane для инференса. Он работает поверх Kubernetes и vLLM и отвечает за маршрутизацию и распределение запросов к моделям между серверами. Так компании, которые сами держат модели, получают инфраструктурный слой, который раньше приходилось собирать самим.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Buoyant Releases Kinference: An Open Source Inference Control Plane for Kubernetes and vLLM",
+          "url": "https://www.marktechpost.com/2026/11/07/buoyant-kinference-open-source-inference-control-plane-kubernetes-vllm/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Buoyant",
+          "Kinference",
+          "Kubernetes",
+          "vLLM"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "AWS": "positive",
-          "Continuum": "positive"
+          "Buoyant": "positive",
+          "Kinference": "positive",
+          "Kubernetes": "neutral",
+          "vLLM": "neutral"
         },
         "event": "release"
       },
       "importance": 7,
-      "id": "2026-11-07-8"
+      "id": "2026-11-08-15"
     },
     {
       "section": "platforms",
-      "headline": "В GitLab 19.5 работа ИИ-агентов встроена в DevOps-процессы с контролем",
-      "subheadline": "Агентная разработка в GitLab теперь подчиняется тем же правилам и проверкам, что и обычная.",
-      "body": "По данным InfoQ, в версии 19.5 GitLab встроила работу ИИ-агентов в свою DevOps-платформу. На их действия распространяются те же политики, права доступа и проверки, что и на действия разработчиков. Так компания отвечает на запрос корпоративных клиентов: им нужно контролировать, что агенты меняют в коде и инфраструктуре.",
+      "headline": "Расширение pg_vectorsearch с открытым кодом масштабирует векторный поиск в PostgreSQL",
+      "subheadline": "Новое расширение рассчитано на большие объёмы векторных данных прямо в PostgreSQL.",
+      "body": "InfoQ пишет о pg_vectorsearch — расширении для векторного поиска в PostgreSQL с открытым кодом, которое должно лучше справляться с большими объёмами данных. Векторный поиск лежит в основе RAG-систем и памяти ИИ-агентов. Если он работает в основной базе данных, отдельное векторное хранилище не нужно.",
       "tier": "regular",
       "sources": [
         {
-          "title": "GitLab 19.5 Makes Agentic Development a Governed Part of the DevOps Platform",
-          "url": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/",
+          "title": "Open Source pg_vectorsearch Brings More Scalable Vector Search to PostgreSQL",
+          "url": "https://www.infoq.com/news/2026/11/postgresql-vector-search/",
           "type": "media"
         }
       ],
@@ -280,27 +451,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "GitLab"
+          "pg_vectorsearch",
+          "PostgreSQL"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "GitLab": "positive"
+          "pg_vectorsearch": "positive",
+          "PostgreSQL": "positive"
         },
-        "event": "update"
+        "event": "release"
       },
       "importance": 7,
-      "id": "2026-11-07-9"
+      "id": "2026-11-08-16"
     },
     {
       "section": "platforms",
-      "headline": "ИИ Muse от Meta собирает «пространства» — версию приложения под текущую задачу",
-      "subheadline": "Muse создаёт пользователю отдельные пространства под конкретную задачу.",
-      "body": "По данным The Verge, в приложении Muse появились пространства. Пользователь описывает, что ему нужно, и ассистент собирает отдельную версию интерфейса под эту задачу. Незадолго до этого с аватаром Muse в США стало можно говорить по видеосвязи.",
+      "headline": "Grab рассказала, как сохранила стабильность приложения при наплыве кода от ИИ",
+      "subheadline": "Когда объём изменений, написанных ИИ, резко вырос, компания перестроила процесс выпуска мобильного приложения.",
+      "body": "По данным InfoQ, в Grab резко выросло число изменений кода, написанных ИИ. Чтобы это не сказалось на стабильности мобильного приложения, компания ввела дополнительные механизмы защиты при выпуске изменений. Это ещё один пример того, что ИИ-кодинг переносит нагрузку с написания кода на проверку и выкатку.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Meta's Muse AI can create custom 'spaces' for the version of the app you need right now",
-          "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+          "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
+          "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/",
           "type": "media"
         }
       ],
@@ -309,424 +482,196 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Meta",
-          "Muse"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Meta": "positive",
-          "Muse": "positive"
-        },
-        "event": "update"
-      },
-      "importance": 7,
-      "id": "2026-11-07-10"
-    },
-    {
-      "section": "platforms",
-      "headline": "Alexa стала принимать текстовые сообщения для покупок",
-      "subheadline": "Amazon запустила это вскоре после того, как закрыла доступ ИИ-агенту Muse от Meta.",
-      "body": "Теперь ассистенту Alexa можно писать текстом, чтобы найти и купить товары. TechCrunch связывает запуск с тем, что Amazon незадолго до этого заблокировала Muse от Meta.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
-          "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Amazon",
-          "Alexa",
-          "Muse"
+          "Grab"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Amazon": "positive",
-          "Alexa": "positive",
-          "Muse": "negative"
-        },
-        "event": "update"
-      },
-      "importance": 5,
-      "id": "2026-11-07-11"
-    },
-    {
-      "section": "platforms",
-      "headline": "Zyphra представила ZYFA — FP8 FlashAttention для AMD MI355X",
-      "subheadline": "Реализация внимания в FP8 ускоряет вычисления на ускорителях AMD до 1,76 раза.",
-      "body": "Zyphra сделала ZYFA — вариант FlashAttention с вычислениями в формате FP8 для ускорителей AMD Instinct MI355X. По данным компании, ускорение достигает 1,76 раза.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Zyphra ZYFA: FP8 FlashAttention for AMD MI355X, Up to 1.76x Faster",
-          "url": "https://www.marktechpost.com/2026/11/06/zyphra-zyfa-fp8-flashattention-amd-mi355x/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Zyphra",
-          "AMD"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Zyphra": "positive",
-          "AMD": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-07-12"
-    },
-    {
-      "section": "platforms",
-      "headline": "NVIDIA рассказала, как её открытые инструменты помогают в исследованиях 6G",
-      "subheadline": "Исследователи строят на открытом ПО NVIDIA сети связи следующего поколения.",
-      "body": "В блоге NVIDIA собраны примеры: исследователи телеком-сетей разрабатывают и тестируют технологии 6G на открытых инструментах компании.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-          "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "NVIDIA"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "NVIDIA": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-07-13"
-    },
-    {
-      "section": "platforms",
-      "headline": "Стал ли код Microsoft хуже с приходом ИИ: замеры .NET от версии 6.0 до 11 RC",
-      "subheadline": "Автор на Хабре сравнил библиотеки .NET разных версий, чтобы проверить, сказался ли ИИ на качестве кода.",
-      "body": "Автор замерил библиотеки .NET от версии 6.0 до 11 RC. Так он проверял расхожее мнение, что с приходом ИИ-инструментов код Microsoft стал хуже.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Стал ли код Microsoft хуже с приходом ИИ: замеры .NET-библиотек от 6.0 до 11 RC",
-          "url": "https://habr.com/ru/articles/1104356/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Microsoft",
-          ".NET"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Microsoft": "neutral",
-          ".NET": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-07-14"
-    },
-    {
-      "section": "models",
-      "headline": "Allen Institute представил ToyBlocks — контролируемый мир для обучения и оценки роботов",
-      "subheadline": "В среде ToyBlocks роботов можно обучать и сравнивать в одинаковых условиях.",
-      "body": "Allen Institute опубликовал описание ToyBlocks в своём блоге на Hugging Face. Это среда для обучения роботов, в которой условия задач можно контролировать. Поэтому разные методы и модели можно сравнивать на одних и тех же сценариях.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-          "url": "https://huggingface.co/blog/allenai/toyblocks",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Allen Institute",
-          "ToyBlocks"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Allen Institute": "positive",
-          "ToyBlocks": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-07-15"
-    },
-    {
-      "section": "models",
-      "headline": "Underdog показала речевую модель размером 32 МБ",
-      "subheadline": "Компания продемонстрировала компактную модель для работы с речью.",
-      "body": "По данным TechCrunch, Underdog показала новую модель в демо. Модель весит 32 МБ, то есть может работать прямо на устройстве, без облака. О том, когда она станет доступна, компания не сообщила.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Underdog shows off a 32MB speech model in new demo",
-          "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Underdog"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Underdog": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-07-16"
-    },
-    {
-      "section": "models",
-      "headline": "Продолжение: METR считает, что Anthropic перешла свой порог ускорения ИИ ещё в июле",
-      "subheadline": null,
-      "body": "По оценке METR, Anthropic могла превысить собственный порог предупреждения об ускорении разработки ИИ ещё в июле 2026 года, то есть до того, как компания об этом заявила.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "METR finds Anthropic may have crossed its own AI acceleration warning threshold back in July",
-          "url": "https://the-decoder.com/metr-finds-anthropic-may-have-crossed-its-own-ai-acceleration-warning-threshold-back-in-july/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "METR: невыпущенная модель Anthropic первой превысила 50% во всех бенчмарках",
-      "tags": {
-        "entities": [
-          "METR",
-          "Anthropic"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "METR": "neutral",
-          "Anthropic": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-07-17"
-    },
-    {
-      "section": "hype",
-      "headline": "В США троих обвинили в краже $129 млн с помощью ИИ-подделок руководителей компаний",
-      "subheadline": "Обвиняемые подделывали голоса и внешность топ-менеджеров, чтобы выводить деньги.",
-      "body": "Обвинения предъявила прокуратура Южного округа Нью-Йорка. По версии следствия, трое мужчин подделывали голоса и внешность руководителей компаний с помощью нейросетей. Так они убеждали сотрудников переводить деньги и похитили около $129 млн.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Three men charged in US with using AI to impersonate CEOs and steal millions",
-          "url": "https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Голосами директоров: трое мужчин с помощью ИИ похитили 129 миллионов долларов",
-          "url": "https://www.5-tv.ru/news/5094552/golosami-direktorov-troe-muzcin-spomosu-iipohitili-129-millionov-dollarov/",
-          "entities": [
-            "Прокуратура Южного округа Нью-Йорка"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Тему освещали The Guardian и 5-tv",
-      "tags": {
-        "entities": [
-          "Прокуратура Южного округа Нью-Йорка",
-          "США"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Прокуратура Южного округа Нью-Йорка": "neutral",
-          "США": "neutral"
-        },
-        "event": "legal"
-      },
-      "importance": 7,
-      "id": "2026-11-07-18"
-    },
-    {
-      "section": "hype",
-      "headline": "СМИ: Китай завербовал руководителя ИИ-компании, чтобы шпионить за Дженсеном Хуангом",
-      "subheadline": "По данным The Verge, китайские спецслужбы использовали топ-менеджера из отрасли для слежки за главой NVIDIA.",
-      "body": "The Verge ссылается на сообщения о том, что Китай завербовал руководителя одной из ИИ-компаний, чтобы собирать сведения о Дженсене Хуанге. Официального подтверждения нет. История появилась на фоне споров о поставках чипов NVIDIA в Китай.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "China reportedly recruited AI exec to spy on Jensen Huang",
-          "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-          "type": "rumor"
-        }
-      ],
-      "related": [],
-      "unconfirmed": true,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Китай",
-          "Jensen Huang",
-          "NVIDIA"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Китай": "negative",
-          "Jensen Huang": "negative",
-          "NVIDIA": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 7,
-      "id": "2026-11-07-19"
-    },
-    {
-      "section": "hype",
-      "headline": "В открытом доступе нашли сотни хакерских ИИ-инструментов Artex",
-      "subheadline": "Инструменты были доступны любому из интернета.",
-      "body": "По данным TechCrunch, сотни ИИ-инструментов для взлома Artex оказались выставлены в интернет без защиты. Воспользоваться ими мог любой желающий.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-          "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Artex"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Artex": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 5,
-      "id": "2026-11-07-20"
-    },
-    {
-      "section": "hype",
-      "headline": "Протестующие проникли на стройку дата-центра Microsoft в Амстердаме",
-      "subheadline": "Противники дата-центров прорвались на площадку Microsoft.",
-      "body": "По данным The Verge, протестующие проникли на территорию будущего дата-центра Microsoft в Амстердаме. Протесты против ИИ-дата-центров уже вышли за пределы США.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Protesters break into Microsoft data center site in Amsterdam",
-          "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Microsoft"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Microsoft": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 5,
-      "id": "2026-11-07-21"
-    },
-    {
-      "section": "hype",
-      "headline": "Антитеррористический центр СНГ: ИИ применяют для кибератак",
-      "subheadline": "Глава АТЦ СНГ назвал ИИ инструментом киберпреступников.",
-      "body": "Глава Антитеррористического центра СНГ заявил, что искусственный интеллект используют при проведении кибератак.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "АТЦ СНГ: ИИ используется для кибератак",
-          "url": "https://vz.ru/news/2026/11/6/1472969.html",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "АТЦ СНГ"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "АТЦ СНГ": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-07-22"
-    },
-    {
-      "section": "hype",
-      "headline": "Продолжение: на Хабре собирают статистику блокировок Claude по VPN и IP",
-      "subheadline": null,
-      "body": "Автор на Хабре заметил, что Claude блокирует одних пользователей из России и не трогает других. Он предложил собрать данные о том, какие VPN, IP-адреса и сетевые утечки приводят к блокировке.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Claude блокирует одних, а других нет. Давайте соберём статистику по VPN, IP и сетевым утечкам",
-          "url": "https://habr.com/ru/articles/1104660/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Claude заблокировал пользователя после проверки российского загранпаспорта",
-      "tags": {
-        "entities": [
-          "Claude",
-          "Россия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Claude": "negative",
-          "Россия": "neutral"
+          "Grab": "positive"
         },
         "event": "other"
       },
+      "importance": 7,
+      "id": "2026-11-08-17"
+    },
+    {
+      "section": "platforms",
+      "headline": "Мультиагентная OpenIDE от Haulmont получила обновления: Claude и Codex",
+      "subheadline": "Российская среда разработки расширила набор агентов, с которыми работает.",
+      "body": "Haulmont рассказала на Хабре об обновлениях OpenIDE. Среда работает с несколькими ИИ-агентами, в том числе с Claude и Codex.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Сегодня Claude, завтра Codex: обновления мультиагентной OpenIDE",
+          "url": "https://habr.com/ru/companies/haulmont/articles/1102934/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Haulmont",
+          "OpenIDE",
+          "Claude",
+          "Codex"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Haulmont": "positive",
+          "OpenIDE": "positive",
+          "Claude": "neutral",
+          "Codex": "neutral"
+        },
+        "event": "update"
+      },
       "importance": 5,
-      "id": "2026-11-07-23"
+      "id": "2026-11-08-18"
+    },
+    {
+      "section": "platforms",
+      "headline": "Какие российские сервисы e-com и финтеха доступны ИИ-агентам: обзор 424 продуктов",
+      "subheadline": "Автор проверил 424 сервиса и выяснил, через какие интерфейсы с ними может работать ИИ-агент.",
+      "body": "На Хабре опубликовали обзор 424 российских продуктов электронной коммерции и финтеха: есть ли у них API, MCP или другие способы подключить ИИ-агента.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "E-com и финтех РФ: какие сервисы доступны ИИ-агентам? Обзор 424 продуктов",
+          "url": "https://habr.com/ru/articles/1104816/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Россия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Россия": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-19"
+    },
+    {
+      "section": "platforms",
+      "headline": "ИИ Google находит повышенное давление по данным обычных смарт-часов без манжеты",
+      "subheadline": "Модель распознаёт гипертонию по сигналам с серийных часов, без тонометра.",
+      "body": "По данным The Decoder, Google показала ИИ-модель, которая выявляет повышенное артериальное давление по данным обычных смарт-часов. Отдельная манжета, как у тонометра, не нужна.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google's AI detects high blood pressure from a regular smartwatch without a cuff",
+          "url": "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-20"
+    },
+    {
+      "section": "hype",
+      "headline": "Россиян предостерегли от загрузки фото паспортов в нейросети",
+      "subheadline": "Эксперт предупредила, что фото документов в нейросетях и онлайн-конвертерах могут утечь.",
+      "body": "Эксперт, которую цитируют «Известия», советует не загружать сканы паспортов и других документов в нейросети и онлайн-конвертеры: это грозит утечкой персональных данных. В пример она привела сотрудницу, которую уволили за передачу коммерческой тайны через DeepSeek, — суд признал увольнение законным. Совет прозвучал на фоне истории с пользователем, которого Claude заблокировал после проверки российского загранпаспорта.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Россияне предостерегли от загрузки фото паспортов в нейросети",
+          "url": "https://iz.ru/2197651/rossiian-predosteregli-ot-zagruzki-foto-pasportov-v-neiroseti-izi",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Россия",
+          "DeepSeek"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Россия": "neutral",
+          "DeepSeek": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-08-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: Inkling 2 Small матерится в бенчмарках",
+      "subheadline": null,
+      "body": "В прогонах бенчмарков модель Thinking Machines Lab выдала 316 слов «f-word».",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Thinking Machines' Inkling 2 Small drops 316 F-bombs across benchmark runs",
+          "url": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Thinking Machines Lab выпустила Inkling 2 Small, открытые веса — через неделю",
+      "tags": {
+        "entities": [
+          "Thinking Machines Lab",
+          "Inkling 2 Small"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Thinking Machines Lab": "negative",
+          "Inkling 2 Small": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Шифр на кубике Рубика: девять нейросетей решали одну задачу",
+      "subheadline": "Автор дал девяти моделям одну и ту же головоломку с шифром на основе кубика Рубика и сравнил, как они справились.",
+      "body": "На Хабре сравнили, как девять ИИ-моделей разгадывают один и тот же шифр, построенный на кубике Рубика: кто решил задачу, а кто сдался или выдал уверенный неверный ответ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Шифр на кубике Рубика: как девять ИИ решали одну задачу",
+          "url": "https://habr.com/ru/articles/1104940/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-08-23"
     }
   ]
 }
