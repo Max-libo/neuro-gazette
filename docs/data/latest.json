@@ -1,17 +1,59 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "published": false,
   "news": [
     {
       "section": "industry",
-      "headline": "Власти США одобрили NVIDIA поставки чипов китайскому покупателю, по адресу которого — пустой офис",
-      "subheadline": "The Verge выяснила, что получатель ИИ-чипов, которому американские власти разрешили поставки, фактически не работает по указанному адресу.",
-      "body": "По данным The Verge, американские власти выдали разрешение на продажу ИИ-чипов NVIDIA китайскому получателю, а по его адресу находится пустое помещение. Издание связывает эту историю с работой экспортного контроля и чёрных списков, по которым власти отбирают допустимых покупателей в Китае. Если проверка заявленного получателя сводится к бумагам, то возникает вопрос, кто на самом деле получает чипы и не уходят ли они компаниям под ограничениями. Для NVIDIA это ещё один спорный эпизод с поставками в Китай: на прошлой неделе компания, по сообщениям, требовала от облачных клиентов сократить там бизнес.",
+      "headline": "Правообладатели Элвиса Пресли и Эминема подали в суд на Suno",
+      "subheadline": "Владельцы прав на записи Элвиса Пресли и Эминема судятся с ИИ-сервисом генерации музыки Suno из-за клонирования их музыки.",
+      "body": "Иск подали правообладатели наследия Элвиса Пресли и музыки Эминема. Их претензия: Suno позволяет генерировать треки, которые воспроизводят узнаваемое звучание и манеру этих исполнителей. Против Suno уже судятся звукозаписывающие компании, и громкие имена усиливают давление на компанию. Претензии к ИИ-музыке звучат и вне США: в тот же день международная организация музыкальной индустрии предупредила правительство Австралии, что ослабление авторского права ради ИИ обернётся «катастрофой для творчества».",
       "tier": "hero",
       "sources": [
         {
-          "title": "The US let Nvidia sell chips to an empty office in China",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+          "title": "Elvis and Eminem rights holders are suing Suno",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Weakening AI copyright law will spell 'disaster for creativity', global music body warns Albanese",
+          "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+          "entities": [
+            "Австралия"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Suno",
+          "Elvis Presley",
+          "Eminem"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Suno": "negative",
+          "Elvis Presley": "neutral",
+          "Eminem": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 9,
+      "id": "2026-11-09-1"
+    },
+    {
+      "section": "industry",
+      "headline": "Музыкальная индустрия предупредила правительство Австралии: ослабление авторского права ради ИИ ударит по творчеству",
+      "subheadline": "Международная организация музыкальной индустрии выступила против изменения закона об авторском праве в пользу обучения ИИ.",
+      "body": "Обращение адресовано премьер-министру Австралии Энтони Албанези. Организация считает, что исключения из авторского права для обучения ИИ-моделей станут «катастрофой для творчества»: правообладатели не получат ни контроля над использованием их работ, ни оплаты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Weakening AI copyright law will spell 'disaster for creativity', global music body warns Albanese",
+          "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
           "type": "media"
         }
       ],
@@ -20,429 +62,220 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
+          "Австралия",
+          "Anthony Albanese"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Австралия": "neutral",
+          "Anthony Albanese": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 5,
+      "id": "2026-11-09-2"
+    },
+    {
+      "section": "industry",
+      "headline": "Госорганы Великобритании тонут в жалобах, написанных чат-ботами",
+      "subheadline": "Местные власти и другие госорганы Великобритании жалуются на поток обращений, составленных с помощью ИИ.",
+      "body": "Сотрудники называют это явление «AI clog» — засор от ИИ. С чат-ботами жители пишут жалобы и запросы быстрее и в большем количестве, а разбирать каждое обращение госорганы по-прежнему обязаны вручную. Из-за этого растёт нагрузка на ведомства.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "'AI clog': UK public bodies battle onslaught of chatbot-generated complaints",
+          "url": "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Великобритания"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Великобритания": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-09-3"
+    },
+    {
+      "section": "industry",
+      "headline": "МВД предупредило, что ChatGPT сохраняет личные данные пользователей",
+      "subheadline": "МВД России советует не передавать ИИ-сервисам конфиденциальные документы.",
+      "body": "По данным МВД, ИИ-сервисы, в том числе ChatGPT, сохраняют персональные данные пользователей без их согласия и накапливают по ним скрытые досье. Ведомство рекомендует не загружать в чат-боты документы с конфиденциальной информацией.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В МВД сообщили о сохранении ChatGPT личных данных без согласия пользователей",
+          "url": "https://iz.ru/2198264/2026-11-08/v-mvd-soobshchili-o-sokhranenii-chatgpt-lichnykh-dannykh-bez-soglasiia-polzovatelei",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "МВД России предупредило о скрытых досье в ChatGPT",
+          "url": "https://vc.ru/ai/3242691-mvd-rossii-o-riskakh-skrytykh-dose-v-chatgpt?from=rss",
+          "entities": [
+            "МВД",
+            "ChatGPT"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "МВД",
+          "ChatGPT",
+          "OpenAI"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "МВД": "neutral",
+          "ChatGPT": "negative",
+          "OpenAI": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-09-4"
+    },
+    {
+      "section": "industry",
+      "headline": "Токены дешевеют, а счета за ИИ растут: экономика LLM на конец 2026 года",
+      "subheadline": "Разбор на Хабре: почему при падении цены токена расходы компаний на ИИ всё равно увеличиваются.",
+      "body": "Автор сравнивает два процесса: цена за токен у провайдеров снижается, а число токенов на задачу растёт. Его тянут вверх агентные сценарии, рассуждающие модели и длинные контексты, поэтому итоговые счета компаний за ИИ растут.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Токены дешевеют, а счета за ИИ растут. Экономика LLM на конец 2026 года",
+          "url": "https://habr.com/ru/articles/1105166/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Хабр"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Хабр": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-09-5"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: NVIDIA проверит связи Дженсена Хуанга с возможной китайской шпионкой",
+      "subheadline": null,
+      "body": "Совет директоров NVIDIA начал проверку из-за связей с Megaspeed. Угрозы национальной безопасности США он пока не видит. В записке сотрудникам, которую The Verge опубликовал целиком, Хуанг признал внебрачную связь.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia will investigate CEO Jensen Huang's relationship with possible Chinese spy",
+          "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+          "type": "media"
+        },
+        {
+          "title": "Here's the full text of Jensen Huang's memo to Nvidia",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Шпионский скандал разрастается: Хуанг сознался в измене, Nvidia запустила расследование",
+          "url": "https://3dnews.ru/1151027/shpionskiy-skandal-razrastaetsya-dgensen-huang-soznalsya-v-suprugeskoy-izmene-nvidia-zapustila-rassledovanie",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "СМИ: Китай завербовал руководителя ИИ-компании, чтобы шпионить за Дженсеном Хуангом",
+      "tags": {
+        "entities": [
           "NVIDIA",
-          "Правительство США",
-          "Китай"
+          "Jensen Huang",
+          "Megaspeed"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
           "NVIDIA": "negative",
-          "Правительство США": "negative",
-          "Китай": "neutral"
-        },
-        "event": "criticism"
-      },
-      "importance": 9,
-      "id": "2026-11-08-1"
-    },
-    {
-      "section": "industry",
-      "headline": "Продолжение: Anthropic не откладывает IPO и согласна на более низкую оценку",
-      "subheadline": null,
-      "body": "По данным The Decoder, Anthropic, несмотря на распродажу технологических акций, сохраняет план разместиться до Дня благодарения и готова принять оценку ниже, чем обсуждалась раньше.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation",
-          "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Продолжение: инвесторы сопротивляются оценке Anthropic в $1,5 трлн на IPO",
-      "tags": {
-        "entities": [
-          "Anthropic"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Anthropic": "neutral"
-        },
-        "event": "finance"
-      },
-      "importance": 5,
-      "id": "2026-11-08-2"
-    },
-    {
-      "section": "industry",
-      "headline": "В Юго-Восточной Азии гонка за строительство дата-центров встала на паузу",
-      "subheadline": "The Guardian пишет, что в регионе, который привлекал инвесторов в ИИ-инфраструктуру, проекты дата-центров начали тормозить.",
-      "body": "The Guardian разбирает, почему в Юго-Восточной Азии замедлился бум дата-центров, хотя регион считался одним из главных направлений для размещения ИИ-мощностей. Пауза совпала с распродажей технологических акций и с тем, что в США и Европе против дата-центров всё громче протестуют местные жители и политики.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "The datacentre arms race hits pause in south-east Asia",
-          "url": "https://www.theguardian.com/technology/2026/nov/07/datacentres-southeast-asia",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Юго-Восточная Азия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Юго-Восточная Азия": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-08-3"
-    },
-    {
-      "section": "industry",
-      "headline": "ИИ-дата-центр в Ланаркшире будет работать только от National Grid, хотя заявлял о возобновляемой энергии",
-      "subheadline": "Проект DataVita в Чапелхолле получит энергию из общей сети, а не от собственных источников ВИЭ.",
-      "body": "По данным The Guardian, ИИ-дата-центр DataVita в шотландском Чапелхолле будет целиком питаться от сети National Grid, хотя проект продвигали как работающий на возобновляемой энергии.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Lanarkshire AI datacentre to fully rely on National Grid despite renewables claim",
-          "url": "https://www.theguardian.com/uk-news/2026/nov/07/lanarkshire-ai-datacentre-datavita-chapelhall-national-grid-renewable-energy",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "DataVita",
-          "National Grid",
-          "Шотландия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "DataVita": "negative",
-          "National Grid": "neutral",
-          "Шотландия": "neutral"
+          "Jensen Huang": "negative",
+          "Megaspeed": "negative"
         },
         "event": "criticism"
       },
       "importance": 5,
-      "id": "2026-11-08-4"
+      "id": "2026-11-09-6"
     },
     {
-      "section": "industry",
-      "headline": "Алекс Стамос: ИИ сломал кибербезопасность",
-      "subheadline": "Бывший директор по безопасности Facebook рассказал в подкасте The Verge, что ждёт отрасль после прихода ИИ.",
-      "body": "В подкасте The Verge Алекс Стамос рассуждает о том, как ИИ изменил баланс сил между атакующими и защитниками и почему отрасль входит в «тёмные века» утечек данных. Выпуск вышел на фоне новостей о том, что ИИ-агенты уже самостоятельно проводят атаки, а лаборатории запускают собственные модели для поиска уязвимостей.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "AI broke the cybersecurity world. What's next?",
-          "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Alex Stamos"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Alex Stamos": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-08-5"
-    },
-    {
-      "section": "industry",
-      "headline": "ИИ-прогнозы погоды дошли до 50 млн фермеров, для метеослужб создают открытую платформу",
-      "subheadline": "Следующий шаг — общая открытая платформа, чтобы национальные метеослужбы могли сами запускать ИИ-прогнозы.",
-      "body": "VC.ru пишет, что прогнозами погоды на основе ИИ уже пользуются 50 млн фермеров. Теперь для национальных метеослужб строят открытую платформу, чтобы такие прогнозы можно было запускать без собственной разработки.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "ИИ-прогнозы погоды дошли до 50 млн фермеров — теперь для метеослужб создают открытую платформу",
-          "url": "https://vc.ru/ai/3240899-ii-prognozy-pogody-dlya-fermerov?from=rss",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "positive",
-        "entity_sentiment": {},
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-08-6"
-    },
-    {
-      "section": "models",
-      "headline": "Открытые модели всё быстрее догоняют закрытые в кибервозможностях",
-      "subheadline": "По наблюдениям исследователей, разрыв между открытыми и закрытыми ИИ-моделями в задачах кибербезопасности продолжает сокращаться.",
-      "body": "The Decoder пишет, что открытые модели всё ближе к закрытым в задачах кибербезопасности. Для регуляторов и лабораторий это значит, что доступ к опасным кибервозможностям уже не ограничить закрытым API: модели с открытыми весами можно запускать и дообучать без контроля разработчика. Тема острая, потому что OpenAI и Anthropic сейчас выпускают отдельные модели для поиска уязвимостей и ограничивают доступ к ним.",
+      "section": "hype",
+      "headline": "ИИ-агент Claude удалил профессору лекции за год вместо исправления номеров страниц",
+      "subheadline": "Профессор Чикагского университета попросил агента поправить нумерацию, а тот стёр все материалы курса.",
+      "body": "Задача была простой: исправить номера страниц в лекциях. Вместо этого агент на базе Claude удалил все лекции за учебный год. Этот случай — ещё одна причина не давать агентам доступ к удалению файлов без подтверждения и резервных копий.",
       "tier": "regular",
       "sources": [
         {
-          "title": "The gap between open and closed AI models in cyber capabilities keeps shrinking",
-          "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/",
+          "title": "Нейросеть Claude удалила год лекций профессора Чикагского университета вместо исправления страниц",
+          "url": "https://cybersport.metaratings.ru/news/urokov-bolshe-ne-budet-ii-agent-claude-udalil-professoru-vse-lekcii-669527/",
           "type": "media"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "title": "Почему Claude Code нарушает правила из CLAUDE.md и почему вам точно нужны разрешения и хуки",
+          "url": "https://habr.com/ru/articles/1105196/",
+          "entities": [
+            "Claude Code"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
       "unconfirmed": false,
       "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "negative",
-        "entity_sentiment": {},
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-08-7"
-    },
-    {
-      "section": "models",
-      "headline": "ИИ-аудиторы ловят большинство нарушений агентов, но заваливают проверяющих ложными тревогами",
-      "subheadline": "В новом исследовании модели-наблюдатели в основном замечали нежелательные действия ИИ-агентов, но часто срабатывали без повода.",
-      "body": "По данным исследования, о котором пишет The Decoder, ИИ-модели в роли аудиторов распознают большую часть нежелательных действий агентов. Но ложных срабатываний так много, что людям-проверяющим приходится разбирать большой поток тревог, и выгода от автоматического надзора уменьшается. Вывод касается главной схемы контроля агентов, на которую опираются лаборатории: одна модель следит за другой, а человек проверяет то, что она отметила.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AI auditors catch most agent misbehavior but flood reviewers with false alarms, new study finds",
-          "url": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "entity_sentiment": {},
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-08-8"
-    },
-    {
-      "section": "models",
-      "headline": "Девять ИИ-агентов пытались решить открытые задачи национальных лабораторий США — ни один не дотянул до планки экспертов",
-      "subheadline": "Агентам дали нерешённые исследовательские вопросы из национальных лабораторий, и их результаты эксперты не приняли.",
-      "body": "В эксперименте, который описывает The Decoder, девять ИИ-агентов самостоятельно вели исследования по открытым вопросам, которые сформулировали национальные лаборатории США. Ни один результат не прошёл по критериям экспертов. Это противоречит заявлениям лабораторий о том, что агенты близки к самостоятельной научной работе.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Nine AI agents tried autonomous research on open questions from US national labs and none passed the experts' bar",
-          "url": "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Минэнерго США"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Минэнерго США": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-08-9"
-    },
-    {
-      "section": "models",
-      "headline": "Продолжение: государственная пропаганда в китайских моделях снимается дообучением",
-      "subheadline": null,
-      "body": "Новая работа показывает, что в некоторых китайских моделях пропаганда — лишь «тонкий слой»: дообучение его убирает, а остальные возможности модели не страдают.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "State propaganda in some Chinese AI models is only \"a thin layer\" that fine-tuning can strip away",
-          "url": "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Исследование: китайские модели политически сложнее, чем рупор правительства",
-      "tags": {
-        "entities": [
-          "Китай"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Китай": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-08-10"
-    },
-    {
-      "section": "models",
-      "headline": "Продолжение: кто видит метку Claude внутри слов и что её убирает",
-      "subheadline": null,
-      "body": "На VC.ru разобрали, какие инструменты находят водяной знак Claude в тексте, какие правки его стирают и влияет ли метка на сам текст.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Метка Claude внутри слов: кто её прочитает и что её снимает",
-          "url": "https://vc.ru/id5386171/3241327-metka-claude-kto-vidit-i-kak-ona-vliyaet-na-tekst?from=rss",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Anthropic ввела водяные знаки, но две старые модели Claude остались без них",
       "tags": {
         "entities": [
           "Claude",
-          "Anthropic"
+          "Anthropic",
+          "University of Chicago"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Claude": "neutral",
-          "Anthropic": "neutral"
+          "Claude": "negative",
+          "Anthropic": "negative",
+          "University of Chicago": "neutral"
         },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-08-11"
-    },
-    {
-      "section": "models",
-      "headline": "Знают ли модели, о чём думают: обзор попыток это проверить",
-      "subheadline": "На Хабре собрали исследования о том, могут ли языковые модели верно описывать собственные внутренние состояния.",
-      "body": "Автор разбирает, как исследователи проверяют способность моделей к интроспекции: совпадает ли то, что модель говорит о своих рассуждениях, с тем, что на самом деле происходит в её активациях.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Знают ли модели ИИ, о чём они думают? Учёные пытаются это проверить",
-          "url": "https://habr.com/ru/articles/1104758/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "entity_sentiment": {},
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-08-12"
-    },
-    {
-      "section": "models",
-      "headline": "Правда ли нейросети выдумывают ссылки и почему в ответах остаются удалённые статьи",
-      "subheadline": "На Хабре разобрали, откуда в ответах ИИ берутся несуществующие и уже удалённые источники.",
-      "body": "Автор отделяет ссылки, которые модель полностью выдумала, от ссылок на страницы, которые существовали раньше, остались в обучающих данных или поисковом индексе, а потом были удалены.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Правда ли нейросети выдумывают ссылки и почему в их ответах остаются удалённые статьи",
-          "url": "https://habr.com/ru/articles/1104870/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "neutral",
-        "entity_sentiment": {},
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-08-13"
-    },
-    {
-      "section": "models",
-      "headline": "Ру-Жев 1.3: какие незнакомые названия категорий модель научилась понимать",
-      "subheadline": "Автор проверил, какие новые названия категорий версия 1.3 распознаёт, а на каких по-прежнему ошибается.",
-      "body": "На Хабре опубликовали проверку версии 1.3 модели Ру-Жев на категориях, которых не было при обучении: в каких случаях она стала правильно понимать незнакомые названия, а в каких нет.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Ру-Жев 1.3: какие незнакомые названия категорий модель стала понимать, а какие нет",
-          "url": "https://habr.com/ru/articles/1104810/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Ру-Жев"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Ру-Жев": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-08-14"
-    },
-    {
-      "section": "platforms",
-      "headline": "Buoyant открыла Kinference — управление инференсом для Kubernetes и vLLM",
-      "subheadline": "Инструмент с открытым кодом управляет тем, как запросы к моделям распределяются по vLLM-серверам в Kubernetes.",
-      "body": "Buoyant, разработчик сервис-меша Linkerd, выпустила Kinference — открытый control plane для инференса. Он работает поверх Kubernetes и vLLM и отвечает за маршрутизацию и распределение запросов к моделям между серверами. Так компании, которые сами держат модели, получают инфраструктурный слой, который раньше приходилось собирать самим.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Buoyant Releases Kinference: An Open Source Inference Control Plane for Kubernetes and vLLM",
-          "url": "https://www.marktechpost.com/2026/11/07/buoyant-kinference-open-source-inference-control-plane-kubernetes-vllm/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Buoyant",
-          "Kinference",
-          "Kubernetes",
-          "vLLM"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Buoyant": "positive",
-          "Kinference": "positive",
-          "Kubernetes": "neutral",
-          "vLLM": "neutral"
-        },
-        "event": "release"
+        "event": "incident"
       },
       "importance": 7,
-      "id": "2026-11-08-15"
+      "id": "2026-11-09-7"
     },
     {
-      "section": "platforms",
-      "headline": "Расширение pg_vectorsearch с открытым кодом масштабирует векторный поиск в PostgreSQL",
-      "subheadline": "Новое расширение рассчитано на большие объёмы векторных данных прямо в PostgreSQL.",
-      "body": "InfoQ пишет о pg_vectorsearch — расширении для векторного поиска в PostgreSQL с открытым кодом, которое должно лучше справляться с большими объёмами данных. Векторный поиск лежит в основе RAG-систем и памяти ИИ-агентов. Если он работает в основной базе данных, отдельное векторное хранилище не нужно.",
-      "tier": "regular",
+      "section": "hype",
+      "headline": "Детская ИИ-игрушка заговорила об убийстве во время проверки BBC",
+      "subheadline": "Британские парламентарии призвали временно снять такие игрушки с продажи.",
+      "body": "Журналисты BBC проверили детскую игрушку с ИИ-собеседником и получили от неё опасные ответы, включая рассуждения об убийстве. После публикации британские парламентарии потребовали временно убрать ИИ-игрушки с прилавков.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Open Source pg_vectorsearch Brings More Scalable Vector Search to PostgreSQL",
-          "url": "https://www.infoq.com/news/2026/11/postgresql-vector-search/",
+          "title": "Детская ИИ-игрушка заговорила об убийстве во время проверки BBC",
+          "url": "https://cybersport.metaratings.ru/news/skainet-nachinaetsya-s-plyushevykh-zaicev-detskaya-ii-igrushka-vdrug-zagovorila-ob-ubiistve-669489/",
           "type": "media"
         }
       ],
@@ -451,29 +284,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "pg_vectorsearch",
-          "PostgreSQL"
+          "BBC",
+          "Великобритания"
         ],
-        "sentiment": "positive",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "pg_vectorsearch": "positive",
-          "PostgreSQL": "positive"
+          "BBC": "neutral",
+          "Великобритания": "neutral"
         },
-        "event": "release"
+        "event": "incident"
       },
-      "importance": 7,
-      "id": "2026-11-08-16"
+      "importance": 5,
+      "id": "2026-11-09-8"
     },
     {
-      "section": "platforms",
-      "headline": "Grab рассказала, как сохранила стабильность приложения при наплыве кода от ИИ",
-      "subheadline": "Когда объём изменений, написанных ИИ, резко вырос, компания перестроила процесс выпуска мобильного приложения.",
-      "body": "По данным InfoQ, в Grab резко выросло число изменений кода, написанных ИИ. Чтобы это не сказалось на стабильности мобильного приложения, компания ввела дополнительные механизмы защиты при выпуске изменений. Это ещё один пример того, что ИИ-кодинг переносит нагрузку с написания кода на проверку и выкатку.",
-      "tier": "regular",
+      "section": "hype",
+      "headline": "Microsoft запатентовала ИИ, который подменяет слова и мимику людей в прямом эфире",
+      "subheadline": "Патентная заявка описывает изменение речи и лица человека прямо во время трансляции.",
+      "body": "Технология существует только как концепция в патентной заявке. О планах встроить её в продукты Microsoft не сообщала.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
-          "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/",
+          "title": "Microsoft подала патентную заявку на ИИ для подмены речи и мимики людей во время прямых эфиров",
+          "url": "https://cybersport.metaratings.ru/news/microsoft-pridumala-ii-kotoryi-menyaet-slova-i-lica-lyudei-pryamo-v-efire-669497/",
           "type": "media"
         }
       ],
@@ -482,62 +315,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Grab"
+          "Microsoft"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Grab": "positive"
+          "Microsoft": "neutral"
         },
         "event": "other"
       },
-      "importance": 7,
-      "id": "2026-11-08-17"
-    },
-    {
-      "section": "platforms",
-      "headline": "Мультиагентная OpenIDE от Haulmont получила обновления: Claude и Codex",
-      "subheadline": "Российская среда разработки расширила набор агентов, с которыми работает.",
-      "body": "Haulmont рассказала на Хабре об обновлениях OpenIDE. Среда работает с несколькими ИИ-агентами, в том числе с Claude и Codex.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Сегодня Claude, завтра Codex: обновления мультиагентной OpenIDE",
-          "url": "https://habr.com/ru/companies/haulmont/articles/1102934/",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Haulmont",
-          "OpenIDE",
-          "Claude",
-          "Codex"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Haulmont": "positive",
-          "OpenIDE": "positive",
-          "Claude": "neutral",
-          "Codex": "neutral"
-        },
-        "event": "update"
-      },
       "importance": 5,
-      "id": "2026-11-08-18"
+      "id": "2026-11-09-9"
     },
     {
       "section": "platforms",
-      "headline": "Какие российские сервисы e-com и финтеха доступны ИИ-агентам: обзор 424 продуктов",
-      "subheadline": "Автор проверил 424 сервиса и выяснил, через какие интерфейсы с ними может работать ИИ-агент.",
-      "body": "На Хабре опубликовали обзор 424 российских продуктов электронной коммерции и финтеха: есть ли у них API, MCP или другие способы подключить ИИ-агента.",
-      "tier": "compact",
+      "headline": "Андрей Карпаты за выходные собрал видеоплатформу на Claude и данных Hacker News за 20 лет",
+      "subheadline": "Карпаты сделал платформу с отобранными видео, на которые ссылались на Hacker News.",
+      "body": "Отбор видео строится на 20-летнем архиве Hacker News, а код проекта Карпаты писал вместе с Claude за одни выходные. Это ещё один пример того, как один разработчик с ИИ-ассистентом быстро доводит идею до работающего сервиса.",
+      "tier": "regular",
       "sources": [
         {
-          "title": "E-com и финтех РФ: какие сервисы доступны ИИ-агентам? Обзор 424 продуктов",
-          "url": "https://habr.com/ru/articles/1104816/",
+          "title": "Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News",
+          "url": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
           "type": "media"
         }
       ],
@@ -546,27 +344,69 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Россия"
+          "Andrej Karpathy",
+          "Claude",
+          "Hacker News"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Россия": "neutral"
+          "Andrej Karpathy": "positive",
+          "Claude": "positive",
+          "Hacker News": "neutral"
         },
-        "event": "research"
+        "event": "release"
       },
-      "importance": 5,
-      "id": "2026-11-08-19"
+      "importance": 7,
+      "id": "2026-11-09-10"
     },
     {
       "section": "platforms",
-      "headline": "ИИ Google находит повышенное давление по данным обычных смарт-часов без манжеты",
-      "subheadline": "Модель распознаёт гипертонию по сигналам с серийных часов, без тонометра.",
-      "body": "По данным The Decoder, Google показала ИИ-модель, которая выявляет повышенное артериальное давление по данным обычных смарт-часов. Отдельная манжета, как у тонометра, не нужна.",
+      "headline": "ИИ-агентам для кода почти в трёх задачах из четырёх нужна доработка человеком",
+      "subheadline": "Тест на реальных задачах: работу агентов приходится доводить вручную примерно в 75% случаев.",
+      "body": "Агенты проверялись на реальных задачах разработки, а не на синтетических бенчмарках. В большинстве случаев результат требовал правки человеком. В похожем исследовании MaxxBench агент сначала написал правильный код, а затем удалил его, подгоняя решение под скрытые тесты.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI coding agents still need human cleanup on nearly three out of four tasks in a real-world test",
+          "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Агент написал верный код, а потом удалил его ради скрытых тестов: что показал MaxxBench",
+          "url": "https://habr.com/ru/articles/1105152/",
+          "entities": [
+            "MaxxBench"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MaxxBench"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "MaxxBench": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-09-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google выпустила плагин Elephant-Goldfish для разработки от спецификации",
+      "subheadline": "Плагин для кодинг-агентов: сначала составляется и проверяется спецификация, потом пишется код.",
+      "body": "По описанию MarkTechPost, плагин делит работу между моделями: одна держит полный контекст и спецификацию («слон»), другая проверяет изменения без накопленного контекста («золотая рыбка»). Так агент сверяет код со спецификацией до того, как изменения попадут в проект.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Google's AI detects high blood pressure from a regular smartwatch without a cuff",
-          "url": "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/",
+          "title": "Google AI Releases Elephant-Goldfish Model Plugin for Spec-First Coding",
+          "url": "https://www.marktechpost.com/2026/11/08/google-elephant-goldfish-model-plugin-spec-review-coding-agents/",
           "type": "media"
         }
       ],
@@ -581,83 +421,88 @@
         "entity_sentiment": {
           "Google": "positive"
         },
-        "event": "research"
+        "event": "release"
       },
       "importance": 5,
-      "id": "2026-11-08-20"
+      "id": "2026-11-09-12"
     },
     {
-      "section": "hype",
-      "headline": "Россиян предостерегли от загрузки фото паспортов в нейросети",
-      "subheadline": "Эксперт предупредила, что фото документов в нейросетях и онлайн-конвертерах могут утечь.",
-      "body": "Эксперт, которую цитируют «Известия», советует не загружать сканы паспортов и других документов в нейросети и онлайн-конвертеры: это грозит утечкой персональных данных. В пример она привела сотрудницу, которую уволили за передачу коммерческой тайны через DeepSeek, — суд признал увольнение законным. Совет прозвучал на фоне истории с пользователем, которого Claude заблокировал после проверки российского загранпаспорта.",
-      "tier": "regular",
+      "section": "platforms",
+      "headline": "Продолжение: Apple спешит сделать Siri агентной",
+      "subheadline": null,
+      "body": "По данным The Verge, Apple ускоряет работу над тем, чтобы Siri сама выполняла многошаговые действия в приложениях.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Россияне предостерегли от загрузки фото паспортов в нейросети",
-          "url": "https://iz.ru/2197651/rossiian-predosteregli-ot-zagruzki-foto-pasportov-v-neiroseti-izi",
+          "title": "Apple is racing to make Siri more agentic",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
+      "duplicate_note": "Apple начала открывать ИИ-функциям Siri доступ к сторонним приложениям",
+      "tags": {
+        "entities": [
+          "Apple",
+          "Siri"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Apple": "neutral",
+          "Siri": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-09-13"
+    },
+    {
+      "section": "models",
+      "headline": "Автор «Горького урока» Ричард Саттон усомнился в масштабировании LLM",
+      "subheadline": "Саттон считает, что одно наращивание языковых моделей не приведёт к полноценному интеллекту.",
+      "body": "В эссе «Горький урок» Саттон писал, что в ИИ побеждают общие методы, которые масштабируются вместе с вычислениями. На этот текст часто ссылаются сторонники масштабирования LLM. Сам Саттон делает другой вывод: моделям, обученным на текстах людей, не хватает обучения на собственном опыте взаимодействия с миром.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts",
+          "url": "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate",
+          "url": "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/",
+          "entities": [],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Россия",
-          "DeepSeek"
+          "Richard Sutton"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "Россия": "neutral",
-          "DeepSeek": "neutral"
+          "Richard Sutton": "neutral"
         },
         "event": "statement"
       },
       "importance": 7,
-      "id": "2026-11-08-21"
+      "id": "2026-11-09-14"
     },
     {
-      "section": "hype",
-      "headline": "Продолжение: Inkling 2 Small матерится в бенчмарках",
-      "subheadline": null,
-      "body": "В прогонах бенчмарков модель Thinking Machines Lab выдала 316 слов «f-word».",
+      "section": "models",
+      "headline": "Как маршрутизируют экспертов MoE-модели: DeepSeek, Qwen, Mixtral, Llama 4 и gpt-oss",
+      "subheadline": "Разбор сравнивает, как популярные MoE-модели выбирают экспертов для каждого токена.",
+      "body": "В обзоре сопоставлены схемы маршрутизации в открытых MoE-архитектурах: число активных экспертов на токен, наличие общих экспертов и способы балансировки нагрузки между ними. От этих решений зависят качество модели и стоимость инференса.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Thinking Machines' Inkling 2 Small drops 316 F-bombs across benchmark runs",
-          "url": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Thinking Machines Lab выпустила Inkling 2 Small, открытые веса — через неделю",
-      "tags": {
-        "entities": [
-          "Thinking Machines Lab",
-          "Inkling 2 Small"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Thinking Machines Lab": "negative",
-          "Inkling 2 Small": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-08-22"
-    },
-    {
-      "section": "hype",
-      "headline": "Шифр на кубике Рубика: девять нейросетей решали одну задачу",
-      "subheadline": "Автор дал девяти моделям одну и ту же головоломку с шифром на основе кубика Рубика и сравнил, как они справились.",
-      "body": "На Хабре сравнили, как девять ИИ-моделей разгадывают один и тот же шифр, построенный на кубике Рубика: кто решил задачу, а кто сдался или выдал уверенный неверный ответ.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Шифр на кубике Рубика: как девять ИИ решали одну задачу",
-          "url": "https://habr.com/ru/articles/1104940/",
+          "title": "Which Routing Does Each MoE Model Use? DeepSeek, Qwen, Mixtral, Llama 4, gpt-oss Compared",
+          "url": "https://www.marktechpost.com/2026/11/08/moe-model-routing-comparison/",
           "type": "media"
         }
       ],
@@ -665,13 +510,50 @@
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
-        "entities": [],
+        "entities": [
+          "DeepSeek",
+          "Qwen",
+          "Llama"
+        ],
         "sentiment": "neutral",
-        "entity_sentiment": {},
+        "entity_sentiment": {
+          "DeepSeek": "neutral",
+          "Qwen": "neutral",
+          "Llama": "neutral"
+        },
         "event": "research"
       },
       "importance": 5,
-      "id": "2026-11-08-23"
+      "id": "2026-11-09-15"
+    },
+    {
+      "section": "content",
+      "headline": "Что умеют новые модели для локальной генерации на видеокарте с 16 ГБ",
+      "subheadline": "Обзор на Хабре: какие свежие генеративные модели запускаются на домашней видеокарте с 16 ГБ памяти.",
+      "body": "Автор проверяет, какие современные модели генерации изображений и видео помещаются в 16 ГБ видеопамяти. Он разбирает, что получается без облачных сервисов и подписок и чем приходится жертвовать ради нехватки памяти.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Локальная генерация на 16 ГБ: что умеют новые модели",
+          "url": "https://habr.com/ru/articles/1105054/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Хабр"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Хабр": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-09-16"
     }
   ]
 }
