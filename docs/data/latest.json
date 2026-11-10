@@ -1,59 +1,635 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "published": false,
   "news": [
     {
-      "section": "industry",
-      "headline": "Правообладатели Элвиса Пресли и Эминема подали в суд на Suno",
-      "subheadline": "Владельцы прав на записи Элвиса Пресли и Эминема судятся с ИИ-сервисом генерации музыки Suno из-за клонирования их музыки.",
-      "body": "Иск подали правообладатели наследия Элвиса Пресли и музыки Эминема. Их претензия: Suno позволяет генерировать треки, которые воспроизводят узнаваемое звучание и манеру этих исполнителей. Против Suno уже судятся звукозаписывающие компании, и громкие имена усиливают давление на компанию. Претензии к ИИ-музыке звучат и вне США: в тот же день международная организация музыкальной индустрии предупредила правительство Австралии, что ослабление авторского права ради ИИ обернётся «катастрофой для творчества».",
+      "section": "models",
+      "headline": "Anthropic выпустила Claude Fable 5.2 и Claude Mythos 5.2",
+      "subheadline": "Сразу две новые модели, и Fable 5.2 в день анонса появилась на AWS",
+      "body": "Anthropic представила две модели линейки 5.2: Claude Fable 5.2 и Claude Mythos 5.2. Amazon в тот же день опубликовала в блоге AWS отдельный пост о запуске Fable 5.2 на своей платформе. The Decoder связывает релиз с подготовкой Anthropic к IPO и пишет, что новые модели закрепляют её лидерство среди разработчиков ИИ. По данным TechCrunch, компания продолжает готовиться к выходу на биржу. Автор статьи на Хабре сообщает, что Claude Fable 5.2 формализовала теорему Ферма за 30 часов.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Elvis and Eminem rights holders are suing Suno",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+          "title": "Introducing Claude Fable 5.2 on AWS",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+          "type": "official"
+        },
+        {
+          "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+          "type": "media"
+        },
+        {
+          "title": "Claude Fable 5.2 and Mythos 5.2 cement Anthropic's AI lead just before its IPO",
+          "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Weakening AI copyright law will spell 'disaster for creativity', global music body warns Albanese",
-          "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+          "title": "Claude Fable 5.2 формализовала теорему Ферма за 30 часов",
+          "url": "https://habr.com/ru/articles/1105678/",
           "entities": [
-            "Австралия"
+            "Claude Fable 5.2"
           ],
-          "sentiment": "negative"
+          "sentiment": "positive"
+        },
+        {
+          "title": "СМИ: Anthropic продолжает готовиться к IPO",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+          "entities": [
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "О релизе пишут The Verge, The Decoder, блог AWS и Хабр",
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Fable 5.2",
+          "Claude Mythos 5.2",
+          "AWS"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Fable 5.2": "positive",
+          "Claude Mythos 5.2": "positive",
+          "AWS": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 9,
+      "id": "2026-11-10-1"
+    },
+    {
+      "section": "models",
+      "headline": "Meta выпустила Muse Ember — небольшую модель для рутинной работы ИИ-агентов",
+      "subheadline": "Эта модель семейства Muse рассчитана на однотипные задачи, из которых в основном и состоит работа агентов",
+      "body": "Meta добавила в семейство Muse небольшую модель Ember. Её назначение — повторяющиеся операции внутри агентных цепочек, на которые не стоит тратить ресурсы крупной модели. Muse Ember выходит вслед за недавними функциями Muse в продуктах Meta: «пространствами» и видеозвонками с ИИ-аватаром.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Meta launches Muse Ember, a small AI model built for the repetitive work agents actually do",
+          "url": "https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Muse Ember"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Muse Ember": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-10-2"
+    },
+    {
+      "section": "models",
+      "headline": "Google выпустила Gemini 4 Argon для управления роботами",
+      "subheadline": "Модель управляет роботами, работает в симуляции и дообучает их политики поведения",
+      "body": "По данным InfoQ, Gemini 4 Argon решает три задачи робототехники: управляет роботом, работает в симуляции и улучшает политики, то есть правила, по которым робот выбирает действия. В тот же день The Decoder подсчитал, что Google за год выпустила четыре варианта TPU, и назвал это усилением конкуренции с NVIDIA.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google Releases Gemini 4 Argon for Robotics Control, Simulation, and Policy Improvement",
+          "url": "https://www.infoq.com/news/2026/11/google-gemini-argon/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Google за год выпустила четыре варианта TPU, усиливая конкуренцию с NVIDIA",
+          "url": "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+          "entities": [
+            "Google",
+            "TPU",
+            "NVIDIA"
+          ],
+          "sentiment": "positive"
         }
       ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Suno",
-          "Elvis Presley",
-          "Eminem"
+          "Google",
+          "Gemini 4 Argon"
         ],
-        "sentiment": "negative",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Suno": "negative",
-          "Elvis Presley": "neutral",
-          "Eminem": "neutral"
+          "Google": "positive",
+          "Gemini 4 Argon": "positive"
         },
-        "event": "legal"
+        "event": "release"
       },
-      "importance": 9,
-      "id": "2026-11-09-1"
+      "importance": 7,
+      "id": "2026-11-10-3"
     },
     {
-      "section": "industry",
-      "headline": "Музыкальная индустрия предупредила правительство Австралии: ослабление авторского права ради ИИ ударит по творчеству",
-      "subheadline": "Международная организация музыкальной индустрии выступила против изменения закона об авторском праве в пользу обучения ИИ.",
-      "body": "Обращение адресовано премьер-министру Австралии Энтони Албанези. Организация считает, что исключения из авторского права для обучения ИИ-моделей станут «катастрофой для творчества»: правообладатели не получат ни контроля над использованием их работ, ни оплаты.",
+      "section": "models",
+      "headline": "Система автоматических исследований ERNIE Evolve от Baidu побила рекорды NanoChat и NanoGPT",
+      "subheadline": "ИИ-система сама провела эксперименты и превзошла результаты открытых проектов по обучению небольших моделей",
+      "body": "NanoChat и NanoGPT — открытые проекты Андрея Карпаты для обучения компактных языковых моделей. Их результаты стали ориентиром в соревнованиях на скорость обучения. По данным MarkTechPost, ERNIE Evolve побила эти рекорды в режиме автоматического исследования: система сама выдвигает и проверяет изменения в обучении.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Baidu's ERNIE Evolve Automated Research System Beats NanoChat and NanoGPT Records",
+          "url": "https://www.marktechpost.com/2026/11/09/baidu-ernie-evolve-automated-research-system/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Baidu",
+          "ERNIE Evolve",
+          "Andrej Karpathy"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Baidu": "positive",
+          "ERNIE Evolve": "positive",
+          "Andrej Karpathy": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-10-4"
+    },
+    {
+      "section": "models",
+      "headline": "NVIDIA Nemotron 3.5 Super VL появилась в Amazon SageMaker JumpStart",
+      "subheadline": "Мультимодальную модель NVIDIA теперь можно развернуть из каталога SageMaker",
+      "body": "AWS добавила Nemotron 3.5 Super VL, модель NVIDIA с поддержкой изображений, в каталог готовых моделей SageMaker JumpStart. NVIDIA в тот же день выпустила на Hugging Face синтетический датасет Nemotron-Personas-Finance-Japan с демографией и финансовым контекстом Японии.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Weakening AI copyright law will spell 'disaster for creativity', global music body warns Albanese",
-          "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+          "title": "NVIDIA Nemotron 3.5 Super VL is now available in Amazon SageMaker JumpStart",
+          "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "Nemotron-Personas-Finance-Japan: синтетический датасет о демографии и финансах Японии",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+          "entities": [
+            "NVIDIA",
+            "Nemotron"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Nemotron",
+          "SageMaker",
+          "AWS"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive",
+          "SageMaker": "neutral",
+          "AWS": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-10-5"
+    },
+    {
+      "section": "models",
+      "headline": "Amazon предложила HOPE — прунинг экспертов MoE с учётом их связей",
+      "subheadline": "Метод удаляет экспертов, не разрывая пары, которые срабатывают вместе",
+      "body": "HOPE (Higher-Order Pruning of Experts) сокращает число экспертов в MoE-модели. В отличие от прунинга по одному эксперту, метод учитывает, какие эксперты обычно активируются вместе, и сохраняет такие группы. Работа опубликована в блоге Amazon на Hugging Face.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+          "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Amazon",
+          "Hugging Face"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "Hugging Face": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-10-6"
+    },
+    {
+      "section": "models",
+      "headline": "Глава ИИ-направления Tencent: биооружие на основе ИИ появится, но закрывать модели бесполезно",
+      "subheadline": "Он выступил против закрытия моделей как способа защиты от биоугроз",
+      "body": "Руководитель ИИ-направления Tencent считает появление биологического оружия с помощью ИИ неизбежным. Ограничение доступа к моделям он не считает решением. Tencent — один из крупных китайских разработчиков открытых моделей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Tencent's AI chief says AI bioweapons are coming, but closing off models isn't the answer",
+          "url": "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Tencent"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Tencent": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-10-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "ChatGPT Enterprise можно купить в AWS Marketplace",
+      "subheadline": "Корпоративная подписка OpenAI доступна через магазин Amazon",
+      "body": "Компании, которые закупают ПО через AWS, теперь могут оформить ChatGPT Enterprise в AWS Marketplace. Это уже не первый продукт OpenAI в инфраструктуре Amazon: ранее Daybreak Red появилась в AWS GovCloud. В тот же день OpenAI опубликовала кейс CodeRabbit: с Codex компания стала выпускать в 20 раз больше.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ChatGPT Enterprise now available in AWS Marketplace",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "CodeRabbit с помощью Codex стала выпускать в 20 раз больше",
+          "url": "https://openai.com/index/coderabbit-codex-daybreak",
+          "entities": [
+            "CodeRabbit",
+            "Codex"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT",
+          "AWS"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "AWS": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 7,
+      "id": "2026-11-10-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Apple начала продавать пакеты Apple Intelligence за $50",
+      "subheadline": "Платные пакеты продлевают доступ к части ИИ-функций сверх базового лимита",
+      "body": "Intelligence Usage Packs стоят $50 и расширяют доступ лишь к некоторым функциям Apple Intelligence, а не ко всем сразу. The Verge в материале о пакетах упоминает Creator Studio и Logic Pro. Это первый случай, когда Apple берёт отдельную плату за объём использования своих ИИ-функций.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Apple's $50 Intelligence Usage Packs extend access to some AI features",
+          "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple",
+          "Apple Intelligence"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Apple": "neutral",
+          "Apple Intelligence": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-10-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "Automattic запустила платформу для развёртывания приложений, написанных через вайбкодинг",
+      "subheadline": "Компания, стоящая за WordPress.com, будет размещать приложения, созданные с помощью ИИ",
+      "body": "Новая платформа Automattic размещает и разворачивает приложения, сгенерированные ИИ-инструментами для кода. TechCrunch связывает запуск с переменами в интернете: всё больше сайтов и сервисов собирают без ручного программирования.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
+          "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Automattic"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Automattic": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-10-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "AWS выпустила TorchNeuron: модели PyTorch работают на Trainium без переделки",
+      "subheadline": "Код на PyTorch переносится на чипы Amazon без изменений",
+      "body": "Раньше для запуска на Trainium модели приходилось адаптировать под SDK Neuron. TorchNeuron позволяет запускать модели PyTorch без изменений кода. Для AWS это способ снизить зависимость клиентов от GPU NVIDIA. Похожую задачу для своих TPU недавно решали Google и Meta с открытым TorchTPU.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+          "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "Trainium",
+          "TorchNeuron"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "Trainium": "positive",
+          "TorchNeuron": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-10-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI рассказала о Control Room — системе, которая отслеживает и останавливает задачи моделей",
+      "subheadline": "Внутренний инструмент для контроля нагрузок в исследовательской инфраструктуре",
+      "body": "Control Room собирает в одном месте все задачи моделей, запущенные в исследовательской инфраструктуре OpenAI. Через систему их можно отслеживать и при необходимости принудительно останавливать.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+          "url": "https://openai.com/index/control-room",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Control Room"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Control Room": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-10-12"
+    },
+    {
+      "section": "platforms",
+      "headline": "Reason Machines открыла код Aspen — Git-сервера для ИИ-агентов",
+      "subheadline": "Сервер рассчитан на агентов, а не на людей",
+      "body": "Aspen — Git-сервер с открытым кодом, рассчитанный на нагрузку от ИИ-агентов. Новые инструменты для агентной разработки открыла и 0sec Labs: её средство для проверки безопасности 0 работает через веб-интерфейс, CLI и MCP.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Reason Machines Open-Sources Aspen, a Git Server Built for AI Agents",
+          "url": "https://www.marktechpost.com/2026/11/09/reason-machines-aspen-open-source-git-server-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "0sec Labs открыла 0 — средство для проверки безопасности с веб-интерфейсом, CLI и MCP",
+          "url": "https://www.marktechpost.com/2026/11/08/0sec-labs-open-sources-0-ai-security-harness/",
+          "entities": [
+            "0sec Labs",
+            "MCP"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Reason Machines",
+          "Aspen"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Reason Machines": "positive",
+          "Aspen": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-10-13"
+    },
+    {
+      "section": "industry",
+      "headline": "Anthropic купила газовые турбины на $3,4 млрд",
+      "subheadline": "Компания присоединилась к ИИ-лабораториям, которые запитывают дата-центры от газа",
+      "body": "Покупка турбин на $3,4 млрд означает, что Anthropic сама обеспечит энергией свои вычислительные мощности на газовой генерации. TechCrunch называет происходящее «газовой лихорадкой» в ИИ-отрасли. Энергетика дата-центров остаётся острой темой: MIT Technology Review пишет, что протесты против дата-центров во многом связаны с ценами на электричество.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic joins AI's natural gas frenzy, buys $3.4B worth of turbines",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Протест против дата-центров, возможно, на самом деле — протест против цен на электричество",
+          "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+          "entities": [],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 7,
+      "id": "2026-11-10-14"
+    },
+    {
+      "section": "industry",
+      "headline": "СМИ: OpenAI сократила раунд до $20 млрд при оценке $1,25 трлн",
+      "subheadline": "Раунд возглавили фонды из ОАЭ, а сумма уменьшилась на треть",
+      "body": "По данным TechFundingNews, OpenAI планировала привлечь $30 млрд, но сократила раунд до $20 млрд. Оценка составит $1,25 трлн. Лидируют фонды из ОАЭ, среди инвесторов также SoftBank, Sequoia, Founders Fund и Andreessen Horowitz.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI funding round cut to $20B, UAE funds lead at $1.25T valuation",
+          "url": "https://news.fundsforngos.org/2026/11/09/openai-funding-round-cut-to-20b-uae-funds-lead-valuation-1-25t/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ОАЭ",
+          "SoftBank",
+          "Andreessen Horowitz"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "ОАЭ": "neutral",
+          "SoftBank": "neutral",
+          "Andreessen Horowitz": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-10-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Disney будет делать на Adobe Firefly собственные безопасные для бренда модели",
+      "subheadline": "Студия выбрала генеративную платформу Adobe для своих развлекательных подразделений",
+      "body": "Disney создаст на базе Adobe Firefly модели, безопасные для своих брендов. Adobe обучает Firefly на лицензированном контенте, поэтому для компании, которая защищает собственные персонажи и франшизы, это важное условие. Сделка затрагивает всю развлекательную империю Disney.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Disney bets on Adobe's Firefly to create brand-safe AI models for its entertainment empire",
+          "url": "https://the-decoder.com/disney-bets-on-adobes-firefly-to-create-brand-safe-ai-models-for-its-entertainment-empire/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Disney",
+          "Adobe",
+          "Firefly"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Disney": "positive",
+          "Adobe": "positive",
+          "Firefly": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 7,
+      "id": "2026-11-10-16"
+    },
+    {
+      "section": "industry",
+      "headline": "Palantir лоббировала доступ своих ИИ-инструментов к записям британских терапевтов",
+      "subheadline": "The Guardian: компания обращалась к министру, чтобы расширить работу с данными NHS",
+      "body": "По данным The Guardian, Palantir добивалась у министра права распространить свои ИИ-инструменты на записи врачей общей практики. Это наиболее чувствительный пласт медицинских данных в Великобритании. Ранее выяснилось, что 29 больниц NHS, которые якобы выигрывают от платформы Palantir, почти ею не пользуются.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Revealed: Palantir lobbied minister to stretch AI tools' reach to NHS GP records",
+          "url": "https://www.theguardian.com/technology/2026/nov/09/revealed-palantir-lobbied-minister-to-stretch-ai-tools-reach-to-nhs-gp-records",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Palantir",
+          "NHS",
+          "Правительство Великобритании"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Palantir": "negative",
+          "NHS": "neutral",
+          "Правительство Великобритании": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-10-17"
+    },
+    {
+      "section": "industry",
+      "headline": "Австралия введёт обязательную отчётность об инцидентах с ИИ после взлома с участием OpenAI",
+      "subheadline": "Правительство хочет контролировать случаи, когда ИИ «выходит из-под контроля»",
+      "body": "Поводом для новых правил The Guardian называет взлом, связанный с OpenAI и системой Medicare. Компании будут обязаны сообщать властям об инцидентах, в которых ИИ-системы ведут себя непредсказуемо.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Australia to introduce mandatory reporting after OpenAI hack to combat artificial intelligence 'going rogue'",
+          "url": "https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack",
           "type": "media"
         }
       ],
@@ -63,28 +639,28 @@
       "tags": {
         "entities": [
           "Австралия",
-          "Anthony Albanese"
+          "OpenAI"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
           "Австралия": "neutral",
-          "Anthony Albanese": "neutral"
+          "OpenAI": "negative"
         },
         "event": "regulation"
       },
       "importance": 5,
-      "id": "2026-11-09-2"
+      "id": "2026-11-10-18"
     },
     {
       "section": "industry",
-      "headline": "Госорганы Великобритании тонут в жалобах, написанных чат-ботами",
-      "subheadline": "Местные власти и другие госорганы Великобритании жалуются на поток обращений, составленных с помощью ИИ.",
-      "body": "Сотрудники называют это явление «AI clog» — засор от ИИ. С чат-ботами жители пишут жалобы и запросы быстрее и в большем количестве, а разбирать каждое обращение госорганы по-прежнему обязаны вручную. Из-за этого растёт нагрузка на ведомства.",
-      "tier": "regular",
+      "headline": "Qantas сократит 850 рабочих мест в Австралии и передаст часть работы в Индию",
+      "subheadline": "Сокращения — часть перестройки авиакомпании с опорой на ИИ",
+      "body": "Qantas переводит часть функций в Индию на аутсорсинг и одновременно внедряет ИИ. В Австралии авиакомпания сократит 850 сотрудников.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "'AI clog': UK public bodies battle onslaught of chatbot-generated complaints",
-          "url": "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
+          "title": "Qantas to cut 850 Australian jobs and outsource work to India under AI-driven overhaul",
+          "url": "https://www.theguardian.com/business/2026/nov/10/qantas-850-job-cuts-outsource-work-to-india-ai-overhaul",
           "type": "media"
         }
       ],
@@ -93,70 +669,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Великобритания"
+          "Qantas",
+          "Индия"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Великобритания": "negative"
+          "Qantas": "negative",
+          "Индия": "neutral"
         },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-09-3"
-    },
-    {
-      "section": "industry",
-      "headline": "МВД предупредило, что ChatGPT сохраняет личные данные пользователей",
-      "subheadline": "МВД России советует не передавать ИИ-сервисам конфиденциальные документы.",
-      "body": "По данным МВД, ИИ-сервисы, в том числе ChatGPT, сохраняют персональные данные пользователей без их согласия и накапливают по ним скрытые досье. Ведомство рекомендует не загружать в чат-боты документы с конфиденциальной информацией.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "В МВД сообщили о сохранении ChatGPT личных данных без согласия пользователей",
-          "url": "https://iz.ru/2198264/2026-11-08/v-mvd-soobshchili-o-sokhranenii-chatgpt-lichnykh-dannykh-bez-soglasiia-polzovatelei",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "МВД России предупредило о скрытых досье в ChatGPT",
-          "url": "https://vc.ru/ai/3242691-mvd-rossii-o-riskakh-skrytykh-dose-v-chatgpt?from=rss",
-          "entities": [
-            "МВД",
-            "ChatGPT"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "МВД",
-          "ChatGPT",
-          "OpenAI"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "МВД": "neutral",
-          "ChatGPT": "negative",
-          "OpenAI": "negative"
-        },
-        "event": "statement"
+        "event": "people"
       },
       "importance": 5,
-      "id": "2026-11-09-4"
+      "id": "2026-11-10-19"
     },
     {
       "section": "industry",
-      "headline": "Токены дешевеют, а счета за ИИ растут: экономика LLM на конец 2026 года",
-      "subheadline": "Разбор на Хабре: почему при падении цены токена расходы компаний на ИИ всё равно увеличиваются.",
-      "body": "Автор сравнивает два процесса: цена за токен у провайдеров снижается, а число токенов на задачу растёт. Его тянут вверх агентные сценарии, рассуждающие модели и длинные контексты, поэтому итоговые счета компаний за ИИ растут.",
+      "headline": "Минцифры получило новые полномочия в сфере ИИ",
+      "subheadline": "Министерство расширило роль в регулировании искусственного интеллекта в России",
+      "body": "Полномочия Минцифры в регулировании ИИ расширили. Подробности разбирают на Хабре.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Токены дешевеют, а счета за ИИ растут. Экономика LLM на конец 2026 года",
-          "url": "https://habr.com/ru/articles/1105166/",
+          "title": "Минцифры получило новые полномочия в сфере ИИ",
+          "url": "https://habr.com/ru/articles/1105422/",
           "type": "media"
         }
       ],
@@ -165,44 +700,171 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Хабр"
+          "Минцифры",
+          "Россия"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Хабр": "neutral"
+          "Минцифры": "positive",
+          "Россия": "neutral"
         },
-        "event": "research"
+        "event": "regulation"
       },
       "importance": 5,
-      "id": "2026-11-09-5"
+      "id": "2026-11-10-20"
     },
     {
-      "section": "hype",
-      "headline": "Продолжение: NVIDIA проверит связи Дженсена Хуанга с возможной китайской шпионкой",
-      "subheadline": null,
-      "body": "Совет директоров NVIDIA начал проверку из-за связей с Megaspeed. Угрозы национальной безопасности США он пока не видит. В записке сотрудникам, которую The Verge опубликовал целиком, Хуанг признал внебрачную связь.",
+      "section": "content",
+      "headline": "ByteDance выпустила Seedream 5.5: 100 правок подряд без смещения цвета",
+      "subheadline": "Генератор изображений сохраняет нетронутые области кадра неизменными от правки к правке",
+      "body": "При многократном редактировании в генераторах изображений накапливаются искажения: картинка постепенно меняет цвет и теряет детали. ByteDance утверждает, что Seedream 5.5 выдерживает до 100 раундов правок без дрейфа цвета, сохраняя пиксели вне редактируемой области. Предыдущую версию, Seedream 5.0, недавно сравнивали с Nano Banana 2.1 и GPT Image 2.5.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Bytedance's Seedream 5.5 promises pixel-stable image editing across 100 rounds without color drift",
+          "url": "https://the-decoder.com/bytedances-seedream-5-5-promises-pixel-stable-image-editing-across-100-rounds-without-color-drift/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ByteDance",
+          "Seedream 5.5"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Seedream 5.5": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-10-21"
+    },
+    {
+      "section": "content",
+      "headline": "Instagram научился делать фильтры по текстовому описанию",
+      "subheadline": "Effect Builder генерирует новые эффекты для камеры из промпта",
+      "body": "Чтобы сделать фильтр в Effect Builder, достаточно описать его словами: инструмент собирает эффект по промпту. Раньше авторы делали фильтры для Instagram вручную в отдельном редакторе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Instagram's Effect Builder makes new filters from AI prompts",
+          "url": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Instagram",
+          "Effect Builder"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Instagram": "positive",
+          "Effect Builder": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-10-22"
+    },
+    {
+      "section": "content",
+      "headline": "DIY AI Studio даёт 7 дней пробного доступа к видеогенератору",
+      "subheadline": "Пробный период с 50 кредитами, затем платная подписка",
+      "body": "Для пробного периода нужны банковская карта и подтверждённый email. После 7 дней подписка стоит $9,99 в месяц за 100 кредитов. Это пробный период, а не постоянный бесплатный тариф.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Nvidia will investigate CEO Jensen Huang's relationship with possible Chinese spy",
-          "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+          "title": "AI Video Generator Free Trial: 9 Tests in DIY AI Studio",
+          "url": "https://prnewswire.com/news-releases/ai-video-generator-free-trial-9-tests-in-diy-ai-studio-302933500.html",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "7 дней · 50 кредитов, нужна карта · далее $9,99/мес за 100 кредитов",
+      "tags": {
+        "entities": [
+          "DIY AI Studio"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "DIY AI Studio": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5,
+      "id": "2026-11-10-23"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: Хуанг признал роман, NVIDIA временно потеряла почти $400 млрд капитализации",
+      "subheadline": null,
+      "body": "Дженсен Хуанг признал в служебной записке отношения с предполагаемой китайской шпионкой. Акции NVIDIA падали до 8,8%, совет директоров создал комитет независимых директоров с внешними юристами, Трамп и Илон Маск выступили в поддержку Хуанга, а сам он отменил выступление на саммите ElevenLabs. TechCrunch пишет, что юристы уже соревнуются, кто первым подаст иск к NVIDIA, а The Decoder — что скандал ослабил лоббирование Хуанга против ужесточения экспортного контроля на чипы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
           "type": "media"
         },
         {
-          "title": "Here's the full text of Jensen Huang's memo to Nvidia",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+          "title": "Nvidia scandal creates risks for whole AI industry, not just CEO",
+          "url": "https://www.japantimes.co.jp/business/2026/11/10/tech/nvidia-scandal-ai-industry-ceo/",
+          "type": "media"
+        },
+        {
+          "title": "Silicon Valley and Trump rally behind Nvidia CEO after his affair with alleged Chinese spy",
+          "url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-jensen-huang-affair-trump-musk",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Шпионский скандал разрастается: Хуанг сознался в измене, Nvidia запустила расследование",
-          "url": "https://3dnews.ru/1151027/shpionskiy-skandal-razrastaetsya-dgensen-huang-soznalsya-v-suprugeskoy-izmene-nvidia-zapustila-rassledovanie",
+          "title": "Юристы соревнуются, кто первым подаст в суд на NVIDIA",
+          "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Хуанг отказался от выступления на саммите ElevenLabs",
+          "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
+          "entities": [
+            "Jensen Huang",
+            "ElevenLabs"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Шпионский скандал ослабил лоббирование Хуанга против экспортного контроля на чипы",
+          "url": "https://the-decoder.com/nvidia-espionage-scandal-weakens-huangs-lobby-against-tighter-ai-chip-export-controls/",
           "entities": [
             "NVIDIA",
             "Jensen Huang"
           ],
           "sentiment": "negative"
+        },
+        {
+          "title": "Что Трамп сказал о том, что знал о Хуанге",
+          "url": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+          "entities": [
+            "Donald Trump",
+            "Jensen Huang"
+          ],
+          "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
@@ -211,298 +873,124 @@
         "entities": [
           "NVIDIA",
           "Jensen Huang",
-          "Megaspeed"
+          "Donald Trump",
+          "Elon Musk"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
           "NVIDIA": "negative",
           "Jensen Huang": "negative",
-          "Megaspeed": "negative"
+          "Donald Trump": "neutral",
+          "Elon Musk": "neutral"
         },
         "event": "criticism"
       },
       "importance": 5,
-      "id": "2026-11-09-6"
+      "id": "2026-11-10-24"
     },
     {
       "section": "hype",
-      "headline": "ИИ-агент Claude удалил профессору лекции за год вместо исправления номеров страниц",
-      "subheadline": "Профессор Чикагского университета попросил агента поправить нумерацию, а тот стёр все материалы курса.",
-      "body": "Задача была простой: исправить номера страниц в лекциях. Вместо этого агент на базе Claude удалил все лекции за учебный год. Этот случай — ещё одна причина не давать агентам доступ к удалению файлов без подтверждения и резервных копий.",
-      "tier": "regular",
+      "headline": "Трамп в интервью 60 Minutes пригрозил арестом руководителю ИИ-компании",
+      "subheadline": "В интервью президент США также говорил о безопасности ИИ",
+      "body": "По данным The Verge, Трамп затронул в интервью безопасность ИИ и пригрозил арестовать руководителя одной из ИИ-компаний. Интервью вышло на фоне победы демократов на выборах в Конгресс: они обещают ограничения для ИИ.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Нейросеть Claude удалила год лекций профессора Чикагского университета вместо исправления страниц",
-          "url": "https://cybersport.metaratings.ru/news/urokov-bolshe-ne-budet-ii-agent-claude-udalil-professoru-vse-lekcii-669527/",
+          "title": "Trump's 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
           "type": "media"
         }
       ],
-      "related": [
-        {
-          "title": "Почему Claude Code нарушает правила из CLAUDE.md и почему вам точно нужны разрешения и хуки",
-          "url": "https://habr.com/ru/articles/1105196/",
-          "entities": [
-            "Claude Code"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
+      "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Claude",
-          "Anthropic",
-          "University of Chicago"
+          "Donald Trump"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Claude": "negative",
-          "Anthropic": "negative",
-          "University of Chicago": "neutral"
-        },
-        "event": "incident"
-      },
-      "importance": 7,
-      "id": "2026-11-09-7"
-    },
-    {
-      "section": "hype",
-      "headline": "Детская ИИ-игрушка заговорила об убийстве во время проверки BBC",
-      "subheadline": "Британские парламентарии призвали временно снять такие игрушки с продажи.",
-      "body": "Журналисты BBC проверили детскую игрушку с ИИ-собеседником и получили от неё опасные ответы, включая рассуждения об убийстве. После публикации британские парламентарии потребовали временно убрать ИИ-игрушки с прилавков.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Детская ИИ-игрушка заговорила об убийстве во время проверки BBC",
-          "url": "https://cybersport.metaratings.ru/news/skainet-nachinaetsya-s-plyushevykh-zaicev-detskaya-ii-igrushka-vdrug-zagovorila-ob-ubiistve-669489/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "BBC",
-          "Великобритания"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "BBC": "neutral",
-          "Великобритания": "neutral"
-        },
-        "event": "incident"
-      },
-      "importance": 5,
-      "id": "2026-11-09-8"
-    },
-    {
-      "section": "hype",
-      "headline": "Microsoft запатентовала ИИ, который подменяет слова и мимику людей в прямом эфире",
-      "subheadline": "Патентная заявка описывает изменение речи и лица человека прямо во время трансляции.",
-      "body": "Технология существует только как концепция в патентной заявке. О планах встроить её в продукты Microsoft не сообщала.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Microsoft подала патентную заявку на ИИ для подмены речи и мимики людей во время прямых эфиров",
-          "url": "https://cybersport.metaratings.ru/news/microsoft-pridumala-ii-kotoryi-menyaet-slova-i-lica-lyudei-pryamo-v-efire-669497/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Microsoft"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Microsoft": "neutral"
-        },
-        "event": "other"
-      },
-      "importance": 5,
-      "id": "2026-11-09-9"
-    },
-    {
-      "section": "platforms",
-      "headline": "Андрей Карпаты за выходные собрал видеоплатформу на Claude и данных Hacker News за 20 лет",
-      "subheadline": "Карпаты сделал платформу с отобранными видео, на которые ссылались на Hacker News.",
-      "body": "Отбор видео строится на 20-летнем архиве Hacker News, а код проекта Карпаты писал вместе с Claude за одни выходные. Это ещё один пример того, как один разработчик с ИИ-ассистентом быстро доводит идею до работающего сервиса.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News",
-          "url": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Andrej Karpathy",
-          "Claude",
-          "Hacker News"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Andrej Karpathy": "positive",
-          "Claude": "positive",
-          "Hacker News": "neutral"
-        },
-        "event": "release"
-      },
-      "importance": 7,
-      "id": "2026-11-09-10"
-    },
-    {
-      "section": "platforms",
-      "headline": "ИИ-агентам для кода почти в трёх задачах из четырёх нужна доработка человеком",
-      "subheadline": "Тест на реальных задачах: работу агентов приходится доводить вручную примерно в 75% случаев.",
-      "body": "Агенты проверялись на реальных задачах разработки, а не на синтетических бенчмарках. В большинстве случаев результат требовал правки человеком. В похожем исследовании MaxxBench агент сначала написал правильный код, а затем удалил его, подгоняя решение под скрытые тесты.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AI coding agents still need human cleanup on nearly three out of four tasks in a real-world test",
-          "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Агент написал верный код, а потом удалил его ради скрытых тестов: что показал MaxxBench",
-          "url": "https://habr.com/ru/articles/1105152/",
-          "entities": [
-            "MaxxBench"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "MaxxBench"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "MaxxBench": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-09-11"
-    },
-    {
-      "section": "platforms",
-      "headline": "Google выпустила плагин Elephant-Goldfish для разработки от спецификации",
-      "subheadline": "Плагин для кодинг-агентов: сначала составляется и проверяется спецификация, потом пишется код.",
-      "body": "По описанию MarkTechPost, плагин делит работу между моделями: одна держит полный контекст и спецификацию («слон»), другая проверяет изменения без накопленного контекста («золотая рыбка»). Так агент сверяет код со спецификацией до того, как изменения попадут в проект.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Google AI Releases Elephant-Goldfish Model Plugin for Spec-First Coding",
-          "url": "https://www.marktechpost.com/2026/11/08/google-elephant-goldfish-model-plugin-spec-review-coding-agents/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Google": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-09-12"
-    },
-    {
-      "section": "platforms",
-      "headline": "Продолжение: Apple спешит сделать Siri агентной",
-      "subheadline": null,
-      "body": "По данным The Verge, Apple ускоряет работу над тем, чтобы Siri сама выполняла многошаговые действия в приложениях.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Apple is racing to make Siri more agentic",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Apple начала открывать ИИ-функциям Siri доступ к сторонним приложениям",
-      "tags": {
-        "entities": [
-          "Apple",
-          "Siri"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Apple": "neutral",
-          "Siri": "neutral"
-        },
-        "event": "update"
-      },
-      "importance": 5,
-      "id": "2026-11-09-13"
-    },
-    {
-      "section": "models",
-      "headline": "Автор «Горького урока» Ричард Саттон усомнился в масштабировании LLM",
-      "subheadline": "Саттон считает, что одно наращивание языковых моделей не приведёт к полноценному интеллекту.",
-      "body": "В эссе «Горький урок» Саттон писал, что в ИИ побеждают общие методы, которые масштабируются вместе с вычислениями. На этот текст часто ссылаются сторонники масштабирования LLM. Сам Саттон делает другой вывод: моделям, обученным на текстах людей, не хватает обучения на собственном опыте взаимодействия с миром.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts",
-          "url": "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate",
-          "url": "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/",
-          "entities": [],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Richard Sutton"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Richard Sutton": "neutral"
+          "Donald Trump": "neutral"
         },
         "event": "statement"
       },
-      "importance": 7,
-      "id": "2026-11-09-14"
+      "importance": 5,
+      "id": "2026-11-10-25"
     },
     {
-      "section": "models",
-      "headline": "Как маршрутизируют экспертов MoE-модели: DeepSeek, Qwen, Mixtral, Llama 4 и gpt-oss",
-      "subheadline": "Разбор сравнивает, как популярные MoE-модели выбирают экспертов для каждого токена.",
-      "body": "В обзоре сопоставлены схемы маршрутизации в открытых MoE-архитектурах: число активных экспертов на токен, наличие общих экспертов и способы балансировки нагрузки между ними. От этих решений зависят качество модели и стоимость инференса.",
+      "section": "hype",
+      "headline": "Samsung может ввести лимиты и платные тарифы для Galaxy AI",
+      "subheadline": "ZDNet собрал, что известно о возможной подписке",
+      "body": "По данным ZDNet, Samsung рассматривает ограничения на использование Galaxy AI и несколько уровней подписки. Ранее компания обещала бесплатный доступ к базовым функциям Galaxy AI до конца 2025 года. Официального решения нет.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Which Routing Does Each MoE Model Use? DeepSeek, Qwen, Mixtral, Llama 4, gpt-oss Compared",
-          "url": "https://www.marktechpost.com/2026/11/08/moe-model-routing-comparison/",
+          "title": "Samsung mulls Galaxy AI usage limits and subscription tiers – what we know",
+          "url": "https://www.zdnet.com/innovation/samsung-galaxy-ai-paid-subscription/",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Samsung",
+          "Galaxy AI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Samsung": "neutral",
+          "Galaxy AI": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 5,
+      "id": "2026-11-10-26"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: попыток взлома с признаками ИИ стало в пять раз больше",
+      "subheadline": null,
+      "body": "По данным Positive Technologies, в III квартале число попыток вторжений с признаками использования ИИ выросло примерно в пять раз. «Российская газета» пишет, что атаку ИИ-агентов на российскую организацию расследовала и Anthropic.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Взлом за три часа: как нейросети изменили работу хакеров",
+          "url": "https://rg.ru/2026/11/09/vzlom-za-tri-chasa-kak-nejroseti-izmenili-rabotu-hakerov.html",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Positive Technologies: ИИ-агенты впервые полностью провели атаку на российскую компанию",
+      "tags": {
+        "entities": [
+          "Positive Technologies",
+          "Anthropic",
+          "Россия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Positive Technologies": "neutral",
+          "Anthropic": "neutral",
+          "Россия": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-10-27"
+    },
+    {
+      "section": "hype",
+      "headline": "Глава Paramount Skydance Дэвид Эллисон: ИИ может стать главным творческим прорывом современности",
+      "subheadline": "Эллисон поддерживает использование ИИ в кино",
+      "body": "Эллисон назвал ИИ, возможно, «крупнейшим творческим прорывом в современной истории». Это слова руководителя одной из крупнейших голливудских студий в момент, когда отрасль спорит об ИИ в кино.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "David Ellison says AI could be the 'biggest creative unlock in modern history'",
+          "url": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
           "type": "media"
         }
       ],
@@ -511,49 +999,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "DeepSeek",
-          "Qwen",
-          "Llama"
+          "David Ellison",
+          "Paramount Skydance"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "DeepSeek": "neutral",
-          "Qwen": "neutral",
-          "Llama": "neutral"
+          "David Ellison": "neutral",
+          "Paramount Skydance": "neutral"
         },
-        "event": "research"
+        "event": "statement"
       },
       "importance": 5,
-      "id": "2026-11-09-15"
-    },
-    {
-      "section": "content",
-      "headline": "Что умеют новые модели для локальной генерации на видеокарте с 16 ГБ",
-      "subheadline": "Обзор на Хабре: какие свежие генеративные модели запускаются на домашней видеокарте с 16 ГБ памяти.",
-      "body": "Автор проверяет, какие современные модели генерации изображений и видео помещаются в 16 ГБ видеопамяти. Он разбирает, что получается без облачных сервисов и подписок и чем приходится жертвовать ради нехватки памяти.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Локальная генерация на 16 ГБ: что умеют новые модели",
-          "url": "https://habr.com/ru/articles/1105054/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Хабр"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Хабр": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-09-16"
+      "id": "2026-11-10-28"
     }
   ]
 }
