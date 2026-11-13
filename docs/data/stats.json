@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-12",
-  "total_issues": 61,
-  "total_entities": 1058,
+  "updated": "2026-11-13",
+  "total_issues": 62,
+  "total_entities": 1072,
   "entities": {
     "OpenAI": {
-      "mentions": 189,
+      "mentions": 191,
       "positive": 89,
-      "negative": 53,
-      "neutral": 47,
+      "negative": 54,
+      "neutral": 48,
       "first_seen": "2026-04-04",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 67,
@@ -30,20 +30,20 @@
           "neutral": 12
         },
         "2026-11": {
-          "mentions": 33,
+          "mentions": 35,
           "positive": 14,
-          "negative": 8,
-          "neutral": 11
+          "negative": 9,
+          "neutral": 12
         }
       }
     },
     "Anthropic": {
-      "mentions": 165,
+      "mentions": 166,
       "positive": 85,
-      "negative": 36,
+      "negative": 37,
       "neutral": 44,
       "first_seen": "2026-04-04",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 64,
@@ -64,20 +64,20 @@
           "neutral": 10
         },
         "2026-11": {
-          "mentions": 29,
+          "mentions": 30,
           "positive": 10,
-          "negative": 8,
+          "negative": 9,
           "neutral": 11
         }
       }
     },
     "Google": {
-      "mentions": 122,
-      "positive": 91,
-      "negative": 13,
+      "mentions": 126,
+      "positive": 94,
+      "negative": 14,
       "neutral": 18,
       "first_seen": "2026-04-05",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 45,
@@ -98,54 +98,20 @@
           "neutral": 4
         },
         "2026-11": {
-          "mentions": 17,
-          "positive": 14,
-          "negative": 2,
+          "mentions": 21,
+          "positive": 17,
+          "negative": 3,
           "neutral": 1
         }
       }
     },
-    "ChatGPT": {
-      "mentions": 62,
-      "positive": 24,
-      "negative": 24,
-      "neutral": 14,
-      "first_seen": "2026-04-04",
-      "last_seen": "2026-11-12",
-      "by_month": {
-        "2026-04": {
-          "mentions": 29,
-          "positive": 11,
-          "negative": 13,
-          "neutral": 5
-        },
-        "2026-05": {
-          "mentions": 14,
-          "positive": 6,
-          "negative": 4,
-          "neutral": 4
-        },
-        "2026-10": {
-          "mentions": 11,
-          "positive": 4,
-          "negative": 4,
-          "neutral": 3
-        },
-        "2026-11": {
-          "mentions": 8,
-          "positive": 3,
-          "negative": 3,
-          "neutral": 2
-        }
-      }
-    },
     "NVIDIA": {
-      "mentions": 62,
+      "mentions": 66,
       "positive": 40,
-      "negative": 13,
-      "neutral": 9,
+      "negative": 16,
+      "neutral": 10,
       "first_seen": "2026-04-05",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 15,
@@ -166,9 +132,43 @@
           "neutral": 2
         },
         "2026-11": {
-          "mentions": 16,
+          "mentions": 20,
           "positive": 6,
-          "negative": 8,
+          "negative": 11,
+          "neutral": 3
+        }
+      }
+    },
+    "ChatGPT": {
+      "mentions": 63,
+      "positive": 24,
+      "negative": 25,
+      "neutral": 14,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 29,
+          "positive": 11,
+          "negative": 13,
+          "neutral": 5
+        },
+        "2026-05": {
+          "mentions": 14,
+          "positive": 6,
+          "negative": 4,
+          "neutral": 4
+        },
+        "2026-10": {
+          "mentions": 11,
+          "positive": 4,
+          "negative": 4,
+          "neutral": 3
+        },
+        "2026-11": {
+          "mentions": 9,
+          "positive": 3,
+          "negative": 4,
           "neutral": 2
         }
       }
@@ -208,12 +208,12 @@
       }
     },
     "Microsoft": {
-      "mentions": 42,
-      "positive": 20,
-      "negative": 11,
-      "neutral": 11,
+      "mentions": 45,
+      "positive": 21,
+      "negative": 12,
+      "neutral": 12,
       "first_seen": "2026-04-05",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 14,
@@ -234,20 +234,20 @@
           "neutral": 1
         },
         "2026-11": {
-          "mentions": 4,
-          "positive": 0,
-          "negative": 2,
-          "neutral": 2
+          "mentions": 7,
+          "positive": 1,
+          "negative": 3,
+          "neutral": 3
         }
       }
     },
     "Meta": {
-      "mentions": 42,
+      "mentions": 45,
       "positive": 19,
-      "negative": 18,
-      "neutral": 5,
+      "negative": 20,
+      "neutral": 6,
       "first_seen": "2026-04-08",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 15,
@@ -268,10 +268,10 @@
           "neutral": 3
         },
         "2026-11": {
-          "mentions": 10,
+          "mentions": 13,
           "positive": 7,
-          "negative": 3,
-          "neutral": 0
+          "negative": 5,
+          "neutral": 1
         }
       }
     },
@@ -310,12 +310,12 @@
       }
     },
     "Gemini": {
-      "mentions": 35,
-      "positive": 25,
-      "negative": 8,
+      "mentions": 37,
+      "positive": 26,
+      "negative": 9,
       "neutral": 2,
       "first_seen": "2026-04-04",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 13,
@@ -336,20 +336,20 @@
           "neutral": 1
         },
         "2026-11": {
-          "mentions": 4,
-          "positive": 4,
-          "negative": 0,
+          "mentions": 6,
+          "positive": 5,
+          "negative": 1,
           "neutral": 0
         }
       }
     },
     "AWS": {
-      "mentions": 31,
-      "positive": 26,
+      "mentions": 32,
+      "positive": 27,
       "negative": 0,
       "neutral": 5,
       "first_seen": "2026-04-09",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 11,
@@ -370,8 +370,8 @@
           "neutral": 1
         },
         "2026-11": {
-          "mentions": 10,
-          "positive": 7,
+          "mentions": 11,
+          "positive": 8,
           "negative": 0,
           "neutral": 3
         }
@@ -412,12 +412,12 @@
       }
     },
     "Google DeepMind": {
-      "mentions": 27,
-      "positive": 18,
+      "mentions": 28,
+      "positive": 19,
       "negative": 3,
       "neutral": 6,
       "first_seen": "2026-04-11",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 9,
@@ -438,8 +438,8 @@
           "neutral": 1
         },
         "2026-11": {
-          "mentions": 7,
-          "positive": 7,
+          "mentions": 8,
+          "positive": 8,
           "negative": 0,
           "neutral": 0
         }
@@ -897,6 +897,170 @@
         }
       }
     },
+    "Hugging Face": {
+      "mentions": 13,
+      "positive": 3,
+      "negative": 1,
+      "neutral": 9,
+      "first_seen": "2026-04-22",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-05": {
+          "mentions": 3,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 2
+        },
+        "2026-10": {
+          "mentions": 4,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 2
+        },
+        "2026-11": {
+          "mentions": 5,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 5
+        }
+      }
+    },
+    "Jensen Huang": {
+      "mentions": 13,
+      "positive": 4,
+      "negative": 8,
+      "neutral": 1,
+      "first_seen": "2026-05-05",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-05": {
+          "mentions": 4,
+          "positive": 4,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 7,
+          "positive": 0,
+          "negative": 7,
+          "neutral": 0
+        }
+      }
+    },
+    "Alibaba": {
+      "mentions": 12,
+      "positive": 10,
+      "negative": 1,
+      "neutral": 1,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 6,
+          "positive": 6,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-05": {
+          "mentions": 4,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 1
+        },
+        "2026-10": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Qwen": {
+      "mentions": 12,
+      "positive": 8,
+      "negative": 1,
+      "neutral": 3,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 3,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-05": {
+          "mentions": 4,
+          "positive": 4,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 3,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 2
+        }
+      }
+    },
+    "Donald Trump": {
+      "mentions": 12,
+      "positive": 1,
+      "negative": 4,
+      "neutral": 7,
+      "first_seen": "2026-04-08",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 6,
+          "positive": 1,
+          "negative": 2,
+          "neutral": 3
+        },
+        "2026-05": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-10": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 3,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 2
+        }
+      }
+    },
     "Австралия": {
       "mentions": 12,
       "positive": 0,
@@ -931,40 +1095,6 @@
         }
       }
     },
-    "Hugging Face": {
-      "mentions": 12,
-      "positive": 3,
-      "negative": 1,
-      "neutral": 8,
-      "first_seen": "2026-04-22",
-      "last_seen": "2026-11-12",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 3,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 2
-        },
-        "2026-10": {
-          "mentions": 4,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 2
-        },
-        "2026-11": {
-          "mentions": 4,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 4
-        }
-      }
-    },
     "Grok": {
       "mentions": 11,
       "positive": 3,
@@ -990,102 +1120,6 @@
           "positive": 0,
           "negative": 2,
           "neutral": 0
-        }
-      }
-    },
-    "Alibaba": {
-      "mentions": 11,
-      "positive": 9,
-      "negative": 1,
-      "neutral": 1,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-10-27",
-      "by_month": {
-        "2026-04": {
-          "mentions": 6,
-          "positive": 6,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 4,
-          "positive": 3,
-          "negative": 0,
-          "neutral": 1
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 0
-        }
-      }
-    },
-    "Qwen": {
-      "mentions": 11,
-      "positive": 7,
-      "negative": 1,
-      "neutral": 3,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-11-09",
-      "by_month": {
-        "2026-04": {
-          "mentions": 3,
-          "positive": 3,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 4,
-          "positive": 4,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
-        },
-        "2026-11": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 2
-        }
-      }
-    },
-    "Donald Trump": {
-      "mentions": 11,
-      "positive": 1,
-      "negative": 3,
-      "neutral": 7,
-      "first_seen": "2026-04-08",
-      "last_seen": "2026-11-10",
-      "by_month": {
-        "2026-04": {
-          "mentions": 6,
-          "positive": 1,
-          "negative": 2,
-          "neutral": 3
-        },
-        "2026-05": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        },
-        "2026-11": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 2
         }
       }
     },
@@ -1173,30 +1207,36 @@
         }
       }
     },
-    "Jensen Huang": {
-      "mentions": 11,
-      "positive": 4,
-      "negative": 6,
-      "neutral": 1,
-      "first_seen": "2026-05-05",
-      "last_seen": "2026-11-12",
+    "TPU": {
+      "mentions": 10,
+      "positive": 10,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-08",
+      "last_seen": "2026-11-13",
       "by_month": {
+        "2026-04": {
+          "mentions": 3,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0
+        },
         "2026-05": {
-          "mentions": 4,
-          "positive": 4,
+          "mentions": 2,
+          "positive": 2,
           "negative": 0,
           "neutral": 0
         },
         "2026-10": {
           "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
         },
         "2026-11": {
-          "mentions": 5,
-          "positive": 0,
-          "negative": 5,
+          "mentions": 3,
+          "positive": 3,
+          "negative": 0,
           "neutral": 0
         }
       }
@@ -1229,6 +1269,34 @@
         }
       }
     },
+    "Белый дом": {
+      "mentions": 10,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 8,
+      "first_seen": "2026-04-08",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 5,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 3
+        },
+        "2026-05": {
+          "mentions": 4,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 4
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
     "GitHub": {
       "mentions": 10,
       "positive": 6,
@@ -1254,6 +1322,34 @@
           "positive": 0,
           "negative": 0,
           "neutral": 1
+        }
+      }
+    },
+    "Конгресс США": {
+      "mentions": 10,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 9,
+      "first_seen": "2026-04-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 2
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 6,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 6
         }
       }
     },
@@ -1316,90 +1412,6 @@
           "positive": 0,
           "negative": 0,
           "neutral": 7
-        }
-      }
-    },
-    "TPU": {
-      "mentions": 9,
-      "positive": 9,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-04-08",
-      "last_seen": "2026-11-10",
-      "by_month": {
-        "2026-04": {
-          "mentions": 3,
-          "positive": 3,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 2,
-          "positive": 2,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 2,
-          "positive": 2,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-11": {
-          "mentions": 2,
-          "positive": 2,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
-    "Белый дом": {
-      "mentions": 9,
-      "positive": 0,
-      "negative": 2,
-      "neutral": 7,
-      "first_seen": "2026-04-08",
-      "last_seen": "2026-05-26",
-      "by_month": {
-        "2026-04": {
-          "mentions": 5,
-          "positive": 0,
-          "negative": 2,
-          "neutral": 3
-        },
-        "2026-05": {
-          "mentions": 4,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 4
-        }
-      }
-    },
-    "Конгресс США": {
-      "mentions": 9,
-      "positive": 0,
-      "negative": 1,
-      "neutral": 8,
-      "first_seen": "2026-04-13",
-      "last_seen": "2026-11-12",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 2
-        },
-        "2026-10": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
-        },
-        "2026-11": {
-          "mentions": 5,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 5
         }
       }
     },
@@ -1477,6 +1489,56 @@
           "mentions": 2,
           "positive": 2,
           "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Muse": {
+      "mentions": 9,
+      "positive": 4,
+      "negative": 4,
+      "neutral": 1,
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-10": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 7,
+          "positive": 3,
+          "negative": 3,
+          "neutral": 1
+        }
+      }
+    },
+    "Copilot": {
+      "mentions": 8,
+      "positive": 4,
+      "negative": 4,
+      "neutral": 0,
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 4,
+          "positive": 2,
+          "negative": 2,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 1,
           "neutral": 0
         }
       }
@@ -1565,6 +1627,74 @@
         }
       }
     },
+    "SpaceX": {
+      "mentions": 7,
+      "positive": 3,
+      "negative": 4,
+      "neutral": 0,
+      "first_seen": "2026-04-04",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0
+        },
+        "2026-05": {
+          "mentions": 3,
+          "positive": 1,
+          "negative": 2,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "ByteDance": {
+      "mentions": 7,
+      "positive": 7,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-05": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
     "Cursor": {
       "mentions": 7,
       "positive": 5,
@@ -1649,28 +1779,6 @@
         }
       }
     },
-    "Muse": {
-      "mentions": 7,
-      "positive": 4,
-      "negative": 3,
-      "neutral": 0,
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-11-11",
-      "by_month": {
-        "2026-10": {
-          "mentions": 2,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 0
-        },
-        "2026-11": {
-          "mentions": 5,
-          "positive": 3,
-          "negative": 2,
-          "neutral": 0
-        }
-      }
-    },
     "OpenClaw": {
       "mentions": 6,
       "positive": 1,
@@ -1690,56 +1798,6 @@
           "positive": 0,
           "negative": 0,
           "neutral": 1
-        }
-      }
-    },
-    "SpaceX": {
-      "mentions": 6,
-      "positive": 3,
-      "negative": 3,
-      "neutral": 0,
-      "first_seen": "2026-04-04",
-      "last_seen": "2026-10-26",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 3,
-          "positive": 1,
-          "negative": 2,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
-    "Copilot": {
-      "mentions": 6,
-      "positive": 3,
-      "negative": 3,
-      "neutral": 0,
-      "first_seen": "2026-04-05",
-      "last_seen": "2026-10-29",
-      "by_month": {
-        "2026-04": {
-          "mentions": 4,
-          "positive": 2,
-          "negative": 2,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 2,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 0
         }
       }
     },
@@ -1889,24 +1947,18 @@
         }
       }
     },
-    "ByteDance": {
+    "Seedance": {
       "mentions": 6,
-      "positive": 6,
-      "negative": 0,
+      "positive": 5,
+      "negative": 1,
       "neutral": 0,
       "first_seen": "2026-04-09",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-05": {
-          "mentions": 2,
+          "mentions": 3,
           "positive": 2,
-          "negative": 0,
+          "negative": 1,
           "neutral": 0
         },
         "2026-10": {
@@ -2007,6 +2059,40 @@
         }
       }
     },
+    "Instagram": {
+      "mentions": 6,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 4,
+      "first_seen": "2026-04-23",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-05": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        },
+        "2026-10": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 2,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
     "Android": {
       "mentions": 6,
       "positive": 4,
@@ -2097,25 +2183,53 @@
         }
       }
     },
-    "Seedance": {
-      "mentions": 5,
-      "positive": 4,
+    "ElevenLabs": {
+      "mentions": 6,
+      "positive": 5,
       "negative": 1,
       "neutral": 0,
-      "first_seen": "2026-04-09",
-      "last_seen": "2026-10-29",
+      "first_seen": "2026-05-22",
+      "last_seen": "2026-11-13",
       "by_month": {
-        "2026-04": {
-          "mentions": 3,
-          "positive": 2,
-          "negative": 1,
+        "2026-05": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
           "neutral": 0
         },
         "2026-10": {
-          "mentions": 2,
-          "positive": 2,
+          "mentions": 1,
+          "positive": 1,
           "negative": 0,
           "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 4,
+          "positive": 3,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "GPT-6 Astra": {
+      "mentions": 6,
+      "positive": 1,
+      "negative": 2,
+      "neutral": 3,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-10": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
+        },
+        "2026-11": {
+          "mentions": 4,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 2
         }
       }
     },
@@ -2443,40 +2557,6 @@
         }
       }
     },
-    "Instagram": {
-      "mentions": 5,
-      "positive": 1,
-      "negative": 1,
-      "neutral": 3,
-      "first_seen": "2026-04-23",
-      "last_seen": "2026-11-10",
-      "by_month": {
-        "2026-04": {
-          "mentions": 2,
-          "positive": 0,
-          "negative": 1,
-          "neutral": 1
-        },
-        "2026-05": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        },
-        "2026-11": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
     "Zyphra": {
       "mentions": 5,
       "positive": 5,
@@ -2499,53 +2579,31 @@
         }
       }
     },
-    "ElevenLabs": {
+    "Perplexity": {
       "mentions": 5,
-      "positive": 4,
-      "negative": 1,
-      "neutral": 0,
-      "first_seen": "2026-05-22",
-      "last_seen": "2026-11-12",
+      "positive": 2,
+      "negative": 2,
+      "neutral": 1,
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-05": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-11": {
-          "mentions": 3,
-          "positive": 2,
-          "negative": 1,
-          "neutral": 0
-        }
-      }
-    },
-    "GPT-6 Astra": {
-      "mentions": 5,
-      "positive": 1,
-      "negative": 2,
-      "neutral": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-06",
-      "by_month": {
-        "2026-10": {
           "mentions": 2,
-          "positive": 0,
+          "positive": 1,
           "negative": 1,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
           "neutral": 1
         },
         "2026-11": {
-          "mentions": 3,
+          "mentions": 2,
           "positive": 1,
           "negative": 1,
-          "neutral": 1
+          "neutral": 0
         }
       }
     },
@@ -2989,6 +3047,34 @@
         }
       }
     },
+    "IBM": {
+      "mentions": 4,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-29",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-10": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
     "Blackstone": {
       "mentions": 4,
       "positive": 1,
@@ -3143,34 +3229,6 @@
         }
       }
     },
-    "Perplexity": {
-      "mentions": 4,
-      "positive": 2,
-      "negative": 1,
-      "neutral": 1,
-      "first_seen": "2026-05-07",
-      "last_seen": "2026-11-06",
-      "by_month": {
-        "2026-05": {
-          "mentions": 2,
-          "positive": 1,
-          "negative": 1,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        },
-        "2026-11": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
     "Ватикан": {
       "mentions": 4,
       "positive": 0,
@@ -3260,6 +3318,28 @@
         "2026-11": {
           "mentions": 1,
           "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Claude Opus 5.5": {
+      "mentions": 4,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-10": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 2,
+          "positive": 2,
           "negative": 0,
           "neutral": 0
         }
@@ -3985,6 +4065,28 @@
         }
       }
     },
+    "Trainium": {
+      "mentions": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-04-22",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
     "Коннектикут": {
       "mentions": 3,
       "positive": 0,
@@ -4185,13 +4287,13 @@
         }
       }
     },
-    "IBM": {
+    "Сбер": {
       "mentions": 3,
-      "positive": 3,
+      "positive": 2,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-04": {
           "mentions": 1,
@@ -4200,10 +4302,16 @@
           "neutral": 0
         },
         "2026-10": {
-          "mentions": 2,
-          "positive": 2,
+          "mentions": 1,
+          "positive": 1,
           "negative": 0,
           "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
         }
       }
     },
@@ -4431,13 +4539,13 @@
         }
       }
     },
-    "Claude Opus 5.5": {
+    "Granite": {
       "mentions": 3,
       "positive": 3,
       "negative": 0,
       "neutral": 0,
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-02",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-11-13",
       "by_month": {
         "2026-10": {
           "mentions": 2,
@@ -5141,6 +5249,28 @@
         }
       }
     },
+    "Notion": {
+      "mentions": 2,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-04-20",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-04": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
     "JPMorgan": {
       "mentions": 2,
       "positive": 0,
@@ -5154,28 +5284,6 @@
           "positive": 0,
           "negative": 0,
           "neutral": 2
-        }
-      }
-    },
-    "Trainium": {
-      "mentions": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-04-22",
-      "last_seen": "2026-11-10",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-11": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
         }
       }
     },
@@ -5613,28 +5721,6 @@
         }
       }
     },
-    "Сбер": {
-      "mentions": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-04-29",
-      "last_seen": "2026-10-27",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        },
-        "2026-10": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
     "Agents CLI": {
       "mentions": 2,
       "positive": 2,
@@ -5858,6 +5944,28 @@
         "2026-05": {
           "mentions": 2,
           "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "CopilotKit": {
+      "mentions": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-05": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
           "negative": 0,
           "neutral": 0
         }
@@ -6129,6 +6237,28 @@
         }
       }
     },
+    "Visual Studio": {
+      "mentions": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-10": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
     "Brave": {
       "mentions": 2,
       "positive": 0,
@@ -6202,22 +6332,6 @@
           "positive": 0,
           "negative": 0,
           "neutral": 1
-        }
-      }
-    },
-    "Granite": {
-      "mentions": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-30",
-      "by_month": {
-        "2026-10": {
-          "mentions": 2,
-          "positive": 2,
-          "negative": 0,
-          "neutral": 0
         }
       }
     },
@@ -6666,6 +6780,22 @@
           "positive": 2,
           "negative": 0,
           "neutral": 0
+        }
+      }
+    },
+    "SoftBank": {
+      "mentions": 2,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 1,
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1
         }
       }
     },
@@ -9325,22 +9455,6 @@
         }
       }
     },
-    "Notion": {
-      "mentions": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-04-20",
-      "last_seen": "2026-04-20",
-      "by_month": {
-        "2026-04": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
     "Cognitive Memory Agent": {
       "mentions": 1,
       "positive": 1,
@@ -11597,22 +11711,6 @@
         }
       }
     },
-    "CopilotKit": {
-      "mentions": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-05-07",
-      "last_seen": "2026-05-07",
-      "by_month": {
-        "2026-05": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
     "Enterprise Intelligence Platform": {
       "mentions": 1,
       "positive": 1,
@@ -13678,22 +13776,6 @@
       }
     },
     "llm-d": {
-      "mentions": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "by_month": {
-        "2026-10": {
-          "mentions": 1,
-          "positive": 1,
-          "negative": 0,
-          "neutral": 0
-        }
-      }
-    },
-    "Visual Studio": {
       "mentions": 1,
       "positive": 1,
       "negative": 0,
@@ -18493,22 +18575,6 @@
         }
       }
     },
-    "SoftBank": {
-      "mentions": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "by_month": {
-        "2026-11": {
-          "mentions": 1,
-          "positive": 0,
-          "negative": 0,
-          "neutral": 1
-        }
-      }
-    },
     "Disney": {
       "mentions": 1,
       "positive": 1,
@@ -19082,6 +19148,230 @@
           "positive": 0,
           "negative": 0,
           "neutral": 1
+        }
+      }
+    },
+    "Scribe v3 Live": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Toptal": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Liquid AI": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "LiquidCodec": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Fireworks AI": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        }
+      }
+    },
+    "OpenBot": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Nebius": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Agility Robotics": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Flow": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Phota Labs": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "The Verge": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Simbarashe Kundizeza": {
+      "mentions": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    },
+    "Caine Prize": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      }
+    },
+    "Howard Lutnick": {
+      "mentions": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "by_month": {
+        "2026-11": {
+          "mentions": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
         }
       }
     }

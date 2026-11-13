@@ -1,303 +1,32 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "published": false,
   "news": [
     {
-      "section": "industry",
-      "headline": "Выручка OpenAI за квартал достигла $10 млрд, но Anthropic по-прежнему впереди",
-      "subheadline": "Рост обеспечили продажи корпоративным клиентам",
-      "body": "По данным The Decoder, квартальная выручка OpenAI выросла до $10 млрд в основном за счёт корпоративного сегмента. Anthropic по этому показателю всё ещё впереди. Цифры появились, когда обе компании готовятся к IPO: Anthropic уже назначила диапазон цены размещения, а Грег Брокман допускал, что OpenAI может выйти на биржу в 2027 году. Тем временем расходы американских компаний на ИИ в октябре обновили максимум, но их рост замедлился до 1,65%.",
+      "section": "models",
+      "headline": "Google DeepMind выпустила Gemini 4 Hydrogen",
+      "subheadline": "Новая модель обошла более крупную Gemini 4 Argon через четыре недели после её запуска и уже работает в Google Поиске",
+      "body": "Google DeepMind представила Gemini 4 Hydrogen. По данным The Decoder, она набирает больше баллов, чем более крупная Gemini 4 Argon, хотя с выхода Argon прошло всего четыре недели. Одновременно Google объявила крупное обновление Поиска: в его основе теперь Gemini 4 Hydrogen. Обе публикации — на официальных ресурсах компании: в блоге DeepMind и в блоге Google.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
-          "url": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "US corporate AI spending hits a new high in October, but growth slows to 1.65 percent",
-          "url": "https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/",
-          "entities": [
-            "США"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "Anthropic"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "OpenAI": "positive",
-          "Anthropic": "neutral"
-        },
-        "event": "finance"
-      },
-      "importance": 9,
-      "id": "2026-11-12-1"
-    },
-    {
-      "section": "industry",
-      "headline": "Anthropic: с ИИ переход с NVIDIA на чипы AMD занял три дня вместо нескольких месяцев",
-      "subheadline": "По оценке компании, ИИ ослабляет преимущество CUDA",
-      "body": "Раньше перенос рабочих нагрузок на другую аппаратную платформу занимал месяцы. По словам Anthropic, с помощью ИИ его удалось сделать за три дня. Компания считает, что так ослабевает главное преимущество NVIDIA — привязка разработчиков к программной экосистеме CUDA.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Anthropic says AI is eroding Nvidia's CUDA lead, cutting an AMD chip switch from months to three days",
-          "url": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "NVIDIA",
-          "AMD"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Anthropic": "positive",
-          "NVIDIA": "negative",
-          "AMD": "positive"
-        },
-        "event": "statement"
-      },
-      "importance": 7,
-      "id": "2026-11-12-2"
-    },
-    {
-      "section": "industry",
-      "headline": "Британский разработчик ИИ-чипов Fractile привлёк $720 млн",
-      "subheadline": "Один из крупнейших раундов европейских производителей чипов для ИИ",
-      "body": "Британский стартап Fractile разрабатывает чипы для ИИ и конкурирует с NVIDIA и другими производителями ускорителей. Привлечённые $720 млн, по оценке TechCrunch, дают компании преимущество в этой гонке.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "With $720M round, Britain's Fractile gets a leg up in the race for AI chips",
-          "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-          "entities": [
-            "CoreWeave"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Fractile",
-          "Великобритания"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Fractile": "positive",
-          "Великобритания": "neutral"
-        },
-        "event": "investment"
-      },
-      "importance": 7,
-      "id": "2026-11-12-3"
-    },
-    {
-      "section": "industry",
-      "headline": "Американские брокеры данных продали китайским ИИ-лабораториям RL-среды на полмиллиарда долларов",
-      "subheadline": "Китайские лаборатории закупают в США среды для обучения моделей с подкреплением",
-      "body": "Среды для обучения с подкреплением (RL) нужны, чтобы учить модели выполнять задачи агентов. По данным The Decoder, американские поставщики данных продали такие среды китайским ИИ-лабораториям примерно на $500 млн. Получается, что, несмотря на ограничения на экспорт чипов, США остаются источником данных для обучения китайских моделей.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "US data brokers are selling half a billion dollars in RL training environments to Chinese AI labs",
-          "url": "https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "США",
-          "Китай"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "США": "negative",
-          "Китай": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-12-4"
-    },
-    {
-      "section": "industry",
-      "headline": "Helsing создала ИИ-систему, которая готовит цели для систем вооружения",
-      "subheadline": "Компания обещает, что за каждым решением будет стоять имя конкретного человека",
-      "body": "Европейский оборонный разработчик Helsing создал систему, которая подготавливает данные о целях и передаёт их системам вооружения. Компания заявляет, что каждое решение будет закреплено за конкретным человеком-оператором, то есть ответственность за удар остаётся на людях.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Helsing built an AI system that prepares targets for weapons systems and says every decision will carry a human name",
-          "url": "https://the-decoder.com/helsing-built-an-ai-system-that-prepares-targets-for-weapons-systems-and-says-every-decision-will-carry-a-human-name/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "[Перевод] The Intercept: ИИ‑гиганты и Пентагон вместе создают системы для войны и слежки",
-          "url": "https://habr.com/ru/articles/1106618/",
-          "entities": [
-            "Пентагон"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Helsing"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Helsing": "neutral"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-12-5"
-    },
-    {
-      "section": "industry",
-      "headline": "Anthropic ужесточила правила доступа к Claude для компаний из России",
-      "subheadline": "Новые ограничения касаются корпоративных клиентов",
-      "body": "По данным Хабра, Anthropic изменила правила доступа к Claude для российских компаний. Тем временем пользователи разбирают, какие параметры аккаунта приводят к блокировкам в Claude и ChatGPT, а Claude Code стал отказываться от задач по реверс-инжинирингу.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Anthropic ужесточила правила доступа к Claude для компаний из России",
-          "url": "https://habr.com/ru/articles/1106834/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "За что банят аккаунты Claude и ChatGPT на самом деле: 23 параметра за которыми стоит следить",
-          "url": "https://vc.ru/ai/3249818-prichiny-blokirovok-claude-dlya-polzovateley-iz-rossii",
-          "entities": [
-            "Claude",
-            "ChatGPT"
-          ],
-          "sentiment": "negative"
+          "title": "Gemini 4 Hydrogen",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+          "type": "official"
         },
         {
-          "title": "Claude Code отказывает в реверс‑инжиниринге, OpenAI блокирует аккаунты",
-          "url": "https://habr.com/ru/articles/1106550/",
-          "entities": [
-            "Claude Code",
-            "OpenAI"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Россия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Anthropic": "neutral",
-          "Claude": "neutral",
-          "Россия": "negative"
-        },
-        "event": "update"
-      },
-      "importance": 5,
-      "id": "2026-11-12-6"
-    },
-    {
-      "section": "industry",
-      "headline": "Продолжение: Конгресс вызовет Дженсена Хуанга из-за истории с предполагаемой китайской шпионкой",
-      "subheadline": null,
-      "body": "Конгресс США намерен вызвать главу NVIDIA для объяснений. Параллельно Хуанга обвинили ещё в одном романе — с топ-менеджером NVIDIA.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
-          "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
-          "entities": [
-            "Jensen Huang",
-            "NVIDIA"
-          ],
-          "sentiment": "negative"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": "Продолжение: NVIDIA проверит связи Дженсена Хуанга с возможной китайской шпионкой",
-      "tags": {
-        "entities": [
-          "Jensen Huang",
-          "NVIDIA",
-          "Конгресс США"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Jensen Huang": "negative",
-          "NVIDIA": "negative",
-          "Конгресс США": "neutral"
-        },
-        "event": "legal"
-      },
-      "importance": 5,
-      "id": "2026-11-12-7"
-    },
-    {
-      "section": "models",
-      "headline": "Google DeepMind представила AlphaGenome 2",
-      "subheadline": "Модель предсказывает, как изменения в ДНК влияют на разные типы клеток человека",
-      "body": "AlphaGenome 2 оценивает, как вариации в последовательности ДНК меняют чтение генома в разных типах клеток человека. По словам DeepMind, это помогает понять механизмы заболеваний. Модель представили вместе с новым поколением Gemini Robotics.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+          "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+          "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
           "type": "official"
         }
       ],
       "related": [
         {
-          "title": "Google DeepMind releases new advanced robotics AI model and next-generation gene prediction model",
-          "url": "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model",
+          "title": "Google's Gemini 4 Hydrogen outscores the bigger Argon just four weeks after its launch",
+          "url": "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/",
           "entities": [
-            "Google DeepMind"
+            "Google",
+            "Gemini"
           ],
           "sentiment": "positive"
         }
@@ -307,392 +36,308 @@
       "tags": {
         "entities": [
           "Google DeepMind",
-          "AlphaGenome 2"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Google DeepMind": "positive",
-          "AlphaGenome 2": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-12-8"
-    },
-    {
-      "section": "models",
-      "headline": "MBZUAI открыл модель мира PAN 2 на 29 млрд параметров",
-      "subheadline": "Открытая модель для физического ИИ от Института фундаментальных моделей",
-      "body": "Институт фундаментальных моделей (IFM) при университете MBZUAI выпустил PAN 2 — открытую модель мира на 29 млрд параметров. Она предназначена для физического ИИ: моделирует окружение, в котором действуют роботы и агенты.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "MBZUAI's IFM Releases PAN 2, an Open 29B World Model for Physical AI",
-          "url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "MBZUAI",
-          "PAN 2"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "MBZUAI": "positive",
-          "PAN 2": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 7,
-      "id": "2026-11-12-9"
-    },
-    {
-      "section": "models",
-      "headline": "Fish Audio выпустила голосовую модель Live 3 с реакцией за 186 мс",
-      "subheadline": "Модель умеет одновременно слушать и говорить",
-      "body": "Live 3 работает в полнодуплексном режиме: слушает собеседника, пока говорит сама, и отвечает с задержкой 186 мс.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Fish Audio Releases Live 3, a Full-Duplex Voice Model That Reacts in 186 ms",
-          "url": "https://www.marktechpost.com/2026/11/10/fish-audio-live-3-full-duplex-voice-model/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Fish Audio",
-          "Live 3"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Fish Audio": "positive",
-          "Live 3": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-12-10"
-    },
-    {
-      "section": "models",
-      "headline": "QVAC представила BotPsy — агентную модель меньше 1 млрд параметров для работы на устройстве",
-      "subheadline": "Персональный ассистент работает локально, без облака",
-      "body": "Команда QVAC опубликовала в блоге Hugging Face BotPsy — персонального ассистента на агентной языковой модели меньше 1 млрд параметров. Модель рассчитана на запуск прямо на устройстве пользователя.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-          "url": "https://huggingface.co/blog/qvac/botpsy",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "QVAC",
-          "BotPsy",
-          "Hugging Face"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "QVAC": "positive",
-          "BotPsy": "positive",
-          "Hugging Face": "neutral"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-12-11"
-    },
-    {
-      "section": "models",
-      "headline": "Метод Tree-Ising избавляет малые языковые модели от зацикленных рассуждений",
-      "subheadline": "Квантово-вдохновлённая правка весов от QDeep и ИТМО",
-      "body": "Исследователи QDeep и ИТМО правят веса малых LLM, чтобы убрать повторяющиеся рассуждения. Одна из моделей набрала 55,1% на MATH-500. Метод проверили и на квантовом железе, но в небольшом запуске; преимущества перед классическими методами авторы не заявляют.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Researchers explore quantum-inspired AI repair",
-          "url": "https://thequantuminsider.com/2026/11/11/researchers-explore-quantum-inspired-ai-repair",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "QDeep",
-          "ИТМО"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "QDeep": "positive",
-          "ИТМО": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-12-12"
-    },
-    {
-      "section": "platforms",
-      "headline": "Google запустила Gemini Decisions API для быстрых решений из готового набора вариантов",
-      "subheadline": "Новый эндпоинт на модели gemini-decision-1 выбирает один из заданных вариантов и выдаёт калиброванные ответы",
-      "body": "Decisions API предназначен для задач, где нужно выбрать один вариант из закрытого списка: выбор инструмента агентом, проверка на соответствие политикам, маршрутизация запросов между моделями. Принимает мультимодальный вход до 256 тыс. токенов, доступен через AI Studio. Цену Google не раскрыла.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-          "type": "official"
-        }
-      ],
-      "related": [
-        {
-          "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
-          "entities": [
-            "Google"
-          ],
-          "sentiment": "positive"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
           "Google",
-          "Gemini API",
-          "AI Studio"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Google": "positive",
-          "Gemini API": "positive",
-          "AI Studio": "neutral"
-        },
-        "event": "release"
-      },
-      "importance": 7,
-      "id": "2026-11-12-13"
-    },
-    {
-      "section": "platforms",
-      "headline": "Codex от OpenAI стал доступен через Amazon Bedrock",
-      "subheadline": "AWS расширяет набор ИИ-инструментов для разработчиков",
-      "body": "AWS опубликовала руководство по работе с агентом для программирования Codex через Amazon Bedrock. В тот же день компания добавила Web Search API в Bedrock AgentCore и ввела оплату по использованию для двунаправленного стриминга в SageMaker AI.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "OpenAI Codex on Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/",
-          "type": "official"
-        }
-      ],
-      "related": [
-        {
-          "title": "Introducing the Web Search API on Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
-          "entities": [
-            "AWS",
-            "Bedrock"
-          ],
-          "sentiment": "positive"
-        },
-        {
-          "title": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
-          "entities": [
-            "AWS",
-            "SageMaker"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "Codex",
-          "AWS",
-          "Bedrock"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "OpenAI": "positive",
-          "Codex": "positive",
-          "AWS": "positive",
-          "Bedrock": "positive"
-        },
-        "event": "partnership"
-      },
-      "importance": 7,
-      "id": "2026-11-12-14"
-    },
-    {
-      "section": "platforms",
-      "headline": "DeepL Voice переводит интонацию и темп речи",
-      "subheadline": "Новая голосовая модель должна передавать сарказм и смену настроения",
-      "body": "Синхронный перевод DeepL Voice теперь работает на новой голосовой модели, которая переносит в другой язык не только слова, но и интонацию со скоростью речи. Компания хочет, чтобы при переводе не терялись сарказм и смена настроения говорящего.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "DeepL wants real-time translation to finally capture sarcasm and mood shifts",
-          "url": "https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "DeepL",
-          "DeepL Voice"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "DeepL": "positive",
-          "DeepL Voice": "positive"
-        },
-        "event": "update"
-      },
-      "importance": 7,
-      "id": "2026-11-12-15"
-    },
-    {
-      "section": "platforms",
-      "headline": "ElevenLabs провела саммит в Нью-Йорке",
-      "subheadline": "Компания строит «слой взаимодействия» для ИИ",
-      "body": "В официальном блоге ElevenLabs собрала всё, что показала на саммите в Нью-Йорке. Компания позиционирует свои голосовые технологии как интерфейс, через который люди общаются с ИИ.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Building the interaction layer for AI: Everything announced at ElevenLabs Summit NYC",
-          "url": "https://elevenlabs.io/blog/nyc-summit",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "ElevenLabs"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "ElevenLabs": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-12-16"
-    },
-    {
-      "section": "platforms",
-      "headline": "OpenAI уберёт из ChatGPT режимы Advanced Voice и Standard Voice",
-      "subheadline": "Существующие голосовые режимы чат-бота закрываются",
-      "body": "По данным Хабра, OpenAI отказывается от двух нынешних голосовых режимов ChatGPT — Advanced Voice и Standard Voice.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "OpenAI откажется от режимов Advanced Voice и Standard Voice в ChatGPT",
-          "url": "https://habr.com/ru/articles/1106660/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "ChatGPT"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "OpenAI": "neutral",
-          "ChatGPT": "neutral"
-        },
-        "event": "shutdown"
-      },
-      "importance": 5,
-      "id": "2026-11-12-17"
-    },
-    {
-      "section": "platforms",
-      "headline": "Android Auto на Pixel получает Gemini Intelligence",
-      "subheadline": "Крупное обновление автомобильной платформы Google",
-      "body": "Владельцам Pixel приходит обновление Android Auto с функциями Gemini Intelligence. ZDNet считает, что по возможностям оно может соперничать с ИИ-версией Siri.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Pixel users are getting a major Android Auto update – and it rivals Siri AI",
-          "url": "https://www.zdnet.com/tech/android-auto-gemini-intelligence-update/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Google тестирует поиск без отдельной кнопки AI Mode",
-          "url": "https://vc.ru/ai/3248836-google-menyaet-poisk-ischeznoveniye-ii-rezhima",
-          "entities": [
-            "Google"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Google",
-          "Android",
           "Gemini"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
+          "Google DeepMind": "positive",
           "Google": "positive",
-          "Android": "positive",
           "Gemini": "positive"
         },
-        "event": "update"
+        "event": "release"
       },
-      "importance": 5,
-      "id": "2026-11-12-18"
+      "importance": 9,
+      "id": "2026-11-13-1"
     },
     {
-      "section": "content",
-      "headline": "Adobe показала эксперименты: прогулка внутри фотографии и интервью с персонажами",
-      "subheadline": "На Sneaks-панели Adobe MAX 2026 продемонстрировали прототипы, а не готовые продукты",
-      "body": "Среди прототипов: можно «войти» в фотографию и перемещаться по сцене, а также задавать вопросы созданным персонажам. Project Live Set позволяет прямо во время воспроизведения видео менять героев, окружение и движение камеры. Попадут ли эти функции в продукты Adobe, неизвестно.",
+      "section": "models",
+      "headline": "IBM добавила в Granite 4.1 язык разметки LLMON, созданный для языковых моделей",
+      "subheadline": "Поддержка LLMON появилась в моделях Granite 4.1 на 3 и 8 млрд параметров",
+      "body": "IBM описала LLMON в блоге на Hugging Face. Это язык разметки, который изначально проектировали под языковые модели, а не под людей или браузеры. Работать с ним умеют две версии Granite 4.1 — на 3 млрд и на 8 млрд параметров.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Adobe's AI experiments let you walk around in photos and interview your characters",
-          "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+          "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "IBM",
+          "Granite"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "IBM": "positive",
+          "Granite": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-13-2"
+    },
+    {
+      "section": "models",
+      "headline": "Данные OpenAI: передовые модели скрывают ход рассуждений из-за того, как их оптимизируют",
+      "subheadline": "Модели прячут рассуждения, потому что разработчики добиваются от них большей мощности и экономии вычислений",
+      "body": "The Decoder разобрал данные OpenAI о том, насколько полно рассуждения передовых моделей отражают их реальную работу. Издание приходит к выводу: модели всё чаще скрывают ход мыслей. Причина — разработчики оптимизируют их под возможности и расход вычислений, а прозрачность рассуждений при этом страдает.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI's data suggests that frontier models are hiding their thoughts because developers optimize for capability and compute",
+          "url": "https://the-decoder.com/openais-data-suggests-that-frontier-models-are-hiding-their-thoughts-because-developers-optimize-for-capability-and-compute/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-13-3"
+    },
+    {
+      "section": "models",
+      "headline": "ElevenLabs выпустила Scribe v3 Live: голосовые агенты перестанут перебивать собеседника",
+      "subheadline": "Модель распознавания речи учитывает контекст разговора и определяет, закончил ли человек фразу",
+      "body": "Scribe v3 Live распознаёт речь в реальном времени. Чтобы понять, договорил ли человек, она учитывает контекст разговора, а не только паузу. Так голосовые агенты реже обрывают звонящего на середине фразы.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ElevenLabs Scribe v3 Live uses conversational context to stop voice agents from cutting off callers mid-sentence",
+          "url": "https://the-decoder.com/elevenlabs-scribe-v3-live-uses-conversational-context-to-stop-voice-agents-from-cutting-off-callers-mid-sentence/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ElevenLabs",
+          "Scribe v3 Live"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "ElevenLabs": "positive",
+          "Scribe v3 Live": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-13-4"
+    },
+    {
+      "section": "models",
+      "headline": "Бенчмарк ExpertCrowd-SWE: Claude Opus 5.5 решает 67,3% задач, GPT-6 Astra — 63,7%",
+      "subheadline": "Toptal проверила, где кончаются возможности моделей на реалистичных многошаговых задачах по разработке",
+      "body": "ExpertCrowd-SWE от Toptal состоит из реалистичных многошаговых задач по разработке ПО и показывает, где проходят пределы каждой модели. Первое место у Claude Opus 5.5 — 67,3%, второе у GPT-6 Astra — 63,7%. Разрыв между ними укладывается в погрешность измерения.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "How reliable are AI coding tools? A new test focuses on each model's limits",
+          "url": "https://keyt.com/stacker-ai/2026/11/12/how-reliable-are-ai-coding-tools-a-new-test-focuses-on-each-models-limits/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Toptal",
+          "Claude Opus 5.5",
+          "GPT-6 Astra"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Toptal": "neutral",
+          "Claude Opus 5.5": "positive",
+          "GPT-6 Astra": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-13-5"
+    },
+    {
+      "section": "models",
+      "headline": "Alibaba выпустила Qwen4-Max-Preview",
+      "subheadline": "Предварительная версия старшей модели семейства Qwen4",
+      "body": "Выход Qwen4-Max-Preview разобрали в блоге Selectel на Хабре. Это preview-версия Max — самой крупной модели четвёртого поколения Qwen.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Qwen4-Max-Preview вышла",
+          "url": "https://habr.com/ru/companies/selectel/articles/1106976/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Alibaba",
+          "Qwen"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-13-6"
+    },
+    {
+      "section": "models",
+      "headline": "Liquid AI выпустила LiquidCodec — потоковый аудиокодек на 74 млн параметров",
+      "subheadline": "Компактный нейросетевой кодек для потоковой передачи звука",
+      "body": "LiquidCodec содержит 74 млн параметров и работает в потоковом режиме: звук кодируется и декодируется по мере поступления, а не целым файлом. Такие кодеки служат основой для голосовых моделей, которым нужна низкая задержка.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Liquid AI Releases LiquidCodec, a 74M-Parameter Streaming Audio Codec",
+          "url": "https://www.marktechpost.com/2026/11/12/liquid-ai-liquidcodec-streaming-audio-codec/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Liquid AI",
+          "LiquidCodec"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Liquid AI": "positive",
+          "LiquidCodec": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-13-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "Через взлом Fireworks AI хакеры получили доступ к чатам клиентов Notion",
+      "subheadline": "Атака на поставщика ИИ-инфраструктуры привела к утечке переписки пользователей Notion AI",
+      "body": "Хакеры атаковали Fireworks AI — компанию, у которой Notion арендует инфраструктуру для своего ИИ-помощника. Через неё злоумышленники добрались до расшифровок чатов клиентов Notion AI. По данным itzine, утечка затронула менее 1% рабочих пространств Notion.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers' chat transcripts",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
           "type": "media"
         }
       ],
       "related": [
         {
-          "title": "Adobe Project Live Set: real-time AI video editing",
-          "url": "https://variety.com/2026/digital/news/adobe-project-live-set-real-time-ai-video-editing-feature-1236943403/",
+          "title": "Менее 1% пространств Notion затронула утечка чатов с ИИ-помощником",
+          "url": "https://itzine.ru/news/ai/menee-1-prostranstv-notion-zatronula-utechka-chatov-ii-pomoshhnikom.html",
           "entities": [
-            "Adobe"
+            "Notion",
+            "Fireworks AI"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Об утечке также пишет itzine.ru",
+      "tags": {
+        "entities": [
+          "Fireworks AI",
+          "Notion"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Fireworks AI": "negative",
+          "Notion": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 7,
+      "id": "2026-11-13-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Microsoft обновила Copilot Chat в Visual Studio: новый движок решает больше задач",
+      "subheadline": "Во внутренних тестах Microsoft новая версия справилась со 124 задачами из 157, прежняя — со 103",
+      "body": "По данным Microsoft, на наборе из 157 задач по коду новый движок решил 124, прежний — 103. Теперь Copilot можно дать новую инструкцию прямо во время работы, не дожидаясь, пока он закончит. Результаты его действий также стали видны пользователю.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft upgrades Copilot for Visual Studio to reduce AI coding mistakes",
+          "url": "https://windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-upgrades-copilot-for-visual-studio-to-reduce-ai-coding-mistakes-and-save-developer-time",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Visual Studio",
+          "Copilot"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Visual Studio": "positive",
+          "Copilot": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-13-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "AWS выпустила AWS Emulator — локальную копию более 200 своих сервисов",
+      "subheadline": "Эмулятор API AWS для локальной разработки написали ИИ-агенты",
+      "body": "AWS Emulator воспроизводит API более чем 200 сервисов AWS на локальной машине. С ним разработчики могут тестировать код без обращения к облаку. Сам эмулятор, по данным MarkTechPost, написан ИИ-агентами.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS Releases AWS Emulator: A Local Copy of 200+ AWS Services Built by AI Agents",
+          "url": "https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Run agents securely and efficiently with the next generation AgentCore runtime",
+          "url": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+          "entities": [
+            "AWS"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "Deploy frontier AI models on AWS Trainium with SGLang-Neuron",
+          "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+          "entities": [
+            "AWS",
+            "Trainium"
           ],
           "sentiment": "positive"
         }
@@ -701,27 +346,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Adobe"
+          "AWS"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Adobe": "positive"
+          "AWS": "positive"
         },
-        "event": "research"
+        "event": "release"
       },
       "importance": 7,
-      "id": "2026-11-12-19"
+      "id": "2026-11-13-10"
     },
     {
-      "section": "content",
-      "headline": "Как открытые модели в ComfyUI понимают русские промпты",
-      "subheadline": "Сравнение открытых генераторов изображений на русскоязычных запросах",
-      "body": "Автор из BotHub проверил, как открытые модели для генерации изображений в ComfyUI обрабатывают промпты на русском. Вывод вынесен в заголовок статьи: качество результата зависит не от языка запроса.",
+      "section": "platforms",
+      "headline": "ИИ-агент Muse от Meta научился звонить в американские компании — за плату",
+      "subheadline": "Агент сам звонит в компании в США, функция доступна только на платной подписке",
+      "body": "Пользователь может поручить Muse позвонить в американскую компанию, и агент проведёт разговор сам. Функция работает только на платной подписке.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Дело не в языке: как открытые модели для ComfyUI понимают русский промпт",
-          "url": "https://habr.com/ru/companies/bothub/articles/1105828/",
+          "title": "Muse can now place calls to US businesses — if you pay",
+          "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
           "type": "media"
         }
       ],
@@ -730,67 +375,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ComfyUI"
+          "Meta",
+          "Muse"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "ComfyUI": "neutral"
+          "Meta": "neutral",
+          "Muse": "neutral"
         },
-        "event": "research"
+        "event": "update"
       },
       "importance": 5,
-      "id": "2026-11-12-20"
+      "id": "2026-11-13-11"
     },
     {
-      "section": "hype",
-      "headline": "Продолжение: СМИ пишут, что NVIDIA готовится уволить Дженсена Хуанга",
-      "subheadline": null,
-      "body": "The Verge пишет о слухах, что NVIDIA готовит отставку CEO. TechCrunch уже составил шуточный список возможных преемников.",
+      "section": "platforms",
+      "headline": "CopilotKit выпустила OpenBot 1.0 — ИИ-коллегу, которого можно развернуть у себя",
+      "subheadline": "Открытый код под лицензией MIT и встроенные инструменты контроля",
+      "body": "OpenBot 1.0 — ИИ-ассистент для рабочих задач. Его можно развернуть на собственной инфраструктуре, код открыт под лицензией MIT. Инструменты контроля над действиями агента встроены изначально.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Nvidia is reportedly preparing to fire Jensen Huang",
-          "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-          "type": "rumor"
-        }
-      ],
-      "related": [
-        {
-          "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
-          "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
-          "entities": [
-            "NVIDIA"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": true,
-      "duplicate_note": "Продолжение: Хуанг признал роман, NVIDIA временно потеряла почти $400 млрд капитализации",
-      "tags": {
-        "entities": [
-          "NVIDIA",
-          "Jensen Huang"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "NVIDIA": "negative",
-          "Jensen Huang": "negative"
-        },
-        "event": "people"
-      },
-      "importance": 5,
-      "id": "2026-11-12-21"
-    },
-    {
-      "section": "hype",
-      "headline": "Приложения, написанные с помощью Grok, раскрыли данные пациентов и пароли",
-      "subheadline": "В открытый доступ попала и воронка продаж самой SpaceXSI",
-      "body": "По данным The Decoder, приложения, созданные с помощью Grok, хранили пароли в открытом виде и раскрывали медицинские данные пациентов. Среди утёкшего — информация о продажах SpaceXSI.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
-          "url": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
+          "title": "CopilotKit Releases OpenBot 1.0: An MIT-Licensed, Self-Hostable AI Coworker With Built-In Governance",
+          "url": "https://www.marktechpost.com/2026/11/12/copilotkit-openbot-1-0-open-source-ai-coworker/",
           "type": "media"
         }
       ],
@@ -799,89 +406,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Grok",
-          "SpaceXSI"
+          "CopilotKit",
+          "OpenBot"
         ],
-        "sentiment": "negative",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "Grok": "negative",
-          "SpaceXSI": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 7,
-      "id": "2026-11-12-22"
-    },
-    {
-      "section": "hype",
-      "headline": "United Airlines не даст ИИ-агентам бронировать билеты",
-      "subheadline": "Авиакомпания запрещает неавторизованных агентов",
-      "body": "United запрещает бронировать рейсы через неавторизованных ИИ-агентов. Ранее, судя по всему, закрыл доступ сторонним агентам eBay.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "United won't let your AI agent book your flight",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "United Airlines"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "United Airlines": "neutral"
-        },
-        "event": "other"
-      },
-      "importance": 5,
-      "id": "2026-11-12-23"
-    },
-    {
-      "section": "hype",
-      "headline": "ИИ-агент Databricks говорит CEO Али Годси правду без прикрас",
-      "subheadline": "Внутренний агент компании не смягчает оценки для руководства",
-      "body": "TechCrunch рассказал о новом ИИ-агенте Databricks, который выдаёт главе компании неприукрашенные оценки происходящего.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Databricks' new AI agent tells CEO Ali Ghodsi the unvarnished truth",
-          "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Databricks",
-          "Ali Ghodsi"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Databricks": "positive",
-          "Ali Ghodsi": "neutral"
+          "CopilotKit": "positive",
+          "OpenBot": "positive"
         },
         "event": "release"
       },
       "importance": 5,
-      "id": "2026-11-12-24"
+      "id": "2026-11-13-12"
     },
     {
-      "section": "hype",
-      "headline": "Разработчик подключил ИИ-агента к 32-летнему Jeep Cherokee для диагностики",
-      "subheadline": "Агент читает данные старого автомобиля",
-      "body": "Автор на Хабре рассказал, как подключил ИИ-агента к Jeep Cherokee 32-летней давности, чтобы тот диагностировал неисправности.",
+      "section": "platforms",
+      "headline": "Google открыла код TPU Sync для передачи KV-кэша и весов на TPU",
+      "subheadline": "Инструмент переносит KV-кэш и веса моделей между ускорителями TPU",
+      "body": "TPU Sync переносит KV-кэш и веса моделей между ускорителями TPU. Это нужно при распределённом инференсе и при обновлении весов. Теперь код инструмента открыт.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Разработчик подключил AI‑агента к 32-летнему Jeep Cherokee для диагностики",
-          "url": "https://habr.com/ru/articles/1106830/",
+          "title": "Google Open-Sources TPU Sync for KV Cache and Weight Transfer on TPUs",
+          "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/",
           "type": "media"
         }
       ],
@@ -890,16 +437,642 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Jeep"
+          "Google",
+          "TPU"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "TPU": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-13-13"
+    },
+    {
+      "section": "platforms",
+      "headline": "Сбой затронул несколько сервисов Microsoft, включая Outlook, Teams и Copilot",
+      "subheadline": "Пользователи сообщили о недоступности сразу нескольких сервисов Microsoft",
+      "body": "По данным ZDNet, недоступны оказались сразу несколько сервисов Microsoft, в том числе Outlook, Teams и ИИ-ассистент Copilot.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Several Microsoft services appear to be down – what we know",
+          "url": "https://www.zdnet.com/business/microsoft-outage-outlook-teams-copilot/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Copilot"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Microsoft": "negative",
+          "Copilot": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-13-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Дженсен Хуанг ушёл с поста CEO NVIDIA",
+      "subheadline": null,
+      "body": "Хуанг ушёл в отставку после шпионского скандала, за время которого NVIDIA потеряла $1,4 трлн рыночной стоимости. Демократы в Конгрессе начали расследование против NVIDIA и направили компании письмо о «схеме» Хуанга с Трампом. Сам Трамп назвал историю «ужасной».",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Jensen Huang resigns as Nvidia CEO after espionage scandal wipes out $1.4 trillion in market value",
+          "url": "https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/",
+          "type": "media"
+        },
+        {
+          "title": "Democrats launch Nvidia investigation, write scathing letter on Huang's 'scheme' with Trump",
+          "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "The unfolding Jensen Huang scandal: a timeline",
+          "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Nvidia live updates: Trump calls Huang saga a 'horrible thing'",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
+          "entities": [
+            "NVIDIA",
+            "Donald Trump"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Jensen Huang's exit puts Nvidia's support for open source in question",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang's exit",
+          "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+          "entities": [
+            "Hugging Face"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "The Jensen Huang scandal is hardly over",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Jensen Huang built an AI kingdom. Now he's gone, will Nvidia's ramparts be breached?",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-built-an-ai-kingdom-now-hes-gone-will-nvidias-ramparts-be-breached",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: СМИ пишут, что NVIDIA готовится уволить Дженсена Хуанга",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang",
+          "Конгресс США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Jensen Huang": "negative",
+          "Конгресс США": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 5,
+      "id": "2026-11-13-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Некоммерческие организации в США подали в суд, чтобы остановить разработку ИИ",
+      "subheadline": "Иск направлен против Anthropic, Google, Meta, OpenAI и SpaceX",
+      "body": "Иск подала коалиция организаций, которые занимаются цифровой безопасностью и защитой потребителей. Они просят суд заморозить обучение и развёртывание ИИ-систем у пяти компаний. Обоснование — риск «катастрофического вреда».",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "US nonprofits sue tech giants to halt AI development",
+          "url": "https://aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Google",
+          "Meta",
+          "OpenAI",
+          "SpaceX"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Google": "negative",
+          "Meta": "negative",
+          "OpenAI": "negative",
+          "SpaceX": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 7,
+      "id": "2026-11-13-16"
+    },
+    {
+      "section": "industry",
+      "headline": "NVIDIA в частном порядке подтверждала, что может отслеживать чипы",
+      "subheadline": "Публично отрасль в это время сомневалась, что отслеживать чипы против контрабанды вообще возможно",
+      "body": "По данным MIT Technology Review, NVIDIA в непубличных разговорах подтверждала, что может отслеживать свои чипы, чтобы бороться с контрабандой. Публично же представители отрасли сомневались, что такое отслеживание осуществимо.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+          "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-13-17"
+    },
+    {
+      "section": "industry",
+      "headline": "Nebius планирует потратить $40 млрд",
+      "subheadline": "Компания проверяет на себе модель неооблака — провайдера, который сдаёт GPU в аренду",
+      "body": "Nebius относится к неооблакам — провайдерам, которые сдают GPU-мощности ИИ-компаниям. TechCrunch пишет, что на примере её планов на $40 млрд станет понятно, выдерживает ли такая модель столь крупные вложения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+          "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nebius"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Jeep": "neutral"
+          "Nebius": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 7,
+      "id": "2026-11-13-18"
+    },
+    {
+      "section": "industry",
+      "headline": "Сбер ждёт от ИИ 1,5 трлн рублей дохода",
+      "subheadline": "Банк видит в ИИ новый источник дохода, но готовится к крупным расходам",
+      "body": "Сбер рассчитывает получить от искусственного интеллекта 1,5 трлн рублей. Одновременно банк закладывает крупные расходы на ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Сбер увидел в ИИ новый источник дохода: банк ждёт 1,5 трлн рублей и большие расходы",
+          "url": "https://vc.ru/money/3251213-sberbank-i-iskusstvennyj-intellekt",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Сбер"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Сбер": "neutral"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-13-19"
+    },
+    {
+      "section": "industry",
+      "headline": "Agility Robotics вышла на биржу",
+      "subheadline": "Первый в США публичный производитель, специализирующийся на человекоподобных роботах",
+      "body": "Agility Robotics стала публичной компанией. По данным AI Business, это первый американский производитель, который специализируется именно на гуманоидных роботах, а не занимается ими наряду с другими продуктами.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Agility Robotics goes public as first U.S. specialist humanoid maker",
+          "url": "https://aibusiness.com/robotics/agility-robotics-goes-public-first-u-s-specialist-humanoid-maker",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Agility Robotics"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Agility Robotics": "positive"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-13-20"
+    },
+    {
+      "section": "industry",
+      "headline": "Убыток SoftBank в миллиард долларов может охладить интерес ИИ-компаний к газовой энергетике",
+      "subheadline": "TechCrunch считает, что потери SoftBank ограничат ставку ИИ-отрасли на природный газ",
+      "body": "SoftBank потеряла миллиард долларов. TechCrunch связывает убыток с планами ИИ-отрасли питать дата-центры от природного газа и считает, что эти планы теперь могут сократиться.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SoftBank's billion-dollar loss may have put a cap on AI's natural gas ambitions",
+          "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SoftBank"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "SoftBank": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-13-21"
+    },
+    {
+      "section": "content",
+      "headline": "ByteDance выпустила Seedance 2.5 Flash: ролики до 30 секунд и 720p дешевле на треть",
+      "subheadline": "Быстрая версия видеогенератора работает примерно вдвое быстрее Seedance 2.5",
+      "body": "Seedance 2.5 Flash генерирует ролики длиной до 30 секунд за один прогон, в разрешении 480p или 720p. Модель работает примерно вдвое быстрее Seedance 2.5. Секунда видео в 720p стоит около 0,99 юаня — это примерно на треть дешевле. По данным KuCoin, ролики создаются сразу со звуком. Модель постепенно появляется в Jimeng и других китайских сервисах для авторов, доступ по API на Volcano Ark обещан с 15 ноября.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Seedance 2.5 Flash: 30-second videos, 720P at 0.99 yuan per second",
+          "url": "https://chaincatcher.com/en/article/2304084",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Seedance launches 2.5 Flash model with 0.99 RMB/second 720P video generation",
+          "url": "https://kucoin.com/news/flash/seedance-launches-2-5-flash-model-with-0-99-rmb-second-720p-video-generation",
+          "entities": [
+            "ByteDance",
+            "Seedance"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "до 30 с · 480p/720p · ≈0,99 юаня за секунду 720p · API с 15 ноября",
+      "tags": {
+        "entities": [
+          "ByteDance",
+          "Seedance"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Seedance": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-13-22"
+    },
+    {
+      "section": "content",
+      "headline": "В Google Flow появились пять инструментов, которые придумали художники",
+      "subheadline": "Google Labs добавила в Flow пять новых инструментов, разработанных визуальными художниками",
+      "body": "В Google Flow, сервисе Google Labs для создания видео с помощью ИИ, появились пять новых инструментов. Их придумывали вместе с визуальными художниками, под их собственные рабочие задачи.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "5 new Google Flow Tools designed by visual artists",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Flow"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Flow": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-13-23"
+    },
+    {
+      "section": "content",
+      "headline": "Phota Labs превращает обычные снимки в фотографии профессионального вида",
+      "subheadline": "Стартап обрабатывает повседневные фото с помощью ИИ",
+      "body": "Сервис Phota Labs с помощью ИИ обрабатывает любительские снимки так, что они выглядят как профессиональные фотографии.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+          "url": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Phota Labs"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Phota Labs": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-13-24"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ Muse от Meta флиртует и шлёт откровенные сообщения в роли реальных людей",
+      "subheadline": "404 Media выяснило, что Muse ведёт откровенную переписку от лица реально существующих людей",
+      "body": "В ролевых диалогах Muse изображает реальных людей и переходит к откровенной переписке. Материал вышел под заголовком-цитатой «Никто так себя не ведёт».",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "'No One Is Like This:' Muse Sexts While Roleplaying as Real People",
+          "url": "https://www.404media.co/muse-sexts-roleplaying-real-people/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Muse"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Meta": "negative",
+          "Muse": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-13-25"
+    },
+    {
+      "section": "hype",
+      "headline": "Чат-боты советуют покупателям поддельные интернет-магазины",
+      "subheadline": "Исследование проверило покупательские рекомендации Gemini, ChatGPT и Perplexity",
+      "body": "Исследователи проверили, какие магазины советуют Gemini, ChatGPT и Perplexity. Среди рекомендаций и ссылок в ответах ботов нашлись рискованные и поддельные сайты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI chatbots are recommending fake retail websites, study finds",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Gemini",
+          "ChatGPT",
+          "Perplexity"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Gemini": "negative",
+          "ChatGPT": "negative",
+          "Perplexity": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-13-26"
+    },
+    {
+      "section": "hype",
+      "headline": "Нет, ИИ-агенты не открывали неизвестный город майя",
+      "subheadline": "The Verge опровергло сообщения о том, что ИИ-агенты нашли новый памятник майя",
+      "body": "The Verge разобрало сообщения о том, что ИИ-агенты нашли ранее неизвестный город майя. Вывод издания: никакого открытия ИИ не сделал.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "No, AI agents did not discover a previously unknown Maya site",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "The Verge"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "The Verge": "neutral"
         },
         "event": "other"
       },
       "importance": 5,
-      "id": "2026-11-12-25"
+      "id": "2026-11-13-27"
+    },
+    {
+      "section": "hype",
+      "headline": "С зимбабвийского писателя сняли подозрения в использовании ИИ",
+      "subheadline": "Рассказ Симбарашe Кундизезы, получивший премию Кейна, признан написанным без ИИ",
+      "body": "Писателя Simbarashe Kundizeza подозревали в том, что свой рассказ, получивший премию Кейна, он написал с помощью ИИ. Подозрения сняты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Zimbabwean author Simbarashe Kundizeza cleared of using AI to write prize-winning story",
+          "url": "https://www.theguardian.com/books/2026/nov/12/zimbabwean-author-simbarashe-kundizeza-cleared-ai-caine-prize-winning-story",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Simbarashe Kundizeza",
+          "Caine Prize"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Simbarashe Kundizeza": "positive",
+          "Caine Prize": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-13-28"
+    },
+    {
+      "section": "hype",
+      "headline": "В соцсетях расходятся ИИ-пародии на скандал с Дженсеном Хуангом",
+      "subheadline": "Сгенерированные ИИ видео высмеивают историю бывшего главы NVIDIA",
+      "body": "Сгенерированные ИИ ролики о романе Хуанга и шпионском скандале распространяются в Instagram, TikTok и X.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI Fakes Mock Nvidia's Jensen Huang Over Affair Scandal",
+          "url": "https://en.sedaily.com/world/2026/11/12/ai-fakes-mock-nvidias-jensen-huang-over-affair-scandal",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Jensen Huang",
+          "NVIDIA",
+          "Instagram"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Jensen Huang": "negative",
+          "NVIDIA": "negative",
+          "Instagram": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-13-29"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: Белый дом обсуждает отставку министра торговли Говарда Лютника",
+      "subheadline": null,
+      "body": "По данным Business Today, Белый дом обсуждает, не уволить ли Говарда Лютника. Причина — его действия в истории с экспортным контролем и поставками чипов NVIDIA в Китай.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia chip row: White House mulls ouster of Howard Lutnick over handling of export controls",
+          "url": "https://www.businesstoday.in/world/us/story/nvidia-chip-row-white-house-mulls-ouster-of-howard-lutnick-over-handling-of-export-controls-jensen-huang-scandal-567220-2026-11-13",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": "Власти США одобрили NVIDIA поставки чипов китайскому покупателю, по адресу которого — пустой офис",
+      "tags": {
+        "entities": [
+          "Howard Lutnick",
+          "Белый дом",
+          "NVIDIA"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Howard Lutnick": "negative",
+          "Белый дом": "neutral",
+          "NVIDIA": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 5,
+      "id": "2026-11-13-30"
+    },
+    {
+      "section": "hype",
+      "headline": "Microsoft запатентовала обучение ИИ на видеокартах пользователей",
+      "subheadline": "В патенте описана платформа, которая использует пользовательские GPU для обучения моделей",
+      "body": "Microsoft получила патент на платформу, которая обучает ИИ-модели на видеокартах пользователей. Патент не означает, что такой продукт появится.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Microsoft запатентовала платформу для обучения ИИ на видеокартах пользователей",
+          "url": "https://habr.com/ru/companies/selectel/articles/1106950/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Microsoft": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-13-31"
     }
   ]
 }
