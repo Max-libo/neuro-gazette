@@ -1,0 +1,876 @@
+{
+  "date": "2026-11-14",
+  "published": false,
+  "news": [
+    {
+      "section": "platforms",
+      "headline": "OpenAI представила ChatGPT Wallet",
+      "subheadline": "В ChatGPT появляется собственный кошелёк — новый продукт OpenAI.",
+      "body": "OpenAI объявила о ChatGPT Wallet в официальном блоге 13 ноября. Это продолжение курса OpenAI на продукты, которые работают внутри ChatGPT и связаны с деньгами и покупками. До этого компания вывела ChatGPT Enterprise в AWS Marketplace и купила тревел-стартап Odessia. Выручка OpenAI за последний квартал, по данным прошлых выпусков, достигла $10 млрд. Условия, страны и сроки доступа к ChatGPT Wallet смотрите в анонсе OpenAI.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Introducing ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT",
+          "ChatGPT Wallet"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive",
+          "ChatGPT Wallet": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 9,
+      "id": "2026-11-14-1"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI вышла на рынок кибербезопасности с двумя продуктами Daybreak",
+      "subheadline": "Под маркой Daybreak OpenAI выпускает два продукта для защиты от кибератак.",
+      "body": "По данным The Decoder, линейка Daybreak состоит из двух продуктов. Так OpenAI начинает конкурировать с поставщиками средств кибербезопасности напрямую. Раньше компания работала в этой области как заказчик: в прошлых выпусках сообщалось, что OpenAI привлекла Hacktron к поиску уязвимостей в своих системах.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI enters the cybersecurity market with two Daybreak products",
+          "url": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Daybreak"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Daybreak": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-14-2"
+    },
+    {
+      "section": "platforms",
+      "headline": "Anthropic выпустила Claude for Manufacturing для промышленных предприятий",
+      "subheadline": "Claude подключается напрямую к заводскому ПО и автоматизирует производственные процессы.",
+      "body": "Claude for Manufacturing интегрируется с программами, которыми уже пользуются на заводах, так что модель работает с производственными данными и процессами без промежуточного переноса. Это ещё одно отраслевое решение Anthropic после Claude for healthcare и финансовых продуктов. The Verge в тот же день опубликовала обзор агента Claude Duet. По оценке издания, агент «немного невротичен», но неожиданно полезен.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
+          "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Claude's Duet agent is a little neurotic and surprisingly helpful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+          "entities": [
+            "Claude Duet",
+            "Anthropic"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-14-3"
+    },
+    {
+      "section": "platforms",
+      "headline": "Вышла первая стабильная версия llama.cpp — 1.0.0",
+      "subheadline": "Разработчики ggml-org называют релиз более надёжной основой для локального запуска моделей.",
+      "body": "llama.cpp — один из основных движков для запуска языковых моделей на собственном оборудовании. На нём построены многие приложения для локального ИИ. Версия 1.0.0 — первая со стабильной мажорной версией. Анонс опубликован в блоге Hugging Face от имени ggml-org.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "llama.cpp",
+          "ggml-org",
+          "Hugging Face"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "llama.cpp": "positive",
+          "ggml-org": "positive",
+          "Hugging Face": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-14-4"
+    },
+    {
+      "section": "platforms",
+      "headline": "Amazon хочет проиндексировать данные о товарах всех интернет-магазинов",
+      "subheadline": "World Product Graph — база товаров для поиска с помощью ИИ.",
+      "body": "The Verge описывает план Amazon по созданию World Product Graph: базы со сведениями о товарах из интернет-магазинов, а не только с площадки Amazon. Граф нужен для ИИ-поиска. План появился, когда ИИ-агенты начали совершать покупки сами, а площадки — ограничивать к ним доступ: ранее eBay, судя по всему, закрыл доступ сторонним ИИ-агентам.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Amazon has a plan to index the world's online shopping data",
+          "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Amazon",
+          "World Product Graph"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "World Product Graph": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-14-5"
+    },
+    {
+      "section": "platforms",
+      "headline": "ElevenLabs выпустила приложение для командных заметок на встречах и диктовки",
+      "subheadline": "Одно приложение записывает встречи и набирает текст голосом.",
+      "body": "Новое приложение ElevenLabs рассчитано на команды: в нём объединены конспектирование встреч и голосовой ввод текста. Так компания выходит на рынок, где уже работают Otter.ai и встроенные ассистенты Zoom и Google Meet.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ElevenLabs' new app combines meeting note-taking and dictation for teams",
+          "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ElevenLabs"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "ElevenLabs": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-14-6"
+    },
+    {
+      "section": "platforms",
+      "headline": "Microsoft представила образовательную платформу Classroom с Copilot",
+      "subheadline": "В платформе есть ИИ-помощник, система заданий и оценки.",
+      "body": "Microsoft Classroom объединяет выдачу заданий, выставление оценок и ИИ-помощника Copilot для учебного процесса.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Microsoft представила образовательную платформу Classroom с ИИ‑помощником Copilot, системой заданий и оценками",
+          "url": "https://habr.com/ru/articles/1107458/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Copilot",
+          "Microsoft Classroom"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Copilot": "positive",
+          "Microsoft Classroom": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-14-7"
+    },
+    {
+      "section": "models",
+      "headline": "Perplexity выпустила Decider v1.3 с функцией Locate",
+      "subheadline": "Новая версия моделей для принятия решений с открытыми весами.",
+      "body": "Decider — семейство моделей Perplexity с открытыми весами для задач выбора и принятия решений. В версии 1.3 появилась функция Locate.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Perplexity Releases Decider v1.3: Open-Weight Decision Models Add Locate",
+          "url": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Perplexity",
+          "Decider"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Perplexity": "positive",
+          "Decider": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-14-8"
+    },
+    {
+      "section": "models",
+      "headline": "Allen Institute выпустил XYBench — тест на понимание настоящей задачи пользователя",
+      "subheadline": "Бенчмарк проверяет, видит ли модель исходную проблему за конкретным вопросом.",
+      "body": "Название отсылает к «проблеме XY»: пользователь спрашивает о своей попытке решения (Y), а не о самой задаче (X). XYBench оценивает, распознаёт ли модель такую ситуацию и помогает ли с исходной проблемой, а не только отвечает на заданный вопрос.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "XYBench: Helping with the problem behind the question",
+          "url": "https://huggingface.co/blog/allenai/xybench",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Allen Institute",
+          "XYBench"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Allen Institute": "positive",
+          "XYBench": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-14-9"
+    },
+    {
+      "section": "models",
+      "headline": "OpenFold3 появилась в Amazon SageMaker JumpStart",
+      "subheadline": "Модель предсказывает структуру биомолекул.",
+      "body": "AWS добавила OpenFold3 в каталог готовых моделей SageMaker JumpStart. Модель с открытым кодом предсказывает структуры биомолекул, её можно развернуть в AWS без самостоятельной настройки.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures",
+          "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS",
+          "SageMaker",
+          "OpenFold3"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "AWS": "positive",
+          "SageMaker": "positive",
+          "OpenFold3": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-14-10"
+    },
+    {
+      "section": "industry",
+      "headline": "LangChain получила оценку в $3 млрд",
+      "subheadline": "Стартап делает инструменты для ИИ-агентов.",
+      "body": "TechCrunch сообщает о новой оценке LangChain в $3 млрд. Компания делает одноимённый фреймворк и сервисы для создания, отладки и запуска ИИ-агентов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI agent startup LangChain hits $3B valuation",
+          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "LangChain"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "LangChain": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-14-11"
+    },
+    {
+      "section": "industry",
+      "headline": "Почти 70% госагентств США используют генеративный ИИ",
+      "subheadline": "Профсоюзы госслужащих начинают добиваться правил его применения.",
+      "body": "По данным The Decoder, генеративный ИИ используют почти 70% федеральных агентств США. Профсоюзы только начинают договариваться об ограничениях, которые защитили бы сотрудников при его внедрении.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nearly 70 percent of US agencies use generative AI, and unions are finally catching up with guardrails",
+          "url": "https://the-decoder.com/nearly-70-percent-of-us-agencies-use-generative-ai-and-unions-are-finally-catching-up-with-guardrails/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Правительство США"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Правительство США": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-14-12"
+    },
+    {
+      "section": "industry",
+      "headline": "Регулятор США расширяет ИИ-систему управления воздушным движением на всё воздушное пространство страны",
+      "subheadline": null,
+      "body": "Американский авиарегулятор переводит ИИ-систему управления движением с отдельных участков на всё воздушное пространство США.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Американский регулятор расширяет использование ИИ‑системы для управления движением по всему воздушному пространству США",
+          "url": "https://habr.com/ru/articles/1107572/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "FAA"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "FAA": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-14-13"
+    },
+    {
+      "section": "industry",
+      "headline": "SuperMe привлёк $20 млн на сеть ИИ-профилей экспертов",
+      "subheadline": null,
+      "body": "Стартап строит сеть экспертных профилей, которые работают на ИИ. Привлечено $20 млн.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SuperMe привлек 20 млн долларов на сеть ИИ-экспертных профилей",
+          "url": "https://habr.com/ru/companies/ru_mts/articles/1107530/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SuperMe"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "SuperMe": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5,
+      "id": "2026-11-14-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: заявки на IPO Anthropic в шесть раз превысили предложение",
+      "subheadline": null,
+      "body": "Размещение может стать крупнейшим IPO в истории. Банки-организаторы не допускают к нему инвесторов из Китая и Гонконга из-за экспортного контроля США.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic's IPO is six times oversubscribed and on track to become the largest public offering in history",
+          "url": "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Banks bar Chinese and Hong Kong investors from Anthropic IPO over US export controls",
+          "url": "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/",
+          "entities": [
+            "Anthropic",
+            "Китай"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: инвесторы сопротивляются оценке Anthropic в $1,5 трлн на IPO",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-14-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: после ухода Хуанга у ИИ-стартапов стало меньше финансирования",
+      "subheadline": null,
+      "body": "Венчурные инвесторы и основатели стартапов говорят TechCrunch, что уход Дженсена Хуанга пробил «большую дыру» в финансировании ИИ-стартапов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Jensen Huang's departure blasts big hole in AI startup funding, VCs and founders say",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Дженсен Хуанг ушёл с поста CEO NVIDIA",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Jensen Huang": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-14-16"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: OpenAI поддержала ограничения на поставки ИИ-чипов в Китай",
+      "subheadline": null,
+      "body": "После отставки Дженсена Хуанга OpenAI публично выступила за ограничения экспорта ИИ-чипов в Китай.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI поддержала ограничения на поставки ИИ‑чипов в Китай после отставки Дженсена Хуанга",
+          "url": "https://habr.com/ru/articles/1107650/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Дженсен Хуанг ушёл с поста CEO NVIDIA",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "NVIDIA",
+          "Китай"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "NVIDIA": "negative",
+          "Китай": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-14-17"
+    },
+    {
+      "section": "content",
+      "headline": "Cyber AI обновился: студия на сайте, ноды и новый Topaz Video",
+      "subheadline": "В крупном обновлении сервиса ещё четыре новинки.",
+      "body": "В Cyber AI появилась студия в веб-версии и работа с нодами. Также добавлена новая версия Topaz Video для улучшения видео и ещё четыре нововведения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Большое обновление Cyber AI: студия на сайте, ноды, новый Topaz Video и ещё четыре новинки",
+          "url": "https://vc.ru/ai/3254382-obnovlenie-cyber-ai-studiya-na-sayte",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cyber AI",
+          "Topaz Video"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cyber AI": "positive",
+          "Topaz Video": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-14-18"
+    },
+    {
+      "section": "content",
+      "headline": "Как оживить картину XIX века: Photoshop, локальная LLM, MiniMax H3 и After Effects",
+      "subheadline": null,
+      "body": "Автор на Хабре по шагам описывает, как анимировал картину XIX века. Подготовка — в Photoshop, промпты — с помощью локальной языковой модели, анимация — в MiniMax H3, сборка — в After Effects.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Как я оживил картину XIX века: Photoshop, локальная LLM, MiniMax H3 и After Effects",
+          "url": "https://habr.com/ru/articles/1107574/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MiniMax",
+          "Adobe"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "MiniMax": "neutral",
+          "Adobe": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-14-19"
+    },
+    {
+      "section": "art",
+      "headline": "В Москве откроется выставка «Культурный Code» о совместном творчестве человека и ИИ",
+      "subheadline": "Интерактивная выставка в ЦСИ М'АРС с работами победителей конкурса ИИ-искусства.",
+      "body": "Выставка откроется 15 ноября в ЦСИ М'АРС и продлится до 10 января 2027 года. В экспозиции — работы 11 победителей конкурса ИИ-искусства. Формат интерактивный.",
+      "tier": "regular",
+      "details": "Москва, ЦСИ М'АРС · 15 ноября 2026 — 10 января 2027",
+      "sources": [
+        {
+          "title": "Выставка о сотворчестве человека и ИИ откроется в Москве 15 ноября",
+          "url": "https://www.computerra.ru/374090/vystavka-o-sotvorchestve-cheloveka-i-ii-otkroetsya-v-moskve-15-noyabrya/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "В Москве откроется выставка «Культурный Code» об искусственном интеллекте и искусстве",
+          "url": "https://skillbox.ru/media/code/v-moskve-otkroetsya-vystavka-kulturnyy-code-o-sovmestnom-tvorchestve-cheloveka-i-ii/",
+          "entities": [
+            "ЦСИ М'АРС"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ЦСИ М'АРС"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "ЦСИ М'АРС": "neutral"
+        },
+        "event": "exhibition"
+      },
+      "importance": 7,
+      "id": "2026-11-14-20"
+    },
+    {
+      "section": "art",
+      "headline": "MMCA в Сеуле провёл симпозиум Handmade AI",
+      "subheadline": null,
+      "body": "На симпозиуме Национального музея современного искусства Кореи обсуждали, как ИИ меняет способы создания искусства и системы человеческого познания.",
+      "tier": "compact",
+      "details": "Сеул, MMCA · 13 ноября",
+      "sources": [
+        {
+          "title": "Handmade AI: Symposium",
+          "url": "https://www.e-flux.com/announcements/6788425/handmade-ai",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MMCA"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "MMCA": "neutral"
+        },
+        "event": "exhibition"
+      },
+      "importance": 5,
+      "id": "2026-11-14-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Бывший исследователь OpenAI нашёл следы NVIDIA Blackwell в шести китайских моделях",
+      "subheadline": "По его словам, модели могли обучать на чипах, которые запрещено ввозить в Китай.",
+      "body": "Исследователь утверждает, что обнаружил в шести китайских моделях характерные «отпечатки» обучения на ускорителях NVIDIA Blackwell. Независимого подтверждения нет. Ранее автор на vc.ru делал похожее заявление о Kimi K3 и чипах B300.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
+          "url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Blackwell",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Blackwell": "neutral",
+          "Китай": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-14-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: сотрудники NVIDIA просят вернуть Хуанга, The Decoder ищет причины отставки в бизнес-практиках",
+      "subheadline": null,
+      "body": "Часть сотрудников NVIDIA выступила за возвращение Дженсена Хуанга. The Decoder считает, что отставка скорее связана с рискованными бизнес-практиками NVIDIA, чем с его личной жизнью.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+          "url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Некоторые сотрудники Nvidia призвали вернуть Дженсена Хуанга",
+          "url": "https://habr.com/ru/articles/1107528/",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Дженсен Хуанг ушёл с поста CEO NVIDIA",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Jensen Huang": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-14-23"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: глава Минфина США обвинил министерство торговли в бездействии по делу NVIDIA",
+      "subheadline": null,
+      "body": "Министр финансов США возложил ответственность за скандал вокруг NVIDIA на министерство торговли Говарда Лютника, которое, по его словам, не приняло мер.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia scandal: US treasury chief blames Lutnick's commerce department over alleged lack of action",
+          "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Белый дом обсуждает отставку министра торговли Говарда Лютника",
+      "tags": {
+        "entities": [
+          "Минфин США",
+          "Howard Lutnick",
+          "NVIDIA"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Минфин США": "neutral",
+          "Howard Lutnick": "negative",
+          "NVIDIA": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-14-24"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ помог расшифровать тетради Курта Гёделя",
+      "subheadline": null,
+      "body": "Исследователи с помощью ИИ разбирают записные книжки математика Курта Гёделя и находят в них неизвестные ранее результаты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "'Ahead of his time': AI helps unlock discoveries hidden in notebooks of man who transformed maths",
+          "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Kurt Gödel"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Kurt Gödel": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-14-25"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ помог реставраторам найти утраченные детали картины Уильяма Меррита Чейза",
+      "subheadline": null,
+      "body": "По данным The Art Newspaper, анализ с помощью ИИ показал реставраторам детали картины американского художника, которые не видны на поверхности.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI helps conservators uncover lost details in William Merritt Chase painting",
+          "url": "https://www.theartnewspaper.com/2026/11/13/ai-helps-conservators-uncover-lost-details-in-william-merritt-chase-painting",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "William Merritt Chase"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "William Merritt Chase": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-14-26"
+    },
+    {
+      "section": "hype",
+      "headline": "Мошенники заманивают пользователей доступом к нейросетям",
+      "subheadline": null,
+      "body": "Злоумышленники предлагают «подключить» нейросеть: просят установить приложение или назвать код из сообщения.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Пользователей нейросетей предупредили об одной уловке мошенников",
+          "url": "https://lenta.ru/news/2026/11/13/polzovateley-neyrosetey-predupredili-ob-odnoy-ulovke-moshennikov/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Россия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Россия": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-14-27"
+    }
+  ]
+}
