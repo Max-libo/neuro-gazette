@@ -1,0 +1,650 @@
+{
+  "date": "2026-11-15",
+  "published": false,
+  "news": [
+    {
+      "section": "industry",
+      "headline": "OpenAI переводит исследователей робототехники в другие команды",
+      "subheadline": "В компании считают, что универсальные модели могут сделать отдельный ИИ для роботов ненужным",
+      "body": "OpenAI распределяет исследователей робототехнического направления по другим командам. По данным The Decoder, причина в расчёте, что универсальные модели со временем смогут управлять роботами сами и специализированные модели для робототехники станут не нужны. Получается, что OpenAI не строит отдельный стек для роботов и делает ставку на то, что эта задача решится масштабированием основных моделей. Сколько сотрудников переводят и в какие команды, в публикации не сказано.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
+          "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 9,
+      "id": "2026-11-15-1"
+    },
+    {
+      "section": "models",
+      "headline": "Anthropic: старые привычки в промптах замедляют Claude Opus 5.5",
+      "subheadline": "Компания советует пересмотреть приёмы, которые были нужны для прошлых поколений моделей",
+      "body": "По словам Anthropic, приёмы составления промптов, рассчитанные на прошлые модели, мешают Claude Opus 5.5 и замедляют её работу. Компания советует пользователям отказаться от этих приёмов и подстроить промпты под новую модель.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+          "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Opus 5.5"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude Opus 5.5": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-15-2"
+    },
+    {
+      "section": "models",
+      "headline": "Stanford открыл код Memorilla — модуля скрытой памяти для замороженных LLM",
+      "subheadline": "Модуль добавляет языковой модели память без изменения её весов",
+      "body": "Исследователи Stanford опубликовали код Memorilla. Модуль хранит память в латентном виде, в специальных токенах памяти, и подключается к модели с замороженными весами, то есть без дообучения самой LLM. В адресе публикации MarkTechPost упоминается вариант с 16 токенами памяти.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs",
+          "url": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Stanford",
+          "Memorilla"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Stanford": "positive",
+          "Memorilla": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-15-3"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: Gemini 4 Carbon возглавила MathArena",
+      "subheadline": null,
+      "body": "Gemini 4 Carbon заняла первое место в математическом рейтинге MathArena, но её прогон обходится в 15 раз дороже, чем у GPT-6.1 Sol.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+          "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Gemini 4 Carbon вышла в общий доступ",
+      "tags": {
+        "entities": [
+          "Gemini 4 Carbon",
+          "GPT-6.1 Sol",
+          "MathArena"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Gemini 4 Carbon": "positive",
+          "GPT-6.1 Sol": "neutral",
+          "MathArena": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-15-4"
+    },
+    {
+      "section": "platforms",
+      "headline": "Vercel выпустила UI SDK: больше 50 готовых интерфейсных сценариев для ИИ-агентов",
+      "subheadline": "Набор нужен ИИ-агентам для программирования, чтобы собирать интерфейсы из готовых сценариев",
+      "body": "UI SDK содержит больше 50 описанных интерфейсных сценариев. Агенты для кода используют их как готовые блоки и не пишут каждый сценарий заново.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents",
+          "url": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Vercel",
+          "UI SDK"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Vercel": "positive",
+          "UI SDK": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-15-5"
+    },
+    {
+      "section": "platforms",
+      "headline": "Линус Торвальдс: исправлять ошибки в ядре Linux с помощью ИИ становится нормой",
+      "subheadline": "Создатель Linux признал, что ИИ-инструменты вошли в обычную работу над ядром",
+      "body": "По словам Торвальдса, ИИ для поиска и исправления ошибок в ядре Linux перестаёт быть экспериментом и становится частью обычной работы разработчиков.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Торвальдс: исправление ошибок в ядре Linux с помощью ИИ становится нормой",
+          "url": "https://habr.com/ru/articles/1107820/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Linus Torvalds",
+          "Linux"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Linus Torvalds": "neutral",
+          "Linux": "positive"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-15-6"
+    },
+    {
+      "section": "platforms",
+      "headline": "Cohere: самостоятельно развёрнутым открытым моделям всё равно нужен контроль исходящего трафика",
+      "subheadline": "Если модель работает на своих серверах, утечка данных наружу всё равно возможна",
+      "body": "Cohere установила, что открытые модели, развёрнутые в своей инфраструктуре, не гарантируют, что данные не уйдут наружу. Поэтому компаниям нужно ограничивать и проверять исходящие соединения таких систем.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cohere Finding Shows Self-Hosted Open-Weight Models Still Need Egress Controls",
+          "url": "https://www.infoq.com/news/2026/11/cohere-open-weight-egress-risk/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cohere"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Cohere": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-15-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "Cmpnd выпустила dspy-wsp — программирование в пространстве весов для DSPy",
+      "subheadline": "Расширение позволяет в DSPy настраивать не только промпты, но и веса модели",
+      "body": "dspy-wsp добавляет во фреймворк DSPy подход weight-space programming: программу можно оптимизировать через изменение весов модели, а не только через подбор промптов.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy",
+          "url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cmpnd",
+          "DSPy"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cmpnd": "positive",
+          "DSPy": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-15-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Mozilla закроет Solo — сервис для создания и хостинга сайтов",
+      "subheadline": "Mozilla сворачивает собственный конструктор сайтов",
+      "body": "Mozilla объявила, что закрывает Solo — сервис, в котором можно было собрать сайт и сразу его разместить.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Mozilla закроет сервис Solo для создания и хостинга веб‑сайтов",
+          "url": "https://habr.com/ru/articles/1107816/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Mozilla",
+          "Solo"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Mozilla": "neutral",
+          "Solo": "negative"
+        },
+        "event": "shutdown"
+      },
+      "importance": 5,
+      "id": "2026-11-15-9"
+    },
+    {
+      "section": "industry",
+      "headline": "ИИ-фильтр Роскомнадзора за 2,27 млрд рублей: что о нём известно",
+      "subheadline": "Сколько стоит система, известно, а как она будет работать, пока почти не раскрыто",
+      "body": "Роскомнадзор заказывает ИИ-систему фильтрации за 2,27 млрд рублей. Автор материала на Хабре разбирает, какие сведения о проекте подтверждены, а какие пока остаются догадками.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ИИ-фильтр Роскомнадзора за 2,27 млрд рублей: что известно, а что пока только догадки",
+          "url": "https://habr.com/ru/articles/1107828/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Роскомнадзор",
+          "Россия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Роскомнадзор": "neutral",
+          "Россия": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 7,
+      "id": "2026-11-15-10"
+    },
+    {
+      "section": "industry",
+      "headline": "Хелен Тонер, голосовавшая за увольнение Альтмана: руководителям ИИ-компаний по-прежнему нельзя доверять",
+      "subheadline": "Бывший член совета директоров OpenAI дала интервью The Verge",
+      "body": "Хелен Тонер была в совете директоров OpenAI, который в 2023 году уволил Сэма Альтмана. Сейчас она работает в CSET. В подкасте The Verge она сказала, что руководителям ИИ-компаний по-прежнему нельзя доверять, и говорила о безопасности ИИ и госрегулировании.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The OpenAI board member who fired Sam Altman says we still can't trust AI CEOs",
+          "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Helen Toner",
+          "OpenAI",
+          "Sam Altman"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Helen Toner": "neutral",
+          "OpenAI": "negative",
+          "Sam Altman": "negative"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-15-11"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Дарио Амодеи признал «огромную неопределённость» накануне IPO Anthropic",
+      "subheadline": null,
+      "body": "За несколько дней до IPO, которое может стать рекордным, глава Anthropic сказал, что что будет в следующем году, сейчас очень неясно.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+          "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Anthropic не откладывает IPO и согласна на более низкую оценку",
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Dario Amodei"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Dario Amodei": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-15-12"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Илон Маск и другие руководители техкомпаний просят NVIDIA вернуть Хуанга",
+      "subheadline": null,
+      "body": "Илон Маск и ещё несколько руководителей технологических компаний подписали петицию с требованием вернуть Дженсена Хуанга на пост CEO NVIDIA.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+          "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+          "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+          "entities": [
+            "Jensen Huang",
+            "NVIDIA"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: сотрудники NVIDIA просят вернуть Хуанга, The Decoder ищет причины отставки в бизнес-практиках",
+      "tags": {
+        "entities": [
+          "Elon Musk",
+          "NVIDIA",
+          "Jensen Huang"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Elon Musk": "neutral",
+          "NVIDIA": "neutral",
+          "Jensen Huang": "positive"
+        },
+        "event": "people"
+      },
+      "importance": 5,
+      "id": "2026-11-15-13"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: правительства Азии отреагировали на уход Хуанга, скандал осложняет переговоры США и Китая",
+      "subheadline": null,
+      "body": "Скандал вокруг NVIDIA обсуждают на фоне переговоров США и Китая по ИИ. Рынок опасается, что США ограничат китайским ИИ-компаниям доступ к чипам; акции SMIC выросли. По оценке ABC, с 6 октября акции NVIDIA подешевели примерно на 30%.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Asian governments react to Nvidia CEO Jensen Huang's exit",
+          "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Nvidia scandal looms over US-China AI talks",
+          "url": "https://www.thestar.com.my/news/nation/2026/11/14/nvidia-scandal-looms-over-us-china-ai-talks",
+          "entities": [
+            "NVIDIA",
+            "США",
+            "Китай"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "Скандал в Nvidia ударил по китайским ИИ-компаниям: инвесторы боятся, что США перекроют им кислород",
+          "url": "https://3dnews.ru/1151307/skandal-v-nvidia-udaril-po-kitayskim-iikompaniyam-investori-boyatsya-chto-ssha-perekroyut-im-kislorod",
+          "entities": [
+            "NVIDIA",
+            "SMIC"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "How the Nvidia scandal could undermine the AI boom",
+          "url": "https://abc.net.au/news/2026-11-14/how-nvidia-scandal-could-undermine-ai-boom-verrender/107382722",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "AI faces a four-pronged crisis of trust as Democrats surge to power",
+          "url": "https://axios.com/2026/11/14/ai-trust-nvidia-tech-stocks",
+          "entities": [
+            "NVIDIA",
+            "OpenAI",
+            "Anthropic"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Дженсен Хуанг ушёл с поста CEO NVIDIA",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang",
+          "США",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Jensen Huang": "negative",
+          "США": "neutral",
+          "Китай": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-15-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: австралийский сенатор призвал не жертвовать искусством ради прибыли ИИ-компаний",
+      "subheadline": null,
+      "body": "Сенатор от Либеральной партии Эндрю Маклахлан в споре о политике в области ИИ заявил, что искусство «нельзя приносить в жертву корпоративной прибыли».",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Art 'must not be sacrificed on the altar of corporate profit', Liberal senator says as AI policy debate rages",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Музыкальная индустрия предупредила правительство Австралии: ослабление авторского права ради ИИ ударит по творчеству",
+      "tags": {
+        "entities": [
+          "Andrew McLachlan",
+          "Австралия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Andrew McLachlan": "neutral",
+          "Австралия": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-15-15"
+    },
+    {
+      "section": "content",
+      "headline": "Runway выложила в открытый доступ Praxis-1 — видеомодель, которая управляет роботом",
+      "subheadline": "Генеративную видеомодель приспособили для управления роботами",
+      "body": "Praxis-1 построена на видеомодели Runway. Её используют не для роликов, а как контроллер робота. Модель опубликована с открытым кодом. Для Runway, которая известна генераторами видео, это выход в робототехнику.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
+          "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Runway",
+          "Praxis-1"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Runway": "positive",
+          "Praxis-1": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-15-16"
+    },
+    {
+      "section": "art",
+      "headline": "Музей в Мадисоне открыл выставку Beeple на генеративном ИИ, художники выступили с протестом",
+      "subheadline": "Авторы открытого письма упрекают музей в том, что он не получил явного согласия художников",
+      "body": "Музей современного искусства Мадисона открыл выставку Beeple «Diffuse Control», построенную на генеративном ИИ. Художники опубликовали открытое письмо: они критикуют музей за то, что тот не получил явного согласия авторов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Madison museum debuts exhibition using generative AI amid pushback",
+          "url": "https://www.wpr.org/news/madison-art-museum-new-exhibition-generative-ai-pushback",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Мадисон, Музей современного искусства · Beeple, «Diffuse Control»",
+      "tags": {
+        "entities": [
+          "Beeple",
+          "Madison Museum of Contemporary Art"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Beeple": "neutral",
+          "Madison Museum of Contemporary Art": "negative"
+        },
+        "event": "exhibition"
+      },
+      "importance": 7,
+      "id": "2026-11-15-17"
+    },
+    {
+      "section": "hype",
+      "headline": "Бывший исследователь Anthropic: Mythos уже можно переобучить за малую долю исходных вычислений",
+      "subheadline": "Бывший сотрудник компании Коксон говорит, что обучение модели такого уровня резко подешевело",
+      "body": "По словам Коксона, Anthropic сейчас может заново обучить Mythos, потратив лишь небольшую часть вычислений, которые ушли на первое обучение. Компания это не подтверждала.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
+          "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Mythos"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral",
+          "Claude Mythos": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-15-18"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: TechCrunch спрашивает, где была служба безопасности NVIDIA",
+      "subheadline": null,
+      "body": "TechCrunch задаётся вопросом, почему служба безопасности NVIDIA не заметила проблему раньше, чем скандал вокруг связей Хуанга стал публичным.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Where was Nvidia's security team?",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: NVIDIA проверит связи Дженсена Хуанга с возможной китайской шпионкой",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Jensen Huang": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-15-19"
+    }
+  ]
+}
