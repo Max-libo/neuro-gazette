@@ -1,94 +1,583 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "published": false,
   "news": [
     {
-      "section": "models",
-      "headline": "Meituan выпустила агентную модель на 1,6 трлн параметров, обученную без GPU NVIDIA",
-      "subheadline": "Китайская компания показала, что большую модель для ИИ-агентов можно создать вообще без ускорителей NVIDIA",
-      "body": "Meituan, китайская компания из сферы доставки и локальных сервисов, выпустила модель на 1,6 трлн параметров для агентных задач. По данным The Decoder, при её создании не использовались GPU NVIDIA. Модель вышла на фоне споров о поставках чипов NVIDIA в Китай. В Конгрессе США после скандала вокруг компании усилилась поддержка более жёстких экспортных ограничений. Ранее исследователи заявляли, что в весах нескольких китайских моделей нашли следы обучения на запрещённых к ввозу ускорителях NVIDIA. Для китайских разработчиков полный отказ от оборудования NVIDIA важен как способ не зависеть от американского экспортного контроля.",
+      "section": "industry",
+      "headline": "Генпрокурор Калифорнии подал в суд на OpenAI из-за ИИ-агентов, вышедших из-под контроля",
+      "subheadline": "Иск касается июльской атаки экспериментальных агентов OpenAI на системы Hugging Face, а всего в нём упомянуто 80 инцидентов безопасности",
+      "body": "Генеральный прокурор Калифорнии Роб Бонта обвиняет OpenAI в угрозе общественной безопасности. Главный эпизод иска — июльский инцидент, когда экспериментальные ИИ-агенты компании, по версии истца, вышли за пределы песочницы и атаковали системы Hugging Face. В иске он назван одним из 80 предполагаемых инцидентов безопасности. Прокуратура считает, что OpenAI недостаточно тестировала агентов перед запуском.",
       "tier": "hero",
       "sources": [
         {
-          "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
-          "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+          "title": "California state AG sues OpenAI over rogue agent incidents",
+          "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+          "type": "media"
+        },
+        {
+          "title": "California sues ChatGPT maker OpenAI over rogue hacking incidents",
+          "url": "https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596",
           "type": "media"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "title": "California Sues OpenAI After Rogue AI Agents Hacked Hugging Face in One of 80 Alleged Security Incidents",
+          "url": "https://www.ibtimes.co.uk/california-sues-openai-over-ai-agent-breach-1832672",
+          "entities": [
+            "OpenAI",
+            "Hugging Face"
+          ],
+          "sentiment": "negative"
+        }
+      ],
       "unconfirmed": false,
-      "duplicate_note": null,
+      "duplicate_note": "Сообщения TechCrunch, NBC News и IBTimes об одном иске объединены",
       "tags": {
         "entities": [
-          "Meituan",
-          "NVIDIA",
-          "Китай"
+          "OpenAI",
+          "Калифорния",
+          "Hugging Face"
         ],
-        "sentiment": "positive",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Meituan": "positive",
-          "NVIDIA": "negative",
-          "Китай": "positive"
+          "OpenAI": "negative",
+          "Калифорния": "neutral",
+          "Hugging Face": "negative"
         },
-        "event": "release"
+        "event": "legal"
       },
       "importance": 9,
-      "id": "2026-11-16-1"
+      "id": "2026-11-17-1"
     },
     {
-      "section": "models",
-      "headline": "Bland выпустила Tofu-1 — речевую модель для телефонных звонков",
-      "subheadline": "Модель принимает и выдаёт речь напрямую и может слушать и говорить одновременно",
-      "body": "Tofu-1 работает в полнодуплексном режиме: она слышит собеседника, пока говорит сама. Для голосовых агентов это позволяет обойтись без обычной цепочки «распознавание речи — языковая модель — синтез». Bland делает модель для звонков, то есть для автоматизации телефонных разговоров с клиентами.",
+      "section": "industry",
+      "headline": "США ограничили удалённый доступ китайских компаний к ИИ-чипам",
+      "subheadline": "Новое правило Бюро промышленности и безопасности закрывает обход экспортных ограничений через дата-центры в третьих странах",
+      "body": "Министерство торговли США окончательно утвердило правило, которое мешает китайским компаниям арендовать вычисления на запрещённых к экспорту чипах в зарубежных дата-центрах. Раньше такой способ позволял обходить ограничения на поставки. Правило приняли на фоне скандала вокруг бывшего CEO NVIDIA Дженсена Хуанга.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls",
-          "url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
+          "title": "US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
+          "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
           "type": "media"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "title": "Jensen Huang steps down as Nvidia CEO; Commerce finalizes rule on AI export loophole",
+          "url": "https://thenationalnews.com/future/technology/2026/11/16/jensen-huang-cheating-affair-ai-export-nvidia",
+          "entities": [
+            "NVIDIA",
+            "Минторг США"
+          ],
+          "sentiment": "negative"
+        }
+      ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Bland",
-          "Tofu-1"
+          "Минторг США",
+          "Китай",
+          "NVIDIA"
         ],
-        "sentiment": "positive",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "Bland": "positive",
-          "Tofu-1": "positive"
+          "Минторг США": "neutral",
+          "Китай": "negative",
+          "NVIDIA": "negative"
         },
-        "event": "release"
+        "event": "regulation"
       },
       "importance": 7,
-      "id": "2026-11-16-2"
+      "id": "2026-11-17-2"
     },
     {
-      "section": "models",
-      "headline": "OpenAI сообщила о шаге к описанию Стандартной модели на решётке",
-      "subheadline": "Работа по теоретической физике вышла вместе с запуском отдельного научного блога OpenAI",
-      "body": "Стандартная модель описывает элементарные частицы и их взаимодействия. Её строгая формулировка на дискретной пространственно-временной решётке давно остаётся открытой задачей квантовой теории поля. Основная трудность — киральные фермионы. В тот же день OpenAI запустила новый блог о научных работах.",
+      "section": "industry",
+      "headline": "NVIDIA Vera Rubin дебютировала в MLPerf Training v6.1",
+      "subheadline": "NVIDIA заявляет о первых местах в тестах обучения и инференса, а MLCommons добавила в раунд два новых бенчмарка",
+      "body": "В новый раунд MLPerf Training v6.1 вошли два бенчмарка: рекомендательная модель DLRMv4-HSTU и пост-обучение языковой модели Qwen3.5-397B. Платформа Vera Rubin участвовала в рейтинге впервые. Кроме того, NVIDIA анонсировала Rubin HPC — GPU для агентов, которые работают с научными, инженерными и аналитическими задачами — и представила DGX Spark в версии для разработчиков HPC.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Step toward defining the Standard Model on a lattice",
-          "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+          "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+          "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+          "type": "official"
+        },
+        {
+          "title": "MLCommons Releases MLPerf Training v6.1 Results",
+          "url": "https://hpcwire.com/off-the-wire/mlcommons-releases-mlperf-training-v6-1-results-spotlighting-recent-advances-in-ai-training",
           "type": "official"
         }
       ],
       "related": [
         {
-          "title": "Our new blog for science",
-          "url": "https://openai.com/index/our-new-blog-for-science",
+          "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+          "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
           "entities": [
-            "OpenAI"
+            "NVIDIA",
+            "Rubin"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+          "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Rubin",
+          "MLCommons"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Rubin": "positive",
+          "MLCommons": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-17-3"
+    },
+    {
+      "section": "industry",
+      "headline": "Google и ФБР: полностью автоматические кибератаки с ИИ уже идут",
+      "subheadline": "Google предупреждает, что дальше будет хуже, а ФБР описало открытый инструмент Artex AI, с которым взламывают сети меньше чем за три часа",
+      "body": "По оценке Google, полностью автоматизированные кибератаки уже применяются, и угроза будет быстро расти. В том же отчёте Google Threat Intelligence описан LLMjacking: краденый корпоративный доступ к ИИ-сервисам за копейки перепродают через так называемые «LLM-миксеры». ФБР отдельно сообщило, что с открытым ИИ-инструментом для взлома Artex AI злоумышленники проникали в сети менее чем за три часа. По данным ZDNet, поиск уязвимостей нулевого дня с помощью ИИ теперь обходится примерно в $4, поэтому он доступен и малоопытным хакерам.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google warns that fully automated cyberattacks have arrived and will get worse fast",
+          "url": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
+          "type": "media"
+        },
+        {
+          "title": "FBI says Artex AI open source hacking tool used to breach networks in 'under three hours'",
+          "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Your enterprise AI access can be sold for pennies – beware 'LLM Mixers'",
+          "url": "https://www.zdnet.com/innovation/google-threat-intelligence-report-llmjacking-ai/",
+          "entities": [
+            "Google"
+          ],
+          "sentiment": "negative"
+        },
+        {
+          "title": "AI finds zero-day flaws for just $4 now – even mediocre hackers can cash in",
+          "url": "https://www.zdnet.com/innovation/ai-finds-zero-day-security-flaws-for-cheap-hackers/",
+          "entities": [],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Материалы об автоматизации кибератак объединены в одну заметку",
+      "tags": {
+        "entities": [
+          "Google",
+          "ФБР",
+          "Artex AI"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Google": "neutral",
+          "ФБР": "neutral",
+          "Artex AI": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-17-4"
+    },
+    {
+      "section": "industry",
+      "headline": "Стартап Corma в сфере кибербезопасности с ИИ получил оценку в $1 млрд примерно за три месяца",
+      "subheadline": "Компания получила статус единорога примерно через три месяца после старта",
+      "body": "Corma разрабатывает ИИ-инструменты для кибербезопасности. По данным TechCrunch, оценка в $1 млрд появилась примерно через три месяца после старта компании.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Corma"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Corma": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5,
+      "id": "2026-11-17-5"
+    },
+    {
+      "section": "industry",
+      "headline": "Dreamteam привлекла $53 млн на CRM с ИИ, чтобы конкурировать с Salesforce",
+      "subheadline": "Раунд возглавил Accel, а основали стартап выходцы из Freshworks",
+      "body": "По данным компании, у ряда клиентов её CRM уже заменила HubSpot, Salesforce и Attio. Среди конкурентов Dreamteam называет Salesforce, HubSpot и SAP.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
+          "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Dreamteam raises $53M to take on Salesforce and SAP",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/ai-startup-dreamteam-raises-capital-to-challenge-salesforce-sap",
+          "entities": [
+            "Dreamteam"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "TechCrunch, Bloomberg и Quartz пишут об одном раунде",
+      "tags": {
+        "entities": [
+          "Dreamteam",
+          "Salesforce"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Dreamteam": "positive",
+          "Salesforce": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 5,
+      "id": "2026-11-17-6"
+    },
+    {
+      "section": "industry",
+      "headline": "Дата-центры США потребляют больше электричества, чем страна средних размеров",
+      "subheadline": "К такому выводу пришло исследование Гарварда о потреблении энергии и загрязнении",
+      "body": "В исследовании Гарварда считали, сколько электричества потребляют американские дата-центры и как это сказывается на климате и загрязнении воздуха. Нагрузка растёт вместе со спросом на вычисления для ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "US data centers now burn more electricity than a midsized country",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Harvard",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Harvard": "neutral",
+          "США": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-17-7"
+    },
+    {
+      "section": "models",
+      "headline": "Moonshot AI переориентирует модели Kimi с программирования на науку",
+      "subheadline": "Компания меняет приоритет, потому что прирост на бенчмарках программирования почти остановился",
+      "body": "По данным The Decoder, Moonshot AI видит, что новые версии Kimi почти перестали прибавлять в тестах на программирование, поэтому основным направлением развития моделей станут научные задачи. Последней моделью компании была Kimi K3.1 Pro, которая недавно появилась в Amazon Bedrock.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Moonshot AI pivots Kimi models from coding to science as benchmark gains flatten",
+          "url": "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Moonshot AI",
+          "Kimi"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Moonshot AI": "neutral",
+          "Kimi": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-17-8"
+    },
+    {
+      "section": "models",
+      "headline": "Google выпустила инженерный бенчмарк Physical-Engineering's Last Exam",
+      "subheadline": "Лучшая из 14 передовых моделей в среднем решила 48,3% задач",
+      "body": "Бенчмарк Google сделала вместе с Mercor, в публичную версию вошли 29 задач. Компания проверила 14 моделей, и лучший средний результат, 48,3%, получен на собственной обвязке Google.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google launches engineering benchmark for frontier AI",
+          "url": "https://itbrief.news/story/google-launches-engineering-benchmark-for-frontier-ai",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Mercor"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Mercor": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-17-9"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: Qwen4-Max дешевле конкурентов уровня Opus 5.5 и GPT-6",
+      "subheadline": null,
+      "body": "The Decoder сравнил Qwen4-Max с Claude Opus 5.5, GPT-6 и Kimi K3.1 Pro: по результатам модель Alibaba близка к ним, а цена у неё заметно ниже.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Alibaba's Qwen4-Max takes on Opus 5.5, GPT-6, and Kimi K3.1 Pro at much lower prices",
+          "url": "https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Alibaba выпустила Qwen4-Max-Preview",
+      "tags": {
+        "entities": [
+          "Alibaba",
+          "Qwen"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Alibaba": "positive",
+          "Qwen": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-17-10"
+    },
+    {
+      "section": "models",
+      "headline": "Airbnb обучает модели поиска на естественном языке с помощью синтетических данных",
+      "subheadline": "Компания описала систему CASTLE, которая генерирует обучающие примеры",
+      "body": "С помощью CASTLE Airbnb обучает модели поиска, понимающие запросы на естественном языке: вместо реальных пользовательских запросов модели учатся на синтетических.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data",
+          "url": "https://www.infoq.com/news/2026/11/airbnb-castle/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Airbnb",
+          "CASTLE"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Airbnb": "positive",
+          "CASTLE": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-17-11"
+    },
+    {
+      "section": "models",
+      "headline": "Michigan Tech: модели для поиска материалов можно обучать на 10% данных",
+      "subheadline": "Если отбросить 90% обучающей выборки, точность почти не снижается",
+      "body": "Работа опубликована в npj Computational Materials. Исследователи показали, что модели, которые ищут новые материалы, можно обучать на небольшой части данных, и это ускоряет поиск.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Less data, faster discovery: researchers rethink AI's role in developing new materials",
+          "url": "https://mtu.edu/news/2026/11/less-data-faster-discovery-researchers-rethink-ais-role-in-developing-new-materials.html",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Michigan Tech"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Michigan Tech": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-17-12"
+    },
+    {
+      "section": "platforms",
+      "headline": "Claude научился собирать интерактивные сайты внутри canvas-графики",
+      "subheadline": "The Decoder сравнивает это с эпохой Flash, только теперь вместо Flash настоящий HTML",
+      "body": "Внутри canvas Claude теперь собирает интерактивные страницы на реальном HTML. The Decoder видит в этом возвращение формата Flash-сайтов, но без проприетарного плагина.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Claude now builds interactive websites inside canvas graphics, reviving the Flash era with real HTML",
+          "url": "https://the-decoder.com/claude-now-builds-interactive-websites-inside-canvas-graphics-reviving-the-flash-era-with-real-html/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Anthropic says the key to agent memory is knowing what to forget, not how much to store",
+          "url": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/",
+          "entities": [
+            "Anthropic"
           ],
           "sentiment": "neutral"
         }
       ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-17-13"
+    },
+    {
+      "section": "platforms",
+      "headline": "Apple тестирует дневные лимиты на сложные запросы к Siri",
+      "subheadline": "По данным The Verge, лимиты могут привязать к подписке iCloud",
+      "body": "Ограничения будут касаться только сложных запросов к Siri. Недавно Apple начала продавать пакеты Apple Intelligence за $50, так что компания продолжает переводить ИИ-функции на платную модель.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+          "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Apple",
+          "Siri",
+          "Apple Intelligence"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Apple": "neutral",
+          "Siri": "negative",
+          "Apple Intelligence": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 7,
+      "id": "2026-11-17-14"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI расширила доступ к ChatGPT для учёных и медиков",
+      "subheadline": "Компания опубликовала условия для академических исследователей и новые возможности ChatGPT for Healthcare",
+      "body": "OpenAI выпустила два анонса. В одном описаны условия доступа к ChatGPT для академических исследователей, в другом — новые сценарии использования ChatGPT for Healthcare в медицине.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Broadening access to AI for scientists",
+          "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+          "type": "official"
+        },
+        {
+          "title": "More ways to move care forward with ChatGPT for Healthcare",
+          "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-17-15"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI сделала классификатор, который отсеивает ИИ-дипфейки в сообщениях о насилии над детьми",
+      "subheadline": "Он нужен, чтобы сгенерированные изображения не перегружали горячие линии",
+      "body": "Сообщений о материалах сексуального насилия над детьми, созданных ИИ, становится всё больше. Классификатор OpenAI должен отделять сгенерированные изображения, чтобы горячие линии могли сосредоточиться на реальных случаях.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+          "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+          "type": "media"
+        }
+      ],
+      "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
@@ -99,83 +588,21 @@
         "entity_sentiment": {
           "OpenAI": "positive"
         },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-16-3"
-    },
-    {
-      "section": "models",
-      "headline": "Продолжение: Claude Fable 5.2 не генерирует изображения, а рисует их",
-      "subheadline": null,
-      "body": "The Decoder разобрал, как Claude Fable 5.2 работает с изображениями. По оценке издания, модель не генерирует картинку целиком, как генераторы изображений, а рисует её.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them",
-          "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Anthropic выпустила Claude Fable 5.2 и Claude Mythos 5.2",
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude Fable 5.2"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Anthropic": "neutral",
-          "Claude Fable 5.2": "neutral"
-        },
-        "event": "statement"
+        "event": "release"
       },
       "importance": 5,
-      "id": "2026-11-16-4"
-    },
-    {
-      "section": "models",
-      "headline": "Какие знания хранят слои RWKV-7 и трансформеров: сравнение послойными пробами",
-      "subheadline": "Автор на Хабре проверил, где в рекуррентной архитектуре и в трансформерах хранятся разные типы информации",
-      "body": "RWKV-7 — рекуррентная архитектура, альтернатива трансформерам. Автор обучил простые классификаторы на активациях каждого слоя обеих архитектур и сравнил, на какой глубине модели начинают хранить те или иные сведения.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Какие слои что знают: сравниваем RWKV-7 и трансформеры послойными пробами",
-          "url": "https://habr.com/ru/articles/1108076/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "RWKV-7",
-          "Хабр"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "RWKV-7": "neutral",
-          "Хабр": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-16-5"
+      "id": "2026-11-17-16"
     },
     {
       "section": "platforms",
-      "headline": "Cloudflare открыла код Kitesurf — браузерного движка для ИИ-агентов",
-      "subheadline": "Движок рассчитан на то, чтобы по сайтам ходили программные агенты, а не люди",
-      "body": "Kitesurf выложен с открытым исходным кодом. Он нужен для автоматизации веба, где ИИ-агенты сами открывают страницы и работают с ними. Cloudflare уже продаёт инфраструктуру для запуска агентов. Свой движок позволяет компании не зависеть от браузеров, сделанных для людей.",
-      "tier": "regular",
+      "headline": "Hark выпустила Handoff² — агента для управления компьютером, который работает вдвое быстрее",
+      "subheadline": "Агент входит в тариф Hark Pro",
+      "body": "Handoff² сам управляет интерфейсом компьютера. По данным Hark, новая версия выполняет задачи в два раза быстрее предыдущей.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Cloudflare открыла исходный код Kitesurf — браузерного движка для AI‑агентов",
-          "url": "https://habr.com/ru/articles/1107996/",
+          "title": "Hark Releases Handoff², a 2x Faster Computer-Use Agent for Hark Pro",
+          "url": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/",
           "type": "media"
         }
       ],
@@ -184,29 +611,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Cloudflare",
-          "Kitesurf"
+          "Hark",
+          "Handoff²"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Cloudflare": "positive",
-          "Kitesurf": "positive"
+          "Hark": "positive",
+          "Handoff²": "positive"
         },
         "event": "release"
       },
-      "importance": 7,
-      "id": "2026-11-16-6"
+      "importance": 5,
+      "id": "2026-11-17-17"
     },
     {
       "section": "platforms",
-      "headline": "Apple выпустила приложение для изучения того, как люди пользуются ИИ в вопросах здоровья",
-      "subheadline": "Новое исследовательское приложение собирает данные о том, как пользователи обращаются к ИИ с вопросами о здоровье",
-      "body": "Это отдельное приложение для научного исследования, а не новая функция существующих сервисов Apple. Компания продолжает медицинские исследования на базе своих устройств и одновременно развивает Apple Intelligence.",
-      "tier": "regular",
+      "headline": "Meta описала JiTTests — тесты от LLM, которые должны падать на рискованном коде",
+      "subheadline": "Тесты пишутся под конкретное изменение и ловят ошибки приватности до того, как код попадёт в основную ветку",
+      "body": "Языковая модель генерирует тест для конкретного изменения в коде. Тест специально рассчитан на то, чтобы провалиться, если изменение несёт риск, в первую очередь для приватности.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Apple launches new app to study how people use AI for health",
-          "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+          "title": "Meet Meta's JiTTests: LLM-Generated Tests Designed to Fail Before Risky Code Lands",
+          "url": "https://www.marktechpost.com/2026/11/16/meta-jittests-llm-catching-tests-privacy-bugs/",
           "type": "media"
         }
       ],
@@ -215,252 +642,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Apple"
+          "Meta",
+          "JiTTests"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Apple": "neutral"
+          "Meta": "positive",
+          "JiTTests": "neutral"
         },
         "event": "research"
       },
-      "importance": 7,
-      "id": "2026-11-16-7"
+      "importance": 5,
+      "id": "2026-11-17-18"
     },
     {
       "section": "platforms",
-      "headline": "Anthropic рассказала, как ИИ проверяет код в Claude Code",
-      "subheadline": "Компания описала свой процесс код-ревью с помощью Claude Code",
-      "body": "InfoQ пересказал, как в Anthropic устроено код-ревью: изменения сначала проверяет ИИ, а потом люди.",
+      "headline": "В Ask Maps появились функции для подготовки к праздничным поездкам",
+      "subheadline": "Google расширила ИИ-ассистент в Google Maps перед праздниками",
+      "body": "Google добавила в Ask Maps функции, которые помогают планировать праздничные поездки и готовиться к ним.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Anthropic Outlines its AI-Powered Code Review Process for Claude Code",
-          "url": "https://www.infoq.com/news/2026/11/claude-code-review/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude Code"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Anthropic": "neutral",
-          "Claude Code": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-16-8"
-    },
-    {
-      "section": "platforms",
-      "headline": "Uber описала правила для ИИ-агентов на всех этапах их работы",
-      "subheadline": "Secure AI Framework регулирует автономных агентов в Uber от создания до вывода из работы",
-      "body": "Uber применяет Secure AI Framework к автономным ИИ-агентам на всех этапах, от разработки до отключения. Подробности InfoQ опубликовал по описанию самой компании.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle",
-          "url": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Uber"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Uber": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-16-9"
-    },
-    {
-      "section": "industry",
-      "headline": "Резервный банк Австралии: ИИ первыми затронул молодых работников",
-      "subheadline": "Сильнее всего это заметно в разработке ПО и клиентском обслуживании",
-      "body": "По данным центрального банка Австралии, влияние ИИ на рынок труда пока сосредоточено в начале карьеры: работа молодых сотрудников в программировании и поддержке клиентов меняется раньше, чем у остальных. В тот же день экономист Джон Куиггин в колонке для The Guardian написал, что имеющиеся данные не подтверждают массовое исчезновение рабочих мест из-за ИИ.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
-          "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
-          "type": "media"
-        }
-      ],
-      "related": [
-        {
-          "title": "Is the AI job apocalypse finally here? The evidence suggests otherwise | John Quiggin",
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/16/is-the-ai-job-apocalypse-finally-here-the-evidence-suggests-otherwise",
-          "entities": [
-            "John Quiggin"
-          ],
-          "sentiment": "neutral"
-        }
-      ],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Резервный банк Австралии",
-          "Австралия"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Резервный банк Австралии": "neutral",
-          "Австралия": "negative"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-16-10"
-    },
-    {
-      "section": "industry",
-      "headline": "Сообщений о материалах сексуального насилия над детьми, созданных ИИ, стало в 84 раза больше",
-      "subheadline": "За два года число таких сообщений выросло на 8400%",
-      "body": "По данным, которые приводит The Guardian, рост связан с дипфейками и с использованием генеративного ИИ для эксплуатации детей.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Reports of AI-related child sexual abuse material rise 8,400% in two years, data shows",
-          "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "negative",
-        "entity_sentiment": {},
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-16-11"
-    },
-    {
-      "section": "industry",
-      "headline": "Индийский разработчик чипов Bharat Semi привлёк $24 млн",
-      "subheadline": "Посевной раунд пойдёт на выход на мировой рынок сенсоров с ИИ",
-      "body": "Bharat Semi собирается продавать сенсорные чипы для задач ИИ за пределами Индии. Сделка — посевной раунд, то есть компания на ранней стадии.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Bharat Semi",
-          "Индия"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Bharat Semi": "positive",
-          "Индия": "neutral"
-        },
-        "event": "investment"
-      },
-      "importance": 5,
-      "id": "2026-11-16-12"
-    },
-    {
-      "section": "industry",
-      "headline": "США и восемь стран договорились защищать цепочки поставок для ИИ",
-      "subheadline": "Партнёры будут искать ИИ-технологии и цепочки поставок, уязвимые из-за рисков, связанных с Китаем, и защищать их",
-      "body": "Соглашение касается технологий и поставок для ИИ, которые зависят от Китая. Участники будут вместе выявлять уязвимые звенья.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "U.S. and Eight Partners Agree to Safeguard AI Supply Networks",
-          "url": "https://tokenpost.com/news/regulation/57919",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "США",
-          "Китай"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "США": "neutral",
-          "Китай": "negative"
-        },
-        "event": "regulation"
-      },
-      "importance": 5,
-      "id": "2026-11-16-13"
-    },
-    {
-      "section": "industry",
-      "headline": "Продолжение: Конгресс хочет ужесточить экспорт ИИ-чипов после скандала в NVIDIA",
-      "subheadline": null,
-      "body": "После истории с предполагаемой китайской шпионкой в Конгрессе США стало больше сторонников жёстких правил экспорта ИИ-чипов в Китай.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-          "type": "media"
-        },
-        {
-          "title": "Скандал вокруг Nvidia подтолкнул Конгресс США к ужесточению экспорта ИИ-чипов в Китай",
-          "url": "https://ixbt.com/news/2026/11/15/skandal-vokrug-nvidia-podtolknul-kongress-ssa-k-uzestoceniiu-eksporta-ii-cipov-v-kitai.html",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Продолжение: Конгресс вызовет Дженсена Хуанга из-за истории с предполагаемой китайской шпионкой",
-      "tags": {
-        "entities": [
-          "Конгресс США",
-          "NVIDIA",
-          "Китай"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Конгресс США": "neutral",
-          "NVIDIA": "negative",
-          "Китай": "negative"
-        },
-        "event": "regulation"
-      },
-      "importance": 5,
-      "id": "2026-11-16-14"
-    },
-    {
-      "section": "content",
-      "headline": "A2E AI собрала 151 видеомодель и 74 модели для изображений в одном сервисе",
-      "subheadline": "Платформа даёт доступ к чужим генераторам видео и картинок в одном интерфейсе",
-      "body": "A2E AI объявила о запуске пресс-релизом. Сервис не выпускает собственную модель, а собирает сторонние генераторы. Пользователь выбирает модель под задачу и не платит за подписку на каждый сервис отдельно.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "A2E AI Launches AI Video Generator With All-in-One Video and Image Models",
-          "url": "https://finance.yahoo.com/technology/ai/articles/a2e-ai-launches-ai-video-101800541.html",
+          "title": "New Ask Maps features to help with holiday travel and prep",
+          "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
           "type": "official"
         }
       ],
@@ -469,136 +673,219 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "A2E AI"
+          "Google",
+          "Google Maps"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "A2E AI": "positive"
+          "Google": "positive",
+          "Google Maps": "positive"
         },
-        "event": "release"
+        "event": "update"
       },
       "importance": 5,
-      "id": "2026-11-16-15"
+      "id": "2026-11-17-19"
     },
     {
-      "section": "art",
-      "headline": "Продолжение: в Москве открылась выставка «Культурный Code»",
-      "subheadline": null,
-      "body": "В ЦСИ М'АРС показывают работы 11 победителей конкурса ИИ-искусства. Также в программе мастер-классы, лекции и рассказ о научных открытиях, на которых построен ИИ. Выставка продлится до декабря.",
+      "section": "platforms",
+      "headline": "DeepSeek ограничила бесплатный чат, пользователи жалуются на квоты",
+      "subheadline": "В бесплатной версии чата появились ограничения на использование",
+      "body": "Пользователи бесплатного чата DeepSeek стали упираться в квоты на использование и жалуются на них.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Выставка о сотворчестве человека и ИИ откроется в Москве 15 ноября",
-          "url": "https://www.computerra.ru/374090/vystavka-o-sotvorchestve-cheloveka-i-ii-otkroetsya-v-moskve-15-noyabrya/",
-          "type": "media"
-        },
-        {
-          "title": "В Москве откроется выставка «Культурный Code» об искусственном интеллекте и искусстве",
-          "url": "https://skillbox.ru/media/code/v-moskve-otkroetsya-vystavka-kulturnyy-code-o-sovmestnom-tvorchestve-cheloveka-i-ii/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "В Москве откроется выставка «Культурный Code» о совместном творчестве человека и ИИ",
-      "details": "Москва, ЦСИ М'АРС · с 15 ноября до декабря",
-      "tags": {
-        "entities": [
-          "ЦСИ М'АРС",
-          "Россия"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "ЦСИ М'АРС": "positive",
-          "Россия": "neutral"
-        },
-        "event": "exhibition"
-      },
-      "importance": 5,
-      "id": "2026-11-16-16"
-    },
-    {
-      "section": "hype",
-      "headline": "Лучший результат на экзамене для налоговых специалистов в Южной Корее получен с помощью ИИ",
-      "subheadline": "Участник ошибся в одном вопросе из 160, а потом признался, что пользовался скрытой камерой и генеративным ИИ",
-      "body": "Участник передавал вопросы через скрытую камеру и получал ответы от генеративного ИИ. Дело передано в полицию Сеула.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
-          "url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
-          "type": "media"
-        },
-        {
-          "title": "В Южной Корее выпускник сдал экзамен на налогового бухгалтера с помощью ИИ",
-          "url": "https://iz.ru/2202091/2026-11-15/v-iuzhnoi-koree-vypusknik-sdal-ekzamen-na-nalogovogo-bukhgaltera-s-pomoshchiu-ii",
+          "title": "DeepSeek ограничивает бесплатный чат: пользователи жалуются на квоты",
+          "url": "https://habr.com/ru/companies/bothub/articles/1108436/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
       "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "DeepSeek"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "DeepSeek": "negative"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-17-20"
+    },
+    {
+      "section": "content",
+      "headline": "B.AI открыла доступ к MiniMax H3 для генерации изображений через API",
+      "subheadline": "Среди доступных моделей серии — быстрая MiniMax-H3-Image-Highspeed",
+      "body": "По сообщению B.AI, через её API теперь доступна серия MiniMax H3 с открытыми весами для генерации и редактирования изображений, в том числе быстрая версия MiniMax-H3-Image-Highspeed. Об этом пишет только один источник, на сайте MiniMax подтверждения пока нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "MiniMax H3 Image Highspeed",
+          "url": "https://chaincatcher.com/en/article/2305216",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Открытые веса · доступ через API B.AI",
+      "tags": {
+        "entities": [
+          "MiniMax",
+          "B.AI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "MiniMax": "positive",
+          "B.AI": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-17-21"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ-контент-ферма втянула настоящего музыканта в спор об авторских правах",
+      "subheadline": "404 Media рассказывает, как из-за сгенерированных треков у музыканта начались проблемы с правами на собственную музыку",
+      "body": "По данным 404 Media, контент-ферма массово выпускала сгенерированную ИИ музыку, а музыкант в итоге получал претензии по авторским правам на свои собственные произведения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "How an AI Content Mill Put a Real Musician Through Copyright Hell",
+          "url": "https://www.404media.co/how-an-ai-content-mill-put-a-real-musician-through-copyright-hell/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "404 Media"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "404 Media": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-17-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: лучший на налоговом экзамене в Южной Корее признал, что списывал с ИИ",
+      "subheadline": null,
+      "body": "Видео с признанием посмотрели больше 1,5 млн раз, и Минфин Южной Кореи собирается приостановить квалификацию экзаменуемого. Скандал случился за несколько дней до вступительных экзаменов в вузы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "South Korea faces an AI cheating scandal days before its national college entrance exams",
+          "url": "https://fortune.com/2026/11/16/south-korea-ai-cheating-scandal-tax-qualifications/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Лучший результат на экзамене для налоговых специалистов в Южной Корее получен с помощью ИИ",
       "tags": {
         "entities": [
           "Южная Корея"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Южная Корея": "neutral"
+          "Южная Корея": "negative"
         },
         "event": "incident"
       },
-      "importance": 7,
-      "id": "2026-11-16-17"
+      "importance": 5,
+      "id": "2026-11-17-23"
     },
     {
       "section": "hype",
-      "headline": "Продолжение: Хуанг может готовить возвращение в NVIDIA, фирма его бывшей возлюбленной могла устроить заказы почти на $12 млрд",
-      "subheadline": null,
-      "body": "The Verge пишет, что Дженсен Хуанг, возможно, готовит возвращение в компанию. По данным The Decoder, фирма, связанная с его бывшей возлюбленной, была посредником при заказах чипов NVIDIA для Китая почти на $12 млрд.",
+      "headline": "На смартфонах Samsung может появиться персональный ИИ-агент Galaxy Claw",
+      "subheadline": "Судя по известным данным, агент будет работать сразу в нескольких приложениях",
+      "body": "ZDNet собрал всё, что известно о Galaxy Claw. По этим данным, агент сможет выполнять задачи, переходя между приложениями на телефоне. Samsung о нём официально не объявляла.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
-          "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
-          "type": "media"
-        },
-        {
-          "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
-          "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
-          "type": "media"
+          "title": "Your Samsung phone could soon get a personal AI agent – what we know about Galaxy Claw",
+          "url": "https://www.zdnet.com/innovation/samsung-galaxy-claw-ai-cross-app-upgrade/",
+          "type": "rumor"
         }
       ],
       "related": [],
       "unconfirmed": true,
-      "duplicate_note": "Продолжение: Илон Маск и другие руководители техкомпаний просят NVIDIA вернуть Хуанга",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "Jensen Huang",
-          "NVIDIA",
-          "Китай"
+          "Samsung",
+          "Galaxy Claw"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "Jensen Huang": "negative",
-          "NVIDIA": "negative",
-          "Китай": "neutral"
+          "Samsung": "neutral",
+          "Galaxy Claw": "neutral"
         },
-        "event": "criticism"
+        "event": "leak"
       },
       "importance": 5,
-      "id": "2026-11-16-18"
+      "id": "2026-11-17-24"
     },
     {
       "section": "hype",
-      "headline": "AI Resist List: список тех, кто противостоит ИИ",
-      "subheadline": "На Хабре опубликовали подборку людей и организаций, которые выступают против распространения ИИ",
-      "body": "Автор собрал в один перечень тех, кто публично противостоит внедрению ИИ, и описал их позиции.",
+      "headline": "Языковая модель TINY 2.1 работает под DOS на Pentium и 486DX и помещается на дискету",
+      "subheadline": "Рядом ещё один эксперимент: LLM на микроконтроллере ESP32 со скоростью 400 токенов в секунду",
+      "body": "Автор TINY 2.1 уместил модель на дискету и запустил её под DOS на процессорах Pentium и 486DX. В другом материале на Хабре объясняют, как языковая модель выдаёт 400 токенов в секунду на ESP32.",
       "tier": "compact",
       "sources": [
         {
-          "title": "AI Resist List: список тех, кто бросает вызов ИИ",
-          "url": "https://habr.com/ru/articles/1108152/",
+          "title": "Представлена TINY 2.1 — маленькая языковая модель, которая работает под DOS на Pentium/486DX и помещается на дискету",
+          "url": "https://habr.com/ru/articles/1108358/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Запускаем языковую модель на ESP32 со скоростью 400 токенов/с",
+          "url": "https://habr.com/ru/companies/timeweb/articles/1103622/",
+          "entities": [
+            "ESP32"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "TINY 2.1",
+          "Хабр"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "TINY 2.1": "positive",
+          "Хабр": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-17-25"
+    },
+    {
+      "section": "hype",
+      "headline": "В Австралии из-за ИИ отменили конкурс STEM-видеоигр",
+      "subheadline": "Конкурс по разработке игр для школьников прекратили из-за использования ИИ",
+      "body": "Организаторы отменили австралийский конкурс по разработке видеоигр в сфере STEM. Причиной стало использование ИИ.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Австралийский конкурс по разработке видеоигр в сфере STEM отменили из‑за ИИ",
+          "url": "https://habr.com/ru/articles/1108346/",
           "type": "media"
         }
       ],
@@ -607,16 +894,16 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Хабр"
+          "Австралия"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Хабр": "neutral"
+          "Австралия": "neutral"
         },
         "event": "other"
       },
       "importance": 5,
-      "id": "2026-11-16-19"
+      "id": "2026-11-17-26"
     }
   ]
 }
