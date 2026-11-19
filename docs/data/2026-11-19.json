@@ -1,0 +1,943 @@
+{
+  "date": "2026-11-19",
+  "published": false,
+  "news": [
+    {
+      "section": "industry",
+      "headline": "Калифорния готовит обязательные стандарты безопасности ИИ и механизм аварийной остановки релизов",
+      "subheadline": "Губернатор Гэвин Ньюсом опубликовал следующие шаги по обязательным стандартам безопасности ИИ и надзору и предложил механизм, который может остановить опасный релиз OpenAI или Anthropic.",
+      "body": "Администрация Калифорнии описала, как будут работать обязательные стандарты безопасности для разработчиков передовых моделей. Модели будут проверять независимые аудиторы. Ньюсом также предложил механизм аварийной остановки (kill switch): с его помощью штат сможет приостановить выпуск системы, признанной опасной, в том числе релиз OpenAI или Anthropic. Власти штата призывают Конгресс и администрацию Трампа взять эту схему за основу федерального регулирования. Это не первое действие Калифорнии против ИИ-компаний: ранее генпрокурор штата подал в суд на OpenAI из-за ИИ-агентов, которые вышли из-под контроля. В тот же день OpenAI объявила, что впервые пускает четырёх независимых аудиторов работать со своими системами на месте.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Governor Newsom's nation-leading AI safety framework is getting even stronger as California releases next steps on mandatory safety standards and oversight",
+          "url": "https://www.gov.ca.gov/2026/11/18/governor-newsoms-nation-leading-ai-safety-framework-is-getting-even-stronger-as-california-releases-next-steps-on-mandatory-safety-standards-and-oversight/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases",
+          "url": "https://www.paloaltoonline.com/calmatters/2026/11/18/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases/",
+          "entities": [
+            "Калифорния",
+            "OpenAI",
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Калифорния",
+          "Gavin Newsom",
+          "OpenAI",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Калифорния": "neutral",
+          "Gavin Newsom": "positive",
+          "OpenAI": "negative",
+          "Anthropic": "negative"
+        },
+        "event": "regulation"
+      },
+      "importance": 9,
+      "id": "2026-11-19-1"
+    },
+    {
+      "section": "industry",
+      "headline": "Palo Alto Networks покупает Applied Compute за $4,5 млрд",
+      "subheadline": "Компания по кибербезопасности хочет предлагать корпоративным клиентам защищённый ИИ с открытыми весами.",
+      "body": "Palo Alto Networks подписала окончательное соглашение о покупке Applied Compute, у которой есть платформа ИИ с открытыми весами. Сделка полностью оплачивается акциями. CEO Applied Compute Яш Патил станет одним из директоров Palo Alto Networks по ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Palo Alto Networks to Acquire Applied Compute, Bringing Secure Open-Weight AI to the Enterprise",
+          "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "Palo Alto Networks plans $4.5 billion acquisition of AI startup Applied Compute",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/palo-alto-networks-plans-4-5-billion-acquisition-of-ai-startup-applied-compute/",
+          "entities": [
+            "Palo Alto Networks",
+            "Applied Compute"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Palo Alto Networks",
+          "Applied Compute",
+          "Yash Patil"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Palo Alto Networks": "positive",
+          "Applied Compute": "positive",
+          "Yash Patil": "positive"
+        },
+        "event": "acquisition"
+      },
+      "importance": 7,
+      "id": "2026-11-19-2"
+    },
+    {
+      "section": "industry",
+      "headline": "NVIDIA перестала продавать ИИ-чипы в Китай",
+      "subheadline": "По данным The Verge, компания больше не поставляет китайским клиентам ИИ-ускорители, включая H200.",
+      "body": "Решение принято на фоне ужесточения экспортного контроля: недавно США ограничили китайским компаниям удалённый доступ к ИИ-чипам, а в Конгрессе предлагают ещё жёстче ограничить их экспорт. В тот же день NVIDIA объяснила, в каких случаях продолжит финансировать неооблака — облачных провайдеров, построенных на её GPU, — а в каких нет.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nvidia isn't selling any more AI chips to China",
+          "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Nvidia clarifies when it will — and won't — keep financing neoclouds",
+          "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Remember the frontier AI pause? Chip companies don't either",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+          "entities": [
+            "NVIDIA",
+            "AMD"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Китай": "negative"
+        },
+        "event": "regulation"
+      },
+      "importance": 7,
+      "id": "2026-11-19-3"
+    },
+    {
+      "section": "industry",
+      "headline": "Сатья Наделла объяснил, зачем предложил 60 тысячам сотрудников Microsoft уволиться",
+      "subheadline": "В серии выступлений глава Microsoft также говорил о том, что много критической инфраструктуры невозможно пропатчить, и о том, как ИИ-агенты изменят экономику веба.",
+      "body": "Наделла рассказал о кадровом решении, которое затронуло около 60 тысяч сотрудников Microsoft. В тех же выступлениях он предупредил, что значительную часть критической инфраструктуры невозможно пропатчить. На фоне опасений из-за ИИ-кибератак это делает её уязвимой. Кроме того, по его прогнозу, ИИ-агенты изменят экономику интернета.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is 'unpatchable'",
+          "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+          "entities": [
+            "Satya Nadella"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+          "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+          "entities": [
+            "Satya Nadella"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses",
+          "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+          "entities": [
+            "Palmer Luckey",
+            "Anduril"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Satya Nadella"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Microsoft": "neutral",
+          "Satya Nadella": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 7,
+      "id": "2026-11-19-4"
+    },
+    {
+      "section": "industry",
+      "headline": "OpenAI впервые пустила к своим системам четырёх независимых аудиторов",
+      "subheadline": "Аудиторы проверяют модели OpenAI на месте, а компания одновременно описала, как управляет рисками передовых моделей от обучения до развёртывания.",
+      "body": "Раньше внешние проверки OpenAI проходили без такого доступа: теперь четыре независимые организации работают с системами компании на её площадке. Вместе с этим OpenAI опубликовала документ о том, как оценивает и снижает риски передовых моделей на всех этапах, от обучения до развёртывания. В тот же день Калифорния назвала независимое тестирование моделей аудиторами частью будущих обязательных стандартов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Managing frontier AI risk: From training to deployment",
+          "url": "https://openai.com/index/managing-frontier-ai-risk",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "OpenAI opens its AI systems to four independent on-site auditors for the first time",
+          "url": "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/",
+          "entities": [
+            "OpenAI"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "event": "other"
+      },
+      "importance": 7,
+      "id": "2026-11-19-5"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Anthropic разместила акции по $83 — выше ожидаемого диапазона",
+      "subheadline": null,
+      "body": "По данным TechCrunch, Anthropic установила цену IPO в $83 за акцию, выше прогнозного диапазона.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic prices IPO at $83 a share, above projected range",
+          "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: заявки на IPO Anthropic в шесть раз превысили предложение",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-19-6"
+    },
+    {
+      "section": "industry",
+      "headline": "Индийская Humyn Labs привлекла $47 млн на данные для американских робототехников",
+      "subheadline": "Раунд поддержал Accel; стартап поставляет обучающие данные компаниям, которые разрабатывают ИИ для роботов в США.",
+      "body": "Humyn Labs собирает данные для обучения робототехнических ИИ-моделей и продаёт их разработчикам в США. Среди инвесторов раунда — Accel.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "India's Humyn Labs raises $47M to feed US robotics companies the data they need",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+          "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+          "entities": [
+            "Unsiloed AI",
+            "Felicis"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Humyn Labs",
+          "Accel"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Humyn Labs": "positive",
+          "Accel": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 5,
+      "id": "2026-11-19-7"
+    },
+    {
+      "section": "models",
+      "headline": "Google DeepMind представила Gemini 4 Neon",
+      "subheadline": "Новая модель семейства Gemini 4 вышла вслед за Gemini 4 Hydrogen.",
+      "body": "Gemini 4 Neon — уже вторая модель поколения Gemini 4 после недавно вышедшей Gemini 4 Hydrogen. Её анонсировали в официальном блоге Google DeepMind.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Neon",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "Gemini 4 Neon"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Gemini 4 Neon": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-19-8"
+    },
+    {
+      "section": "models",
+      "headline": "Три ИИ-модели сошлись только в одной из 121 потенциальной уязвимости",
+      "subheadline": "В исследовании Echo Claude Mythos 5.1, GPT-5.6 Sol и GLM-5.3 проверили один и тот же открытый код и нашли почти не пересекающиеся наборы проблем.",
+      "body": "Каждая из трёх моделей проанализировала одну и ту же open-source кодовую базу. Всего они отметили 121 возможную уязвимость, но все три модели назвали только одну. Получается, что выводы одной модели нельзя считать полным аудитом безопасности.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
+          "url": "https://infosecurity-magazine.com/news/ai-models-vulnerability-findings",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Echo",
+          "Claude Mythos",
+          "GPT-5.6 Sol",
+          "GLM-5.3"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Echo": "neutral",
+          "Claude Mythos": "neutral",
+          "GPT-5.6 Sol": "neutral",
+          "GLM-5.3": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-19-9"
+    },
+    {
+      "section": "models",
+      "headline": "OpenAI: модели сделали годовой объём оптимизации чипов AMD поверх работы инженеров самой AMD",
+      "subheadline": "OpenAI отчиталась о том, как ИИ ускоряет исследования, в том числе в оптимизации под оборудование.",
+      "body": "По словам OpenAI, её модели довели оптимизацию под чипы AMD дальше того уровня, которого добились инженеры AMD, и этот прирост соответствует примерно году ручной работы. Результат входит в публикацию о «зубчатой границе» (jagged frontier): ИИ сильно ускоряет одни исследовательские задачи и почти не помогает в других. Неделей ранее Anthropic сообщала, что с помощью ИИ перенесла работу с NVIDIA на AMD за три дня.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Research acceleration: The jagged frontier",
+          "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "OpenAI says its models delivered a year's worth of chip optimization on top of AMD's own engineering",
+          "url": "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/",
+          "entities": [
+            "OpenAI",
+            "AMD"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "AMD"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "AMD": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-19-10"
+    },
+    {
+      "section": "models",
+      "headline": "LoRA-адаптер поднял долю решённых задач по программированию у Qwen3.8 с 39% до 65%",
+      "subheadline": "Адаптер для Qwen3.8-27B выложен на Hugging Face.",
+      "body": "Адаптер обучен методом LoRA, поэтому полное дообучение модели на 27 млрд параметров не понадобилось. С ним Qwen3.8 решает 65% задач по программированию вместо 39% у базовой модели.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "New LoRA Adapter Lifts Qwen3.8 Coding Success From 39% to 65%",
+          "url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Qwen",
+          "Hugging Face"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Qwen": "positive",
+          "Hugging Face": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-19-11"
+    },
+    {
+      "section": "models",
+      "headline": "RadixArk выпустила DaisyRose-27B",
+      "subheadline": "Модель на 27 млрд параметров показывает, насколько эффективным может быть пост-обучение.",
+      "body": "RadixArk рассказала о DaisyRose-27B в блоге Hugging Face. Главное в модели — эффективность пост-обучения: команда утверждает, что получила лучший результат при меньших затратах на этот этап.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+          "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "RadixArk",
+          "DaisyRose-27B"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "RadixArk": "positive",
+          "DaisyRose-27B": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-19-12"
+    },
+    {
+      "section": "models",
+      "headline": "SID AI выпустила SID-2 — модель для агентного поиска",
+      "subheadline": "В режиме Swarm модель набирает 0,720 по метрике NDCG.",
+      "body": "SID-2 рассчитана на поиск, который выполняют ИИ-агенты. Лучший результат, 0,720 NDCG, она показывает в режиме Swarm. NDCG измеряет, насколько хорошо упорядочена выдача: чем выше, тем точнее ранжирование.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "SID AI Releases SID-2 Agentic Search Model With 0.720 NDCG Swarm Mode",
+          "url": "https://www.marktechpost.com/2026/11/17/sid-ai-sid-2-agentic-search-swarm/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SID AI",
+          "SID-2"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "SID AI": "positive",
+          "SID-2": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-19-13"
+    },
+    {
+      "section": "platforms",
+      "headline": "Microsoft запустила Licensed Weights — дообучение моделей на данных компании",
+      "subheadline": "Сервис представлен на Ignite 2026: бизнес получает лицензированные веса и подстраивает модель под себя.",
+      "body": "Компании смогут дообучать модели на собственных данных. Сервис показали на Ignite вместе с шестью собственными моделями Microsoft MAI и Copilot Workspaces.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Microsoft's new Licensed Weights lets businesses customize AI models with their own data",
+          "url": "https://www.zdnet.com/innovation/microsoft-licensed-weights-ai-models-ignite-2026/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Microsoft",
+          "Licensed Weights"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Microsoft": "positive",
+          "Licensed Weights": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-19-14"
+    },
+    {
+      "section": "platforms",
+      "headline": "В Claude Code появился Code Mode: вызовы инструментов связываются в JavaScript",
+      "subheadline": "Claude пишет JavaScript, который вызывает несколько инструментов подряд, а не обращается к ним по одному.",
+      "body": "В Code Mode Claude пишет программу на JavaScript, в которой вызывает инструменты и передаёт результат одного вызова в следующий. Раньше каждый вызов шёл отдельным шагом, и промежуточный результат проходил через модель. Это ещё одно обновление Claude Code за неделю: раньше Anthropic рассказала, как ИИ проверяет код в этом продукте.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic Adds Code Mode to Claude Code: Claude Now Chains Tool Calls in JavaScript",
+          "url": "https://www.marktechpost.com/2026/11/17/anthropic-claude-code-code-mode-javascript-tool-calls/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Inside the Codex sandbox",
+          "url": "https://openai.com/index/inside-the-codex-sandbox",
+          "entities": [
+            "OpenAI",
+            "Codex"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+          "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+          "entities": [
+            "Snap",
+            "Claude Code",
+            "Cursor"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Code"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Code": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-19-15"
+    },
+    {
+      "section": "platforms",
+      "headline": "Mistral выпустила Vibe Desktop",
+      "subheadline": "Конкуренты Mistral уже дают ИИ-агентам управлять всей операционной системой, поэтому The Decoder считает выпуск попыткой догнать рынок.",
+      "body": "Vibe Desktop — приложение Mistral для компьютера. По оценке The Decoder, компания пока отстаёт от соперников: их агенты уже управляют всей операционной системой.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Mistral plays catch-up with Vibe Desktop as rivals already command full operating systems",
+          "url": "https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Mistral",
+          "Vibe Desktop"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Mistral": "neutral",
+          "Vibe Desktop": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-19-16"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google Labs представила Stitch Loop для создания и развития продуктов",
+      "subheadline": "Новый инструмент Stitch рассчитан на работу над продуктом и его последующие доработки.",
+      "body": "Stitch — экспериментальный сервис Google Labs для проектирования интерфейсов с помощью ИИ. Stitch Loop добавляет к нему повторяющийся цикл: продукт можно собрать, а потом дорабатывать.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Introducing Stitch Loop: A new way to build and evolve products",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Stitch"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Stitch": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-19-17"
+    },
+    {
+      "section": "platforms",
+      "headline": "ИИ-агент Google Spark переименовали в Tasks и открыли бесплатно — с лимитами",
+      "subheadline": "Персональным агентом в Gemini теперь можно пользоваться без подписки, но с ограничениями.",
+      "body": "Агент раньше назывался Spark, теперь — Tasks. Бесплатная версия работает с лимитами использования.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "You can use Google's Spark AI agent, renamed Tasks, for free now – with limits",
+          "url": "https://www.zdnet.com/innovation/gemini-spark-tasks-free-personal-agent/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Google's AI feature in Search gets its own incognito mode",
+          "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+          "entities": [
+            "Google"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Gemini"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Gemini": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-19-18"
+    },
+    {
+      "section": "platforms",
+      "headline": "Hugging Face направляет запросы к моделям через OpenRouter",
+      "subheadline": "Платформа выбирает провайдера по цене или по скорости.",
+      "body": "Если отправить запрос к модели через Hugging Face, его может обработать один из провайдеров OpenRouter: платформа сама выберет самый дешёвый или самый быстрый.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Hugging Face now routes model requests through OpenRouter for the best price or speed",
+          "url": "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Hugging Face",
+          "OpenRouter"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Hugging Face": "positive",
+          "OpenRouter": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5,
+      "id": "2026-11-19-19"
+    },
+    {
+      "section": "content",
+      "headline": "Вышла Genie 4: миры можно соединять в цепочки и выкладывать в общую галерею",
+      "subheadline": "Google DeepMind обновила Project Genie: новая модель мира, связанные миры и галерея, где чужие работы можно переделать.",
+      "body": "Genie 4 генерирует интерактивные миры. Теперь их можно соединять в цепочки, чтобы из одного мира переходить в другой. В Project Genie также появилась общая галерея: пользователи выкладывают туда свои миры, а другие берут их за основу для своих версий.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Genie 4 is now available",
+          "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
+          "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
+          "entities": [
+            "Google DeepMind",
+            "Genie"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "Genie"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Genie": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-19-20"
+    },
+    {
+      "section": "content",
+      "headline": "Suno научилась делать видео к сгенерированной музыке",
+      "subheadline": "Новая функция Visuals создаёт ролики и изображения для треков, сделанных в Suno.",
+      "body": "До сих пор Suno генерировала только музыку. Функция Visuals добавляет к трекам изображения и видео, так что клип можно сделать, не выходя из сервиса.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Suno now lets you make AI videos for your AI music",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Suno"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Suno": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-19-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Школьники из Мэриленда подали в суд после того, как ИИ принял пачку Doritos за пистолет",
+      "subheadline": "Иск подали четыре старшеклассника из округа Балтимор.",
+      "body": "Школьная система обнаружения оружия на базе ИИ приняла пакет чипсов Doritos за пистолет. Четверо учеников, которых затронул этот случай, обратились в суд.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
+          "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Мэриленд"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Мэриленд": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 7,
+      "id": "2026-11-19-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Pangram посчитал на 99% сгенерированным перуанский роман-лауреат, издатель заступился за автора",
+      "subheadline": "ИИ-детектор почти целиком приписал машине награждённую книгу, но издательство не поверило.",
+      "body": "Pangram отметил как созданные ИИ 99% текста романа, который получил литературную премию. Издатель поддержал автора. Этот же детектор, как писалось ранее, Минюст США применяет против адвокатов защиты.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Pangram flags 99 percent of an award-winning Peruvian novel as AI-generated, but the publisher stands by its author",
+          "url": "https://the-decoder.com/pangram-flags-99-percent-of-an-award-winning-peruvian-novel-as-ai-generated-but-the-publisher-stands-by-its-author/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Pangram"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Pangram": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-19-23"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: Элтон Джон неожиданно появился на ARIA и поддержал австралийских артистов в борьбе с ИИ",
+      "subheadline": null,
+      "body": "Музыкант пришёл на церемонию премии ARIA и поддержал кампанию австралийских артистов за защиту авторских прав от ИИ-компаний.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Elton John backs Australian artists in fight against AI in surprise Aria awards appearance",
+          "url": "https://www.theguardian.com/music/2026/nov/18/elton-john-ai-campaign-australia-artists-aria-awards-copyright",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: австралийский сенатор призвал не жертвовать искусством ради прибыли ИИ-компаний",
+      "tags": {
+        "entities": [
+          "Elton John",
+          "Австралия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Elton John": "positive",
+          "Австралия": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-19-24"
+    },
+    {
+      "section": "hype",
+      "headline": "NVIDIA не подала обычный отчёт в SEC",
+      "subheadline": "Пропущенная плановая отчётность вызвала вопросы на фоне скандала с уходом Дженсена Хуанга.",
+      "body": "TechCrunch обратил внимание, что NVIDIA не отправила в Комиссию по ценным бумагам и биржам США регулярный отчёт. Официального объяснения причин нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+          "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "SEC"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "SEC": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-19-25"
+    },
+    {
+      "section": "hype",
+      "headline": "Стартап Osmo утверждает, что его ИИ-нос различает запахи не хуже человека",
+      "subheadline": "MIT Technology Review разбирает это заявление.",
+      "body": "Osmo занимается цифровой обработкой запахов. Компания заявляет, что её система распознаёт запахи на уровне человека.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "This smell startup says its AI nose is as good as a human's",
+          "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Osmo"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Osmo": "positive"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-19-26"
+    }
+  ]
+}
