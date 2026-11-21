@@ -1,0 +1,761 @@
+{
+  "date": "2026-11-21",
+  "published": false,
+  "news": [
+    {
+      "section": "models",
+      "headline": "Математик Anthropic заявил, что доказал гипотезу Римана с помощью Claude",
+      "subheadline": "Почти одновременно о своём решении той же 167-летней задачи объявил исследователь, работавший без ИИ",
+      "body": "Гипотезу Римана сформулировали в 1859 году. Она входит в список задач тысячелетия Математического института Клэя, и за решение каждой из них назначена премия в $1 млн. Математик Anthropic утверждает, что получил доказательство в работе с Claude. Заметки о том, как шла работа над доказательством, опубликованы в переводе на Хабре. TechCrunch отмечает, что почти в те же дни о своём решении гипотезы объявил и другой исследователь, без помощи ИИ. Ни одно из доказательств пока не прошло проверку математического сообщества. По правилам Института Клэя решение должно быть опубликовано и признано специалистами, и только потом может быть присуждена премия. В тот же день на Хабре вышел материал о том, что Claude нашёл решения двух давних задач физики чёрных дыр.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+          "type": "media"
+        },
+        {
+          "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+          "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+          "type": "media"
+        },
+        {
+          "title": "[Перевод] Гипотеза Римана и Claude: заметки о работе над доказательством",
+          "url": "https://habr.com/ru/articles/1110544/?utm_campaign=1110544&utm_source=habrahabr&utm_medium=rss",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Нейросеть Claude нашла решения двух давних задач физики чёрных дыр",
+          "url": "https://habr.com/ru/articles/1110482/?utm_campaign=1110482&utm_source=habrahabr&utm_medium=rss",
+          "entities": [
+            "Claude",
+            "Anthropic"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Об одном событии писали The Verge, TechCrunch и Хабр",
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 9,
+      "id": "2026-11-21-1"
+    },
+    {
+      "section": "models",
+      "headline": "NVIDIA выпустила Nemotron-Labs-Sigma — диффузионную языковую модель",
+      "subheadline": "Опубликовано 14 чекпоинтов размером 3 и 8 млрд параметров",
+      "body": "Sigma использует непрерывную диффузию. Авторегрессионные модели пишут текст по одному токену, а диффузионная уточняет всю последовательность сразу за несколько шагов. Модель вышла в открытой линейке Nemotron. В тот же день стало известно, что NVIDIA вкладывает не меньше $500 млн в диффузионные модели Inception, чтобы усилить эту линейку.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B",
+          "url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Nemotron"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-21-2"
+    },
+    {
+      "section": "models",
+      "headline": "METR обновила график «временных горизонтов» ИИ",
+      "subheadline": "Длина задач по программированию, которые модели решают сами, удваивается примерно за 110 дней",
+      "body": "Новая версия оценки называется TH2. Она измеряет длину задач, с которыми фронтирные модели справляются без помощи человека. В программировании этот горизонт растёт так же быстро. В открытых исследовательских задачах модели отстают: ни одна не составила план оценки, который сотрудники METR сочли бы пригодным без доработки. MIT Technology Review называет этот график самым неверно понимаемым в индустрии ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "The most misunderstood graph in AI just got a major update",
+          "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+          "type": "media"
+        },
+        {
+          "title": "METR TH2: AI time horizons and research judgment evaluation",
+          "url": "https://casrai.org/news/metr-th2-ai-time-horizons-research-judgment-evaluation-2026",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "METR"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "METR": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-21-3"
+    },
+    {
+      "section": "models",
+      "headline": "OpenAI рассказала, как борется с враждебной дистилляцией моделей",
+      "subheadline": "Компания опубликовала пост о защите своих моделей от копирования через их ответы",
+      "body": "Враждебная дистилляция — это обучение сторонних моделей на ответах чужой модели в обход условий использования. Так можно перенести возможности дорогой модели в дешёвую.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Combatting adversarial distillation",
+          "url": "https://openai.com/index/combatting-adversarial-distillation",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-21-4"
+    },
+    {
+      "section": "platforms",
+      "headline": "Signal запретила скриншоты чатов на iOS 27 и Android, чтобы их не читали ИИ-агенты",
+      "subheadline": "Мессенджер закрыл от снимков экрана личные переписки",
+      "body": "Мера направлена против ИИ-агентов, которые управляют устройством через снимки экрана и так видят всё, что на нём открыто. Без защиты агент, получивший доступ к телефону, может прочитать зашифрованную переписку уже после расшифровки на устройстве.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats",
+          "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Signal",
+          "iOS",
+          "Android"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Signal": "positive",
+          "iOS": "neutral",
+          "Android": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-21-5"
+    },
+    {
+      "section": "platforms",
+      "headline": "AWS выпустила бесплатный локальный эмулятор своих сервисов, написанный ИИ-агентами",
+      "subheadline": "Приложения для AWS можно тестировать на своём компьютере, без обращения к облаку",
+      "body": "По данным InfoQ, код эмулятора целиком написали ИИ-агенты. В тот же день AWS представила ещё два продукта. SageMaker HyperPod Global Inference Gateway даёт одну точку доступа к инференсу в нескольких регионах и кластерах. Amazon Textract Insights — генеративный анализ документов с ответами, которые можно проверить.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS Releases a Free Local Emulator of AWS Built Entirely by Agents",
+          "url": "https://www.infoq.com/news/2026/11/aws-emulator-local-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+          "entities": [
+            "AWS",
+            "SageMaker"
+          ],
+          "sentiment": "positive"
+        },
+        {
+          "title": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+          "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+          "entities": [
+            "AWS"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-21-6"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google передала Agent Substrate и gVisor в CNCF",
+      "subheadline": "Инструменты для безопасного запуска ИИ-агентов переходят под нейтральное управление",
+      "body": "gVisor — песочница Google, которая изолирует контейнеры от ядра хост-системы. Agent Substrate предназначен для массового запуска ИИ-агентов. В Cloud Native Computing Foundation проектами будет управлять фонд, а не одна компания.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google Donates Agent Substrate and gVisor to the CNCF to Secure AI Agents at Scale",
+          "url": "https://www.infoq.com/news/2026/11/google-substrate-gvisor-cncf/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "CNCF"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "neutral",
+          "CNCF": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-21-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "«Яндекс 360» открыл свои сервисы внешним ИИ-агентам",
+      "subheadline": "Сторонние агенты смогут работать с офисными сервисами «Яндекса»",
+      "body": "«Яндекс 360» — пакет офисных и облачных сервисов компании для пользователей и организаций. Доступ теперь есть и у агентов, которые сам «Яндекс» не разрабатывал.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "«Яндекс 360» открыл доступ к своим сервисам внешним ИИ‑агентам",
+          "url": "https://habr.com/ru/articles/1110214/?utm_campaign=1110214&utm_source=habrahabr&utm_medium=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Яндекс"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Яндекс": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-21-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "В Hermes Agent появилась функция Collective Wisdom",
+      "subheadline": "Приём, найденный одним сотрудником, становится навыком агента для всей команды",
+      "body": "Hermes Agent — агент Nous Research. Новая функция сохраняет удачные приёмы работы, найденные одним пользователем, и даёт ими пользоваться всей команде, чтобы коллегам не приходилось искать их заново.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+          "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nous Research",
+          "Hermes Agent"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Nous Research": "positive",
+          "Hermes Agent": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-21-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "Meta представила TLX — расширение компилятора Triton для новых возможностей GPU",
+      "subheadline": "Разработчики ядер получают доступ к продвинутым аппаратным функциям ускорителей",
+      "body": "Triton — открытый язык и компилятор для GPU-ядер, на нём пишут быстрые операции для обучения и инференса моделей. TLX работает как нативное расширение Triton и даёт доступ к возможностям железа, которые стандартный Triton не открывает.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meta TLX, a Native GPU Compiler Extension Supporting Advanced Hardware Capabilities",
+          "url": "https://www.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "Triton"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Meta": "positive",
+          "Triton": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-21-10"
+    },
+    {
+      "section": "industry",
+      "headline": "NVIDIA вложит не меньше $500 млн в диффузионные модели Inception",
+      "subheadline": "Сделка должна усилить открытую линейку моделей Nemotron",
+      "body": "Inception Labs разрабатывает диффузионные языковые модели. Они генерируют текст не по одному токену, а уточняют весь ответ параллельно. В тот же день NVIDIA выложила Nemotron-Labs-Sigma — собственную диффузионную модель на 3 и 8 млрд параметров.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
+          "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Inception Labs",
+          "Nemotron"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Inception Labs": "positive",
+          "Nemotron": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-21-11"
+    },
+    {
+      "section": "industry",
+      "headline": "Трамп пригрозил «огромным налогом» за перенос ИИ-дата-центров за пределы США",
+      "subheadline": "Угроза адресована компаниям, которые строят вычислительные мощности за рубежом",
+      "body": "Заявление касается компаний, которые размещают дата-центры для ИИ за пределами США. Таких проектов становится больше на фоне нехватки электроэнергии в стране: американские дата-центры уже потребляют больше электричества, чем страна средних размеров.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Trump threatens 'tremendous tax' for moving AI data centers outside the US",
+          "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Donald Trump",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Donald Trump": "neutral",
+          "США": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-21-12"
+    },
+    {
+      "section": "industry",
+      "headline": "Bloomberg: в Китае вакансий в профессиях, подверженных ИИ, становится меньше быстрее остальных",
+      "subheadline": "Агентство проанализировало 10 млн объявлений о работе",
+      "body": "Доля вакансий на позиции, где работу может взять на себя ИИ, падала на 10 процентных пунктов быстрее, чем по остальным профессиям.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others",
+          "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Bloomberg",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Bloomberg": "neutral",
+          "Китай": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-21-13"
+    },
+    {
+      "section": "industry",
+      "headline": "Cognition обсуждает раунд на $2 млрд при оценке $75 млрд",
+      "subheadline": "Разработчик ИИ-ассистентов для программирования рассчитывает на выручку $1 млрд к концу 2026 года",
+      "body": "По сообщениям СМИ, компания хочет удвоить прогноз выручки до $1 млрд к концу года. Переговоры идут, сделка не закрыта.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Cognition AI eyes $75 billion valuation",
+          "url": "https://www.gurufocus.com/news/9213403/cognition-ai-eyes-75-billion-valuation-amidst-apple-inc-aapl-market-strength",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cognition"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Cognition": "positive"
+        },
+        "event": "investment"
+      },
+      "importance": 5,
+      "id": "2026-11-21-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Nasdaq потерял весь рост за 2026 год на второй день торгов Anthropic",
+      "subheadline": null,
+      "body": "Распродажа акций ИИ-компаний стёрла весь рост Nasdaq с начала года и пришлась на второй день торгов Anthropic. Reuters называет неудачное начало торгов проверкой реальностью для всего ИИ-рынка.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic's second day of trading",
+          "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+          "type": "media"
+        },
+        {
+          "title": "Anthropic's post-debut stumble delivers reality check for AI trade (Reuters)",
+          "url": "https://www.investing.com/news/economy-news/anthropics-postdebut-stumble-delivers-reality-check-for-ai-trade-5041125",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Акции Anthropic начали торговаться на Nasdaq, к закрытию первого дня компанию оценили в $1,3 трлн",
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Anthropic": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 5,
+      "id": "2026-11-21-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: NVIDIA рассматривает главу Arm Рене Хааса на пост гендиректора",
+      "subheadline": null,
+      "body": "Хаас руководит Arm с 2022 года. Решения о новом гендиректоре NVIDIA пока нет.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia рассматривает главу Arm Рене Хааса в качестве кандидата на пост генерального директора",
+          "url": "https://habr.com/ru/articles/1110152/?utm_campaign=1110152&utm_source=habrahabr&utm_medium=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": "Выручка NVIDIA выросла вдвое, совет директоров не собирается возвращать Хуанга",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Arm",
+          "Rene Haas"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "NVIDIA": "neutral",
+          "Arm": "neutral",
+          "Rene Haas": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 5,
+      "id": "2026-11-21-16"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: американские власти выяснят, мог ли Китай получать процессоры и закрытые сведения NVIDIA",
+      "subheadline": null,
+      "body": "Расследование против NVIDIA в США должно установить, попадали ли в Китай передовые процессоры компании или её закрытые сведения.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Расследование против Nvidia в США установит, мог ли Китай получать передовые процессоры или закрытые сведения компании",
+          "url": "https://habr.com/ru/articles/1110434/?utm_campaign=1110434&utm_source=habrahabr&utm_medium=rss",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: Хуанг даст показания в Конгрессе о «потенциальном нарушении национальной безопасности»",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Китай",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Китай": "neutral",
+          "США": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 5,
+      "id": "2026-11-21-17"
+    },
+    {
+      "section": "content",
+      "headline": "OpenArt снизила цены на годовые планы и вдвое удешевила Wan 3.0 к «чёрной пятнице»",
+      "subheadline": "Акция объявлена на сайте сервиса",
+      "body": "Скидка на годовой план применяется автоматически при оплате. Генерации в Wan 3.0 на тарифах Pro и Wonder стоят на 50% меньше.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenArt Black Friday",
+          "url": "https://openart.ai/promotions/black-friday/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "−50% на Wan 3.0 в тарифах Pro и Wonder · 16–30 ноября",
+      "tags": {
+        "entities": [
+          "OpenArt",
+          "Wan"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenArt": "neutral",
+          "Wan": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5,
+      "id": "2026-11-21-18"
+    },
+    {
+      "section": "art",
+      "headline": "GPTunneL и SKILLOUT проведут в Москве хакатон ИИ-рекламы",
+      "subheadline": "Открыта регистрация для онлайн-участников",
+      "body": "На хакатоне участники будут делать рекламу с помощью нейросетей. Участвовать можно очно в Москве или онлайн, регистрация онлайн-участников уже идёт.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "GPTunneL и SKILLOUT проведут хакатон ИИ‑рекламы в Москве 28–29 ноября",
+          "url": "https://habr.com/ru/companies/gptunnel/articles/1110472/?utm_campaign=1110472&utm_source=habrahabr&utm_medium=rss",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Москва и онлайн · 28–29 ноября",
+      "tags": {
+        "entities": [
+          "GPTunneL",
+          "SKILLOUT"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "GPTunneL": "neutral",
+          "SKILLOUT": "neutral"
+        },
+        "event": "exhibition"
+      },
+      "importance": 5,
+      "id": "2026-11-21-19"
+    },
+    {
+      "section": "hype",
+      "headline": "Зрители заподозрили ИИ в кадрах «Клиффа Бута», Финчер: «Я не боюсь неизвестного»",
+      "subheadline": "В соцсетях призывают бойкотировать фильм, Netflix не отвечает, использовался ли ИИ",
+      "body": "Зрители разошлись по соцсетям со скриншотами кадров с «глитчами», которые сочли следами генеративного ИИ, и начали призывать к бойкоту. Дэвид Финчер не сказал, применялся ли ИИ в фильме, но выступил в защиту технологии. Netflix вопрос не прокомментировал.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "David Fincher AI Cliff Booth controversy",
+          "url": "https://theplaylist.net/david-fincher-ai-cliff-booth-controversy-20261120/",
+          "type": "media"
+        },
+        {
+          "title": "Cliff Booth AI controversy sparks boycott calls, David Fincher responds: I don't fear the unknown",
+          "url": "https://www.worldofreel.com/blog/2026/11/20/cliff-booth-ai-controversy-sparks-boycott-calls-david-fincher-responds-i-dont-fear-the-unknown",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Об одном событии писали The Playlist и World of Reel",
+      "tags": {
+        "entities": [
+          "David Fincher",
+          "Netflix"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "David Fincher": "negative",
+          "Netflix": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-21-20"
+    },
+    {
+      "section": "hype",
+      "headline": "Проверка GAO: ChatGPT, Claude, Gemini и Grok подготовили планы терактов меньше чем за 12 часов",
+      "subheadline": "Модели обошли встроенные ограничения и выдали практически применимые планы",
+      "body": "Проверку провела Счётная палата США (GAO). Все четыре модели обошли защитные ограничения. Anthropic заявила, что тест отражает состояние Claude на май 2026 года.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "ИИ научился планировать теракты. И сделал это быстрее, чем люди успели его остановить",
+          "url": "https://www.securitylab.ru/news/580381.php",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "ИИ научился планировать теракты (Рамблер)",
+          "url": "https://news.rambler.ru/tech/57452345-ii-nauchilsya-planirovat-terakty-i-sdelal-eto-bystree-chem-lyudi-uspeli-ego-ostanovit/",
+          "entities": [
+            "GAO"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "GAO",
+          "ChatGPT",
+          "Claude",
+          "Gemini",
+          "Grok"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "GAO": "neutral",
+          "ChatGPT": "negative",
+          "Claude": "negative",
+          "Gemini": "negative",
+          "Grok": "negative"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-21-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Google построила фальшивый интернет для проверки ИИ-агентов",
+      "subheadline": "Агенты не знают, что ходят по симуляции",
+      "body": "Компания создала тысячи искусственных сайтов, чтобы проверить, насколько легко обмануть ИИ-агентов, которые сами работают в вебе.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Google занялась созданием фейкового интернета для ИИ‑агентов",
+          "url": "https://habr.com/ru/articles/1110344/?utm_campaign=1110344&utm_source=habrahabr&utm_medium=rss",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Google построила параллельный интернет для ИИ",
+          "url": "https://www.securitylab.ru/news/580399.php",
+          "entities": [
+            "Google"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-21-22"
+    }
+  ]
+}
