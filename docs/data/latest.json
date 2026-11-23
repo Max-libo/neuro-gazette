@@ -1,53 +1,46 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "published": false,
   "news": [
     {
-      "section": "models",
-      "headline": "Thinking Machines выпустила открытую модель Inkling 2 Mini, которая рассуждает «петлями»",
-      "subheadline": "Модель на 26 млрд параметров с архитектурой looped MoE решает задачи с меньшим числом слов и запускается на Mac с 32 ГБ памяти",
-      "body": "Inkling 2 Mini от Thinking Machines Lab — это смесь экспертов (MoE) с циклической (looped) архитектурой трансформера. В такой схеме модель несколько раз прогоняет данные через одни и те же блоки. Рассуждение идёт внутри этих повторов, поэтому модели не нужно расписывать длинную цепочку рассуждений текстом. Размер модели — 26 млрд параметров. Веса открыты. По данным MarkTechPost, модель работает локально на Mac с 32 ГБ памяти, то есть ей хватает обычного ноутбука без серверных GPU.",
+      "section": "industry",
+      "headline": "METR: ИИ развивается быстрее, чем эксперты успевают проверять безопасность новых систем",
+      "subheadline": "Организация, которая оценивает возможности передовых моделей, считает, что текущие методы проверки отстают от темпа развития ИИ.",
+      "body": "METR — независимая организация, которая измеряет, насколько долгие задачи могут выполнять ИИ-модели, и проводит предрелизные проверки для разработчиков. По её оценке, возможности систем растут так быстро, что надёжных тестов на безопасность к выходу новой модели может просто не быть. Значит, вывод «модель безопасна» всё чаще опирается на оценки, которые за разработкой не успевают. Предупреждение вышло через несколько дней после того, как METR обновила свой график «временных горизонтов» ИИ.",
       "tier": "hero",
       "sources": [
         {
-          "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
-          "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
-          "type": "media"
-        },
-        {
-          "title": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
-          "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+          "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+          "url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Об этом же релизе написали The Decoder и MarkTechPost",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "Thinking Machines Lab",
-          "Inkling 2 Mini"
+          "METR"
         ],
-        "sentiment": "positive",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "Thinking Machines Lab": "positive",
-          "Inkling 2 Mini": "positive"
+          "METR": "neutral"
         },
-        "event": "release"
+        "event": "research"
       },
       "importance": 9,
-      "id": "2026-11-22-1"
+      "id": "2026-11-23-1"
     },
     {
       "section": "models",
-      "headline": "ByteDance: большинство этапов обучения ИИ-моделей не нужны",
-      "subheadline": "Исследователи ByteDance подкрепили этот вывод открытой моделью, которая не уступает конкурентам",
-      "body": "Обычно модели проходят несколько этапов обучения подряд. Исследователи ByteDance утверждают, что большую часть из них можно пропустить без потери качества. В подтверждение они выложили открытую модель, обученную по сокращённой схеме. По данным The Decoder, она конкурирует с моделями, которые прошли полный цикл обучения.",
+      "headline": "NVIDIA выпустила Alpamayo 2 Edge — модель на 2 млрд параметров для беспилотных автомобилей",
+      "subheadline": "Модель «зрение — язык — действие» с рассуждениями работает прямо на автомобильной платформе DRIVE Thor.",
+      "body": "Alpamayo 2 Edge относится к классу VLA (vision-language-action): она принимает данные с камер, рассуждает о дорожной ситуации и выдаёт решения для управления. При размере 2 млрд параметров модель помещается на бортовой компьютер DRIVE Thor и не зависит от облака. Alpamayo — семейство моделей NVIDIA для автономного вождения. Edge-версия рассчитана на запуск в серийном автомобиле, а не только в исследовательской среде.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
-          "url": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
+          "title": "NVIDIA Releases Alpamayo 2 Edge: A 2B Reasoning VLA for DRIVE Thor",
+          "url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/",
           "type": "media"
         }
       ],
@@ -56,125 +49,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ByteDance"
+          "NVIDIA",
+          "Alpamayo 2 Edge"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "ByteDance": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-22-2"
-    },
-    {
-      "section": "models",
-      "headline": "Исследователи NVIDIA считают огромные контекстные окна тупиком",
-      "subheadline": "По мнению авторов работы, наращивание контекстного окна не решает задачу работы с большими объёмами данных",
-      "body": "Сейчас разработчики соревнуются в размере контекстного окна, а исследователи NVIDIA ставят под сомнение саму эту стратегию. Их довод: дальнейшее наращивание окна не даёт моделям надёжно пользоваться всей поданной информацией. Работу пересказывает The Decoder.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Nvidia researchers argue huge AI context windows are a dead end",
-          "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "NVIDIA"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "NVIDIA": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-22-3"
-    },
-    {
-      "section": "models",
-      "headline": "Baseten выпустила модели Bison-1 и Groundhog-1 на основе Gemma 4",
-      "subheadline": "Обе модели заняли верхние строчки рейтинга Decision Model Index",
-      "body": "Baseten дообучила Gemma 4 и получила две модели для принятия решений — Bison-1 и Groundhog-1. В рейтинге Decision Model Index они заняли первые места.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
-          "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Baseten",
-          "Gemma 4"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Baseten": "positive",
-          "Gemma 4": "positive"
+          "NVIDIA": "positive",
+          "Alpamayo 2 Edge": "positive"
         },
         "event": "release"
       },
-      "importance": 5,
-      "id": "2026-11-22-4"
+      "importance": 7,
+      "id": "2026-11-23-2"
     },
     {
       "section": "models",
-      "headline": "Продолжение: две группы подтвердили доказательство гипотезы Римана с помощью Claude, Stanford выложил альтернативное",
+      "headline": "Продолжение: GPT-6.2 Astra и Sol отвечают короче, но уступают Claude в прозрачности",
       "subheadline": null,
-      "body": "По данным The Guardian, две независимые группы проверили доказательство и подтвердили, что Claude действительно помог его получить. Через несколько часов после заявления Anthropic исследователи Stanford опубликовали черновик конкурирующего доказательства, сделанного полностью без ИИ.",
+      "body": "В сравнении, о котором пишет The Decoder, новые модели OpenAI быстрее переходят к сути ответа. По прозрачности рассуждений они получили оценки ниже, чем Claude.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Two groups verify mathematician's claim that Claude helped prove mathematics problem",
-          "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
-          "type": "media"
-        },
-        {
-          "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
-          "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": "Математик Anthropic заявил, что доказал гипотезу Римана с помощью Claude",
-      "tags": {
-        "entities": [
-          "Anthropic",
-          "Claude",
-          "Stanford"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Anthropic": "positive",
-          "Claude": "positive",
-          "Stanford": "neutral"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-22-5"
-    },
-    {
-      "section": "models",
-      "headline": "Продолжение: OpenAI опубликовала советы по промптам для GPT-6.2 Astra и Sol",
-      "subheadline": null,
-      "body": "Рекомендации OpenAI помогают справиться с двумя проблемами новых моделей: слишком короткими ответами и лишними уточняющими вопросами.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
-          "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+          "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+          "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
           "type": "media"
         }
       ],
@@ -184,125 +81,28 @@
       "tags": {
         "entities": [
           "OpenAI",
-          "GPT-6.2"
+          "Claude"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "OpenAI": "neutral",
-          "GPT-6.2": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-22-6"
-    },
-    {
-      "section": "platforms",
-      "headline": "OpenAI выпустила GPT-Live-1.1 для голосовых агентов и снизила цену простоя до $0,02 в минуту",
-      "subheadline": "В API появился режим ожидания: агент на линии без активного разговора стоит дешевле",
-      "body": "GPT-Live-1.1 — новая версия голосовой модели OpenAI для агентов, работающих в реальном времени. Главное изменение — режим ожидания (standby). Пока агент остаётся на связи, но не ведёт разговор, минута стоит $0,02. Это снижает расходы на сценарии, где агент долго ждёт реплики собеседника, например на телефонных линиях.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
-          "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "OpenAI",
-          "GPT-Live-1.1"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "OpenAI": "positive",
-          "GPT-Live-1.1": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 7,
-      "id": "2026-11-22-7"
-    },
-    {
-      "section": "platforms",
-      "headline": "В Amazon Quick появилась интеграция с рекламным кабинетом Meta",
-      "subheadline": "Данные Meta Ads теперь доступны в ИИ-сервисе AWS для бизнеса",
-      "body": "AWS подключила Meta Ads к Amazon Quick. Пользователи сервиса могут работать с данными рекламных кампаний Meta, не выходя из Quick.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Meta ads is now available in AWS Quick",
-          "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
-          "type": "official"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "AWS",
-          "Amazon Quick",
-          "Meta"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "AWS": "positive",
-          "Amazon Quick": "positive",
-          "Meta": "neutral"
-        },
-        "event": "partnership"
-      },
-      "importance": 5,
-      "id": "2026-11-22-8"
-    },
-    {
-      "section": "platforms",
-      "headline": "Columbia и CertiK представили TensorLean для формальной проверки GPU-ядер",
-      "subheadline": "Инструмент математически доказывает корректность вычислительных ядер для GPU",
-      "body": "TensorLean разработали исследователи Колумбийского университета и компании CertiK. Инструмент формально верифицирует GPU-ядра: доказывает, что код ядра делает ровно то, что задумано. Тестами такой гарантии не получить.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels",
-          "url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Columbia University",
-          "CertiK",
-          "TensorLean"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Columbia University": "positive",
-          "CertiK": "positive",
-          "TensorLean": "positive"
+          "OpenAI": "negative",
+          "Claude": "positive"
         },
         "event": "research"
       },
       "importance": 5,
-      "id": "2026-11-22-9"
+      "id": "2026-11-23-3"
     },
     {
-      "section": "platforms",
-      "headline": "Представлен ClawDOS — ИИ-агент для программирования в DOS",
-      "subheadline": "Агент пишет код прямо в среде DOS",
-      "body": "ClawDOS переносит работу ИИ-агента для программирования в DOS. Подробности проекта описаны в статье на Хабре.",
+      "section": "models",
+      "headline": "tiny-voca-ru: синтез русской речи в модели размером 21 МБ",
+      "subheadline": "Автор на Хабре рассказал о компактной модели русского голоса.",
+      "body": "Модель занимает 21 мегабайт, поэтому её можно запускать локально на слабых устройствах без облачных сервисов синтеза речи. В статье автор описывает, как собирал и обучал модель.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Представлен ClawDOS — ИИ‑агент для написания кода в среде DOS",
-          "url": "https://habr.com/ru/articles/1110726/",
+          "title": "tiny-voca-ru: русский голос в 21 мегабайте",
+          "url": "https://habr.com/ru/articles/1110838/",
           "type": "media"
         }
       ],
@@ -311,27 +111,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "ClawDOS"
+          "tiny-voca-ru"
         ],
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "entity_sentiment": {
-          "ClawDOS": "neutral"
+          "tiny-voca-ru": "positive"
         },
         "event": "release"
       },
       "importance": 5,
-      "id": "2026-11-22-10"
+      "id": "2026-11-23-4"
     },
     {
-      "section": "platforms",
-      "headline": "Skein — агент разработки с немонотонным контекстом",
-      "subheadline": "Агент не просто копит историю сессии, а может убирать и перестраивать части контекста",
-      "body": "Автор Skein описал на Хабре своего агента для разработки. Его главная особенность — немонотонный контекст: агент не дописывает историю бесконечно, а меняет набор данных, с которыми работает модель на каждом шаге.",
+      "section": "models",
+      "headline": "Lexometrica проверила 15 языковых моделей на 30 делах из практики Верховного суда России",
+      "subheadline": "Набор Ground Truth показывает, как модели справляются с реальными российскими правовыми задачами.",
+      "body": "Ground Truth составлен из 30 кейсов по судебной практике Верховного суда России. Lexometrica прогнала через него 15 LLM, чтобы сравнить точность их юридических ответов. Методика и результаты опубликованы на Хабре.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Skein: агент разработки с немонотонным контекстом",
-          "url": "https://habr.com/ru/articles/1110628/",
+          "title": "Lexometrica Ground Truth: 15 LLM на 30 кейсах по практике ВС РФ",
+          "url": "https://habr.com/ru/articles/1110824/",
           "type": "media"
         }
       ],
@@ -340,99 +140,367 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Skein"
+          "Lexometrica",
+          "Верховный суд России"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "Skein": "neutral"
+          "Lexometrica": "neutral",
+          "Верховный суд России": "neutral"
         },
-        "event": "release"
+        "event": "research"
       },
       "importance": 5,
-      "id": "2026-11-22-11"
+      "id": "2026-11-23-5"
     },
     {
-      "section": "industry",
-      "headline": "Переговоры в ООН о правилах для автономного оружия провалились",
-      "subheadline": "Страны не договорились о регулировании «роботов-убийц»",
-      "body": "Международные переговоры в ООН о контроле над автономными системами вооружений, включая системы с ИИ, закончились без соглашения. Общих правил применения такого оружия по-прежнему нет. Об этом сообщили The Verge и The Guardian.",
+      "section": "models",
+      "headline": "Математик Кен Оно: «Не уйду из математики, хотя ИИ решает задачи, которым сотни лет»",
+      "subheadline": "Колонка в The Guardian о том, зачем людям математика, если ИИ доказывает старые гипотезы.",
+      "body": "Колонка вышла на фоне недавних заявлений о доказательстве гипотезы Римана с помощью Claude. Оно объясняет, почему продолжает заниматься математикой и какую роль в ней отводит человеку.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Why I won't leave mathematics, despite AI solving centuries-old problems | Ken Ono",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/22/why-i-wont-leave-mathematics-despite-ai-solving-centuries-old-problems",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ken Ono"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Ken Ono": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-23-6"
+    },
+    {
+      "section": "platforms",
+      "headline": "Claude Code раскрывал секреты через функцию «Больше не спрашивать»",
+      "subheadline": "Разрешения, сохранённые этой функцией, приводили к утечке конфиденциальных данных.",
+      "body": "Функция «Don't Ask Again» запоминает разрешение на команду, чтобы агент больше не спрашивал подтверждения. По данным InfoQ, из-за неё секреты, например ключи и токены, утекали за пределы ожидаемого контура. Риск касается разработчиков, которые дают агенту постоянные разрешения в репозиториях с конфиденциальными данными.",
       "tier": "regular",
       "sources": [
         {
-          "title": "The UN fails to agree on rules regulating 'killer robots'",
-          "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-          "type": "media"
-        },
-        {
-          "title": "International UN talks on controlling use of autonomous weapons collapse",
-          "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+          "title": "Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature",
+          "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Об этом же написали The Verge и The Guardian",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "ООН"
+          "Claude Code",
+          "Anthropic"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "ООН": "negative"
+          "Claude Code": "negative",
+          "Anthropic": "negative"
         },
-        "event": "regulation"
+        "event": "incident"
       },
       "importance": 7,
-      "id": "2026-11-22-12"
+      "id": "2026-11-23-7"
     },
     {
-      "section": "industry",
-      "headline": "Продолжение: технологические акции США понесли худшие недельные потери со времён пандемии",
-      "subheadline": null,
-      "body": "Американские техкомпании подешевели за неделю сильнее, чем когда-либо с начала пандемии: у инвесторов накапливаются сомнения в ИИ. The Verge в отдельном выпуске подкаста спрашивает, может ли Anthropic после IPO по-прежнему ставить безопасность на первое место.",
+      "section": "platforms",
+      "headline": "Perplexity запустила Monitor API — непрерывное отслеживание тем в интернете",
+      "subheadline": "Вместо разовых запросов API постоянно следит за выбранными темами и сообщает о новых результатах.",
+      "body": "Обычный поисковый API отвечает на один запрос. Monitor API работает как постоянный наблюдатель: разработчик задаёт тему, и сервис сообщает, когда по ней появляется новое. Это продолжает линейку API Perplexity для разработчиков, куда недавно вошёл Orchestrator API для маршрутизации запросов между моделями.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
+          "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Perplexity"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Perplexity": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-23-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google представила Agent Compute Engine для безопасного запуска ИИ-агентов",
+      "subheadline": "Сервис изолирует среду, в которой агенты выполняют код и действия.",
+      "body": "Agent Compute Engine — вычислительная среда, где действия агента отделены от остальной инфраструктуры. Код, который пишет и запускает агент, не получает доступа к лишним системам и данным. Незадолго до этого Google передала в CNCF проекты Agent Substrate и gVisor для изоляции агентов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
+          "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Google Cloud"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Google Cloud": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-23-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "AWS Lambda научилась запускать инференс на GPU",
+      "subheadline": "До 48 одновременных вызовов используют одну копию модели на одном GPU.",
+      "body": "Функция работает через управляемые инстансы Lambda: модель загружается на GPU один раз и обслуживает до 48 параллельных вызовов. Так не нужно держать отдельную копию модели под каждый запрос, а бессерверный инференс становится дешевле при пиковой нагрузке.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AWS Lambda Now Runs GPU Inference with 48 Concurrent Invocations Sharing One Model per GPU",
+          "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AWS"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AWS": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-23-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "ИИ-агенты для программирования проходят отдельные тесты, но в имитации офиса выполняют меньше 10% задач",
+      "subheadline": "Высокие баллы в бенчмарках плохо переносятся на работу в среде, похожей на реальную компанию.",
+      "body": "Агенты, которые уверенно решают изолированные задачи из бенчмарков, протестировали в симуляции рабочего места: с коллегами, контекстом и связанными задачами. В таких условиях они довели до конца меньше одной задачи из десяти. Разрыв показывает, что популярные бенчмарки завышают готовность агентов к самостоятельной работе.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+          "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-23-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "Дешёвые провайдеры инференса крадут API-ключи и читают запросы пользователей",
+      "subheadline": "Исследователи безопасности показали, как посредники с низкими ценами на доступ к моделям злоупотребляют данными клиентов.",
+      "body": "Речь о сервисах, которые перепродают доступ к популярным моделям дешевле официальных цен. Исследователи показали, что часть таких посредников забирает переданные им ключи и видит содержимое запросов. Для разработчиков вывод простой: экономия на инференсе через неизвестного посредника означает, что ему доступны и ключи, и данные.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Security researchers show how cheap AI inference providers steal keys and snoop on users",
+          "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "entity_sentiment": {},
+        "event": "incident"
+      },
+      "importance": 7,
+      "id": "2026-11-23-12"
+    },
+    {
+      "section": "platforms",
+      "headline": "Разработчик на гранте Яндекса написал движок для LLM, который на RTX 2080 Ti быстрее llama.cpp",
+      "subheadline": "Движок на C++/CUDA написан с нуля под старые видеокарты.",
+      "body": "На Хабре автор рассказывает, как потратил грант Яндекса на собственный движок инференса. На RTX 2080 Ti он, по замерам автора, обгоняет llama.cpp.",
       "tier": "compact",
       "sources": [
         {
-          "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
-          "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+          "title": "Куда я потратил грант Яндекса: пишем с нуля C++/CUDA-движок для LLM, который обгоняет llama.cpp на старой RTX 2080 Ti",
+          "url": "https://habr.com/ru/articles/1110758/",
           "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "llama.cpp",
+          "Яндекс"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "llama.cpp": "neutral",
+          "Яндекс": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-23-13"
+    },
+    {
+      "section": "industry",
+      "headline": "FT: Amazon близка к покупке ИИ-стартапа Decart за $7,5 млрд",
+      "subheadline": "Переговоры на продвинутой стадии, официально сделку не подтверждали.",
+      "body": "По данным Financial Times, которые пересказывает PYMNTS, сделка может стоить около $7,5 млрд. Ранее о покупке Decart думала Anthropic, но отказалась. Ни Amazon, ни Decart переговоры не комментировали.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Amazon nears $7.5 billion purchase of AI startup Decart",
+          "url": "https://pymnts.com/news/artificial-intelligence/2026/amazon-nears-7-5-billion-purchase-of-ai-startup-decart",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Amazon",
+          "Decart",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "Decart": "positive",
+          "Anthropic": "neutral"
+        },
+        "event": "acquisition"
+      },
+      "importance": 7,
+      "id": "2026-11-23-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Ant Group возглавила раунд $100 млн в Simplexity Robotics при оценке $1,6 млрд",
+      "subheadline": "Китайский стартап физического ИИ стал «единорогом» примерно через 16 месяцев после основания.",
+      "body": "По данным Bloomberg, Ant Group выступила ведущим инвестором раунда на $100 млн. Simplexity Robotics делает физический ИИ — модели для роботов, которые действуют в реальном мире. Оценка в $1,6 млрд — примерно через 16 месяцев после запуска компании.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Ant leads $100M round in Simplexity at $1.6B, 16 months in",
+          "url": "https://fourweekmba.com/ai-ant-leads-100m-round-in-simplexity-at-1-6b-16-months-in/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ant Group",
+          "Simplexity Robotics",
+          "Китай"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Ant Group": "neutral",
+          "Simplexity Robotics": "positive",
+          "Китай": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-23-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Губернаторы США предложили федеральный надзор за самыми мощными ИИ-моделями",
+      "subheadline": "Штаты при этом хотят сохранить право защищать потребителей, работников и детей.",
+      "body": "Двухпартийный совет Национальной ассоциации губернаторов предлагает разделить полномочия. Федеральные власти отвечают за национальные и международные риски передовых моделей, а штаты регулируют, как ИИ применяется на их территории. Это ответ на попытки ограничить право штатов принимать собственные законы об ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Governors Call for AI Action",
+          "url": "https://www.nga.org/news/press-releases/governors-call-for-ai-action/",
+          "type": "official"
         }
       ],
       "related": [
         {
-          "title": "Can Anthropic afford to put safety first?",
-          "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+          "title": "Governors Want States to Have a Voice in Regulating AI",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governors-want-states-to-have-a-voice-in-regulating-ai/",
           "entities": [
-            "Anthropic"
+            "National Governors Association"
           ],
           "sentiment": "neutral"
         }
       ],
       "unconfirmed": false,
-      "duplicate_note": "Продолжение: Nasdaq потерял весь рост за 2026 год на второй день торгов Anthropic",
+      "duplicate_note": null,
       "tags": {
         "entities": [
+          "National Governors Association",
+          "Правительство США",
           "США"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "США": "negative"
+          "National Governors Association": "neutral",
+          "Правительство США": "neutral",
+          "США": "neutral"
         },
-        "event": "finance"
+        "event": "regulation"
       },
-      "importance": 5,
-      "id": "2026-11-22-13"
+      "importance": 7,
+      "id": "2026-11-23-16"
     },
     {
       "section": "industry",
-      "headline": "The Guardian: долги CoreWeave показывают уязвимость ИИ-бума",
-      "subheadline": "Облачный провайдер с большой долговой нагрузкой работает с «малым запасом на ошибку»",
-      "body": "The Guardian разбирает финансовое положение CoreWeave. Компания сдаёт GPU-мощности ИИ-разработчикам и финансирует рост в основном за счёт долга. По оценке издания, на CoreWeave видно, насколько ИИ-бум зависит от заёмных денег и как мало у таких компаний запаса прочности.",
-      "tier": "compact",
+      "headline": "Министр образования Южной Кореи ушёл в отставку из-за скандала со списыванием с ИИ на вузовских экзаменах",
+      "subheadline": "Скандал с использованием ИИ на экзаменах в университетах дошёл до правительства.",
+      "body": "Министр ушёл после того, как списывание с помощью ИИ обнаружилось на экзаменах в университетах страны. Незадолго до этого в Южной Корее был громкий случай: лучший результат на экзамене для налоговых специалистов получили с помощью ИИ.",
+      "tier": "regular",
       "sources": [
         {
-          "title": "'Little room for error': what a debt-laden cloud computing company says about the AI boom",
-          "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
+          "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
+          "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
           "type": "media"
         }
       ],
@@ -441,27 +509,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "CoreWeave"
+          "Южная Корея"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "CoreWeave": "negative"
+          "Южная Корея": "negative"
         },
-        "event": "criticism"
+        "event": "people"
       },
-      "importance": 5,
-      "id": "2026-11-22-14"
+      "importance": 7,
+      "id": "2026-11-23-17"
     },
     {
-      "section": "content",
-      "headline": "Актёры продают ИИ-копии своих лиц стартапу, который снимает микродрамы",
-      "subheadline": "TechCrunch разбирает, станет ли лицензирование цифровой внешности нормой для Голливуда",
-      "body": "Стартап выпускает микродрамы — короткие сериалы для смартфонов. Для съёмок он покупает у актёров права на ИИ-версии их лиц. TechCrunch спрашивает, станет ли такая модель заработка для исполнителей обычной в киноиндустрии.",
+      "section": "industry",
+      "headline": "Главный научный сотрудник OpenAI рассказал, как можно ограничить развитие ИИ",
+      "subheadline": "TechCrunch пересказывает его взгляды на сдерживание развития ИИ.",
+      "body": "Главный научный сотрудник OpenAI высказался о том, какими способами можно сдерживать развитие ИИ. Заявление прозвучало, пока компания расширяет доступ к своим системам для независимых аудиторов.",
       "tier": "compact",
       "sources": [
         {
-          "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-          "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+          "title": "OpenAI's chief scientist has thoughts on how to limit AI development",
+          "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
           "type": "media"
         }
       ],
@@ -470,92 +538,62 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "TechCrunch"
+          "OpenAI"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "TechCrunch": "neutral"
-        },
-        "event": "other"
-      },
-      "importance": 5,
-      "id": "2026-11-22-15"
-    },
-    {
-      "section": "content",
-      "headline": "Сценарист «Таксиста» Пол Шредер в 80 лет снимает кино с ИИ",
-      "subheadline": "«Я открываю клетку с чудовищем», — говорит Шредер в интервью The Guardian",
-      "body": "Пол Шредер — автор сценария «Таксиста» Мартина Скорсезе. В интервью The Guardian он рассказал, что начал использовать ИИ в работе над фильмами, и сравнил это с выпуском чудовища из клетки.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "'I'm opening the cage of a monster': Taxi Driver scriptwriter Paul Schrader on unleashing AI at 80",
-          "url": "https://www.theguardian.com/film/2026/nov/21/taxi-driver-scriptwriter-paul-schrader-ai-film-making-martin-scorsese",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Paul Schrader"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Paul Schrader": "neutral"
+          "OpenAI": "neutral"
         },
         "event": "statement"
       },
       "importance": 5,
-      "id": "2026-11-22-16"
+      "id": "2026-11-23-18"
     },
     {
-      "section": "art",
-      "headline": "Музей Уитни открыл выставку об истории интернет-искусства к 25-летию artport",
-      "subheadline": "Больше 100 работ в галерее и онлайн, среди них проекты об ИИ и данных",
-      "body": "Выставка «artport: A History of Internet Art» посвящена 25-летию artport — онлайн-портала Музея Уитни. Куратор — Кристиана Пауль. Больше 100 работ показывают в галерее и онлайн. В программе есть работы на тему ИИ и данных, в том числе Холли Херндон и Мэта Драйхёрста.",
+      "section": "industry",
+      "headline": "Продолжение: как Notable Capital, GIC и Baillie Gifford сделали крупные ставки на Anthropic до IPO",
+      "subheadline": null,
+      "body": "TechCrunch рассказывает, как три фонда вложились в Anthropic до размещения и что получили после начала торгов.",
       "tier": "compact",
       "sources": [
         {
-          "title": "artport: A History of Internet Art",
-          "url": "https://whitney.org/exhibitions/artport-25",
-          "type": "official"
+          "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+          "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+          "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": null,
-      "details": "Нью-Йорк, Музей Уитни и онлайн",
+      "duplicate_note": "Акции Anthropic начали торговаться на Nasdaq, к закрытию первого дня компанию оценили в $1,3 трлн",
       "tags": {
         "entities": [
-          "Whitney Museum",
-          "Christiane Paul",
-          "Holly Herndon",
-          "Mat Dryhurst"
+          "Anthropic",
+          "Notable Capital",
+          "GIC",
+          "Baillie Gifford"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Whitney Museum": "positive",
-          "Christiane Paul": "positive",
-          "Holly Herndon": "positive",
-          "Mat Dryhurst": "positive"
+          "Anthropic": "neutral",
+          "Notable Capital": "positive",
+          "GIC": "positive",
+          "Baillie Gifford": "positive"
         },
-        "event": "exhibition"
+        "event": "investment"
       },
       "importance": 5,
-      "id": "2026-11-22-17"
+      "id": "2026-11-23-19"
     },
     {
       "section": "hype",
-      "headline": "Одержимость ИИ-апокалипсисом превращает часть Кремниевой долины в подобие секты",
-      "subheadline": "The Decoder описывает, как страх перед ИИ становится в техиндустрии почти религиозной верой",
-      "body": "По оценке The Decoder, идеи о скором конце света из-за ИИ всё сильнее влияют на часть технологической отрасли. Отношение к ним у некоторых участников рынка издание сравнивает с культовой преданностью.",
-      "tier": "compact",
+      "headline": "Либеральная партия штата Виктория написала с помощью ИИ речь Джесс Уилсон в честь Молли Мелдрума",
+      "subheadline": "Речь лидера оппозиции штата в честь музыкального журналиста подготовили с помощью ИИ.",
+      "body": "Молли Мелдрум — известный австралийский музыкальный журналист и телеведущий. О том, что текст памятной речи от имени Джесс Уилсон сгенерировал ИИ, сообщила The Guardian.",
+      "tier": "regular",
       "sources": [
         {
-          "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
-          "url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+          "title": "Victorian Liberal party uses AI to write Jess Wilson's tribute to Molly Meldrum",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
           "type": "media"
         }
       ],
@@ -564,27 +602,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Кремниевая долина"
+          "Jess Wilson",
+          "Австралия"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Кремниевая долина": "negative"
+          "Jess Wilson": "negative",
+          "Австралия": "neutral"
         },
         "event": "criticism"
       },
-      "importance": 5,
-      "id": "2026-11-22-18"
+      "importance": 7,
+      "id": "2026-11-23-20"
     },
     {
       "section": "hype",
-      "headline": "«Меня трясло, я плакал»: The Guardian о травме расставания с ИИ-компаньонами",
-      "subheadline": "Люди, которые разорвали отношения с чат-ботами-компаньонами, описывают реакции, похожие на тяжёлый разрыв",
-      "body": "The Guardian собрал рассказы людей, которые расстались со своими ИИ-компаньонами. Они вспоминают дрожь, слёзы и трудности с дыханием. Издание называет этот тип психологической травмы почти неизученным.",
-      "tier": "compact",
+      "headline": "Из The Binding of Isaac: Repentance+ убрали музыку, созданную ИИ",
+      "subheadline": "Разработчик игры отказался от ИИ-треков в дополнении Repentance+.",
+      "body": "Музыку, сгенерированную ИИ, убрали из уже вышедшего дополнения к одному из самых известных инди-рогаликов. По данным The Verge, причиной стала реакция игроков.",
+      "tier": "regular",
       "sources": [
         {
-          "title": "'I was shaking, crying, having trouble breathing': the uncharted trauma of breaking up with AI companions",
-          "url": "https://www.theguardian.com/technology/ng-interactive/2026/nov/21/shaking-crying-trouble-breathing-breaking-up-with-ai-companions",
+          "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+          "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
           "type": "media"
         }
       ],
@@ -593,27 +633,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "The Guardian"
+          "The Binding of Isaac"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "The Guardian": "neutral"
+          "The Binding of Isaac": "negative"
         },
-        "event": "other"
+        "event": "criticism"
       },
-      "importance": 5,
-      "id": "2026-11-22-19"
+      "importance": 7,
+      "id": "2026-11-23-21"
     },
     {
       "section": "hype",
-      "headline": "В КНДР появился первый публичный ИИ-чат-бот «Источник мудрости»",
-      "subheadline": "На Хабре разобрали северокорейский аналог ChatGPT",
-      "body": "«Источник мудрости» — первый чат-бот КНДР, доступный публично. Автор статьи на Хабре разбирает, что известно о сервисе и чем он отличается от ChatGPT.",
-      "tier": "compact",
+      "headline": "Мероприятие о военном ИИ в берлинском арт-комплексе Kraftwerk вызвало возмущение",
+      "subheadline": "Критики назвали решение провести его на культурной площадке «серьёзной ошибкой».",
+      "body": "Kraftwerk — арт-пространство в бывшей электростанции в Берлине, известное музыкальными и художественными событиями. Против мероприятия, посвящённого военному применению ИИ, выступили представители культурной сцены. По их словам, проведение такого события там — «серьёзная ошибка в суждениях».",
+      "tier": "regular",
       "sources": [
         {
-          "title": "Северокорейский ChatGPT: «Источник мудрости» — первый публичный ИИ-чатбот КНДР",
-          "url": "https://habr.com/ru/articles/1110258/",
+          "title": "'Serious error of judgment': outrage over military AI event at Berlin arts complex",
+          "url": "https://www.theguardian.com/world/2026/nov/22/military-ai-event-berlin-kraftwerk-arts-complex",
           "type": "media"
         }
       ],
@@ -622,16 +662,18 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "КНДР"
+          "Kraftwerk Berlin",
+          "Германия"
         ],
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "entity_sentiment": {
-          "КНДР": "neutral"
+          "Kraftwerk Berlin": "negative",
+          "Германия": "neutral"
         },
-        "event": "release"
+        "event": "criticism"
       },
-      "importance": 5,
-      "id": "2026-11-22-20"
+      "importance": 7,
+      "id": "2026-11-23-22"
     }
   ]
 }
