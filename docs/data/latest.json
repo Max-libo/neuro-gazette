@@ -1,198 +1,95 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "published": false,
   "news": [
     {
-      "section": "industry",
-      "headline": "METR: ИИ развивается быстрее, чем эксперты успевают проверять безопасность новых систем",
-      "subheadline": "Организация, которая оценивает возможности передовых моделей, считает, что текущие методы проверки отстают от темпа развития ИИ.",
-      "body": "METR — независимая организация, которая измеряет, насколько долгие задачи могут выполнять ИИ-модели, и проводит предрелизные проверки для разработчиков. По её оценке, возможности систем растут так быстро, что надёжных тестов на безопасность к выходу новой модели может просто не быть. Значит, вывод «модель безопасна» всё чаще опирается на оценки, которые за разработкой не успевают. Предупреждение вышло через несколько дней после того, как METR обновила свой график «временных горизонтов» ИИ.",
+      "section": "models",
+      "headline": "Z.ai выпустила GLM-5.4 — флагманскую модель на 750 млрд параметров с зацикленной архитектурой",
+      "subheadline": "Новая модель прогоняет 28 средних слоёв трансформера дважды вместо того, чтобы наращивать их число.",
+      "body": "GLM-5.4 — новый флагман китайской Z.ai (Zhipu AI), в ней 750 млрд параметров. Модель построена как loop transformer: блок из 28 средних слоёв при обработке запроса проходит дважды, так что модель получает дополнительную глубину вычислений без новых весов. По оценке The Decoder, Z.ai идёт вслед за OpenAI, которая уже применяет этот подход. В последние недели к зацикленным архитектурам обратились и другие лаборатории: Thinking Machines выпустила модель Inkling 2 Mini, которая рассуждает «петлями». В разборе Xenospectrum архитектуру GLM-5.4 сравнивают с другими вариантами зацикленных трансформеров.",
       "tier": "hero",
       "sources": [
         {
-          "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
-          "url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+          "title": "Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice",
+          "url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/",
           "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "METR"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "METR": "neutral"
         },
-        "event": "research"
-      },
-      "importance": 9,
-      "id": "2026-11-23-1"
-    },
-    {
-      "section": "models",
-      "headline": "NVIDIA выпустила Alpamayo 2 Edge — модель на 2 млрд параметров для беспилотных автомобилей",
-      "subheadline": "Модель «зрение — язык — действие» с рассуждениями работает прямо на автомобильной платформе DRIVE Thor.",
-      "body": "Alpamayo 2 Edge относится к классу VLA (vision-language-action): она принимает данные с камер, рассуждает о дорожной ситуации и выдаёт решения для управления. При размере 2 млрд параметров модель помещается на бортовой компьютер DRIVE Thor и не зависит от облака. Alpamayo — семейство моделей NVIDIA для автономного вождения. Edge-версия рассчитана на запуск в серийном автомобиле, а не только в исследовательской среде.",
-      "tier": "regular",
-      "sources": [
         {
-          "title": "NVIDIA Releases Alpamayo 2 Edge: A 2B Reasoning VLA for DRIVE Thor",
-          "url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/",
+          "title": "Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model",
+          "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
           "type": "media"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "title": "GLM-5.4: Z.ai представила Loop Transformer с повтором 28 средних слоёв",
+          "url": "https://xenospectrum.com/en/glm-5-4-loop-transformer-comparison",
+          "entities": [
+            "Zhipu AI",
+            "GLM-5.4"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
       "unconfirmed": false,
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "NVIDIA",
-          "Alpamayo 2 Edge"
+          "Zhipu AI",
+          "GLM-5.4"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "NVIDIA": "positive",
-          "Alpamayo 2 Edge": "positive"
+          "Zhipu AI": "positive",
+          "GLM-5.4": "positive"
         },
         "event": "release"
       },
-      "importance": 7,
-      "id": "2026-11-23-2"
+      "importance": 9,
+      "id": "2026-11-24-1"
     },
     {
       "section": "models",
-      "headline": "Продолжение: GPT-6.2 Astra и Sol отвечают короче, но уступают Claude в прозрачности",
-      "subheadline": null,
-      "body": "В сравнении, о котором пишет The Decoder, новые модели OpenAI быстрее переходят к сути ответа. По прозрачности рассуждений они получили оценки ниже, чем Claude.",
-      "tier": "compact",
+      "headline": "GPT-6.2 Astra доказала математическую теорему, с которой не справлялись другие модели",
+      "subheadline": "По данным The Decoder, модель не только решила задачу, но и сама придумала стратегию доказательства.",
+      "body": "По данным The Decoder, до GPT-6.2 Astra эту теорему не доказала ни одна ИИ-модель. Astra не стала применять готовую технику: она сама придумала стратегию доказательства. OpenAI выпустила GPT-6.2 Astra и GPT-6.2 Sol на прошлой неделе. Результат появился на фоне спора о доказательстве гипотезы Римана с помощью Claude.",
+      "tier": "regular",
       "sources": [
         {
-          "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
-          "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+          "title": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
+          "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "OpenAI выпустила GPT-6.2 Astra и GPT-6.2 Sol",
+      "duplicate_note": null,
       "tags": {
         "entities": [
           "OpenAI",
-          "Claude"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "OpenAI": "negative",
-          "Claude": "positive"
-        },
-        "event": "research"
-      },
-      "importance": 5,
-      "id": "2026-11-23-3"
-    },
-    {
-      "section": "models",
-      "headline": "tiny-voca-ru: синтез русской речи в модели размером 21 МБ",
-      "subheadline": "Автор на Хабре рассказал о компактной модели русского голоса.",
-      "body": "Модель занимает 21 мегабайт, поэтому её можно запускать локально на слабых устройствах без облачных сервисов синтеза речи. В статье автор описывает, как собирал и обучал модель.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "tiny-voca-ru: русский голос в 21 мегабайте",
-          "url": "https://habr.com/ru/articles/1110838/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "tiny-voca-ru"
+          "GPT-6.2 Astra"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "tiny-voca-ru": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 5,
-      "id": "2026-11-23-4"
-    },
-    {
-      "section": "models",
-      "headline": "Lexometrica проверила 15 языковых моделей на 30 делах из практики Верховного суда России",
-      "subheadline": "Набор Ground Truth показывает, как модели справляются с реальными российскими правовыми задачами.",
-      "body": "Ground Truth составлен из 30 кейсов по судебной практике Верховного суда России. Lexometrica прогнала через него 15 LLM, чтобы сравнить точность их юридических ответов. Методика и результаты опубликованы на Хабре.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Lexometrica Ground Truth: 15 LLM на 30 кейсах по практике ВС РФ",
-          "url": "https://habr.com/ru/articles/1110824/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Lexometrica",
-          "Верховный суд России"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Lexometrica": "neutral",
-          "Верховный суд России": "neutral"
+          "OpenAI": "positive",
+          "GPT-6.2 Astra": "positive"
         },
         "event": "research"
       },
-      "importance": 5,
-      "id": "2026-11-23-5"
+      "importance": 7,
+      "id": "2026-11-24-2"
     },
     {
       "section": "models",
-      "headline": "Математик Кен Оно: «Не уйду из математики, хотя ИИ решает задачи, которым сотни лет»",
-      "subheadline": "Колонка в The Guardian о том, зачем людям математика, если ИИ доказывает старые гипотезы.",
-      "body": "Колонка вышла на фоне недавних заявлений о доказательстве гипотезы Римана с помощью Claude. Оно объясняет, почему продолжает заниматься математикой и какую роль в ней отводит человеку.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Why I won't leave mathematics, despite AI solving centuries-old problems | Ken Ono",
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/22/why-i-wont-leave-mathematics-despite-ai-solving-centuries-old-problems",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Ken Ono"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Ken Ono": "neutral"
-        },
-        "event": "statement"
-      },
-      "importance": 5,
-      "id": "2026-11-23-6"
-    },
-    {
-      "section": "platforms",
-      "headline": "Claude Code раскрывал секреты через функцию «Больше не спрашивать»",
-      "subheadline": "Разрешения, сохранённые этой функцией, приводили к утечке конфиденциальных данных.",
-      "body": "Функция «Don't Ask Again» запоминает разрешение на команду, чтобы агент больше не спрашивал подтверждения. По данным InfoQ, из-за неё секреты, например ключи и токены, утекали за пределы ожидаемого контура. Риск касается разработчиков, которые дают агенту постоянные разрешения в репозиториях с конфиденциальными данными.",
+      "headline": "Google DeepMind ищет более быстрые квантовые алгоритмы с помощью ИИ-агентов и формальной проверки",
+      "subheadline": "Агенты предлагают алгоритмы, а их корректность проверяется формально, а не на тестах.",
+      "body": "В блоге Google DeepMind описан подход, в котором ИИ-агенты ищут ускоренные варианты квантовых алгоритмов. Каждый найденный вариант проходит формальную верификацию: правильность доказывается математически, а не проверяется на отдельных примерах. Так лаборатория защищается от правдоподобных, но ошибочных решений — частой проблемы, когда ИИ генерирует алгоритмы.",
       "tier": "regular",
       "sources": [
         {
-          "title": "Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature",
-          "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
-          "type": "media"
+          "title": "Finding faster quantum algorithms with agents and formal verification",
+          "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+          "type": "official"
         }
       ],
       "related": [],
@@ -200,58 +97,27 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Claude Code",
-          "Anthropic"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Claude Code": "negative",
-          "Anthropic": "negative"
-        },
-        "event": "incident"
-      },
-      "importance": 7,
-      "id": "2026-11-23-7"
-    },
-    {
-      "section": "platforms",
-      "headline": "Perplexity запустила Monitor API — непрерывное отслеживание тем в интернете",
-      "subheadline": "Вместо разовых запросов API постоянно следит за выбранными темами и сообщает о новых результатах.",
-      "body": "Обычный поисковый API отвечает на один запрос. Monitor API работает как постоянный наблюдатель: разработчик задаёт тему, и сервис сообщает, когда по ней появляется новое. Это продолжает линейку API Perplexity для разработчиков, куда недавно вошёл Orchestrator API для маршрутизации запросов между моделями.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
-          "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Perplexity"
+          "Google DeepMind"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Perplexity": "positive"
+          "Google DeepMind": "positive"
         },
-        "event": "release"
+        "event": "research"
       },
       "importance": 7,
-      "id": "2026-11-23-8"
+      "id": "2026-11-24-3"
     },
     {
-      "section": "platforms",
-      "headline": "Google представила Agent Compute Engine для безопасного запуска ИИ-агентов",
-      "subheadline": "Сервис изолирует среду, в которой агенты выполняют код и действия.",
-      "body": "Agent Compute Engine — вычислительная среда, где действия агента отделены от остальной инфраструктуры. Код, который пишет и запускает агент, не получает доступа к лишним системам и данным. Незадолго до этого Google передала в CNCF проекты Agent Substrate и gVisor для изоляции агентов.",
-      "tier": "regular",
+      "section": "models",
+      "headline": "Google открыла gBench — 86 тестов для открытых ИИ-моделей",
+      "subheadline": "Набор рассчитан на оценку открытых моделей, в том числе Gemma.",
+      "body": "В открытый набор gBench входят 86 тестов. Google предназначает его для проверки открытых моделей, например семейства Gemma.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
-          "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/",
+          "title": "Google Open-Sources gBench With 86 Tests for Open AI Models",
+          "url": "https://fourweekmba.com/ai-google-open-sources-gbench-with-86-tests-for-open-ai-models/",
           "type": "media"
         }
       ],
@@ -261,213 +127,39 @@
       "tags": {
         "entities": [
           "Google",
-          "Google Cloud"
+          "gBench",
+          "Gemma"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
           "Google": "positive",
-          "Google Cloud": "positive"
-        },
-        "event": "release"
-      },
-      "importance": 7,
-      "id": "2026-11-23-9"
-    },
-    {
-      "section": "platforms",
-      "headline": "AWS Lambda научилась запускать инференс на GPU",
-      "subheadline": "До 48 одновременных вызовов используют одну копию модели на одном GPU.",
-      "body": "Функция работает через управляемые инстансы Lambda: модель загружается на GPU один раз и обслуживает до 48 параллельных вызовов. Так не нужно держать отдельную копию модели под каждый запрос, а бессерверный инференс становится дешевле при пиковой нагрузке.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AWS Lambda Now Runs GPU Inference with 48 Concurrent Invocations Sharing One Model per GPU",
-          "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "AWS"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "AWS": "positive"
-        },
-        "event": "update"
-      },
-      "importance": 7,
-      "id": "2026-11-23-10"
-    },
-    {
-      "section": "platforms",
-      "headline": "ИИ-агенты для программирования проходят отдельные тесты, но в имитации офиса выполняют меньше 10% задач",
-      "subheadline": "Высокие баллы в бенчмарках плохо переносятся на работу в среде, похожей на реальную компанию.",
-      "body": "Агенты, которые уверенно решают изолированные задачи из бенчмарков, протестировали в симуляции рабочего места: с коллегами, контекстом и связанными задачами. В таких условиях они довели до конца меньше одной задачи из десяти. Разрыв показывает, что популярные бенчмарки завышают готовность агентов к самостоятельной работе.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
-          "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "negative",
-        "entity_sentiment": {},
-        "event": "research"
-      },
-      "importance": 7,
-      "id": "2026-11-23-11"
-    },
-    {
-      "section": "platforms",
-      "headline": "Дешёвые провайдеры инференса крадут API-ключи и читают запросы пользователей",
-      "subheadline": "Исследователи безопасности показали, как посредники с низкими ценами на доступ к моделям злоупотребляют данными клиентов.",
-      "body": "Речь о сервисах, которые перепродают доступ к популярным моделям дешевле официальных цен. Исследователи показали, что часть таких посредников забирает переданные им ключи и видит содержимое запросов. Для разработчиков вывод простой: экономия на инференсе через неизвестного посредника означает, что ему доступны и ключи, и данные.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Security researchers show how cheap AI inference providers steal keys and snoop on users",
-          "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [],
-        "sentiment": "negative",
-        "entity_sentiment": {},
-        "event": "incident"
-      },
-      "importance": 7,
-      "id": "2026-11-23-12"
-    },
-    {
-      "section": "platforms",
-      "headline": "Разработчик на гранте Яндекса написал движок для LLM, который на RTX 2080 Ti быстрее llama.cpp",
-      "subheadline": "Движок на C++/CUDA написан с нуля под старые видеокарты.",
-      "body": "На Хабре автор рассказывает, как потратил грант Яндекса на собственный движок инференса. На RTX 2080 Ti он, по замерам автора, обгоняет llama.cpp.",
-      "tier": "compact",
-      "sources": [
-        {
-          "title": "Куда я потратил грант Яндекса: пишем с нуля C++/CUDA-движок для LLM, который обгоняет llama.cpp на старой RTX 2080 Ti",
-          "url": "https://habr.com/ru/articles/1110758/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "llama.cpp",
-          "Яндекс"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "llama.cpp": "neutral",
-          "Яндекс": "neutral"
+          "gBench": "positive",
+          "Gemma": "neutral"
         },
         "event": "release"
       },
       "importance": 5,
-      "id": "2026-11-23-13"
+      "id": "2026-11-24-4"
     },
     {
-      "section": "industry",
-      "headline": "FT: Amazon близка к покупке ИИ-стартапа Decart за $7,5 млрд",
-      "subheadline": "Переговоры на продвинутой стадии, официально сделку не подтверждали.",
-      "body": "По данным Financial Times, которые пересказывает PYMNTS, сделка может стоить около $7,5 млрд. Ранее о покупке Decart думала Anthropic, но отказалась. Ни Amazon, ни Decart переговоры не комментировали.",
-      "tier": "regular",
+      "section": "models",
+      "headline": "Georgia Tech создал бенчмарк на вымышленных будущих событиях — он проверяет, как модели обновляют знания",
+      "subheadline": "Тест показывает, усваивает ли модель новые факты и не забывает ли при этом старые.",
+      "body": "Исследователи Georgia Tech дают модели симулированные «будущие» события и проверяют два свойства: усваивает ли она новые факты и сохраняет ли прежние. Бенчмарк позволяет найти момент, когда после обновления знаний качество модели начинает падать.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Amazon nears $7.5 billion purchase of AI startup Decart",
-          "url": "https://pymnts.com/news/artificial-intelligence/2026/amazon-nears-7-5-billion-purchase-of-ai-startup-decart",
+          "title": "New benchmark could help AI keep up with current events",
+          "url": "https://techxplore.com/news/2026-11-benchmark-ai-current-events.html",
           "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": true,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Amazon",
-          "Decart",
-          "Anthropic"
-        ],
-        "sentiment": "neutral",
-        "entity_sentiment": {
-          "Amazon": "positive",
-          "Decart": "positive",
-          "Anthropic": "neutral"
-        },
-        "event": "acquisition"
-      },
-      "importance": 7,
-      "id": "2026-11-23-14"
-    },
-    {
-      "section": "industry",
-      "headline": "Ant Group возглавила раунд $100 млн в Simplexity Robotics при оценке $1,6 млрд",
-      "subheadline": "Китайский стартап физического ИИ стал «единорогом» примерно через 16 месяцев после основания.",
-      "body": "По данным Bloomberg, Ant Group выступила ведущим инвестором раунда на $100 млн. Simplexity Robotics делает физический ИИ — модели для роботов, которые действуют в реальном мире. Оценка в $1,6 млрд — примерно через 16 месяцев после запуска компании.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Ant leads $100M round in Simplexity at $1.6B, 16 months in",
-          "url": "https://fourweekmba.com/ai-ant-leads-100m-round-in-simplexity-at-1-6b-16-months-in/",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Ant Group",
-          "Simplexity Robotics",
-          "Китай"
-        ],
-        "sentiment": "positive",
-        "entity_sentiment": {
-          "Ant Group": "neutral",
-          "Simplexity Robotics": "positive",
-          "Китай": "neutral"
-        },
-        "event": "investment"
-      },
-      "importance": 7,
-      "id": "2026-11-23-15"
-    },
-    {
-      "section": "industry",
-      "headline": "Губернаторы США предложили федеральный надзор за самыми мощными ИИ-моделями",
-      "subheadline": "Штаты при этом хотят сохранить право защищать потребителей, работников и детей.",
-      "body": "Двухпартийный совет Национальной ассоциации губернаторов предлагает разделить полномочия. Федеральные власти отвечают за национальные и международные риски передовых моделей, а штаты регулируют, как ИИ применяется на их территории. Это ответ на попытки ограничить право штатов принимать собственные законы об ИИ.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "Governors Call for AI Action",
-          "url": "https://www.nga.org/news/press-releases/governors-call-for-ai-action/",
-          "type": "official"
         }
       ],
       "related": [
         {
-          "title": "Governors Want States to Have a Voice in Regulating AI",
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/governors-want-states-to-have-a-voice-in-regulating-ai/",
+          "title": "Georgia Tech Researchers Create Benchmark to Test AI Knowledge Updates Using Simulated Future Events",
+          "url": "https://www.world-today-news.com/georgia-tech-researchers-create-benchmark-to-test-ai-knowledge-updates-using-simulated-future-events/",
           "entities": [
-            "National Governors Association"
+            "Georgia Tech"
           ],
           "sentiment": "neutral"
         }
@@ -476,60 +168,58 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "National Governors Association",
-          "Правительство США",
-          "США"
+          "Georgia Tech"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "National Governors Association": "neutral",
-          "Правительство США": "neutral",
-          "США": "neutral"
+          "Georgia Tech": "neutral"
         },
-        "event": "regulation"
+        "event": "research"
       },
-      "importance": 7,
-      "id": "2026-11-23-16"
+      "importance": 5,
+      "id": "2026-11-24-5"
     },
     {
-      "section": "industry",
-      "headline": "Министр образования Южной Кореи ушёл в отставку из-за скандала со списыванием с ИИ на вузовских экзаменах",
-      "subheadline": "Скандал с использованием ИИ на экзаменах в университетах дошёл до правительства.",
-      "body": "Министр ушёл после того, как списывание с помощью ИИ обнаружилось на экзаменах в университетах страны. Незадолго до этого в Южной Корее был громкий случай: лучший результат на экзамене для налоговых специалистов получили с помощью ИИ.",
-      "tier": "regular",
-      "sources": [
-        {
-          "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
-          "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
-          "type": "media"
-        }
-      ],
-      "related": [],
-      "unconfirmed": false,
-      "duplicate_note": null,
-      "tags": {
-        "entities": [
-          "Южная Корея"
-        ],
-        "sentiment": "negative",
-        "entity_sentiment": {
-          "Южная Корея": "negative"
-        },
-        "event": "people"
-      },
-      "importance": 7,
-      "id": "2026-11-23-17"
-    },
-    {
-      "section": "industry",
-      "headline": "Главный научный сотрудник OpenAI рассказал, как можно ограничить развитие ИИ",
-      "subheadline": "TechCrunch пересказывает его взгляды на сдерживание развития ИИ.",
-      "body": "Главный научный сотрудник OpenAI высказался о том, какими способами можно сдерживать развитие ИИ. Заявление прозвучало, пока компания расширяет доступ к своим системам для независимых аудиторов.",
+      "section": "models",
+      "headline": "Вышла Silero VAD v6.3",
+      "subheadline": "Команда Silero выпустила новую версию детектора речевой активности.",
+      "body": "Silero VAD — открытая модель, которая находит в аудиопотоке фрагменты с речью. Её используют перед распознаванием речи и в голосовых ассистентах. Об изменениях в версии 6.3 команда рассказала на Хабре.",
       "tier": "compact",
       "sources": [
         {
-          "title": "OpenAI's chief scientist has thoughts on how to limit AI development",
-          "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+          "title": "Мы опубликовали Silero VAD v6.3",
+          "url": "https://habr.com/ru/articles/1111202/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Silero",
+          "Silero VAD"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Silero": "positive",
+          "Silero VAD": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-24-6"
+    },
+    {
+      "section": "models",
+      "headline": "Языковые модели проверили на расшифровке рукописей XVIII–XIX веков",
+      "subheadline": "Автор сравнил разные конфигурации LLM на чтении старинных документов.",
+      "body": "Тест провели на настоящих рукописях XVIII–XIX веков: дореформенная орфография, скоропись и плохая сохранность до сих пор сложны для OCR и языковых моделей. Автор сравнил несколько связок моделей и настроек, чтобы понять, какая точнее расшифровывает такие документы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Какой моделью читать старинные документы: тест конфигураций LLM на рукописях XVIII-XIX веков",
+          "url": "https://habr.com/ru/articles/1111214/",
           "type": "media"
         }
       ],
@@ -538,62 +228,501 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "OpenAI"
+          "Хабр"
         ],
         "sentiment": "neutral",
         "entity_sentiment": {
-          "OpenAI": "neutral"
+          "Хабр": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-24-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "Anthropic запустила Claude Ship — ИИ-агенты проверяют, исправляют и одобряют пулреквесты",
+      "subheadline": "Агенты работают с pull request в GitHub: делают ревью, вносят правки и могут одобрить изменения.",
+      "body": "Claude Ship подключается к pull request в GitHub. Агенты просматривают изменения, сами исправляют найденные проблемы и могут одобрить код. Раньше ИИ-ревьюеры в основном оставляли комментарии, а исправлял и одобрял код человек. Теперь агенту доверено весь цикл до одобрения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Anthropic Launches Claude Ship for GitHub Pull Request Review and Fixes",
+          "url": "https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/",
+          "entities": [
+            "Anthropic",
+            "Claude Ship"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude Ship",
+          "GitHub"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Anthropic": "positive",
+          "Claude Ship": "positive",
+          "GitHub": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-24-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google Поиск начнёт учитывать данные из приложений пользователя",
+      "subheadline": "Google расширяет персонализацию поиска за счёт функции Personal Intelligence и подключённых приложений.",
+      "body": "Google объявила, что в поиске появится персонализация через Personal Intelligence. Ответы будут учитывать сведения из приложений Google, которые подключил пользователь. На прошлой неделе компания объявила, что выносит ИИ-чаты на главную страницу поиска.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "A more tailored Google Search that's uniquely yours",
+          "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Google Search"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Google Search": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-24-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI обновила ChatGPT: точнее ответы на бытовые вопросы, веб-поиск и работа с изображениями",
+      "subheadline": "Обновление нацелено на надёжность в повседневных сценариях.",
+      "body": "По данным The Decoder, обновление касается трёх сценариев: сложных бытовых вопросов, ответов с веб-поиском и запросов с изображениями. В каждом OpenAI обещает более надёжные результаты.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+          "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "ChatGPT": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-24-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI и Cisco представили Shirudo",
+      "subheadline": "Новый продукт OpenAI и Cisco анонсирован в официальном блоге OpenAI.",
+      "body": "Shirudo — совместный продукт OpenAI и Cisco, одного из крупнейших поставщиков сетевого оборудования и решений по кибербезопасности. Название — японское слово «щит». Анонс вышел в блоге OpenAI.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "OpenAI and Cisco introduce Shirudo",
+          "url": "https://openai.com/index/introducing-shirudo",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Cisco",
+          "Shirudo"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive",
+          "Cisco": "positive",
+          "Shirudo": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5,
+      "id": "2026-11-24-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "Nothing готовит наушники Ear Note с ИИ-расшифровкой записей",
+      "subheadline": "Наушники будут записывать разговоры и расшифровывать их с помощью ИИ.",
+      "body": "Nothing сделала Ear Note для записи разговоров: наушники записывают речь, а ИИ превращает запись в текст. Модель ещё не поступила в продажу.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nothing's upcoming Ear Note is a pair of earbuds with AI transcription",
+          "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nothing",
+          "Ear Note"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Nothing": "neutral",
+          "Ear Note": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-24-12"
+    },
+    {
+      "section": "platforms",
+      "headline": "Netflix перестраивает процесс разработки под ИИ-агентов для программирования",
+      "subheadline": "На QCon San Francisco 2026 инженеры Netflix рассказали, как встраивают агентов в цикл разработки.",
+      "body": "Netflix не стал строить разработку с нуля, а встраивает ИИ-агентов в уже работающий жизненный цикл: code review, тестирование, выпуск. Об этом инженеры компании рассказали на QCon San Francisco 2026. На той же конференции отдельный доклад был посвящён защите ИИ-агентов в продакшене.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Netflix at QConSF 2026: Retrofitting the SDLC for AI Coding Agents",
+          "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "QCon San Francisco 2026: Securing AI Agents in Production",
+          "url": "https://www.infoq.com/news/2026/11/qcon-ai-agent-security/",
+          "entities": [],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Netflix"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Netflix": "neutral"
         },
         "event": "statement"
       },
       "importance": 5,
-      "id": "2026-11-23-18"
+      "id": "2026-11-24-13"
     },
     {
-      "section": "industry",
-      "headline": "Продолжение: как Notable Capital, GIC и Baillie Gifford сделали крупные ставки на Anthropic до IPO",
-      "subheadline": null,
-      "body": "TechCrunch рассказывает, как три фонда вложились в Anthropic до размещения и что получили после начала торгов.",
+      "section": "platforms",
+      "headline": "Architect Labs представила Frostbite — процессор, спроектированный ИИ",
+      "subheadline": "Чип построен на модели вычислений interaction nets, а не на классической архитектуре.",
+      "body": "Frostbite выполняет вычисления на interaction nets — модели, где программа представлена графом, а вычисление — его локальными перестройками. Такую схему проще распараллелить, чем последовательную архитектуру фон Неймана. По данным Architect Labs, процессор спроектировал ИИ.",
       "tier": "compact",
       "sources": [
         {
-          "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
-          "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+          "title": "Architect Labs Unveils Frostbite, an Interaction Net CPU Designed by AI",
+          "url": "https://www.marktechpost.com/2026/11/23/architect-labs-frostbite-ai-designed-cpu-interaction-nets/",
           "type": "media"
         }
       ],
       "related": [],
       "unconfirmed": false,
-      "duplicate_note": "Акции Anthropic начали торговаться на Nasdaq, к закрытию первого дня компанию оценили в $1,3 трлн",
+      "duplicate_note": null,
       "tags": {
         "entities": [
-          "Anthropic",
-          "Notable Capital",
-          "GIC",
-          "Baillie Gifford"
+          "Architect Labs",
+          "Frostbite"
         ],
         "sentiment": "positive",
         "entity_sentiment": {
-          "Anthropic": "neutral",
-          "Notable Capital": "positive",
-          "GIC": "positive",
-          "Baillie Gifford": "positive"
+          "Architect Labs": "positive",
+          "Frostbite": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-24-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: NVIDIA вернула Дженсена Хуанга на пост гендиректора",
+      "subheadline": null,
+      "body": "Совет директоров NVIDIA изменил решение, и Хуанг вернулся на пост CEO — меньше чем через две недели после отстранения. По данным СМИ, Дональд Трамп лично позвонил во время заседания совета и выступил за возвращение Хуанга.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+          "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+          "type": "media"
+        },
+        {
+          "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang's return",
+          "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Nvidia tried life without Jensen Huang and it lasted about two weeks",
+          "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "neutral"
+        },
+        {
+          "title": "Welcome to elite impunity, Jensen Huang",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+          "entities": [
+            "Jensen Huang"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Выручка NVIDIA выросла вдвое, совет директоров не собирается возвращать Хуанга",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Jensen Huang",
+          "Donald Trump"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "NVIDIA": "neutral",
+          "Jensen Huang": "positive",
+          "Donald Trump": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 5,
+      "id": "2026-11-24-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Megaspeed из скандала вокруг NVIDIA может попасть в чёрный список США",
+      "subheadline": null,
+      "body": "По данным TechCrunch, Megaspeed, компанию в центре скандала с Хуангом, похоже, внесут в чёрный список США. The Decoder пишет, что американская разведка больше года отслеживала связи одного из фигурантов дела с китайскими спецслужбами.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+          "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
+          "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
+          "entities": [
+            "NVIDIA"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: американские власти выяснят, мог ли Китай получать процессоры и закрытые сведения NVIDIA",
+      "tags": {
+        "entities": [
+          "Megaspeed",
+          "NVIDIA",
+          "Правительство США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Megaspeed": "negative",
+          "NVIDIA": "negative",
+          "Правительство США": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 5,
+      "id": "2026-11-24-16"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: Amazon купила технологии Decart за $7,5 млрд",
+      "subheadline": null,
+      "body": "По данным TechCrunch, сделка закрыта на те же $7,5 млрд. Amazon получает технологии Decart для оптимизации ИИ в момент, когда готовится продавать свои чипы Trainium сторонним клиентам.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Amazon snaps up Decart's AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+          "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "FT: Amazon близка к покупке ИИ-стартапа Decart за $7,5 млрд",
+      "tags": {
+        "entities": [
+          "Amazon",
+          "Decart",
+          "Trainium"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Amazon": "positive",
+          "Decart": "positive",
+          "Trainium": "neutral"
+        },
+        "event": "acquisition"
+      },
+      "importance": 5,
+      "id": "2026-11-24-17"
+    },
+    {
+      "section": "industry",
+      "headline": "Sierra за полгода удвоила оценку — до $30 млрд",
+      "subheadline": "Инвесторы делают ставку на ИИ-агентов для обслуживания клиентов.",
+      "body": "Sierra делает ИИ-агентов для клиентской поддержки. По данным TechCrunch, оценка компании выросла вдвое меньше чем за шесть месяцев и достигла $30 млрд. Издание связывает рост со спросом на ИИ в сфере клиентского опыта (CX).",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+          "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+          "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "entities": [
+            "Supertake"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Sierra"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Sierra": "positive"
         },
         "event": "investment"
       },
+      "importance": 7,
+      "id": "2026-11-24-18"
+    },
+    {
+      "section": "industry",
+      "headline": "Из-за спроса Anthropic на вычисления xAI выбирает аренду вместо строительства мощностей",
+      "subheadline": "The Decoder: конкуренция за вычисления меняет инфраструктурную стратегию xAI.",
+      "body": "Anthropic скупает вычислительные мощности в огромных объёмах, и рынок под это подстраивается. По данным The Decoder, xAI из-за этого склоняется к тому, чтобы арендовать мощности, а не строить собственные дата-центры.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+          "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "xAI",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "xAI": "neutral",
+          "Anthropic": "neutral"
+        },
+        "event": "other"
+      },
       "importance": 5,
-      "id": "2026-11-23-19"
+      "id": "2026-11-24-19"
     },
     {
-      "section": "hype",
-      "headline": "Либеральная партия штата Виктория написала с помощью ИИ речь Джесс Уилсон в честь Молли Мелдрума",
-      "subheadline": "Речь лидера оппозиции штата в честь музыкального журналиста подготовили с помощью ИИ.",
-      "body": "Молли Мелдрум — известный австралийский музыкальный журналист и телеведущий. О том, что текст памятной речи от имени Джесс Уилсон сгенерировал ИИ, сообщила The Guardian.",
-      "tier": "regular",
+      "section": "industry",
+      "headline": "Университет одобрил дата-центр для ядерных исследований в Ипсиланти, местные власти продолжат борьбу",
+      "subheadline": "Тауншип в Мичигане обещает и дальше оспаривать проект после решения университета.",
+      "body": "По данным 404 Media, университет одобрил строительство дата-центра в Ипсиланти (Мичиган). Он будет обслуживать работы, связанные с ядерным оружием. Власти тауншипа заявили, что не сдадутся и продолжат сопротивляться проекту. Энергопотребление ИИ-дата-центров обсуждали и на климатическом саммите ООН — по данным The Verge, тема ещё сильнее запутала переговоры.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Victorian Liberal party uses AI to write Jess Wilson's tribute to Molly Meldrum",
-          "url": "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
+          "title": "University Approves Nuclear Weapons Data Center, Township Vows to Fight On",
+          "url": "https://www.404media.co/ypsilanti-michigan-data-center-vote/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "AI data centers throw another wrench into chaotic UN climate talks",
+          "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+          "entities": [
+            "ООН"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Ипсиланти"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Ипсиланти": "negative"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-24-20"
+    },
+    {
+      "section": "industry",
+      "headline": "Военные Китая опасаются, что ИИ поможет США находить и уничтожать китайские ядерные ракеты",
+      "subheadline": "ИИ-анализ разведданных может подорвать ядерное сдерживание Китая.",
+      "body": "По данным The Decoder, в китайских военных кругах опасаются такого сценария: ИИ ускорит обработку разведданных, и США смогут обнаруживать мобильные ракетные комплексы Китая и наносить по ним удары. Скрытность таких комплексов — основа ядерного сдерживания.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Chinese military fears AI could let the US find and destroy its nuclear missiles",
+          "url": "https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles/",
           "type": "media"
         }
       ],
@@ -602,29 +731,29 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Jess Wilson",
-          "Австралия"
+          "Китай",
+          "США"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Jess Wilson": "negative",
-          "Австралия": "neutral"
+          "Китай": "negative",
+          "США": "neutral"
         },
-        "event": "criticism"
+        "event": "statement"
       },
-      "importance": 7,
-      "id": "2026-11-23-20"
+      "importance": 5,
+      "id": "2026-11-24-21"
     },
     {
-      "section": "hype",
-      "headline": "Из The Binding of Isaac: Repentance+ убрали музыку, созданную ИИ",
-      "subheadline": "Разработчик игры отказался от ИИ-треков в дополнении Repentance+.",
-      "body": "Музыку, сгенерированную ИИ, убрали из уже вышедшего дополнения к одному из самых известных инди-рогаликов. По данным The Verge, причиной стала реакция игроков.",
-      "tier": "regular",
+      "section": "content",
+      "headline": "Google хочет запустить круглосуточный ИИ-телеканал, где главный герой — зритель",
+      "subheadline": "По данным 404 Media, Google разрабатывает генеративный видеоканал, персонально подстроенный под каждого пользователя.",
+      "body": "404 Media пишет, что Google задумала ИИ-телеканал, который работает 24/7 и генерирует видео под конкретного зрителя: он сам становится главным героем сюжетов. Официально Google этот продукт не анонсировала.",
+      "tier": "compact",
       "sources": [
         {
-          "title": "Binding of Isaac developer removes AI music from Repentance Plus",
-          "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+          "title": "Google Wants To Make a 24/7 AI TV Channel. You'll Be the Main Character",
+          "url": "https://www.404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character/",
           "type": "media"
         }
       ],
@@ -633,27 +762,74 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "The Binding of Isaac"
+          "Google"
         ],
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "entity_sentiment": {
-          "The Binding of Isaac": "negative"
+          "Google": "neutral"
         },
-        "event": "criticism"
+        "event": "leak"
       },
-      "importance": 7,
-      "id": "2026-11-23-21"
+      "importance": 5,
+      "id": "2026-11-24-22"
     },
     {
       "section": "hype",
-      "headline": "Мероприятие о военном ИИ в берлинском арт-комплексе Kraftwerk вызвало возмущение",
-      "subheadline": "Критики назвали решение провести его на культурной площадке «серьёзной ошибкой».",
-      "body": "Kraftwerk — арт-пространство в бывшей электростанции в Берлине, известное музыкальными и художественными событиями. Против мероприятия, посвящённого военному применению ИИ, выступили представители культурной сцены. По их словам, проведение такого события там — «серьёзная ошибка в суждениях».",
+      "headline": "Орегон и Вирджиния подали в суд на компании Маска из-за сексуальных дипфейков Grok",
+      "subheadline": "Генпрокуроры штатов утверждают, что устройство Grok привело к массовому распространению сексуализированных изображений.",
+      "body": "Иск направлен против SpaceX, X и SpaceXSI. Генпрокуроры Орегона и Вирджинии заявляют, что из-за устройства Grok распространялись сексуализированные изображения, в том числе материалы с сексуальным насилием над детьми (CSAM), и это нанесло вред потребителям.",
       "tier": "regular",
       "sources": [
         {
-          "title": "'Serious error of judgment': outrage over military AI event at Berlin arts complex",
-          "url": "https://www.theguardian.com/world/2026/nov/22/military-ai-event-berlin-kraftwerk-arts-complex",
+          "title": "Oregon and Virginia sue SpaceX over Grok's porn deepfakes",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "States sue Musk companies over flood of sexualized Grok images",
+          "url": "https://www.ksat.com/business/2026/11/23/sexual-images-from-elon-musks-ai-chatbot-harmed-consumers-ags-argue/",
+          "entities": [
+            "Grok",
+            "Elon Musk"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": "Несколько изданий об одном иске",
+      "tags": {
+        "entities": [
+          "SpaceX",
+          "X",
+          "Grok",
+          "Орегон",
+          "Вирджиния"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "SpaceX": "negative",
+          "X": "negative",
+          "Grok": "negative",
+          "Орегон": "neutral",
+          "Вирджиния": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 7,
+      "id": "2026-11-24-23"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ-инструмент для взлома ArtEx разошёлся по интернету, и остановить его уже нельзя",
+      "subheadline": "404 Media: код инструмента скопирован повсюду, а им пользуются атакующие по всему миру.",
+      "body": "По данным 404 Media, ArtEx — ИИ-инструмент для взломов, который появился на GitHub. Его код успели многократно скопировать, поэтому удаление исходного репозитория уже ничего не даст. Им пользуются по всему миру. Название статьи — цитата: «Код уже скопирован повсюду».",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "'The Code Is Already Copied Everywhere': The AI Hacking Tool Causing Havoc Around the World",
+          "url": "https://www.404media.co/the-code-is-already-copied-everywhere-the-ai-hacking-tool-causing-havoc-around-the-world-artex-github/",
           "type": "media"
         }
       ],
@@ -662,18 +838,177 @@
       "duplicate_note": null,
       "tags": {
         "entities": [
-          "Kraftwerk Berlin",
-          "Германия"
+          "ArtEx",
+          "GitHub"
         ],
         "sentiment": "negative",
         "entity_sentiment": {
-          "Kraftwerk Berlin": "negative",
-          "Германия": "neutral"
+          "ArtEx": "negative",
+          "GitHub": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 7,
+      "id": "2026-11-24-24"
+    },
+    {
+      "section": "hype",
+      "headline": "ФБР пришло к пользователю, который пошутил в чате с Claude",
+      "subheadline": "Пользователь хотел затроллить нейросеть, а получил беседу с агентами ФБР.",
+      "body": "По данным Хабра, пользователь написал Claude шутку, чтобы затроллить модель, и после этого с ним связались сотрудники ФБР. Почти одновременно на Хабре вышел разбор того, как и за что Anthropic блокирует аккаунты Claude.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ФБР поговорило с пользователем, который написал шутку в диалог с Claude и попытался затроллить нейросеть",
+          "url": "https://habr.com/ru/articles/1111368/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Я попытался разобраться, как и за что банят в Claude",
+          "url": "https://habr.com/ru/articles/1111436/",
+          "entities": [
+            "Claude",
+            "Anthropic"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ФБР",
+          "Claude"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "ФБР": "neutral",
+          "Claude": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 5,
+      "id": "2026-11-24-25"
+    },
+    {
+      "section": "hype",
+      "headline": "В США женщину выселили после того, как ИИ-бот разрешил ей не платить аренду",
+      "subheadline": "Совет чат-бота закончился потерей жилья.",
+      "body": "Женщина перестала платить аренду, потому что ИИ-бот сказал ей, что так можно. В итоге её выселили из квартиры. Это ещё один случай, когда человек потерял деньги или жильё, поверив юридическому совету чат-бота.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В США женщину выселили из квартиры из‑за разрешения от ИИ‑бота не платить аренду",
+          "url": "https://habr.com/ru/articles/1111150/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "США": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-24-26"
+    },
+    {
+      "section": "hype",
+      "headline": "Клиент отсудил у Т-Банка 5000 рублей с помощью ИИ за присланную чужую выписку",
+      "subheadline": "Банк отправил клиенту чужую выписку, и тот пошёл в суд, подготовившись с ИИ.",
+      "body": "Т-Банк по ошибке прислал автору чужую банковскую выписку. Он обратился в суд, а документы готовил с помощью ИИ. Банк оштрафовали на 5000 рублей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Т‑Банк прислал чужую выписку: я обратился в суд с ИИ, и банк оштрафовали на 5000 рублей",
+          "url": "https://habr.com/ru/articles/1111106/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Т-Банк"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Т-Банк": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 5,
+      "id": "2026-11-24-27"
+    },
+    {
+      "section": "hype",
+      "headline": "Известный философ не принимает аргументы Anthropic о сознании ИИ",
+      "subheadline": "MIT Technology Review: философ оспаривает позицию Anthropic о возможном сознании моделей.",
+      "body": "MIT Technology Review опубликовал разговор с философом, который много лет изучает сознание. По его мнению, аргументы Anthropic о том, что у моделей может быть сознание, не убеждают.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "A legendary philosopher isn't buying Anthropic's consciousness argument",
+          "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Anthropic": "negative"
         },
         "event": "criticism"
       },
-      "importance": 7,
-      "id": "2026-11-23-22"
+      "importance": 5,
+      "id": "2026-11-24-28"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: Александр Ван считает, что после гипотезы Римана индустрия не готова к тому, что будет дальше",
+      "subheadline": null,
+      "body": "Александр Ван из Meta заявил, что после доказательства гипотезы Римана с помощью ИИ индустрия не готова к следующим прорывам.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough",
+          "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Математик Anthropic заявил, что доказал гипотезу Римана с помощью Claude",
+      "tags": {
+        "entities": [
+          "Alexandr Wang",
+          "Meta"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Alexandr Wang": "neutral",
+          "Meta": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-24-29"
     }
   ]
 }
