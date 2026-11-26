@@ -1,0 +1,891 @@
+{
+  "date": "2026-11-26",
+  "published": false,
+  "news": [
+    {
+      "section": "industry",
+      "headline": "FCC одобрила план SpaceX вывести на орбиту до миллиона спутников-дата-центров",
+      "subheadline": "Американский регулятор связи разрешил SpaceX строить в космосе вычислительную инфраструктуру для ИИ.",
+      "body": "Федеральная комиссия по связи США (FCC) утвердила заявку SpaceX: компания сможет вывести на орбиту до 1 млн спутников, которые будут работать как дата-центры. Это вычислительные мощности для ИИ, размещённые в космосе. Решение принято на фоне острой нехватки мощностей на Земле: в предыдущих выпусках мы писали, что xAI из-за спроса Anthropic на вычисления выбирает аренду вместо строительства собственных дата-центров. Миллион спутников — верхний предел разрешения. Сроки запуска и число аппаратов в первой очереди в сообщении не названы.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "FCC signs off on SpaceX's plan to put up to 1 million data center satellites into space",
+          "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SpaceX",
+          "FCC"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "SpaceX": "positive",
+          "FCC": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 9,
+      "id": "2026-11-26-1"
+    },
+    {
+      "section": "industry",
+      "headline": "Генпрокуроры штатов выступили против плана Character.AI продать с аукциона личные переписки пользователей",
+      "subheadline": "Character.AI собиралась выставить на аукцион приватные чаты пользователей, генеральные прокуроры штатов это оспаривают.",
+      "body": "Генеральные прокуроры нескольких штатов США оспорили план Character.AI продать с аукциона личные переписки пользователей с чат-ботами. Речь идёт о приватных диалогах, а не об обезличенной статистике. Поэтому спор касается защиты личных данных.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Character.AI's plan to auction off users' private chats challenged by state AGs",
+          "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Character.AI",
+          "США"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Character.AI": "negative",
+          "США": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 7,
+      "id": "2026-11-26-2"
+    },
+    {
+      "section": "industry",
+      "headline": "S&P может понизить кредитный рейтинг NVIDIA из-за рисков управления и зависимости от одного человека",
+      "subheadline": "Агентство указывает на риски корпоративного управления и «ключевого человека».",
+      "body": "S&P рассматривает понижение кредитного рейтинга NVIDIA. Агентство называет две причины: риски корпоративного управления и риск «ключевого человека», то есть зависимость компании от одного руководителя. Это происходит после того, как Дженсен Хуанг ушёл из NVIDIA и через 11 дней вернулся на пост гендиректора. Технологические акции при этом остаются волатильными из-за сомнений в устойчивости ИИ-бума.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "S&P considers Nvidia credit downgrade over governance and 'key man' risks",
+          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Tech stocks are volatile as AI fears overshadow Huang's Nvidia return",
+          "url": "https://www.cnn.com/2026/11/25/business/ai-sell-off-despite-huang-nvidia-return",
+          "entities": [
+            "NVIDIA",
+            "Jensen Huang"
+          ],
+          "sentiment": "negative"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "S&P",
+          "Jensen Huang"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "S&P": "neutral",
+          "Jensen Huang": "negative"
+        },
+        "event": "finance"
+      },
+      "importance": 7,
+      "id": "2026-11-26-3"
+    },
+    {
+      "section": "industry",
+      "headline": "Ограничения США на доступ к чипам и защита от дистилляции уже тормозят китайские ИИ-лаборатории",
+      "subheadline": "По имеющимся данным, ограничения сказываются на темпах китайских разработчиков.",
+      "body": "Китайские ИИ-лаборатории работают медленнее из-за двух мер. Первая — ограничения США на доступ к продвинутым чипам. Вторая — защита американских компаний от дистилляции, когда чужую модель обучают на ответах их моделей. Ранее OpenAI рассказывала, как борется с враждебной дистилляцией, а NVIDIA перестала продавать ИИ-чипы в Китай.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "US chip-access curbs and anti-distillation measures are reportedly already slowing Chinese AI labs",
+          "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "США",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "США": "neutral",
+          "Китай": "negative"
+        },
+        "event": "regulation"
+      },
+      "importance": 7,
+      "id": "2026-11-26-4"
+    },
+    {
+      "section": "industry",
+      "headline": "Дарио Амодеи: передать ИИ управление обществом — «плохая идея»",
+      "subheadline": "Глава Anthropic выступил против того, чтобы ИИ-системы управляли обществом.",
+      "body": "Гендиректор Anthropic Дарио Амодеи назвал «плохой идеей» передачу ИИ функций управления обществом. Заявление прозвучало, когда Anthropic уже торгуется на Nasdaq, а около 90 исследователей обвинили компанию в показной безопасности.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
+          "url": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Dario Amodei",
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Dario Amodei": "neutral",
+          "Anthropic": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-26-5"
+    },
+    {
+      "section": "industry",
+      "headline": "Anthropic: внедрять ИИ на работе трудно не из-за освоения инструментов",
+      "subheadline": "По данным исследования Anthropic, главные препятствия лежат за пределами обучения сотрудников.",
+      "body": "Anthropic изучила, как компании внедряют ИИ. Вывод: научить сотрудников пользоваться инструментами — не самое сложное. Главные трудности возникают в другом месте, и именно они определяют, приживётся ли ИИ в работе.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic study shows the hardest part of adopting AI at work has little to do with learning the tools",
+          "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Anthropic": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-26-6"
+    },
+    {
+      "section": "industry",
+      "headline": "Amazon и Meta обсуждают снятие запрета на ИИ-агента Muse в магазине Amazon",
+      "subheadline": "Сейчас торговый агент Meta Muse заблокирован на Amazon, компании ведут переговоры.",
+      "body": "Amazon блокирует торгового ИИ-агента Meta Muse в своём интернет-магазине, и компании ведут переговоры о снятии запрета. Muse уже встроен в личные сообщения Instagram. Ранее агента критиковали за то, что он путает разговоры и может раскрывать личные данные.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store",
+          "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Amazon",
+          "Meta",
+          "Muse"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Amazon": "neutral",
+          "Meta": "positive",
+          "Muse": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 5,
+      "id": "2026-11-26-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI объединяет Chat и Work в ChatGPT, активные пользователи будут раньше упираться в лимиты",
+      "subheadline": "После слияния режимов Chat и Work тем, кто много пользуется ChatGPT, лимитов может хватать на меньший срок.",
+      "body": "OpenAI объединяет два режима ChatGPT — Chat и Work. Компания предупредила, что из-за этого активные пользователи могут исчерпывать лимиты раньше, чем сейчас. Новые размеры лимитов в материале не приводятся.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "ChatGPT"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "ChatGPT": "negative"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-26-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI обещает компаниям не просматривать их данные при работе с конфиденциальными задачами",
+      "subheadline": "Чтобы получить корпоративных клиентов с чувствительными данными, OpenAI берёт на себя обязательство не смотреть их данные.",
+      "body": "OpenAI хочет, чтобы компании доверяли ей конфиденциальную работу, и для этого обязуется не просматривать их данные. Компания конкурирует за корпоративных клиентов. Неделей раньше OpenAI впервые допустила к своим системам четырёх независимых аудиторов.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI wants companies to trust it with sensitive work by promising not to look at their data",
+          "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "OpenAI": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-26-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "Разбор Codex: ответы обрываются на 516 токенах, а git diff до 1 МБ уходит на сервер даже при отказе от сбора данных",
+      "subheadline": "Автор на Хабре проверил клиенты OpenAI Codex для Windows и macOS.",
+      "body": "Автор разбора проверил приложения Codex для Windows и macOS и описал две проблемы. Первая: ответ обрывается на 516 токенах. Вторая: Codex передаёт git diff размером до 1 МБ, даже если пользователь отказался от сбора данных (opt-out).",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Разбор OpenAI Codex на Windows и macOS: обрыв на 516 токенах и слив до 1 МБ git diff в обход opt-out",
+          "url": "https://habr.com/ru/articles/1112460/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Codex"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "Codex": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 7,
+      "id": "2026-11-26-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "Vercel запустила экспериментальный Board для общей работы людей и ИИ-агентов",
+      "subheadline": "Board распределяет задачи между разработчиками и агентами для программирования.",
+      "body": "Board — экспериментальный инструмент Vercel для общей работы команды. В нём на одной доске видны и задачи людей, и задачи агентов для программирования.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Vercel Launched Experimental Board to Coordinate Tasks Across Humans and Coding Agents",
+          "url": "https://www.infoq.com/news/2026/11/vercel-board-agents/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Vercel",
+          "Board"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Vercel": "positive",
+          "Board": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-26-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI рассказала на QCon, как агенты Codex обновляют Spark",
+      "subheadline": "Агенты Codex автоматизируют обновление версий Spark во внутренней инфраструктуре OpenAI.",
+      "body": "На конференции QCon San Francisco 2026 инженеры OpenAI рассказали, как обновляют Apache Spark на своём парке систем с помощью агентов Codex.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "QCon San Francisco 2026: Automating Spark Upgrades with Codex Agents at OpenAI",
+          "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Codex"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Codex": "positive"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-26-12"
+    },
+    {
+      "section": "platforms",
+      "headline": "LibreOffice ужесточил правила для кода, написанного ИИ",
+      "subheadline": "Проект изменил требования к коду, который участники пишут с помощью ИИ.",
+      "body": "Разработчики LibreOffice ужесточили требования к коду, созданному с помощью ИИ-помощников. Это ещё один проект с открытым кодом, который ограничивает ИИ-код. Одновременно Линус Торвальдс призвал разработчиков требовать от ИИ-помощников аккуратной работы.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В LibreOffice ужесточили правила в отношении ИИ‑кода",
+          "url": "https://habr.com/ru/articles/1112154/",
+          "type": "media"
+        }
+      ],
+      "related": [
+        {
+          "title": "Торвальдс: Скажите своему ИИ‑помощнику, чтобы он взялся за ум",
+          "url": "https://habr.com/ru/articles/1112210/",
+          "entities": [
+            "Linus Torvalds",
+            "Linux"
+          ],
+          "sentiment": "neutral"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "LibreOffice",
+          "Linus Torvalds"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "LibreOffice": "neutral",
+          "Linus Torvalds": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-26-13"
+    },
+    {
+      "section": "models",
+      "headline": "PrismML сжала модель для программирования на 27 млрд параметров с 54 до 5,9 ГБ",
+      "subheadline": "У каждого веса модели осталось всего три возможных значения.",
+      "body": "PrismML применила троичное квантование: у каждого веса остаётся только одно из трёх значений. Так агентная модель для программирования на 27 млрд параметров уменьшилась с 54 ГБ примерно в 9 раз — до 5,9 ГБ. Модели такого размера можно запускать на потребительском оборудовании.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "PrismML shrinks a 54 GB language model to 5.9 GB by reducing every weight to just three possible values",
+          "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "PrismML"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "PrismML": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-26-14"
+    },
+    {
+      "section": "models",
+      "headline": "ИИ-агенты распоряжаются частью вычислений Google DeepMind для экспериментов с Gemini",
+      "subheadline": "Агенты сами расходуют часть мощностей на эксперименты, но до рекурсивного самосовершенствования ещё далеко.",
+      "body": "В Google DeepMind ИИ-агентам передали управление частью вычислительных ресурсов для экспериментов с моделями Gemini. Рекурсивное самосовершенствование, при котором ИИ сам улучшает следующие версии себя, пока остаётся далёкой целью.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI agents now control part of Deepmind's compute for Gemini experiments, but recursive self-improvement remains distant",
+          "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "Gemini"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Google DeepMind": "neutral",
+          "Gemini": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-26-15"
+    },
+    {
+      "section": "models",
+      "headline": "Google DeepMind представила Gemini Robotics 2.5",
+      "subheadline": "Модель для роботов должна сделать их безопаснее и ловчее, а обучать — быстрее.",
+      "body": "Gemini Robotics 2.5 — новая версия модели DeepMind для управления роботами. Разработчики обещают три улучшения: более безопасное поведение, более точную работу руками и обучение новым навыкам на меньшем количестве данных.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "DeepMind's Gemini Robotics 2.5 Aims to Make Robots Safer, More Dexterous, and Faster Learners",
+          "url": "https://www.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google DeepMind",
+          "Gemini Robotics 2.5"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google DeepMind": "positive",
+          "Gemini Robotics 2.5": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-26-16"
+    },
+    {
+      "section": "models",
+      "headline": "ByteDance открыла код Laminar — фреймворка для асинхронного дообучения с подкреплением",
+      "subheadline": "Laminar предназначен для этапа пост-обучения моделей методом RL.",
+      "body": "Команда ByteDance Seed выложила в открытый доступ Laminar — фреймворк для асинхронного обучения с подкреплением на этапе пост-обучения. В асинхронной схеме генерация ответов и обновление весов идут параллельно, а не по очереди.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ByteDance Researchers Open-Sources Laminar, an Async Reinforcement Learning RL Post-Training Framework",
+          "url": "https://www.marktechpost.com/2026/11/24/bytedance-seed-laminar-async-rl-post-training-framework/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "ByteDance",
+          "Laminar"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "ByteDance": "positive",
+          "Laminar": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-26-17"
+    },
+    {
+      "section": "models",
+      "headline": "MIT: на нереалистичных данных ИИ лучше предсказывает климат",
+      "subheadline": "Исследователи MIT обнаружили, что нереалистичные данные для обучения делают климатические прогнозы ИИ надёжнее.",
+      "body": "Команда MIT обучала климатические ИИ-модели в том числе на нереалистичных сценариях. Вывод неожиданный: прогнозы таких моделей оказались надёжнее, чем у моделей, обученных только на реалистичных данных.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "MIT team discovers that unrealistic training data makes AI climate predictions more reliable",
+          "url": "https://the-decoder.com/mit-team-discovers-that-unrealistic-training-data-makes-ai-climate-predictions-more-reliable/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MIT"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "MIT": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-26-18"
+    },
+    {
+      "section": "models",
+      "headline": "Allen Institute выяснил, где учёные проводят границу для ИИ-агентов",
+      "subheadline": "Исследователи рассказали, какие этапы научной работы готовы доверить агентам, а какие нет.",
+      "body": "Allen Institute опросил учёных о том, какие этапы исследований они готовы передать ИИ-агентам, а какие хотят оставить за собой.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Where scientists draw the line on AI agents",
+          "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Allen Institute"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Allen Institute": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-26-19"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: Gemini 4 Neon обошла флагманскую модель Google",
+      "subheadline": null,
+      "body": "Gemini 4 Neon — не самая старшая модель в линейке Google. Однако в сравнении она обошла флагман компании.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Не самая топовая Gemini 4 Neon обогнала флагман Google",
+          "url": "https://habr.com/ru/articles/1112168/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Google DeepMind представила Gemini 4 Neon",
+      "tags": {
+        "entities": [
+          "Gemini 4 Neon",
+          "Google"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Gemini 4 Neon": "positive",
+          "Google": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-26-20"
+    },
+    {
+      "section": "content",
+      "headline": "Кто лучше оживляет портреты: Хабр сравнил аватары Kandinsky, Wan, InfiniteTalk и FantasyTalking",
+      "subheadline": "Четыре модели проверили на анимации статичных изображений в говорящие аватары.",
+      "body": "Автор на Хабре дал четырём моделям одну задачу: превратить статичную картинку в говорящий аватар. В сравнении участвовали российский Kandinsky, Wan и открытые InfiniteTalk и FantasyTalking.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Оживляем картинки: тест аватаров от Kandinsky, Wan, InfiniteTalk и FantasyTalking",
+          "url": "https://habr.com/ru/articles/1112328/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Kandinsky",
+          "Wan",
+          "InfiniteTalk",
+          "FantasyTalking"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Kandinsky": "neutral",
+          "Wan": "neutral",
+          "InfiniteTalk": "neutral",
+          "FantasyTalking": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-26-21"
+    },
+    {
+      "section": "art",
+      "headline": "AI Exchange London откроет в Кингс-Кросс бесплатную выставку Intelligences",
+      "subheadline": "Выставка показывает ИИ через искусство, науку, игры и интерактивные работы.",
+      "body": "Выставка Intelligences пройдёт в лондонском районе Кингс-Кросс. Тема ИИ раскрыта через художественные, научные, игровые и интерактивные работы. Вход бесплатный. Выставка откроется 9 декабря 2026 года и продлится до августа 2027-го.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "AI Exchange London: Intelligences",
+          "url": "https://fadmagazine.com/2026/11/25/ai-exchange-london-intelligences/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "Лондон, King's Cross · 9 дек 2026 — авг 2027 · вход свободный",
+      "tags": {
+        "entities": [
+          "AI Exchange London"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "AI Exchange London": "positive"
+        },
+        "event": "exhibition"
+      },
+      "importance": 7,
+      "id": "2026-11-26-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Иран заявил в ООН, что США применяли ИИ при выборе целей для ударов",
+      "subheadline": "Независимого подтверждения нет — это заявление иранской стороны.",
+      "body": "На брифинге в ООН иранский дипломат заявил, что США использовали ИИ-технологии при выборе целей для ударов. Доказательств он не привёл. Независимо это заявление не подтверждено.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Iran claims US weaponized AI tech in strikes at UN briefing",
+          "url": "https://www.foxnews.com/live-news/ai-news-iran-war-economy-china-11-25-26",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Иран",
+          "США",
+          "ООН"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Иран": "neutral",
+          "США": "negative",
+          "ООН": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 7,
+      "id": "2026-11-26-23"
+    },
+    {
+      "section": "hype",
+      "headline": "Атака на крупную компанию: ИИ-агент OpenCode нашёл ключ доступа за 5 минут 44 секунды",
+      "subheadline": "Хватило ноутбука и бесплатного ИИ-агента.",
+      "body": "С помощью бесплатного ИИ-агента OpenCode удалось найти ключ доступа к системе крупной финансовой компании за 5 минут 44 секунды. По этому примеру видно, что для атаки на корпоративную инфраструктуру больше не нужны ни специальные инструменты, ни долгая подготовка.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Ноутбук, ИИ-агент OpenCode и меньше шести минут. Так теперь выглядят атаки на крупные компании",
+          "url": "https://news.rambler.ru/tech/57484377-noutbuk-ii-agent-opencode-i-menshe-shesti-minut-tak-teper-vyglyadyat-ataki-na-krupnye-kompanii/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenCode"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenCode": "neutral"
+        },
+        "event": "incident"
+      },
+      "importance": 7,
+      "id": "2026-11-26-24"
+    },
+    {
+      "section": "hype",
+      "headline": "Android-троян RatHat маскируется под соцсеть и использует Gemini на заражённом смартфоне",
+      "subheadline": "Вредоносная программа обращается к Gemini прямо на устройстве жертвы.",
+      "body": "Под видом приложения соцсети распространяется троян RatHat для Android. После заражения он использует Gemini на смартфоне жертвы. Схему атаки описали исследователи на Хабре.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Под видом соцсети: как Android-троян RatHat использует Gemini на заражённом смартфоне",
+          "url": "https://habr.com/ru/companies/speshu_ai/articles/1112124/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "RatHat",
+          "Gemini",
+          "Android"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "RatHat": "negative",
+          "Gemini": "negative",
+          "Android": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-26-25"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: OpenRouter признал возможную утечку промптов клиентов",
+      "subheadline": null,
+      "body": "Исследователь заложил 2 млн ловушек в запросы к ИИ-сервисам, и часть из них сработала. После этого OpenRouter признал, что промпты клиентов могли утечь.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "2 млн ловушек проверили безопасность нейросетей: посредники пропускают секреты",
+          "url": "https://dzen.guru/news/2-mln-lovushek-proverili-bezopasnost-neyrosetey-posredniki-propuskayut-sekrety",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Дешёвые провайдеры инференса крадут API-ключи и читают запросы пользователей",
+      "tags": {
+        "entities": [
+          "OpenRouter"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenRouter": "negative"
+        },
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-26-26"
+    },
+    {
+      "section": "hype",
+      "headline": "Fortune: законы об ответственности компаний не распространяются на ИИ-агентов без владельца",
+      "subheadline": "AI Rights Institute разобрал дело о взломе Hugging Face агентами OpenAI.",
+      "body": "AI Rights Institute изучил дело о взломе Hugging Face агентами OpenAI. По его выводу, корпоративная ответственность в этом деле сработала. Однако закон не охватывает автономных ИИ-агентов, у которых нет владельца.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "AI Rights Institute: дело о взломе OpenAI и ответственность ИИ-агентов",
+          "url": "https://fortune.com/2026/11/25/openai-hugging-face-hack-ai-agents-liability-credit-report",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "AI Rights Institute",
+          "OpenAI",
+          "Hugging Face"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "AI Rights Institute": "neutral",
+          "OpenAI": "negative",
+          "Hugging Face": "neutral"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-26-27"
+    },
+    {
+      "section": "hype",
+      "headline": "Запущен проект коллективной расшифровки манускрипта Войнича с помощью ИИ-агентов",
+      "subheadline": "Над текстом, который не могут прочесть больше века, теперь работают ИИ-агенты.",
+      "body": "Манускрипт Войнича написан неизвестным письмом и до сих пор не расшифрован. Новый проект привлекает к этой задаче ИИ-агентов, а результаты их работы собираются совместно.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Запущен проект по коллективной расшифровке манускрипта Войнича при помощи ИИ‑агентов",
+          "url": "https://habr.com/ru/articles/1112398/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Манускрипт Войнича"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Манускрипт Войнича": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-26-28"
+    }
+  ]
+}
