@@ -1,0 +1,803 @@
+{
+  "date": "2026-11-27",
+  "published": false,
+  "news": [
+    {
+      "section": "industry",
+      "headline": "NVIDIA остановила отгрузку серверов в Малайзию, Сингапур, Таиланд и Индонезию",
+      "subheadline": "Поставки прекращены после того, как США ужесточили экспортный контроль.",
+      "body": "NVIDIA прекратила отгружать серверы в четыре страны Юго-Восточной Азии. Это Малайзия, Сингапур, Таиланд и Индонезия. Причина — новые ограничения на экспорт, которые ввели США. Эти страны служат крупными площадками для дата-центров и транзитными узлами для поставок оборудования в регионе. Решение принято на фоне проверки, которую ведут американские власти: они выясняют, мог ли Китай получать процессоры и закрытые сведения NVIDIA в обход ограничений.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "Nvidia halts server shipments to Malaysia, Singapore, Thailand, and Indonesia after tighter US export controls",
+          "url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "США",
+          "Малайзия",
+          "Сингапур",
+          "Индонезия"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "США": "neutral",
+          "Малайзия": "negative",
+          "Сингапур": "negative",
+          "Индонезия": "negative"
+        },
+        "event": "regulation"
+      },
+      "importance": 9,
+      "id": "2026-11-27-1"
+    },
+    {
+      "section": "models",
+      "headline": "Сбер выпустил GigaChat 4 с новыми агентными навыками",
+      "subheadline": "Вместе с GigaChat 4 Сбер показал новые модели Kandinsky.",
+      "body": "Команда Сбера рассказала в своём блоге на Хабре, какие агентные навыки появились в GigaChat 4. Новую версию представили в один день с генераторами Kandinsky 6.5 для изображений и видео. В заголовке публикации компания называет и «первый миллион» — это веха, которой она отмечает запуск.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "GigaChat 4: новые агентные навыки и первый миллион",
+          "url": "https://habr.com/ru/companies/sberbank/articles/1112118/",
+          "type": "official"
+        }
+      ],
+      "related": [
+        {
+          "title": "«Сбер» представил новые модели GigaChat и Kandinsky",
+          "url": "https://www.vedomosti.ru/technology/news/2026/11/26/1415693-novie-modeli",
+          "entities": [
+            "Сбер",
+            "GigaChat",
+            "Kandinsky"
+          ],
+          "sentiment": "positive"
+        }
+      ],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Сбер",
+          "GigaChat"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "GigaChat": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-27-2"
+    },
+    {
+      "section": "models",
+      "headline": "Sakana AI выпустила Namazu Small — модель на 30 млрд параметров",
+      "subheadline": "Модель построена на NVIDIA Nemotron 3 Nano.",
+      "body": "Namazu Small от японской Sakana AI — это дообученная версия открытой модели NVIDIA Nemotron 3 Nano. Это первая модель «малого» размера в линейке Namazu.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Sakana AI Releases Namazu Small, a 30B Model Built on Nemotron 3 Nano",
+          "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Sakana AI",
+          "Nemotron",
+          "NVIDIA"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Sakana AI": "positive",
+          "Nemotron": "neutral",
+          "NVIDIA": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-27-3"
+    },
+    {
+      "section": "models",
+      "headline": "Tencent открыла код DFly2 для ускорения разреженных моделей",
+      "subheadline": "Метод спекулятивного декодирования использует разреженный KV-кэш целевой модели.",
+      "body": "При спекулятивном декодировании черновая модель предлагает токены, а основная модель их проверяет. В DFly2 черновой части не нужен собственный кэш: она берёт разреженный KV-кэш основной модели. Код опубликован в открытом доступе.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Tencent Open-Sources DFly2: Speculative Decoding That Reuses the Target's Sparse KV Cache",
+          "url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Tencent"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Tencent": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-27-4"
+    },
+    {
+      "section": "models",
+      "headline": "NVIDIA выложила открытые данные и инструкции по дообучению Nemotron 3.5 Parse",
+      "subheadline": "Компания объяснила, как дообучать модель для разбора документов и ускорять её инференс.",
+      "body": "Публикация в блоге Hugging Face продолжает релиз Nemotron 3.5 Parse. В неё вошли открытые датасеты, рецепты дообучения под свои документы и способы ускорить инференс.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+          "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Nemotron",
+          "Hugging Face"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "NVIDIA": "positive",
+          "Nemotron": "positive",
+          "Hugging Face": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-27-5"
+    },
+    {
+      "section": "models",
+      "headline": "МТС рассказала, как обучала русский ModernBERT",
+      "subheadline": "В статье описаны предобучение и постобучение энкодерной модели для русского языка.",
+      "body": "Команда МТС описала на Хабре весь путь обучения русскоязычной версии архитектуры ModernBERT, от предобучения до постобучения. Энкодерные модели такого типа применяют для поиска, классификации и RAG.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Русский ModernBERT: предобучение и постобучение",
+          "url": "https://habr.com/ru/companies/ru_mts/articles/1112532/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "МТС",
+          "ModernBERT"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "МТС": "neutral",
+          "ModernBERT": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-27-6"
+    },
+    {
+      "section": "models",
+      "headline": "Продолжение: бывший исследователь OpenAI о доказательстве гипотезы Римана",
+      "subheadline": null,
+      "body": "По его словам, само доказательство значит меньше, чем тот факт, что ИИ-система вообще способна его построить.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Former OpenAI researcher says the Riemann proof matters less than the fact that an AI system can produce it",
+          "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Математик Anthropic заявил, что доказал гипотезу Римана с помощью Claude",
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Claude"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Claude": "positive"
+        },
+        "event": "statement"
+      },
+      "importance": 5,
+      "id": "2026-11-27-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "Google открыла для всех MCP-серверы и CLI Workspace и добавила Agent Gateway",
+      "subheadline": "Каждое обращение агента проверяется по правам доступа Workspace, правилам DLP и меткам классификации.",
+      "body": "MCP-серверы Workspace и Workspace CLI вышли в общий доступ (GA). Вместе с ними появился Google Cloud Agent Gateway — шлюз, через который проходит трафик LLM, MCP и Agent2Agent. Администраторы могут ограничивать агентов теми же правилами, что и сотрудников: правами доступа к документам, политиками защиты от утечек данных и метками конфиденциальности.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google opens Workspace AI agent tools with new controls",
+          "url": "https://itbrief.asia/story/google-opens-workspace-ai-agent-tools-with-new-controls",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Google Workspace",
+          "MCP"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Google Workspace": "positive",
+          "MCP": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-27-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "Пользователи GPT-6.2 Astra упираются в лимиты на 40% быстрее",
+      "subheadline": "OpenAI исправила ошибку в расчёте стоимости запросов, и лимиты начали расходоваться быстрее.",
+      "body": "До исправления запросы к GPT-6.2 Astra учитывались в лимитах ниже реальной стоимости. После того как OpenAI устранила ошибку, тот же объём работы расходует лимит примерно на 40% быстрее. Изменение накладывается на объединение Chat и Work в ChatGPT — OpenAI уже предупреждала, что после него активные пользователи будут раньше доходить до ограничений.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error",
+          "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "GPT-6.2 Astra",
+          "ChatGPT"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "negative",
+          "GPT-6.2 Astra": "negative",
+          "ChatGPT": "negative"
+        },
+        "event": "update"
+      },
+      "importance": 7,
+      "id": "2026-11-27-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "У llama.cpp появилась панель бенчмарков для AMD Ryzen и Radeon",
+      "subheadline": "Разработчики ggml запустили дашборд с замерами скорости на процессорах и видеокартах AMD.",
+      "body": "На дашборде собраны результаты llama.cpp на разных конфигурациях AMD. По ним можно сравнить скорость локального инференса до покупки железа.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+          "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "llama.cpp",
+          "AMD"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "llama.cpp": "positive",
+          "AMD": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-27-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "Skills over MCP: навыки агента теперь поставляются вместе с MCP-сервером",
+      "subheadline": "MCP-сервер может отдавать клиенту не только инструменты, но и готовые инструкции к ним.",
+      "body": "Раньше навыки (skills) для агента приходилось устанавливать отдельно от сервера, инструменты которого они описывают. В новом подходе сервер сам отдаёт клиенту и инструменты, и описание того, как с ними работать.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Skills over MCP: скилл теперь приезжает вместе с MCP-сервером",
+          "url": "https://habr.com/ru/articles/1112776/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "MCP"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "MCP": "positive"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-27-11"
+    },
+    {
+      "section": "platforms",
+      "headline": "Австралийский издатель Nine открыл ИИ-доступ к своим материалам через MCP",
+      "subheadline": "Пилот рассчитан на корпоративных подписчиков и требует авторизации.",
+      "body": "Через сервер на Model Context Protocol подписчики получают доступ к материалам нескольких изданий Nine. Доступ открыт только после входа под учётной записью подписчика.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Nine launches authenticated AI pilot for publishers",
+          "url": "https://itbrief.com.au/story/nine-launches-authenticated-ai-pilot-for-publishers",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Nine",
+          "MCP"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Nine": "positive",
+          "MCP": "neutral"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-27-12"
+    },
+    {
+      "section": "industry",
+      "headline": "Канада оплатит 80% вычислений по фонду AI Compute Access Fund, если их купят у суверенного провайдера",
+      "subheadline": "Министр по ИИ Эван Соломон объявил о новом этапе фонда на $1 млрд.",
+      "body": "Об условиях Соломон объявил в Торонто. Государство берёт на себя 80% стоимости вычислительных мощностей, если компания покупает их у суверенного, то есть канадского, провайдера. Цель — перевести господдержку ИИ-компаний с иностранных облаков на местную инфраструктуру.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Feds will now pay 80 percent of costs under AI Compute Access Fund if purchased from a sovereign provider",
+          "url": "https://betakit.com/feds-will-now-pay-80-percent-of-costs-under-ai-compute-access-fund-if-purchased-from-a-sovereign-provider/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Канада",
+          "Evan Solomon"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Канада": "positive",
+          "Evan Solomon": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-27-13"
+    },
+    {
+      "section": "industry",
+      "headline": "Китайский ИИ-разработчик берёт данные у Google и Meta после отказа OpenAI и Anthropic",
+      "subheadline": "OpenAI и Anthropic закрыли доступ к своим данным, и разработчику пришлось искать другие источники.",
+      "body": "OpenAI и Anthropic ограничили использование своих моделей китайскими лабораториями, в том числе ради защиты от дистилляции. После этого разработчик переключился на модели и данные Google и Meta. Ранее сообщалось, что ограничения на чипы и защита от дистилляции уже замедляют китайские лаборатории.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "After OpenAI and Anthropic shut the door on their data, a Chinese AI developer is turning to Google and Meta instead",
+          "url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Anthropic",
+          "Google",
+          "Meta",
+          "Китай"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Anthropic": "neutral",
+          "Google": "neutral",
+          "Meta": "neutral",
+          "Китай": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7,
+      "id": "2026-11-27-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Citibank разрешил клиентам пользоваться ИИ-агентами на свой страх и риск",
+      "subheadline": "Если ИИ-агент совершит операцию от имени клиента, ответственность за неё несёт клиент.",
+      "body": "Банк разрешил подключать ИИ-агентов к счетам. Ущерб от их действий банк не возмещает — риск остаётся на клиенте.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Citibank разрешил клиентам использовать ИИ‑агентов на свой страх и риск",
+          "url": "https://habr.com/ru/articles/1112804/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Citibank"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Citibank": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-27-15"
+    },
+    {
+      "section": "industry",
+      "headline": "В России предложили ввести независимую проверку доверенного ИИ",
+      "subheadline": "Соответствие ИИ-систем требованиям доверенного ИИ будет проверять независимая сторона.",
+      "body": "По предложению, соответствие требованиям доверенного ИИ должна подтверждать независимая проверка, а не заявление самого разработчика.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В России предложили создать систему независимой проверки доверенного ИИ",
+          "url": "https://habr.com/ru/articles/1112786/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Россия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Россия": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 5,
+      "id": "2026-11-27-16"
+    },
+    {
+      "section": "content",
+      "headline": "Сбер выпустил Kandinsky 6.5 для генерации изображений и видео",
+      "subheadline": "Модели Kandinsky 6.5 Image и Kandinsky 6.5 Video доступны в GigaChat.",
+      "body": "Модели для изображений и для видео вышли одновременно. Картинки генерируются прямо в чате GigaChat, для видео сделана отдельная вкладка. Kandinsky 6.5 представили вместе с новыми моделями GigaChat.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Сбер представил Kandinsky 6.5 для создания изображений и видео",
+          "url": "https://78.ru/news/2026-11-26/sber-predstavil-kandinsky-65-dlya-sozdaniya-izobrazhenii-i-video",
+          "type": "media"
+        },
+        {
+          "title": "«Сбер» представил новые модели GigaChat и Kandinsky",
+          "url": "https://www.vedomosti.ru/technology/news/2026/11/26/1415693-novie-modeli",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Одно событие в двух источниках",
+      "details": "Изображения — в чате GigaChat · видео — на отдельной вкладке",
+      "tags": {
+        "entities": [
+          "Сбер",
+          "Kandinsky",
+          "GigaChat"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "Kandinsky": "positive",
+          "GigaChat": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-27-17"
+    },
+    {
+      "section": "content",
+      "headline": "Molens AI вдвое снизила цену годовых тарифов",
+      "subheadline": "Скидка 50% на первый год, промокод не нужен.",
+      "body": "Скидка действует на все годовые планы и только на первый год подписки. Акция продлится до 30 ноября, 23:59 по тихоокеанскому времени.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Molens AI Black Friday",
+          "url": "https://molensai.com/black-friday",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "−50% на годовые планы на первый год · до 30 ноября 23:59 PT",
+      "tags": {
+        "entities": [
+          "Molens AI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Molens AI": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5,
+      "id": "2026-11-27-18"
+    },
+    {
+      "section": "content",
+      "headline": "FastMoro AI снизила цены на 30%",
+      "subheadline": "Скидка распространяется на первый месяц, годовую подписку и пакеты кредитов.",
+      "body": "Сервис генерирует видео и изображения. Скидка 30% действует с 20 ноября по 1 декабря.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "FastMoro AI Black Friday",
+          "url": "https://fastmoroai.com/black-friday",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "−30% на первый месяц, год или пакет кредитов · 20 ноября — 1 декабря",
+      "tags": {
+        "entities": [
+          "FastMoro AI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "FastMoro AI": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5,
+      "id": "2026-11-27-19"
+    },
+    {
+      "section": "content",
+      "headline": "ImgVid даёт двойные кредиты на новые тарифы",
+      "subheadline": "Тариф оформляется по обычной цене, а кредитов на счёт приходит вдвое больше.",
+      "body": "Удвоение кредитов действует для новых тарифов, оформленных до 1 декабря.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ImgVid Black Friday",
+          "url": "https://imgvid.net/black-friday",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "details": "×2 кредита на новые тарифы по обычной цене · до 1 декабря",
+      "tags": {
+        "entities": [
+          "ImgVid"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "ImgVid": "neutral"
+        },
+        "event": "promo"
+      },
+      "importance": 5,
+      "id": "2026-11-27-20"
+    },
+    {
+      "section": "hype",
+      "headline": "Проректор Дартмута ушёл в отставку после обвинений в том, что писал тексты с ИИ",
+      "subheadline": "По версии CNN, эта история показывает, как ИИ меняет высшее образование.",
+      "body": "Проректора обвинили в том, что он поручал ИИ писать тексты, которые выходили под его именем. После этого он оставил пост. CNN ставит этот случай в ряд споров о том, где проходит граница допустимого использования ИИ в университетах.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Dartmouth provost AI scandal",
+          "url": "https://www.cnn.com/ai-dartmouth-provost-scandal-vrtc",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Dartmouth College",
+          "CNN"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Dartmouth College": "negative",
+          "CNN": "neutral"
+        },
+        "event": "people"
+      },
+      "importance": 7,
+      "id": "2026-11-27-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Учёные обвинили Cambridge University Press в ИИ-редактуре статей без согласия авторов",
+      "subheadline": "Издательство это отрицает, а критики показывают признаки машинного текста.",
+      "body": "По словам исследователей, тексты научных статей изменили с помощью ИИ, а авторов об этом не спросили. Cambridge University Press отвергает обвинения.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Scholars condemn publisher's AI editing scandal",
+          "url": "https://geoaiglobals.com/news/scholars-condemn-publisher-ai-editing-scandal",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Cambridge University Press"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Cambridge University Press": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-27-22"
+    },
+    {
+      "section": "hype",
+      "headline": "Anthropic заблокировала главу Epic Games Тима Суини в Claude",
+      "subheadline": "Аккаунт гендиректора Epic Games в Claude заблокирован.",
+      "body": "Суини — один из самых известных публичных критиков крупных технологических платформ. Блокировку его аккаунта в Claude обсуждают в профессиональных сообществах.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Anthropic забанила в Claude главу Epic Games Тима Суини",
+          "url": "https://habr.com/ru/articles/1112660/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Anthropic",
+          "Claude",
+          "Tim Sweeney",
+          "Epic Games"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Anthropic": "negative",
+          "Claude": "neutral",
+          "Tim Sweeney": "negative",
+          "Epic Games": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-27-23"
+    },
+    {
+      "section": "hype",
+      "headline": "Взлом RSA с помощью ИИ: СМИ пересказывают слух без оговорок",
+      "subheadline": "VC.ru разобрал, на чём на самом деле держится история о взломе шифрования.",
+      "body": "В статье разобрано, откуда пошёл слух и почему его подхватили издания. Доказательств того, что ИИ или квантовые вычисления взломали RSA, слух не содержит.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Слух о взломе RSA: что стоит за историей, которую СМИ пересказывают без оговорок",
+          "url": "https://vc.ru/ai/3281096-sluhy-o-vzlome-rsa",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "RSA"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "RSA": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-27-24"
+    },
+    {
+      "section": "hype",
+      "headline": "ИИ-реклама продаёт халаты с подогревом и «умные» ёлки, которые не доходят до покупателей",
+      "subheadline": "Сгенерированные ролики рекламируют товары, которые покупатели так и не получили.",
+      "body": "Перед праздничным сезоном в соцсетях вышли ИИ-ролики с необычными товарами. Покупатели оплачивали заказы, но товары до них так и не дошли.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "ИИ-реклама продаёт халаты с подогревом и «умные» ёлки, которых покупатели так и не дождались",
+          "url": "https://vc.ru/ai/3279643-ii-reklama-halatoj-s-podogrevom-i-umnyh-yolok",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "negative",
+        "entity_sentiment": {},
+        "event": "incident"
+      },
+      "importance": 5,
+      "id": "2026-11-27-25"
+    }
+  ]
+}
