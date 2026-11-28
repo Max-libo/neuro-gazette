@@ -1,0 +1,682 @@
+{
+  "date": "2026-11-28",
+  "published": false,
+  "news": [
+    {
+      "section": "industry",
+      "headline": "OpenAI подала встречный иск против Apple: обвиняет её в краже коммерческой тайны и давлении на общих поставщиков",
+      "subheadline": "Спор двух компаний перешёл во взаимные обвинения: OpenAI утверждает, что Apple присваивала её секреты и принуждала поставщиков, с которыми работают обе компании.",
+      "body": "OpenAI ответила на иск Apple своим иском. В нём два обвинения. Первое: Apple украла коммерческую тайну OpenAI. Второе: Apple давила на поставщиков, с которыми работают обе компании. Второй пункт касается цепочки поставок. Он показывает, что спор вышел за рамки программного обеспечения и затрагивает производство устройств, где Apple и OpenAI теперь конкурируют за одних и тех же подрядчиков. Иск ещё не рассмотрен: суд не оценивал ни одно из обвинений.",
+      "tier": "hero",
+      "sources": [
+        {
+          "title": "OpenAI countersues Apple over trade secret theft and alleged coercion of shared suppliers",
+          "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Apple"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Apple": "negative"
+        },
+        "event": "legal"
+      },
+      "importance": 9,
+      "id": "2026-11-28-1"
+    },
+    {
+      "section": "models",
+      "headline": "Три исследования Meta и AMI Labs поддерживают ставку Яна Лекуна на JEPA-модели мира",
+      "subheadline": "Новые работы говорят в пользу JEPA-архитектуры, а не больших языковых моделей.",
+      "body": "Meta и AMI Labs выпустили три исследования. Их результаты поддерживают подход, который продвигает Ян Лекун: модели мира на архитектуре JEPA (Joint Embedding Predictive Architecture). Такая модель предсказывает не следующий токен, а абстрактное представление будущего состояния. Лекун давно считает, что одни языковые модели не приведут к ИИ человеческого уровня. Новые работы — аргумент в этом споре, а не готовые продукты: веса и сервисы по итогам исследований не анонсированы.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Three studies from Meta and AMI Labs back Yann LeCun's bet on JEPA world models over large language models",
+          "url": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Meta",
+          "AMI Labs",
+          "Yann LeCun"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Meta": "positive",
+          "AMI Labs": "positive",
+          "Yann LeCun": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 7,
+      "id": "2026-11-28-2"
+    },
+    {
+      "section": "models",
+      "headline": "Сбер выпустил GigaAM-v4 и GigaAM Multilingual-v2 для распознавания речи",
+      "subheadline": "Новые версии распознают речь потоково, а мультиязычная модель поддерживает 21 язык.",
+      "body": "Сбер обновил семейство моделей распознавания речи GigaAM. В GigaAM-v4 появилось потоковое распознавание: текст выдаётся по ходу речи, а не после конца записи. Это нужно для голосовых ассистентов и субтитров в реальном времени. GigaAM Multilingual-v2 работает с 21 языком. По словам Сбера, качество распознавания выросло по сравнению с прошлыми версиями.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "GigaAM‑v4 и GigaAM Multilingual‑v2: потоковое распознавание, 21 язык и новый уровень качества",
+          "url": "https://habr.com/ru/companies/sberbank/articles/1112846/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Сбер",
+          "GigaAM"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "GigaAM": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 7,
+      "id": "2026-11-28-3"
+    },
+    {
+      "section": "models",
+      "headline": "Сбер рассказал о GigaEdge LLM — модели на 129 млн параметров для умного дома",
+      "subheadline": "Компактная языковая модель рассчитана на работу прямо на устройствах.",
+      "body": "В GigaEdge LLM 129 млн параметров. Это на порядки меньше флагманских моделей, поэтому она может работать на слабом железе умного дома без обращения к облаку.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "GigaEdge LLM: модель на 129 млн параметров для умного дома",
+          "url": "https://habr.com/ru/companies/sberbank/articles/1112286/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Сбер",
+          "GigaEdge LLM"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Сбер": "positive",
+          "GigaEdge LLM": "positive"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-28-4"
+    },
+    {
+      "section": "models",
+      "headline": "Postgres Pro обучила Slonik-LLM разработке ядра PostgreSQL",
+      "subheadline": "Компания рассказала, как дообучала модель на задачах разработки СУБД.",
+      "body": "Postgres Pro описала, как обучала модель для работы с кодом ядра PostgreSQL. В этой области универсальные модели для программирования справляются хуже, чем с прикладным кодом.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Slonik‑LLM, или Как мы учили модель разработке ядра PostgreSQL",
+          "url": "https://habr.com/ru/companies/postgrespro/articles/1113058/",
+          "type": "official"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Postgres Pro",
+          "PostgreSQL"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Postgres Pro": "positive",
+          "PostgreSQL": "neutral"
+        },
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-28-5"
+    },
+    {
+      "section": "models",
+      "headline": "Бенчмарк локальных моделей: высокий reasoning effort не всегда даёт лучший результат",
+      "subheadline": "Автор сравнил локальные модели на разных уровнях рассуждений.",
+      "body": "Тест показал, что если дать модели больше времени на рассуждение, качество ответа растёт не всегда. А время и число токенов растут в любом случае.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Выше reasoning effort — не всегда лучше: бенчмарк локальных LLM на разных уровнях мышления",
+          "url": "https://habr.com/ru/articles/1113394/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [],
+        "sentiment": "neutral",
+        "entity_sentiment": {},
+        "event": "research"
+      },
+      "importance": 5,
+      "id": "2026-11-28-6"
+    },
+    {
+      "section": "platforms",
+      "headline": "Mozilla и Mistral встроят открытые модели в Smart Window браузера Firefox",
+      "subheadline": "ИИ-функции Firefox будут работать на моделях Mistral с открытыми весами.",
+      "body": "Smart Window — ИИ-режим Firefox. По партнёрству с Mistral он будет работать на открытых моделях французской компании. Mozilla строит образ браузера, который бережёт приватность. Открытые веса помогают ей не зависеть от закрытых API крупных американских разработчиков.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Mozilla Partners with Mistral to Bring Open-Weight AI Models to Firefox Smart Window",
+          "url": "https://www.infoq.com/news/2026/11/mozilla-mistral-ai-smart-window/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Mozilla",
+          "Mistral",
+          "Firefox"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Mozilla": "positive",
+          "Mistral": "positive",
+          "Firefox": "positive"
+        },
+        "event": "partnership"
+      },
+      "importance": 7,
+      "id": "2026-11-28-7"
+    },
+    {
+      "section": "platforms",
+      "headline": "OpenAI строит платформу данных Athena, чтобы ИИ-агенты меньше угадывали",
+      "subheadline": "Athena должна давать агентам проверенные данные вместо догадок.",
+      "body": "Платформа данных Athena нужна, чтобы агенты брали факты из структурированного источника, а не додумывали их. Когда и для кого Athena станет доступна, пока неизвестно.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI is building \"Athena\" data platform to cut down on AI agent guesswork",
+          "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI",
+          "Athena"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral",
+          "Athena": "neutral"
+        },
+        "event": "other"
+      },
+      "importance": 7,
+      "id": "2026-11-28-8"
+    },
+    {
+      "section": "platforms",
+      "headline": "В Android можно собрать собственный виджет через Gemini",
+      "subheadline": "Функция Create My Widget делает виджет для главного экрана по текстовому описанию.",
+      "body": "Пользователь описывает виджет словами, а Gemini его собирает. The Verge называет функцию вайб-кодингом для главного экрана: программировать для этого не нужно.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Android's DIY widgets are a bit of vibe-coding fun",
+          "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "Android",
+          "Gemini"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Google": "positive",
+          "Android": "positive",
+          "Gemini": "positive"
+        },
+        "event": "release"
+      },
+      "importance": 5,
+      "id": "2026-11-28-9"
+    },
+    {
+      "section": "platforms",
+      "headline": "В Ubuntu появится Ubuntu Launcher с ИИ-ассистентом",
+      "subheadline": "Команда Ubuntu анонсировала новое приложение-лаунчер.",
+      "body": "Ubuntu Launcher запускает приложения и умеет подключать ИИ-ассистента. Это одна из первых ИИ-функций в стандартном окружении дистрибутива.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В команде Ubuntu анонсировали приложение Ubuntu Launcher с возможностью ИИ-ассистента",
+          "url": "https://habr.com/ru/articles/1112986/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Canonical",
+          "Ubuntu"
+        ],
+        "sentiment": "positive",
+        "entity_sentiment": {
+          "Canonical": "positive",
+          "Ubuntu": "positive"
+        },
+        "event": "other"
+      },
+      "importance": 5,
+      "id": "2026-11-28-10"
+    },
+    {
+      "section": "platforms",
+      "headline": "В ядро Linux 7.5 планируют добавить инструкции для ИИ-агентов",
+      "subheadline": "Разработчики ядра хотят задать правила для агентов, которые работают с кодом.",
+      "body": "Инструкции должны объяснять ИИ-агентам принятые в проекте правила работы с кодом ядра. Сейчас мейнтейнерам приходится разбирать поток машинно сгенерированных патчей.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "В ядре Linux 7.5 планируют добавить специальные инструкции для ИИ‑агентов",
+          "url": "https://habr.com/ru/articles/1113076/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Linux"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Linux": "neutral"
+        },
+        "event": "update"
+      },
+      "importance": 5,
+      "id": "2026-11-28-11"
+    },
+    {
+      "section": "industry",
+      "headline": "SAP сократит не меньше 10 тыс. сотрудников ради перехода на ИИ",
+      "subheadline": "Крупнейший европейский разработчик корпоративного ПО перестраивает компанию под ИИ.",
+      "body": "SAP собирается сократить как минимум 10 тыс. рабочих мест. Компания объясняет это переходом на ИИ. Это одно из самых крупных сокращений в европейской технологической отрасли, которые прямо связывают с внедрением ИИ.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "SAP plans to cut at least 10,000 jobs as it pivots to AI",
+          "url": "https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "SAP"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "SAP": "negative"
+        },
+        "event": "people"
+      },
+      "importance": 7,
+      "id": "2026-11-28-12"
+    },
+    {
+      "section": "industry",
+      "headline": "OpenAI попросила инвесторов не финансировать пять конкурентов",
+      "subheadline": "Просьба получили участники раунда OpenAI, обязательной силы она не имеет.",
+      "body": "OpenAI обратилась к инвесторам, которые участвуют в её раунде финансирования, и попросила их не вкладываться в пять конкурирующих ИИ-компаний. Как пишет издание, это просьба, а не условие договора. Инвесторы могут её не выполнять.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "OpenAI Asked Investors to Avoid Funding Five Competing AI Firms",
+          "url": "https://www.tokenpost.com/news/business/63913",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "OpenAI"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "OpenAI": "neutral"
+        },
+        "event": "investment"
+      },
+      "importance": 7,
+      "id": "2026-11-28-13"
+    },
+    {
+      "section": "industry",
+      "headline": "Минцифры хочет открыть госданные для обучения нейросетей",
+      "subheadline": "Министерство предлагает дать разработчикам ИИ доступ к государственным данным.",
+      "body": "По данным vc.ru, Минцифры предлагает использовать государственные массивы данных для обучения ИИ-моделей. Российским разработчикам не хватает качественных русскоязычных данных, и госданные могут стать важным источником.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Минцифры хочет открыть ИИ доступ к госданным для обучения моделей",
+          "url": "https://vc.ru/ai/3283626-mincifry-otkryvaet-dostup-k-gosdanam-dlya-neirosetey",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Минцифры",
+          "Россия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Минцифры": "neutral",
+          "Россия": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 7,
+      "id": "2026-11-28-14"
+    },
+    {
+      "section": "industry",
+      "headline": "Минэкономразвития предложило правила для сделок с участием ИИ-агентов",
+      "subheadline": "Министерство хочет урегулировать сделки, которые заключают ИИ-агенты.",
+      "body": "Главный вопрос — кто отвечает за сделку, которую ИИ-агент заключил от имени пользователя или компании.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Минэкономразвития предложило установить правила для сделок с участием ИИ‑агентов",
+          "url": "https://habr.com/ru/articles/1113084/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Минэкономразвития",
+          "Россия"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Минэкономразвития": "neutral",
+          "Россия": "neutral"
+        },
+        "event": "regulation"
+      },
+      "importance": 5,
+      "id": "2026-11-28-15"
+    },
+    {
+      "section": "industry",
+      "headline": "Продавцы закрывают магазины на Etsy из-за новых правил об обучении ИИ",
+      "subheadline": "Часть продавцов протестует против того, что их материалы могут использовать для обучения ИИ.",
+      "body": "Etsy изменила правила использования данных для обучения ИИ. В ответ часть продавцов закрывает магазины.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Продавцы стали закрывать магазины на Etsy в ответ на новую политику в отношении обучения ИИ",
+          "url": "https://habr.com/ru/articles/1113126/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Etsy"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Etsy": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-28-16"
+    },
+    {
+      "section": "industry",
+      "headline": "Продолжение: запрещённые к ввозу чипы NVIDIA Blackwell нашли в шанхайском дата-центре",
+      "subheadline": null,
+      "body": "Bloomberg сообщает, что запрещённые к ввозу в Китай чипы Blackwell обнаружены в дата-центре в Шанхае, связанном с Элис Хуан (Alice Huang).",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Banned Nvidia Blackwell chips turn up in a Shanghai data center linked to Alice Huang, Bloomberg reports",
+          "url": "https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: американские власти выяснят, мог ли Китай получать процессоры и закрытые сведения NVIDIA",
+      "tags": {
+        "entities": [
+          "NVIDIA",
+          "Alice Huang",
+          "Китай"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "NVIDIA": "negative",
+          "Alice Huang": "negative",
+          "Китай": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-28-17"
+    },
+    {
+      "section": "hype",
+      "headline": "Житель Флориды получил 47 месяцев тюрьмы за ИИ-копию голоса стримера N3on и кражу $260 тыс.",
+      "subheadline": "Мошенник клонировал голос стримера и выманил деньги у инвесторов мемкоина.",
+      "body": "Осуждённый с помощью ИИ подделал голос популярного стримера N3on и от его имени продвигал мемкоин. Инвесторы потеряли больше $260 тыс. Суд приговорил его к 47 месяцам заключения.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Florida man who used AI to impersonate popular online streamer to steal $260K sentenced to prison",
+          "url": "https://www.fox10phoenix.com/news/florida-man-who-used-ai-impersonate-popular-online-streamer-steal-260k-sentenced-prison",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "N3on",
+          "Флорида"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "N3on": "neutral",
+          "Флорида": "neutral"
+        },
+        "event": "legal"
+      },
+      "importance": 7,
+      "id": "2026-11-28-18"
+    },
+    {
+      "section": "hype",
+      "headline": "Школьные округа США отключают AI Overviews и грозят отказаться от Google",
+      "subheadline": "Google отказалась отделять поиск от ИИ-функций в образовательных продуктах.",
+      "body": "Los Angeles Unified без объявлений отключил AI Overviews на школьных устройствах. Другие округа готовы уйти от продуктов Google, если компания не предложит постоянное решение. Google заявила, что не будет отделять поиск от ИИ-инструментов в образовательных версиях.",
+      "tier": "regular",
+      "sources": [
+        {
+          "title": "Google faces school backlash in US over AI features",
+          "url": "https://kashmirobserver.net/2026/11/27/google-faces-school-backlash-in-us-over-ai-features/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Google",
+          "AI Overviews",
+          "Los Angeles Unified"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Google": "negative",
+          "AI Overviews": "negative",
+          "Los Angeles Unified": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 7,
+      "id": "2026-11-28-19"
+    },
+    {
+      "section": "hype",
+      "headline": "Tor Books сняла обложку фэнтези-романа, созданную ИИ",
+      "subheadline": "Издательство извинилось после скандала с обложкой «This Crown Will Not Rule Me».",
+      "body": "Выяснилось, что иллюстрацию для обложки сгенерировал ИИ. Tor Books, одно из крупнейших издательств фэнтези, отозвала обложку и извинилась.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Major Fantasy Publisher Pulls Book Cover Over AI Art Controversy",
+          "url": "https://screenrant.com/this-crown-will-not-rule-me-ai-cover-explained/",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Tor Books"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Tor Books": "negative"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-28-20"
+    },
+    {
+      "section": "hype",
+      "headline": "Telegram готовит ИИ-агента Dictator с доступом к перепискам",
+      "subheadline": "По данным Хабра, агент будет поддерживать локальные языковые модели.",
+      "body": "Агент Dictator должен получить доступ к перепискам пользователя и поддерживать локальные модели. Официально Telegram его не анонсировал.",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "Telegram готовит ИИ-агента Dictator с доступом к перепискам и поддержкой локальных LLM",
+          "url": "https://habr.com/ru/articles/1113318/",
+          "type": "rumor"
+        }
+      ],
+      "related": [],
+      "unconfirmed": true,
+      "duplicate_note": null,
+      "tags": {
+        "entities": [
+          "Telegram"
+        ],
+        "sentiment": "neutral",
+        "entity_sentiment": {
+          "Telegram": "neutral"
+        },
+        "event": "leak"
+      },
+      "importance": 5,
+      "id": "2026-11-28-21"
+    },
+    {
+      "section": "hype",
+      "headline": "Продолжение: республиканцы критикуют Трампа за возвращение Дженсена Хуанга в NVIDIA",
+      "subheadline": null,
+      "body": "Al Jazeera сообщает, что часть республиканцев недовольна тем, что Трамп добился восстановления Хуанга. Они называют это «игрой с огнём».",
+      "tier": "compact",
+      "sources": [
+        {
+          "title": "'Playing with fire': Republicans incensed after Trump gets Huang reinstated",
+          "url": "https://aljazeera.com/news/2026/11/27/playing-with-fire-republicans-incensed-after-trump-gets-huang-reinstated",
+          "type": "media"
+        }
+      ],
+      "related": [],
+      "unconfirmed": false,
+      "duplicate_note": "Продолжение: NVIDIA вернула Дженсена Хуанга на пост гендиректора",
+      "tags": {
+        "entities": [
+          "Jensen Huang",
+          "Donald Trump",
+          "NVIDIA"
+        ],
+        "sentiment": "negative",
+        "entity_sentiment": {
+          "Jensen Huang": "negative",
+          "Donald Trump": "negative",
+          "NVIDIA": "neutral"
+        },
+        "event": "criticism"
+      },
+      "importance": 5,
+      "id": "2026-11-28-22"
+    }
+  ]
+}
